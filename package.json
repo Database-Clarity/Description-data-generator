@@ -1,0 +1,14 @@
+{
+   "scripts": {
+      "build": "tsc",
+      "generate": "node generator/main.js"
+   },
+   "devDependencies": {
+      "@types/lodash": "^4.14.189",
+      "@types/node": "^18.11.9",
+      "typescript": "^4.9.3"
+   },
+   "dependencies": {
+      "lodash": "^4.17.21"
+   }
+}
