@@ -1,0 +1,43 @@
+name: Build and Deploy generator
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 8 * * *" # runs every day 8am UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run build
+          npm run generate
+
+      - name: Deploy generator 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: generator # The folder the action should deploy.
+          branch: master
+          target-folder: generator
+
+      - name: Generate data 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: templates # The folder the action should deploy.
+          branch: master
+          target-folder: templates
