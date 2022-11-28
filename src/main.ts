@@ -11,8 +11,8 @@ import { exoticArmor } from './filters/exoticArmor'
 import _ from 'lodash'
 import fs from 'fs'
 import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes'
-;import { makeBasePerk } from './utils/makeBasePerk'
-(async () => {
+import { makeBasePerk } from './utils/makeBasePerk'
+;(async () => {
    const { inventoryItems, plugSet, socketType } = await getManifest()
 
    const {
