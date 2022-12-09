@@ -1,30 +1,30 @@
 import { InventoryItem } from './inventoryItem.interface'
 
 export type PerkTypes =
-   | 'armorExotic'
-   | 'weaponPerkExotic'
-   | 'weaponFrameExotic'
-   | 'weaponCatalystExotic'
-   //---------
-   | 'weaponPerk'
-   | 'weaponPerkEnhanced'
-   | 'weaponOriginTrait'
-   | 'weaponFrame'
-   //---------
-   | 'fragment'
-   | 'aspect'
-   | 'super'
-   | 'grenade'
-   | 'melee'
-   | 'class'
-   | 'movement'
-   //---------
-   | 'armorModGeneral'
-   | 'armorModCombat'
-   | 'armorModActivity'
-   | 'weaponMod'
-   | 'ghostMod'
-   | 'artifactMod'
+   | 'Armor Perk Exotic'
+   | 'Weapon Perk Exotic'
+   | 'Weapon Frame Exotic'
+   | 'Weapon Catalyst Exotic'
+   // ---------
+   | 'Weapon Perk'
+   | 'Weapon Perk Enhanced'
+   | 'Weapon Origin Trait'
+   | 'Weapon Frame'
+   // ---------
+   | 'Subclass Fragment'
+   | 'Subclass Aspect'
+   | 'Subclass Super'
+   | 'Subclass Grenade'
+   | 'Subclass Melee'
+   | 'Subclass Class'
+   | 'Subclass Movement'
+   // ---------
+   | 'Armor Mod General'
+   | 'Armor Mod Combat'
+   | 'Armor Mod Activity'
+   | 'Armor Mod Seasonal'
+   | 'Weapon Mod'
+   | 'Ghost Mod'
 
 export interface BasePerk {
    name: string
