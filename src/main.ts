@@ -36,7 +36,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
    const craftingRecipeList = weaponCraftingRecipes(inventoryItems, plugSet, craftingRecipeArr)
 
    const missingPerks: { [key in PerkTypes]?: number[] } = {
-      weaponPerk: [
+      'Weapon Perk': [
          1431678320, 1968497646, 1716000303, 4134353779, 1047830412, 1561002382, 3796465595, 1687452232, 830282363,
          409831596, 3999527219, 1140096971, 466087222, 3301904089, 3373736292, 3721627275
       ]
@@ -89,8 +89,8 @@ import { makeBasePerk } from './utils/makeBasePerk'
    }
 
    const finalList = Object.entries(competeList).reduce<{ [key: string]: any }>((acc, [hash, perk]) => {
-      switch (perk.type) {
-         case 'armorExotic':
+      switch (perk.type  as PerkTypes) {
+         case 'Armor Perk Exotic':
             acc[hash] = {
                hash,
                name: perk.name,
@@ -99,7 +99,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
                type: perk.type
             }
             break
-         case 'weaponCatalystExotic':
+         case 'Weapon Catalyst Exotic':
             acc[hash] = {
                hash,
                name: perk.name,
@@ -107,12 +107,12 @@ import { makeBasePerk } from './utils/makeBasePerk'
                itemName: perk.item?.displayProperties.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithItem(perk, 'weaponPerkExotic'),
-                  frame: findLinkWithItem(perk, 'weaponFrameExotic')
+                  perk: findLinkWithItem(perk, 'Weapon Perk Exotic'),
+                  frame: findLinkWithItem(perk, 'Weapon Frame Exotic')
                }
             }
             break
-         case 'weaponFrameExotic':
+         case 'Weapon Frame Exotic':
             acc[hash] = {
                hash,
                name: perk.name,
@@ -120,12 +120,12 @@ import { makeBasePerk } from './utils/makeBasePerk'
                itemName: perk.item?.displayProperties.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithItem(perk, 'weaponPerkExotic'),
-                  catalyst: findLinkWithItem(perk, 'weaponCatalystExotic')
+                  perk: findLinkWithItem(perk, 'Weapon Perk Exotic'),
+                  catalyst: findLinkWithItem(perk, 'Weapon Catalyst Exotic')
                }
             }
             break
-         case 'weaponPerkExotic':
+         case 'Weapon Perk Exotic':
             acc[hash] = {
                hash,
                name: perk.name,
@@ -133,28 +133,28 @@ import { makeBasePerk } from './utils/makeBasePerk'
                itemName: perk.item?.displayProperties.name,
                type: perk.type,
                linkedWith: {
-                  frame: findLinkWithItem(perk, 'weaponFrameExotic'),
-                  catalyst: findLinkWithItem(perk, 'weaponCatalystExotic')
+                  frame: findLinkWithItem(perk, 'Weapon Frame Exotic'),
+                  catalyst: findLinkWithItem(perk, 'Weapon Catalyst Exotic')
                }
             }
             break
-         case 'weaponPerkEnhanced':
+         case 'Weapon Perk Enhanced':
             acc[hash] = {
                hash,
                name: perk.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithPerk(perk, 'weaponPerk')
+                  perk: findLinkWithPerk(perk, 'Weapon Perk')
                }
             }
             break
-         case 'weaponPerk':
+         case 'Weapon Perk':
             acc[hash] = {
                hash,
                name: perk.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithPerk(perk, 'weaponPerkEnhanced')
+                  perk: findLinkWithPerk(perk, 'Weapon Perk Enhanced')
                }
             }
             break

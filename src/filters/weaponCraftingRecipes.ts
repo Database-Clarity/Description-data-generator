@@ -31,28 +31,28 @@ export const weaponCraftingRecipes = (
                craftingStuff?.itemTypeDisplayName === 'Intrinsic' ||
                craftingStuff?.itemTypeDisplayName === 'Enhanced Intrinsic'
             ) {
-               const type = isExotic ? 'weaponFrameExotic' : 'weaponFrame'
+               const type = isExotic ? 'Weapon Frame Exotic' : 'Weapon Frame'
                acc[craftingHash] = makeBasePerk(craftingStuff, type, newWeapon)
                return
             }
 
             if (craftingStuff?.itemTypeDisplayName === 'Trait') {
-               const type = isExotic ? 'weaponPerkExotic' : 'weaponPerk'
+               const type = isExotic ? 'Weapon Perk Exotic' : 'Weapon Perk'
                acc[craftingHash] = makeBasePerk(craftingStuff, type, newWeapon)
                return
             }
             if (craftingStuff?.itemTypeDisplayName === 'Enhanced Trait') {
-               acc[craftingHash] = makeBasePerk(craftingStuff, 'weaponPerkEnhanced', newWeapon)
+               acc[craftingHash] = makeBasePerk(craftingStuff, 'Weapon Perk Enhanced', newWeapon)
                return
             }
 
             if (craftingStuff?.itemTypeDisplayName === 'Origin Trait') {
-               acc[craftingHash] = makeBasePerk(craftingStuff, 'weaponOriginTrait', newWeapon)
+               acc[craftingHash] = makeBasePerk(craftingStuff, 'Weapon Origin Trait', newWeapon)
                return
             }
 
             if (craftingStuff?.displayProperties.name.endsWith(' Catalyst')) {
-               acc[craftingHash] = makeBasePerk(craftingStuff, 'weaponCatalystExotic', newWeapon)
+               acc[craftingHash] = makeBasePerk(craftingStuff, 'Weapon Catalyst Exotic', newWeapon)
                return
             }
          })

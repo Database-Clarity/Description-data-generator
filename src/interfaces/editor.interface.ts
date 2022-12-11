@@ -34,7 +34,7 @@ export interface BasePerk {
    item?: InventoryItem
 }
 
-export interface BasePerkassas {
+export interface BasePerks {
    name: string
    hash: number
    itemName?: string

@@ -13,7 +13,7 @@ export const artifactMod = (inventoryItems: InventoryItems, inventoryItemArtifac
                inventoryItems[modHash].itemTypeDisplayName === 'Deprecated Armor Mod'
             )
                return
-            acc[modHash] = makeBasePerk(inventoryItems[modHash], 'artifactMod')
+            acc[modHash] = makeBasePerk(inventoryItems[modHash], 'Armor Mod Seasonal')
          })
       return acc
    }, {})

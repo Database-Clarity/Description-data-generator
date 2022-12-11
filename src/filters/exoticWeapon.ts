@@ -34,7 +34,7 @@ export const exoticsWeapon = (
             const frame = inventoryItems[frameHash]
 
             if (frame?.itemTypeDisplayName === 'Intrinsic') {
-               acc[frameHash] = makeBasePerk(frame, 'weaponFrameExotic', weapon)
+               acc[frameHash] = makeBasePerk(frame, 'Weapon Frame Exotic', weapon)
                return
             }
          })
@@ -47,7 +47,7 @@ export const exoticsWeapon = (
             const perk = inventoryItems[perkHash]
 
             if (perk?.itemTypeDisplayName === 'Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'weaponPerkExotic', weapon)
+               acc[perkHash] = makeBasePerk(perk, 'Weapon Perk Exotic', weapon)
                return
             }
          })
@@ -65,7 +65,7 @@ export const exoticsWeapon = (
             const catalyst = inventoryItems[catalystHash]
 
             if (catalyst?.displayProperties.name.endsWith(' Catalyst')) {
-               acc[catalystHash] = makeBasePerk(catalyst, 'weaponCatalystExotic', weapon)
+               acc[catalystHash] = makeBasePerk(catalyst, 'Weapon Catalyst Exotic', weapon)
                return
             }
          })

@@ -25,15 +25,15 @@ export const armorMod = (
             const mod = inventoryItems[modHash]
 
             if (mod?.itemTypeDisplayName.match(/(General|Helmet|Arms|Chest|Leg) Armor Mod|Class Item Mod/)) {
-               acc[modHash] = makeBasePerk(mod, 'armorModGeneral')
+               acc[modHash] = makeBasePerk(mod, 'Armor Mod General')
                return
             }
             if (mod?.itemTypeDisplayName.match(/(Elemental Well|Charged with Light|Warmind Cell) Mod/)) {
-               acc[modHash] = makeBasePerk(mod, 'armorModCombat')
+               acc[modHash] = makeBasePerk(mod, 'Armor Mod Combat')
                return
             }
             if (mod?.itemTypeDisplayName.match(/ Raid Mod^|Nightmare Mod/)) {
-               acc[modHash] = makeBasePerk(mod, 'armorModActivity')
+               acc[modHash] = makeBasePerk(mod, 'Armor Mod Activity')
                return
             }
          })

@@ -25,7 +25,7 @@ export const exoticArmor = (
             const perk = inventoryItems[perkHash]
 
             if (perk.itemTypeDisplayName === 'Intrinsic' || perk.itemTypeDisplayName === 'Aeon Cult Mod') {
-               acc[perkHash] = makeBasePerk(perk, 'armorExotic', armor)
+               acc[perkHash] = makeBasePerk(perk, 'Armor Perk Exotic', armor)
                return
             }
          })

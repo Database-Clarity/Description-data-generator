@@ -7,31 +7,31 @@ export const subclass = (inventoryItemSubclass: InventoryItem[]) => {
       const hash = subclassThing.hash
 
       if (subclassThing?.itemTypeDisplayName.includes('Grenade')) {
-         acc[hash] = makeBasePerk(subclassThing, 'grenade')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Grenade')
          return acc
       }
       if (subclassThing?.itemTypeDisplayName.includes('Movement Ability')) {
-         acc[hash] = makeBasePerk(subclassThing, 'movement')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Movement')
          return acc
       }
       if (subclassThing?.itemTypeDisplayName.includes('Class Ability')) {
-         acc[hash] = makeBasePerk(subclassThing, 'class')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Class')
          return acc
       }
       if (subclassThing?.itemTypeDisplayName.includes('Fragment')) {
-         acc[hash] = makeBasePerk(subclassThing, 'fragment')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Fragment')
          return acc
       }
       if (subclassThing?.itemTypeDisplayName.includes('Aspect')) {
-         acc[hash] = makeBasePerk(subclassThing, 'aspect')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Aspect')
          return acc
       }
       if (subclassThing?.itemTypeDisplayName.includes('Super Ability')) {
-         acc[hash] = makeBasePerk(subclassThing, 'super')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Super')
          return acc
       }
       if (subclassThing?.itemTypeDisplayName.includes('Melee')) {
-         acc[hash] = makeBasePerk(subclassThing, 'melee')
+         acc[hash] = makeBasePerk(subclassThing, 'Subclass Melee')
          return acc
       }
 

@@ -31,7 +31,7 @@ export const legendaryWeapon = (
             const frame = inventoryItems[frameHash]
 
             if (frame?.itemTypeDisplayName === 'Intrinsic') {
-               acc[frameHash] = makeBasePerk(frame, 'weaponFrame')
+               acc[frameHash] = makeBasePerk(frame, 'Weapon Frame')
                return
             }
          })
@@ -44,11 +44,11 @@ export const legendaryWeapon = (
             const perk = inventoryItems[perkHash]
 
             if (perk?.itemTypeDisplayName === 'Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'weaponPerk')
+               acc[perkHash] = makeBasePerk(perk, 'Weapon Perk')
                return
             }
             if (perk?.itemTypeDisplayName === 'Origin Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'weaponOriginTrait')
+               acc[perkHash] = makeBasePerk(perk, 'Weapon Origin Trait')
                return
             }
          })
@@ -61,7 +61,7 @@ export const legendaryWeapon = (
             const mod = inventoryItems[modHash]
 
             if (mod?.itemTypeDisplayName === 'Weapon Mod') {
-               acc[modHash] = makeBasePerk(mod, 'weaponMod')
+               acc[modHash] = makeBasePerk(mod, 'Weapon Mod')
                return
             }
          })
