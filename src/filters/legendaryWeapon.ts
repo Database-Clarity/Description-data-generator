@@ -51,6 +51,10 @@ export const legendaryWeapon = (
                acc[perkHash] = makeBasePerk(perk, 'Weapon Origin Trait')
                return
             }
+            if (perk?.itemTypeDisplayName === 'Enhanced Trait') {
+               acc[perkHash] = makeBasePerk(perk, 'Weapon Perk Enhanced')
+               return
+            }
          })
       })
 

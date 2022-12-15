@@ -37,8 +37,23 @@ import { makeBasePerk } from './utils/makeBasePerk'
 
    const missingPerks: { [key in PerkTypes]?: number[] } = {
       'Weapon Perk': [
-         1431678320, 1968497646, 1716000303, 4134353779, 1047830412, 1561002382, 3796465595, 1687452232, 830282363,
-         409831596, 3999527219, 1140096971, 466087222, 3301904089, 3373736292, 3721627275
+         1431678320, // Alloy Magazine
+         1968497646, // Armor-Piercing Rounds
+         1716000303, // Concussion Grenades
+         4134353779, // Drop Mag
+         1047830412, // Full Choke
+         1561002382, // High-Caliber Rounds
+         3796465595, // Impact Casing
+         1687452232, // Liquid Coils
+         830282363, //  Phase Magazine
+         409831596, //  Proximity Grenades
+         3999527219, // Remote Detonation
+         1140096971, // Seraph Rounds
+         466087222, //  Smoothbore
+         3301904089, // Spike Grenades
+         3373736292, // Sticky Grenades
+         3721627275, // Swap Mag
+         689005463, //  Accelerated Coils
       ]
    }
 
