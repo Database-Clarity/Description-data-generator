@@ -32,7 +32,7 @@ export const armorMod = (
                acc[modHash] = makeBasePerk(mod, 'Armor Mod Combat')
                return
             }
-            if (mod?.itemTypeDisplayName.match(/ Raid Mod^|Nightmare Mod/)) {
+            if (mod?.itemTypeDisplayName.match(/ Raid Mod^|Nightmare Mod|King's Fall Mod|Vault of Glass Armor Mod/)) {
                acc[modHash] = makeBasePerk(mod, 'Armor Mod Activity')
                return
             }
