@@ -55,21 +55,22 @@ import { makeBasePerk } from './utils/makeBasePerk'
          { perk: 3721627275 }, // Swap Mag
          { perk: 689005463 }, //  Accelerated Coils
          { perk: 3032599245 }, // Blinding Grenades
+         { perk: 1885400500 }, // Ricochet Rounds
+         { perk: 806159697 }, //  Trench Barrel
       ],
       'Armor Perk Exotic': [
          { perk: 3651607301, item: 1654461647 }, // Sect of Insight // Aeon Safe
          { perk: 3683811620, item: 2950045886 }, // Sect of Vigor   // Aeon Sou
          { perk: 3268255645, item: 3942036043 } //  Sect of Force   // Aeon Swift
+      ],
+      'Armor Mod Activity': [
+         { perk: 369171376 }, // Transcendent Blessing
       ]
    }
 
-   const manualFixes: { [key: string]: { type: PerkTypes } } = {
+   const manualFixes: { [key: string]: { type?: PerkTypes } } = {
       // Riven's Curse
       2527938402: {
-         type: 'Armor Mod Activity'
-      },
-      // Transcendent Blessing
-      369171376: {
          type: 'Armor Mod Activity'
       }
    }

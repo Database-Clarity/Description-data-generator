@@ -113,6 +113,11 @@
   "name": "Omolon Adaptive Frame",
   "type": "Weapon Frame"
  },
+ "47859594": {
+  "hash": "47859594",
+  "name": "Grenade Kickstart",
+  "type": "Armor Mod General"
+ },
  "47981717": {
   "hash": "47981717",
   "name": "Opening Shot",
@@ -189,6 +194,26 @@
   "hash": "95544331",
   "name": "Strafe Jump",
   "type": "Subclass Movement"
+ },
+ "96170281": {
+  "hash": "96170281",
+  "name": "Auto Rifle Holster",
+  "type": "Armor Mod General"
+ },
+ "100050722": {
+  "hash": "100050722",
+  "name": "Auto Rifle Dexterity",
+  "type": "Armor Mod General"
+ },
+ "107499324": {
+  "hash": "107499324",
+  "name": "Fusion Rifle Holster",
+  "type": "Armor Mod General"
+ },
+ "107977982": {
+  "hash": "107977982",
+  "name": "Void Resistance",
+  "type": "Armor Mod General"
  },
  "117669763": {
   "hash": "117669763",
@@ -276,6 +301,11 @@
   "name": "Skip Grenade",
   "type": "Subclass Grenade"
  },
+ "146553282": {
+  "hash": "146553282",
+  "name": "Sniper Rifle Dexterity",
+  "type": "Armor Mod General"
+ },
  "147913470": {
   "hash": "147913470",
   "name": "Whirlwind Blade",
@@ -283,6 +313,16 @@
   "linkedWith": {
    "perk": 3913600130
   }
+ },
+ "155500646": {
+  "hash": "155500646",
+  "name": "Glaive Scavenger",
+  "type": "Armor Mod General"
+ },
+ "157329321": {
+  "hash": "157329321",
+  "name": "Machine Gun Loader",
+  "type": "Armor Mod General"
  },
  "162561147": {
   "hash": "162561147",
@@ -310,6 +350,11 @@
    "frame": 2741975068,
    "catalyst": 658317088
   }
+ },
+ "178399816": {
+  "hash": "178399816",
+  "name": "Linear Fusion Rifle Loader",
+  "type": "Armor Mod General"
  },
  "179977568": {
   "hash": "179977568",
@@ -403,10 +448,25 @@
    "perk": 3523746922
   }
  },
+ "201502208": {
+  "hash": "201502208",
+  "name": "Bow Reserves",
+  "type": "Armor Mod General"
+ },
+ "204137529": {
+  "hash": "204137529",
+  "name": "Minor Mobility Mod",
+  "type": "Armor Mod General"
+ },
  "205890336": {
   "hash": "205890336",
   "name": "Underdog",
   "type": "Weapon Perk"
+ },
+ "212107599": {
+  "hash": "212107599",
+  "name": "Harmonic Siphon",
+  "type": "Armor Mod General"
  },
  "213689231": {
   "hash": "213689231",
@@ -471,6 +531,11 @@
   "itemHash": 2255796155,
   "itemName": "Peregrine Greaves",
   "type": "Armor Perk Exotic"
+ },
+ "235706376": {
+  "hash": "235706376",
+  "name": "Shotgun Dexterity",
+  "type": "Armor Mod General"
  },
  "236605015": {
   "hash": "236605015",
@@ -576,6 +641,11 @@
   "name": "Lightweight Frame",
   "type": "Weapon Frame"
  },
+ "311492789": {
+  "hash": "311492789",
+  "name": "Rocket Launcher Scavenger",
+  "type": "Armor Mod General"
+ },
  "320534106": {
   "hash": "320534106",
   "name": "Cosmology",
@@ -586,6 +656,16 @@
    "frame": 3905543891,
    "catalyst": 615063266
   }
+ },
+ "320966913": {
+  "hash": "320966913",
+  "name": "Trace Rifle Holster",
+  "type": "Armor Mod General"
+ },
+ "322752304": {
+  "hash": "322752304",
+  "name": "Ashes to Assets",
+  "type": "Armor Mod General"
  },
  "331667533": {
   "hash": "331667533",
@@ -621,6 +701,11 @@
   "linkedWith": {
    "perk": 3678483220
   }
+ },
+ "357349821": {
+  "hash": "357349821",
+  "name": "Unflinching Shotgun Aim",
+  "type": "Armor Mod General"
  },
  "357495645": {
   "hash": "357495645",
@@ -692,6 +777,7 @@
  },
  "369171376": {
   "hash": "369171376",
+  "name": "Transcendent Blessing",
   "type": "Armor Mod Activity"
  },
  "371216963": {
@@ -740,6 +826,11 @@
   "hash": "378204240",
   "name": "Adaptive Glaive",
   "type": "Weapon Frame"
+ },
+ "380905615": {
+  "hash": "380905615",
+  "name": "Innervation",
+  "type": "Armor Mod General"
  },
  "383825919": {
   "hash": "383825919",
@@ -813,6 +904,11 @@
    "perk": 1631667848
   }
  },
+ "403494087": {
+  "hash": "403494087",
+  "name": "Fastball",
+  "type": "Armor Mod General"
+ },
  "406461158": {
   "hash": "406461158",
   "name": "Tracking Module",
@@ -868,6 +964,11 @@
   "hash": "426473317",
   "name": "Gambler's Dodge",
   "type": "Subclass Class"
+ },
+ "428274928": {
+  "hash": "428274928",
+  "name": "Fusion Rifle Loader",
+  "type": "Armor Mod General"
  },
  "431220296": {
   "hash": "431220296",
@@ -949,6 +1050,11 @@
    "perk": 2306441428,
    "catalyst": 3156882011
   }
+ },
+ "459449847": {
+  "hash": "459449847",
+  "name": "Submachine Gun Dexterity",
+  "type": "Armor Mod General"
  },
  "460017080": {
   "hash": "460017080",
@@ -1078,6 +1184,11 @@
    "perk": 4071163871
   }
  },
+ "498878196": {
+  "hash": "498878196",
+  "name": "Sniper Rifle Scavenger",
+  "type": "Armor Mod General"
+ },
  "501717180": {
   "hash": "501717180",
   "name": "Ionic Return",
@@ -1151,6 +1262,11 @@
    "frame": 1070100196
   }
  },
+ "532451225": {
+  "hash": "532451225",
+  "name": "Trace Rifle Dexterity",
+  "type": "Armor Mod General"
+ },
  "536173722": {
   "hash": "536173722",
   "name": "Pugilist",
@@ -1201,6 +1317,11 @@
   "itemHash": 1935198785,
   "itemName": "Omnioculus",
   "type": "Armor Perk Exotic"
+ },
+ "555005975": {
+  "hash": "555005975",
+  "name": "Minor Recovery Mod",
+  "type": "Armor Mod General"
  },
  "557221067": {
   "hash": "557221067",
@@ -1369,6 +1490,11 @@
    "catalyst": 3459475454
   }
  },
+ "631976966": {
+  "hash": "631976966",
+  "name": "Scout Rifle Targeting",
+  "type": "Armor Mod General"
+ },
  "632888024": {
   "hash": "632888024",
   "name": "Solo Operative",
@@ -1410,6 +1536,16 @@
    "catalyst": 3708505013
   }
  },
+ "650047261": {
+  "hash": "650047261",
+  "name": "Hand Cannon Ammo Finder",
+  "type": "Armor Mod General"
+ },
+ "650627622": {
+  "hash": "650627622",
+  "name": "Unflinching Linear Fusion Aim",
+  "type": "Armor Mod General"
+ },
  "656200654": {
   "hash": "656200654",
   "name": "Conserve Momentum",
@@ -1431,6 +1567,11 @@
    "perk": 176919422,
    "frame": 2741975068
   }
+ },
+ "667313240": {
+  "hash": "667313240",
+  "name": "Scout Rifle Loader",
+  "type": "Armor Mod General"
  },
  "668903196": {
   "hash": "668903196",
@@ -1465,6 +1606,11 @@
   "hash": "680193725",
   "name": "Rapid-Fire Frame",
   "type": "Weapon Frame"
+ },
+ "681555689": {
+  "hash": "681555689",
+  "name": "Glaive Holster",
+  "type": "Armor Mod General"
  },
  "689005463": {
   "hash": "689005463",
@@ -1501,6 +1647,11 @@
   "itemName": "One-Eyed Mask",
   "type": "Armor Perk Exotic"
  },
+ "703340600": {
+  "hash": "703340600",
+  "name": "Insulation",
+  "type": "Armor Mod General"
+ },
  "706527188": {
   "hash": "706527188",
   "name": "Quickdraw",
@@ -1524,6 +1675,11 @@
   "linkedWith": {
    "perk": 2272927194
   }
+ },
+ "712951940": {
+  "hash": "712951940",
+  "name": "Glaive Ammo Finder",
+  "type": "Armor Mod General"
  },
  "715195141": {
   "hash": "715195141",
@@ -1587,20 +1743,40 @@
    "catalyst": 2888418988
   }
  },
+ "749060462": {
+  "hash": "749060462",
+  "name": "Linear Fusion Rifle Reserves",
+  "type": "Armor Mod General"
+ },
  "749936529": {
   "hash": "749936529",
   "name": "Aggressive Burst",
   "type": "Weapon Frame"
+ },
+ "755265365": {
+  "hash": "755265365",
+  "name": "Grenade Launcher Ammo Finder",
+  "type": "Armor Mod General"
  },
  "757651572": {
   "hash": "757651572",
   "name": "Aggressive Frame",
   "type": "Weapon Frame"
  },
+ "760472183": {
+  "hash": "760472183",
+  "name": "Melee Damage Resistance",
+  "type": "Armor Mod General"
+ },
  "762204274": {
   "hash": "762204274",
   "name": "Häkke Precision Frame",
   "type": "Weapon Frame"
+ },
+ "762238512": {
+  "hash": "762238512",
+  "name": "Sidearm Loader",
+  "type": "Armor Mod General"
  },
  "762801111": {
   "hash": "762801111",
@@ -1682,6 +1858,14 @@
   "name": "Rapid-Fire Frame",
   "type": "Weapon Frame"
  },
+ "806159697": {
+  "hash": "806159697",
+  "name": "Trench Barrel",
+  "type": "Weapon Perk",
+  "linkedWith": {
+   "perk": 2459015849
+  }
+ },
  "806917387": {
   "hash": "806917387",
   "name": "Temporal Unlimiter",
@@ -1697,6 +1881,11 @@
   "hash": "806997698",
   "name": "Rapid-Fire Frame",
   "type": "Weapon Frame"
+ },
+ "807774340": {
+  "hash": "807774340",
+  "name": "Unflinching Grenade Launcher Aim",
+  "type": "Armor Mod General"
  },
  "817361141": {
   "hash": "817361141",
@@ -2057,6 +2246,11 @@
    "catalyst": 1733620422
   }
  },
+ "950703238": {
+  "hash": "950703238",
+  "name": "Glaive Reserves",
+  "type": "Armor Mod General"
+ },
  "951095735": {
   "hash": "951095735",
   "name": "Impulse Amplifier",
@@ -2143,6 +2337,11 @@
    "catalyst": 1023764762
   }
  },
+ "987267082": {
+  "hash": "987267082",
+  "name": "Arrow Scavenger",
+  "type": "Armor Mod General"
+ },
  "987673306": {
   "hash": "987673306",
   "name": "Tunnel Vision",
@@ -2179,6 +2378,11 @@
   "name": "Fusion Grenade",
   "type": "Subclass Grenade"
  },
+ "1015337793": {
+  "hash": "1015337793",
+  "name": "Machine Gun Targeting",
+  "type": "Armor Mod General"
+ },
  "1015611457": {
   "hash": "1015611457",
   "name": "Kill Clip",
@@ -2191,6 +2395,11 @@
   "hash": "1016030582",
   "name": "Vortex Grenade",
   "type": "Subclass Grenade"
+ },
+ "1016705548": {
+  "hash": "1016705548",
+  "name": "Dynamo",
+  "type": "Armor Mod General"
  },
  "1019291327": {
   "hash": "1019291327",
@@ -2245,6 +2454,16 @@
    "catalyst": 1249968539
   }
  },
+ "1038135636": {
+  "hash": "1038135636",
+  "name": "Void Siphon",
+  "type": "Armor Mod General"
+ },
+ "1043617959": {
+  "hash": "1043617959",
+  "name": "Hand Cannon Reserves",
+  "type": "Armor Mod General"
+ },
  "1045795938": {
   "hash": "1045795938",
   "name": "Precision Frame",
@@ -2262,6 +2481,11 @@
   "linkedWith": {
    "perk": 3431277734
   }
+ },
+ "1050260245": {
+  "hash": "1050260245",
+  "name": "Sidearm Ammo Finder",
+  "type": "Armor Mod General"
  },
  "1051276348": {
   "hash": "1051276348",
@@ -2282,6 +2506,11 @@
   "hash": "1051276351",
   "name": "Ember of Searing",
   "type": "Subclass Fragment"
+ },
+ "1052494884": {
+  "hash": "1052494884",
+  "name": "Hand Cannon Loader",
+  "type": "Armor Mod General"
  },
  "1052528480": {
   "hash": "1052528480",
@@ -2375,6 +2604,11 @@
    "catalyst": 3072857252
   }
  },
+ "1127642993": {
+  "hash": "1127642993",
+  "name": "Machine Gun Holster",
+  "type": "Armor Mod General"
+ },
  "1128768652": {
   "hash": "1128768652",
   "name": "Triple Jump",
@@ -2389,6 +2623,11 @@
   "hash": "1128768655",
   "name": "Strafe Jump",
   "type": "Subclass Movement"
+ },
+ "1129724921": {
+  "hash": "1129724921",
+  "name": "Pulse Rifle Loader",
+  "type": "Armor Mod General"
  },
  "1134515006": {
   "hash": "1134515006",
@@ -2605,6 +2844,11 @@
   "name": "Font of Wisdom",
   "type": "Armor Mod Combat"
  },
+ "1203395203": {
+  "hash": "1203395203",
+  "name": "Unflinching Sniper Aim",
+  "type": "Armor Mod General"
+ },
  "1206010521": {
   "hash": "1206010521",
   "name": "Ruinous Effigy Catalyst",
@@ -2615,6 +2859,11 @@
    "perk": 798520364,
    "frame": 1657401727
   }
+ },
+ "1207025932": {
+  "hash": "1207025932",
+  "name": "Absolution",
+  "type": "Armor Mod General"
  },
  "1208312843": {
   "hash": "1208312843",
@@ -2676,6 +2925,11 @@
   "hash": "1225726778",
   "name": "Adept Mag",
   "type": "Weapon Mod"
+ },
+ "1227870362": {
+  "hash": "1227870362",
+  "name": "Minor Intellect Mod",
+  "type": "Armor Mod General"
  },
  "1232050830": {
   "hash": "1232050830",
@@ -2786,6 +3040,11 @@
   "name": "Cluster Bomb",
   "type": "Weapon Perk"
  },
+ "1279446438": {
+  "hash": "1279446438",
+  "name": "Unflinching Scout Rifle Aim",
+  "type": "Armor Mod General"
+ },
  "1281216113": {
   "hash": "1281216113",
   "name": "Stunning Recovery",
@@ -2884,6 +3143,11 @@
    "frame": 1319823571
   }
  },
+ "1303690937": {
+  "hash": "1303690937",
+  "name": "Rocket Launcher Reserves",
+  "type": "Armor Mod General"
+ },
  "1315870387": {
   "hash": "1315870387",
   "name": "Cryocannon",
@@ -2935,6 +3199,11 @@
    "perk": 1185273366,
    "frame": 2608508147
   }
+ },
+ "1324869195": {
+  "hash": "1324869195",
+  "name": "Better Already",
+  "type": "Armor Mod General"
  },
  "1331592343": {
   "hash": "1331592343",
@@ -3050,6 +3319,11 @@
    "perk": 47981717
   }
  },
+ "1371877916": {
+  "hash": "1371877916",
+  "name": "Melee Kickstart",
+  "type": "Armor Mod General"
+ },
  "1376049785": {
   "hash": "1376049785",
   "name": "Ionic Conductor",
@@ -3141,6 +3415,11 @@
   "name": "Superstructure Medic",
   "type": "Armor Mod Activity"
  },
+ "1406211233": {
+  "hash": "1406211233",
+  "name": "Unflinching Glaive Aim",
+  "type": "Armor Mod General"
+ },
  "1408800487": {
   "hash": "1408800487",
   "name": "Omega Strike",
@@ -3205,6 +3484,11 @@
    "perk": 2014892510
   }
  },
+ "1429600943": {
+  "hash": "1429600943",
+  "name": "Solar Resistance",
+  "type": "Armor Mod General"
+ },
  "1431678320": {
   "hash": "1431678320",
   "name": "Alloy Magazine",
@@ -3216,6 +3500,11 @@
   "itemHash": 1443166262,
   "itemName": "Second Chance",
   "type": "Armor Perk Exotic"
+ },
+ "1445862797": {
+  "hash": "1445862797",
+  "name": "Linear Fusion Dexterity",
+  "type": "Armor Mod General"
  },
  "1447716563": {
   "hash": "1447716563",
@@ -3284,6 +3573,11 @@
   "name": "High-Impact Frame",
   "type": "Weapon Frame"
  },
+ "1476367343": {
+  "hash": "1476367343",
+  "name": "Sword Ammo Finder",
+  "type": "Armor Mod General"
+ },
  "1483339932": {
   "hash": "1483339932",
   "name": "Rapid-Fire Frame",
@@ -3328,6 +3622,16 @@
   "linkedWith": {
    "frame": 3668782036
   }
+ },
+ "1499759470": {
+  "hash": "1499759470",
+  "name": "Linear Fusion Rifle Ammo Finder",
+  "type": "Armor Mod General"
+ },
+ "1507854082": {
+  "hash": "1507854082",
+  "name": "Sidearm Targeting",
+  "type": "Armor Mod General"
  },
  "1513326571": {
   "hash": "1513326571",
@@ -3398,6 +3702,11 @@
   "linkedWith": {
    "catalyst": 1061006937
   }
+ },
+ "1534061443": {
+  "hash": "1534061443",
+  "name": "Shotgun Loader",
+  "type": "Armor Mod General"
  },
  "1536798515": {
   "hash": "1536798515",
@@ -3482,6 +3791,11 @@
    "frame": 2724693746
   }
  },
+ "1559280270": {
+  "hash": "1559280270",
+  "name": "Machine Gun Scavenger",
+  "type": "Armor Mod General"
+ },
  "1560574695": {
   "hash": "1560574695",
   "name": "Nightmare Breaker",
@@ -3565,6 +3879,11 @@
   "name": "Counterbalance Stock",
   "type": "Weapon Mod"
  },
+ "1597311617": {
+  "hash": "1597311617",
+  "name": "Sniper Rifle Holster",
+  "type": "Armor Mod General"
+ },
  "1598147670": {
   "hash": "1598147670",
   "name": "Psychohack",
@@ -3577,6 +3896,11 @@
   "linkedWith": {
    "perk": 828056542
   }
+ },
+ "1600896643": {
+  "hash": "1600896643",
+  "name": "Glaive Loader",
+  "type": "Armor Mod General"
  },
  "1602994568": {
   "hash": "1602994568",
@@ -3613,6 +3937,16 @@
   "linkedWith": {
    "perk": 2077819806
   }
+ },
+ "1621596154": {
+  "hash": "1621596154",
+  "name": "Bow Dexterity",
+  "type": "Armor Mod General"
+ },
+ "1624081088": {
+  "hash": "1624081088",
+  "name": "Bow Ammo Finder",
+  "type": "Armor Mod General"
  },
  "1631667848": {
   "hash": "1631667848",
@@ -4049,6 +4383,11 @@
   "name": "Font of Might",
   "type": "Armor Mod Combat"
  },
+ "1740875866": {
+  "hash": "1740875866",
+  "name": "Machine Gun Dexterity",
+  "type": "Armor Mod General"
+ },
  "1748364716": {
   "hash": "1748364716",
   "name": "Aggressive Frame",
@@ -4183,6 +4522,11 @@
    "perk": 1008128453
   }
  },
+ "1807758212": {
+  "hash": "1807758212",
+  "name": "Trace Rifle Loader",
+  "type": "Armor Mod General"
+ },
  "1817649409": {
   "hash": "1817649409",
   "name": "Aggressive Burst",
@@ -4248,6 +4592,11 @@
   "name": "Aggressive Frame",
   "type": "Weapon Frame"
  },
+ "1839911272": {
+  "hash": "1839911272",
+  "name": "Focusing Strike",
+  "type": "Armor Mod General"
+ },
  "1841016428": {
   "hash": "1841016428",
   "name": "Healing Grenade",
@@ -4270,6 +4619,11 @@
    "frame": 3755070117,
    "catalyst": 1249968538
   }
+ },
+ "1859929470": {
+  "hash": "1859929470",
+  "name": "Unflinching Hand Cannon Aim",
+  "type": "Armor Mod General"
  },
  "1863355414": {
   "hash": "1863355414",
@@ -4328,6 +4682,11 @@
   "hash": "1885045197",
   "name": "Adept Draw Time",
   "type": "Weapon Mod"
+ },
+ "1885400500": {
+  "hash": "1885400500",
+  "name": "Ricochet Rounds",
+  "type": "Weapon Perk"
  },
  "1886418605": {
   "hash": "1886418605",
@@ -4392,6 +4751,11 @@
   "hash": "1920417385",
   "name": "Grim Harvest",
   "type": "Subclass Aspect"
+ },
+ "1921961414": {
+  "hash": "1921961414",
+  "name": "Recuperation",
+  "type": "Armor Mod General"
  },
  "1927916065": {
   "hash": "1927916065",
@@ -4459,6 +4823,11 @@
   "itemName": "Point-Contact Cannon Brace",
   "type": "Armor Perk Exotic"
  },
+ "1970413851": {
+  "hash": "1970413851",
+  "name": "Rocket Launcher Dexterity",
+  "type": "Armor Mod General"
+ },
  "1971489086": {
   "hash": "1971489086",
   "name": "The Fourth Magic",
@@ -4486,6 +4855,11 @@
   "name": "Well of Restoration",
   "type": "Armor Mod Combat"
  },
+ "1985887424": {
+  "hash": "1985887424",
+  "name": "Orbs of Restoration",
+  "type": "Armor Mod General"
+ },
  "1986105578": {
   "hash": "1986105578",
   "name": "Aggressive Glaive",
@@ -4503,6 +4877,11 @@
   "linkedWith": {
    "perk": 2209918983
   }
+ },
+ "2001283033": {
+  "hash": "2001283033",
+  "name": "Pulse Rifle Holster",
+  "type": "Armor Mod General"
  },
  "2002547233": {
   "hash": "2002547233",
@@ -4612,10 +4991,20 @@
    "perk": 2396422520
   }
  },
+ "2039949393": {
+  "hash": "2039949393",
+  "name": "Sniper Rifle Loader",
+  "type": "Armor Mod General"
+ },
  "2045123179": {
   "hash": "2045123179",
   "name": "Supreme Nightmare Crusher",
   "type": "Armor Mod Activity"
+ },
+ "2051366208": {
+  "hash": "2051366208",
+  "name": "Linear Fusion Rifle Scavenger",
+  "type": "Armor Mod General"
  },
  "2057203855": {
   "hash": "2057203855",
@@ -4639,6 +5028,11 @@
   "linkedWith": {
    "perk": 1618208178
   }
+ },
+ "2080519917": {
+  "hash": "2080519917",
+  "name": "Bow Targeting",
+  "type": "Armor Mod General"
  },
  "2085058762": {
   "hash": "2085058762",
@@ -4747,6 +5141,11 @@
    "catalyst": 1758592809
   }
  },
+ "2128395292": {
+  "hash": "2128395292",
+  "name": "Machine Gun Ammo Finder",
+  "type": "Armor Mod General"
+ },
  "2130042297": {
   "hash": "2130042297",
   "name": "Taken Predator",
@@ -4792,6 +5191,11 @@
    "perk": 3556949035,
    "frame": 3837077246
   }
+ },
+ "2146553541": {
+  "hash": "2146553541",
+  "name": "Sword Scavenger",
+  "type": "Armor Mod General"
  },
  "2155015844": {
   "hash": "2155015844",
@@ -4857,6 +5261,11 @@
    "catalyst": 1218164788
   }
  },
+ "2183342667": {
+  "hash": "2183342667",
+  "name": "Sidearm Scavenger",
+  "type": "Armor Mod General"
+ },
  "2186532310": {
   "hash": "2186532310",
   "name": "Poison Arrows",
@@ -4885,6 +5294,11 @@
   "itemHash": 1474735277,
   "itemName": "The Sixth Coyote",
   "type": "Armor Perk Exotic"
+ },
+ "2192962617": {
+  "hash": "2192962617",
+  "name": "Hand Cannon Dexterity",
+  "type": "Armor Mod General"
  },
  "2200569208": {
   "hash": "2200569208",
@@ -5058,6 +5472,11 @@
    "frame": 507151084,
    "catalyst": 1824496860
   }
+ },
+ "2238903692": {
+  "hash": "2238903692",
+  "name": "Linear Fusion Rifle Holster",
+  "type": "Armor Mod General"
  },
  "2241043034": {
   "hash": "2241043034",
@@ -5260,6 +5679,11 @@
    "catalyst": 615063267
   }
  },
+ "2307244871": {
+  "hash": "2307244871",
+  "name": "Sniper Rifle Targeting",
+  "type": "Armor Mod General"
+ },
  "2308090567": {
   "hash": "2308090567",
   "name": "Field Prep",
@@ -5267,6 +5691,11 @@
   "linkedWith": {
    "perk": 2869569095
   }
+ },
+ "2321484659": {
+  "hash": "2321484659",
+  "name": "Trace Rifle Reserves",
+  "type": "Armor Mod General"
  },
  "2321824284": {
   "hash": "2321824284",
@@ -5283,6 +5712,11 @@
   "name": "Child of the Old Gods",
   "type": "Subclass Aspect"
  },
+ "2324400338": {
+  "hash": "2324400338",
+  "name": "Rocket Launcher Loader",
+  "type": "Armor Mod General"
+ },
  "2333607307": {
   "hash": "2333607307",
   "name": "Impetus",
@@ -5294,10 +5728,20 @@
    "catalyst": 1149703256
   }
  },
+ "2347686425": {
+  "hash": "2347686425",
+  "name": "Fusion Rifle Scavenger",
+  "type": "Armor Mod General"
+ },
  "2353477480": {
   "hash": "2353477480",
   "name": "Rapid-Fire Frame",
   "type": "Weapon Frame"
+ },
+ "2353976789": {
+  "hash": "2353976789",
+  "name": "Sidearm Dexterity",
+  "type": "Armor Mod General"
  },
  "2355041704": {
   "hash": "2355041704",
@@ -5305,6 +5749,11 @@
   "itemHash": 2384488862,
   "itemName": "Khepri's Horn",
   "type": "Armor Perk Exotic"
+ },
+ "2356995028": {
+  "hash": "2356995028",
+  "name": "Scout Rifle Holster",
+  "type": "Armor Mod General"
  },
  "2359854504": {
   "hash": "2359854504",
@@ -5336,6 +5785,16 @@
    "frame": 1699724249
   }
  },
+ "2368162286": {
+  "hash": "2368162286",
+  "name": "Shotgun Reserves",
+  "type": "Armor Mod General"
+ },
+ "2379452959": {
+  "hash": "2379452959",
+  "name": "Unflinching Pulse Rifle Aim",
+  "type": "Armor Mod General"
+ },
  "2379536009": {
   "hash": "2379536009",
   "name": "Remote Shield",
@@ -5365,6 +5824,11 @@
   "linkedWith": {
    "perk": 1748774930
   }
+ },
+ "2395653827": {
+  "hash": "2395653827",
+  "name": "Shotgun Holster",
+  "type": "Armor Mod General"
  },
  "2395713912": {
   "hash": "2395713912",
@@ -5498,7 +5962,7 @@
   "name": "Trench Barrel",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2360754333
+   "perk": 806159697
   }
  },
  "2470575005": {
@@ -5600,6 +6064,11 @@
   "itemName": "The Path of Burning Steps",
   "type": "Armor Perk Exotic"
  },
+ "2505824339": {
+  "hash": "2505824339",
+  "name": "Unflinching Auto Rifle Aim",
+  "type": "Armor Mod General"
+ },
  "2516075140": {
   "hash": "2516075140",
   "name": "High-Impact Frame",
@@ -5620,6 +6089,11 @@
   "hash": "2518716062",
   "name": "Aggressive Frame",
   "type": "Weapon Frame"
+ },
+ "2524985605": {
+  "hash": "2524985605",
+  "name": "Kinetic Siphon",
+  "type": "Armor Mod General"
  },
  "2526801077": {
   "hash": "2526801077",
@@ -5699,6 +6173,11 @@
    "perk": 2458213969
   }
  },
+ "2571974065": {
+  "hash": "2571974065",
+  "name": "Auto Rifle Loader",
+  "type": "Armor Mod General"
+ },
  "2581086849": {
   "hash": "2581086849",
   "name": "Incendiary Grenade",
@@ -5722,6 +6201,11 @@
   "linkedWith": {
    "perk": 2217963031
   }
+ },
+ "2588939505": {
+  "hash": "2588939505",
+  "name": "Concussive Dampener",
+  "type": "Armor Mod General"
  },
  "2589105944": {
   "hash": "2589105944",
@@ -5760,6 +6244,11 @@
   "hash": "2597888511",
   "name": "Power of Rasputin",
   "type": "Armor Mod Combat"
+ },
+ "2603856295": {
+  "hash": "2603856295",
+  "name": "Rocket Launcher Ammo Finder",
+  "type": "Armor Mod General"
  },
  "2608508147": {
   "hash": "2608508147",
@@ -5811,10 +6300,20 @@
    "perk": 2495011826
   }
  },
+ "2623485440": {
+  "hash": "2623485440",
+  "name": "Minor Discipline Mod",
+  "type": "Armor Mod General"
+ },
  "2625980631": {
   "hash": "2625980631",
   "name": "Silence and Squall",
   "type": "Subclass Super"
+ },
+ "2627515934": {
+  "hash": "2627515934",
+  "name": "Grenade Launcher Holster",
+  "type": "Armor Mod General"
  },
  "2637025676": {
   "hash": "2637025676",
@@ -5838,6 +6337,11 @@
   "hash": "2642597904",
   "name": "Bleak Watcher",
   "type": "Subclass Aspect"
+ },
+ "2645858828": {
+  "hash": "2645858828",
+  "name": "Recovery Mod",
+  "type": "Armor Mod General"
  },
  "2651551055": {
   "hash": "2651551055",
@@ -6166,10 +6670,20 @@
    "perk": 438098033
   }
  },
+ "2754084930": {
+  "hash": "2754084930",
+  "name": "Sniper Rifle Ammo Finder",
+  "type": "Armor Mod General"
+ },
  "2757685314": {
   "hash": "2757685314",
   "name": "Aggressive Frame",
   "type": "Weapon Frame"
+ },
+ "2758832455": {
+  "hash": "2758832455",
+  "name": "Hand Cannon Scavenger",
+  "type": "Armor Mod General"
  },
  "2770223582": {
   "hash": "2770223582",
@@ -6207,6 +6721,11 @@
   "name": "Boss Spec",
   "type": "Weapon Mod"
  },
+ "2790645726": {
+  "hash": "2790645726",
+  "name": "Submachine Gun Loader",
+  "type": "Armor Mod General"
+ },
  "2795311559": {
   "hash": "2795311559",
   "name": "Pace Yourself",
@@ -6228,6 +6747,11 @@
    "perk": 2656694271,
    "frame": 228577175
   }
+ },
+ "2799168657": {
+  "hash": "2799168657",
+  "name": "Invigoration",
+  "type": "Armor Mod General"
  },
  "2799418574": {
   "hash": "2799418574",
@@ -6306,6 +6830,11 @@
   "name": "Together Forever",
   "type": "Weapon Frame"
  },
+ "2829974286": {
+  "hash": "2829974286",
+  "name": "Hand Cannon Targeting",
+  "type": "Armor Mod General"
+ },
  "2835258088": {
   "hash": "2835258088",
   "name": "Eyes of Tomorrow Catalyst",
@@ -6345,6 +6874,11 @@
   "linkedWith": {
    "perk": 169755979
   }
+ },
+ "2850583378": {
+  "hash": "2850583378",
+  "name": "Resilience Mod",
+  "type": "Armor Mod General"
  },
  "2851458940": {
   "hash": "2851458940",
@@ -6397,6 +6931,11 @@
   "hash": "2874957617",
   "name": "Nightmare Banisher",
   "type": "Armor Mod Activity"
+ },
+ "2881057950": {
+  "hash": "2881057950",
+  "name": "Unflinching Sidearm Aim",
+  "type": "Armor Mod General"
  },
  "2881100038": {
   "hash": "2881100038",
@@ -6507,6 +7046,11 @@
   "hash": "2912509910",
   "name": "Aggressive Frame",
   "type": "Weapon Frame"
+ },
+ "2919349723": {
+  "hash": "2919349723",
+  "name": "Shotgun Targeting",
+  "type": "Armor Mod General"
  },
  "2921090754": {
   "hash": "2921090754",
@@ -6666,6 +7210,11 @@
   "name": "Radiant Light",
   "type": "Armor Mod Combat"
  },
+ "2982054284": {
+  "hash": "2982054284",
+  "name": "Sidearm Holster",
+  "type": "Armor Mod General"
+ },
  "2984240082": {
   "hash": "2984240082",
   "name": "Eriana's Vow Catalyst",
@@ -6731,6 +7280,11 @@
    "perk": 777774560
   }
  },
+ "2999890939": {
+  "hash": "2999890939",
+  "name": "Solar Siphon",
+  "type": "Armor Mod General"
+ },
  "3000852559": {
   "hash": "3000852559",
   "name": "Precision Frame",
@@ -6783,6 +7337,11 @@
    "perk": 64866129
   }
  },
+ "3038929059": {
+  "hash": "3038929059",
+  "name": "Grenade Launcher Dexterity",
+  "type": "Armor Mod General"
+ },
  "3046673757": {
   "hash": "3046673757",
   "name": "Precision Frame",
@@ -6833,6 +7392,11 @@
    "catalyst": 2888418988
   }
  },
+ "3065699930": {
+  "hash": "3065699930",
+  "name": "Hands-On",
+  "type": "Armor Mod General"
+ },
  "3066103996": {
   "hash": "3066103996",
   "name": "Gunpowder Gamble",
@@ -6859,6 +7423,11 @@
    "frame": 1100877327
   }
  },
+ "3074491624": {
+  "hash": "3074491624",
+  "name": "Arc Resistance",
+  "type": "Armor Mod General"
+ },
  "3078487919": {
   "hash": "3078487919",
   "name": "Bait and Switch",
@@ -6882,6 +7451,11 @@
   "hash": "3081867624",
   "name": "Master of Arms",
   "type": "Weapon Perk"
+ },
+ "3091213995": {
+  "hash": "3091213995",
+  "name": "Unflinching Machine Gun",
+  "type": "Armor Mod General"
  },
  "3094629643": {
   "hash": "3094629643",
@@ -6933,6 +7507,11 @@
    "perk": 855168139
   }
  },
+ "3109470977": {
+  "hash": "3109470977",
+  "name": "Glaive Targeting",
+  "type": "Armor Mod General"
+ },
  "3114731754": {
   "hash": "3114731754",
   "name": "Precision Frame",
@@ -6956,6 +7535,11 @@
   "linkedWith": {
    "perk": 1866048759
   }
+ },
+ "3121039270": {
+  "hash": "3121039270",
+  "name": "Unflinching Fusion Rifle Aim",
+  "type": "Armor Mod General"
  },
  "3124871000": {
   "hash": "3124871000",
@@ -7055,6 +7639,11 @@
    "catalyst": 2984240082
   }
  },
+ "3176563510": {
+  "hash": "3176563510",
+  "name": "Stasis Resistance",
+  "type": "Armor Mod General"
+ },
  "3185435908": {
   "hash": "3185435908",
   "name": "Firepower",
@@ -7074,6 +7663,11 @@
   "hash": "3185435911",
   "name": "Blast Radius",
   "type": "Armor Mod Combat"
+ },
+ "3188535145": {
+  "hash": "3188535145",
+  "name": "Machine Gun Reserves",
+  "type": "Armor Mod General"
  },
  "3194351027": {
   "hash": "3194351027",
@@ -7096,6 +7690,11 @@
    "perk": 1545231802
   }
  },
+ "3201675491": {
+  "hash": "3201675491",
+  "name": "Auto Rifle Targeting",
+  "type": "Armor Mod General"
+ },
  "3208647503": {
   "hash": "3208647503",
   "name": "Adept Impact",
@@ -7116,6 +7715,11 @@
   "hash": "3226552705",
   "name": "Precision Frame",
   "type": "Weapon Frame"
+ },
+ "3228149706": {
+  "hash": "3228149706",
+  "name": "Pulse Rifle Dexterity",
+  "type": "Armor Mod General"
  },
  "3228611386": {
   "hash": "3228611386",
@@ -7179,6 +7783,11 @@
   "hash": "3252839262",
   "name": "Precision Frame",
   "type": "Weapon Frame"
+ },
+ "3253038666": {
+  "hash": "3253038666",
+  "name": "Strength Mod",
+  "type": "Armor Mod General"
  },
  "3260056808": {
   "hash": "3260056808",
@@ -7273,10 +7882,25 @@
   "name": "Spike Grenades",
   "type": "Weapon Perk"
  },
+ "3319681729": {
+  "hash": "3319681729",
+  "name": "Pulse Rifle Targeting",
+  "type": "Armor Mod General"
+ },
+ "3330325954": {
+  "hash": "3330325954",
+  "name": "Trace Rifle Targeting",
+  "type": "Armor Mod General"
+ },
  "3330548924": {
   "hash": "3330548924",
   "name": "Aggressive Burst",
   "type": "Weapon Frame"
+ },
+ "3330921441": {
+  "hash": "3330921441",
+  "name": "Grenade Launcher Reserves",
+  "type": "Armor Mod General"
  },
  "3332480988": {
   "hash": "3332480988",
@@ -7307,6 +7931,11 @@
   "name": "Backup Mag",
   "type": "Weapon Mod"
  },
+ "3337174653": {
+  "hash": "3337174653",
+  "name": "Scout Rifle Dexterity",
+  "type": "Armor Mod General"
+ },
  "3337692349": {
   "hash": "3337692349",
   "name": "Mulligan",
@@ -7317,6 +7946,11 @@
    "frame": 281315705,
    "catalyst": 2732814938
   }
+ },
+ "3338875786": {
+  "hash": "3338875786",
+  "name": "Linear Fusion Rifle Targeting",
+  "type": "Armor Mod General"
  },
  "3347978672": {
   "hash": "3347978672",
@@ -7366,6 +8000,11 @@
   "name": "Adaptive Frame",
   "type": "Weapon Frame"
  },
+ "3355995799": {
+  "hash": "3355995799",
+  "name": "Intellect Mod",
+  "type": "Armor Mod General"
+ },
  "3356299403": {
   "hash": "3356299403",
   "name": "Precision Frame",
@@ -7398,6 +8037,11 @@
   "hash": "3377988521",
   "name": "Lightweight Frame",
   "type": "Weapon Frame"
+ },
+ "3394151347": {
+  "hash": "3394151347",
+  "name": "Fusion Rifle Ammo Finder",
+  "type": "Armor Mod General"
  },
  "3399947696": {
   "hash": "3399947696",
@@ -7476,6 +8120,11 @@
   "linkedWith": {
    "perk": 2658083589
   }
+ },
+ "3436675785": {
+  "hash": "3436675785",
+  "name": "Bow Reloader",
+  "type": "Armor Mod General"
  },
  "3441203855": {
   "hash": "3441203855",
@@ -7587,6 +8236,11 @@
   "name": "Whisper of Shards",
   "type": "Subclass Fragment"
  },
+ "3470562293": {
+  "hash": "3470562293",
+  "name": "Impact Induction",
+  "type": "Armor Mod General"
+ },
  "3470828242": {
   "hash": "3470828242",
   "name": "Flame Refraction",
@@ -7666,6 +8320,11 @@
   "name": "Together Forever",
   "type": "Weapon Frame"
  },
+ "3517390997": {
+  "hash": "3517390997",
+  "name": "Fusion Rifle Dexterity",
+  "type": "Armor Mod General"
+ },
  "3523075120": {
   "hash": "3523075120",
   "name": "Protective Light",
@@ -7738,10 +8397,20 @@
   "name": "Strafe Jump",
   "type": "Subclass Movement"
  },
+ "3531950723": {
+  "hash": "3531950723",
+  "name": "Fusion Rifle Reserves",
+  "type": "Armor Mod General"
+ },
  "3540739611": {
   "hash": "3540739611",
   "name": "Will of Light (Solar)",
   "type": "Armor Mod Activity"
+ },
+ "3543966269": {
+  "hash": "3543966269",
+  "name": "Sword Reserves",
+  "type": "Armor Mod General"
  },
  "3551326236": {
   "hash": "3551326236",
@@ -7783,6 +8452,11 @@
    "catalyst": 2145198832
   }
  },
+ "3563461386": {
+  "hash": "3563461386",
+  "name": "Submachine Gun Holster",
+  "type": "Armor Mod General"
+ },
  "3563868667": {
   "hash": "3563868667",
   "name": "Clown Cartridge",
@@ -7795,6 +8469,11 @@
   "hash": "3564974257",
   "name": "Full Auto Retrofit",
   "type": "Weapon Mod"
+ },
+ "3566745556": {
+  "hash": "3566745556",
+  "name": "Sniper Damage Resistance",
+  "type": "Armor Mod General"
  },
  "3570105787": {
   "hash": "3570105787",
@@ -7858,10 +8537,20 @@
   "name": "Aggressive Frame",
   "type": "Weapon Frame"
  },
+ "3626376648": {
+  "hash": "3626376648",
+  "name": "Unflinching Submachine Gun Aim",
+  "type": "Armor Mod General"
+ },
  "3630287380": {
   "hash": "3630287380",
   "name": "Enhanced Relay Defender",
   "type": "Armor Mod Activity"
+ },
+ "3632415743": {
+  "hash": "3632415743",
+  "name": "Trace Rifle Scavenger",
+  "type": "Armor Mod General"
  },
  "3632726236": {
   "hash": "3632726236",
@@ -7897,6 +8586,11 @@
   "hash": "3636300855",
   "name": "Gambler's Dodge",
   "type": "Subclass Class"
+ },
+ "3638321667": {
+  "hash": "3638321667",
+  "name": "Power Preservation",
+  "type": "Armor Mod General"
  },
  "3642491337": {
   "hash": "3642491337",
@@ -7958,6 +8652,11 @@
   "itemName": "An Insurmountable Skullfort",
   "type": "Armor Perk Exotic"
  },
+ "3662638763": {
+  "hash": "3662638763",
+  "name": "Unflinching Bow Aim",
+  "type": "Armor Mod General"
+ },
  "3663096260": {
   "hash": "3663096260",
   "name": "Skittering Stinger",
@@ -7987,6 +8686,11 @@
    "catalyst": 1496699324
   }
  },
+ "3670960347": {
+  "hash": "3670960347",
+  "name": "Grenade Launcher Scavenger",
+  "type": "Armor Mod General"
+ },
  "3673922083": {
   "hash": "3673922083",
   "name": "Adagio",
@@ -8010,6 +8714,11 @@
   "linkedWith": {
    "perk": 354401740
   }
+ },
+ "3682186345": {
+  "hash": "3682186345",
+  "name": "Minor Resilience Mod",
+  "type": "Armor Mod General"
  },
  "3683811620": {
   "hash": "3683811620",
@@ -8042,6 +8751,11 @@
   "hash": "3688301727",
   "name": "Rapid-Fire Frame",
   "type": "Weapon Frame"
+ },
+ "3699676109": {
+  "hash": "3699676109",
+  "name": "Minor Strength Mod",
+  "type": "Armor Mod General"
  },
  "3700496672": {
   "hash": "3700496672",
@@ -8116,6 +8830,11 @@
   "itemName": "Wormhusk Crown",
   "type": "Armor Perk Exotic"
  },
+ "3725144328": {
+  "hash": "3725144328",
+  "name": "Glaive Dexterity",
+  "type": "Armor Mod General"
+ },
  "3725333007": {
   "hash": "3725333007",
   "name": "Lightweight Frame",
@@ -8149,6 +8868,11 @@
    "perk": 3078487919
   }
  },
+ "3750579462": {
+  "hash": "3750579462",
+  "name": "Bolstering Detonation",
+  "type": "Armor Mod General"
+ },
  "3751912585": {
   "hash": "3751912585",
   "name": "Cascade Point",
@@ -8180,6 +8904,11 @@
   "linkedWith": {
    "perk": 1645158859
   }
+ },
+ "3759707664": {
+  "hash": "3759707664",
+  "name": "Hand Cannon Holster",
+  "type": "Armor Mod General"
  },
  "3766386008": {
   "hash": "3766386008",
@@ -8216,6 +8945,11 @@
   "hash": "3785661089",
   "name": "Radar Booster",
   "type": "Weapon Mod"
+ },
+ "3788210493": {
+  "hash": "3788210493",
+  "name": "Momentum Transfer",
+  "type": "Armor Mod General"
  },
  "3789184904": {
   "hash": "3789184904",
@@ -8290,10 +9024,20 @@
   "itemName": "Necrotic Grip",
   "type": "Armor Perk Exotic"
  },
+ "3825575169": {
+  "hash": "3825575169",
+  "name": "Stasis Siphon",
+  "type": "Armor Mod General"
+ },
  "3829100654": {
   "hash": "3829100654",
   "name": "Supreme Nightmare Banisher",
   "type": "Armor Mod Activity"
+ },
+ "3836152936": {
+  "hash": "3836152936",
+  "name": "Shotgun Scavenger",
+  "type": "Armor Mod General"
  },
  "3837077246": {
   "hash": "3837077246",
@@ -8310,6 +9054,16 @@
   "hash": "3841661468",
   "name": "Rapid-Fire Frame",
   "type": "Weapon Frame"
+ },
+ "3857411140": {
+  "hash": "3857411140",
+  "name": "Submachine Gun Targeting",
+  "type": "Armor Mod General"
+ },
+ "3859610803": {
+  "hash": "3859610803",
+  "name": "Sidearm Reserves",
+  "type": "Armor Mod General"
  },
  "3865257976": {
   "hash": "3865257976",
@@ -8357,6 +9111,16 @@
   "hash": "3895804619",
   "name": "Dreambane Mod",
   "type": "Armor Mod Activity"
+ },
+ "3899134858": {
+  "hash": "3899134858",
+  "name": "Arc Siphon",
+  "type": "Armor Mod General"
+ },
+ "3901392720": {
+  "hash": "3901392720",
+  "name": "Fusion Rifle Targeting",
+  "type": "Armor Mod General"
  },
  "3905543891": {
   "hash": "3905543891",
@@ -8423,6 +9187,11 @@
   "name": "Double Fire",
   "type": "Weapon Frame"
  },
+ "3926976952": {
+  "hash": "3926976952",
+  "name": "Sniper Rifle Reserves",
+  "type": "Armor Mod General"
+ },
  "3927722942": {
   "hash": "3927722942",
   "name": "Lasting Impression",
@@ -8480,6 +9249,11 @@
    "catalyst": 3591914291
   }
  },
+ "3961599962": {
+  "hash": "3961599962",
+  "name": "Mobility Mod",
+  "type": "Armor Mod General"
+ },
  "3967134106": {
   "hash": "3967134106",
   "name": "Traveler's Chosen Catalyst",
@@ -8506,6 +9280,11 @@
    "frame": 1927916065,
    "catalyst": 920755188
   }
+ },
+ "3973928133": {
+  "hash": "3973928133",
+  "name": "Trace Rifle Ammo Finder",
+  "type": "Armor Mod General"
  },
  "3974407819": {
   "hash": "3974407819",
@@ -8642,6 +9421,11 @@
   "name": "Enhanced Voltaic Ammo Collector",
   "type": "Armor Mod Activity"
  },
+ "4023967480": {
+  "hash": "4023967480",
+  "name": "Unflinching Trace Rifle Aim",
+  "type": "Armor Mod General"
+ },
  "4024170927": {
   "hash": "4024170927",
   "name": "Misdirection",
@@ -8690,6 +9474,11 @@
   "itemName": "Star-Eater Scales",
   "type": "Armor Perk Exotic"
  },
+ "4048838440": {
+  "hash": "4048838440",
+  "name": "Discipline Mod",
+  "type": "Armor Mod General"
+ },
  "4049631843": {
   "hash": "4049631843",
   "name": "One for All",
@@ -8697,6 +9486,11 @@
   "linkedWith": {
    "perk": 859780267
   }
+ },
+ "4058375008": {
+  "hash": "4058375008",
+  "name": "Grenade Launcher Holster",
+  "type": "Armor Mod General"
  },
  "4058375010": {
   "hash": "4058375010",
@@ -8878,6 +9672,11 @@
   "name": "Voltaic Mote Collector",
   "type": "Armor Mod Activity"
  },
+ "4140815674": {
+  "hash": "4140815674",
+  "name": "Grenade Launcher Loader",
+  "type": "Armor Mod General"
+ },
  "4146729347": {
   "hash": "4146729347",
   "name": "Last Stand",
@@ -8899,6 +9698,11 @@
    "perk": 1419069769,
    "catalyst": 1550063955
   }
+ },
+ "4148827738": {
+  "hash": "4148827738",
+  "name": "Shotgun Ammo Finder",
+  "type": "Armor Mod General"
  },
  "4152709778": {
   "hash": "4152709778",
