@@ -35,36 +35,42 @@ import { makeBasePerk } from './utils/makeBasePerk'
    const subclassList = subclass(subclassArr)
    const craftingRecipeList = weaponCraftingRecipes(inventoryItems, plugSet, craftingRecipeArr)
 
-   const missingPerks: { [key in PerkTypes]?: number[] } = {
+   const missingPerks: { [key in PerkTypes]?: { perk: number; item?: number }[] } = {
       'Weapon Perk': [
-         1431678320, // Alloy Magazine
-         1968497646, // Armor-Piercing Rounds
-         1716000303, // Concussion Grenades
-         4134353779, // Drop Mag
-         1047830412, // Full Choke
-         1561002382, // High-Caliber Rounds
-         3796465595, // Impact Casing
-         1687452232, // Liquid Coils
-         830282363, //  Phase Magazine
-         409831596, //  Proximity Grenades
-         3999527219, // Remote Detonation
-         1140096971, // Seraph Rounds
-         466087222, //  Smoothbore
-         3301904089, // Spike Grenades
-         3373736292, // Sticky Grenades
-         3721627275, // Swap Mag
-         689005463 //  Accelerated Coils
+         { perk: 1431678320 }, // Alloy Magazine
+         { perk: 1968497646 }, // Armor-Piercing Rounds
+         { perk: 1716000303 }, // Concussion Grenades
+         { perk: 4134353779 }, // Drop Mag
+         { perk: 1047830412 }, // Full Choke
+         { perk: 1561002382 }, // High-Caliber Rounds
+         { perk: 3796465595 }, // Impact Casing
+         { perk: 1687452232 }, // Liquid Coils
+         { perk: 830282363 }, //  Phase Magazine
+         { perk: 409831596 }, //  Proximity Grenades
+         { perk: 3999527219 }, // Remote Detonation
+         { perk: 1140096971 }, // Seraph Rounds
+         { perk: 466087222 }, //  Smoothbore
+         { perk: 3301904089 }, // Spike Grenades
+         { perk: 3373736292 }, // Sticky Grenades
+         { perk: 3721627275 }, // Swap Mag
+         { perk: 689005463 }, //  Accelerated Coils
+         { perk: 3032599245 }, // Blinding Grenades
+      ],
+      'Armor Perk Exotic': [
+         { perk: 3651607301, item: 1654461647 }, // Sect of Insight // Aeon Safe
+         { perk: 3683811620, item: 2950045886 }, // Sect of Vigor   // Aeon Sou
+         { perk: 3268255645, item: 3942036043 } //  Sect of Force   // Aeon Swift
       ]
    }
 
-   const manualFixes = {
+   const manualFixes: { [key: string]: { type: PerkTypes } } = {
       // Riven's Curse
       2527938402: {
-         type: 'armorModActivity'
+         type: 'Armor Mod Activity'
       },
       // Transcendent Blessing
       369171376: {
-         type: 'armorModActivity'
+         type: 'Armor Mod Activity'
       }
    }
 
@@ -80,8 +86,13 @@ import { makeBasePerk } from './utils/makeBasePerk'
          ...legendaryWeaponList,
          ...artifactModList,
          ...Object.entries(missingPerks).reduce<{ [key: string]: BasePerk }>((acc, [type, hashArr]) => {
-            hashArr.forEach((hash) => {
-               acc[hash] = makeBasePerk(inventoryItems[hash], type as PerkTypes)
+            hashArr.forEach((data) => {
+               const {perk, item} = data
+               if (item) {
+                  acc[perk] = makeBasePerk(inventoryItems[perk], type as PerkTypes, inventoryItems[item])
+               } else {
+                  acc[perk] = makeBasePerk(inventoryItems[perk], type as PerkTypes)
+               }
             })
             return acc
          }, {})
