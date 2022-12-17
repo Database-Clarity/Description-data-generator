@@ -195,6 +195,6 @@ import { makeBasePerk } from './utils/makeBasePerk'
 
    const finalListWithOutUndefined = JSON.parse(JSON.stringify(finalList))
 
-   fs.writeFileSync('./templates/descriptions.json', JSON.stringify(finalListWithOutUndefined, jsonStringifyCleaner))
+   fs.writeFileSync('./templates/descriptions.json', JSON.stringify(finalListWithOutUndefined, jsonStringifyCleaner, 1))
    console.log('Completed')
 })()
