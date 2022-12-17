@@ -1,5 +1,5 @@
-import { PerkTypes } from "../interfaces/editor.interface"
-import { InventoryItem, InventoryItems } from "../interfaces/inventoryItem.interface"
+import { PerkTypes } from '../interfaces/editor.interface'
+import { InventoryItem } from '../interfaces/inventoryItem.interface'
 
 export const makeBasePerk = (perk: InventoryItem, type: PerkTypes, item?: InventoryItem) => {
    return {

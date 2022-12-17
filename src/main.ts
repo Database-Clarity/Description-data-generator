@@ -53,7 +53,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
          3301904089, // Spike Grenades
          3373736292, // Sticky Grenades
          3721627275, // Swap Mag
-         689005463, //  Accelerated Coils
+         689005463 //  Accelerated Coils
       ]
    }
 
@@ -104,7 +104,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
    }
 
    const finalList = Object.entries(competeList).reduce<{ [key: string]: any }>((acc, [hash, perk]) => {
-      switch (perk.type  as PerkTypes) {
+      switch (perk.type as PerkTypes) {
          case 'Armor Perk Exotic':
             acc[hash] = {
                hash,
