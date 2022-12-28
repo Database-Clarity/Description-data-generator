@@ -1,15 +1,50 @@
 {
- "999": {
+ "1399216": {
+  "hash": "1399216",
+  "name": "Duskfield Grenade",
+  "type": "Subclass Grenade"
+ },
+ "1399217": {
+  "hash": "1399217",
+  "name": "Glacier Grenade",
+  "type": "Subclass Grenade"
+ },
+ "1399219": {
+  "hash": "1399219",
+  "name": "Coldsnap Grenade",
+  "type": "Subclass Grenade"
+ },
+ "8507332": {
+  "hash": "8507332",
+  "name": "Chaotic Exchanger",
+  "itemHash": 1906093346,
+  "itemName": "Contraverse Hold",
+  "type": "Armor Perk Exotic"
+ },
+ "11551321": {
+  "hash": "11551321",
+  "name": "Iron Grip",
+  "type": "Weapon Perk"
+ },
+ "11612903": {
+  "hash": "11612903",
+  "name": "Adrenaline Junkie",
+  "type": "Weapon Perk",
+  "linkedWith": {
+   "perk": 2422968039
+  }
+ },
+ "20616656": {
   "hash": "20616656",
   "name": "Triple Jump",
   "type": "Subclass Movement"
  },
- "888": {
+ "20616658": {
   "hash": "20616658",
   "name": "High Jump",
   "type": "Subclass Movement"
  },
- "777": {
+ "20616659": {
   "hash": "20616659",
   "name": "Strafe Jump",
   "type": "Subclass Movement"
