@@ -27,6 +27,13 @@ jobs:
           npm ci
           npm run build
           npm run generate
+          
+      - name: Deploy generator 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: generator # The folder the action should deploy.
+          branch: main
+          target-folder: generator
 
       - name: Generate data 🚀
         uses: JamesIves/github-pages-deploy-action@v4
