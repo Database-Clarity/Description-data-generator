@@ -31,7 +31,7 @@
   "name": "Adrenaline Junkie",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2422968039
+   "Weapon Perk Enhanced": 2422968039
   }
  },
  "20616656": {
@@ -54,7 +54,7 @@
   "name": "Box Breathing",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2551157718
+   "Weapon Perk": 2551157718
   }
  },
  "24925370": {
@@ -64,8 +64,8 @@
   "itemName": "Traveler's Chosen",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 975429949,
-   "catalyst": 3967134106
+   "Weapon Frame Exotic": 975429949,
+   "Weapon Catalyst Exotic": 3967134106
   }
  },
  "25023897": {
@@ -75,8 +75,8 @@
   "itemName": "Quicksilver Storm",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3131590896,
-   "frame": 3602718766
+   "Weapon Perk Exotic": 3131590896,
+   "Weapon Frame Exotic": 3602718766
   }
  },
  "25156514": {
@@ -94,7 +94,7 @@
   "name": "Dual Loader",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3143051906
+   "Weapon Perk Enhanced": 3143051906
   }
  },
  "25692695": {
@@ -104,8 +104,8 @@
   "itemName": "Tractor Cannon",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1210807262,
-   "catalyst": 456628589
+   "Weapon Frame Exotic": 1210807262,
+   "Weapon Catalyst Exotic": 456628589
   }
  },
  "31057037": {
@@ -123,7 +123,7 @@
   "name": "Opening Shot",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1370847713
+   "Weapon Perk Enhanced": 1370847713
   }
  },
  "64866129": {
@@ -131,7 +131,7 @@
   "name": "Explosive Payload",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3038247973
+   "Weapon Perk": 3038247973
   }
  },
  "79448657": {
@@ -151,8 +151,8 @@
   "itemName": "One Thousand Voices",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3504197951,
-   "frame": 1657056865
+   "Weapon Perk Exotic": 3504197951,
+   "Weapon Frame Exotic": 1657056865
   }
  },
  "83039193": {
@@ -252,7 +252,7 @@
   "name": "Headstone",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1171887445
+   "Weapon Perk Enhanced": 1171887445
   }
  },
  "127335543": {
@@ -262,8 +262,8 @@
   "itemName": "Symmetry",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 4185339856,
-   "catalyst": 4218954970
+   "Weapon Frame Exotic": 4185339856,
+   "Weapon Catalyst Exotic": 4218954970
   }
  },
  "132189785": {
@@ -283,7 +283,7 @@
   "itemName": "Sleeper Simulant",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 3884127242
+   "Weapon Frame Exotic": 3884127242
   }
  },
  "137876701": {
@@ -311,7 +311,7 @@
   "name": "Whirlwind Blade",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3913600130
+   "Weapon Perk": 3913600130
   }
  },
  "155500646": {
@@ -329,7 +329,7 @@
   "name": "Mulligan",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3513791699
+   "Weapon Perk": 3513791699
   }
  },
  "169755979": {
@@ -337,7 +337,7 @@
   "name": "Dragonfly",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2848615171
+   "Weapon Perk": 2848615171
   }
  },
  "176919422": {
@@ -347,8 +347,8 @@
   "itemName": "Skyburner's Oath",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2741975068,
-   "catalyst": 658317088
+   "Weapon Frame Exotic": 2741975068,
+   "Weapon Catalyst Exotic": 658317088
   }
  },
  "178399816": {
@@ -391,7 +391,7 @@
   "name": "Under-Over",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1870851715
+   "Weapon Perk": 1870851715
   }
  },
  "185514250": {
@@ -421,7 +421,7 @@
   "name": "Slideshot",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3161816588
+   "Weapon Perk": 3161816588
   }
  },
  "192157151": {
@@ -436,8 +436,8 @@
   "itemName": "Trinity Ghoul",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1573888036,
-   "catalyst": 3457865914
+   "Weapon Frame Exotic": 1573888036,
+   "Weapon Catalyst Exotic": 3457865914
   }
  },
  "201365942": {
@@ -445,7 +445,7 @@
   "name": "Archer's Tempo",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3523746922
+   "Weapon Perk Enhanced": 3523746922
   }
  },
  "201502208": {
@@ -475,7 +475,7 @@
   "itemName": "Hawkmoon",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 383825919
+   "Weapon Catalyst Exotic": 383825919
   }
  },
  "216781713": {
@@ -495,8 +495,8 @@
   "itemName": "The Manticore",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2656694271,
-   "catalyst": 2797384170
+   "Weapon Perk Exotic": 2656694271,
+   "Weapon Catalyst Exotic": 2797384170
   }
  },
  "229003538": {
@@ -511,8 +511,8 @@
   "itemName": "Osteo Striga",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 4015745376,
-   "frame": 2965975126
+   "Weapon Perk Exotic": 4015745376,
+   "Weapon Frame Exotic": 2965975126
   }
  },
  "229534486": {
@@ -522,7 +522,7 @@
   "itemName": "Hierarchy of Needs",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2226793914
+   "Weapon Frame Exotic": 2226793914
   }
  },
  "235075862": {
@@ -561,7 +561,7 @@
   "name": "Rapid Hit",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2938480696
+   "Weapon Perk Enhanced": 2938480696
   }
  },
  "254337357": {
@@ -569,7 +569,7 @@
   "name": "Reservoir Burst",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1427256713
+   "Weapon Perk": 1427256713
   }
  },
  "263649945": {
@@ -582,7 +582,7 @@
   "name": "Firmly Planted",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3920370755
+   "Weapon Perk Enhanced": 3920370755
   }
  },
  "281315705": {
@@ -592,8 +592,8 @@
   "itemName": "Whisper of the Worm",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3337692349,
-   "catalyst": 2732814938
+   "Weapon Perk Exotic": 3337692349,
+   "Weapon Catalyst Exotic": 2732814938
   }
  },
  "288411554": {
@@ -601,7 +601,7 @@
   "name": "Rampage",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3425386926
+   "Weapon Perk": 3425386926
   }
  },
  "290014589": {
@@ -611,8 +611,8 @@
   "itemName": "The Lament",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2179914730,
-   "catalyst": 1218164788
+   "Weapon Frame Exotic": 2179914730,
+   "Weapon Catalyst Exotic": 1218164788
   }
  },
  "299264772": {
@@ -627,8 +627,8 @@
   "itemName": "Lord of Wolves",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 481338655,
-   "catalyst": 431220296
+   "Weapon Frame Exotic": 481338655,
+   "Weapon Catalyst Exotic": 431220296
   }
  },
  "302702765": {
@@ -653,8 +653,8 @@
   "itemName": "Graviton Lance",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3905543891,
-   "catalyst": 615063266
+   "Weapon Frame Exotic": 3905543891,
+   "Weapon Catalyst Exotic": 615063266
   }
  },
  "320966913": {
@@ -672,7 +672,7 @@
   "name": "Cascade Point",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3751912585
+   "Weapon Perk": 3751912585
   }
  },
  "334466122": {
@@ -682,8 +682,8 @@
   "itemName": "Devil's Ruin",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1059301209,
-   "catalyst": 2732252706
+   "Weapon Perk Exotic": 1059301209,
+   "Weapon Catalyst Exotic": 2732252706
   }
  },
  "344235611": {
@@ -691,7 +691,7 @@
   "name": "Chill Clip",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2978966579
+   "Weapon Perk": 2978966579
   }
  },
  "354401740": {
@@ -699,7 +699,7 @@
   "name": "Assassin's Blade",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3678483220
+   "Weapon Perk Enhanced": 3678483220
   }
  },
  "357349821": {
@@ -772,7 +772,7 @@
   "name": "Target Lock",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2939589096
+   "Weapon Perk Enhanced": 2939589096
   }
  },
  "369171376": {
@@ -792,8 +792,8 @@
   "itemName": "Legend of Acrius",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1650852150,
-   "catalyst": 456628588
+   "Weapon Perk Exotic": 1650852150,
+   "Weapon Catalyst Exotic": 456628588
   }
  },
  "375052468": {
@@ -818,8 +818,8 @@
   "itemName": "MIDA Multi-Tool",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3100590152,
-   "catalyst": 3466057365
+   "Weapon Perk Exotic": 3100590152,
+   "Weapon Catalyst Exotic": 3466057365
   }
  },
  "378204240": {
@@ -839,7 +839,7 @@
   "itemName": "Hawkmoon",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 213689231
+   "Weapon Frame Exotic": 213689231
   }
  },
  "384272571": {
@@ -868,7 +868,7 @@
   "itemName": "Anarchy",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 1178660677
+   "Weapon Catalyst Exotic": 1178660677
   }
  },
  "395096174": {
@@ -888,7 +888,7 @@
   "name": "Firing Line",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1771339417
+   "Weapon Perk": 1771339417
   }
  },
  "399528760": {
@@ -901,7 +901,7 @@
   "name": "Grave Robber",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1631667848
+   "Weapon Perk": 1631667848
   }
  },
  "403494087": {
@@ -914,7 +914,7 @@
   "name": "Tracking Module",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3977735242
+   "Weapon Perk": 3977735242
   }
  },
  "407549716": {
@@ -924,8 +924,8 @@
   "itemName": "The Fourth Horseman",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2223914385,
-   "catalyst": 2826187530
+   "Weapon Frame Exotic": 2223914385,
+   "Weapon Catalyst Exotic": 2826187530
   }
  },
  "409831596": {
@@ -940,8 +940,8 @@
   "itemName": "Deathbringer",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3333994164,
-   "catalyst": 1298151900
+   "Weapon Perk Exotic": 3333994164,
+   "Weapon Catalyst Exotic": 1298151900
   }
  },
  "425960662": {
@@ -951,8 +951,8 @@
   "itemName": "Fighting Lion",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2003108620,
-   "catalyst": 924149234
+   "Weapon Perk Exotic": 2003108620,
+   "Weapon Catalyst Exotic": 924149234
   }
  },
  "426473316": {
@@ -977,8 +977,8 @@
   "itemName": "Lord of Wolves",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 299272945,
-   "frame": 481338655
+   "Weapon Perk Exotic": 299272945,
+   "Weapon Frame Exotic": 481338655
   }
  },
  "431220297": {
@@ -988,8 +988,8 @@
   "itemName": "The Chaperone",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1658733671,
-   "frame": 1394384862
+   "Weapon Perk Exotic": 1658733671,
+   "Weapon Frame Exotic": 1394384862
   }
  },
  "433469519": {
@@ -1002,7 +1002,7 @@
   "name": "Harmony",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2748801589
+   "Weapon Perk Enhanced": 2748801589
   }
  },
  "453527127": {
@@ -1015,7 +1015,7 @@
   "name": "Blunt Execution Rounds",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2529412083
+   "Weapon Perk Enhanced": 2529412083
   }
  },
  "456628588": {
@@ -1025,8 +1025,8 @@
   "itemName": "Legend of Acrius",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1650852150,
-   "frame": 372430833
+   "Weapon Perk Exotic": 1650852150,
+   "Weapon Frame Exotic": 372430833
   }
  },
  "456628589": {
@@ -1036,8 +1036,8 @@
   "itemName": "Tractor Cannon",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 25692695,
-   "frame": 1210807262
+   "Weapon Perk Exotic": 25692695,
+   "Weapon Frame Exotic": 1210807262
   }
  },
  "459441288": {
@@ -1047,8 +1047,8 @@
   "itemName": "Wavesplitter",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2306441428,
-   "catalyst": 3156882011
+   "Weapon Perk Exotic": 2306441428,
+   "Weapon Catalyst Exotic": 3156882011
   }
  },
  "459449847": {
@@ -1061,7 +1061,7 @@
   "name": "Headseeker",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4045335048
+   "Weapon Perk Enhanced": 4045335048
   }
  },
  "461595545": {
@@ -1069,7 +1069,7 @@
   "name": "Reconstruction",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1523832109
+   "Weapon Perk": 1523832109
   }
  },
  "466087222": {
@@ -1084,7 +1084,7 @@
   "itemName": "Le Monarque",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 2186532310
+   "Weapon Frame Exotic": 2186532310
   }
  },
  "469281040": {
@@ -1107,7 +1107,7 @@
   "name": "Recombination",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3335686050
+   "Weapon Perk Enhanced": 3335686050
   }
  },
  "474269988": {
@@ -1122,8 +1122,8 @@
   "itemName": "Lord of Wolves",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 299272945,
-   "catalyst": 431220296
+   "Weapon Perk Exotic": 299272945,
+   "Weapon Catalyst Exotic": 431220296
   }
  },
  "481860150": {
@@ -1152,8 +1152,8 @@
   "itemName": "Riskrunner",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1530804125,
-   "frame": 2516532331
+   "Weapon Perk Exotic": 1530804125,
+   "Weapon Frame Exotic": 2516532331
   }
  },
  "489506521": {
@@ -1181,7 +1181,7 @@
   "name": "Threat Detector",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 4071163871
+   "Weapon Perk": 4071163871
   }
  },
  "498878196": {
@@ -1196,8 +1196,8 @@
   "itemName": "Borealis",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3081173348,
-   "catalyst": 2085058763
+   "Weapon Frame Exotic": 3081173348,
+   "Weapon Catalyst Exotic": 2085058763
   }
  },
  "507151084": {
@@ -1207,8 +1207,8 @@
   "itemName": "Sturm",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2238035098,
-   "catalyst": 1824496860
+   "Weapon Perk Exotic": 2238035098,
+   "Weapon Catalyst Exotic": 1824496860
   }
  },
  "509074078": {
@@ -1216,7 +1216,7 @@
   "name": "Steady Hands",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 843318450
+   "Weapon Perk Enhanced": 843318450
   }
  },
  "509594246": {
@@ -1224,7 +1224,7 @@
   "name": "Rangefinder",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2846385770
+   "Weapon Perk": 2846385770
   }
  },
  "515704826": {
@@ -1259,7 +1259,7 @@
   "itemName": "Izanagi's Burden",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 1070100196
+   "Weapon Frame Exotic": 1070100196
   }
  },
  "532451225": {
@@ -1272,7 +1272,7 @@
   "name": "Pugilist",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 691659142
+   "Weapon Perk": 691659142
   }
  },
  "536517534": {
@@ -1282,8 +1282,8 @@
   "itemName": "Duality",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3937312904,
-   "catalyst": 3591914291
+   "Weapon Perk Exotic": 3937312904,
+   "Weapon Catalyst Exotic": 3591914291
   }
  },
  "537774540": {
@@ -1328,7 +1328,7 @@
   "name": "Killing Tally",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2896748467
+   "Weapon Perk Enhanced": 2896748467
   }
  },
  "566815328": {
@@ -1355,8 +1355,8 @@
   "itemName": "Prometheus Lens",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3470828242,
-   "catalyst": 1684153732
+   "Weapon Perk Exotic": 3470828242,
+   "Weapon Catalyst Exotic": 1684153732
   }
  },
  "573122728": {
@@ -1364,7 +1364,7 @@
   "name": "Triple Tap",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3400784728
+   "Weapon Perk": 3400784728
   }
  },
  "581875391": {
@@ -1377,7 +1377,7 @@
   "name": "Moving Target",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2717805783
+   "Weapon Perk Enhanced": 2717805783
   }
  },
  "591790007": {
@@ -1411,7 +1411,7 @@
   "name": "Compulsive Reloader",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 671806388
+   "Weapon Perk": 671806388
   }
  },
  "595829387": {
@@ -1426,7 +1426,7 @@
   "name": "Chain Reaction",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2396489472
+   "Weapon Perk": 2396489472
   }
  },
  "615063266": {
@@ -1436,8 +1436,8 @@
   "itemName": "Graviton Lance",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 320534106,
-   "frame": 3905543891
+   "Weapon Perk Exotic": 320534106,
+   "Weapon Frame Exotic": 3905543891
   }
  },
  "615063267": {
@@ -1447,8 +1447,8 @@
   "itemName": "Vigilance Wing",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 4146729347,
-   "frame": 2307143135
+   "Weapon Perk Exotic": 4146729347,
+   "Weapon Frame Exotic": 2307143135
   }
  },
  "617966211": {
@@ -1456,7 +1456,7 @@
   "name": "Successful Warm-Up",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2652708987
+   "Weapon Perk": 2652708987
   }
  },
  "621911507": {
@@ -1476,7 +1476,7 @@
   "name": "Desperado",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3047969693
+   "Weapon Perk": 3047969693
   }
  },
  "630329983": {
@@ -1486,8 +1486,8 @@
   "itemName": "The Huckleberry",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3551326236,
-   "catalyst": 3459475454
+   "Weapon Perk Exotic": 3551326236,
+   "Weapon Catalyst Exotic": 3459475454
   }
  },
  "631976966": {
@@ -1532,8 +1532,8 @@
   "itemName": "Ace of Spades",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1561789734,
-   "catalyst": 3708505013
+   "Weapon Perk Exotic": 1561789734,
+   "Weapon Catalyst Exotic": 3708505013
   }
  },
  "650047261": {
@@ -1553,8 +1553,8 @@
   "itemName": "Merciless",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2333607307,
-   "catalyst": 1149703256
+   "Weapon Perk Exotic": 2333607307,
+   "Weapon Catalyst Exotic": 1149703256
   }
  },
  "658317088": {
@@ -1564,8 +1564,8 @@
   "itemName": "Skyburner's Oath",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 176919422,
-   "frame": 2741975068
+   "Weapon Perk Exotic": 176919422,
+   "Weapon Frame Exotic": 2741975068
   }
  },
  "667313240": {
@@ -1588,7 +1588,7 @@
   "name": "Compulsive Reloader",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 595108252
+   "Weapon Perk Enhanced": 595108252
   }
  },
  "674410190": {
@@ -1598,8 +1598,8 @@
   "itemName": "Forerunner",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2795311559,
-   "frame": 2984682260
+   "Weapon Perk Exotic": 2795311559,
+   "Weapon Frame Exotic": 2984682260
   }
  },
  "680193725": {
@@ -1622,7 +1622,7 @@
   "name": "Pugilist",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 536173722
+   "Weapon Perk Enhanced": 536173722
   }
  },
  "692285813": {
@@ -1637,7 +1637,7 @@
   "name": "Eye of the Storm",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3719974635
+   "Weapon Perk Enhanced": 3719974635
   }
  },
  "699693452": {
@@ -1657,7 +1657,7 @@
   "name": "Quickdraw",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1961144892
+   "Weapon Perk Enhanced": 1961144892
   }
  },
  "711234314": {
@@ -1665,7 +1665,7 @@
   "name": "Elemental Capacitor",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3511092054
+   "Weapon Perk": 3511092054
   }
  },
  "711628886": {
@@ -1673,7 +1673,7 @@
   "name": "Perfect Float",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2272927194
+   "Weapon Perk": 2272927194
   }
  },
  "712951940": {
@@ -1705,8 +1705,8 @@
   "itemName": "Lumina",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2144092201,
-   "catalyst": 2271572658
+   "Weapon Frame Exotic": 2144092201,
+   "Weapon Catalyst Exotic": 2271572658
   }
  },
  "743857847": {
@@ -1724,7 +1724,7 @@
   "name": "Well-Rounded",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2139363611
+   "Weapon Perk Enhanced": 2139363611
   }
  },
  "744770875": {
@@ -1739,8 +1739,8 @@
   "itemName": "Witherhoard",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3063320916,
-   "catalyst": 2888418988
+   "Weapon Frame Exotic": 3063320916,
+   "Weapon Catalyst Exotic": 2888418988
   }
  },
  "749060462": {
@@ -1795,8 +1795,8 @@
   "itemName": "The Colony",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2019952880,
-   "frame": 3913463509
+   "Weapon Perk Exotic": 2019952880,
+   "Weapon Frame Exotic": 3913463509
   }
  },
  "776531651": {
@@ -1804,7 +1804,7 @@
   "name": "Repulsor Brace",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2541826827
+   "Weapon Perk Enhanced": 2541826827
   }
  },
  "777637181": {
@@ -1814,8 +1814,8 @@
   "itemName": "Two-Tailed Fox",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3649430342,
-   "catalyst": 4079681314
+   "Weapon Frame Exotic": 3649430342,
+   "Weapon Catalyst Exotic": 4079681314
   }
  },
  "777774560": {
@@ -1823,7 +1823,7 @@
   "name": "Osmosis",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1774574192
+   "Weapon Perk": 1774574192
   }
  },
  "781192741": {
@@ -1831,7 +1831,7 @@
   "name": "Surrounded",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3708227201
+   "Weapon Perk": 3708227201
   }
  },
  "788178929": {
@@ -1839,7 +1839,7 @@
   "name": "One-Two Punch",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2679249093
+   "Weapon Perk": 2679249093
   }
  },
  "798520364": {
@@ -1849,8 +1849,8 @@
   "itemName": "Ruinous Effigy",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1657401727,
-   "catalyst": 1206010521
+   "Weapon Frame Exotic": 1657401727,
+   "Weapon Catalyst Exotic": 1206010521
   }
  },
  "802623077": {
@@ -1863,7 +1863,7 @@
   "name": "Trench Barrel",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2459015849
+   "Weapon Perk Enhanced": 2459015849
   }
  },
  "806917387": {
@@ -1873,8 +1873,8 @@
   "itemName": "Vex Mythoclast",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3610750208,
-   "catalyst": 838219733
+   "Weapon Frame Exotic": 3610750208,
+   "Weapon Catalyst Exotic": 838219733
   }
  },
  "806997698": {
@@ -1914,7 +1914,7 @@
   "name": "Backup Plan",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1600092898
+   "Weapon Perk": 1600092898
   }
  },
  "830282363": {
@@ -1927,7 +1927,7 @@
   "name": "Kickstart",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1754714824
+   "Weapon Perk": 1754714824
   }
  },
  "836583820": {
@@ -1942,8 +1942,8 @@
   "itemName": "Vex Mythoclast",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 806917387,
-   "frame": 3610750208
+   "Weapon Perk Exotic": 806917387,
+   "Weapon Frame Exotic": 3610750208
   }
  },
  "838873202": {
@@ -1951,7 +1951,7 @@
   "name": "Encore",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1195158366
+   "Weapon Perk": 1195158366
   }
  },
  "843318450": {
@@ -1959,7 +1959,7 @@
   "name": "Steady Hands",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 509074078
+   "Weapon Perk": 509074078
   }
  },
  "844190854": {
@@ -1969,8 +1969,8 @@
   "itemName": "Edge of Concurrence",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3551884421,
-   "catalyst": 1731191722
+   "Weapon Frame Exotic": 3551884421,
+   "Weapon Catalyst Exotic": 1731191722
   }
  },
  "848860060": {
@@ -1978,7 +1978,7 @@
   "name": "Fourth Time's the Charm",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1354429876
+   "Weapon Perk": 1354429876
   }
  },
  "852252788": {
@@ -2001,7 +2001,7 @@
   "name": "Unrelenting",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3108830275
+   "Weapon Perk": 3108830275
   }
  },
  "859780267": {
@@ -2009,7 +2009,7 @@
   "name": "One for All",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 4049631843
+   "Weapon Perk": 4049631843
   }
  },
  "861489047": {
@@ -2019,8 +2019,8 @@
   "itemName": "Rat King",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2121086290,
-   "catalyst": 1758592809
+   "Weapon Frame Exotic": 2121086290,
+   "Weapon Catalyst Exotic": 1758592809
   }
  },
  "862513617": {
@@ -2030,7 +2030,7 @@
   "itemName": "Jötunn",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 1656957541
+   "Weapon Frame Exotic": 1656957541
   }
  },
  "865380761": {
@@ -2050,8 +2050,8 @@
   "itemName": "Heartshadow",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1100877327,
-   "catalyst": 3072857252
+   "Weapon Frame Exotic": 1100877327,
+   "Weapon Catalyst Exotic": 3072857252
   }
  },
  "878286503": {
@@ -2130,7 +2130,7 @@
   "name": "Sneak Bow",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1663363584
+   "Weapon Perk Enhanced": 1663363584
   }
  },
  "916649862": {
@@ -2150,8 +2150,8 @@
   "itemName": "Telesto",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3970637031,
-   "frame": 1927916065
+   "Weapon Perk Exotic": 3970637031,
+   "Weapon Frame Exotic": 1927916065
   }
  },
  "921817150": {
@@ -2168,8 +2168,8 @@
   "itemName": "Fighting Lion",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2003108620,
-   "frame": 425960662
+   "Weapon Perk Exotic": 2003108620,
+   "Weapon Frame Exotic": 425960662
   }
  },
  "924149235": {
@@ -2179,7 +2179,7 @@
   "itemName": "The Prospector",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 2977709078
+   "Weapon Frame Exotic": 2977709078
   }
  },
  "926349160": {
@@ -2215,8 +2215,8 @@
   "itemName": "D.A.R.C.I.",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 939227542,
-   "catalyst": 2085058762
+   "Weapon Perk Exotic": 939227542,
+   "Weapon Catalyst Exotic": 2085058762
   }
  },
  "939227542": {
@@ -2226,8 +2226,8 @@
   "itemName": "D.A.R.C.I.",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 938999636,
-   "catalyst": 2085058762
+   "Weapon Frame Exotic": 938999636,
+   "Weapon Catalyst Exotic": 2085058762
   }
  },
  "941997506": {
@@ -2242,8 +2242,8 @@
   "itemName": "SUROS Regime",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1378047685,
-   "catalyst": 1733620422
+   "Weapon Perk Exotic": 1378047685,
+   "Weapon Catalyst Exotic": 1733620422
   }
  },
  "950703238": {
@@ -2256,7 +2256,7 @@
   "name": "Impulse Amplifier",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3878366039
+   "Weapon Perk Enhanced": 3878366039
   }
  },
  "956390015": {
@@ -2269,7 +2269,7 @@
   "name": "Snapshot Sights",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4116820839
+   "Weapon Perk Enhanced": 4116820839
   }
  },
  "960810156": {
@@ -2277,7 +2277,7 @@
   "name": "Danger Zone",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1077019636
+   "Weapon Perk Enhanced": 1077019636
   }
  },
  "961505134": {
@@ -2287,8 +2287,8 @@
   "itemName": "Tommy's Matchbook",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3772485195,
-   "catalyst": 4001063065
+   "Weapon Perk Exotic": 3772485195,
+   "Weapon Catalyst Exotic": 4001063065
   }
  },
  "970163821": {
@@ -2298,8 +2298,8 @@
   "itemName": "Ager's Scepter",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1218765758,
-   "frame": 3164944314
+   "Weapon Perk Exotic": 1218765758,
+   "Weapon Frame Exotic": 3164944314
   }
  },
  "972757866": {
@@ -2307,7 +2307,7 @@
   "name": "Pulse Monitor",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1685378950
+   "Weapon Perk Enhanced": 1685378950
   }
  },
  "975429949": {
@@ -2317,8 +2317,8 @@
   "itemName": "Traveler's Chosen",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 24925370,
-   "catalyst": 3967134106
+   "Weapon Perk Exotic": 24925370,
+   "Weapon Catalyst Exotic": 3967134106
   }
  },
  "984527513": {
@@ -2333,8 +2333,8 @@
   "itemName": "Cryosthesia 77K",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1385518514,
-   "catalyst": 1023764762
+   "Weapon Perk Exotic": 1385518514,
+   "Weapon Catalyst Exotic": 1023764762
   }
  },
  "987267082": {
@@ -2347,7 +2347,7 @@
   "name": "Tunnel Vision",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2946784966
+   "Weapon Perk": 2946784966
   }
  },
  "996573084": {
@@ -2362,7 +2362,7 @@
   "itemName": "Polaris Lance",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 4067652714
+   "Weapon Catalyst Exotic": 4067652714
   }
  },
  "1008128453": {
@@ -2370,7 +2370,7 @@
   "name": "Cornered",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1799762209
+   "Weapon Perk": 1799762209
   }
  },
  "1013086087": {
@@ -2388,7 +2388,7 @@
   "name": "Kill Clip",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2923251173
+   "Weapon Perk Enhanced": 2923251173
   }
  },
  "1016030582": {
@@ -2418,8 +2418,8 @@
   "itemName": "Cryosthesia 77K",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1385518514,
-   "frame": 986191425
+   "Weapon Perk Exotic": 1385518514,
+   "Weapon Frame Exotic": 986191425
   }
  },
  "1027896051": {
@@ -2434,8 +2434,8 @@
   "itemName": "Crimson",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2383960413,
-   "catalyst": 1783582993
+   "Weapon Perk Exotic": 2383960413,
+   "Weapon Catalyst Exotic": 1783582993
   }
  },
  "1034287523": {
@@ -2450,8 +2450,8 @@
   "itemName": "Coldheart",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2482418662,
-   "catalyst": 1249968539
+   "Weapon Perk Exotic": 2482418662,
+   "Weapon Catalyst Exotic": 1249968539
   }
  },
  "1038135636": {
@@ -2479,7 +2479,7 @@
   "name": "Adaptive Munitions",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3431277734
+   "Weapon Perk Enhanced": 3431277734
   }
  },
  "1050260245": {
@@ -2529,8 +2529,8 @@
   "itemName": "Devil's Ruin",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 334466122,
-   "catalyst": 2732252706
+   "Weapon Frame Exotic": 334466122,
+   "Weapon Catalyst Exotic": 2732252706
   }
  },
  "1061006937": {
@@ -2540,7 +2540,7 @@
   "itemName": "The Queenbreaker",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 1531126198
+   "Weapon Frame Exotic": 1531126198
   }
  },
  "1068043187": {
@@ -2560,7 +2560,7 @@
   "itemName": "Izanagi's Burden",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 529188544
+   "Weapon Catalyst Exotic": 529188544
   }
  },
  "1077019636": {
@@ -2568,7 +2568,7 @@
   "name": "Danger Zone",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 960810156
+   "Weapon Perk": 960810156
   }
  },
  "1081893460": {
@@ -2600,8 +2600,8 @@
   "itemName": "Heartshadow",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 873883409,
-   "catalyst": 3072857252
+   "Weapon Perk Exotic": 873883409,
+   "Weapon Catalyst Exotic": 3072857252
   }
  },
  "1127642993": {
@@ -2636,8 +2636,8 @@
   "itemName": "Edge of Action",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2379536009,
-   "frame": 1900919151
+   "Weapon Perk Exotic": 2379536009,
+   "Weapon Frame Exotic": 1900919151
   }
  },
  "1139822081": {
@@ -2671,8 +2671,8 @@
   "itemName": "Merciless",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2333607307,
-   "frame": 656200654
+   "Weapon Perk Exotic": 2333607307,
+   "Weapon Frame Exotic": 656200654
   }
  },
  "1155472384": {
@@ -2701,7 +2701,7 @@
   "name": "Swashbuckler",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 4082225868
+   "Weapon Perk": 4082225868
   }
  },
  "1163213078": {
@@ -2716,7 +2716,7 @@
   "name": "Lasting Impression",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3927722942
+   "Weapon Perk": 3927722942
   }
  },
  "1168162263": {
@@ -2724,7 +2724,7 @@
   "name": "Outlaw",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1347741687
+   "Weapon Perk Enhanced": 1347741687
   }
  },
  "1171147302": {
@@ -2732,7 +2732,7 @@
   "name": "Feeding Frenzy",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2779035018
+   "Weapon Perk": 2779035018
   }
  },
  "1171887445": {
@@ -2740,7 +2740,7 @@
   "name": "Headstone",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 124408337
+   "Weapon Perk": 124408337
   }
  },
  "1172098417": {
@@ -2748,7 +2748,7 @@
   "name": "Sleight of Hand",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2172504645
+   "Weapon Perk": 2172504645
   }
  },
  "1172413778": {
@@ -2756,7 +2756,7 @@
   "name": "Thresh",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2726471870
+   "Weapon Perk": 2726471870
   }
  },
  "1174163613": {
@@ -2766,8 +2766,8 @@
   "itemName": "Parasite",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1679262379,
-   "catalyst": 4259872957
+   "Weapon Perk Exotic": 1679262379,
+   "Weapon Catalyst Exotic": 4259872957
   }
  },
  "1178660677": {
@@ -2777,7 +2777,7 @@
   "itemName": "Anarchy",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 389268985
+   "Weapon Frame Exotic": 389268985
   }
  },
  "1178686995": {
@@ -2787,8 +2787,8 @@
   "itemName": "The Wardcliff Coil",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2473404935,
-   "catalyst": 2409031770
+   "Weapon Frame Exotic": 2473404935,
+   "Weapon Catalyst Exotic": 2409031770
   }
  },
  "1183436451": {
@@ -2796,7 +2796,7 @@
   "name": "Firefly",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3824105627
+   "Weapon Perk": 3824105627
   }
  },
  "1185273366": {
@@ -2806,8 +2806,8 @@
   "itemName": "Heir Apparent",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2608508147,
-   "catalyst": 1324556594
+   "Weapon Frame Exotic": 2608508147,
+   "Weapon Catalyst Exotic": 1324556594
   }
  },
  "1185480639": {
@@ -2817,7 +2817,7 @@
   "itemName": "Divinity",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1797707170
+   "Weapon Frame Exotic": 1797707170
   }
  },
  "1186480754": {
@@ -2827,8 +2827,8 @@
   "itemName": "Bastion",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 4190643473,
-   "catalyst": 4273298922
+   "Weapon Perk Exotic": 4190643473,
+   "Weapon Catalyst Exotic": 4273298922
   }
  },
  "1195158366": {
@@ -2836,7 +2836,7 @@
   "name": "Encore",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 838873202
+   "Weapon Perk Enhanced": 838873202
   }
  },
  "1196831979": {
@@ -2856,8 +2856,8 @@
   "itemName": "Ruinous Effigy",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 798520364,
-   "frame": 1657401727
+   "Weapon Perk Exotic": 798520364,
+   "Weapon Frame Exotic": 1657401727
   }
  },
  "1207025932": {
@@ -2872,8 +2872,8 @@
   "itemName": "Delicate Tomb",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2585427437,
-   "catalyst": 1719307618
+   "Weapon Frame Exotic": 2585427437,
+   "Weapon Catalyst Exotic": 1719307618
   }
  },
  "1210807262": {
@@ -2883,8 +2883,8 @@
   "itemName": "Tractor Cannon",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 25692695,
-   "catalyst": 456628589
+   "Weapon Perk Exotic": 25692695,
+   "Weapon Catalyst Exotic": 456628589
   }
  },
  "1211775759": {
@@ -2901,8 +2901,8 @@
   "itemName": "The Lament",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 290014589,
-   "frame": 2179914730
+   "Weapon Perk Exotic": 290014589,
+   "Weapon Frame Exotic": 2179914730
   }
  },
  "1218765758": {
@@ -2912,8 +2912,8 @@
   "itemName": "Ager's Scepter",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3164944314,
-   "catalyst": 970163821
+   "Weapon Frame Exotic": 3164944314,
+   "Weapon Catalyst Exotic": 970163821
   }
  },
  "1220310607": {
@@ -2948,8 +2948,8 @@
   "itemName": "Malfeasance",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2130042297,
-   "frame": 1791592647
+   "Weapon Perk Exotic": 2130042297,
+   "Weapon Frame Exotic": 1791592647
   }
  },
  "1236001742": {
@@ -2989,8 +2989,8 @@
   "itemName": "Sweet Business",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1853177948,
-   "frame": 3755070117
+   "Weapon Perk Exotic": 1853177948,
+   "Weapon Frame Exotic": 3755070117
   }
  },
  "1249968539": {
@@ -3000,8 +3000,8 @@
   "itemName": "Coldheart",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2482418662,
-   "frame": 1036269296
+   "Weapon Perk Exotic": 2482418662,
+   "Weapon Frame Exotic": 1036269296
   }
  },
  "1250481499": {
@@ -3031,8 +3031,8 @@
   "itemName": "Trespasser",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2641107734,
-   "catalyst": 2895039606
+   "Weapon Frame Exotic": 2641107734,
+   "Weapon Catalyst Exotic": 2895039606
   }
  },
  "1275731761": {
@@ -3057,8 +3057,8 @@
   "itemName": "Eyes of Tomorrow",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2200569208,
-   "catalyst": 2835258088
+   "Weapon Frame Exotic": 2200569208,
+   "Weapon Catalyst Exotic": 2835258088
   }
  },
  "1282254042": {
@@ -3073,8 +3073,8 @@
   "itemName": "Cerberus+1",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3208839961,
-   "catalyst": 1380383475
+   "Weapon Frame Exotic": 3208839961,
+   "Weapon Catalyst Exotic": 1380383475
   }
  },
  "1291268260": {
@@ -3124,8 +3124,8 @@
   "itemName": "Deathbringer",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3333994164,
-   "frame": 411799453
+   "Weapon Perk Exotic": 3333994164,
+   "Weapon Frame Exotic": 411799453
   }
  },
  "1300107783": {
@@ -3140,7 +3140,7 @@
   "itemName": "Dead Man's Tale",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 1319823571
+   "Weapon Frame Exotic": 1319823571
   }
  },
  "1303690937": {
@@ -3155,8 +3155,8 @@
   "itemName": "Salvation's Grip",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1549056416,
-   "catalyst": 2359854504
+   "Weapon Perk Exotic": 1549056416,
+   "Weapon Catalyst Exotic": 2359854504
   }
  },
  "1316753551": {
@@ -3171,7 +3171,7 @@
   "itemName": "Dead Man's Tale",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 1301843770
+   "Weapon Catalyst Exotic": 1301843770
   }
  },
  "1322370662": {
@@ -3186,7 +3186,7 @@
   "itemName": "Bad Juju",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 4004944400
+   "Weapon Frame Exotic": 4004944400
   }
  },
  "1324556594": {
@@ -3196,8 +3196,8 @@
   "itemName": "Heir Apparent",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1185273366,
-   "frame": 2608508147
+   "Weapon Perk Exotic": 1185273366,
+   "Weapon Frame Exotic": 2608508147
   }
  },
  "1324869195": {
@@ -3239,7 +3239,7 @@
   "name": "Outlaw",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1168162263
+   "Weapon Perk": 1168162263
   }
  },
  "1354429876": {
@@ -3247,7 +3247,7 @@
   "name": "Fourth Time's the Charm",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 848860060
+   "Weapon Perk Enhanced": 848860060
   }
  },
  "1358633824": {
@@ -3265,7 +3265,7 @@
   "name": "Dynamic Sway Reduction",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3060983774
+   "Weapon Perk Enhanced": 3060983774
   }
  },
  "1360604625": {
@@ -3308,7 +3308,7 @@
   "name": "Gutshot Straight",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4200236906
+   "Weapon Perk Enhanced": 4200236906
   }
  },
  "1370847713": {
@@ -3316,7 +3316,7 @@
   "name": "Opening Shot",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 47981717
+   "Weapon Perk": 47981717
   }
  },
  "1371877916": {
@@ -3338,8 +3338,8 @@
   "itemName": "SUROS Regime",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 944506345,
-   "catalyst": 1733620422
+   "Weapon Frame Exotic": 944506345,
+   "Weapon Catalyst Exotic": 1733620422
   }
  },
  "1380061575": {
@@ -3369,8 +3369,8 @@
   "itemName": "Cerberus+1",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1289604610,
-   "frame": 3208839961
+   "Weapon Perk Exotic": 1289604610,
+   "Weapon Frame Exotic": 3208839961
   }
  },
  "1385518514": {
@@ -3380,8 +3380,8 @@
   "itemName": "Cryosthesia 77K",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 986191425,
-   "catalyst": 1023764762
+   "Weapon Frame Exotic": 986191425,
+   "Weapon Catalyst Exotic": 1023764762
   }
  },
  "1394384862": {
@@ -3391,8 +3391,8 @@
   "itemName": "The Chaperone",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1658733671,
-   "catalyst": 431220297
+   "Weapon Perk Exotic": 1658733671,
+   "Weapon Catalyst Exotic": 431220297
   }
  },
  "1395789926": {
@@ -3427,8 +3427,8 @@
   "itemName": "Grand Overture",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2940035732,
-   "catalyst": 2094761202
+   "Weapon Frame Exotic": 2940035732,
+   "Weapon Catalyst Exotic": 2094761202
   }
  },
  "1409206216": {
@@ -3436,7 +3436,7 @@
   "name": "Stats for All",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1583705720
+   "Weapon Perk": 1583705720
   }
  },
  "1409312565": {
@@ -3446,8 +3446,8 @@
   "itemName": "Cloudstrike",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3117514172,
-   "frame": 2909403175
+   "Weapon Perk Exotic": 3117514172,
+   "Weapon Frame Exotic": 2909403175
   }
  },
  "1419069769": {
@@ -3457,8 +3457,8 @@
   "itemName": "Thunderlord",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 4148158229,
-   "catalyst": 1550063955
+   "Weapon Frame Exotic": 4148158229,
+   "Weapon Catalyst Exotic": 1550063955
   }
  },
  "1420473289": {
@@ -3473,7 +3473,7 @@
   "name": "Reservoir Burst",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 254337357
+   "Weapon Perk Enhanced": 254337357
   }
  },
  "1428297954": {
@@ -3481,7 +3481,7 @@
   "name": "Perpetual Motion",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2014892510
+   "Weapon Perk Enhanced": 2014892510
   }
  },
  "1429600943": {
@@ -3549,8 +3549,8 @@
   "itemName": "Wish-Ender",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2287699930,
-   "catalyst": 3457865915
+   "Weapon Perk Exotic": 2287699930,
+   "Weapon Catalyst Exotic": 3457865915
   }
  },
  "1470370538": {
@@ -3590,7 +3590,7 @@
   "itemName": "Monte Carlo",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2814973067
+   "Weapon Perk Exotic": 2814973067
   }
  },
  "1484685884": {
@@ -3620,7 +3620,7 @@
   "itemName": "The Jade Rabbit",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 3668782036
+   "Weapon Frame Exotic": 3668782036
   }
  },
  "1499759470": {
@@ -3653,7 +3653,7 @@
   "name": "Tap the Trigger",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1890422124
+   "Weapon Perk": 1890422124
   }
  },
  "1523832109": {
@@ -3661,7 +3661,7 @@
   "name": "Reconstruction",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 461595545
+   "Weapon Perk Enhanced": 461595545
   }
  },
  "1525239159": {
@@ -3679,7 +3679,7 @@
   "name": "Outlaw",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1347741687
+   "Weapon Perk Enhanced": 1347741687
   }
  },
  "1530804125": {
@@ -3689,8 +3689,8 @@
   "itemName": "Riskrunner",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2516532331,
-   "catalyst": 484491717
+   "Weapon Frame Exotic": 2516532331,
+   "Weapon Catalyst Exotic": 484491717
   }
  },
  "1531126198": {
@@ -3700,7 +3700,7 @@
   "itemName": "The Queenbreaker",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 1061006937
+   "Weapon Catalyst Exotic": 1061006937
   }
  },
  "1534061443": {
@@ -3718,7 +3718,7 @@
   "name": "Sympathetic Arsenal",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3350417888
+   "Weapon Perk": 3350417888
   }
  },
  "1545231802": {
@@ -3726,7 +3726,7 @@
   "name": "Redirection",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3201496230
+   "Weapon Perk": 3201496230
   }
  },
  "1546637391": {
@@ -3734,7 +3734,7 @@
   "name": "Vorpal Weapon",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3418165135
+   "Weapon Perk Enhanced": 3418165135
   }
  },
  "1547656727": {
@@ -3749,8 +3749,8 @@
   "itemName": "Salvation's Grip",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1315870387,
-   "catalyst": 2359854504
+   "Weapon Frame Exotic": 1315870387,
+   "Weapon Catalyst Exotic": 2359854504
   }
  },
  "1550063955": {
@@ -3760,8 +3760,8 @@
   "itemName": "Thunderlord",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1419069769,
-   "frame": 4148158229
+   "Weapon Perk Exotic": 1419069769,
+   "Weapon Frame Exotic": 4148158229
   }
  },
  "1551736345": {
@@ -3769,7 +3769,7 @@
   "name": "Explosive Head",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3365897133
+   "Weapon Perk": 3365897133
   }
  },
  "1556840489": {
@@ -3777,7 +3777,7 @@
   "name": "Lead from Gold",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3442762221
+   "Weapon Perk Enhanced": 3442762221
   }
  },
  "1557274655": {
@@ -3787,8 +3787,8 @@
   "itemName": "Touch of Malice",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2094939076,
-   "frame": 2724693746
+   "Weapon Perk Exotic": 2094939076,
+   "Weapon Frame Exotic": 2724693746
   }
  },
  "1559280270": {
@@ -3813,8 +3813,8 @@
   "itemName": "Ace of Spades",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 647617635,
-   "catalyst": 3708505013
+   "Weapon Frame Exotic": 647617635,
+   "Weapon Catalyst Exotic": 3708505013
   }
  },
  "1563930741": {
@@ -3837,7 +3837,7 @@
   "name": "Heating Up",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2748258257
+   "Weapon Perk Enhanced": 2748258257
   }
  },
  "1573888036": {
@@ -3847,8 +3847,8 @@
   "itemName": "Trinity Ghoul",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 200829441,
-   "catalyst": 3457865914
+   "Weapon Perk Exotic": 200829441,
+   "Weapon Catalyst Exotic": 3457865914
   }
  },
  "1576423267": {
@@ -3871,7 +3871,7 @@
   "name": "Stats for All",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1409206216
+   "Weapon Perk Enhanced": 1409206216
   }
  },
  "1588595445": {
@@ -3894,7 +3894,7 @@
   "name": "Backup Plan",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 828056542
+   "Weapon Perk Enhanced": 828056542
   }
  },
  "1600896643": {
@@ -3927,7 +3927,7 @@
   "name": "Fragile Focus",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2451262963
+   "Weapon Perk": 2451262963
   }
  },
  "1618208178": {
@@ -3935,7 +3935,7 @@
   "name": "Eager Edge",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2077819806
+   "Weapon Perk": 2077819806
   }
  },
  "1621596154": {
@@ -3953,7 +3953,7 @@
   "name": "Grave Robber",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 402033656
+   "Weapon Perk Enhanced": 402033656
   }
  },
  "1636108362": {
@@ -3966,7 +3966,7 @@
   "name": "Under Pressure",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3755250867
+   "Weapon Perk Enhanced": 3755250867
   }
  },
  "1646437399": {
@@ -3974,7 +3974,7 @@
   "name": "Duelist's Trance",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3705817207
+   "Weapon Perk": 3705817207
   }
  },
  "1650852150": {
@@ -3984,8 +3984,8 @@
   "itemName": "Legend of Acrius",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 372430833,
-   "catalyst": 456628588
+   "Weapon Frame Exotic": 372430833,
+   "Weapon Catalyst Exotic": 456628588
   }
  },
  "1656118680": {
@@ -4025,7 +4025,7 @@
   "itemName": "Jötunn",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 862513617
+   "Weapon Catalyst Exotic": 862513617
   }
  },
  "1657056865": {
@@ -4035,8 +4035,8 @@
   "itemName": "One Thousand Voices",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3504197951,
-   "catalyst": 82994288
+   "Weapon Perk Exotic": 3504197951,
+   "Weapon Catalyst Exotic": 82994288
   }
  },
  "1657401727": {
@@ -4046,8 +4046,8 @@
   "itemName": "Ruinous Effigy",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 798520364,
-   "catalyst": 1206010521
+   "Weapon Perk Exotic": 798520364,
+   "Weapon Catalyst Exotic": 1206010521
   }
  },
  "1658733671": {
@@ -4057,8 +4057,8 @@
   "itemName": "The Chaperone",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1394384862,
-   "catalyst": 431220297
+   "Weapon Frame Exotic": 1394384862,
+   "Weapon Catalyst Exotic": 431220297
   }
  },
  "1658784563": {
@@ -4066,7 +4066,7 @@
   "name": "Genesis",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3096702027
+   "Weapon Perk": 3096702027
   }
  },
  "1663363584": {
@@ -4074,7 +4074,7 @@
   "name": "Sneak Bow",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 908147344
+   "Weapon Perk": 908147344
   }
  },
  "1665848857": {
@@ -4115,8 +4115,8 @@
   "itemName": "Parasite",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1174163613,
-   "catalyst": 4259872957
+   "Weapon Frame Exotic": 1174163613,
+   "Weapon Catalyst Exotic": 4259872957
   }
  },
  "1680735357": {
@@ -4129,7 +4129,7 @@
   "name": "Disruption Break",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2216471363
+   "Weapon Perk Enhanced": 2216471363
   }
  },
  "1684153732": {
@@ -4139,8 +4139,8 @@
   "itemName": "Prometheus Lens",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3470828242,
-   "frame": 571267712
+   "Weapon Perk Exotic": 3470828242,
+   "Weapon Frame Exotic": 571267712
   }
  },
  "1685378950": {
@@ -4148,7 +4148,7 @@
   "name": "Pulse Monitor",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 972757866
+   "Weapon Perk": 972757866
   }
  },
  "1685431615": {
@@ -4156,7 +4156,7 @@
   "name": "En Garde",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3406782879
+   "Weapon Perk Enhanced": 3406782879
   }
  },
  "1687327062": {
@@ -4166,8 +4166,8 @@
   "itemName": "Eriana's Vow",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3174300811,
-   "catalyst": 2984240082
+   "Weapon Frame Exotic": 3174300811,
+   "Weapon Catalyst Exotic": 2984240082
   }
  },
  "1687452232": {
@@ -4182,7 +4182,7 @@
   "itemName": "Lorentz Driver",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2881100038
+   "Weapon Frame Exotic": 2881100038
   }
  },
  "1694242448": {
@@ -4228,8 +4228,8 @@
   "itemName": "Leviathan's Breath",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2399646028,
-   "catalyst": 2362217257
+   "Weapon Perk Exotic": 2399646028,
+   "Weapon Catalyst Exotic": 2362217257
   }
  },
  "1702976605": {
@@ -4274,8 +4274,8 @@
   "itemName": "Delicate Tomb",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1208312843,
-   "frame": 2585427437
+   "Weapon Perk Exotic": 1208312843,
+   "Weapon Frame Exotic": 2585427437
   }
  },
  "1720528630": {
@@ -4283,7 +4283,7 @@
   "name": "Voltshot",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2173046394
+   "Weapon Perk": 2173046394
   }
  },
  "1727069360": {
@@ -4343,8 +4343,8 @@
   "itemName": "Edge of Concurrence",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 844190854,
-   "frame": 3551884421
+   "Weapon Perk Exotic": 844190854,
+   "Weapon Frame Exotic": 3551884421
   }
  },
  "1731450287": {
@@ -4361,8 +4361,8 @@
   "itemName": "SUROS Regime",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1378047685,
-   "frame": 944506345
+   "Weapon Perk Exotic": 1378047685,
+   "Weapon Frame Exotic": 944506345
   }
  },
  "1738338041": {
@@ -4370,7 +4370,7 @@
   "name": "Tilting at Windmills",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3526486541
+   "Weapon Perk": 3526486541
   }
  },
  "1739861752": {
@@ -4398,7 +4398,7 @@
   "name": "Zen Moment",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2387244414
+   "Weapon Perk": 2387244414
   }
  },
  "1749209109": {
@@ -4406,7 +4406,7 @@
   "name": "Relentless Strikes",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4085959009
+   "Weapon Perk Enhanced": 4085959009
   }
  },
  "1754714824": {
@@ -4414,7 +4414,7 @@
   "name": "Kickstart",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 834262328
+   "Weapon Perk Enhanced": 834262328
   }
  },
  "1758592809": {
@@ -4424,8 +4424,8 @@
   "itemName": "Rat King",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 861489047,
-   "frame": 2121086290
+   "Weapon Perk Exotic": 861489047,
+   "Weapon Frame Exotic": 2121086290
   }
  },
  "1759472859": {
@@ -4438,7 +4438,7 @@
   "name": "Firing Line",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 395388285
+   "Weapon Perk Enhanced": 395388285
   }
  },
  "1774574192": {
@@ -4446,7 +4446,7 @@
   "name": "Osmosis",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 777774560
+   "Weapon Perk Enhanced": 777774560
   }
  },
  "1782407750": {
@@ -4454,7 +4454,7 @@
   "name": "Close to Melee",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2241043034
+   "Weapon Perk Enhanced": 2241043034
   }
  },
  "1783582993": {
@@ -4464,8 +4464,8 @@
   "itemName": "Crimson",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2383960413,
-   "frame": 1030990989
+   "Weapon Perk Exotic": 2383960413,
+   "Weapon Frame Exotic": 1030990989
   }
  },
  "1789319804": {
@@ -4495,8 +4495,8 @@
   "itemName": "Malfeasance",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2130042297,
-   "catalyst": 1234111636
+   "Weapon Perk Exotic": 2130042297,
+   "Weapon Catalyst Exotic": 1234111636
   }
  },
  "1793150018": {
@@ -4511,7 +4511,7 @@
   "itemName": "Divinity",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1185480639
+   "Weapon Perk Exotic": 1185480639
   }
  },
  "1799762209": {
@@ -4519,7 +4519,7 @@
   "name": "Cornered",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1008128453
+   "Weapon Perk Enhanced": 1008128453
   }
  },
  "1807758212": {
@@ -4537,7 +4537,7 @@
   "name": "Subsistence",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4245865861
+   "Weapon Perk Enhanced": 4245865861
   }
  },
  "1821614984": {
@@ -4545,7 +4545,7 @@
   "name": "Slickdraw",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1942880504
+   "Weapon Perk Enhanced": 1942880504
   }
  },
  "1824486242": {
@@ -4560,8 +4560,8 @@
   "itemName": "Sturm",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2238035098,
-   "frame": 507151084
+   "Weapon Perk Exotic": 2238035098,
+   "Weapon Frame Exotic": 507151084
   }
  },
  "1824496861": {
@@ -4571,8 +4571,8 @@
   "itemName": "Sunshot",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 4115637021,
-   "frame": 4045839491
+   "Weapon Perk Exotic": 4115637021,
+   "Weapon Frame Exotic": 4045839491
   }
  },
  "1827389998": {
@@ -4616,8 +4616,8 @@
   "itemName": "Sweet Business",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3755070117,
-   "catalyst": 1249968538
+   "Weapon Frame Exotic": 3755070117,
+   "Weapon Catalyst Exotic": 1249968538
   }
  },
  "1859929470": {
@@ -4632,8 +4632,8 @@
   "itemName": "Thorn",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2921090754,
-   "catalyst": 4091235251
+   "Weapon Perk Exotic": 2921090754,
+   "Weapon Catalyst Exotic": 4091235251
   }
  },
  "1864989992": {
@@ -4643,8 +4643,8 @@
   "itemName": "Hard Light",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2620589274,
-   "frame": 3610814281
+   "Weapon Perk Exotic": 2620589274,
+   "Weapon Frame Exotic": 3610814281
   }
  },
  "1866048759": {
@@ -4652,7 +4652,7 @@
   "name": "Hip-Fire Grip",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3118144663
+   "Weapon Perk Enhanced": 3118144663
   }
  },
  "1870851715": {
@@ -4660,7 +4660,7 @@
   "name": "Under-Over",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 183938251
+   "Weapon Perk Enhanced": 183938251
   }
  },
  "1875323682": {
@@ -4675,7 +4675,7 @@
   "itemName": "Arbalest",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 2564164194
+   "Weapon Frame Exotic": 2564164194
   }
  },
  "1885045197": {
@@ -4698,7 +4698,7 @@
   "name": "Tap the Trigger",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1523649716
+   "Weapon Perk Enhanced": 1523649716
   }
  },
  "1891876363": {
@@ -4718,8 +4718,8 @@
   "itemName": "Edge of Action",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2379536009,
-   "catalyst": 1134515006
+   "Weapon Perk Exotic": 2379536009,
+   "Weapon Catalyst Exotic": 1134515006
   }
  },
  "1900989425": {
@@ -4737,7 +4737,7 @@
   "name": "Demolitionist",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3523296417
+   "Weapon Perk": 3523296417
   }
  },
  "1919923227": {
@@ -4764,8 +4764,8 @@
   "itemName": "Telesto",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3970637031,
-   "catalyst": 920755188
+   "Weapon Perk Exotic": 3970637031,
+   "Weapon Catalyst Exotic": 920755188
   }
  },
  "1939153390": {
@@ -4785,7 +4785,7 @@
   "name": "Slickdraw",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1821614984
+   "Weapon Perk": 1821614984
   }
  },
  "1946568256": {
@@ -4808,7 +4808,7 @@
   "name": "Quickdraw",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 706527188
+   "Weapon Perk": 706527188
   }
  },
  "1968497646": {
@@ -4875,7 +4875,7 @@
   "name": "Turnabout",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2209918983
+   "Weapon Perk": 2209918983
   }
  },
  "2001283033": {
@@ -4888,7 +4888,7 @@
   "name": "High-Impact Reserves",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2213355989
+   "Weapon Perk": 2213355989
   }
  },
  "2003108620": {
@@ -4898,8 +4898,8 @@
   "itemName": "Fighting Lion",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 425960662,
-   "catalyst": 924149234
+   "Weapon Frame Exotic": 425960662,
+   "Weapon Catalyst Exotic": 924149234
   }
  },
  "2010801679": {
@@ -4907,7 +4907,7 @@
   "name": "Ambitious Assassin",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3797647183
+   "Weapon Perk Enhanced": 3797647183
   }
  },
  "2012877834": {
@@ -4920,7 +4920,7 @@
   "name": "Perpetual Motion Enhanced",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1428297954
+   "Weapon Perk": 1428297954
   }
  },
  "2019952880": {
@@ -4930,8 +4930,8 @@
   "itemName": "The Colony",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3913463509,
-   "catalyst": 769440797
+   "Weapon Frame Exotic": 3913463509,
+   "Weapon Catalyst Exotic": 769440797
   }
  },
  "2021620139": {
@@ -4954,7 +4954,7 @@
   "name": "Energy Transfer",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2856365672
+   "Weapon Perk Enhanced": 2856365672
   }
  },
  "2031919264": {
@@ -4979,8 +4979,8 @@
   "itemName": "Edge of Intent",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3492337375,
-   "frame": 3024740338
+   "Weapon Perk Exotic": 3492337375,
+   "Weapon Frame Exotic": 3024740338
   }
  },
  "2039302152": {
@@ -4988,7 +4988,7 @@
   "name": "Slideways",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2396422520
+   "Weapon Perk Enhanced": 2396422520
   }
  },
  "2039949393": {
@@ -5026,7 +5026,7 @@
   "name": "Eager Edge",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1618208178
+   "Weapon Perk Enhanced": 1618208178
   }
  },
  "2080519917": {
@@ -5041,8 +5041,8 @@
   "itemName": "D.A.R.C.I.",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 939227542,
-   "frame": 938999636
+   "Weapon Perk Exotic": 939227542,
+   "Weapon Frame Exotic": 938999636
   }
  },
  "2085058763": {
@@ -5052,8 +5052,8 @@
   "itemName": "Borealis",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 501717180,
-   "frame": 3081173348
+   "Weapon Perk Exotic": 501717180,
+   "Weapon Frame Exotic": 3081173348
   }
  },
  "2092805626": {
@@ -5088,8 +5088,8 @@
   "itemName": "Grand Overture",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1408800487,
-   "frame": 2940035732
+   "Weapon Perk Exotic": 1408800487,
+   "Weapon Frame Exotic": 2940035732
   }
  },
  "2094939076": {
@@ -5099,8 +5099,8 @@
   "itemName": "Touch of Malice",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2724693746,
-   "catalyst": 1557274655
+   "Weapon Frame Exotic": 2724693746,
+   "Weapon Catalyst Exotic": 1557274655
   }
  },
  "2097693203": {
@@ -5137,8 +5137,8 @@
   "itemName": "Rat King",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 861489047,
-   "catalyst": 1758592809
+   "Weapon Perk Exotic": 861489047,
+   "Weapon Catalyst Exotic": 1758592809
   }
  },
  "2128395292": {
@@ -5153,8 +5153,8 @@
   "itemName": "Malfeasance",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1791592647,
-   "catalyst": 1234111636
+   "Weapon Frame Exotic": 1791592647,
+   "Weapon Catalyst Exotic": 1234111636
   }
  },
  "2139363611": {
@@ -5162,7 +5162,7 @@
   "name": "Well-Rounded",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 744594675
+   "Weapon Perk": 744594675
   }
  },
  "2142852459": {
@@ -5177,8 +5177,8 @@
   "itemName": "Lumina",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 743139589,
-   "catalyst": 2271572658
+   "Weapon Perk Exotic": 743139589,
+   "Weapon Catalyst Exotic": 2271572658
   }
  },
  "2145198832": {
@@ -5188,8 +5188,8 @@
   "itemName": "No Time to Explain",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3556949035,
-   "frame": 3837077246
+   "Weapon Perk Exotic": 3556949035,
+   "Weapon Frame Exotic": 3837077246
   }
  },
  "2146553541": {
@@ -5227,7 +5227,7 @@
   "name": "Sleight of Hand",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1172098417
+   "Weapon Perk Enhanced": 1172098417
   }
  },
  "2173046394": {
@@ -5235,7 +5235,7 @@
   "name": "Voltshot",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1720528630
+   "Weapon Perk Enhanced": 1720528630
   }
  },
  "2178772051": {
@@ -5257,8 +5257,8 @@
   "itemName": "The Lament",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 290014589,
-   "catalyst": 1218164788
+   "Weapon Perk Exotic": 290014589,
+   "Weapon Catalyst Exotic": 1218164788
   }
  },
  "2183342667": {
@@ -5273,7 +5273,7 @@
   "itemName": "Le Monarque",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 466834938
+   "Weapon Catalyst Exotic": 466834938
   }
  },
  "2189829540": {
@@ -5307,8 +5307,8 @@
   "itemName": "Eyes of Tomorrow",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1281243303,
-   "catalyst": 2835258088
+   "Weapon Perk Exotic": 1281243303,
+   "Weapon Catalyst Exotic": 2835258088
   }
  },
  "2202441959": {
@@ -5345,7 +5345,7 @@
   "name": "Turnabout",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2000295559
+   "Weapon Perk Enhanced": 2000295559
   }
  },
  "2213355989": {
@@ -5353,7 +5353,7 @@
   "name": "High-Impact Reserves",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2002547233
+   "Weapon Perk Enhanced": 2002547233
   }
  },
  "2213377102": {
@@ -5391,7 +5391,7 @@
   "name": "Disruption Break",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1683379515
+   "Weapon Perk": 1683379515
   }
  },
  "2216698406": {
@@ -5404,7 +5404,7 @@
   "name": "Shot Swap",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2586829431
+   "Weapon Perk": 2586829431
   }
  },
  "2223914385": {
@@ -5414,8 +5414,8 @@
   "itemName": "The Fourth Horseman",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 407549716,
-   "catalyst": 2826187530
+   "Weapon Perk Exotic": 407549716,
+   "Weapon Catalyst Exotic": 2826187530
   }
  },
  "2224838837": {
@@ -5423,7 +5423,7 @@
   "name": "Unstoppable Force",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3102670337
+   "Weapon Perk Enhanced": 3102670337
   }
  },
  "2225231092": {
@@ -5448,7 +5448,7 @@
   "itemName": "Hierarchy of Needs",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 229534486
+   "Weapon Perk Exotic": 229534486
   }
  },
  "2234507197": {
@@ -5458,8 +5458,8 @@
   "itemName": "Collective Obligation",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2395713912,
-   "frame": 3441203855
+   "Weapon Perk Exotic": 2395713912,
+   "Weapon Frame Exotic": 3441203855
   }
  },
  "2238035098": {
@@ -5469,8 +5469,8 @@
   "itemName": "Sturm",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 507151084,
-   "catalyst": 1824496860
+   "Weapon Frame Exotic": 507151084,
+   "Weapon Catalyst Exotic": 1824496860
   }
  },
  "2238903692": {
@@ -5483,7 +5483,7 @@
   "name": "Close to Melee",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1782407750
+   "Weapon Perk": 1782407750
   }
  },
  "2244851822": {
@@ -5491,7 +5491,7 @@
   "name": "Flash Counter",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2860991074
+   "Weapon Perk Enhanced": 2860991074
   }
  },
  "2250679103": {
@@ -5538,8 +5538,8 @@
   "itemName": "Lumina",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 743139589,
-   "frame": 2144092201
+   "Weapon Perk Exotic": 743139589,
+   "Weapon Frame Exotic": 2144092201
   }
  },
  "2272927194": {
@@ -5547,7 +5547,7 @@
   "name": "Perfect Float",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 711628886
+   "Weapon Perk Enhanced": 711628886
   }
  },
  "2272984656": {
@@ -5620,7 +5620,7 @@
   "name": "Explosive Light",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3194351027
+   "Weapon Perk": 3194351027
   }
  },
  "2284787283": {
@@ -5628,7 +5628,7 @@
   "name": "Clown Cartridge",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3563868667
+   "Weapon Perk Enhanced": 3563868667
   }
  },
  "2287699930": {
@@ -5638,8 +5638,8 @@
   "itemName": "Wish-Ender",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1470121888,
-   "catalyst": 3457865915
+   "Weapon Frame Exotic": 1470121888,
+   "Weapon Catalyst Exotic": 3457865915
   }
  },
  "2299766748": {
@@ -5664,8 +5664,8 @@
   "itemName": "Wavesplitter",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 459441288,
-   "catalyst": 3156882011
+   "Weapon Frame Exotic": 459441288,
+   "Weapon Catalyst Exotic": 3156882011
   }
  },
  "2307143135": {
@@ -5675,8 +5675,8 @@
   "itemName": "Vigilance Wing",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 4146729347,
-   "catalyst": 615063267
+   "Weapon Perk Exotic": 4146729347,
+   "Weapon Catalyst Exotic": 615063267
   }
  },
  "2307244871": {
@@ -5689,7 +5689,7 @@
   "name": "Field Prep",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2869569095
+   "Weapon Perk": 2869569095
   }
  },
  "2321484659": {
@@ -5724,8 +5724,8 @@
   "itemName": "Merciless",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 656200654,
-   "catalyst": 1149703256
+   "Weapon Frame Exotic": 656200654,
+   "Weapon Catalyst Exotic": 1149703256
   }
  },
  "2347686425": {
@@ -5762,8 +5762,8 @@
   "itemName": "Salvation's Grip",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1549056416,
-   "frame": 1315870387
+   "Weapon Perk Exotic": 1549056416,
+   "Weapon Frame Exotic": 1315870387
   }
  },
  "2360754333": {
@@ -5771,7 +5771,7 @@
   "name": "Trench Barrel",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2459015849
+   "Weapon Perk Enhanced": 2459015849
   }
  },
  "2362217257": {
@@ -5781,8 +5781,8 @@
   "itemName": "Leviathan's Breath",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2399646028,
-   "frame": 1699724249
+   "Weapon Perk Exotic": 2399646028,
+   "Weapon Frame Exotic": 1699724249
   }
  },
  "2368162286": {
@@ -5802,8 +5802,8 @@
   "itemName": "Edge of Action",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1900919151,
-   "catalyst": 1134515006
+   "Weapon Frame Exotic": 1900919151,
+   "Weapon Catalyst Exotic": 1134515006
   }
  },
  "2383960413": {
@@ -5813,8 +5813,8 @@
   "itemName": "Crimson",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1030990989,
-   "catalyst": 1783582993
+   "Weapon Frame Exotic": 1030990989,
+   "Weapon Catalyst Exotic": 1783582993
   }
  },
  "2387244414": {
@@ -5822,7 +5822,7 @@
   "name": "Zen Moment",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1748774930
+   "Weapon Perk Enhanced": 1748774930
   }
  },
  "2395653827": {
@@ -5837,8 +5837,8 @@
   "itemName": "Collective Obligation",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3441203855,
-   "catalyst": 2234507197
+   "Weapon Frame Exotic": 3441203855,
+   "Weapon Catalyst Exotic": 2234507197
   }
  },
  "2396422520": {
@@ -5846,7 +5846,7 @@
   "name": "Slideways",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2039302152
+   "Weapon Perk": 2039302152
   }
  },
  "2396489472": {
@@ -5854,7 +5854,7 @@
   "name": "Chain Reaction",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 598607952
+   "Weapon Perk Enhanced": 598607952
   }
  },
  "2399646028": {
@@ -5864,8 +5864,8 @@
   "itemName": "Leviathan's Breath",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1699724249,
-   "catalyst": 2362217257
+   "Weapon Frame Exotic": 1699724249,
+   "Weapon Catalyst Exotic": 2362217257
   }
  },
  "2402480669": {
@@ -5873,7 +5873,7 @@
   "name": "Focused Fury",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2896038713
+   "Weapon Perk": 2896038713
   }
  },
  "2409031770": {
@@ -5883,8 +5883,8 @@
   "itemName": "The Wardcliff Coil",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1178686995,
-   "frame": 2473404935
+   "Weapon Perk Exotic": 1178686995,
+   "Weapon Frame Exotic": 2473404935
   }
  },
  "2409208302": {
@@ -5902,7 +5902,7 @@
   "name": "Offhand Strike",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3050799639
+   "Weapon Perk Enhanced": 3050799639
   }
  },
  "2419864979": {
@@ -5915,7 +5915,7 @@
   "name": "Adrenaline Junkie",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 11612903
+   "Weapon Perk": 11612903
   }
  },
  "2426674025": {
@@ -5933,7 +5933,7 @@
   "name": "Killing Wind",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4207509907
+   "Weapon Perk Enhanced": 4207509907
   }
  },
  "2451262963": {
@@ -5941,7 +5941,7 @@
   "name": "Fragile Focus",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1609056795
+   "Weapon Perk Enhanced": 1609056795
   }
  },
  "2458213969": {
@@ -5949,7 +5949,7 @@
   "name": "Multikill Clip",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2570477205
+   "Weapon Perk Enhanced": 2570477205
   }
  },
  "2458294492": {
@@ -5962,7 +5962,7 @@
   "name": "Trench Barrel",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 806159697
+   "Weapon Perk": 806159697
   }
  },
  "2470575005": {
@@ -5984,8 +5984,8 @@
   "itemName": "The Wardcliff Coil",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1178686995,
-   "catalyst": 2409031770
+   "Weapon Perk Exotic": 1178686995,
+   "Weapon Catalyst Exotic": 2409031770
   }
  },
  "2481624867": {
@@ -6000,8 +6000,8 @@
   "itemName": "Coldheart",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1036269296,
-   "catalyst": 1249968539
+   "Weapon Frame Exotic": 1036269296,
+   "Weapon Catalyst Exotic": 1249968539
   }
  },
  "2483898428": {
@@ -6036,7 +6036,7 @@
   "itemName": "Truth",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2911329003
+   "Weapon Perk Exotic": 2911329003
   }
  },
  "2495011826": {
@@ -6044,7 +6044,7 @@
   "name": "Ensemble",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2621346526
+   "Weapon Perk": 2621346526
   }
  },
  "2495523340": {
@@ -6081,8 +6081,8 @@
   "itemName": "Riskrunner",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1530804125,
-   "catalyst": 484491717
+   "Weapon Perk Exotic": 1530804125,
+   "Weapon Catalyst Exotic": 484491717
   }
  },
  "2518716062": {
@@ -6102,8 +6102,8 @@
   "itemName": "Gjallarhorn",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3874977694,
-   "frame": 2962361451
+   "Weapon Perk Exotic": 3874977694,
+   "Weapon Frame Exotic": 2962361451
   }
  },
  "2527938402": {
@@ -6116,7 +6116,7 @@
   "name": "Blunt Execution Rounds",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 454085387
+   "Weapon Perk": 454085387
   }
  },
  "2540536653": {
@@ -6126,7 +6126,7 @@
   "itemName": "Tarrabah",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3351002503
+   "Weapon Perk Exotic": 3351002503
   }
  },
  "2541826827": {
@@ -6134,7 +6134,7 @@
   "name": "Repulsor Brace",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 776531651
+   "Weapon Perk": 776531651
   }
  },
  "2543177538": {
@@ -6147,7 +6147,7 @@
   "name": "Box Breathing",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 23371658
+   "Weapon Perk Enhanced": 23371658
   }
  },
  "2563509458": {
@@ -6162,7 +6162,7 @@
   "itemName": "Arbalest",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 1880379474
+   "Weapon Catalyst Exotic": 1880379474
   }
  },
  "2570477205": {
@@ -6170,7 +6170,7 @@
   "name": "Multikill Clip",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2458213969
+   "Weapon Perk": 2458213969
   }
  },
  "2571974065": {
@@ -6190,8 +6190,8 @@
   "itemName": "Delicate Tomb",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1208312843,
-   "catalyst": 1719307618
+   "Weapon Perk Exotic": 1208312843,
+   "Weapon Catalyst Exotic": 1719307618
   }
  },
  "2586829431": {
@@ -6199,7 +6199,7 @@
   "name": "Shot Swap",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2217963031
+   "Weapon Perk Enhanced": 2217963031
   }
  },
  "2588939505": {
@@ -6217,7 +6217,7 @@
   "name": "Tireless Blade",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4183521337
+   "Weapon Perk Enhanced": 4183521337
   }
  },
  "2597888506": {
@@ -6257,8 +6257,8 @@
   "itemName": "Heir Apparent",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1185273366,
-   "catalyst": 1324556594
+   "Weapon Perk Exotic": 1185273366,
+   "Weapon Catalyst Exotic": 1324556594
   }
  },
  "2610012052": {
@@ -6266,7 +6266,7 @@
   "name": "Golden Tricorn",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 4290541820
+   "Weapon Perk Enhanced": 4290541820
   }
  },
  "2617324347": {
@@ -6288,8 +6288,8 @@
   "itemName": "Hard Light",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3610814281,
-   "catalyst": 1864989992
+   "Weapon Frame Exotic": 3610814281,
+   "Weapon Catalyst Exotic": 1864989992
   }
  },
  "2621346526": {
@@ -6297,7 +6297,7 @@
   "name": "Ensemble",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2495011826
+   "Weapon Perk Enhanced": 2495011826
   }
  },
  "2623485440": {
@@ -6329,8 +6329,8 @@
   "itemName": "Trespasser",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1271851280,
-   "catalyst": 2895039606
+   "Weapon Perk Exotic": 1271851280,
+   "Weapon Catalyst Exotic": 2895039606
   }
  },
  "2642597904": {
@@ -6353,7 +6353,7 @@
   "name": "Successful Warm-Up",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 617966211
+   "Weapon Perk Enhanced": 617966211
   }
  },
  "2656694271": {
@@ -6363,8 +6363,8 @@
   "itemName": "The Manticore",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 228577175,
-   "catalyst": 2797384170
+   "Weapon Frame Exotic": 228577175,
+   "Weapon Catalyst Exotic": 2797384170
   }
  },
  "2658083589": {
@@ -6372,7 +6372,7 @@
   "name": "Surplus",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3436462433
+   "Weapon Perk": 3436462433
   }
  },
  "2661180600": {
@@ -6433,7 +6433,7 @@
   "itemName": "Worldline Zero",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 3642491337
+   "Weapon Frame Exotic": 3642491337
   }
  },
  "2675184851": {
@@ -6441,7 +6441,7 @@
   "name": "Incandescent",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 4293542123
+   "Weapon Perk": 4293542123
   }
  },
  "2675361166": {
@@ -6449,7 +6449,7 @@
   "name": "Wellspring",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3592538738
+   "Weapon Perk": 3592538738
   }
  },
  "2679249093": {
@@ -6457,7 +6457,7 @@
   "name": "One-Two Punch",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 788178929
+   "Weapon Perk Enhanced": 788178929
   }
  },
  "2682205016": {
@@ -6465,7 +6465,7 @@
   "name": "Overflow",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3643424744
+   "Weapon Perk": 3643424744
   }
  },
  "2696719570": {
@@ -6503,7 +6503,7 @@
   "name": "Moving Target",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 588594999
+   "Weapon Perk": 588594999
   }
  },
  "2720533289": {
@@ -6543,8 +6543,8 @@
   "itemName": "Touch of Malice",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2094939076,
-   "catalyst": 1557274655
+   "Weapon Perk Exotic": 2094939076,
+   "Weapon Catalyst Exotic": 1557274655
   }
  },
  "2725422375": {
@@ -6567,7 +6567,7 @@
   "name": "Thresh",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1172413778
+   "Weapon Perk Enhanced": 1172413778
   }
  },
  "2731901709": {
@@ -6598,8 +6598,8 @@
   "itemName": "Devil's Ruin",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1059301209,
-   "frame": 334466122
+   "Weapon Perk Exotic": 1059301209,
+   "Weapon Frame Exotic": 334466122
   }
  },
  "2732540911": {
@@ -6614,8 +6614,8 @@
   "itemName": "Whisper of the Worm",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3337692349,
-   "frame": 281315705
+   "Weapon Perk Exotic": 3337692349,
+   "Weapon Frame Exotic": 281315705
   }
  },
  "2733244971": {
@@ -6625,7 +6625,7 @@
   "itemName": "Dead Messenger",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 4259872956
+   "Weapon Catalyst Exotic": 4259872956
   }
  },
  "2741975068": {
@@ -6635,8 +6635,8 @@
   "itemName": "Skyburner's Oath",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 176919422,
-   "catalyst": 658317088
+   "Weapon Perk Exotic": 176919422,
+   "Weapon Catalyst Exotic": 658317088
   }
  },
  "2743098132": {
@@ -6659,7 +6659,7 @@
   "name": "Heating Up",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1570042021
+   "Weapon Perk": 1570042021
   }
  },
  "2748801589": {
@@ -6667,7 +6667,7 @@
   "name": "Harmony",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 438098033
+   "Weapon Perk": 438098033
   }
  },
  "2754084930": {
@@ -6692,7 +6692,7 @@
   "itemName": "The Last Word",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 3274907024
+   "Weapon Catalyst Exotic": 3274907024
   }
  },
  "2779035018": {
@@ -6700,7 +6700,7 @@
   "name": "Feeding Frenzy",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1171147302
+   "Weapon Perk Enhanced": 1171147302
   }
  },
  "2779468392": {
@@ -6713,7 +6713,7 @@
   "name": "Killing Tally",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2896748467
+   "Weapon Perk Enhanced": 2896748467
   }
  },
  "2788909693": {
@@ -6733,8 +6733,8 @@
   "itemName": "Forerunner",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2984682260,
-   "catalyst": 674410190
+   "Weapon Frame Exotic": 2984682260,
+   "Weapon Catalyst Exotic": 674410190
   }
  },
  "2797384170": {
@@ -6744,8 +6744,8 @@
   "itemName": "The Manticore",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2656694271,
-   "frame": 228577175
+   "Weapon Perk Exotic": 2656694271,
+   "Weapon Frame Exotic": 228577175
   }
  },
  "2799168657": {
@@ -6789,7 +6789,7 @@
   "itemName": "Monte Carlo",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1484442054
+   "Weapon Frame Exotic": 1484442054
   }
  },
  "2816982784": {
@@ -6821,8 +6821,8 @@
   "itemName": "The Fourth Horseman",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 407549716,
-   "frame": 2223914385
+   "Weapon Perk Exotic": 407549716,
+   "Weapon Frame Exotic": 2223914385
   }
  },
  "2826720951": {
@@ -6842,8 +6842,8 @@
   "itemName": "Eyes of Tomorrow",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1281243303,
-   "frame": 2200569208
+   "Weapon Perk Exotic": 1281243303,
+   "Weapon Frame Exotic": 2200569208
   }
  },
  "2839173408": {
@@ -6856,7 +6856,7 @@
   "name": "Shoot to Loot",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3700496672
+   "Weapon Perk": 3700496672
   }
  },
  "2846385770": {
@@ -6864,7 +6864,7 @@
   "name": "Rangefinder",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 509594246
+   "Weapon Perk Enhanced": 509594246
   }
  },
  "2848615171": {
@@ -6872,7 +6872,7 @@
   "name": "Dragonfly",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 169755979
+   "Weapon Perk Enhanced": 169755979
   }
  },
  "2850583378": {
@@ -6890,7 +6890,7 @@
   "name": "Energy Transfer",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2030760728
+   "Weapon Perk": 2030760728
   }
  },
  "2859541905": {
@@ -6903,7 +6903,7 @@
   "name": "Flash Counter",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2244851822
+   "Weapon Perk": 2244851822
   }
  },
  "2866798147": {
@@ -6911,7 +6911,7 @@
   "name": "No Distractions",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3974407819
+   "Weapon Perk Enhanced": 3974407819
   }
  },
  "2869569095": {
@@ -6919,7 +6919,7 @@
   "name": "Field Prep",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2308090567
+   "Weapon Perk Enhanced": 2308090567
   }
  },
  "2874284214": {
@@ -6944,7 +6944,7 @@
   "itemName": "Lorentz Driver",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1690446783
+   "Weapon Perk Exotic": 1690446783
   }
  },
  "2887845822": {
@@ -6959,8 +6959,8 @@
   "itemName": "Witherhoard",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 745965939,
-   "frame": 3063320916
+   "Weapon Perk Exotic": 745965939,
+   "Weapon Frame Exotic": 3063320916
   }
  },
  "2888557110": {
@@ -6973,7 +6973,7 @@
   "name": "Adagio",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3673922083
+   "Weapon Perk": 3673922083
   }
  },
  "2895039606": {
@@ -6983,8 +6983,8 @@
   "itemName": "Trespasser",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1271851280,
-   "frame": 2641107734
+   "Weapon Perk Exotic": 1271851280,
+   "Weapon Frame Exotic": 2641107734
   }
  },
  "2896038713": {
@@ -6992,7 +6992,7 @@
   "name": "Focused Fury",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2402480669
+   "Weapon Perk Enhanced": 2402480669
   }
  },
  "2896748467": {
@@ -7000,7 +7000,7 @@
   "name": "Killing Tally",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 557221067
+   "Weapon Perk": 557221067
   }
  },
  "2897981193": {
@@ -7013,7 +7013,7 @@
   "name": "Air Assault",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3722653512
+   "Weapon Perk": 3722653512
   }
  },
  "2909403175": {
@@ -7023,8 +7023,8 @@
   "itemName": "Cloudstrike",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3117514172,
-   "catalyst": 1409312565
+   "Weapon Perk Exotic": 3117514172,
+   "Weapon Catalyst Exotic": 1409312565
   }
  },
  "2909720723": {
@@ -7039,7 +7039,7 @@
   "itemName": "Truth",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2491817779
+   "Weapon Frame Exotic": 2491817779
   }
  },
  "2912509910": {
@@ -7059,8 +7059,8 @@
   "itemName": "Thorn",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1863355414,
-   "catalyst": 4091235251
+   "Weapon Frame Exotic": 1863355414,
+   "Weapon Catalyst Exotic": 4091235251
   }
  },
  "2923251173": {
@@ -7068,7 +7068,7 @@
   "name": "Kill Clip",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1015611457
+   "Weapon Perk": 1015611457
   }
  },
  "2934767476": {
@@ -7086,7 +7086,7 @@
   "name": "Rapid Hit",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 247725512
+   "Weapon Perk": 247725512
   }
  },
  "2939589096": {
@@ -7094,7 +7094,7 @@
   "name": "Target Lock",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 365154968
+   "Weapon Perk": 365154968
   }
  },
  "2940035732": {
@@ -7104,8 +7104,8 @@
   "itemName": "Grand Overture",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1408800487,
-   "catalyst": 2094761202
+   "Weapon Perk Exotic": 1408800487,
+   "Weapon Catalyst Exotic": 2094761202
   }
  },
  "2946784966": {
@@ -7113,7 +7113,7 @@
   "name": "Tunnel Vision",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 987673306
+   "Weapon Perk Enhanced": 987673306
   }
  },
  "2946990961": {
@@ -7135,8 +7135,8 @@
   "itemName": "Gjallarhorn",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3874977694,
-   "catalyst": 2526801077
+   "Weapon Perk Exotic": 3874977694,
+   "Weapon Catalyst Exotic": 2526801077
   }
  },
  "2965975126": {
@@ -7146,8 +7146,8 @@
   "itemName": "Osteo Striga",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 4015745376,
-   "catalyst": 229096166
+   "Weapon Perk Exotic": 4015745376,
+   "Weapon Catalyst Exotic": 229096166
   }
  },
  "2977709078": {
@@ -7157,7 +7157,7 @@
   "itemName": "The Prospector",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 924149235
+   "Weapon Catalyst Exotic": 924149235
   }
  },
  "2978966579": {
@@ -7165,7 +7165,7 @@
   "name": "Chill Clip",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 344235611
+   "Weapon Perk Enhanced": 344235611
   }
  },
  "2979486801": {
@@ -7222,8 +7222,8 @@
   "itemName": "Eriana's Vow",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1687327062,
-   "frame": 3174300811
+   "Weapon Perk Exotic": 1687327062,
+   "Weapon Frame Exotic": 3174300811
   }
  },
  "2984351204": {
@@ -7253,8 +7253,8 @@
   "itemName": "Forerunner",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2795311559,
-   "catalyst": 674410190
+   "Weapon Perk Exotic": 2795311559,
+   "Weapon Catalyst Exotic": 674410190
   }
  },
  "2986718682": {
@@ -7277,7 +7277,7 @@
   "name": "Osmosis",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 777774560
+   "Weapon Perk Enhanced": 777774560
   }
  },
  "2999890939": {
@@ -7295,7 +7295,7 @@
   "name": "Frenzy",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 4104185692
+   "Weapon Perk": 4104185692
   }
  },
  "3016987351": {
@@ -7315,8 +7315,8 @@
   "itemName": "Edge of Intent",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3492337375,
-   "catalyst": 2038196759
+   "Weapon Perk Exotic": 3492337375,
+   "Weapon Catalyst Exotic": 2038196759
   }
  },
  "3030812579": {
@@ -7334,7 +7334,7 @@
   "name": "Explosive Payload",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 64866129
+   "Weapon Perk Enhanced": 64866129
   }
  },
  "3038929059": {
@@ -7352,7 +7352,7 @@
   "name": "Desperado",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 624891305
+   "Weapon Perk Enhanced": 624891305
   }
  },
  "3048420653": {
@@ -7365,7 +7365,7 @@
   "name": "Offhand Strike",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2416023159
+   "Weapon Perk": 2416023159
   }
  },
  "3054949324": {
@@ -7378,7 +7378,7 @@
   "name": "Dynamic Sway Reduction",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1359896290
+   "Weapon Perk": 1359896290
   }
  },
  "3063320916": {
@@ -7388,8 +7388,8 @@
   "itemName": "Witherhoard",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 745965939,
-   "catalyst": 2888418988
+   "Weapon Perk Exotic": 745965939,
+   "Weapon Catalyst Exotic": 2888418988
   }
  },
  "3065699930": {
@@ -7419,8 +7419,8 @@
   "itemName": "Heartshadow",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 873883409,
-   "frame": 1100877327
+   "Weapon Perk Exotic": 873883409,
+   "Weapon Frame Exotic": 1100877327
   }
  },
  "3074491624": {
@@ -7433,7 +7433,7 @@
   "name": "Bait and Switch",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3744057135
+   "Weapon Perk Enhanced": 3744057135
   }
  },
  "3081173348": {
@@ -7443,8 +7443,8 @@
   "itemName": "Borealis",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 501717180,
-   "catalyst": 2085058763
+   "Weapon Perk Exotic": 501717180,
+   "Weapon Catalyst Exotic": 2085058763
   }
  },
  "3081867624": {
@@ -7472,7 +7472,7 @@
   "name": "Genesis",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1658784563
+   "Weapon Perk Enhanced": 1658784563
   }
  },
  "3097132144": {
@@ -7487,8 +7487,8 @@
   "itemName": "MIDA Multi-Tool",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 377257911,
-   "catalyst": 3466057365
+   "Weapon Frame Exotic": 377257911,
+   "Weapon Catalyst Exotic": 3466057365
   }
  },
  "3102670337": {
@@ -7496,7 +7496,7 @@
   "name": "Unstoppable Force",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2224838837
+   "Weapon Perk": 2224838837
   }
  },
  "3108830275": {
@@ -7504,7 +7504,7 @@
   "name": "Unrelenting",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 855168139
+   "Weapon Perk Enhanced": 855168139
   }
  },
  "3109470977": {
@@ -7524,8 +7524,8 @@
   "itemName": "Cloudstrike",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2909403175,
-   "catalyst": 1409312565
+   "Weapon Frame Exotic": 2909403175,
+   "Weapon Catalyst Exotic": 1409312565
   }
  },
  "3118144663": {
@@ -7533,7 +7533,7 @@
   "name": "Hip-Fire Grip",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1866048759
+   "Weapon Perk": 1866048759
   }
  },
  "3121039270": {
@@ -7546,7 +7546,7 @@
   "name": "Outlaw",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1347741687
+   "Weapon Perk Enhanced": 1347741687
   }
  },
  "3131590896": {
@@ -7556,8 +7556,8 @@
   "itemName": "Quicksilver Storm",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3602718766,
-   "catalyst": 25023897
+   "Weapon Frame Exotic": 3602718766,
+   "Weapon Catalyst Exotic": 25023897
   }
  },
  "3133077199": {
@@ -7595,7 +7595,7 @@
   "name": "Dual Loader",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 25606670
+   "Weapon Perk": 25606670
   }
  },
  "3156882011": {
@@ -7605,8 +7605,8 @@
   "itemName": "Wavesplitter",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2306441428,
-   "frame": 459441288
+   "Weapon Perk Exotic": 2306441428,
+   "Weapon Frame Exotic": 459441288
   }
  },
  "3161816588": {
@@ -7614,7 +7614,7 @@
   "name": "Slideshot",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 191144788
+   "Weapon Perk Enhanced": 191144788
   }
  },
  "3164944314": {
@@ -7624,8 +7624,8 @@
   "itemName": "Ager's Scepter",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1218765758,
-   "catalyst": 970163821
+   "Weapon Perk Exotic": 1218765758,
+   "Weapon Catalyst Exotic": 970163821
   }
  },
  "3174300811": {
@@ -7635,8 +7635,8 @@
   "itemName": "Eriana's Vow",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1687327062,
-   "catalyst": 2984240082
+   "Weapon Perk Exotic": 1687327062,
+   "Weapon Catalyst Exotic": 2984240082
   }
  },
  "3176563510": {
@@ -7674,7 +7674,7 @@
   "name": "Explosive Light",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2275087323
+   "Weapon Perk Enhanced": 2275087323
   }
  },
  "3199702642": {
@@ -7687,7 +7687,7 @@
   "name": "Redirection",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1545231802
+   "Weapon Perk Enhanced": 1545231802
   }
  },
  "3201675491": {
@@ -7707,8 +7707,8 @@
   "itemName": "Cerberus+1",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1289604610,
-   "catalyst": 1380383475
+   "Weapon Perk Exotic": 1289604610,
+   "Weapon Catalyst Exotic": 1380383475
   }
  },
  "3226552705": {
@@ -7738,8 +7738,8 @@
   "itemName": "Ticuu's Divination",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3298446480,
-   "catalyst": 3978937353
+   "Weapon Perk Exotic": 3298446480,
+   "Weapon Catalyst Exotic": 3978937353
   }
  },
  "3241194940": {
@@ -7770,8 +7770,8 @@
   "itemName": "Outbreak Perfected",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 4208418110,
-   "catalyst": 3352275956
+   "Weapon Frame Exotic": 4208418110,
+   "Weapon Catalyst Exotic": 3352275956
   }
  },
  "3249407402": {
@@ -7823,7 +7823,7 @@
   "itemName": "The Last Word",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 2770223582
+   "Weapon Frame Exotic": 2770223582
   }
  },
  "3275789089": {
@@ -7865,8 +7865,8 @@
   "itemName": "Ticuu's Divination",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3239299468,
-   "catalyst": 3978937353
+   "Weapon Frame Exotic": 3239299468,
+   "Weapon Catalyst Exotic": 3978937353
   }
  },
  "3300816228": {
@@ -7874,7 +7874,7 @@
   "name": "Auto-Loading Holster",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3528046508
+   "Weapon Perk Enhanced": 3528046508
   }
  },
  "3301904089": {
@@ -7914,8 +7914,8 @@
   "itemName": "Deathbringer",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 411799453,
-   "catalyst": 1298151900
+   "Weapon Frame Exotic": 411799453,
+   "Weapon Catalyst Exotic": 1298151900
   }
  },
  "3335686050": {
@@ -7923,7 +7923,7 @@
   "name": "Recombination",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 469285294
+   "Weapon Perk": 469285294
   }
  },
  "3336648220": {
@@ -7943,8 +7943,8 @@
   "itemName": "Whisper of the Worm",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 281315705,
-   "catalyst": 2732814938
+   "Weapon Frame Exotic": 281315705,
+   "Weapon Catalyst Exotic": 2732814938
   }
  },
  "3338875786": {
@@ -7971,7 +7971,7 @@
   "name": "Sympathetic Arsenal",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1537607344
+   "Weapon Perk Enhanced": 1537607344
   }
  },
  "3351002503": {
@@ -7981,7 +7981,7 @@
   "itemName": "Tarrabah",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2540536653
+   "Weapon Frame Exotic": 2540536653
   }
  },
  "3352275956": {
@@ -7991,8 +7991,8 @@
   "itemName": "Outbreak Perfected",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3242533954,
-   "frame": 4208418110
+   "Weapon Perk Exotic": 3242533954,
+   "Weapon Frame Exotic": 4208418110
   }
  },
  "3355499393": {
@@ -8025,7 +8025,7 @@
   "name": "Explosive Head",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1551736345
+   "Weapon Perk Enhanced": 1551736345
   }
  },
  "3373736292": {
@@ -8053,7 +8053,7 @@
   "name": "Triple Tap",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 573122728
+   "Weapon Perk Enhanced": 573122728
   }
  },
  "3406782879": {
@@ -8061,7 +8061,7 @@
   "name": "En Garde",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1685431615
+   "Weapon Perk": 1685431615
   }
  },
  "3414324643": {
@@ -8079,7 +8079,7 @@
   "name": "Vorpal Weapon",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1546637391
+   "Weapon Perk": 1546637391
   }
  },
  "3418782618": {
@@ -8097,7 +8097,7 @@
   "name": "Rampage",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 288411554
+   "Weapon Perk Enhanced": 288411554
   }
  },
  "3431277734": {
@@ -8105,7 +8105,7 @@
   "name": "Adaptive Munitions",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1048183818
+   "Weapon Perk": 1048183818
   }
  },
  "3435239180": {
@@ -8118,7 +8118,7 @@
   "name": "Surplus",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2658083589
+   "Weapon Perk Enhanced": 2658083589
   }
  },
  "3436675785": {
@@ -8133,8 +8133,8 @@
   "itemName": "Collective Obligation",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2395713912,
-   "catalyst": 2234507197
+   "Weapon Perk Exotic": 2395713912,
+   "Weapon Catalyst Exotic": 2234507197
   }
  },
  "3442762221": {
@@ -8142,7 +8142,7 @@
   "name": "Lead from Gold",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1556840489
+   "Weapon Perk": 1556840489
   }
  },
  "3449001998": {
@@ -8164,8 +8164,8 @@
   "itemName": "Trinity Ghoul",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 200829441,
-   "frame": 1573888036
+   "Weapon Perk Exotic": 200829441,
+   "Weapon Frame Exotic": 1573888036
   }
  },
  "3457865915": {
@@ -8175,8 +8175,8 @@
   "itemName": "Wish-Ender",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2287699930,
-   "frame": 1470121888
+   "Weapon Perk Exotic": 2287699930,
+   "Weapon Frame Exotic": 1470121888
   }
  },
  "3459475454": {
@@ -8186,8 +8186,8 @@
   "itemName": "The Huckleberry",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3551326236,
-   "frame": 630329983
+   "Weapon Perk Exotic": 3551326236,
+   "Weapon Frame Exotic": 630329983
   }
  },
  "3466057365": {
@@ -8197,8 +8197,8 @@
   "itemName": "MIDA Multi-Tool",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3100590152,
-   "frame": 377257911
+   "Weapon Perk Exotic": 3100590152,
+   "Weapon Frame Exotic": 377257911
   }
  },
  "3468089894": {
@@ -8248,8 +8248,8 @@
   "itemName": "Prometheus Lens",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 571267712,
-   "catalyst": 1684153732
+   "Weapon Frame Exotic": 571267712,
+   "Weapon Catalyst Exotic": 1684153732
   }
  },
  "3472640090": {
@@ -8284,8 +8284,8 @@
   "itemName": "Edge of Intent",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3024740338,
-   "catalyst": 2038196759
+   "Weapon Frame Exotic": 3024740338,
+   "Weapon Catalyst Exotic": 2038196759
   }
  },
  "3504197951": {
@@ -8295,8 +8295,8 @@
   "itemName": "One Thousand Voices",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1657056865,
-   "catalyst": 82994288
+   "Weapon Frame Exotic": 1657056865,
+   "Weapon Catalyst Exotic": 82994288
   }
  },
  "3511092054": {
@@ -8304,7 +8304,7 @@
   "name": "Elemental Capacitor",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 711234314
+   "Weapon Perk Enhanced": 711234314
   }
  },
  "3513791699": {
@@ -8312,7 +8312,7 @@
   "name": "Mulligan",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 162561147
+   "Weapon Perk Enhanced": 162561147
   }
  },
  "3513901081": {
@@ -8350,7 +8350,7 @@
   "name": "Demolitionist",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1906147653
+   "Weapon Perk Enhanced": 1906147653
   }
  },
  "3523746922": {
@@ -8358,7 +8358,7 @@
   "name": "Archer's Tempo",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 201365942
+   "Weapon Perk": 201365942
   }
  },
  "3526486541": {
@@ -8366,7 +8366,7 @@
   "name": "Tilting at Windmills",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1738338041
+   "Weapon Perk Enhanced": 1738338041
   }
  },
  "3528046508": {
@@ -8374,7 +8374,7 @@
   "name": "Auto-Loading Holster",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3300816228
+   "Weapon Perk": 3300816228
   }
  },
  "3530948111": {
@@ -8419,8 +8419,8 @@
   "itemName": "The Huckleberry",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 630329983,
-   "catalyst": 3459475454
+   "Weapon Frame Exotic": 630329983,
+   "Weapon Catalyst Exotic": 3459475454
   }
  },
  "3551884421": {
@@ -8430,8 +8430,8 @@
   "itemName": "Edge of Concurrence",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 844190854,
-   "catalyst": 1731191722
+   "Weapon Perk Exotic": 844190854,
+   "Weapon Catalyst Exotic": 1731191722
   }
  },
  "3556461530": {
@@ -8448,8 +8448,8 @@
   "itemName": "No Time to Explain",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 3837077246,
-   "catalyst": 2145198832
+   "Weapon Frame Exotic": 3837077246,
+   "Weapon Catalyst Exotic": 2145198832
   }
  },
  "3563461386": {
@@ -8462,7 +8462,7 @@
   "name": "Clown Cartridge",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2284787283
+   "Weapon Perk": 2284787283
   }
  },
  "3564974257": {
@@ -8487,8 +8487,8 @@
   "itemName": "Duality",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3937312904,
-   "frame": 536517534
+   "Weapon Perk Exotic": 3937312904,
+   "Weapon Frame Exotic": 536517534
   }
  },
  "3592538738": {
@@ -8496,7 +8496,7 @@
   "name": "Wellspring",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2675361166
+   "Weapon Perk Enhanced": 2675361166
   }
  },
  "3602718766": {
@@ -8506,8 +8506,8 @@
   "itemName": "Quicksilver Storm",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3131590896,
-   "catalyst": 25023897
+   "Weapon Perk Exotic": 3131590896,
+   "Weapon Catalyst Exotic": 25023897
   }
  },
  "3610750208": {
@@ -8517,8 +8517,8 @@
   "itemName": "Vex Mythoclast",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 806917387,
-   "catalyst": 838219733
+   "Weapon Perk Exotic": 806917387,
+   "Weapon Catalyst Exotic": 838219733
   }
  },
  "3610814281": {
@@ -8528,8 +8528,8 @@
   "itemName": "Hard Light",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2620589274,
-   "catalyst": 1864989992
+   "Weapon Perk Exotic": 2620589274,
+   "Weapon Catalyst Exotic": 1864989992
   }
  },
  "3615521782": {
@@ -8599,7 +8599,7 @@
   "itemName": "Worldline Zero",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 2674202880
+   "Weapon Catalyst Exotic": 2674202880
   }
  },
  "3643044286": {
@@ -8612,7 +8612,7 @@
   "name": "Overflow",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2682205016
+   "Weapon Perk Enhanced": 2682205016
   }
  },
  "3649430342": {
@@ -8622,8 +8622,8 @@
   "itemName": "Two-Tailed Fox",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 777637181,
-   "catalyst": 4079681314
+   "Weapon Perk Exotic": 777637181,
+   "Weapon Catalyst Exotic": 4079681314
   }
  },
  "3650930298": {
@@ -8683,7 +8683,7 @@
   "itemName": "The Jade Rabbit",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 1496699324
+   "Weapon Catalyst Exotic": 1496699324
   }
  },
  "3670960347": {
@@ -8696,7 +8696,7 @@
   "name": "Adagio",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2889515627
+   "Weapon Perk Enhanced": 2889515627
   }
  },
  "3674673997": {
@@ -8704,7 +8704,7 @@
   "name": "Immovable Object",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3800201097
+   "Weapon Perk": 3800201097
   }
  },
  "3678483220": {
@@ -8712,7 +8712,7 @@
   "name": "Assassin's Blade",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 354401740
+   "Weapon Perk": 354401740
   }
  },
  "3682186345": {
@@ -8762,7 +8762,7 @@
   "name": "Shoot to Loot",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2840833776
+   "Weapon Perk Enhanced": 2840833776
   }
  },
  "3705817207": {
@@ -8770,7 +8770,7 @@
   "name": "Duelist's Trance",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1646437399
+   "Weapon Perk Enhanced": 1646437399
   }
  },
  "3708227201": {
@@ -8778,7 +8778,7 @@
   "name": "Surrounded",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 781192741
+   "Weapon Perk Enhanced": 781192741
   }
  },
  "3708505013": {
@@ -8788,8 +8788,8 @@
   "itemName": "Ace of Spades",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1561789734,
-   "frame": 647617635
+   "Weapon Perk Exotic": 1561789734,
+   "Weapon Frame Exotic": 647617635
   }
  },
  "3713839994": {
@@ -8807,7 +8807,7 @@
   "name": "Eye of the Storm",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 699525795
+   "Weapon Perk": 699525795
   }
  },
  "3721627275": {
@@ -8820,7 +8820,7 @@
   "name": "Air Assault",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2898218424
+   "Weapon Perk Enhanced": 2898218424
   }
  },
  "3723531833": {
@@ -8865,7 +8865,7 @@
   "name": "Bait and Switch",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 3078487919
+   "Weapon Perk": 3078487919
   }
  },
  "3750579462": {
@@ -8878,7 +8878,7 @@
   "name": "Cascade Point",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 331667533
+   "Weapon Perk Enhanced": 331667533
   }
  },
  "3754350707": {
@@ -8893,8 +8893,8 @@
   "itemName": "Sweet Business",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1853177948,
-   "catalyst": 1249968538
+   "Weapon Perk Exotic": 1853177948,
+   "Weapon Catalyst Exotic": 1249968538
   }
  },
  "3755250867": {
@@ -8902,7 +8902,7 @@
   "name": "Under Pressure",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1645158859
+   "Weapon Perk": 1645158859
   }
  },
  "3759707664": {
@@ -8937,8 +8937,8 @@
   "itemName": "Tommy's Matchbook",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 961505134,
-   "catalyst": 4001063065
+   "Weapon Frame Exotic": 961505134,
+   "Weapon Catalyst Exotic": 4001063065
   }
  },
  "3785661089": {
@@ -8971,7 +8971,7 @@
   "name": "Ambitious Assassin",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2010801679
+   "Weapon Perk": 2010801679
   }
  },
  "3800201097": {
@@ -8979,7 +8979,7 @@
   "name": "Immovable Object",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3674673997
+   "Weapon Perk Enhanced": 3674673997
   }
  },
  "3808234135": {
@@ -9006,7 +9006,7 @@
   "itemName": "Black Talon",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 4072668471
+   "Weapon Frame Exotic": 4072668471
   }
  },
  "3824105627": {
@@ -9014,7 +9014,7 @@
   "name": "Firefly",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1183436451
+   "Weapon Perk Enhanced": 1183436451
   }
  },
  "3824622015": {
@@ -9046,8 +9046,8 @@
   "itemName": "No Time to Explain",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3556949035,
-   "catalyst": 2145198832
+   "Weapon Perk Exotic": 3556949035,
+   "Weapon Catalyst Exotic": 2145198832
   }
  },
  "3841661468": {
@@ -9070,7 +9070,7 @@
   "name": "Dragonfly",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 169755979
+   "Weapon Perk Enhanced": 169755979
   }
  },
  "3866705246": {
@@ -9085,8 +9085,8 @@
   "itemName": "Gjallarhorn",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2962361451,
-   "catalyst": 2526801077
+   "Weapon Frame Exotic": 2962361451,
+   "Weapon Catalyst Exotic": 2526801077
   }
  },
  "3878366039": {
@@ -9094,7 +9094,7 @@
   "name": "Impulse Amplifier",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 951095735
+   "Weapon Perk": 951095735
   }
  },
  "3884127242": {
@@ -9104,7 +9104,7 @@
   "itemName": "Sleeper Simulant",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 136852797
+   "Weapon Catalyst Exotic": 136852797
   }
  },
  "3895804619": {
@@ -9129,8 +9129,8 @@
   "itemName": "Graviton Lance",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 320534106,
-   "catalyst": 615063266
+   "Weapon Perk Exotic": 320534106,
+   "Weapon Catalyst Exotic": 615063266
   }
  },
  "3907299874": {
@@ -9152,8 +9152,8 @@
   "itemName": "The Colony",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 2019952880,
-   "catalyst": 769440797
+   "Weapon Perk Exotic": 2019952880,
+   "Weapon Catalyst Exotic": 769440797
   }
  },
  "3913600130": {
@@ -9161,7 +9161,7 @@
   "name": "Whirlwind Blade",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 147913470
+   "Weapon Perk Enhanced": 147913470
   }
  },
  "3920370755": {
@@ -9169,7 +9169,7 @@
   "name": "Firmly Planted",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 280464955
+   "Weapon Perk": 280464955
   }
  },
  "3920852688": {
@@ -9197,7 +9197,7 @@
   "name": "Lasting Impression",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1167468626
+   "Weapon Perk Enhanced": 1167468626
   }
  },
  "3927963100": {
@@ -9245,8 +9245,8 @@
   "itemName": "Duality",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 536517534,
-   "catalyst": 3591914291
+   "Weapon Frame Exotic": 536517534,
+   "Weapon Catalyst Exotic": 3591914291
   }
  },
  "3961599962": {
@@ -9261,8 +9261,8 @@
   "itemName": "Traveler's Chosen",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 24925370,
-   "frame": 975429949
+   "Weapon Perk Exotic": 24925370,
+   "Weapon Frame Exotic": 975429949
   }
  },
  "3969294337": {
@@ -9277,8 +9277,8 @@
   "itemName": "Telesto",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1927916065,
-   "catalyst": 920755188
+   "Weapon Frame Exotic": 1927916065,
+   "Weapon Catalyst Exotic": 920755188
   }
  },
  "3973928133": {
@@ -9291,7 +9291,7 @@
   "name": "No Distractions",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2866798147
+   "Weapon Perk": 2866798147
   }
  },
  "3977735242": {
@@ -9299,7 +9299,7 @@
   "name": "Tracking Module",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 406461158
+   "Weapon Perk Enhanced": 406461158
   }
  },
  "3978937353": {
@@ -9309,8 +9309,8 @@
   "itemName": "Ticuu's Divination",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3298446480,
-   "frame": 3239299468
+   "Weapon Perk Exotic": 3298446480,
+   "Weapon Frame Exotic": 3239299468
   }
  },
  "3983457027": {
@@ -9345,8 +9345,8 @@
   "itemName": "Tommy's Matchbook",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 3772485195,
-   "frame": 961505134
+   "Weapon Perk Exotic": 3772485195,
+   "Weapon Frame Exotic": 961505134
   }
  },
  "4003264426": {
@@ -9361,7 +9361,7 @@
   "itemName": "Bad Juju",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 1324340508
+   "Weapon Catalyst Exotic": 1324340508
   }
  },
  "4008116374": {
@@ -9381,8 +9381,8 @@
   "itemName": "SUROS Regime",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 944506345,
-   "catalyst": 1733620422
+   "Weapon Frame Exotic": 944506345,
+   "Weapon Catalyst Exotic": 1733620422
   }
  },
  "4015745376": {
@@ -9392,8 +9392,8 @@
   "itemName": "Osteo Striga",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2965975126,
-   "catalyst": 229096166
+   "Weapon Frame Exotic": 2965975126,
+   "Weapon Catalyst Exotic": 229096166
   }
  },
  "4016776972": {
@@ -9453,7 +9453,7 @@
   "name": "Headseeker",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 460017080
+   "Weapon Perk": 460017080
   }
  },
  "4045839491": {
@@ -9463,8 +9463,8 @@
   "itemName": "Sunshot",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 4115637021,
-   "catalyst": 1824496861
+   "Weapon Perk Exotic": 4115637021,
+   "Weapon Catalyst Exotic": 1824496861
   }
  },
  "4048389864": {
@@ -9484,7 +9484,7 @@
   "name": "One for All",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 859780267
+   "Weapon Perk Enhanced": 859780267
   }
  },
  "4058375008": {
@@ -9519,7 +9519,7 @@
   "itemName": "Polaris Lance",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 1000724343
+   "Weapon Frame Exotic": 1000724343
   }
  },
  "4071163871": {
@@ -9527,7 +9527,7 @@
   "name": "Threat Detector",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 494941759
+   "Weapon Perk Enhanced": 494941759
   }
  },
  "4072668471": {
@@ -9537,7 +9537,7 @@
   "itemName": "Black Talon",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "catalyst": 3810173190
+   "Weapon Catalyst Exotic": 3810173190
   }
  },
  "4074888076": {
@@ -9567,8 +9567,8 @@
   "itemName": "Two-Tailed Fox",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 777637181,
-   "frame": 3649430342
+   "Weapon Perk Exotic": 777637181,
+   "Weapon Frame Exotic": 3649430342
   }
  },
  "4080055066": {
@@ -9581,7 +9581,7 @@
   "name": "Swashbuckler",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 1161469972
+   "Weapon Perk Enhanced": 1161469972
   }
  },
  "4085959009": {
@@ -9589,7 +9589,7 @@
   "name": "Relentless Strikes",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1749209109
+   "Weapon Perk": 1749209109
   }
  },
  "4091000557": {
@@ -9604,8 +9604,8 @@
   "itemName": "Thorn",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 2921090754,
-   "frame": 1863355414
+   "Weapon Perk Exotic": 2921090754,
+   "Weapon Frame Exotic": 1863355414
   }
  },
  "4091460919": {
@@ -9625,7 +9625,7 @@
   "name": "Frenzy",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 3007133316
+   "Weapon Perk Enhanced": 3007133316
   }
  },
  "4113841443": {
@@ -9640,8 +9640,8 @@
   "itemName": "Sunshot",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 4045839491,
-   "catalyst": 1824496861
+   "Weapon Frame Exotic": 4045839491,
+   "Weapon Catalyst Exotic": 1824496861
   }
  },
  "4116820839": {
@@ -9649,7 +9649,7 @@
   "name": "Snapshot Sights",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 957782887
+   "Weapon Perk": 957782887
   }
  },
  "4126105782": {
@@ -9684,8 +9684,8 @@
   "itemName": "Vigilance Wing",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 2307143135,
-   "catalyst": 615063267
+   "Weapon Frame Exotic": 2307143135,
+   "Weapon Catalyst Exotic": 615063267
   }
  },
  "4148158229": {
@@ -9695,8 +9695,8 @@
   "itemName": "Thunderlord",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 1419069769,
-   "catalyst": 1550063955
+   "Weapon Perk Exotic": 1419069769,
+   "Weapon Catalyst Exotic": 1550063955
   }
  },
  "4148827738": {
@@ -9756,7 +9756,7 @@
   "name": "Tireless Blade",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2590710093
+   "Weapon Perk": 2590710093
   }
  },
  "4184589900": {
@@ -9771,8 +9771,8 @@
   "itemName": "Symmetry",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 127335543,
-   "catalyst": 4218954970
+   "Weapon Perk Exotic": 127335543,
+   "Weapon Catalyst Exotic": 4218954970
   }
  },
  "4188742693": {
@@ -9794,8 +9794,8 @@
   "itemName": "Bastion",
   "type": "Weapon Perk Exotic",
   "linkedWith": {
-   "frame": 1186480754,
-   "catalyst": 4273298922
+   "Weapon Frame Exotic": 1186480754,
+   "Weapon Catalyst Exotic": 4273298922
   }
  },
  "4193902249": {
@@ -9833,7 +9833,7 @@
   "name": "Gutshot Straight",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1365187766
+   "Weapon Perk": 1365187766
   }
  },
  "4203236451": {
@@ -9851,7 +9851,7 @@
   "name": "Killing Wind",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2450788523
+   "Weapon Perk": 2450788523
   }
  },
  "4208418110": {
@@ -9861,8 +9861,8 @@
   "itemName": "Outbreak Perfected",
   "type": "Weapon Frame Exotic",
   "linkedWith": {
-   "perk": 3242533954,
-   "catalyst": 3352275956
+   "Weapon Perk Exotic": 3242533954,
+   "Weapon Catalyst Exotic": 3352275956
   }
  },
  "4213142382": {
@@ -9877,8 +9877,8 @@
   "itemName": "Symmetry",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 127335543,
-   "frame": 4185339856
+   "Weapon Perk Exotic": 127335543,
+   "Weapon Frame Exotic": 4185339856
   }
  },
  "4220332374": {
@@ -9920,7 +9920,7 @@
   "name": "Subsistence",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 1820235745
+   "Weapon Perk": 1820235745
   }
  },
  "4249817697": {
@@ -9947,7 +9947,7 @@
   "itemName": "Dead Messenger",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "frame": 2733244971
+   "Weapon Frame Exotic": 2733244971
   }
  },
  "4259872957": {
@@ -9957,8 +9957,8 @@
   "itemName": "Parasite",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 1679262379,
-   "frame": 1174163613
+   "Weapon Perk Exotic": 1679262379,
+   "Weapon Frame Exotic": 1174163613
   }
  },
  "4260353952": {
@@ -10008,8 +10008,8 @@
   "itemName": "Bastion",
   "type": "Weapon Catalyst Exotic",
   "linkedWith": {
-   "perk": 4190643473,
-   "frame": 1186480754
+   "Weapon Perk Exotic": 4190643473,
+   "Weapon Frame Exotic": 1186480754
   }
  },
  "4278960718": {
@@ -10032,7 +10032,7 @@
   "name": "Golden Tricorn Enhanced",
   "type": "Weapon Perk Enhanced",
   "linkedWith": {
-   "perk": 2610012052
+   "Weapon Perk": 2610012052
   }
  },
  "4293542123": {
@@ -10040,7 +10040,7 @@
   "name": "Incandescent",
   "type": "Weapon Perk",
   "linkedWith": {
-   "perk": 2675184851
+   "Weapon Perk Enhanced": 2675184851
   }
  }
 }
