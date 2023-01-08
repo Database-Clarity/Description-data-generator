@@ -1,18 +1,20 @@
-import { armorMod } from './filters/armorMod'
-import { categorizeItems } from './utils/categorizeItems'
-import { getManifest } from './utils/getManifest'
-import { legendaryWeapon } from './filters/legendaryWeapon'
-import { subclass } from './filters/subclass'
-import { exoticsWeapon } from './filters/exoticWeapon'
 import { BasePerk, PerkTypes } from './interfaces/editor.interface'
-import { artifactMod } from './filters/artifactMod'
-import { exoticArmor } from './filters/exoticArmor'
 
 import _ from 'lodash'
+import { armorMod } from './filters/armorMod'
+import { artifactMod } from './filters/artifactMod'
+import { categorizeItems } from './utils/categorizeItems'
+import { exoticArmor } from './filters/exoticArmor'
+import { exoticsWeapon } from './filters/exoticWeapon'
 import fs from 'fs'
-import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes'
+import { getManifest } from './utils/getManifest'
+import { legendaryWeapon } from './filters/legendaryWeapon'
 import { makeBasePerk } from './utils/makeBasePerk'
-;(async () => {
+;
+import { subclass } from './filters/subclass'
+import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes'
+
+(async () => {
    const { inventoryItems, plugSet, socketType } = await getManifest()
 
    const {
@@ -56,7 +58,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
          { perk: 689005463 }, //  Accelerated Coils
          { perk: 3032599245 }, // Blinding Grenades
          { perk: 1885400500 }, // Ricochet Rounds
-         { perk: 806159697 }, //  Trench Barrel
+         { perk: 806159697 } //  Trench Barrel
       ],
       'Armor Perk Exotic': [
          { perk: 3651607301, item: 1654461647 }, // Sect of Insight // Aeon Safe
@@ -64,7 +66,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
          { perk: 3268255645, item: 3942036043 } //  Sect of Force   // Aeon Swift
       ],
       'Armor Mod Activity': [
-         { perk: 369171376 }, // Transcendent Blessing
+         { perk: 369171376 } // Transcendent Blessing
       ]
    }
 
@@ -88,7 +90,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
          ...artifactModList,
          ...Object.entries(missingPerks).reduce<{ [key: string]: BasePerk }>((acc, [type, hashArr]) => {
             hashArr.forEach((data) => {
-               const {perk, item} = data
+               const { perk, item } = data
                if (item) {
                   acc[perk] = makeBasePerk(inventoryItems[perk], type as PerkTypes, inventoryItems[item])
                } else {
@@ -134,8 +136,8 @@ import { makeBasePerk } from './utils/makeBasePerk'
                itemName: perk.item?.displayProperties.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithItem(perk, 'Weapon Perk Exotic'),
-                  frame: findLinkWithItem(perk, 'Weapon Frame Exotic')
+                  'Weapon Perk Exotic': findLinkWithItem(perk, 'Weapon Perk Exotic'),
+                  'Weapon Frame Exotic': findLinkWithItem(perk, 'Weapon Frame Exotic')
                }
             }
             break
@@ -147,8 +149,8 @@ import { makeBasePerk } from './utils/makeBasePerk'
                itemName: perk.item?.displayProperties.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithItem(perk, 'Weapon Perk Exotic'),
-                  catalyst: findLinkWithItem(perk, 'Weapon Catalyst Exotic')
+                  'Weapon Perk Exotic': findLinkWithItem(perk, 'Weapon Perk Exotic'),
+                  'Weapon Catalyst Exotic': findLinkWithItem(perk, 'Weapon Catalyst Exotic')
                }
             }
             break
@@ -160,8 +162,8 @@ import { makeBasePerk } from './utils/makeBasePerk'
                itemName: perk.item?.displayProperties.name,
                type: perk.type,
                linkedWith: {
-                  frame: findLinkWithItem(perk, 'Weapon Frame Exotic'),
-                  catalyst: findLinkWithItem(perk, 'Weapon Catalyst Exotic')
+                  'Weapon Frame Exotic': findLinkWithItem(perk, 'Weapon Frame Exotic'),
+                  'Weapon Catalyst Exotic': findLinkWithItem(perk, 'Weapon Catalyst Exotic')
                }
             }
             break
@@ -171,7 +173,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
                name: perk.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithPerk(perk, 'Weapon Perk')
+                  'Weapon Perk': findLinkWithPerk(perk, 'Weapon Perk')
                }
             }
             break
@@ -181,7 +183,7 @@ import { makeBasePerk } from './utils/makeBasePerk'
                name: perk.name,
                type: perk.type,
                linkedWith: {
-                  perk: findLinkWithPerk(perk, 'Weapon Perk Enhanced')
+                  'Weapon Perk Enhanced': findLinkWithPerk(perk, 'Weapon Perk Enhanced')
                }
             }
             break
