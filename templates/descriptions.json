@@ -2101,6 +2101,27 @@
   "name": "Balanced Glide",
   "type": "Subclass Movement"
  },
+ "891750160": {
+  "hash": "891750160",
+  "name": "Hunter's Trace IV",
+  "itemHash": 1473821207,
+  "itemName": "Revision Zero",
+  "type": "Weapon Frame Exotic"
+ },
+ "891750166": {
+  "hash": "891750166",
+  "name": "Hunter's Trace II",
+  "itemHash": 1473821207,
+  "itemName": "Revision Zero",
+  "type": "Weapon Frame Exotic"
+ },
+ "891750167": {
+  "hash": "891750167",
+  "name": "Hunter's Trace III",
+  "itemHash": 1473821207,
+  "itemName": "Revision Zero",
+  "type": "Weapon Frame Exotic"
+ },
  "895140517": {
   "hash": "895140517",
   "name": "Precision Frame",
@@ -9033,6 +9054,13 @@
   "hash": "3829100654",
   "name": "Supreme Nightmare Banisher",
   "type": "Armor Mod Activity"
+ },
+ "3834106778": {
+  "hash": "3834106778",
+  "name": "Hunter's Trace",
+  "itemHash": 1473821207,
+  "itemName": "Revision Zero",
+  "type": "Weapon Frame Exotic"
  },
  "3836152936": {
   "hash": "3836152936",
