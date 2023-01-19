@@ -22,22 +22,20 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Install and Build 🔧
+      - name: Install 🔧
         run: |
           npm ci
+          npm i @icemourne/tool-box
+
+      - name: Build
+        run: |
           npm run build
           npm run generate
-          
-      - name: Deploy generator 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: generator # The folder the action should deploy.
-          branch: main
-          target-folder: generator
 
-      - name: Generate data 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: templates # Folder you wish to deploy
-          branch: main
-          target-folder: templates
+      - name: Deploy 🚀
+        run: |
+          git config --global user.email "cboweris@gmail.com"
+          git config --global user.name "Ice-mourne"
+          git add .
+          git commit -m "deploy"
+          git push
