@@ -32,7 +32,13 @@ jobs:
           npm run build
           npm run generate
 
+      - name: Check if there are any changes 📦
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
       - name: Deploy 🚀
+        if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config --global user.email "cboweris@gmail.com"
           git config --global user.name "Ice-mourne"
