@@ -5,7 +5,7 @@
       "generate": "node generator/main.js"
    },
    "dependencies": {
-      "@icemourne/tool-box": "^1.0.34",
+      "@icemourne/tool-box": "^1.0.36",
       "lodash": "^4.17.21"
    },
    "devDependencies": {
