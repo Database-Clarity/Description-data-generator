@@ -27,10 +27,11 @@ jobs:
           npm ci
           npm i @icemourne/tool-box
 
-      - name: Build
-        run: |
-          npm run build
-          npm run generate
+      - name: Build 🔨
+        run: npm run build
+
+      - name: Generate 🏗️
+        run: npm run generate
 
       - name: Check if there are any changes 📦
         id: verify_diff

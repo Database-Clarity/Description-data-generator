@@ -1,22 +1,72 @@
-import { BasePerk, PerkTypes } from './interfaces/editor.interface'
-
-import _ from 'lodash'
-import { armorMod } from './filters/armorMod'
-import { artifactMod } from './filters/artifactMod'
-import { categorizeItems } from './utils/categorizeItems'
-import { exoticArmor } from './filters/exoticArmor'
-import { exoticsWeapon } from './filters/exoticWeapon'
 import fs from 'fs'
-import { getManifest } from './utils/getManifest'
-import { legendaryWeapon } from './filters/legendaryWeapon'
-import { makeBasePerk } from './utils/makeBasePerk'
-;
-import { subclass } from './filters/subclass'
-import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes'
 
-(async () => {
-   const { inventoryItems, plugSet, socketType } = await getManifest()
+import { fetchBungieManifest } from '@icemourne/tool-box'
+import _ from 'lodash'
 
+import { armorMods } from './filters/armorMod.js'
+import { artifactMods } from './filters/artifactMod.js'
+import { exoticArmors } from './filters/exoticArmor.js'
+import { exoticsWeapons } from './filters/exoticWeapon.js'
+import { legendaryWeapons } from './filters/legendaryWeapon.js'
+import { subclass } from './filters/subclass.js'
+import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes.js'
+import { PerkTypes } from './interfaces/generalTypes.js'
+import { categorizeItems } from './utils/categorizeItems.js'
+import { createFolders } from './utils/createFolders.js'
+import { createPerks } from './utils/createPerks.js'
+import { InventoryItemEnums } from './utils/enums.js'
+
+export type PerkData = {
+   appearsOn: Set<string | number>
+   name: string
+   hash: number
+   type: PerkTypes
+}
+
+export type PerkDataList = {
+   [key: string]: PerkData
+}
+
+export type CompletePerkData = {
+   appearsOn: (string | number)[]
+   name: string
+   hash: number
+   type: PerkTypes
+}
+
+export type CompletePerkDataList = {
+   [key: string]: CompletePerkData
+}
+;(async () => {
+   const {
+      inventoryItem: dirtyInventoryItems,
+      plugSet,
+      socketType
+   } = await fetchBungieManifest(['inventoryItem', 'plugSet', 'socketType'])
+   if (dirtyInventoryItems === undefined || plugSet === undefined || socketType === undefined) {
+      throw new Error('Failed to fetch manifest')
+   }
+
+   const inventoryItems = _.omitBy(dirtyInventoryItems, (item) => {
+      // remove stuff
+      if (
+         item.itemTypeDisplayName === 'Shader' ||
+         item.itemTypeDisplayName === 'Deprecated Armor Mod' ||
+         item.displayProperties.name === 'Crucible Tracker' ||
+         item.displayProperties.name === 'Kill Tracker' ||
+         item.displayProperties.name === 'Tracker Disabled' ||
+         item.displayProperties.name === 'Classified' ||
+         item.displayProperties.name === 'Default Shader' ||
+         item.displayProperties.name.match(/Empty [A-z]+ Socket/) ||
+         item.displayProperties.name.match(/[A-z]+ Memento Tracker/) ||
+         item.hash === InventoryItemEnums.osteoStrigaCatalyst || // not equippable
+         item.hash === InventoryItemEnums.transformative || // no reason to have placeholder perk
+         item.hash === InventoryItemEnums.aeonSafe || // dummy item
+         item.hash === InventoryItemEnums.aeonSoul || // dummy item
+         item.hash === InventoryItemEnums.aeonSwift // dummy item
+      )
+         return true
+   })
    const {
       exoticArmorArr,
       exoticWeaponsArr,
@@ -27,188 +77,72 @@ import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes'
       craftingRecipeArr
    } = categorizeItems(inventoryItems)
 
-   const exoticArmorList = exoticArmor(inventoryItems, plugSet, exoticArmorArr)
-   const exoticsWeaponList = exoticsWeapon(inventoryItems, plugSet, socketType, exoticWeaponsArr)
-   // legendary weapon has to go after exotic weapon
-   const legendaryWeaponList = legendaryWeapon(inventoryItems, plugSet, legendaryWeaponArr)
-   const armorModList = armorMod(inventoryItems, plugSet, legendaryArmorArr)
-   // artifact mod has to go after armor mod
-   const artifactModList = artifactMod(inventoryItems, artifactArr)
-   const subclassList = subclass(subclassArr)
-   const craftingRecipeList = weaponCraftingRecipes(inventoryItems, plugSet, craftingRecipeArr)
+   const legendaryWeaponsList = legendaryWeapons(inventoryItems, plugSet, legendaryWeaponArr)
+   const exoticsWeaponsList = exoticsWeapons(
+      inventoryItems,
+      plugSet,
+      exoticWeaponsArr,
+      socketType,
+      legendaryWeaponsList
+   )
+   const craftingRecipeList = weaponCraftingRecipes(
+      inventoryItems,
+      plugSet,
+      craftingRecipeArr,
+      legendaryWeaponsList,
+      exoticsWeaponsList
+   )
+   const armorModList = armorMods(inventoryItems, plugSet, legendaryArmorArr)
 
-   const missingPerks: { [key in PerkTypes]?: { perk: number; item?: number }[] } = {
-      'Weapon Perk': [
-         { perk: 1431678320 }, // Alloy Magazine
-         { perk: 1968497646 }, // Armor-Piercing Rounds
-         { perk: 1716000303 }, // Concussion Grenades
-         { perk: 4134353779 }, // Drop Mag
-         { perk: 1047830412 }, // Full Choke
-         { perk: 1561002382 }, // High-Caliber Rounds
-         { perk: 3796465595 }, // Impact Casing
-         { perk: 1687452232 }, // Liquid Coils
-         { perk: 830282363 }, //  Phase Magazine
-         { perk: 409831596 }, //  Proximity Grenades
-         { perk: 3999527219 }, // Remote Detonation
-         { perk: 1140096971 }, // Seraph Rounds
-         { perk: 466087222 }, //  Smoothbore
-         { perk: 3301904089 }, // Spike Grenades
-         { perk: 3373736292 }, // Sticky Grenades
-         { perk: 3721627275 }, // Swap Mag
-         { perk: 689005463 }, //  Accelerated Coils
-         { perk: 3032599245 }, // Blinding Grenades
-         { perk: 1885400500 }, // Ricochet Rounds
-         { perk: 806159697 } //  Trench Barrel
-      ],
-      'Armor Perk Exotic': [
-         { perk: 3651607301, item: 1654461647 }, // Sect of Insight // Aeon Safe
-         { perk: 3683811620, item: 2950045886 }, // Sect of Vigor   // Aeon Sou
-         { perk: 3268255645, item: 3942036043 } //  Sect of Force   // Aeon Swift
-      ],
-      'Armor Mod Activity': [
-         { perk: 369171376 } // Transcendent Blessing
-      ]
+   const exoticArmorList = exoticArmors(inventoryItems, plugSet, exoticArmorArr)
+   const artifactModList = artifactMods(inventoryItems, artifactArr)
+   const subclassList = subclass(inventoryItems, plugSet, subclassArr)
+
+   const allPerks = {
+      ...legendaryWeaponsList,
+      ...exoticsWeaponsList,
+      ...craftingRecipeList,
+      ...armorModList,
+      ...exoticArmorList,
+      ...artifactModList,
+      ...subclassList
    }
-
-   const manualFixes: { [key: string]: { type?: PerkTypes } } = {
-      // Riven's Curse
-      2527938402: {
-         type: 'Armor Mod Activity'
-      }
-   }
-
-   const perkList: { [key: string]: BasePerk } = {
-      ...{
-         ...exoticArmorList,
-         ...exoticsWeaponList,
-         ...armorModList,
-         ...subclassList,
-         ...craftingRecipeList
-      },
-      ...{
-         ...legendaryWeaponList,
-         ...artifactModList,
-         ...Object.entries(missingPerks).reduce<{ [key: string]: BasePerk }>((acc, [type, hashArr]) => {
-            hashArr.forEach((data) => {
-               const { perk, item } = data
-               if (item) {
-                  acc[perk] = makeBasePerk(inventoryItems[perk], type as PerkTypes, inventoryItems[item])
-               } else {
-                  acc[perk] = makeBasePerk(inventoryItems[perk], type as PerkTypes)
-               }
-            })
-            return acc
-         }, {})
-      }
-   }
-
-   const blacklisted = [712324018, 2132353550]
-
-   const competeList = _.merge(_.omit(perkList, blacklisted), manualFixes) as unknown as BasePerk
-
-   const findLinkWithItem = (perk: BasePerk, type: PerkTypes) => {
-      return Object.values(competeList).find((weapon) => {
-         return weapon.item?.hash === perk.item?.hash && weapon.type === type
-      })?.hash
-   }
-   const findLinkWithPerk = (perk: BasePerk, type: PerkTypes) => {
-      return Object.values(competeList).find((perkInList) => {
-         return perkInList.type === type && perkInList.name.startsWith(perk.name.replace(' Enhanced', ''))
-      })?.hash
-   }
-
-   const finalList = Object.entries(competeList).reduce<{ [key: string]: any }>((acc, [hash, perk]) => {
-      switch (perk.type as PerkTypes) {
-         case 'Armor Perk Exotic':
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               itemHash: perk.item?.hash,
-               itemName: perk.item?.displayProperties.name,
-               type: perk.type
-            }
-            break
-         case 'Weapon Catalyst Exotic':
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               itemHash: perk.item?.hash,
-               itemName: perk.item?.displayProperties.name,
-               type: perk.type,
-               linkedWith: {
-                  'Weapon Perk Exotic': findLinkWithItem(perk, 'Weapon Perk Exotic'),
-                  'Weapon Frame Exotic': findLinkWithItem(perk, 'Weapon Frame Exotic')
-               }
-            }
-            break
-         case 'Weapon Frame Exotic':
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               itemHash: perk.item?.hash,
-               itemName: perk.item?.displayProperties.name,
-               type: perk.type,
-               linkedWith: {
-                  'Weapon Perk Exotic': findLinkWithItem(perk, 'Weapon Perk Exotic'),
-                  'Weapon Catalyst Exotic': findLinkWithItem(perk, 'Weapon Catalyst Exotic')
-               }
-            }
-            break
-         case 'Weapon Perk Exotic':
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               itemHash: perk.item?.hash,
-               itemName: perk.item?.displayProperties.name,
-               type: perk.type,
-               linkedWith: {
-                  'Weapon Frame Exotic': findLinkWithItem(perk, 'Weapon Frame Exotic'),
-                  'Weapon Catalyst Exotic': findLinkWithItem(perk, 'Weapon Catalyst Exotic')
-               }
-            }
-            break
-         case 'Weapon Perk Enhanced':
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               type: perk.type,
-               linkedWith: {
-                  'Weapon Perk': findLinkWithPerk(perk, 'Weapon Perk')
-               }
-            }
-            break
-         case 'Weapon Perk':
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               type: perk.type,
-               linkedWith: {
-                  'Weapon Perk Enhanced': findLinkWithPerk(perk, 'Weapon Perk Enhanced')
-               }
-            }
-            break
-         default:
-            acc[hash] = {
-               hash,
-               name: perk.name,
-               type: perk.type
-            }
-            break
-      }
-      return acc
-   }, {})
 
    if (!fs.existsSync('./templates')) {
       fs.mkdirSync('./templates')
    }
 
-   const jsonStringifyCleaner = (key: string, value: any) => {
-      if (typeof value === 'object' && Object.keys(value).length === 0) return
-      return value
+   // converts appears on from set to array and filters out exotic weapons from legendary/exotic weapon perks
+   const completeList = Object.entries(allPerks).reduce((acc, [hash, perk]) => {
+      let appearsOnArr = Array.from(perk.appearsOn)
+
+      // filter out exotic weapons from legendary/exotic weapon perks
+      if (appearsOnArr.some((x) => typeof x === 'string') && appearsOnArr.some((x) => typeof x === 'number')) {
+         const newArr = appearsOnArr.map((typeOrHash) => {
+            if (typeof typeOrHash === 'number') {
+               const itemType = inventoryItems[typeOrHash].itemTypeDisplayName
+               if (itemType) return itemType
+            }
+            return typeOrHash
+         })
+         // remove duplicates
+         appearsOnArr = [...new Set(newArr)]
+      }
+
+      acc[hash] = {
+         ...perk,
+         appearsOn: appearsOnArr
+      }
+
+      return acc
+   }, {} as CompletePerkDataList)
+
+   const dataForDescriptions = {
+      folders: createFolders(completeList, inventoryItems),
+      perks: createPerks(inventoryItems, completeList)
    }
 
-   const finalListWithOutUndefined = JSON.parse(JSON.stringify(finalList))
-
-   fs.writeFileSync('./templates/descriptions.json', JSON.stringify(finalListWithOutUndefined, jsonStringifyCleaner, 1))
+   fs.writeFileSync('./templates/rawData.json', JSON.stringify(completeList, undefined, 1))
+   fs.writeFileSync('./templates/descriptions.json', JSON.stringify(dataForDescriptions, undefined, 1))
    console.log('Completed')
 })()

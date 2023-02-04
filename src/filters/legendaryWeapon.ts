@@ -1,27 +1,46 @@
-import { BasePerk } from '../interfaces/editor.interface'
-import { InventoryItem, InventoryItems } from '../interfaces/inventoryItem.interface'
-import { PlugSets } from '../interfaces/plugSet.interface'
-import { SocketCategory } from '../utils/enums'
-import { getAllFromSocket } from '../utils/getAllFromSocket'
-import { makeBasePerk } from '../utils/makeBasePerk'
+import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
 
-export const legendaryWeapon = (
+import { PerkTypes } from '../interfaces/generalTypes.js'
+import { PerkData } from '../main.js'
+import { SocketCategoryEnums } from '../utils/enums.js'
+import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+
+export const legendaryWeapons = (
    inventoryItems: InventoryItems,
    plugSets: PlugSets,
-   inventoryItemLegendaryWeapon: InventoryItem[]
+   inventoryItemWeapons: InventoryItem[]
 ) => {
-   return inventoryItemLegendaryWeapon.reduce<{ [key: string]: BasePerk }>((acc, weapon) => {
+   const data: { [key: string]: PerkData } = {}
+
+   const addData = (weapon: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+      const weaponType = weapon.itemTypeDisplayName
+      if (weaponType === undefined) return
+
+      if (data[perk.hash] !== undefined) {
+         data[perk.hash].appearsOn.add(weaponType)
+         return
+      }
+
+      data[perk.hash] = {
+         appearsOn: new Set([weaponType]),
+         name: perk.displayProperties.name,
+         hash: Number(perk.hash),
+         type
+      }
+   }
+
+   inventoryItemWeapons.forEach((weapon) => {
       const weaponSockets = weapon.sockets
-      if (weaponSockets === undefined) return acc
+      if (weaponSockets === undefined) return
 
       const frameSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.weaponFrame)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponFrame
       )
       const perkSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.weaponPerks)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponPerks
       )
       const modSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.weaponMods)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponMods
       )
 
       frameSocketCategory?.socketIndexes.forEach((socketIndex) => {
@@ -31,8 +50,11 @@ export const legendaryWeapon = (
             const frame = inventoryItems[frameHash]
 
             if (frame?.itemTypeDisplayName === 'Intrinsic') {
-               acc[frameHash] = makeBasePerk(frame, 'Weapon Frame')
+               addData(weapon, frame, 'Weapon Frame')
                return
+            }
+            if (frame?.itemTypeDisplayName === 'Enhanced Intrinsic') {
+               addData(weapon, frame, 'Weapon Frame Enhanced')
             }
          })
       })
@@ -40,20 +62,22 @@ export const legendaryWeapon = (
       perkSocketCategory?.socketIndexes.forEach((socketIndex) => {
          const perkArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
 
-         perkArr.forEach((perkHash) => {
-            const perk = inventoryItems[perkHash]
+         perkArr.forEach((frameHash) => {
+            const perk = inventoryItems[frameHash]
 
-            if (perk?.itemTypeDisplayName === 'Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'Weapon Perk')
-               return
-            }
-            if (perk?.itemTypeDisplayName === 'Origin Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'Weapon Origin Trait')
-               return
-            }
-            if (perk?.itemTypeDisplayName === 'Enhanced Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'Weapon Perk Enhanced')
-               return
+            switch (perk?.itemTypeDisplayName) {
+               case 'Trait':
+                  addData(weapon, perk, 'Weapon Trait')
+                  break
+               case 'Origin Trait':
+                  addData(weapon, perk, 'Weapon Trait Origin')
+                  break
+               case 'Enhanced Trait':
+                  addData(weapon, perk, 'Weapon Trait Enhanced')
+                  break
+               default:
+                  addData(weapon, perk, 'Weapon Perk')
+                  break
             }
          })
       })
@@ -65,11 +89,11 @@ export const legendaryWeapon = (
             const mod = inventoryItems[modHash]
 
             if (mod?.itemTypeDisplayName === 'Weapon Mod') {
-               acc[modHash] = makeBasePerk(mod, 'Weapon Mod')
-               return
+               addData(weapon, mod, 'Weapon Mod')
             }
          })
       })
-      return acc
-   }, {})
+   })
+
+   return data
 }

@@ -1,5 +1,4 @@
-import { InventoryItems, SocketEntry } from '../interfaces/inventoryItem.interface'
-import { PlugSets } from '../interfaces/plugSet.interface'
+import { InventoryItems, PlugSets, SocketEntry } from '@icemourne/tool-box'
 
 export const getAllFromSocket = (inventoryItems: InventoryItems, plugSets: PlugSets, socket: SocketEntry) => {
    const items: Set<number> = new Set()

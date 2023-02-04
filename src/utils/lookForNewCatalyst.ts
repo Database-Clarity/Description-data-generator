@@ -1,4 +1,4 @@
-import { SocketTypes } from '../interfaces/socketType.interface'
+import { SocketTypes } from '@icemourne/tool-box'
 
 export const lookForNewCatalyst = (socketTypes: SocketTypes, hash: number) => {
    const catalystHashes = socketTypes[hash].plugWhitelist.flatMap((socket) => {

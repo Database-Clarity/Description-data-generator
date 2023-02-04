@@ -1,21 +1,40 @@
-import { BasePerk } from "../interfaces/editor.interface"
-import { InventoryItem, InventoryItems } from "../interfaces/inventoryItem.interface"
-import { PlugSets } from "../interfaces/plugSet.interface"
-import { SocketCategory } from "../utils/enums"
-import { getAllFromSocket } from "../utils/getAllFromSocket"
-import { makeBasePerk } from "../utils/makeBasePerk"
+import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
 
-export const armorMod = (
+import { PerkTypes } from '../interfaces/generalTypes.js'
+import { PerkData } from '../main.js'
+import { SocketCategoryEnums } from '../utils/enums.js'
+import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+
+export const armorMods = (
    inventoryItems: InventoryItems,
    plugSets: PlugSets,
    inventoryItemLegendaryArmor: InventoryItem[]
 ) => {
-   return inventoryItemLegendaryArmor.reduce<{ [key: string]: BasePerk }>((acc, armor) => {
+   const data: { [key: string]: PerkData } = {}
+
+   const addData = (armor: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+      const armorType = armor.itemTypeDisplayName
+      if (armorType === undefined) return
+
+      if (data[perk.hash] !== undefined) {
+         data[perk.hash].appearsOn.add(armorType)
+         return
+      }
+
+      data[perk.hash] = {
+         appearsOn: new Set([armorType]),
+         name: perk.displayProperties.name,
+         hash: Number(perk.hash),
+         type
+      }
+   }
+
+   inventoryItemLegendaryArmor.forEach((armor) => {
       const armorSockets = armor.sockets
-      if (armorSockets === undefined) return acc
+      if (armorSockets === undefined) return
 
       const modSocketCategory = armorSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.armorMods)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.armorMods
       )
 
       modSocketCategory?.socketIndexes.forEach((socketIndex) => {
@@ -24,20 +43,21 @@ export const armorMod = (
          modsArr.forEach((modHash) => {
             const mod = inventoryItems[modHash]
 
-            if (mod?.itemTypeDisplayName.match(/(General|Helmet|Arms|Chest|Leg) Armor Mod|Class Item Mod/)) {
-               acc[modHash] = makeBasePerk(mod, 'Armor Mod General')
+            if (mod?.itemTypeDisplayName?.match(/(General|Helmet|Arms|Chest|Leg) Armor Mod|Class Item Mod/)) {
+               addData(armor, mod, 'Armor Mod General')
                return
             }
-            if (mod?.itemTypeDisplayName.match(/(Elemental Well|Charged with Light|Warmind Cell) Mod/)) {
-               acc[modHash] = makeBasePerk(mod, 'Armor Mod Combat')
+            if (mod?.itemTypeDisplayName?.match(/(Elemental Well|Charged with Light|Warmind Cell) Mod/)) {
+               addData(armor, mod, 'Armor Mod Combat')
                return
             }
-            if (mod?.itemTypeDisplayName.match(/ Raid Mod$|Nightmare Mod|King's Fall Mod|Vault of Glass Armor Mod/)) {
-               acc[modHash] = makeBasePerk(mod, 'Armor Mod Activity')
+            if (mod?.itemTypeDisplayName?.match(/ Raid Mod$|Nightmare Mod|King's Fall Mod|Vault of Glass Armor Mod/)) {
+               addData(armor, mod, 'Armor Mod Activity')
                return
             }
          })
       })
-      return acc
-   }, {})
+   })
+
+   return data
 }

@@ -1,4 +1,6 @@
-import { InventoryItem, InventoryItems } from '../interfaces/inventoryItem.interface'
+import { InventoryItem, InventoryItems } from '@icemourne/tool-box'
+
+import { ItemTypeEnum, PowerCapHashEnum } from './enums.js'
 
 interface Catagories {
    exoticWeaponsArr: InventoryItem[]
@@ -14,35 +16,34 @@ export const categorizeItems = (inventoryItem: InventoryItems) => {
    // find exotic weapons
    const exoticWeaponTest = (inventoryItem: InventoryItem) =>
       inventoryItem.itemCategoryHashes?.includes(1) &&
-      inventoryItem.itemType === 3 &&
-      inventoryItem.itemTypeAndTierDisplayName.includes('Exotic') &&
+      inventoryItem.itemType === ItemTypeEnum.weapon &&
+      inventoryItem.itemTypeAndTierDisplayName?.includes('Exotic') &&
       Boolean(inventoryItem.collectibleHash)
 
    // find exotic armor
    const exoticArmorTest = (inventoryItem: InventoryItem) =>
-      inventoryItem.itemType === 2 && inventoryItem.itemTypeAndTierDisplayName.includes('Exotic')
+      inventoryItem.itemType === ItemTypeEnum.armor && inventoryItem.itemTypeAndTierDisplayName?.includes('Exotic')
 
    // find legendary armor
    const legendaryArmorTest = (inventoryItem: InventoryItem) =>
-      inventoryItem.itemType === 2 &&
-      inventoryItem.itemTypeAndTierDisplayName.includes('Legendary') &&
-      Boolean(inventoryItem.quality?.versions.some((powerCap) => powerCap.powerCapHash === 2759499571))
+      inventoryItem.itemType === ItemTypeEnum.armor &&
+      inventoryItem.itemTypeAndTierDisplayName?.includes('Legendary') &&
+      Boolean(inventoryItem.quality?.versions.some((powerCap) => powerCap.powerCapHash === PowerCapHashEnum.maxPower))
 
    // find legendary weapons
    const legendaryWeaponTest = (inventoryItem: InventoryItem) =>
       inventoryItem.itemCategoryHashes?.includes(1) &&
-      inventoryItem.itemType === 3 &&
-      !inventoryItem.itemTypeAndTierDisplayName.includes('Exotic')
+      inventoryItem.itemType === ItemTypeEnum.weapon &&
+      !inventoryItem.itemTypeAndTierDisplayName?.includes('Exotic') &&
+      Boolean(inventoryItem.quality?.versions.some((powerCap) => powerCap.powerCapHash === PowerCapHashEnum.maxPower))
 
-   // find aspects, fragments, supers
+   // find subclass
    const subclassTest = (inventoryItem: InventoryItem) =>
-      inventoryItem.itemType === 19 &&
-      inventoryItem.itemCategoryHashes.includes(1043342778) &&
-      !inventoryItem.displayProperties.name.startsWith('Empty ')
+      inventoryItem.itemType === ItemTypeEnum.subclass && inventoryItem.sockets !== undefined
 
    const artifact = (inventoryItem: InventoryItem) => inventoryItem.itemTypeDisplayName === 'Artifact'
 
-   const craftingRecipe = (inventoryItem: InventoryItem) => inventoryItem.itemType === 30
+   const craftingRecipe = (inventoryItem: InventoryItem) => inventoryItem.itemType === ItemTypeEnum.craftingRecipe
 
    return Object.values(inventoryItem).reduce<Catagories>(
       (acc, item) => {
@@ -63,7 +64,7 @@ export const categorizeItems = (inventoryItem: InventoryItems) => {
          legendaryWeaponArr: [],
          subclassArr: [],
          artifactArr: [],
-         craftingRecipeArr: [],
+         craftingRecipeArr: []
       }
    )
 }

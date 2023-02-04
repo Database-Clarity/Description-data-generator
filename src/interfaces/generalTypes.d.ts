@@ -1,15 +1,32 @@
-import { InventoryItem } from './inventoryItem.interface'
+import { InventoryItem } from '@icemourne/tool-box'
 
 export type PerkTypes =
-   | 'Armor Perk Exotic'
-   | 'Weapon Perk Exotic'
-   | 'Weapon Frame Exotic'
-   | 'Weapon Catalyst Exotic'
+   | 'Armor Trait Exotic'
+   | 'Armor Mod General'
+   | 'Armor Mod Combat'
+   | 'Armor Mod Activity'
+   | 'Armor Mod Seasonal'
    // ---------
    | 'Weapon Perk'
-   | 'Weapon Perk Enhanced'
-   | 'Weapon Origin Trait'
+   | 'Weapon Perk Exotic'
+   // ---------
+   | 'Weapon Trait'
+   | 'Weapon Trait Exotic'
+   | 'Weapon Trait Origin'
+   | 'Weapon Trait Origin Exotic'
+   | 'Weapon Trait Frame'
+   | 'Weapon Trait Frame Exotic'
+   | 'Weapon Trait Enhanced'
+   | 'Weapon Trait Enhanced Exotic'
+   // ---------
    | 'Weapon Frame'
+   | 'Weapon Frame Exotic'
+   | 'Weapon Frame Enhanced'
+   | 'Weapon Frame Enhanced Exotic'
+   // ---------
+   | 'Weapon Catalyst Exotic'
+   // ---------
+   | 'Weapon Mod'
    // ---------
    | 'Subclass Fragment'
    | 'Subclass Aspect'
@@ -19,11 +36,6 @@ export type PerkTypes =
    | 'Subclass Class'
    | 'Subclass Movement'
    // ---------
-   | 'Armor Mod General'
-   | 'Armor Mod Combat'
-   | 'Armor Mod Activity'
-   | 'Armor Mod Seasonal'
-   | 'Weapon Mod'
    | 'Ghost Mod'
 
 export interface BasePerk {

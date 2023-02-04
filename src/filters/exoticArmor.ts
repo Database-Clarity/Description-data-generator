@@ -1,21 +1,42 @@
-import { BasePerk } from '../interfaces/editor.interface'
-import { InventoryItem, InventoryItems } from '../interfaces/inventoryItem.interface'
-import { PlugSets } from '../interfaces/plugSet.interface'
-import { SocketCategory } from '../utils/enums'
-import { getAllFromSocket } from '../utils/getAllFromSocket'
-import { makeBasePerk } from '../utils/makeBasePerk'
+import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
 
-export const exoticArmor = (
+import { PerkTypes } from '../interfaces/generalTypes.js'
+import { PerkData } from '../main.js'
+import { SocketCategoryEnums } from '../utils/enums.js'
+import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+
+export const exoticArmors = (
    inventoryItems: InventoryItems,
    plugSets: PlugSets,
    inventoryItemExoticArmor: InventoryItem[]
-) =>
-   inventoryItemExoticArmor.reduce<{ [key: string]: BasePerk }>((acc, armor) => {
+) => {
+   const data: { [key: string]: PerkData } = {}
+
+   const addData = (armor: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+      const armorHash = armor.hash
+
+      if (data[perk.hash] !== undefined) {
+         data[perk.hash].appearsOn.add(armorHash)
+         return
+      }
+
+      data[perk.hash] = {
+         appearsOn: new Set([armorHash]),
+         name: perk.displayProperties.name,
+         hash: Number(perk.hash),
+         type
+      }
+   }
+
+   inventoryItemExoticArmor.forEach((armor) => {
       const armorSockets = armor.sockets
-      if (armorSockets === undefined) return acc
+      if (armorSockets === undefined) return
 
       const perkSocketCategory = armorSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.armorPerks)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.armorPerks
+      )
+      const modSocketCategory = armorSockets.socketCategories.find(
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.armorMods
       )
 
       perkSocketCategory?.socketIndexes.forEach((socketIndex) => {
@@ -25,10 +46,25 @@ export const exoticArmor = (
             const perk = inventoryItems[perkHash]
 
             if (perk.itemTypeDisplayName === 'Intrinsic' || perk.itemTypeDisplayName === 'Aeon Cult Mod') {
-               acc[perkHash] = makeBasePerk(perk, 'Armor Perk Exotic', armor)
+               addData(armor, perk, 'Armor Trait Exotic')
                return
             }
          })
       })
-      return acc
-   }, {})
+
+      modSocketCategory?.socketIndexes.forEach((socketIndex) => {
+         const perkArr = getAllFromSocket(inventoryItems, plugSets, armorSockets.socketEntries[socketIndex])
+
+         perkArr.forEach((perkHash) => {
+            const perk = inventoryItems[perkHash]
+
+            if (perk.itemTypeDisplayName === 'Intrinsic' || perk.itemTypeDisplayName === 'Aeon Cult Mod') {
+               addData(armor, perk, 'Armor Trait Exotic')
+               return
+            }
+         })
+      })
+   })
+
+   return data
+}

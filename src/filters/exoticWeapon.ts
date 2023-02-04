@@ -1,30 +1,49 @@
-import { BasePerk } from '../interfaces/editor.interface'
-import { InventoryItem, InventoryItems } from '../interfaces/inventoryItem.interface'
-import { PlugSets } from '../interfaces/plugSet.interface'
-import { SocketTypes } from '../interfaces/socketType.interface'
-import { SocketCategory } from '../utils/enums'
-import { getAllFromSocket } from '../utils/getAllFromSocket'
-import { lookForNewCatalyst } from '../utils/lookForNewCatalyst'
-import { makeBasePerk } from '../utils/makeBasePerk'
+import { InventoryItem, InventoryItems, PlugSets, SocketTypes } from '@icemourne/tool-box'
 
-export const exoticsWeapon = (
+import { PerkTypes } from '../interfaces/generalTypes.js'
+import { PerkData, PerkDataList } from '../main.js'
+import { SocketCategoryEnums } from '../utils/enums.js'
+import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+import { lookForNewCatalyst } from '../utils/lookForNewCatalyst.js'
+
+export const exoticsWeapons = (
    inventoryItems: InventoryItems,
    plugSets: PlugSets,
+   inventoryItemWeapons: InventoryItem[],
    socketTypes: SocketTypes,
-   inventoryItemExoticWeapon: InventoryItem[]
+   legendaryWeaponsList: PerkDataList
 ) => {
-   return inventoryItemExoticWeapon.reduce<{ [key: string]: BasePerk }>((acc, weapon) => {
+   const data: { [key: string]: PerkData } = {}
+
+   const addData = (weapon: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+      if (legendaryWeaponsList[perk.hash] !== undefined) return
+      const weaponHash = weapon.hash
+
+      if (data[perk.hash] !== undefined) {
+         data[perk.hash].appearsOn.add(weaponHash)
+         return
+      }
+
+      data[perk.hash] = {
+         appearsOn: new Set([weaponHash]),
+         name: perk.displayProperties.name,
+         hash: Number(perk.hash),
+         type
+      }
+   }
+
+   inventoryItemWeapons.forEach((weapon) => {
       const weaponSockets = weapon.sockets
-      if (weaponSockets === undefined) return acc
+      if (weaponSockets === undefined) return
 
       const frameSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.weaponFrame)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponFrame
       )
       const perkSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.weaponPerks)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponPerks
       )
       const catalystSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => (socketCategory.socketCategoryHash === SocketCategory.weaponMods)
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponMods
       )
 
       frameSocketCategory?.socketIndexes.forEach((socketIndex) => {
@@ -34,8 +53,7 @@ export const exoticsWeapon = (
             const frame = inventoryItems[frameHash]
 
             if (frame?.itemTypeDisplayName === 'Intrinsic') {
-               acc[frameHash] = makeBasePerk(frame, 'Weapon Frame Exotic', weapon)
-               return
+               addData(weapon, frame, 'Weapon Frame Exotic')
             }
          })
       })
@@ -46,9 +64,24 @@ export const exoticsWeapon = (
          perkArr.forEach((perkHash) => {
             const perk = inventoryItems[perkHash]
 
-            if (perk?.itemTypeDisplayName === 'Trait') {
-               acc[perkHash] = makeBasePerk(perk, 'Weapon Perk Exotic', weapon)
+            if (perk?.plug?.uiPlugLabel === 'masterwork') {
+               addData(weapon, perk, 'Weapon Catalyst Exotic')
                return
+            }
+
+            switch (perk?.itemTypeDisplayName) {
+               case 'Trait':
+                  addData(weapon, perk, 'Weapon Trait Exotic')
+                  break
+               case 'Origin Trait':
+                  addData(weapon, perk, 'Weapon Trait Origin Exotic')
+                  break
+               case 'Enhanced Trait':
+                  addData(weapon, perk, 'Weapon Trait Enhanced Exotic')
+                  break
+               default:
+                  addData(weapon, perk, 'Weapon Perk Exotic')
+                  break
             }
          })
       })
@@ -65,11 +98,11 @@ export const exoticsWeapon = (
             const catalyst = inventoryItems[catalystHash]
 
             if (catalyst?.displayProperties.name.endsWith(' Catalyst')) {
-               acc[catalystHash] = makeBasePerk(catalyst, 'Weapon Catalyst Exotic', weapon)
-               return
+               addData(weapon, catalyst, 'Weapon Catalyst Exotic')
             }
          })
       })
-      return acc
-   }, {})
+   })
+
+   return data
 }

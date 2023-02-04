@@ -1,62 +1,83 @@
-import { BasePerk } from '../interfaces/editor.interface'
-import { InventoryItem, InventoryItems } from '../interfaces/inventoryItem.interface'
-import { PlugSets } from '../interfaces/plugSet.interface'
-import { SocketCategory } from '../utils/enums'
-import { getAllFromSocket } from '../utils/getAllFromSocket'
-import { makeBasePerk } from '../utils/makeBasePerk'
+import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
+
+import { PerkTypes } from '../interfaces/generalTypes.js'
+import { PerkData, PerkDataList } from '../main.js'
+import { SocketCategoryEnums } from '../utils/enums.js'
+import { getAllFromSocket } from '../utils/getAllFromSocket.js'
 
 export const weaponCraftingRecipes = (
    inventoryItems: InventoryItems,
    plugSets: PlugSets,
-   inventoryItemCraftingRecipes: InventoryItem[]
+   craftingRecipeArr: InventoryItem[],
+   legendaryWeaponsList: PerkDataList,
+   exoticWeaponsList: PerkDataList
 ) => {
-   return inventoryItemCraftingRecipes.reduce<{ [key: string]: BasePerk }>((acc, weapon) => {
-      const weaponSockets = weapon.sockets
-      if (weaponSockets === undefined) return acc
+   const data: { [key: string]: PerkData } = { ...legendaryWeaponsList, ...exoticWeaponsList }
+
+   const addData = (weapon: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+      const weaponTypeOrHash = weapon.inventory.tierTypeName === 'Exotic' ? weapon.hash : weapon.itemTypeDisplayName
+      if (weaponTypeOrHash === undefined) return
+
+      if (data[perk.hash] !== undefined) {
+         // this needs clean up later on to remove exotic weapons from perks found on legendary weapons
+         data[perk.hash].appearsOn.add(weaponTypeOrHash)
+         return
+      }
+
+      data[perk.hash] = {
+         appearsOn: new Set([weaponTypeOrHash]),
+         name: perk.displayProperties.name,
+         hash: Number(perk.hash),
+         type
+      }
+   }
+
+   craftingRecipeArr.forEach((recipe) => {
+      const weaponSockets = recipe.sockets
+      if (weaponSockets === undefined) return
 
       const craftingSocketCategory = weaponSockets.socketCategories.find(
-         (socketCategory) => socketCategory.socketCategoryHash === SocketCategory.weaponCraftingPerks
+         (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponCraftingPerks
       )
 
       craftingSocketCategory?.socketIndexes.forEach((socketIndex) => {
-         const craftingArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
+         const craftedPerkArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
 
-         craftingArr.forEach((craftingHash) => {
-            const craftingStuff = inventoryItems[craftingHash]
-            const newWeaponHash = weapon?.crafting?.outputItemHash
-            const newWeapon = inventoryItems[newWeaponHash || '']
-            const isExotic = craftingStuff.inventory.tierTypeName === 'Exotic'
+         craftedPerkArr.forEach((perkHash) => {
+            const perk = inventoryItems[perkHash]
+            const craftedWeapon = inventoryItems[recipe?.crafting?.outputItemHash || '']
+            const isExotic = craftedWeapon.inventory.tierTypeName === 'Exotic'
 
-            if (
-               craftingStuff?.itemTypeDisplayName === 'Intrinsic' ||
-               craftingStuff?.itemTypeDisplayName === 'Enhanced Intrinsic'
-            ) {
-               const type = isExotic ? 'Weapon Frame Exotic' : 'Weapon Frame'
-               acc[craftingHash] = makeBasePerk(craftingStuff, type, newWeapon)
+            if (perk?.plug?.uiPlugLabel === 'masterwork' || perk?.displayProperties.name.endsWith(' Catalyst')) {
+               addData(craftedWeapon, perk, 'Weapon Catalyst Exotic')
                return
             }
 
-            if (craftingStuff?.itemTypeDisplayName === 'Trait') {
-               const type = isExotic ? 'Weapon Perk Exotic' : 'Weapon Perk'
-               acc[craftingHash] = makeBasePerk(craftingStuff, type, newWeapon)
-               return
-            }
-            if (craftingStuff?.itemTypeDisplayName === 'Enhanced Trait') {
-               acc[craftingHash] = makeBasePerk(craftingStuff, 'Weapon Perk Enhanced', newWeapon)
-               return
-            }
+            const exoticText = isExotic ? ' Exotic' : ''
 
-            if (craftingStuff?.itemTypeDisplayName === 'Origin Trait') {
-               acc[craftingHash] = makeBasePerk(craftingStuff, 'Weapon Origin Trait', newWeapon)
-               return
-            }
-
-            if (craftingStuff?.displayProperties.name.endsWith(' Catalyst')) {
-               acc[craftingHash] = makeBasePerk(craftingStuff, 'Weapon Catalyst Exotic', newWeapon)
-               return
+            switch (perk?.itemTypeDisplayName) {
+               case 'Intrinsic':
+                  addData(craftedWeapon, perk, `Weapon Frame${exoticText}`)
+                  break
+               case 'Enhanced Intrinsic':
+                  addData(craftedWeapon, perk, `Weapon Frame Enhanced${exoticText}`)
+                  break
+               case 'Trait':
+                  addData(craftedWeapon, perk, `Weapon Trait${exoticText}`)
+                  break
+               case 'Origin Trait':
+                  addData(craftedWeapon, perk, `Weapon Trait Origin${exoticText}`)
+                  break
+               case 'Enhanced Trait':
+                  addData(craftedWeapon, perk, `Weapon Trait Enhanced${exoticText}`)
+                  break
+               default:
+                  addData(craftedWeapon, perk, `Weapon Perk${exoticText}`)
+                  break
             }
          })
       })
-      return acc
-   }, {})
+   })
+
+   return data
 }
