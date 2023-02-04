@@ -1,4 +1,4 @@
-name: Build and Deploy generator
+name: Build, Generate, and Deploy Data
 
 on:
   push:
@@ -6,9 +6,6 @@ on:
       - main
   schedule:
     - cron: "0 8 * * *" # Runs at 08:00 UTC every day.
-
-permissions:
-  contents: write
 
 jobs:
   build-and-deploy:

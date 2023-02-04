@@ -138,8 +138,10 @@ export type CompletePerkDataList = {
    }, {} as CompletePerkDataList)
 
    const dataForDescriptions = {
-      folders: createFolders(completeList, inventoryItems),
-      perks: createPerks(inventoryItems, completeList)
+      perks: createPerks(inventoryItems, completeList),
+      databaseSettings: {
+         folders: createFolders(completeList, inventoryItems)
+      }
    }
 
    fs.writeFileSync('./templates/rawData.json', JSON.stringify(completeList, undefined, 1))
