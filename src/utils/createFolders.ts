@@ -2,73 +2,68 @@ import { InventoryItems, TypedObject } from '@icemourne/tool-box'
 
 import { CompletePerkData, CompletePerkDataList } from '../main.js'
 
-type FolderTypes = 'exoticWeapons' | 'enhancedTraitLinking' | 'legendaryWepFrames' | 'enhancedLegendaryWeaponFrames'
-
 type FoldersWithSet = {
-   [key in FolderTypes]: {
-      [key: string]: {
-         name: string
-         has: Set<number>
-         hash?: number
-      }
+   [key: string]: {
+      name: string
+      hash: number
+      has: Set<number>
    }
 }
 type FolderContent = {
    name: string
+   hash: number
    has: number[]
-   hash?: number
 }
 
 type Folders = {
-   [key in FolderTypes]: FolderContent[]
+   [key: string]: FolderContent
 }
 
 export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems: InventoryItems) => {
-   const descriptionData: FoldersWithSet = {
-      exoticWeapons: {},
-      enhancedTraitLinking: {},
-      legendaryWepFrames: {},
-      enhancedLegendaryWeaponFrames: {}
-   }
+   const descriptionData: FoldersWithSet = {}
 
    const addExoticWeapon = (perkData: CompletePerkData) => {
       perkData.appearsOn.forEach((hash) => {
          const weapon = inventoryItems[hash]
 
-         const folder = descriptionData.exoticWeapons[hash] ?? {
+         const folder = descriptionData[hash] ?? {
             name: weapon.displayProperties.name,
+            hash: perkData.hash,
             has: new Set([perkData.hash])
          }
-         descriptionData.exoticWeapons[hash] = folder
+         descriptionData[hash] = folder
       })
    }
 
    const addWeaponFrame = (perkData: CompletePerkData) => {
       perkData.appearsOn.forEach((wepType) => {
-         const folder = descriptionData.legendaryWepFrames[wepType] ?? {
+         const folder = descriptionData[wepType] ?? {
             name: wepType,
+            hash: perkData.hash,
             has: new Set([perkData.hash])
          }
-         descriptionData.legendaryWepFrames[wepType] = folder
+         descriptionData[wepType] = folder
       })
    }
 
    const addEnhancedWeaponFrame = (perkData: CompletePerkData) => {
       perkData.appearsOn.forEach((wepType) => {
-         const folder = descriptionData.enhancedLegendaryWeaponFrames[wepType] ?? {
+         const folder = descriptionData[wepType] ?? {
             name: wepType,
+            hash: perkData.hash,
             has: new Set([perkData.hash])
          }
-         descriptionData.enhancedLegendaryWeaponFrames[wepType] = folder
+         descriptionData[wepType] = folder
       })
    }
 
-   const addEnhancedTraits = (perkData: CompletePerkData) => {
-      Object.values(perkDataList).forEach((perk) => {
-         if (perk.type === 'Weapon Trait Enhanced' && perk.name.startsWith(perkData.name)) {
-            descriptionData.enhancedTraitLinking[perkData.hash] = {
-               name: perkData.name,
-               has: new Set([perk.hash, perkData.hash])
+   const addEnhancedTraits = (perk: CompletePerkData) => {
+      Object.values(perkDataList).forEach((enhancedPerk) => {
+         if (enhancedPerk.type === 'Weapon Trait Enhanced' && enhancedPerk.name.startsWith(perk.name)) {
+            descriptionData[perk.hash] = {
+               name: perk.name,
+               hash: perk.hash,
+               has: new Set([perk.hash, enhancedPerk.hash])
             }
          }
       })
@@ -85,43 +80,33 @@ export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems
       // --- legendary weapon frames
       if (perkData.type === 'Weapon Frame') {
          perkData.appearsOn.forEach((hash) => {
-            if (!descriptionData.legendaryWepFrames[hash]) return
-            descriptionData.legendaryWepFrames[hash].has.add(perkData.hash)
+            if (!descriptionData[hash]) return
+            descriptionData[hash].has.add(perkData.hash)
          })
       }
 
       if (perkData.type === 'Weapon Frame Enhanced') {
          perkData.appearsOn.forEach((hash) => {
-            if (!descriptionData.enhancedLegendaryWeaponFrames[hash]) return
-            descriptionData.enhancedLegendaryWeaponFrames[hash].has.add(perkData.hash)
+            if (!descriptionData[hash]) return
+            descriptionData[hash].has.add(perkData.hash)
          })
       }
 
       // --- exotic weapons
       perkData.appearsOn.forEach((hash) => {
-         if (!descriptionData.exoticWeapons[hash]) return
-         descriptionData.exoticWeapons[hash].has.add(perkData.hash)
+         if (!descriptionData[hash]) return
+         descriptionData[hash].has.add(perkData.hash)
       })
    })
 
-   return TypedObject.entries(descriptionData).reduce((acc, [folderName, folder]) => {
-      acc[folderName] = Object.entries(folder)
-         .reduce<FolderContent[]>((acc, [hash, folder]) => {
-            acc.push(
-               folder.hash
-                  ? {
-                       name: folder.name,
-                       has: Array.from(folder.has),
-                       hash: Number(hash)
-                    }
-                  : {
-                       name: folder.name,
-                       has: Array.from(folder.has)
-                    }
-            )
-            return acc
-         }, [])
-         .sort((a, b) => a.name.localeCompare(b.name))
+   return TypedObject.entries(descriptionData).reduce((acc, [hash, perk]) => {
+      acc[hash] = {
+         name: perk.name,
+         has: Array.from(perk.has).sort((a, b) =>
+            inventoryItems[a].displayProperties.name.localeCompare(inventoryItems[b].displayProperties.name)
+         ),
+         hash: Number(hash)
+      }
       return acc
    }, {} as Folders)
 }
