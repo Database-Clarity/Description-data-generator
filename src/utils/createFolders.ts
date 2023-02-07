@@ -32,7 +32,7 @@ export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems
             hash: exoticFrame.hash,
             has: new Set([exoticFrame.hash])
          }
-         descriptionData[hash] = folder
+         descriptionData[exoticFrame.hash] = folder
       })
    }
 
