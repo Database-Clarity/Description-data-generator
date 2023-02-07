@@ -22,14 +22,14 @@ type Folders = {
 export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems: InventoryItems) => {
    const descriptionData: FoldersWithSet = {}
 
-   const addExoticWeapon = (perkData: CompletePerkData) => {
-      perkData.appearsOn.forEach((hash) => {
+   const addExoticWeapon = (exoticFrame: CompletePerkData) => {
+      exoticFrame.appearsOn.forEach((hash) => {
          const weapon = inventoryItems[hash]
 
-         const folder = descriptionData[hash] ?? {
+         const folder = descriptionData[exoticFrame.hash] ?? {
             name: weapon.displayProperties.name,
-            hash: perkData.hash,
-            has: new Set([perkData.hash])
+            hash: exoticFrame.hash,
+            has: new Set([exoticFrame.hash])
          }
          descriptionData[hash] = folder
       })
@@ -57,13 +57,13 @@ export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems
       })
    }
 
-   const addEnhancedTraits = (perk: CompletePerkData) => {
+   const addEnhancedTraits = (normalPerk: CompletePerkData) => {
       Object.values(perkDataList).forEach((enhancedPerk) => {
-         if (enhancedPerk.type === 'Weapon Trait Enhanced' && enhancedPerk.name.startsWith(perk.name)) {
-            descriptionData[perk.hash] = {
-               name: perk.name,
-               hash: perk.hash,
-               has: new Set([perk.hash, enhancedPerk.hash])
+         if (enhancedPerk.type === 'Weapon Trait Enhanced' && enhancedPerk.name.startsWith(normalPerk.name)) {
+            descriptionData[normalPerk.hash] = {
+               name: normalPerk.name,
+               hash: normalPerk.hash,
+               has: new Set([normalPerk.hash, enhancedPerk.hash])
             }
          }
       })
