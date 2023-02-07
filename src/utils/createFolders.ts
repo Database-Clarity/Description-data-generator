@@ -23,6 +23,7 @@ export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems
    const descriptionData: FoldersWithSet = {}
 
    const addExoticWeapon = (exoticFrame: CompletePerkData) => {
+      debugger
       exoticFrame.appearsOn.forEach((hash) => {
          const weapon = inventoryItems[hash]
 
