@@ -2,7 +2,7 @@ import { CompletePerkDataList } from '../main.js'
 
 type EnhancedPerk = {
    name: string
-   has: number[]
+   linkedWith: number
 }
 
 type EnhancedPerks = {
@@ -20,7 +20,11 @@ export const linkEnhancedTraits = (perkDataList: CompletePerkDataList) => {
 
       acc[normalPerk.hash] = {
          name: normalPerk.name,
-         has: [normalPerk.hash, enhancedPerk.hash]
+         linkedWith: enhancedPerk.hash
+      }
+      acc[enhancedPerk.hash] = {
+         name: enhancedPerk.name,
+         linkedWith: normalPerk.hash
       }
 
       return acc
