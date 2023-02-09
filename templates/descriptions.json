@@ -10116,899 +10116,1027 @@
   "enhancedPerks": {
    "11612903": {
     "name": "Adrenaline Junkie",
-    "has": [
-     11612903,
-     2422968039
-    ]
+    "linkedWith": 2422968039
+   },
+   "23371658": {
+    "name": "Box Breathing",
+    "linkedWith": 2551157718
    },
    "25606670": {
     "name": "Dual Loader",
-    "has": [
-     25606670,
-     3143051906
-    ]
+    "linkedWith": 3143051906
    },
    "47981717": {
     "name": "Opening Shot",
-    "has": [
-     47981717,
-     1370847713
-    ]
+    "linkedWith": 1370847713
+   },
+   "64866129": {
+    "name": "Explosive Payload",
+    "linkedWith": 3038247973
    },
    "124408337": {
     "name": "Headstone",
-    "has": [
-     124408337,
-     1171887445
-    ]
+    "linkedWith": 1171887445
+   },
+   "147913470": {
+    "name": "Whirlwind Blade",
+    "linkedWith": 3913600130
+   },
+   "162561147": {
+    "name": "Mulligan",
+    "linkedWith": 3513791699
+   },
+   "169755979": {
+    "name": "Dragonfly",
+    "linkedWith": 2848615171
+   },
+   "183938251": {
+    "name": "Under-Over",
+    "linkedWith": 1870851715
+   },
+   "191144788": {
+    "name": "Slideshot",
+    "linkedWith": 3161816588
    },
    "201365942": {
     "name": "Archer's Tempo",
-    "has": [
-     201365942,
-     3523746922
-    ]
+    "linkedWith": 3523746922
    },
    "247725512": {
     "name": "Rapid Hit",
-    "has": [
-     247725512,
-     2938480696
-    ]
+    "linkedWith": 2938480696
+   },
+   "254337357": {
+    "name": "Reservoir Burst",
+    "linkedWith": 1427256713
    },
    "280464955": {
     "name": "Firmly Planted",
-    "has": [
-     280464955,
-     3920370755
-    ]
+    "linkedWith": 3920370755
+   },
+   "288411554": {
+    "name": "Rampage",
+    "linkedWith": 3425386926
+   },
+   "331667533": {
+    "name": "Cascade Point",
+    "linkedWith": 3751912585
+   },
+   "344235611": {
+    "name": "Chill Clip",
+    "linkedWith": 2978966579
    },
    "354401740": {
     "name": "Assassin's Blade",
-    "has": [
-     354401740,
-     3678483220
-    ]
+    "linkedWith": 3678483220
    },
    "365154968": {
     "name": "Target Lock",
-    "has": [
-     365154968,
-     2939589096
-    ]
+    "linkedWith": 2939589096
+   },
+   "395388285": {
+    "name": "Firing Line",
+    "linkedWith": 1771339417
+   },
+   "402033656": {
+    "name": "Grave Robber",
+    "linkedWith": 1631667848
+   },
+   "406461158": {
+    "name": "Tracking Module",
+    "linkedWith": 3977735242
    },
    "438098033": {
     "name": "Harmony",
-    "has": [
-     438098033,
-     2748801589
-    ]
+    "linkedWith": 2748801589
    },
    "454085387": {
     "name": "Blunt Execution Rounds",
-    "has": [
-     454085387,
-     2529412083
-    ]
+    "linkedWith": 2529412083
    },
    "460017080": {
     "name": "Headseeker",
-    "has": [
-     460017080,
-     4045335048
-    ]
+    "linkedWith": 4045335048
+   },
+   "461595545": {
+    "name": "Reconstruction",
+    "linkedWith": 1523832109
    },
    "469285294": {
     "name": "Recombination",
-    "has": [
-     469285294,
-     3335686050
-    ]
+    "linkedWith": 3335686050
+   },
+   "494941759": {
+    "name": "Threat Detector",
+    "linkedWith": 4071163871
    },
    "509074078": {
     "name": "Steady Hands",
-    "has": [
-     509074078,
-     843318450
-    ]
+    "linkedWith": 843318450
+   },
+   "509594246": {
+    "name": "Rangefinder",
+    "linkedWith": 2846385770
+   },
+   "536173722": {
+    "name": "Pugilist",
+    "linkedWith": 691659142
    },
    "557221067": {
     "name": "Killing Tally",
-    "has": [
-     557221067,
-     2896748467
-    ]
+    "linkedWith": 2896748467
+   },
+   "573122728": {
+    "name": "Triple Tap",
+    "linkedWith": 3400784728
    },
    "588594999": {
     "name": "Moving Target",
-    "has": [
-     588594999,
-     2717805783
-    ]
+    "linkedWith": 2717805783
+   },
+   "595108252": {
+    "name": "Compulsive Reloader",
+    "linkedWith": 671806388
+   },
+   "598607952": {
+    "name": "Chain Reaction",
+    "linkedWith": 2396489472
+   },
+   "617966211": {
+    "name": "Successful Warm-Up",
+    "linkedWith": 2652708987
+   },
+   "624891305": {
+    "name": "Desperado",
+    "linkedWith": 3047969693
    },
    "671806388": {
     "name": "Compulsive Reloader",
-    "has": [
-     671806388,
-     595108252
-    ]
+    "linkedWith": 595108252
    },
    "691659142": {
     "name": "Pugilist",
-    "has": [
-     691659142,
-     536173722
-    ]
+    "linkedWith": 536173722
    },
    "699525795": {
     "name": "Eye of the Storm",
-    "has": [
-     699525795,
-     3719974635
-    ]
+    "linkedWith": 3719974635
    },
    "706527188": {
     "name": "Quickdraw",
-    "has": [
-     706527188,
-     1961144892
-    ]
+    "linkedWith": 1961144892
+   },
+   "711234314": {
+    "name": "Elemental Capacitor",
+    "linkedWith": 3511092054
+   },
+   "711628886": {
+    "name": "Perfect Float",
+    "linkedWith": 2272927194
    },
    "744594675": {
     "name": "Well-Rounded",
-    "has": [
-     744594675,
-     2139363611
-    ]
+    "linkedWith": 2139363611
    },
    "776531651": {
     "name": "Repulsor Brace",
-    "has": [
-     776531651,
-     2541826827
-    ]
+    "linkedWith": 2541826827
+   },
+   "777774560": {
+    "name": "Osmosis",
+    "linkedWith": 1774574192
+   },
+   "781192741": {
+    "name": "Surrounded",
+    "linkedWith": 3708227201
+   },
+   "788178929": {
+    "name": "One-Two Punch",
+    "linkedWith": 2679249093
+   },
+   "828056542": {
+    "name": "Backup Plan",
+    "linkedWith": 1600092898
+   },
+   "834262328": {
+    "name": "Kickstart",
+    "linkedWith": 1754714824
+   },
+   "838873202": {
+    "name": "Encore",
+    "linkedWith": 1195158366
+   },
+   "843318450": {
+    "name": "Steady Hands",
+    "linkedWith": 509074078
+   },
+   "848860060": {
+    "name": "Fourth Time's the Charm",
+    "linkedWith": 1354429876
+   },
+   "855168139": {
+    "name": "Unrelenting",
+    "linkedWith": 3108830275
+   },
+   "859780267": {
+    "name": "One for All",
+    "linkedWith": 4049631843
    },
    "908147344": {
     "name": "Sneak Bow",
-    "has": [
-     908147344,
-     1663363584
-    ]
+    "linkedWith": 1663363584
    },
    "951095735": {
     "name": "Impulse Amplifier",
-    "has": [
-     951095735,
-     3878366039
-    ]
+    "linkedWith": 3878366039
    },
    "957782887": {
     "name": "Snapshot Sights",
-    "has": [
-     957782887,
-     4116820839
-    ]
+    "linkedWith": 4116820839
    },
    "960810156": {
     "name": "Danger Zone",
-    "has": [
-     960810156,
-     1077019636
-    ]
+    "linkedWith": 1077019636
    },
    "972757866": {
     "name": "Pulse Monitor",
-    "has": [
-     972757866,
-     1685378950
-    ]
+    "linkedWith": 1685378950
+   },
+   "987673306": {
+    "name": "Tunnel Vision",
+    "linkedWith": 2946784966
+   },
+   "1008128453": {
+    "name": "Cornered",
+    "linkedWith": 1799762209
    },
    "1015611457": {
     "name": "Kill Clip",
-    "has": [
-     1015611457,
-     2923251173
-    ]
+    "linkedWith": 2923251173
    },
    "1048183818": {
     "name": "Adaptive Munitions",
-    "has": [
-     1048183818,
-     3431277734
-    ]
+    "linkedWith": 3431277734
+   },
+   "1077019636": {
+    "name": "Danger Zone",
+    "linkedWith": 960810156
+   },
+   "1161469972": {
+    "name": "Swashbuckler",
+    "linkedWith": 4082225868
+   },
+   "1167468626": {
+    "name": "Lasting Impression",
+    "linkedWith": 3927722942
    },
    "1168162263": {
     "name": "Outlaw",
-    "has": [
-     1168162263,
-     1347741687
-    ]
+    "linkedWith": 1347741687
+   },
+   "1171147302": {
+    "name": "Feeding Frenzy",
+    "linkedWith": 2779035018
+   },
+   "1171887445": {
+    "name": "Headstone",
+    "linkedWith": 124408337
+   },
+   "1172098417": {
+    "name": "Sleight of Hand",
+    "linkedWith": 2172504645
+   },
+   "1172413778": {
+    "name": "Thresh",
+    "linkedWith": 2726471870
+   },
+   "1183436451": {
+    "name": "Firefly",
+    "linkedWith": 3824105627
    },
    "1195158366": {
     "name": "Encore",
-    "has": [
-     1195158366,
-     838873202
-    ]
+    "linkedWith": 838873202
+   },
+   "1347741687": {
+    "name": "Outlaw",
+    "linkedWith": 1168162263
    },
    "1354429876": {
     "name": "Fourth Time's the Charm",
-    "has": [
-     1354429876,
-     848860060
-    ]
+    "linkedWith": 848860060
    },
    "1359896290": {
     "name": "Dynamic Sway Reduction",
-    "has": [
-     1359896290,
-     3060983774
-    ]
+    "linkedWith": 3060983774
    },
    "1365187766": {
     "name": "Gutshot Straight",
-    "has": [
-     1365187766,
-     4200236906
-    ]
+    "linkedWith": 4200236906
+   },
+   "1370847713": {
+    "name": "Opening Shot",
+    "linkedWith": 47981717
+   },
+   "1409206216": {
+    "name": "Stats for All",
+    "linkedWith": 1583705720
    },
    "1427256713": {
     "name": "Reservoir Burst",
-    "has": [
-     1427256713,
-     254337357
-    ]
+    "linkedWith": 254337357
    },
    "1428297954": {
     "name": "Perpetual Motion",
-    "has": [
-     1428297954,
-     2014892510
-    ]
+    "linkedWith": 2014892510
+   },
+   "1523649716": {
+    "name": "Tap the Trigger",
+    "linkedWith": 1890422124
    },
    "1523832109": {
     "name": "Reconstruction",
-    "has": [
-     1523832109,
-     461595545
-    ]
+    "linkedWith": 461595545
+   },
+   "1537607344": {
+    "name": "Sympathetic Arsenal",
+    "linkedWith": 3350417888
+   },
+   "1545231802": {
+    "name": "Redirection",
+    "linkedWith": 3201496230
    },
    "1546637391": {
     "name": "Vorpal Weapon",
-    "has": [
-     1546637391,
-     3418165135
-    ]
+    "linkedWith": 3418165135
+   },
+   "1551736345": {
+    "name": "Explosive Head",
+    "linkedWith": 3365897133
    },
    "1556840489": {
     "name": "Lead from Gold",
-    "has": [
-     1556840489,
-     3442762221
-    ]
+    "linkedWith": 3442762221
    },
    "1570042021": {
     "name": "Heating Up",
-    "has": [
-     1570042021,
-     2748258257
-    ]
+    "linkedWith": 2748258257
    },
    "1583705720": {
     "name": "Stats for All",
-    "has": [
-     1583705720,
-     1409206216
-    ]
+    "linkedWith": 1409206216
    },
    "1600092898": {
     "name": "Backup Plan",
-    "has": [
-     1600092898,
-     828056542
-    ]
+    "linkedWith": 828056542
+   },
+   "1609056795": {
+    "name": "Fragile Focus",
+    "linkedWith": 2451262963
+   },
+   "1618208178": {
+    "name": "Eager Edge",
+    "linkedWith": 2077819806
    },
    "1631667848": {
     "name": "Grave Robber",
-    "has": [
-     1631667848,
-     402033656
-    ]
+    "linkedWith": 402033656
    },
    "1645158859": {
     "name": "Under Pressure",
-    "has": [
-     1645158859,
-     3755250867
-    ]
+    "linkedWith": 3755250867
+   },
+   "1646437399": {
+    "name": "Duelist's Trance",
+    "linkedWith": 3705817207
+   },
+   "1658784563": {
+    "name": "Genesis",
+    "linkedWith": 3096702027
+   },
+   "1663363584": {
+    "name": "Sneak Bow",
+    "linkedWith": 908147344
    },
    "1683379515": {
     "name": "Disruption Break",
-    "has": [
-     1683379515,
-     2216471363
-    ]
+    "linkedWith": 2216471363
+   },
+   "1685378950": {
+    "name": "Pulse Monitor",
+    "linkedWith": 972757866
    },
    "1685431615": {
     "name": "En Garde",
-    "has": [
-     1685431615,
-     3406782879
-    ]
+    "linkedWith": 3406782879
+   },
+   "1720528630": {
+    "name": "Voltshot",
+    "linkedWith": 2173046394
+   },
+   "1738338041": {
+    "name": "Tilting at Windmills",
+    "linkedWith": 3526486541
+   },
+   "1748774930": {
+    "name": "Zen Moment",
+    "linkedWith": 2387244414
    },
    "1749209109": {
     "name": "Relentless Strikes",
-    "has": [
-     1749209109,
-     4085959009
-    ]
+    "linkedWith": 4085959009
    },
    "1754714824": {
     "name": "Kickstart",
-    "has": [
-     1754714824,
-     834262328
-    ]
+    "linkedWith": 834262328
    },
    "1771339417": {
     "name": "Firing Line",
-    "has": [
-     1771339417,
-     395388285
-    ]
+    "linkedWith": 395388285
    },
    "1774574192": {
     "name": "Osmosis",
-    "has": [
-     1774574192,
-     777774560
-    ]
+    "linkedWith": 777774560
    },
    "1782407750": {
     "name": "Close to Melee",
-    "has": [
-     1782407750,
-     2241043034
-    ]
+    "linkedWith": 2241043034
    },
    "1799762209": {
     "name": "Cornered",
-    "has": [
-     1799762209,
-     1008128453
-    ]
+    "linkedWith": 1008128453
    },
    "1820235745": {
     "name": "Subsistence",
-    "has": [
-     1820235745,
-     4245865861
-    ]
+    "linkedWith": 4245865861
    },
    "1821614984": {
     "name": "Slickdraw",
-    "has": [
-     1821614984,
-     1942880504
-    ]
+    "linkedWith": 1942880504
    },
    "1866048759": {
     "name": "Hip-Fire Grip",
-    "has": [
-     1866048759,
-     3118144663
-    ]
+    "linkedWith": 3118144663
    },
    "1870851715": {
     "name": "Under-Over",
-    "has": [
-     1870851715,
-     183938251
-    ]
+    "linkedWith": 183938251
    },
    "1890422124": {
     "name": "Tap the Trigger",
-    "has": [
-     1890422124,
-     1523649716
-    ]
+    "linkedWith": 1523649716
+   },
+   "1906147653": {
+    "name": "Demolitionist",
+    "linkedWith": 3523296417
+   },
+   "1942880504": {
+    "name": "Slickdraw",
+    "linkedWith": 1821614984
+   },
+   "1961144892": {
+    "name": "Quickdraw",
+    "linkedWith": 706527188
+   },
+   "2000295559": {
+    "name": "Turnabout",
+    "linkedWith": 2209918983
+   },
+   "2002547233": {
+    "name": "High-Impact Reserves",
+    "linkedWith": 2213355989
    },
    "2010801679": {
     "name": "Ambitious Assassin",
-    "has": [
-     2010801679,
-     3797647183
-    ]
+    "linkedWith": 3797647183
+   },
+   "2014892510": {
+    "name": "Perpetual Motion Enhanced",
+    "linkedWith": 1428297954
    },
    "2030760728": {
     "name": "Energy Transfer",
-    "has": [
-     2030760728,
-     2856365672
-    ]
+    "linkedWith": 2856365672
    },
    "2039302152": {
     "name": "Slideways",
-    "has": [
-     2039302152,
-     2396422520
-    ]
+    "linkedWith": 2396422520
    },
    "2077819806": {
     "name": "Eager Edge",
-    "has": [
-     2077819806,
-     1618208178
-    ]
+    "linkedWith": 1618208178
+   },
+   "2139363611": {
+    "name": "Well-Rounded",
+    "linkedWith": 744594675
    },
    "2172504645": {
     "name": "Sleight of Hand",
-    "has": [
-     2172504645,
-     1172098417
-    ]
+    "linkedWith": 1172098417
    },
    "2173046394": {
     "name": "Voltshot",
-    "has": [
-     2173046394,
-     1720528630
-    ]
+    "linkedWith": 1720528630
    },
    "2209918983": {
     "name": "Turnabout",
-    "has": [
-     2209918983,
-     2000295559
-    ]
+    "linkedWith": 2000295559
    },
    "2213355989": {
     "name": "High-Impact Reserves",
-    "has": [
-     2213355989,
-     2002547233
-    ]
+    "linkedWith": 2002547233
+   },
+   "2216471363": {
+    "name": "Disruption Break",
+    "linkedWith": 1683379515
+   },
+   "2217963031": {
+    "name": "Shot Swap",
+    "linkedWith": 2586829431
    },
    "2224838837": {
     "name": "Unstoppable Force",
-    "has": [
-     2224838837,
-     3102670337
-    ]
+    "linkedWith": 3102670337
+   },
+   "2241043034": {
+    "name": "Close to Melee",
+    "linkedWith": 1782407750
    },
    "2244851822": {
     "name": "Flash Counter",
-    "has": [
-     2244851822,
-     2860991074
-    ]
+    "linkedWith": 2860991074
    },
    "2272927194": {
     "name": "Perfect Float",
-    "has": [
-     2272927194,
-     711628886
-    ]
+    "linkedWith": 711628886
+   },
+   "2275087323": {
+    "name": "Explosive Light",
+    "linkedWith": 3194351027
    },
    "2284787283": {
     "name": "Clown Cartridge",
-    "has": [
-     2284787283,
-     3563868667
-    ]
+    "linkedWith": 3563868667
+   },
+   "2308090567": {
+    "name": "Field Prep",
+    "linkedWith": 2869569095
    },
    "2360754333": {
     "name": "Trench Barrel",
-    "has": [
-     2360754333,
-     2459015849
-    ]
+    "linkedWith": 2459015849
    },
    "2387244414": {
     "name": "Zen Moment",
-    "has": [
-     2387244414,
-     1748774930
-    ]
+    "linkedWith": 1748774930
+   },
+   "2396422520": {
+    "name": "Slideways",
+    "linkedWith": 2039302152
    },
    "2396489472": {
     "name": "Chain Reaction",
-    "has": [
-     2396489472,
-     598607952
-    ]
+    "linkedWith": 598607952
+   },
+   "2402480669": {
+    "name": "Focused Fury",
+    "linkedWith": 2896038713
    },
    "2416023159": {
     "name": "Offhand Strike",
-    "has": [
-     2416023159,
-     3050799639
-    ]
+    "linkedWith": 3050799639
+   },
+   "2422968039": {
+    "name": "Adrenaline Junkie",
+    "linkedWith": 11612903
    },
    "2450788523": {
     "name": "Killing Wind",
-    "has": [
-     2450788523,
-     4207509907
-    ]
+    "linkedWith": 4207509907
    },
    "2451262963": {
     "name": "Fragile Focus",
-    "has": [
-     2451262963,
-     1609056795
-    ]
+    "linkedWith": 1609056795
    },
    "2458213969": {
     "name": "Multikill Clip",
-    "has": [
-     2458213969,
-     2570477205
-    ]
+    "linkedWith": 2570477205
+   },
+   "2459015849": {
+    "name": "Trench Barrel",
+    "linkedWith": 2360754333
+   },
+   "2495011826": {
+    "name": "Ensemble",
+    "linkedWith": 2621346526
+   },
+   "2529412083": {
+    "name": "Blunt Execution Rounds",
+    "linkedWith": 454085387
+   },
+   "2541826827": {
+    "name": "Repulsor Brace",
+    "linkedWith": 776531651
    },
    "2551157718": {
     "name": "Box Breathing",
-    "has": [
-     2551157718,
-     23371658
-    ]
+    "linkedWith": 23371658
+   },
+   "2570477205": {
+    "name": "Multikill Clip",
+    "linkedWith": 2458213969
    },
    "2586829431": {
     "name": "Shot Swap",
-    "has": [
-     2586829431,
-     2217963031
-    ]
+    "linkedWith": 2217963031
    },
    "2590710093": {
     "name": "Tireless Blade",
-    "has": [
-     2590710093,
-     4183521337
-    ]
+    "linkedWith": 4183521337
    },
    "2610012052": {
     "name": "Golden Tricorn",
-    "has": [
-     2610012052,
-     4290541820
-    ]
+    "linkedWith": 4290541820
    },
    "2621346526": {
     "name": "Ensemble",
-    "has": [
-     2621346526,
-     2495011826
-    ]
+    "linkedWith": 2495011826
    },
    "2652708987": {
     "name": "Successful Warm-Up",
-    "has": [
-     2652708987,
-     617966211
-    ]
+    "linkedWith": 617966211
+   },
+   "2658083589": {
+    "name": "Surplus",
+    "linkedWith": 3436462433
+   },
+   "2675184851": {
+    "name": "Incandescent",
+    "linkedWith": 4293542123
+   },
+   "2675361166": {
+    "name": "Wellspring",
+    "linkedWith": 3592538738
    },
    "2679249093": {
     "name": "One-Two Punch",
-    "has": [
-     2679249093,
-     788178929
-    ]
+    "linkedWith": 788178929
+   },
+   "2682205016": {
+    "name": "Overflow",
+    "linkedWith": 3643424744
+   },
+   "2717805783": {
+    "name": "Moving Target",
+    "linkedWith": 588594999
    },
    "2726471870": {
     "name": "Thresh",
-    "has": [
-     2726471870,
-     1172413778
-    ]
+    "linkedWith": 1172413778
+   },
+   "2748258257": {
+    "name": "Heating Up",
+    "linkedWith": 1570042021
+   },
+   "2748801589": {
+    "name": "Harmony",
+    "linkedWith": 438098033
    },
    "2779035018": {
     "name": "Feeding Frenzy",
-    "has": [
-     2779035018,
-     1171147302
-    ]
+    "linkedWith": 1171147302
+   },
+   "2840833776": {
+    "name": "Shoot to Loot",
+    "linkedWith": 3700496672
    },
    "2846385770": {
     "name": "Rangefinder",
-    "has": [
-     2846385770,
-     509594246
-    ]
+    "linkedWith": 509594246
    },
    "2848615171": {
     "name": "Dragonfly",
-    "has": [
-     2848615171,
-     169755979
-    ]
+    "linkedWith": 169755979
+   },
+   "2856365672": {
+    "name": "Energy Transfer",
+    "linkedWith": 2030760728
+   },
+   "2860991074": {
+    "name": "Flash Counter",
+    "linkedWith": 2244851822
    },
    "2866798147": {
     "name": "No Distractions",
-    "has": [
-     2866798147,
-     3974407819
-    ]
+    "linkedWith": 3974407819
    },
    "2869569095": {
     "name": "Field Prep",
-    "has": [
-     2869569095,
-     2308090567
-    ]
+    "linkedWith": 2308090567
+   },
+   "2889515627": {
+    "name": "Adagio",
+    "linkedWith": 3673922083
    },
    "2896038713": {
     "name": "Focused Fury",
-    "has": [
-     2896038713,
-     2402480669
-    ]
+    "linkedWith": 2402480669
+   },
+   "2896748467": {
+    "name": "Killing Tally",
+    "linkedWith": 557221067
+   },
+   "2898218424": {
+    "name": "Air Assault",
+    "linkedWith": 3722653512
+   },
+   "2923251173": {
+    "name": "Kill Clip",
+    "linkedWith": 1015611457
+   },
+   "2938480696": {
+    "name": "Rapid Hit",
+    "linkedWith": 247725512
+   },
+   "2939589096": {
+    "name": "Target Lock",
+    "linkedWith": 365154968
    },
    "2946784966": {
     "name": "Tunnel Vision",
-    "has": [
-     2946784966,
-     987673306
-    ]
+    "linkedWith": 987673306
    },
    "2978966579": {
     "name": "Chill Clip",
-    "has": [
-     2978966579,
-     344235611
-    ]
+    "linkedWith": 344235611
+   },
+   "3007133316": {
+    "name": "Frenzy",
+    "linkedWith": 4104185692
    },
    "3038247973": {
     "name": "Explosive Payload",
-    "has": [
-     3038247973,
-     64866129
-    ]
+    "linkedWith": 64866129
    },
    "3047969693": {
     "name": "Desperado",
-    "has": [
-     3047969693,
-     624891305
-    ]
+    "linkedWith": 624891305
+   },
+   "3050799639": {
+    "name": "Offhand Strike",
+    "linkedWith": 2416023159
+   },
+   "3060983774": {
+    "name": "Dynamic Sway Reduction",
+    "linkedWith": 1359896290
    },
    "3078487919": {
     "name": "Bait and Switch",
-    "has": [
-     3078487919,
-     3744057135
-    ]
+    "linkedWith": 3744057135
    },
    "3096702027": {
     "name": "Genesis",
-    "has": [
-     3096702027,
-     1658784563
-    ]
+    "linkedWith": 1658784563
+   },
+   "3102670337": {
+    "name": "Unstoppable Force",
+    "linkedWith": 2224838837
    },
    "3108830275": {
     "name": "Unrelenting",
-    "has": [
-     3108830275,
-     855168139
-    ]
+    "linkedWith": 855168139
+   },
+   "3118144663": {
+    "name": "Hip-Fire Grip",
+    "linkedWith": 1866048759
+   },
+   "3143051906": {
+    "name": "Dual Loader",
+    "linkedWith": 25606670
    },
    "3161816588": {
     "name": "Slideshot",
-    "has": [
-     3161816588,
-     191144788
-    ]
+    "linkedWith": 191144788
    },
    "3194351027": {
     "name": "Explosive Light",
-    "has": [
-     3194351027,
-     2275087323
-    ]
+    "linkedWith": 2275087323
    },
    "3201496230": {
     "name": "Redirection",
-    "has": [
-     3201496230,
-     1545231802
-    ]
+    "linkedWith": 1545231802
    },
    "3300816228": {
     "name": "Auto-Loading Holster",
-    "has": [
-     3300816228,
-     3528046508
-    ]
+    "linkedWith": 3528046508
+   },
+   "3335686050": {
+    "name": "Recombination",
+    "linkedWith": 469285294
    },
    "3350417888": {
     "name": "Sympathetic Arsenal",
-    "has": [
-     3350417888,
-     1537607344
-    ]
+    "linkedWith": 1537607344
    },
    "3365897133": {
     "name": "Explosive Head",
-    "has": [
-     3365897133,
-     1551736345
-    ]
+    "linkedWith": 1551736345
    },
    "3400784728": {
     "name": "Triple Tap",
-    "has": [
-     3400784728,
-     573122728
-    ]
+    "linkedWith": 573122728
+   },
+   "3406782879": {
+    "name": "En Garde",
+    "linkedWith": 1685431615
+   },
+   "3418165135": {
+    "name": "Vorpal Weapon",
+    "linkedWith": 1546637391
    },
    "3425386926": {
     "name": "Rampage",
-    "has": [
-     3425386926,
-     288411554
-    ]
+    "linkedWith": 288411554
+   },
+   "3431277734": {
+    "name": "Adaptive Munitions",
+    "linkedWith": 1048183818
    },
    "3436462433": {
     "name": "Surplus",
-    "has": [
-     3436462433,
-     2658083589
-    ]
+    "linkedWith": 2658083589
+   },
+   "3442762221": {
+    "name": "Lead from Gold",
+    "linkedWith": 1556840489
    },
    "3511092054": {
     "name": "Elemental Capacitor",
-    "has": [
-     3511092054,
-     711234314
-    ]
+    "linkedWith": 711234314
    },
    "3513791699": {
     "name": "Mulligan",
-    "has": [
-     3513791699,
-     162561147
-    ]
+    "linkedWith": 162561147
    },
    "3523296417": {
     "name": "Demolitionist",
-    "has": [
-     3523296417,
-     1906147653
-    ]
+    "linkedWith": 1906147653
+   },
+   "3523746922": {
+    "name": "Archer's Tempo",
+    "linkedWith": 201365942
    },
    "3526486541": {
     "name": "Tilting at Windmills",
-    "has": [
-     3526486541,
-     1738338041
-    ]
+    "linkedWith": 1738338041
+   },
+   "3528046508": {
+    "name": "Auto-Loading Holster",
+    "linkedWith": 3300816228
+   },
+   "3563868667": {
+    "name": "Clown Cartridge",
+    "linkedWith": 2284787283
    },
    "3592538738": {
     "name": "Wellspring",
-    "has": [
-     3592538738,
-     2675361166
-    ]
+    "linkedWith": 2675361166
    },
    "3643424744": {
     "name": "Overflow",
-    "has": [
-     3643424744,
-     2682205016
-    ]
+    "linkedWith": 2682205016
    },
    "3673922083": {
     "name": "Adagio",
-    "has": [
-     3673922083,
-     2889515627
-    ]
+    "linkedWith": 2889515627
+   },
+   "3674673997": {
+    "name": "Immovable Object",
+    "linkedWith": 3800201097
+   },
+   "3678483220": {
+    "name": "Assassin's Blade",
+    "linkedWith": 354401740
    },
    "3700496672": {
     "name": "Shoot to Loot",
-    "has": [
-     3700496672,
-     2840833776
-    ]
+    "linkedWith": 2840833776
    },
    "3705817207": {
     "name": "Duelist's Trance",
-    "has": [
-     3705817207,
-     1646437399
-    ]
+    "linkedWith": 1646437399
    },
    "3708227201": {
     "name": "Surrounded",
-    "has": [
-     3708227201,
-     781192741
-    ]
+    "linkedWith": 781192741
+   },
+   "3719974635": {
+    "name": "Eye of the Storm",
+    "linkedWith": 699525795
    },
    "3722653512": {
     "name": "Air Assault",
-    "has": [
-     3722653512,
-     2898218424
-    ]
+    "linkedWith": 2898218424
+   },
+   "3744057135": {
+    "name": "Bait and Switch",
+    "linkedWith": 3078487919
    },
    "3751912585": {
     "name": "Cascade Point",
-    "has": [
-     3751912585,
-     331667533
-    ]
+    "linkedWith": 331667533
+   },
+   "3755250867": {
+    "name": "Under Pressure",
+    "linkedWith": 1645158859
+   },
+   "3797647183": {
+    "name": "Ambitious Assassin",
+    "linkedWith": 2010801679
    },
    "3800201097": {
     "name": "Immovable Object",
-    "has": [
-     3800201097,
-     3674673997
-    ]
+    "linkedWith": 3674673997
    },
    "3824105627": {
     "name": "Firefly",
-    "has": [
-     3824105627,
-     1183436451
-    ]
+    "linkedWith": 1183436451
+   },
+   "3878366039": {
+    "name": "Impulse Amplifier",
+    "linkedWith": 951095735
    },
    "3913600130": {
     "name": "Whirlwind Blade",
-    "has": [
-     3913600130,
-     147913470
-    ]
+    "linkedWith": 147913470
+   },
+   "3920370755": {
+    "name": "Firmly Planted",
+    "linkedWith": 280464955
    },
    "3927722942": {
     "name": "Lasting Impression",
-    "has": [
-     3927722942,
-     1167468626
-    ]
+    "linkedWith": 1167468626
+   },
+   "3974407819": {
+    "name": "No Distractions",
+    "linkedWith": 2866798147
    },
    "3977735242": {
     "name": "Tracking Module",
-    "has": [
-     3977735242,
-     406461158
-    ]
+    "linkedWith": 406461158
+   },
+   "4045335048": {
+    "name": "Headseeker",
+    "linkedWith": 460017080
    },
    "4049631843": {
     "name": "One for All",
-    "has": [
-     4049631843,
-     859780267
-    ]
+    "linkedWith": 859780267
    },
    "4071163871": {
     "name": "Threat Detector",
-    "has": [
-     4071163871,
-     494941759
-    ]
+    "linkedWith": 494941759
    },
    "4082225868": {
     "name": "Swashbuckler",
-    "has": [
-     4082225868,
-     1161469972
-    ]
+    "linkedWith": 1161469972
+   },
+   "4085959009": {
+    "name": "Relentless Strikes",
+    "linkedWith": 1749209109
    },
    "4104185692": {
     "name": "Frenzy",
-    "has": [
-     4104185692,
-     3007133316
-    ]
+    "linkedWith": 3007133316
+   },
+   "4116820839": {
+    "name": "Snapshot Sights",
+    "linkedWith": 957782887
+   },
+   "4183521337": {
+    "name": "Tireless Blade",
+    "linkedWith": 2590710093
+   },
+   "4200236906": {
+    "name": "Gutshot Straight",
+    "linkedWith": 1365187766
+   },
+   "4207509907": {
+    "name": "Killing Wind",
+    "linkedWith": 2450788523
+   },
+   "4245865861": {
+    "name": "Subsistence",
+    "linkedWith": 1820235745
+   },
+   "4290541820": {
+    "name": "Golden Tricorn Enhanced",
+    "linkedWith": 2610012052
    },
    "4293542123": {
     "name": "Incandescent",
-    "has": [
-     4293542123,
-     2675184851
-    ]
+    "linkedWith": 2675184851
    }
   }
  }
