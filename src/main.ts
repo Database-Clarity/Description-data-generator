@@ -14,6 +14,7 @@ import { PerkTypes } from './interfaces/generalTypes.js'
 import { categorizeItems } from './utils/categorizeItems.js'
 import { createFolders } from './utils/createFolders.js'
 import { createPerks } from './utils/createPerks.js'
+import { linkEnhancedTraits } from './utils/enhancedTraitsLinking.js'
 import { InventoryItemEnums } from './utils/enums.js'
 
 export type PerkData = {
@@ -140,7 +141,8 @@ export type CompletePerkDataList = {
    const dataForDescriptions = {
       perks: createPerks(inventoryItems, completeList),
       databaseSettings: {
-         folders: createFolders(completeList, inventoryItems)
+         folders: createFolders(completeList, inventoryItems),
+         enhancedPerks: linkEnhancedTraits(completeList)
       }
    }
 
