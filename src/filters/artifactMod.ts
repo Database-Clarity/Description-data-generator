@@ -1,6 +1,6 @@
+import { PerkTypes } from '@icemourne/description-converter'
 import { InventoryItem, InventoryItems } from '@icemourne/tool-box'
 
-import { PerkTypes } from '../interfaces/generalTypes.js'
 import { PerkData } from '../main.js'
 
 export const artifactMods = (inventoryItems: InventoryItems, inventoryItemArtifact: InventoryItem[]) => {

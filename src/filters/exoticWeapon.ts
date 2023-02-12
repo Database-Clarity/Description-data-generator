@@ -1,6 +1,6 @@
+import { PerkTypes } from '@icemourne/description-converter'
 import { InventoryItem, InventoryItems, PlugSets, SocketTypes } from '@icemourne/tool-box'
 
-import { PerkTypes } from '../interfaces/generalTypes.js'
 import { PerkData, PerkDataList } from '../main.js'
 import { SocketCategoryEnums } from '../utils/enums.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'

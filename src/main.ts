@@ -1,5 +1,6 @@
 import fs from 'fs'
 
+import { PerkTypes } from '@icemourne/description-converter'
 import { fetchBungieManifest } from '@icemourne/tool-box'
 import _ from 'lodash'
 
@@ -7,10 +8,10 @@ import { armorMods } from './filters/armorMod.js'
 import { artifactMods } from './filters/artifactMod.js'
 import { exoticArmors } from './filters/exoticArmor.js'
 import { exoticsWeapons } from './filters/exoticWeapon.js'
+import { ghostMods } from './filters/ghostMods.js'
 import { legendaryWeapons } from './filters/legendaryWeapon.js'
 import { subclass } from './filters/subclass.js'
 import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes.js'
-import { PerkTypes } from './interfaces/generalTypes.js'
 import { categorizeItems } from './utils/categorizeItems.js'
 import { createFolders } from './utils/createFolders.js'
 import { createPerks } from './utils/createPerks.js'
@@ -59,12 +60,15 @@ export type CompletePerkDataList = {
          item.displayProperties.name === 'Classified' ||
          item.displayProperties.name === 'Default Shader' ||
          item.displayProperties.name.match(/Empty [A-z]+ Socket/) ||
+         item.displayProperties.name.match(/ Mod Socket$/) ||
+         item.displayProperties.name.match(/ Damage Mod$/) ||
          item.displayProperties.name.match(/[A-z]+ Memento Tracker/) ||
          item.hash === InventoryItemEnums.osteoStrigaCatalyst || // not equippable
-         item.hash === InventoryItemEnums.transformative || // no reason to have placeholder perk
-         item.hash === InventoryItemEnums.aeonSafe || // dummy item
-         item.hash === InventoryItemEnums.aeonSoul || // dummy item
-         item.hash === InventoryItemEnums.aeonSwift // dummy item
+         item.hash === InventoryItemEnums.transformative || //      no reason to have placeholder perk
+         item.hash === InventoryItemEnums.aeonSafe || //            dummy item
+         item.hash === InventoryItemEnums.aeonSoul || //            dummy item
+         item.hash === InventoryItemEnums.aeonSwift || //           dummy item
+         item.hash === InventoryItemEnums.weaponAttackMod //        removed mod
       )
          return true
    })
@@ -75,7 +79,8 @@ export type CompletePerkDataList = {
       legendaryWeaponArr,
       subclassArr,
       artifactArr,
-      craftingRecipeArr
+      craftingRecipeArr,
+      ghostArr
    } = categorizeItems(inventoryItems)
 
    const legendaryWeaponsList = legendaryWeapons(inventoryItems, plugSet, legendaryWeaponArr)
@@ -99,6 +104,8 @@ export type CompletePerkDataList = {
    const artifactModList = artifactMods(inventoryItems, artifactArr)
    const subclassList = subclass(inventoryItems, plugSet, subclassArr)
 
+   const ghostList = ghostMods(inventoryItems, plugSet, ghostArr)
+
    const allPerks = {
       ...legendaryWeaponsList,
       ...exoticsWeaponsList,
@@ -106,7 +113,8 @@ export type CompletePerkDataList = {
       ...armorModList,
       ...exoticArmorList,
       ...artifactModList,
-      ...subclassList
+      ...subclassList,
+      ...ghostList
    }
 
    if (!fs.existsSync('./templates')) {

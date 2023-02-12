@@ -11,7 +11,9 @@ export enum SocketCategoryEnums {
    abilities = 309722977,
    super = 457473665,
    aspects = 2140934067,
-   fragments = 1313488945
+   fragments = 1313488945,
+
+   ghostMods = 3886482628
 }
 
 export enum InventoryItemEnums {
@@ -19,7 +21,9 @@ export enum InventoryItemEnums {
    transformative = 712324018,
    aeonSafe = 1906855381,
    aeonSoul = 2076339106,
-   aeonSwift = 1656912113
+   aeonSwift = 1656912113,
+
+   weaponAttackMod = 4207478320
 }
 
 export enum PowerCapHashEnum {
@@ -30,5 +34,6 @@ export enum ItemTypeEnum {
    armor = 2,
    weapon = 3,
    subclass = 16,
-   craftingRecipe = 30
+   craftingRecipe = 30,
+   ghost = 24,
 }

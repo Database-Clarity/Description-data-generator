@@ -10,6 +10,7 @@ interface Catagories {
    subclassArr: InventoryItem[]
    artifactArr: InventoryItem[]
    craftingRecipeArr: InventoryItem[]
+   ghostArr: InventoryItem[]
 }
 
 export const categorizeItems = (inventoryItem: InventoryItems) => {
@@ -45,6 +46,8 @@ export const categorizeItems = (inventoryItem: InventoryItems) => {
 
    const craftingRecipe = (inventoryItem: InventoryItem) => inventoryItem.itemType === ItemTypeEnum.craftingRecipe
 
+   const ghost = (inventoryItem: InventoryItem) => inventoryItem.itemType === ItemTypeEnum.ghost
+
    return Object.values(inventoryItem).reduce<Catagories>(
       (acc, item) => {
          if (exoticWeaponTest(item)) acc.exoticWeaponsArr.push(item)
@@ -54,6 +57,7 @@ export const categorizeItems = (inventoryItem: InventoryItems) => {
          if (subclassTest(item)) acc.subclassArr.push(item)
          if (artifact(item)) acc.artifactArr.push(item)
          if (craftingRecipe(item)) acc.craftingRecipeArr.push(item)
+         if (ghost(item)) acc.ghostArr.push(item)
 
          return acc
       },
@@ -64,7 +68,8 @@ export const categorizeItems = (inventoryItem: InventoryItems) => {
          legendaryWeaponArr: [],
          subclassArr: [],
          artifactArr: [],
-         craftingRecipeArr: []
+         craftingRecipeArr: [],
+         ghostArr: []
       }
    )
 }

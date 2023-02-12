@@ -5,6 +5,7 @@
       "generate": "node generator/main.js"
    },
    "dependencies": {
+      "@icemourne/description-converter": "^1.0.40",
       "@icemourne/tool-box": "^1.0.36",
       "lodash": "^4.17.21"
    },
