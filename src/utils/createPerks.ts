@@ -1,6 +1,6 @@
 import { InventoryItems } from '@icemourne/tool-box'
 
-import { CompletePerkDataList } from '../main.js'
+import { RawDataList } from '../rawData.js'
 
 type PerksForDescriptions = {
    [key: string]: {
@@ -12,7 +12,7 @@ type PerksForDescriptions = {
    }
 }
 
-export const createPerks = (inventoryItems: InventoryItems, perkData: CompletePerkDataList) => {
+export const createPerks = (inventoryItems: InventoryItems, perkData: RawDataList) => {
    return Object.entries(perkData).reduce<PerksForDescriptions>((acc, [hash, item]) => {
       if (item.type.endsWith(' Exotic') && item.appearsOn.length === 1) {
          acc[hash] = {

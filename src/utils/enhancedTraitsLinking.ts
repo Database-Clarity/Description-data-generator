@@ -1,4 +1,4 @@
-import { CompletePerkDataList } from '../main.js'
+import { RawDataList } from "../rawData.js"
 
 type EnhancedPerk = {
    name: string
@@ -9,7 +9,7 @@ type EnhancedPerks = {
    [key: string]: EnhancedPerk
 }
 
-export const linkEnhancedTraits = (perkDataList: CompletePerkDataList) => {
+export const linkEnhancedTraits = (perkDataList: RawDataList) => {
    return Object.values(perkDataList).reduce((acc, enhancedPerk) => {
       if (enhancedPerk.type !== 'Weapon Trait Enhanced') return acc
 

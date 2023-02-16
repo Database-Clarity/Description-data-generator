@@ -52,6 +52,11 @@
    "hash": 16392701,
    "type": "Weapon Perk"
   },
+  "16700458": {
+   "name": "Recovery Armorer",
+   "hash": 16700458,
+   "type": "Ghost Mod"
+  },
   "23371658": {
    "name": "Box Breathing",
    "hash": 23371658,
@@ -97,6 +102,11 @@
    "name": "Omolon Adaptive Frame",
    "hash": 31057037,
    "type": "Weapon Frame"
+  },
+  "36879820": {
+   "name": "Prosperity (Vanguard)",
+   "hash": 36879820,
+   "type": "Ghost Mod"
   },
   "47859594": {
    "name": "Grenade Kickstart",
@@ -534,6 +544,36 @@
    "name": "Swordmaster's Guard",
    "hash": 269888150,
    "type": "Weapon Perk"
+  },
+  "275904576": {
+   "name": "Ultimate Glimmer Booster",
+   "hash": 275904576,
+   "type": "Ghost Mod"
+  },
+  "275904577": {
+   "name": "Supercharged Glimmer Booster",
+   "hash": 275904577,
+   "type": "Ghost Mod"
+  },
+  "275904580": {
+   "name": "Standard Glimmer Booster",
+   "hash": 275904580,
+   "type": "Ghost Mod"
+  },
+  "275904581": {
+   "name": "Meager Glimmer Booster",
+   "hash": 275904581,
+   "type": "Ghost Mod"
+  },
+  "275904582": {
+   "name": "Prodigious Glimmer Booster",
+   "hash": 275904582,
+   "type": "Ghost Mod"
+  },
+  "275904583": {
+   "name": "Considerable Glimmer Booster",
+   "hash": 275904583,
+   "type": "Ghost Mod"
   },
   "280464955": {
    "name": "Firmly Planted",
@@ -1155,6 +1195,16 @@
    "itemHash": 3460576091,
    "type": "Weapon Frame Exotic"
   },
+  "537685236": {
+   "name": "Greater Core Harvest (Gambit)",
+   "hash": 537685236,
+   "type": "Ghost Mod"
+  },
+  "537685237": {
+   "name": "Lesser Core Harvest (Gambit)",
+   "hash": 537685237,
+   "type": "Ghost Mod"
+  },
   "537774540": {
    "name": "Whisper of Chains",
    "hash": 537774540,
@@ -1648,6 +1698,31 @@
    "name": "Surrounded",
    "hash": 781192741,
    "type": "Weapon Trait Enhanced"
+  },
+  "782611298": {
+   "name": "Perfected Resource Detector",
+   "hash": 782611298,
+   "type": "Ghost Mod"
+  },
+  "782611300": {
+   "name": "Stable Resource Detector",
+   "hash": 782611300,
+   "type": "Ghost Mod"
+  },
+  "782611301": {
+   "name": "Enhanced Resource Detector",
+   "hash": 782611301,
+   "type": "Ghost Mod"
+  },
+  "782611302": {
+   "name": "Destabilized Resource Detector",
+   "hash": 782611302,
+   "type": "Ghost Mod"
+  },
+  "782611303": {
+   "name": "Makeshift Resource Detector",
+   "hash": 782611303,
+   "type": "Ghost Mod"
   },
   "788178929": {
    "name": "One-Two Punch",
@@ -2395,6 +2470,16 @@
    "itemHash": 2535142413,
    "type": "Weapon Catalyst Exotic"
   },
+  "1137204316": {
+   "name": "Greater Core Harvest (Crucible)",
+   "hash": 1137204316,
+   "type": "Ghost Mod"
+  },
+  "1137204317": {
+   "name": "Lesser Core Harvest (Crucible)",
+   "hash": 1137204317,
+   "type": "Ghost Mod"
+  },
   "1140096971": {
    "name": "Seraph Rounds",
    "hash": 1140096971,
@@ -2658,6 +2743,11 @@
    "name": "Extrovert",
    "hash": 1250481499,
    "type": "Weapon Trait Origin"
+  },
+  "1251927947": {
+   "name": "Modularity (Gambit)",
+   "hash": 1251927947,
+   "type": "Ghost Mod"
   },
   "1260401931": {
    "name": "Hot Swap",
@@ -3290,6 +3380,11 @@
    "hash": 1513326571,
    "type": "Weapon Mod"
   },
+  "1515139595": {
+   "name": "Bountiful Harvest",
+   "hash": 1515139595,
+   "type": "Ghost Mod"
+  },
   "1515669996": {
    "name": "Elemental Armaments",
    "hash": 1515669996,
@@ -3786,6 +3881,31 @@
    "hash": 1716000303,
    "type": "Weapon Perk"
   },
+  "1718784632": {
+   "name": "Expert Tracker",
+   "hash": 1718784632,
+   "type": "Ghost Mod"
+  },
+  "1718784636": {
+   "name": "Loot Seeker",
+   "hash": 1718784636,
+   "type": "Ghost Mod"
+  },
+  "1718784637": {
+   "name": "Prize Pursuant",
+   "hash": 1718784637,
+   "type": "Ghost Mod"
+  },
+  "1718784638": {
+   "name": "Cache Finder",
+   "hash": 1718784638,
+   "type": "Ghost Mod"
+  },
+  "1718784639": {
+   "name": "Treasure Hunter",
+   "hash": 1718784639,
+   "type": "Ghost Mod"
+  },
   "1719307618": {
    "name": "Delicate Tomb Catalyst",
    "hash": 1719307618,
@@ -4007,6 +4127,36 @@
    "hash": 1817649409,
    "type": "Weapon Frame Enhanced"
   },
+  "1820053064": {
+   "name": "Blinding Light",
+   "hash": 1820053064,
+   "type": "Ghost Mod"
+  },
+  "1820053065": {
+   "name": "Guiding Light",
+   "hash": 1820053065,
+   "type": "Ghost Mod"
+  },
+  "1820053068": {
+   "name": "Little Light",
+   "hash": 1820053068,
+   "type": "Ghost Mod"
+  },
+  "1820053069": {
+   "name": "Flickering Light",
+   "hash": 1820053069,
+   "type": "Ghost Mod"
+  },
+  "1820053070": {
+   "name": "Burning Light",
+   "hash": 1820053070,
+   "type": "Ghost Mod"
+  },
+  "1820053071": {
+   "name": "Hopeful Light",
+   "hash": 1820053071,
+   "type": "Ghost Mod"
+  },
   "1820235745": {
    "name": "Subsistence",
    "hash": 1820235745,
@@ -4079,6 +4229,11 @@
    "name": "Confined Launch",
    "hash": 1844523823,
    "type": "Weapon Perk"
+  },
+  "1845407457": {
+   "name": "Intellect Armorer",
+   "hash": 1845407457,
+   "type": "Ghost Mod"
   },
   "1853177948": {
    "name": "Business Time",
@@ -4724,6 +4879,16 @@
    "itemHash": 1473821207,
    "type": "Weapon Trait Origin Exotic"
   },
+  "2209107628": {
+   "name": "Greater Core Harvest (Vanguard)",
+   "hash": 2209107628,
+   "type": "Ghost Mod"
+  },
+  "2209107629": {
+   "name": "Lesser Core Harvest (Vanguard)",
+   "hash": 2209107629,
+   "type": "Ghost Mod"
+  },
   "2209280306": {
    "name": "IS 5 Circle",
    "hash": 2209280306,
@@ -4822,6 +4987,11 @@
    "itemName": "Hierarchy of Needs",
    "itemHash": 4174431791,
    "type": "Weapon Frame Exotic"
+  },
+  "2231409668": {
+   "name": "Mobility Armorer",
+   "hash": 2231409668,
+   "type": "Ghost Mod"
   },
   "2234507197": {
    "name": "Collective Obligation Catalyst",
@@ -5529,6 +5699,11 @@
    "hash": 2627515934,
    "type": "Armor Mod General"
   },
+  "2630955836": {
+   "name": "Prosperity (Crucible)",
+   "hash": 2630955836,
+   "type": "Ghost Mod"
+  },
   "2637025676": {
    "name": "The Whispers",
    "hash": 2637025676,
@@ -6037,6 +6212,11 @@
    "hash": 2874957617,
    "type": "Armor Mod Activity"
   },
+  "2879513176": {
+   "name": "Strength Armorer",
+   "hash": 2879513176,
+   "type": "Ghost Mod"
+  },
   "2881057950": {
    "name": "Unflinching Sidearm Aim",
    "hash": 2881057950,
@@ -6165,6 +6345,11 @@
    "itemName": "Grand Overture",
    "itemHash": 1763584999,
    "type": "Weapon Frame Exotic"
+  },
+  "2943618220": {
+   "name": "Resilience Armorer",
+   "hash": 2943618220,
+   "type": "Ghost Mod"
   },
   "2946784966": {
    "name": "Tunnel Vision",
@@ -6396,6 +6581,11 @@
    "name": "Shot Package",
    "hash": 3054949324,
    "type": "Weapon Frame"
+  },
+  "3055419104": {
+   "name": "Public Defender",
+   "hash": 3055419104,
+   "type": "Ghost Mod"
   },
   "3060983774": {
    "name": "Dynamic Sway Reduction",
@@ -7223,6 +7413,16 @@
    "hash": 3517390997,
    "type": "Armor Mod General"
   },
+  "3520505384": {
+   "name": "Combo Detector",
+   "hash": 3520505384,
+   "type": "Ghost Mod"
+  },
+  "3520505385": {
+   "name": "Wombo Detector",
+   "hash": 3520505385,
+   "type": "Ghost Mod"
+  },
   "3523075120": {
    "name": "Protective Light",
    "hash": 3523075120,
@@ -8019,6 +8219,11 @@
    "hash": 3933525367,
    "type": "Subclass Class"
   },
+  "3935709357": {
+   "name": "Discipline Armorer",
+   "hash": 3935709357,
+   "type": "Ghost Mod"
+  },
   "3937312904": {
    "name": "On Black Wings",
    "hash": 3937312904,
@@ -8060,6 +8265,11 @@
    "hash": 3974407819,
    "type": "Weapon Trait Enhanced"
   },
+  "3976349716": {
+   "name": "Prosperity (Gambit)",
+   "hash": 3976349716,
+   "type": "Ghost Mod"
+  },
   "3977735242": {
    "name": "Tracking Module",
    "hash": 3977735242,
@@ -8086,6 +8296,11 @@
    "name": "Skulking Wolf",
    "hash": 3989629871,
    "type": "Weapon Trait Origin"
+  },
+  "3989883859": {
+   "name": "Modularity (Vanguard)",
+   "hash": 3989883859,
+   "type": "Ghost Mod"
   },
   "3999527219": {
    "name": "Remote Detonation",
@@ -8428,6 +8643,11 @@
    "name": "Bitterspite",
    "hash": 4154828211,
    "type": "Weapon Trait Origin"
+  },
+  "4162373251": {
+   "name": "Modularity (Crucible)",
+   "hash": 4162373251,
+   "type": "Ghost Mod"
   },
   "4172222323": {
    "name": "Legacy PR-55 Frame",

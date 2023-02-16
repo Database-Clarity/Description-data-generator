@@ -1,6 +1,6 @@
 import { InventoryItems, TypedObject } from '@icemourne/tool-box'
 
-import { CompletePerkData, CompletePerkDataList } from '../main.js'
+import { RawData, RawDataList } from '../rawData.js'
 
 type FolderTypes = 'Weapon Frame Exotic' | 'Weapon Frame' | 'Weapon Frame Enhanced'
 
@@ -23,14 +23,14 @@ type Folders = {
    [key in FolderTypes]: FolderContent[]
 }
 
-export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems: InventoryItems) => {
+export const createFolders = (perkDataList: RawDataList, inventoryItems: InventoryItems) => {
    const descriptionData: FoldersWithSet = {
       'Weapon Frame Exotic': {},
       'Weapon Frame': {},
       'Weapon Frame Enhanced': {}
    }
 
-   const addExoticWeapon = (perkData: CompletePerkData) => {
+   const addExoticWeapon = (perkData: RawData) => {
       perkData.appearsOn.forEach((hash) => {
          const weapon = inventoryItems[hash]
 
@@ -42,7 +42,7 @@ export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems
       })
    }
 
-   const addWeaponFrame = (perkData: CompletePerkData) => {
+   const addWeaponFrame = (perkData: RawData) => {
       perkData.appearsOn.forEach((wepType) => {
          const folder = descriptionData['Weapon Frame'][wepType] ?? {
             name: wepType,
@@ -52,7 +52,7 @@ export const createFolders = (perkDataList: CompletePerkDataList, inventoryItems
       })
    }
 
-   const addEnhancedWeaponFrame = (perkData: CompletePerkData) => {
+   const addEnhancedWeaponFrame = (perkData: RawData) => {
       perkData.appearsOn.forEach((wepType) => {
          const folder = descriptionData['Weapon Frame Enhanced'][wepType] ?? {
             name: wepType,

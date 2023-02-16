@@ -111,6 +111,14 @@
   "hash": 16392701,
   "type": "Weapon Perk"
  },
+ "16700458": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Recovery Armorer",
+  "hash": 16700458,
+  "type": "Ghost Mod"
+ },
  "23371658": {
   "appearsOn": [
    "Linear Fusion Rifle",
@@ -175,6 +183,14 @@
   "name": "Omolon Adaptive Frame",
   "hash": 31057037,
   "type": "Weapon Frame"
+ },
+ "36879820": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Prosperity (Vanguard)",
+  "hash": 36879820,
+  "type": "Ghost Mod"
  },
  "47859594": {
   "appearsOn": [
@@ -954,6 +970,54 @@
   "name": "Swordmaster's Guard",
   "hash": 269888150,
   "type": "Weapon Perk"
+ },
+ "275904576": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Ultimate Glimmer Booster",
+  "hash": 275904576,
+  "type": "Ghost Mod"
+ },
+ "275904577": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Supercharged Glimmer Booster",
+  "hash": 275904577,
+  "type": "Ghost Mod"
+ },
+ "275904580": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Standard Glimmer Booster",
+  "hash": 275904580,
+  "type": "Ghost Mod"
+ },
+ "275904581": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Meager Glimmer Booster",
+  "hash": 275904581,
+  "type": "Ghost Mod"
+ },
+ "275904582": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Prodigious Glimmer Booster",
+  "hash": 275904582,
+  "type": "Ghost Mod"
+ },
+ "275904583": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Considerable Glimmer Booster",
+  "hash": 275904583,
+  "type": "Ghost Mod"
  },
  "280464955": {
   "appearsOn": [
@@ -2049,6 +2113,22 @@
   "hash": 536517534,
   "type": "Weapon Frame Exotic"
  },
+ "537685236": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Greater Core Harvest (Gambit)",
+  "hash": 537685236,
+  "type": "Ghost Mod"
+ },
+ "537685237": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Lesser Core Harvest (Gambit)",
+  "hash": 537685237,
+  "type": "Ghost Mod"
+ },
  "537774540": {
   "appearsOn": [
    "Titan Subclass",
@@ -2969,6 +3049,46 @@
   "name": "Surrounded",
   "hash": 781192741,
   "type": "Weapon Trait Enhanced"
+ },
+ "782611298": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Perfected Resource Detector",
+  "hash": 782611298,
+  "type": "Ghost Mod"
+ },
+ "782611300": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Stable Resource Detector",
+  "hash": 782611300,
+  "type": "Ghost Mod"
+ },
+ "782611301": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Enhanced Resource Detector",
+  "hash": 782611301,
+  "type": "Ghost Mod"
+ },
+ "782611302": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Destabilized Resource Detector",
+  "hash": 782611302,
+  "type": "Ghost Mod"
+ },
+ "782611303": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Makeshift Resource Detector",
+  "hash": 782611303,
+  "type": "Ghost Mod"
  },
  "788178929": {
   "appearsOn": [
@@ -4293,6 +4413,22 @@
   "hash": 1134515006,
   "type": "Weapon Catalyst Exotic"
  },
+ "1137204316": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Greater Core Harvest (Crucible)",
+  "hash": 1137204316,
+  "type": "Ghost Mod"
+ },
+ "1137204317": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Lesser Core Harvest (Crucible)",
+  "hash": 1137204317,
+  "type": "Ghost Mod"
+ },
  "1140096971": {
   "appearsOn": [
    "Hand Cannon",
@@ -4729,6 +4865,14 @@
   "name": "Extrovert",
   "hash": 1250481499,
   "type": "Weapon Trait Origin"
+ },
+ "1251927947": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Modularity (Gambit)",
+  "hash": 1251927947,
+  "type": "Ghost Mod"
  },
  "1260401931": {
   "appearsOn": [
@@ -5894,6 +6038,14 @@
   "hash": 1513326571,
   "type": "Weapon Mod"
  },
+ "1515139595": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Bountiful Harvest",
+  "hash": 1515139595,
+  "type": "Ghost Mod"
+ },
  "1515669996": {
   "appearsOn": [
    "Leg Armor",
@@ -6820,6 +6972,46 @@
   "hash": 1716000303,
   "type": "Weapon Perk"
  },
+ "1718784632": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Expert Tracker",
+  "hash": 1718784632,
+  "type": "Ghost Mod"
+ },
+ "1718784636": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Loot Seeker",
+  "hash": 1718784636,
+  "type": "Ghost Mod"
+ },
+ "1718784637": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Prize Pursuant",
+  "hash": 1718784637,
+  "type": "Ghost Mod"
+ },
+ "1718784638": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Cache Finder",
+  "hash": 1718784638,
+  "type": "Ghost Mod"
+ },
+ "1718784639": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Treasure Hunter",
+  "hash": 1718784639,
+  "type": "Ghost Mod"
+ },
  "1719307618": {
   "appearsOn": [
    374573733
@@ -7217,6 +7409,54 @@
   "hash": 1817649409,
   "type": "Weapon Frame Enhanced"
  },
+ "1820053064": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Blinding Light",
+  "hash": 1820053064,
+  "type": "Ghost Mod"
+ },
+ "1820053065": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Guiding Light",
+  "hash": 1820053065,
+  "type": "Ghost Mod"
+ },
+ "1820053068": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Little Light",
+  "hash": 1820053068,
+  "type": "Ghost Mod"
+ },
+ "1820053069": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Flickering Light",
+  "hash": 1820053069,
+  "type": "Ghost Mod"
+ },
+ "1820053070": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Burning Light",
+  "hash": 1820053070,
+  "type": "Ghost Mod"
+ },
+ "1820053071": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Hopeful Light",
+  "hash": 1820053071,
+  "type": "Ghost Mod"
+ },
  "1820235745": {
   "appearsOn": [
    "Shotgun",
@@ -7357,6 +7597,14 @@
   "name": "Confined Launch",
   "hash": 1844523823,
   "type": "Weapon Perk"
+ },
+ "1845407457": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Intellect Armorer",
+  "hash": 1845407457,
+  "type": "Ghost Mod"
  },
  "1853177948": {
   "appearsOn": [
@@ -8518,6 +8766,22 @@
   "hash": 2206869417,
   "type": "Weapon Trait Origin Exotic"
  },
+ "2209107628": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Greater Core Harvest (Vanguard)",
+  "hash": 2209107628,
+  "type": "Ghost Mod"
+ },
+ "2209107629": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Lesser Core Harvest (Vanguard)",
+  "hash": 2209107629,
+  "type": "Ghost Mod"
+ },
  "2209280306": {
   "appearsOn": [
    "Submachine Gun"
@@ -8730,6 +8994,14 @@
   "name": "Guidance Ring",
   "hash": 2226793914,
   "type": "Weapon Frame Exotic"
+ },
+ "2231409668": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Mobility Armorer",
+  "hash": 2231409668,
+  "type": "Ghost Mod"
  },
  "2234507197": {
   "appearsOn": [
@@ -10038,6 +10310,14 @@
   "hash": 2627515934,
   "type": "Armor Mod General"
  },
+ "2630955836": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Prosperity (Crucible)",
+  "hash": 2630955836,
+  "type": "Ghost Mod"
+ },
  "2637025676": {
   "appearsOn": [
    3288917178
@@ -11007,6 +11287,14 @@
   "hash": 2874957617,
   "type": "Armor Mod Activity"
  },
+ "2879513176": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Strength Armorer",
+  "hash": 2879513176,
+  "type": "Ghost Mod"
+ },
  "2881057950": {
   "appearsOn": [
    "Chest Armor"
@@ -11225,6 +11513,14 @@
   "name": "Wrath of the Colossus",
   "hash": 2940035732,
   "type": "Weapon Frame Exotic"
+ },
+ "2943618220": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Resilience Armorer",
+  "hash": 2943618220,
+  "type": "Ghost Mod"
  },
  "2946784966": {
   "appearsOn": [
@@ -11657,6 +11953,14 @@
   "name": "Shot Package",
   "hash": 3054949324,
   "type": "Weapon Frame"
+ },
+ "3055419104": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Public Defender",
+  "hash": 3055419104,
+  "type": "Ghost Mod"
  },
  "3060983774": {
   "appearsOn": [
@@ -13246,6 +13550,22 @@
   "hash": 3517390997,
   "type": "Armor Mod General"
  },
+ "3520505384": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Combo Detector",
+  "hash": 3520505384,
+  "type": "Ghost Mod"
+ },
+ "3520505385": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Wombo Detector",
+  "hash": 3520505385,
+  "type": "Ghost Mod"
+ },
  "3523075120": {
   "appearsOn": [
    "Leg Armor",
@@ -14714,6 +15034,14 @@
   "hash": 3933525367,
   "type": "Subclass Class"
  },
+ "3935709357": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Discipline Armorer",
+  "hash": 3935709357,
+  "type": "Ghost Mod"
+ },
  "3937312904": {
   "appearsOn": [
    3460576091
@@ -14782,6 +15110,14 @@
   "hash": 3974407819,
   "type": "Weapon Trait Enhanced"
  },
+ "3976349716": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Prosperity (Gambit)",
+  "hash": 3976349716,
+  "type": "Ghost Mod"
+ },
  "3977735242": {
   "appearsOn": [
    "Rocket Launcher"
@@ -14836,6 +15172,14 @@
   "name": "Skulking Wolf",
   "hash": 3989629871,
   "type": "Weapon Trait Origin"
+ },
+ "3989883859": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Modularity (Vanguard)",
+  "hash": 3989883859,
+  "type": "Ghost Mod"
  },
  "3999527219": {
   "appearsOn": [
@@ -15525,6 +15869,14 @@
   "name": "Bitterspite",
   "hash": 4154828211,
   "type": "Weapon Trait Origin"
+ },
+ "4162373251": {
+  "appearsOn": [
+   "Ghost Shell"
+  ],
+  "name": "Modularity (Crucible)",
+  "hash": 4162373251,
+  "type": "Ghost Mod"
  },
  "4172222323": {
   "appearsOn": [
