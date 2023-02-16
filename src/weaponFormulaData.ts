@@ -25,14 +25,14 @@ export function createWeaponFormulaData(inventoryItems: InventoryItems, rawData:
             appearsOn.forEach((item) => {
                const weaponType = inventoryItems[item].itemTypeDisplayName
                if (!weaponType) return acc
-               if (!acc.exotic[item]) {
-                  acc.exotic[item] = {}
+               if (!acc.exotic[weaponType]) {
+                  acc.exotic[weaponType] = {}
                }
-               if (!acc.exotic[item][weaponType]) {
-                  acc.exotic[item][weaponType] = []
+               if (!acc.exotic[weaponType][item]) {
+                  acc.exotic[weaponType][item] = []
                }
 
-               acc.exotic[item][weaponType].push(Number(key))
+               acc.exotic[weaponType][item].push(Number(key))
             })
             return acc
          }
