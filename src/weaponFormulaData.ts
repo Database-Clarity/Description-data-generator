@@ -1,4 +1,5 @@
-import { InventoryItems } from '@icemourne/tool-box'
+import { InventoryItems, TypedObject } from '@icemourne/tool-box'
+import _ from 'lodash'
 
 import { RawDataList } from './rawData.js'
 
@@ -15,40 +16,64 @@ type WeaponFormulaData = {
    }
 }
 
-export function createWeaponFormulaData(inventoryItems: InventoryItems, rawData: RawDataList) {
-   return Object.entries(rawData).reduce(
-      (acc, [key, value]) => {
-         if (!value.type.startsWith('Weapon Frame')) return acc
-         const { appearsOn, name } = value
+function sortObjectKeysRecursive<T>(obj: any): T {
+   if (typeof obj !== 'object' || obj === null) {
+      return obj
+   }
 
-         if (value.type.endsWith(' Exotic')) {
-            appearsOn.forEach((item) => {
-               const weaponType = inventoryItems[item].itemTypeDisplayName
-               if (!weaponType) return acc
-               if (!acc.exotic[weaponType]) {
-                  acc.exotic[weaponType] = {}
-               }
-               if (!acc.exotic[weaponType][item]) {
-                  acc.exotic[weaponType][item] = []
-               }
+   if (Array.isArray(obj)) {
+      // const sorted = obj.map(sortObjectKeysRecursive).sort()
+      // return sorted as unknown as T
+      return obj as unknown as T
+   }
 
-               acc.exotic[weaponType][item].push(Number(key))
-            })
-            return acc
-         }
-
-         appearsOn.forEach((item) => {
-            if (!acc.legendary[item]) {
-               acc.legendary[item] = {}
-            }
-            if (!acc.legendary[item][name]) {
-               acc.legendary[item][name] = []
-            }
-
-            acc.legendary[item][name].push(Number(key))
-         })
+   return Object.keys(obj)
+      .sort((a, b) => a.localeCompare(b))
+      .reduce((acc, key) => {
+         acc[key] = sortObjectKeysRecursive(obj[key])
          return acc
-      },
-      { legendary: {}, exotic: {} } as WeaponFormulaData
-   )
+      }, {} as any) as unknown as T
+}
+
+export function createWeaponFormulaData(inventoryItems: InventoryItems, rawData: RawDataList) {
+   let exotic: WeaponFormulaData['exotic'] = {}
+   let legendary: WeaponFormulaData['legendary'] = {}
+
+   const addExoticWeapon = (appearsOn: (string | number)[], key: string) => {
+      appearsOn.forEach((item) => {
+         const weaponType = inventoryItems[item].itemTypeDisplayName
+         if (!weaponType) return
+         if (!exotic[weaponType]) exotic[weaponType] = {}
+         if (!exotic[weaponType][item]) exotic[weaponType][item] = []
+
+         exotic[weaponType][item].push(Number(key))
+      })
+   }
+
+   const addWeaponFrame = (appearsOn: (string | number)[], key: string, name: string) => {
+      appearsOn.forEach((item) => {
+         if (!legendary[item]) legendary[item] = {}
+         if (!legendary[item][name]) legendary[item][name] = []
+
+         legendary[item][name].push(Number(key))
+      })
+   }
+
+   for (const key in rawData) {
+      if (!rawData[key].type.startsWith('Weapon Frame')) continue
+      const { appearsOn, name } = rawData[key]
+
+      if (rawData[key].type.endsWith(' Exotic')) {
+         addExoticWeapon(appearsOn, key)
+         continue
+      }
+
+      addWeaponFrame(appearsOn, key, name)
+   }
+
+   const sortedExotic = sortObjectKeysRecursive(exotic)
+
+   const sortedLegendary = sortObjectKeysRecursive(legendary)
+
+   return { legendary: sortedLegendary, exotic: sortedExotic }
 }
