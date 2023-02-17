@@ -22,13 +22,14 @@ function sortObjectKeysRecursive<T>(obj: any): T {
    }
 
    if (Array.isArray(obj)) {
-      // const sorted = obj.map(sortObjectKeysRecursive).sort()
-      // return sorted as unknown as T
-      return obj as unknown as T
+      const sorted = obj
+         .map(sortObjectKeysRecursive)
+         .sort((a, b) => (`${a}` as any).localeCompare(`${b}`, undefined, { numeric: true }))
+      return sorted as unknown as T
    }
 
    return Object.keys(obj)
-      .sort((a, b) => a.localeCompare(b))
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
       .reduce((acc, key) => {
          acc[key] = sortObjectKeysRecursive(obj[key])
          return acc
