@@ -123,6 +123,11 @@
    "hash": 36879820,
    "type": "Ghost Mod"
   },
+  "40492375": {
+   "name": "Vortex Frame",
+   "hash": 40492375,
+   "type": "Weapon Frame Enhanced"
+  },
   "47981717": {
    "name": "Opening Shot",
    "hash": 47981717,
@@ -325,6 +330,11 @@
    "hash": 164468655,
    "type": "Weapon Trait Origin"
   },
+  "167794220": {
+   "name": "Aggressive Frame",
+   "hash": 167794220,
+   "type": "Weapon Frame Enhanced"
+  },
   "169755979": {
    "name": "Dragonfly",
    "hash": 169755979,
@@ -444,6 +454,13 @@
    "name": "Precision Frame",
    "hash": 224485255,
    "type": "Weapon Frame Enhanced"
+  },
+  "228577175": {
+   "name": "Soaring Fang",
+   "hash": 228577175,
+   "itemName": "The Manticore",
+   "itemHash": 219145368,
+   "type": "Weapon Frame Exotic"
   },
   "229003538": {
    "name": "Adept Blast Radius",
@@ -2564,6 +2581,11 @@
    "itemName": "Vesper of Radius",
    "itemHash": 1725917554,
    "type": "Armor Trait Exotic"
+  },
+  "1145640183": {
+   "name": "Counterattack",
+   "hash": 1145640183,
+   "type": "Weapon Trait Enhanced"
   },
   "1147638875": {
    "name": "Cobra Totemic",
@@ -4773,6 +4795,11 @@
    "hash": 2101490074,
    "type": "Weapon Frame Enhanced"
   },
+  "2105054824": {
+   "name": "Lightweight Frame",
+   "hash": 2105054824,
+   "type": "Weapon Frame Enhanced"
+  },
   "2108556049": {
    "name": "Lightweight Frame",
    "hash": 2108556049,
@@ -4862,6 +4889,13 @@
    "name": "Psychohack",
    "hash": 2171055345,
    "type": "Weapon Trait Origin"
+  },
+  "2171805903": {
+   "name": "Perpetual Loophole",
+   "hash": 2171805903,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Trait Exotic"
   },
   "2172504645": {
    "name": "Sleight of Hand",
@@ -5832,6 +5866,13 @@
    "hash": 2652708987,
    "type": "Weapon Trait"
   },
+  "2656694271": {
+   "name": "Swooping Talons",
+   "hash": 2656694271,
+   "itemName": "The Manticore",
+   "itemHash": 219145368,
+   "type": "Weapon Trait Exotic"
+  },
   "2657604783": {
    "name": "Harmonic Loader",
    "hash": 2657604783,
@@ -6118,6 +6159,13 @@
    "hash": 2749775325,
    "type": "Weapon Perk"
   },
+  "2751656639": {
+   "name": "M1R Distribution Matrix",
+   "hash": 2751656639,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Frame Exotic"
+  },
   "2757685314": {
    "name": "Aggressive Frame",
    "hash": 2757685314,
@@ -6186,6 +6234,13 @@
    "itemName": "Forerunner",
    "itemHash": 2179048386,
    "type": "Weapon Trait Exotic"
+  },
+  "2797384170": {
+   "name": "The Manticore Catalyst",
+   "hash": 2797384170,
+   "itemName": "The Manticore",
+   "itemHash": 219145368,
+   "type": "Weapon Catalyst Exotic"
   },
   "2799418574": {
    "name": "Rites of Ember",
@@ -6428,6 +6483,27 @@
    "name": "Air Assault",
    "hash": 2898218424,
    "type": "Weapon Trait Enhanced"
+  },
+  "2898674457": {
+   "name": "M1R Distribution Matrix IV",
+   "hash": 2898674457,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Frame Exotic"
+  },
+  "2898674462": {
+   "name": "M1R Distribution Matrix III",
+   "hash": 2898674462,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Frame Exotic"
+  },
+  "2898674463": {
+   "name": "M1R Distribution Matrix II",
+   "hash": 2898674463,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Frame Exotic"
   },
   "2909403175": {
    "name": "Mortal Polarity",
@@ -6859,6 +6935,27 @@
    "name": "Dual Loader",
    "hash": 3143051906,
    "type": "Weapon Trait Enhanced"
+  },
+  "3146691100": {
+   "name": "Robber Refit",
+   "hash": 3146691100,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3146691101": {
+   "name": "Immovable Refit",
+   "hash": 3146691101,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3146691103": {
+   "name": "Feedback Refit",
+   "hash": 3146691103,
+   "itemName": "Vexcalibur",
+   "itemHash": 3118061005,
+   "type": "Weapon Catalyst Exotic"
   },
   "3149307605": {
    "name": "Power Preservation",
@@ -9808,6 +9905,15 @@
      ]
     },
     {
+     "name": "The Manticore",
+     "has": [
+      228577175,
+      2656694271,
+      2797384170,
+      4259401308
+     ]
+    },
+    {
      "name": "The Prospector",
      "has": [
       2977709078,
@@ -9942,6 +10048,23 @@
       806917387,
       838219733,
       990298390
+     ]
+    },
+    {
+     "name": "Vexcalibur",
+     "has": [
+      2751656639,
+      990298390,
+      1067908860,
+      2171805903,
+      2898674457,
+      2898674462,
+      2898674463,
+      3146691100,
+      3146691101,
+      3146691103,
+      3465198467,
+      4259401308
      ]
     },
     {
@@ -10536,7 +10659,10 @@
     {
      "name": "Sword",
      "has": [
-      1793150018
+      40492375,
+      167794220,
+      1793150018,
+      2105054824
      ]
     },
     {
@@ -10839,6 +10965,10 @@
    "1077019636": {
     "name": "Danger Zone",
     "linkedWith": 960810156
+   },
+   "1145640183": {
+    "name": "Counterattack",
+    "linkedWith": 3016987351
    },
    "1161469972": {
     "name": "Swashbuckler",
@@ -11347,6 +11477,10 @@
    "3007133316": {
     "name": "Frenzy",
     "linkedWith": 4104185692
+   },
+   "3016987351": {
+    "name": "Counterattack",
+    "linkedWith": 1145640183
    },
    "3038247973": {
     "name": "Explosive Payload",

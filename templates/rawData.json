@@ -83,7 +83,8 @@
    "Pulse Rifle",
    "Sniper Rifle",
    "Submachine Gun",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sword"
   ],
   "name": "Adrenaline Junkie",
   "hash": 11612903,
@@ -215,6 +216,14 @@
   "name": "Prosperity (Vanguard)",
   "hash": 36879820,
   "type": "Ghost Mod"
+ },
+ "40492375": {
+  "appearsOn": [
+   "Sword"
+  ],
+  "name": "Vortex Frame",
+  "hash": 40492375,
+  "type": "Weapon Frame Enhanced"
  },
  "47981717": {
   "appearsOn": [
@@ -571,6 +580,14 @@
   "hash": 164468655,
   "type": "Weapon Trait Origin"
  },
+ "167794220": {
+  "appearsOn": [
+   "Sword"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 167794220,
+  "type": "Weapon Frame Enhanced"
+ },
  "169755979": {
   "appearsOn": [
    "Combat Bow",
@@ -786,6 +803,14 @@
   "name": "Precision Frame",
   "hash": 224485255,
   "type": "Weapon Frame Enhanced"
+ },
+ "228577175": {
+  "appearsOn": [
+   219145368
+  ],
+  "name": "Soaring Fang",
+  "hash": 228577175,
+  "type": "Weapon Frame Exotic"
  },
  "229003538": {
   "appearsOn": [
@@ -2112,15 +2137,16 @@
    "Combat Bow",
    "Grenade Launcher",
    "Hand Cannon",
-   "Machine Gun",
    "Shotgun",
+   "Machine Gun",
    "Fusion Rifle",
    "Sidearm",
    "Scout Rifle",
    "Submachine Gun",
    "Pulse Rifle",
    "Auto Rifle",
-   "Glaive"
+   "Glaive",
+   "Sword"
   ],
   "name": "Pugilist",
   "hash": 536173722,
@@ -2632,14 +2658,15 @@
    "Grenade Launcher",
    "Combat Bow",
    "Hand Cannon",
-   "Machine Gun",
    "Shotgun",
+   "Machine Gun",
    "Submachine Gun",
    "Pulse Rifle",
    "Fusion Rifle",
    "Scout Rifle",
    "Auto Rifle",
-   "Glaive"
+   "Glaive",
+   "Sword"
   ],
   "name": "Pugilist",
   "hash": 691659142,
@@ -2965,8 +2992,8 @@
  "781192741": {
   "appearsOn": [
    "Hand Cannon",
-   "Fusion Rifle",
    "Shotgun",
+   "Fusion Rifle",
    "Sidearm",
    "Glaive",
    "Submachine Gun",
@@ -3972,6 +3999,7 @@
    2603483885,
    2856683562,
    3110698812,
+   3118061005,
    3141979347,
    3413860062,
    3505113722,
@@ -4261,6 +4289,7 @@
    2812324401,
    2816212794,
    3089417789,
+   3118061005,
    3141979346,
    3460576091,
    3549153978,
@@ -4538,6 +4567,14 @@
   "hash": 1142806944,
   "type": "Armor Trait Exotic"
  },
+ "1145640183": {
+  "appearsOn": [
+   "Sword"
+  ],
+  "name": "Counterattack",
+  "hash": 1145640183,
+  "type": "Weapon Trait Enhanced"
+ },
  "1147638875": {
   "appearsOn": [
    3627185503
@@ -4588,9 +4625,9 @@
  },
  "1161469972": {
   "appearsOn": [
+   "Shotgun",
    "Sidearm",
    "Machine Gun",
-   "Shotgun",
    "Linear Fusion Rifle",
    "Scout Rifle",
    "Glaive",
@@ -5510,8 +5547,8 @@
   "appearsOn": [
    "Combat Bow",
    "Hand Cannon",
-   "Scout Rifle",
    "Shotgun",
+   "Scout Rifle",
    "Linear Fusion Rifle",
    "Sniper Rifle"
   ],
@@ -5682,10 +5719,10 @@
    "Combat Bow",
    "Grenade Launcher",
    "Scout Rifle",
+   "Shotgun",
    "Pulse Rifle",
    "Auto Rifle",
    "Machine Gun",
-   "Shotgun",
    "Hand Cannon",
    "Rocket Launcher",
    "Fusion Rifle",
@@ -6415,11 +6452,11 @@
    "Grenade Launcher",
    "Submachine Gun",
    "Scout Rifle",
+   "Shotgun",
    "Hand Cannon",
    "Auto Rifle",
    "Pulse Rifle",
    "Fusion Rifle",
-   "Shotgun",
    "Machine Gun",
    "Sidearm",
    "Rocket Launcher",
@@ -7409,6 +7446,7 @@
    "Glaive",
    "Grenade Launcher",
    "Scout Rifle",
+   "Shotgun",
    "Auto Rifle",
    "Hand Cannon",
    "Sidearm",
@@ -7416,7 +7454,6 @@
    "Fusion Rifle",
    "Machine Gun",
    "Linear Fusion Rifle",
-   "Shotgun",
    "Submachine Gun",
    "Pulse Rifle",
    "Rocket Launcher",
@@ -7869,12 +7906,14 @@
  },
  "1905044254": {
   "appearsOn": [
+   "Shotgun",
    "Sidearm",
    "Machine Gun",
    "Fusion Rifle",
    "Submachine Gun",
    "Hand Cannon",
-   "Sniper Rifle"
+   "Sniper Rifle",
+   "Sword"
   ],
   "name": "To Excess",
   "hash": 1905044254,
@@ -7976,7 +8015,8 @@
  },
  "1926441324": {
   "appearsOn": [
-   "Grenade Launcher"
+   "Grenade Launcher",
+   "Sword"
   ],
   "name": "Destabilizing Rounds",
   "hash": 1926441324,
@@ -8365,7 +8405,8 @@
    "Grenade Launcher",
    "Submachine Gun",
    "Shotgun",
-   "Glaive"
+   "Glaive",
+   "Sword"
   ],
   "name": "Destabilizing Rounds",
   "hash": 2048641572,
@@ -8489,6 +8530,14 @@
   ],
   "name": "Aggressive Frame",
   "hash": 2101490074,
+  "type": "Weapon Frame Enhanced"
+ },
+ "2105054824": {
+  "appearsOn": [
+   "Sword"
+  ],
+  "name": "Lightweight Frame",
+  "hash": 2105054824,
   "type": "Weapon Frame Enhanced"
  },
  "2108556049": {
@@ -8643,6 +8692,14 @@
   "name": "Psychohack",
   "hash": 2171055345,
   "type": "Weapon Trait Origin"
+ },
+ "2171805903": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "Perpetual Loophole",
+  "hash": 2171805903,
+  "type": "Weapon Trait Exotic"
  },
  "2172504645": {
   "appearsOn": [
@@ -8908,6 +8965,7 @@
   "appearsOn": [
    "Combat Bow",
    "Grenade Launcher",
+   "Shotgun",
    "Submachine Gun",
    "Glaive",
    "Sniper Rifle",
@@ -9628,6 +9686,7 @@
    "Combat Bow",
    "Auto Rifle",
    "Rocket Launcher",
+   "Sword",
    "Shotgun"
   ],
   "name": "Adrenaline Junkie",
@@ -10123,10 +10182,10 @@
    "Fusion Rifle",
    "Combat Bow",
    "Grenade Launcher",
+   "Shotgun",
    "Auto Rifle",
    "Machine Gun",
    "Hand Cannon",
-   "Shotgun",
    "Scout Rifle",
    "Pulse Rifle",
    "Submachine Gun",
@@ -10348,6 +10407,14 @@
   "hash": 2652708987,
   "type": "Weapon Trait"
  },
+ "2656694271": {
+  "appearsOn": [
+   219145368
+  ],
+  "name": "Swooping Talons",
+  "hash": 2656694271,
+  "type": "Weapon Trait Exotic"
+ },
  "2657604783": {
   "appearsOn": [
    "Gauntlets"
@@ -10359,6 +10426,7 @@
  "2658083589": {
   "appearsOn": [
    "Combat Bow",
+   "Shotgun",
    "Grenade Launcher",
    "Linear Fusion Rifle",
    "Scout Rifle",
@@ -10366,7 +10434,6 @@
    "Fusion Rifle",
    "Sniper Rifle",
    "Trace Rifle",
-   "Shotgun",
    "Hand Cannon",
    "Rocket Launcher",
    "Machine Gun"
@@ -10871,6 +10938,14 @@
   "hash": 2749775325,
   "type": "Weapon Perk"
  },
+ "2751656639": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "M1R Distribution Matrix",
+  "hash": 2751656639,
+  "type": "Weapon Frame Exotic"
+ },
  "2757685314": {
   "appearsOn": [
    "Hand Cannon"
@@ -11008,6 +11083,14 @@
   "name": "Pace Yourself",
   "hash": 2795311559,
   "type": "Weapon Trait Exotic"
+ },
+ "2797384170": {
+  "appearsOn": [
+   219145368
+  ],
+  "name": "The Manticore Catalyst",
+  "hash": 2797384170,
+  "type": "Weapon Catalyst Exotic"
  },
  "2799418574": {
   "appearsOn": [
@@ -11472,6 +11555,30 @@
   "name": "Air Assault",
   "hash": 2898218424,
   "type": "Weapon Trait Enhanced"
+ },
+ "2898674457": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "M1R Distribution Matrix IV",
+  "hash": 2898674457,
+  "type": "Weapon Frame Exotic"
+ },
+ "2898674462": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "M1R Distribution Matrix III",
+  "hash": 2898674462,
+  "type": "Weapon Frame Exotic"
+ },
+ "2898674463": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "M1R Distribution Matrix II",
+  "hash": 2898674463,
+  "type": "Weapon Frame Exotic"
  },
  "2909403175": {
   "appearsOn": [
@@ -12246,6 +12353,30 @@
   "hash": 3143051906,
   "type": "Weapon Trait Enhanced"
  },
+ "3146691100": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "Robber Refit",
+  "hash": 3146691100,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "3146691101": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "Immovable Refit",
+  "hash": 3146691101,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "3146691103": {
+  "appearsOn": [
+   3118061005
+  ],
+  "name": "Feedback Refit",
+  "hash": 3146691103,
+  "type": "Weapon Catalyst Exotic"
+ },
  "3149307605": {
   "appearsOn": [
    "Helmet"
@@ -12770,8 +12901,8 @@
    "Machine Gun",
    "Rocket Launcher",
    "Fusion Rifle",
-   "Hand Cannon",
    "Shotgun",
+   "Hand Cannon",
    "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle",
@@ -13333,6 +13464,7 @@
    2535142413,
    2694576561,
    2812324400,
+   3118061005,
    3211806999,
    3413860063,
    3580904581,
@@ -13605,11 +13737,11 @@
  "3528046508": {
   "appearsOn": [
    "Grenade Launcher",
+   "Shotgun",
    "Auto Rifle",
    "Scout Rifle",
    "Rocket Launcher",
-   "Pulse Rifle",
-   "Shotgun"
+   "Pulse Rifle"
   ],
   "name": "Auto-Loading Holster",
   "hash": 3528046508,
@@ -15173,7 +15305,8 @@
    "Sidearm",
    "Scout Rifle",
    "Submachine Gun",
-   "Sniper Rifle"
+   "Sniper Rifle",
+   "Sword"
   ],
   "name": "Veist Stinger",
   "hash": 3988215619,
@@ -15714,10 +15847,10 @@
  },
  "4116820839": {
   "appearsOn": [
+   "Shotgun",
    "Grenade Launcher",
    "Linear Fusion Rifle",
    "Fusion Rifle",
-   "Shotgun",
    "Pulse Rifle",
    "Sniper Rifle",
    "Hand Cannon",
@@ -16207,6 +16340,7 @@
   "appearsOn": [
    14194600,
    46524085,
+   219145368,
    542203595,
    1473821207,
    1665952087,
@@ -16216,6 +16350,7 @@
    2069224589,
    2399110176,
    2535142413,
+   3118061005,
    3413074534,
    3580904580,
    3628991658,
@@ -16375,12 +16510,12 @@
   "appearsOn": [
    "Pulse Rifle",
    "Hand Cannon",
+   "Shotgun",
    "Auto Rifle",
    "Machine Gun",
    "Sidearm",
    "Trace Rifle",
    "Grenade Launcher",
-   "Shotgun",
    "Scout Rifle",
    "Fusion Rifle",
    "Rocket Launcher",
