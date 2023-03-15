@@ -2493,6 +2493,13 @@
    "hash": 1103878128,
    "type": "Armor Mod General"
   },
+  "1105347996": {
+   "name": "Paracausal Pellets",
+   "hash": 1105347996,
+   "itemName": "Conditional Finality",
+   "itemHash": 3371017761,
+   "type": "Weapon Trait Exotic"
+  },
   "1118428792": {
    "name": "Unflinching Stasis Aim",
    "hash": 1118428792,
@@ -3592,6 +3599,11 @@
    "itemName": "Ace of Spades",
    "itemHash": 347366834,
    "type": "Weapon Trait Exotic"
+  },
+  "1563455254": {
+   "name": "Rewind Rounds",
+   "hash": 1563455254,
+   "type": "Weapon Trait Enhanced"
   },
   "1564126489": {
    "name": "Rapid-Fire Frame",
@@ -7023,6 +7035,11 @@
    "hash": 3184690956,
    "type": "Armor Mod General"
   },
+  "3186078099": {
+   "name": "Harmonic Resonance",
+   "hash": 3186078099,
+   "type": "Weapon Trait Origin"
+  },
   "3188328909": {
    "name": "Stasis Siphon",
    "hash": 3188328909,
@@ -7064,6 +7081,11 @@
    "itemName": "Cerberus+1",
    "itemHash": 1541131350,
    "type": "Weapon Frame Exotic"
+  },
+  "3215448563": {
+   "name": "Paracausal Affinity",
+   "hash": 3215448563,
+   "type": "Weapon Trait"
   },
   "3224649746": {
    "name": "Void Loader",
@@ -7250,6 +7272,11 @@
    "itemName": "Ticuu's Divination",
    "itemHash": 3260753130,
    "type": "Weapon Trait Exotic"
+  },
+  "3299896859": {
+   "name": "Paracausal Affinity",
+   "hash": 3299896859,
+   "type": "Weapon Trait Enhanced"
   },
   "3300816228": {
    "name": "Auto-Loading Holster",
@@ -7614,6 +7641,13 @@
    "hash": 3492396210,
    "type": "Weapon Perk"
   },
+  "3492498209": {
+   "name": "Shortened Barrel",
+   "hash": 3492498209,
+   "itemName": "Conditional Finality",
+   "itemHash": 3371017761,
+   "type": "Weapon Perk Exotic"
+  },
   "3504197951": {
    "name": "Unforeseen Repercussions",
    "hash": 3504197951,
@@ -7861,6 +7895,13 @@
    "name": "Aggressive Frame",
    "hash": 3615521782,
    "type": "Weapon Frame Enhanced"
+  },
+  "3616546635": {
+   "name": "Conditional Finality Catalyst",
+   "hash": 3616546635,
+   "itemName": "Conditional Finality",
+   "itemHash": 3371017761,
+   "type": "Weapon Catalyst Exotic"
   },
   "3619207468": {
    "name": "Keep Away",
@@ -8210,6 +8251,13 @@
    "name": "Radar Booster",
    "hash": 3785661089,
    "type": "Weapon Mod"
+  },
+  "3787406018": {
+   "name": "Split Decision",
+   "hash": 3787406018,
+   "itemName": "Conditional Finality",
+   "itemHash": 3371017761,
+   "type": "Weapon Frame Exotic"
   },
   "3789184904": {
    "name": "Adept Icarus Grip",
@@ -9301,6 +9349,15 @@
       990298390,
       2234507197,
       2395713912
+     ]
+    },
+    {
+     "name": "Conditional Finality",
+     "has": [
+      3787406018,
+      1105347996,
+      3492498209,
+      3616546635
      ]
     },
     {
@@ -11066,6 +11123,10 @@
     "name": "Lead from Gold",
     "linkedWith": 3442762221
    },
+   "1563455254": {
+    "name": "Rewind Rounds",
+    "linkedWith": 3418782618
+   },
    "1570042021": {
     "name": "Heating Up",
     "linkedWith": 2748258257
@@ -11538,6 +11599,14 @@
     "name": "Redirection",
     "linkedWith": 1545231802
    },
+   "3215448563": {
+    "name": "Paracausal Affinity",
+    "linkedWith": 3299896859
+   },
+   "3299896859": {
+    "name": "Paracausal Affinity",
+    "linkedWith": 3215448563
+   },
    "3300816228": {
     "name": "Auto-Loading Holster",
     "linkedWith": 3528046508
@@ -11565,6 +11634,10 @@
    "3418165135": {
     "name": "Vorpal Weapon",
     "linkedWith": 1546637391
+   },
+   "3418782618": {
+    "name": "Rewind Rounds",
+    "linkedWith": 1563455254
    },
    "3425386926": {
     "name": "Rampage",
