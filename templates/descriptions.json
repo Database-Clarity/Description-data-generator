@@ -128,6 +128,11 @@
    "hash": 40492375,
    "type": "Weapon Frame Enhanced"
   },
+  "40751621": {
+   "name": "Reaper",
+   "hash": 40751621,
+   "type": "Armor Mod General"
+  },
   "47981717": {
    "name": "Opening Shot",
    "hash": 47981717,
@@ -198,6 +203,11 @@
    "name": "Icarus Dash",
    "hash": 83039195,
    "type": "Subclass Aspect"
+  },
+  "84503918": {
+   "name": "Empowered Finish",
+   "hash": 84503918,
+   "type": "Armor Mod General"
   },
   "95544328": {
    "name": "Triple Jump",
@@ -1243,6 +1253,11 @@
    "name": "Lesser Core Harvest (Gambit)",
    "hash": 537685237,
    "type": "Ghost Mod"
+  },
+  "539051925": {
+   "name": "Chill Out",
+   "hash": 539051925,
+   "type": "Armor Mod Activity"
   },
   "539564471": {
    "name": "Lightweight Frame",
@@ -2353,9 +2368,34 @@
    "hash": 1036557198,
    "type": "Armor Mod General"
   },
+  "1036972936": {
+   "name": "Cabal Extinguisher",
+   "hash": 1036972936,
+   "type": "Armor Mod Activity"
+  },
+  "1036972937": {
+   "name": "Release Recover",
+   "hash": 1036972937,
+   "type": "Armor Mod Activity"
+  },
+  "1036972938": {
+   "name": "Focused Darkness",
+   "hash": 1036972938,
+   "type": "Armor Mod Activity"
+  },
+  "1036972939": {
+   "name": "Focused Light",
+   "hash": 1036972939,
+   "type": "Armor Mod Activity"
+  },
   "1039115606": {
    "name": "Orbs of Restoration",
    "hash": 1039115606,
+   "type": "Armor Mod General"
+  },
+  "1044888195": {
+   "name": "Utility Kickstart",
+   "hash": 1044888195,
    "type": "Armor Mod General"
   },
   "1045795938": {
@@ -2535,6 +2575,11 @@
    "hash": 1125523126,
    "type": "Armor Mod General"
   },
+  "1125986156": {
+   "name": "Utility Finisher",
+   "hash": 1125986156,
+   "type": "Armor Mod General"
+  },
   "1128768652": {
    "name": "Triple Jump",
    "hash": 1128768652,
@@ -2656,6 +2701,11 @@
    "hash": 1168162263,
    "type": "Weapon Trait"
   },
+  "1170405455": {
+   "name": "Restorative Finisher",
+   "hash": 1170405455,
+   "type": "Armor Mod General"
+  },
   "1171147302": {
    "name": "Feeding Frenzy",
    "hash": 1171147302,
@@ -2728,6 +2778,11 @@
    "itemHash": 2415517654,
    "type": "Weapon Frame Exotic"
   },
+  "1193713026": {
+   "name": "Font of Restoration",
+   "hash": 1193713026,
+   "type": "Armor Mod General"
+  },
   "1195158366": {
    "name": "Encore",
    "hash": 1195158366,
@@ -2758,6 +2813,11 @@
    "itemName": "Delicate Tomb",
    "itemHash": 374573733,
    "type": "Weapon Trait Exotic"
+  },
+  "1208761894": {
+   "name": "Empowered Finish",
+   "hash": 1208761894,
+   "type": "Armor Mod General"
   },
   "1210012576": {
    "name": "Void Siphon",
@@ -3207,6 +3267,11 @@
    "name": "Kinetic Siphon",
    "hash": 1388734897,
    "type": "Armor Mod General"
+  },
+  "1389309840": {
+   "name": "Precise Jolts",
+   "hash": 1389309840,
+   "type": "Armor Mod Activity"
   },
   "1392496348": {
    "name": "Polygonal Rifling",
@@ -3855,6 +3920,11 @@
    "hash": 1671927875,
    "type": "Weapon Frame Enhanced"
   },
+  "1672155562": {
+   "name": "Font of Restoration",
+   "hash": 1672155562,
+   "type": "Armor Mod General"
+  },
   "1677180919": {
    "name": "Harmonic Dexterity",
    "hash": 1677180919,
@@ -4149,6 +4219,11 @@
    "hash": 1754714824,
    "type": "Weapon Trait"
   },
+  "1755737153": {
+   "name": "Time Dilation",
+   "hash": 1755737153,
+   "type": "Armor Mod General"
+  },
   "1758592809": {
    "name": "Rat King Catalyst",
    "hash": 1758592809,
@@ -4202,6 +4277,11 @@
    "itemName": "Crimson",
    "itemHash": 3437746471,
    "type": "Weapon Catalyst Exotic"
+  },
+  "1783952505": {
+   "name": "Time Dilation",
+   "hash": 1783952505,
+   "type": "Armor Mod General"
   },
   "1784898267": {
    "name": "Natural String",
@@ -4558,6 +4638,11 @@
    "hash": 1946568256,
    "type": "Weapon Frame Enhanced"
   },
+  "1947468772": {
+   "name": "Volatile Volleys",
+   "hash": 1947468772,
+   "type": "Armor Mod Activity"
+  },
   "1954620775": {
    "name": "Timed Payload",
    "hash": 1954620775,
@@ -4887,6 +4972,11 @@
    "hash": 2155015844,
    "type": "Weapon Frame Enhanced"
   },
+  "2158846614": {
+   "name": "Tangled Up",
+   "hash": 2158846614,
+   "type": "Armor Mod Activity"
+  },
   "2164888232": {
    "name": "Rapid-Fire Frame",
    "hash": 2164888232,
@@ -5129,6 +5219,11 @@
    "name": "Flash Counter",
    "hash": 2244851822,
    "type": "Weapon Trait"
+  },
+  "2245839670": {
+   "name": "Proximity Ward",
+   "hash": 2245839670,
+   "type": "Armor Mod General"
   },
   "2246316031": {
    "name": "Arc Weapon Surge",
@@ -5675,16 +5770,6 @@
   "2532323436": {
    "name": "Minor Resilience Mod",
    "hash": 2532323436,
-   "type": "Armor Mod General"
-  },
-  "2535142633": {
-   "name": "Locked Armor Mod",
-   "hash": 2535142633,
-   "type": "Armor Mod General"
-  },
-  "2535142635": {
-   "name": "Locked Armor Mod",
-   "hash": 2535142635,
    "type": "Armor Mod General"
   },
   "2540536653": {
@@ -6823,6 +6908,11 @@
    "itemHash": 2357297366,
    "type": "Weapon Frame Exotic"
   },
+  "3064687909": {
+   "name": "Benevolent Finisher",
+   "hash": 3064687909,
+   "type": "Armor Mod General"
+  },
   "3066103996": {
    "name": "Gunpowder Gamble",
    "hash": 3066103996,
@@ -6995,6 +7085,11 @@
    "itemName": "Wavesplitter",
    "itemHash": 1852863732,
    "type": "Weapon Catalyst Exotic"
+  },
+  "3160387771": {
+   "name": "Utility Kickstart",
+   "hash": 3160387771,
+   "type": "Armor Mod General"
   },
   "3161816588": {
    "name": "Slideshot",
@@ -8672,6 +8767,36 @@
    "hash": 4003264426,
    "type": "Weapon Mod"
   },
+  "4004774872": {
+   "name": "Special Finisher",
+   "hash": 4004774872,
+   "type": "Armor Mod General"
+  },
+  "4004774873": {
+   "name": "One-Two Finisher",
+   "hash": 4004774873,
+   "type": "Armor Mod General"
+  },
+  "4004774874": {
+   "name": "Bulwark Finisher",
+   "hash": 4004774874,
+   "type": "Armor Mod General"
+  },
+  "4004774875": {
+   "name": "Healthy Finisher",
+   "hash": 4004774875,
+   "type": "Armor Mod General"
+  },
+  "4004774876": {
+   "name": "Snapload Finisher",
+   "hash": 4004774876,
+   "type": "Armor Mod General"
+  },
+  "4004774877": {
+   "name": "Explosive Finisher",
+   "hash": 4004774877,
+   "type": "Armor Mod General"
+  },
   "4004944400": {
    "name": "String of Curses",
    "hash": 4004944400,
@@ -8744,6 +8869,11 @@
    "name": "Aggressive Frame",
    "hash": 4036525828,
    "type": "Weapon Frame Enhanced"
+  },
+  "4039026690": {
+   "name": "Distribution",
+   "hash": 4039026690,
+   "type": "Armor Mod General"
   },
   "4045335048": {
    "name": "Headseeker",
@@ -8822,6 +8952,11 @@
    "name": "Lightweight Frame",
    "hash": 4080055066,
    "type": "Weapon Frame Enhanced"
+  },
+  "4081595582": {
+   "name": "Proximity Ward",
+   "hash": 4081595582,
+   "type": "Armor Mod General"
   },
   "4082225868": {
    "name": "Swashbuckler",
@@ -8925,6 +9060,11 @@
    "itemHash": 3325463374,
    "type": "Weapon Frame Exotic"
   },
+  "4149682173": {
+   "name": "Reaper",
+   "hash": 4149682173,
+   "type": "Armor Mod General"
+  },
   "4152458172": {
    "name": "Häkke Light Burst Fire",
    "hash": 4152458172,
@@ -8956,6 +9096,11 @@
    "name": "Bitterspite",
    "hash": 4154828211,
    "type": "Weapon Trait Origin"
+  },
+  "4160037471": {
+   "name": "Outreach",
+   "hash": 4160037471,
+   "type": "Armor Mod General"
   },
   "4162373251": {
    "name": "Modularity (Crucible)",
@@ -9010,6 +9155,11 @@
    "itemName": "Symmetry",
    "itemHash": 4017959782,
    "type": "Weapon Frame Exotic"
+  },
+  "4188291233": {
+   "name": "Bomber",
+   "hash": 4188291233,
+   "type": "Armor Mod General"
   },
   "4188742693": {
    "name": "Rapid-Fire Frame",
@@ -9123,6 +9273,11 @@
    "itemHash": 2321120637,
    "type": "Armor Trait Exotic"
   },
+  "4243059257": {
+   "name": "Radiant Heat",
+   "hash": 4243059257,
+   "type": "Armor Mod Activity"
+  },
   "4244246940": {
    "name": "Strand Loader",
    "hash": 4244246940,
@@ -9188,6 +9343,11 @@
    "name": "Dawning Surprise",
    "hash": 4264904777,
    "type": "Weapon Trait Origin"
+  },
+  "4267244538": {
+   "name": "Distribution",
+   "hash": 4267244538,
+   "type": "Armor Mod General"
   },
   "4267945040": {
    "name": "Full Auto Trigger System",
