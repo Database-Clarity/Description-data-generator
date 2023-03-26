@@ -671,11 +671,6 @@
    "hash": 344235611,
    "type": "Weapon Trait Enhanced"
   },
-  "350061697": {
-   "name": "Minor Intellect Mod",
-   "hash": 350061697,
-   "type": "Armor Mod General"
-  },
   "354401740": {
    "name": "Assassin's Blade",
    "hash": 354401740,
@@ -2747,11 +2742,6 @@
    "itemHash": 1508896098,
    "type": "Weapon Trait Exotic"
   },
-  "1180408010": {
-   "name": "Resilience Mod",
-   "hash": 1180408010,
-   "type": "Armor Mod General"
-  },
   "1183436451": {
    "name": "Firefly",
    "hash": 1183436451,
@@ -2883,11 +2873,6 @@
    "name": "Precision Frame",
    "hash": 1236001742,
    "type": "Weapon Frame"
-  },
-  "1237786518": {
-   "name": "Minor Recovery Mod",
-   "hash": 1237786518,
-   "type": "Armor Mod General"
   },
   "1241894699": {
    "name": "Together Forever",
@@ -3381,11 +3366,6 @@
    "name": "Alloy Magazine",
    "hash": 1431678320,
    "type": "Weapon Perk"
-  },
-  "1435557120": {
-   "name": "Discipline Mod",
-   "hash": 1435557120,
-   "type": "Armor Mod General"
   },
   "1437147326": {
    "name": "Myrmidon's Reach",
@@ -4035,11 +4015,6 @@
    "name": "Classy Contender",
    "hash": 1702976605,
    "type": "Weapon Trait Origin"
-  },
-  "1703647492": {
-   "name": "Minor Mobility Mod",
-   "hash": 1703647492,
-   "type": "Armor Mod General"
   },
   "1707990417": {
    "name": "Rapid-Fire Frame",
@@ -5767,11 +5742,6 @@
    "hash": 2529412083,
    "type": "Weapon Trait Enhanced"
   },
-  "2532323436": {
-   "name": "Minor Resilience Mod",
-   "hash": 2532323436,
-   "type": "Armor Mod General"
-  },
   "2540536653": {
    "name": "Ravenous Beast",
    "hash": 2540536653,
@@ -5940,11 +5910,6 @@
    "itemName": "Claws of Ahamkara",
    "itemHash": 3288917178,
    "type": "Armor Trait Exotic"
-  },
-  "2639422088": {
-   "name": "Minor Strength Mod",
-   "hash": 2639422088,
-   "type": "Armor Mod General"
   },
   "2641107734": {
    "name": "Unrepentant",
@@ -6133,11 +6098,6 @@
   "2724068510": {
    "name": "Arc Siphon",
    "hash": 2724068510,
-   "type": "Armor Mod General"
-  },
-  "2724608735": {
-   "name": "Intellect Mod",
-   "hash": 2724608735,
    "type": "Armor Mod General"
   },
   "2724693746": {
@@ -8853,11 +8813,6 @@
    "hash": 4020036031,
    "type": "Armor Mod Activity"
   },
-  "4021790309": {
-   "name": "Minor Discipline Mod",
-   "hash": 4021790309,
-   "type": "Armor Mod General"
-  },
   "4024170927": {
    "name": "Misdirection",
    "hash": 4024170927,
@@ -9139,11 +9094,6 @@
    "hash": 4182064480,
    "type": "Armor Mod General"
   },
-  "4183296050": {
-   "name": "Mobility Mod",
-   "hash": 4183296050,
-   "type": "Armor Mod General"
-  },
   "4183521337": {
    "name": "Tireless Blade",
    "hash": 4183521337,
@@ -9219,11 +9169,6 @@
    "name": "Aggressive Frame",
    "hash": 4203236451,
    "type": "Weapon Frame Enhanced"
-  },
-  "4204488676": {
-   "name": "Recovery Mod",
-   "hash": 4204488676,
-   "type": "Armor Mod General"
   },
   "4207509907": {
    "name": "Killing Wind",
@@ -9379,11 +9324,6 @@
   "4283953067": {
    "name": "Arc Reserves",
    "hash": 4283953067,
-   "type": "Armor Mod General"
-  },
-  "4287799666": {
-   "name": "Strength Mod",
-   "hash": 4287799666,
    "type": "Armor Mod General"
   },
   "4287822553": {

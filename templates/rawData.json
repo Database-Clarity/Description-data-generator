@@ -1165,20 +1165,6 @@
   "hash": 344235611,
   "type": "Weapon Trait Enhanced"
  },
- "350061697": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Minor Intellect Mod",
-  "hash": 350061697,
-  "type": "Armor Mod General"
- },
  "354401740": {
   "appearsOn": [
    "Sword"
@@ -4908,20 +4894,6 @@
   "hash": 1178686995,
   "type": "Weapon Trait Exotic"
  },
- "1180408010": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Resilience Mod",
-  "hash": 1180408010,
-  "type": "Armor Mod General"
- },
  "1183436451": {
   "appearsOn": [
    "Hand Cannon",
@@ -5124,20 +5096,6 @@
   "name": "Precision Frame",
   "hash": 1236001742,
   "type": "Weapon Frame"
- },
- "1237786518": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Minor Recovery Mod",
-  "hash": 1237786518,
-  "type": "Armor Mod General"
  },
  "1241894699": {
   "appearsOn": [
@@ -6014,20 +5972,6 @@
   "name": "Alloy Magazine",
   "hash": 1431678320,
   "type": "Weapon Perk"
- },
- "1435557120": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Discipline Mod",
-  "hash": 1435557120,
-  "type": "Armor Mod General"
  },
  "1437147326": {
   "appearsOn": [
@@ -7211,20 +7155,6 @@
   "name": "Classy Contender",
   "hash": 1702976605,
   "type": "Weapon Trait Origin"
- },
- "1703647492": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Minor Mobility Mod",
-  "hash": 1703647492,
-  "type": "Armor Mod General"
  },
  "1707990417": {
   "appearsOn": [
@@ -10302,20 +10232,6 @@
   "hash": 2529412083,
   "type": "Weapon Trait Enhanced"
  },
- "2532323436": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Minor Resilience Mod",
-  "hash": 2532323436,
-  "type": "Armor Mod General"
- },
  "2540536653": {
   "appearsOn": [
    3110698812
@@ -10622,20 +10538,6 @@
   "name": "The Whispers",
   "hash": 2637025676,
   "type": "Armor Trait Exotic"
- },
- "2639422088": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Minor Strength Mod",
-  "hash": 2639422088,
-  "type": "Armor Mod General"
  },
  "2641107734": {
   "appearsOn": [
@@ -10975,20 +10877,6 @@
   ],
   "name": "Arc Siphon",
   "hash": 2724068510,
-  "type": "Armor Mod General"
- },
- "2724608735": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Intellect Mod",
-  "hash": 2724608735,
   "type": "Armor Mod General"
  },
  "2724693746": {
@@ -15908,20 +15796,6 @@
   "hash": 4020036031,
   "type": "Armor Mod Activity"
  },
- "4021790309": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Minor Discipline Mod",
-  "hash": 4021790309,
-  "type": "Armor Mod General"
- },
  "4024170927": {
   "appearsOn": [
    1163283805
@@ -16491,20 +16365,6 @@
   "hash": 4182064480,
   "type": "Armor Mod General"
  },
- "4183296050": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Mobility Mod",
-  "hash": 4183296050,
-  "type": "Armor Mod General"
- },
  "4183521337": {
   "appearsOn": [
    "Sword"
@@ -16637,20 +16497,6 @@
   "name": "Aggressive Frame",
   "hash": 4203236451,
   "type": "Weapon Frame Enhanced"
- },
- "4204488676": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Recovery Mod",
-  "hash": 4204488676,
-  "type": "Armor Mod General"
  },
  "4207509907": {
   "appearsOn": [
@@ -16962,20 +16808,6 @@
   ],
   "name": "Arc Reserves",
   "hash": 4283953067,
-  "type": "Armor Mod General"
- },
- "4287799666": {
-  "appearsOn": [
-   "Leg Armor",
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak",
-   "Helmet",
-   "Chest Armor",
-   "Gauntlets"
-  ],
-  "name": "Strength Mod",
-  "hash": 4287799666,
   "type": "Armor Mod General"
  },
  "4287822553": {
