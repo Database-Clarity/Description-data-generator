@@ -225,6 +225,16 @@
   "hash": 40492375,
   "type": "Weapon Frame Enhanced"
  },
+ "40751621": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Reaper",
+  "hash": 40751621,
+  "type": "Armor Mod General"
+ },
  "47981717": {
   "appearsOn": [
    "Shotgun",
@@ -338,6 +348,16 @@
   "name": "Icarus Dash",
   "hash": 83039195,
   "type": "Subclass Aspect"
+ },
+ "84503918": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Empowered Finish",
+  "hash": 84503918,
+  "type": "Armor Mod General"
  },
  "95544328": {
   "appearsOn": [
@@ -2187,6 +2207,20 @@
   "name": "Lesser Core Harvest (Gambit)",
   "hash": 537685237,
   "type": "Ghost Mod"
+ },
+ "539051925": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Chill Out",
+  "hash": 539051925,
+  "type": "Armor Mod Activity"
  },
  "539564471": {
   "appearsOn": [
@@ -4192,12 +4226,78 @@
   "hash": 1036557198,
   "type": "Armor Mod General"
  },
+ "1036972936": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Cabal Extinguisher",
+  "hash": 1036972936,
+  "type": "Armor Mod Activity"
+ },
+ "1036972937": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Release Recover",
+  "hash": 1036972937,
+  "type": "Armor Mod Activity"
+ },
+ "1036972938": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Focused Darkness",
+  "hash": 1036972938,
+  "type": "Armor Mod Activity"
+ },
+ "1036972939": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Focused Light",
+  "hash": 1036972939,
+  "type": "Armor Mod Activity"
+ },
  "1039115606": {
   "appearsOn": [
    "Leg Armor"
   ],
   "name": "Orbs of Restoration",
   "hash": 1039115606,
+  "type": "Armor Mod General"
+ },
+ "1044888195": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Utility Kickstart",
+  "hash": 1044888195,
   "type": "Armor Mod General"
  },
  "1045795938": {
@@ -4516,6 +4616,16 @@
   "hash": 1125523126,
   "type": "Armor Mod General"
  },
+ "1125986156": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Utility Finisher",
+  "hash": 1125986156,
+  "type": "Armor Mod General"
+ },
  "1128768652": {
   "appearsOn": [
    "Hunter Subclass"
@@ -4706,6 +4816,16 @@
   "hash": 1168162263,
   "type": "Weapon Trait"
  },
+ "1170405455": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Restorative Finisher",
+  "hash": 1170405455,
+  "type": "Armor Mod General"
+ },
  "1171147302": {
   "appearsOn": [
    "Trace Rifle",
@@ -4838,6 +4958,16 @@
   "hash": 1186480754,
   "type": "Weapon Frame Exotic"
  },
+ "1193713026": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Font of Restoration",
+  "hash": 1193713026,
+  "type": "Armor Mod General"
+ },
  "1195158366": {
   "appearsOn": [
    "Pulse Rifle",
@@ -4882,6 +5012,16 @@
   "name": "Tempest Cascade",
   "hash": 1208312843,
   "type": "Weapon Trait Exotic"
+ },
+ "1208761894": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Empowered Finish",
+  "hash": 1208761894,
+  "type": "Armor Mod General"
  },
  "1210012576": {
   "appearsOn": [
@@ -5645,6 +5785,20 @@
   "name": "Kinetic Siphon",
   "hash": 1388734897,
   "type": "Armor Mod General"
+ },
+ "1389309840": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Precise Jolts",
+  "hash": 1389309840,
+  "type": "Armor Mod Activity"
  },
  "1392496348": {
   "appearsOn": [
@@ -6880,6 +7034,16 @@
   "hash": 1671927875,
   "type": "Weapon Frame Enhanced"
  },
+ "1672155562": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Font of Restoration",
+  "hash": 1672155562,
+  "type": "Armor Mod General"
+ },
  "1677180919": {
   "appearsOn": [
    "Gauntlets"
@@ -7383,6 +7547,16 @@
   "hash": 1754714824,
   "type": "Weapon Trait"
  },
+ "1755737153": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Time Dilation",
+  "hash": 1755737153,
+  "type": "Armor Mod General"
+ },
  "1758592809": {
   "appearsOn": [
    2362471601
@@ -7472,6 +7646,16 @@
   "name": "Crimson Catalyst",
   "hash": 1783582993,
   "type": "Weapon Catalyst Exotic"
+ },
+ "1783952505": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Time Dilation",
+  "hash": 1783952505,
+  "type": "Armor Mod General"
  },
  "1784898267": {
   "appearsOn": [
@@ -8118,6 +8302,20 @@
   "hash": 1946568256,
   "type": "Weapon Frame Enhanced"
  },
+ "1947468772": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Volatile Volleys",
+  "hash": 1947468772,
+  "type": "Armor Mod Activity"
+ },
  "1954620775": {
   "appearsOn": [
    "Hand Cannon"
@@ -8716,6 +8914,20 @@
   "hash": 2155015844,
   "type": "Weapon Frame Enhanced"
  },
+ "2158846614": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Tangled Up",
+  "hash": 2158846614,
+  "type": "Armor Mod Activity"
+ },
  "2164888232": {
   "appearsOn": [
    "Sniper Rifle",
@@ -9122,6 +9334,16 @@
   "name": "Flash Counter",
   "hash": 2244851822,
   "type": "Weapon Trait"
+ },
+ "2245839670": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Proximity Ward",
+  "hash": 2245839670,
+  "type": "Armor Mod General"
  },
  "2246316031": {
   "appearsOn": [
@@ -10092,26 +10314,6 @@
   ],
   "name": "Minor Resilience Mod",
   "hash": 2532323436,
-  "type": "Armor Mod General"
- },
- "2535142633": {
-  "appearsOn": [
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak"
-  ],
-  "name": "Locked Armor Mod",
-  "hash": 2535142633,
-  "type": "Armor Mod General"
- },
- "2535142635": {
-  "appearsOn": [
-   "Warlock Bond",
-   "Titan Mark",
-   "Hunter Cloak"
-  ],
-  "name": "Locked Armor Mod",
-  "hash": 2535142635,
   "type": "Armor Mod General"
  },
  "2540536653": {
@@ -12174,6 +12376,16 @@
   "hash": 3063320916,
   "type": "Weapon Frame Exotic"
  },
+ "3064687909": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Benevolent Finisher",
+  "hash": 3064687909,
+  "type": "Armor Mod General"
+ },
  "3066103996": {
   "appearsOn": [
    "Hunter Subclass"
@@ -12482,6 +12694,16 @@
   "name": "Wavesplitter Catalyst",
   "hash": 3156882011,
   "type": "Weapon Catalyst Exotic"
+ },
+ "3160387771": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Utility Kickstart",
+  "hash": 3160387771,
+  "type": "Armor Mod General"
  },
  "3161816588": {
   "appearsOn": [
@@ -15529,6 +15751,66 @@
   "hash": 4003264426,
   "type": "Weapon Mod"
  },
+ "4004774872": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Special Finisher",
+  "hash": 4004774872,
+  "type": "Armor Mod General"
+ },
+ "4004774873": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "One-Two Finisher",
+  "hash": 4004774873,
+  "type": "Armor Mod General"
+ },
+ "4004774874": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Bulwark Finisher",
+  "hash": 4004774874,
+  "type": "Armor Mod General"
+ },
+ "4004774875": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Healthy Finisher",
+  "hash": 4004774875,
+  "type": "Armor Mod General"
+ },
+ "4004774876": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Snapload Finisher",
+  "hash": 4004774876,
+  "type": "Armor Mod General"
+ },
+ "4004774877": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Explosive Finisher",
+  "hash": 4004774877,
+  "type": "Armor Mod General"
+ },
  "4004944400": {
   "appearsOn": [
    2816212794
@@ -15656,6 +15938,16 @@
   "name": "Aggressive Frame",
   "hash": 4036525828,
   "type": "Weapon Frame Enhanced"
+ },
+ "4039026690": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Distribution",
+  "hash": 4039026690,
+  "type": "Armor Mod General"
  },
  "4045335048": {
   "appearsOn": [
@@ -15814,6 +16106,16 @@
   "name": "Lightweight Frame",
   "hash": 4080055066,
   "type": "Weapon Frame Enhanced"
+ },
+ "4081595582": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Proximity Ward",
+  "hash": 4081595582,
+  "type": "Armor Mod General"
  },
  "4082225868": {
   "appearsOn": [
@@ -16050,6 +16352,16 @@
   "hash": 4148158229,
   "type": "Weapon Frame Exotic"
  },
+ "4149682173": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Reaper",
+  "hash": 4149682173,
+  "type": "Armor Mod General"
+ },
  "4152458172": {
   "appearsOn": [
    1473821207
@@ -16108,6 +16420,16 @@
   "name": "Bitterspite",
   "hash": 4154828211,
   "type": "Weapon Trait Origin"
+ },
+ "4160037471": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Outreach",
+  "hash": 4160037471,
+  "type": "Armor Mod General"
  },
  "4162373251": {
   "appearsOn": [
@@ -16198,6 +16520,16 @@
   "name": "Revolution",
   "hash": 4185339856,
   "type": "Weapon Frame Exotic"
+ },
+ "4188291233": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Bomber",
+  "hash": 4188291233,
+  "type": "Armor Mod General"
  },
  "4188742693": {
   "appearsOn": [
@@ -16409,6 +16741,20 @@
   "hash": 4235122381,
   "type": "Armor Trait Exotic"
  },
+ "4243059257": {
+  "appearsOn": [
+   "Hunter Cloak",
+   "Gauntlets",
+   "Leg Armor",
+   "Chest Armor",
+   "Titan Mark",
+   "Warlock Bond",
+   "Helmet"
+  ],
+  "name": "Radiant Heat",
+  "hash": 4243059257,
+  "type": "Armor Mod Activity"
+ },
  "4244246940": {
   "appearsOn": [
    "Gauntlets"
@@ -16542,6 +16888,16 @@
   "name": "Dawning Surprise",
   "hash": 4264904777,
   "type": "Weapon Trait Origin"
+ },
+ "4267244538": {
+  "appearsOn": [
+   "Warlock Bond",
+   "Titan Mark",
+   "Hunter Cloak"
+  ],
+  "name": "Distribution",
+  "hash": 4267244538,
+  "type": "Armor Mod General"
  },
  "4267945040": {
   "appearsOn": [
