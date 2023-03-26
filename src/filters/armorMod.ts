@@ -43,6 +43,13 @@ export const armorMods = (
       modsArr.forEach((modHash) => {
         const mod = inventoryItems[modHash]
 
+        // black list stat mods
+        if (
+          mod?.itemTypeDisplayName?.match(/(Artifice|General) Armor Mod/) &&
+          mod?.displayProperties.name.match(/Resilience|Recovery|Discipline|Mobility|Strength|Intellect/)
+        )
+          return
+
         if (mod?.itemTypeDisplayName?.match(/(General|Helmet|Arms|Chest|Leg|Class Item) Armor Mod/)) {
           addData(armor, mod, 'Armor Mod General')
           return
