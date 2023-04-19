@@ -4872,6 +4872,11 @@
    "hash": 2105054824,
    "type": "Weapon Frame Enhanced"
   },
+  "2106726848": {
+   "name": "Trait Locked",
+   "hash": 2106726848,
+   "type": "Weapon Perk"
+  },
   "2108556049": {
    "name": "Lightweight Frame",
    "hash": 2108556049,
@@ -8064,6 +8069,11 @@
    "itemName": "Athrys's Embrace",
    "itemHash": 2415768376,
    "type": "Armor Trait Exotic"
+  },
+  "3665398231": {
+   "name": "Trait Locked",
+   "hash": 3665398231,
+   "type": "Weapon Perk"
   },
   "3665558569": {
    "name": "Precision Frame",

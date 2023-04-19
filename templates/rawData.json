@@ -411,8 +411,8 @@
   "appearsOn": [
    "Sidearm",
    "Auto Rifle",
-   "Hand Cannon",
    "Grenade Launcher",
+   "Hand Cannon",
    "Sniper Rifle"
   ],
   "name": "Hatchling",
@@ -1812,10 +1812,10 @@
   "appearsOn": [
    "Shotgun",
    "Auto Rifle",
+   "Grenade Launcher",
    "Scout Rifle",
    "Trace Rifle",
    "Linear Fusion Rifle",
-   "Grenade Launcher",
    "Sniper Rifle",
    "Hand Cannon",
    "Machine Gun"
@@ -3030,14 +3030,14 @@
   "appearsOn": [
    "Hand Cannon",
    "Shotgun",
+   "Grenade Launcher",
    "Fusion Rifle",
    "Sidearm",
    "Glaive",
    "Linear Fusion Rifle",
    "Submachine Gun",
    "Sword",
-   "Auto Rifle",
-   "Grenade Launcher"
+   "Auto Rifle"
   ],
   "name": "Surrounded",
   "hash": 781192741,
@@ -8719,6 +8719,19 @@
   "hash": 2105054824,
   "type": "Weapon Frame Enhanced"
  },
+ "2106726848": {
+  "appearsOn": [
+   "Auto Rifle",
+   "Grenade Launcher",
+   "Shotgun",
+   "Sidearm",
+   "Linear Fusion Rifle",
+   "Trace Rifle"
+  ],
+  "name": "Trait Locked",
+  "hash": 2106726848,
+  "type": "Weapon Perk"
+ },
  "2108556049": {
   "appearsOn": [
    "Combat Bow"
@@ -10713,8 +10726,8 @@
  "2675361166": {
   "appearsOn": [
    "Combat Bow",
-   "Sidearm",
    "Grenade Launcher",
+   "Sidearm",
    "Auto Rifle",
    "Machine Gun",
    "Scout Rifle",
@@ -12086,6 +12099,7 @@
    "Sidearm",
    "Glaive",
    "Auto Rifle",
+   "Grenade Launcher",
    "Trace Rifle",
    "Linear Fusion Rifle",
    "Scout Rifle",
@@ -12094,7 +12108,6 @@
    "Hand Cannon",
    "Pulse Rifle",
    "Rocket Launcher",
-   "Grenade Launcher",
    "Sword",
    "Combat Bow"
   ],
@@ -13102,9 +13115,9 @@
    "Shotgun",
    "Sidearm",
    "Auto Rifle",
+   "Grenade Launcher",
    "Trace Rifle",
-   "Linear Fusion Rifle",
-   "Grenade Launcher"
+   "Linear Fusion Rifle"
   ],
   "name": "Paracausal Affinity",
   "hash": 3299896859,
@@ -14470,6 +14483,19 @@
   "name": "Skittering Stinger",
   "hash": 3663096260,
   "type": "Armor Trait Exotic"
+ },
+ "3665398231": {
+  "appearsOn": [
+   "Auto Rifle",
+   "Grenade Launcher",
+   "Shotgun",
+   "Sidearm",
+   "Linear Fusion Rifle",
+   "Trace Rifle"
+  ],
+  "name": "Trait Locked",
+  "hash": 3665398231,
+  "type": "Weapon Perk"
  },
  "3665558569": {
   "appearsOn": [
