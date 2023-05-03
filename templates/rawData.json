@@ -3207,6 +3207,7 @@
    "Auto Rifle",
    "Grenade Launcher",
    "Submachine Gun",
+   "Scout Rifle",
    "Hand Cannon",
    "Machine Gun",
    "Sniper Rifle"
@@ -4947,6 +4948,7 @@
    "Machine Gun",
    "Hand Cannon",
    "Auto Rifle",
+   "Scout Rifle",
    "Submachine Gun"
   ],
   "name": "Encore",
@@ -6039,8 +6041,8 @@
    "Sidearm",
    "Pulse Rifle",
    "Hand Cannon",
-   "Submachine Gun",
-   "Scout Rifle"
+   "Scout Rifle",
+   "Submachine Gun"
   ],
   "name": "Lightweight Frame",
   "hash": 1458010786,
@@ -7150,7 +7152,8 @@
  },
  "1702976605": {
   "appearsOn": [
-   "Submachine Gun"
+   "Submachine Gun",
+   "Scout Rifle"
   ],
   "name": "Classy Contender",
   "hash": 1702976605,
@@ -14824,7 +14827,8 @@
    "Machine Gun",
    "Shotgun",
    "Sniper Rifle",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Scout Rifle"
   ],
   "name": "Cascade Point",
   "hash": 3751912585,
