@@ -32,6 +32,11 @@
    "itemHash": 1906093346,
    "type": "Armor Trait Exotic"
   },
+  "11126525": {
+   "name": "Powerful Attraction",
+   "hash": 11126525,
+   "type": "Armor Mod General"
+  },
   "11551321": {
    "name": "Iron Grip",
    "hash": 11551321,
@@ -286,6 +291,13 @@
    "hash": 120721526,
    "type": "Weapon Trait Origin"
   },
+  "122307549": {
+   "name": "Hierarchy of Needs Catalyst",
+   "hash": 122307549,
+   "itemName": "Hierarchy of Needs",
+   "itemHash": 4174431791,
+   "type": "Weapon Catalyst Exotic"
+  },
   "124408337": {
    "name": "Headstone",
    "hash": 124408337,
@@ -395,6 +407,13 @@
    "name": "Stylish Executioner",
    "hash": 187655374,
    "type": "Subclass Aspect"
+  },
+  "187957397": {
+   "name": "Halberdier's Reach",
+   "hash": 187957397,
+   "itemName": "Triton Vice",
+   "itemHash": 3093309525,
+   "type": "Armor Trait Exotic"
   },
   "191144788": {
    "name": "Slideshot",
@@ -521,6 +540,31 @@
    "name": "Reservoir Burst",
    "hash": 254337357,
    "type": "Weapon Trait Enhanced"
+  },
+  "255237656": {
+   "name": "Thunderous Retort",
+   "hash": 255237656,
+   "type": "Armor Mod Seasonal"
+  },
+  "255237657": {
+   "name": "Electric Armor",
+   "hash": 255237657,
+   "type": "Armor Mod Seasonal"
+  },
+  "255237660": {
+   "name": "Improved Unraveling",
+   "hash": 255237660,
+   "type": "Armor Mod Seasonal"
+  },
+  "255237662": {
+   "name": "Unto the Breach",
+   "hash": 255237662,
+   "type": "Armor Mod Seasonal"
+  },
+  "255237663": {
+   "name": "Deeper Origins",
+   "hash": 255237663,
+   "type": "Armor Mod Seasonal"
   },
   "263649945": {
    "name": "Vortex Frame",
@@ -939,31 +983,6 @@
    "itemName": "The Chaperone",
    "itemHash": 3413860062,
    "type": "Weapon Catalyst Exotic"
-  },
-  "433122833": {
-   "name": "Anti-Barrier Pulse Rifle",
-   "hash": 433122833,
-   "type": "Armor Mod Seasonal"
-  },
-  "433122834": {
-   "name": "Piercing Sidearms",
-   "hash": 433122834,
-   "type": "Armor Mod Seasonal"
-  },
-  "433122835": {
-   "name": "Overload Bow",
-   "hash": 433122835,
-   "type": "Armor Mod Seasonal"
-  },
-  "433122836": {
-   "name": "Unstoppable Scout Rifle",
-   "hash": 433122836,
-   "type": "Armor Mod Seasonal"
-  },
-  "433122837": {
-   "name": "Overloaded Auto/SMG",
-   "hash": 433122837,
-   "type": "Armor Mod Seasonal"
   },
   "433469519": {
    "name": "Precision Frame",
@@ -1516,6 +1535,11 @@
    "hash": 680193725,
    "type": "Weapon Frame Enhanced"
   },
+  "684456054": {
+   "name": "Eddy Current",
+   "hash": 684456054,
+   "type": "Weapon Trait"
+  },
   "686455429": {
    "name": "Font of Endurance",
    "hash": 686455429,
@@ -1845,6 +1869,31 @@
    "itemHash": 542203595,
    "type": "Weapon Trait Exotic"
   },
+  "846698090": {
+   "name": "Unstoppable Glaive",
+   "hash": 846698090,
+   "type": "Armor Mod Seasonal"
+  },
+  "846698091": {
+   "name": "Overload Trace Rifles",
+   "hash": 846698091,
+   "type": "Armor Mod Seasonal"
+  },
+  "846698092": {
+   "name": "Overload Scout Rifle",
+   "hash": 846698092,
+   "type": "Armor Mod Seasonal"
+  },
+  "846698093": {
+   "name": "Unstoppable Hand Cannon",
+   "hash": 846698093,
+   "type": "Armor Mod Seasonal"
+  },
+  "846698094": {
+   "name": "Anti-Barrier Auto Rifle",
+   "hash": 846698094,
+   "type": "Armor Mod Seasonal"
+  },
   "848860060": {
    "name": "Fourth Time's the Charm",
    "hash": 848860060,
@@ -2049,6 +2098,11 @@
    "itemName": "Boots of the Assembler",
    "itemHash": 3045642045,
    "type": "Armor Trait Exotic"
+  },
+  "906981559": {
+   "name": "Discord",
+   "hash": 906981559,
+   "type": "Weapon Trait Enhanced"
   },
   "908147344": {
    "name": "Sneak Bow",
@@ -2268,7 +2322,7 @@
   "990298390": {
    "name": "Hand-Laid Stock",
    "hash": 990298390,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Perk"
   },
   "996573084": {
    "name": "Rapid-Fire Frame",
@@ -2281,6 +2335,11 @@
    "itemName": "Polaris Lance",
    "itemHash": 3413074534,
    "type": "Weapon Frame Exotic"
+  },
+  "1004814308": {
+   "name": "Disaster Plan",
+   "hash": 1004814308,
+   "type": "Weapon Trait Origin"
   },
   "1008128453": {
    "name": "Cornered",
@@ -2450,7 +2509,7 @@
   "1067908860": {
    "name": "Short-Action Stock",
    "hash": 1067908860,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Perk"
   },
   "1068043187": {
    "name": "Aggressive Burst",
@@ -2539,31 +2598,6 @@
    "name": "Unflinching Stasis Aim",
    "hash": 1118428792,
    "type": "Armor Mod General"
-  },
-  "1123747130": {
-   "name": "Solar Surge",
-   "hash": 1123747130,
-   "type": "Armor Mod Seasonal"
-  },
-  "1123747131": {
-   "name": "Volatile Flow",
-   "hash": 1123747131,
-   "type": "Armor Mod Seasonal"
-  },
-  "1123747132": {
-   "name": "Defiant Armory",
-   "hash": 1123747132,
-   "type": "Armor Mod Seasonal"
-  },
-  "1123747133": {
-   "name": "Untangler",
-   "hash": 1123747133,
-   "type": "Armor Mod Seasonal"
-  },
-  "1123747135": {
-   "name": "Shatter Orbs",
-   "hash": 1123747135,
-   "type": "Armor Mod Seasonal"
   },
   "1125523126": {
    "name": "Arc Loader",
@@ -3241,6 +3275,13 @@
    "itemHash": 1541131350,
    "type": "Weapon Catalyst Exotic"
   },
+  "1385166695": {
+   "name": "Overcharge Capacitor",
+   "hash": 1385166695,
+   "itemName": "Centrifuse",
+   "itemHash": 1912669214,
+   "type": "Weapon Frame Exotic"
+  },
   "1385518514": {
    "name": "Liquid Cooling",
    "hash": 1385518514,
@@ -3374,6 +3415,11 @@
    "itemHash": 1443166262,
    "type": "Armor Trait Exotic"
   },
+  "1439600632": {
+   "name": "Bipod",
+   "hash": 1439600632,
+   "type": "Weapon Trait"
+  },
   "1441682018": {
    "name": "Linear Compensator",
    "hash": 1441682018,
@@ -3426,31 +3472,6 @@
    "itemName": "Deterministic Chaos",
    "itemHash": 449318888,
    "type": "Weapon Frame Exotic"
-  },
-  "1468847290": {
-   "name": "Counterweave",
-   "hash": 1468847290,
-   "type": "Armor Mod Seasonal"
-  },
-  "1468847291": {
-   "name": "Allied Unraveling",
-   "hash": 1468847291,
-   "type": "Armor Mod Seasonal"
-  },
-  "1468847292": {
-   "name": "Origin Hones",
-   "hash": 1468847292,
-   "type": "Armor Mod Seasonal"
-  },
-  "1468847293": {
-   "name": "Flare Up",
-   "hash": 1468847293,
-   "type": "Armor Mod Seasonal"
-  },
-  "1468847294": {
-   "name": "Bricks from Beyond",
-   "hash": 1468847294,
-   "type": "Armor Mod Seasonal"
   },
   "1470121888": {
    "name": "Queen's Wrath",
@@ -3505,6 +3526,11 @@
    "itemName": "Monte Carlo",
    "itemHash": 4068264807,
    "type": "Weapon Frame Exotic"
+  },
+  "1489048135": {
+   "name": "Explosive Pact",
+   "hash": 1489048135,
+   "type": "Weapon Trait Origin"
   },
   "1496699324": {
    "name": "Jade Rabbit Catalyst",
@@ -3587,12 +3613,24 @@
    "hash": 1546637391,
    "type": "Weapon Trait"
   },
+  "1547782973": {
+   "name": "Centrifuse Catalyst",
+   "hash": 1547782973,
+   "itemName": "Centrifuse",
+   "itemHash": 1912669214,
+   "type": "Weapon Catalyst Exotic"
+  },
   "1549056416": {
-   "name": "Flash Freeze",
+   "name": "Shatter Shot",
    "hash": 1549056416,
    "itemName": "Salvation's Grip",
    "itemHash": 370712896,
    "type": "Weapon Trait Exotic"
+  },
+  "1549370717": {
+   "name": "Kinetic Tremors",
+   "hash": 1549370717,
+   "type": "Weapon Trait Enhanced"
   },
   "1550063955": {
    "name": "Thunderlord Catalyst",
@@ -4762,6 +4800,11 @@
    "hash": 2031584061,
    "type": "Armor Mod General"
   },
+  "2037312142": {
+   "name": "Controlled Burst",
+   "hash": 2037312142,
+   "type": "Weapon Trait Enhanced"
+  },
   "2037533514": {
    "name": "Enhanced Resistant Tether",
    "hash": 2037533514,
@@ -4788,6 +4831,11 @@
    "name": "Destabilizing Rounds",
    "hash": 2048641572,
    "type": "Weapon Trait"
+  },
+  "2053642371": {
+   "name": "Unsated Hunger",
+   "hash": 2053642371,
+   "type": "Weapon Trait Origin"
   },
   "2057203855": {
    "name": "Precision Frame",
@@ -5309,6 +5357,11 @@
    "hash": 2275087323,
    "type": "Weapon Trait Enhanced"
   },
+  "2282937672": {
+   "name": "Bipod",
+   "hash": 2282937672,
+   "type": "Weapon Trait Enhanced"
+  },
   "2283894334": {
    "name": "Solar Weapon Surge",
    "hash": 2283894334,
@@ -5369,6 +5422,38 @@
    "name": "Field Prep",
    "hash": 2308090567,
    "type": "Weapon Trait Enhanced"
+  },
+  "2311625536": {
+   "name": "Supernova",
+   "hash": 2311625536,
+   "type": "Armor Mod Seasonal"
+  },
+  "2311625537": {
+   "name": "Shock and Awe",
+   "hash": 2311625537,
+   "type": "Armor Mod Seasonal"
+  },
+  "2311625538": {
+   "name": "Conductive Cosmic Needle",
+   "hash": 2311625538,
+   "type": "Armor Mod Seasonal"
+  },
+  "2311625542": {
+   "name": "Lightning Strikes Twice",
+   "hash": 2311625542,
+   "type": "Armor Mod Seasonal"
+  },
+  "2311625543": {
+   "name": "Squad Goals",
+   "hash": 2311625543,
+   "type": "Armor Mod Seasonal"
+  },
+  "2316126473": {
+   "name": "High Priority",
+   "hash": 2316126473,
+   "itemName": "Cenotaph Mask",
+   "itemHash": 2374129871,
+   "type": "Armor Trait Exotic"
   },
   "2318667184": {
    "name": "Kinetic Weapon Surge",
@@ -5578,6 +5663,13 @@
    "hash": 2437618208,
    "type": "Weapon Trait Origin"
   },
+  "2445247031": {
+   "name": "Barri-nade",
+   "hash": 2445247031,
+   "itemName": "Arbor Warden",
+   "itemHash": 90009855,
+   "type": "Armor Trait Exotic"
+  },
   "2447449706": {
    "name": "Heavy Handed",
    "hash": 2447449706,
@@ -5774,6 +5866,11 @@
    "hash": 2562645296,
    "type": "Armor Mod General"
   },
+  "2562668800": {
+   "name": "Collective Action",
+   "hash": 2562668800,
+   "type": "Weapon Trait Enhanced"
+  },
   "2563509458": {
    "name": "Precision Frame",
    "hash": 2563509458,
@@ -5831,6 +5928,11 @@
   "2590710093": {
    "name": "Tireless Blade",
    "hash": 2590710093,
+   "type": "Weapon Trait"
+  },
+  "2594592626": {
+   "name": "Controlled Burst",
+   "hash": 2594592626,
    "type": "Weapon Trait"
   },
   "2595839237": {
@@ -6265,6 +6367,11 @@
    "hash": 2779468392,
    "type": "Armor Mod Activity"
   },
+  "2785334058": {
+   "name": "Eddy Current",
+   "hash": 2785334058,
+   "type": "Weapon Trait Enhanced"
+  },
   "2788909693": {
    "name": "Boss Spec",
    "hash": 2788909693,
@@ -6333,6 +6440,13 @@
    "hash": 2804214704,
    "type": "Armor Mod Activity"
   },
+  "2804762401": {
+   "name": "Regenerative Motion",
+   "hash": 2804762401,
+   "itemName": "Centrifuse",
+   "itemHash": 1912669214,
+   "type": "Weapon Trait Exotic"
+  },
   "2805134531": {
    "name": "Nightmare Fuel",
    "hash": 2805134531,
@@ -6354,6 +6468,11 @@
    "name": "Shackle Grenade",
    "hash": 2809342386,
    "type": "Subclass Grenade"
+  },
+  "2812559045": {
+   "name": "Dual Current Siphon",
+   "hash": 2812559045,
+   "type": "Armor Mod General"
   },
   "2814973067": {
    "name": "Markov Chain",
@@ -6794,6 +6913,11 @@
    "hash": 3016987351,
    "type": "Weapon Trait"
   },
+  "3018146897": {
+   "name": "Invisible Hand",
+   "hash": 3018146897,
+   "type": "Weapon Trait"
+  },
   "3018373291": {
    "name": "Adept Big Ones Spec",
    "hash": 3018373291,
@@ -7222,31 +7346,6 @@
    "hash": 3252839262,
    "type": "Weapon Frame Enhanced"
   },
-  "3257939736": {
-   "name": "Medieval Champion",
-   "hash": 3257939736,
-   "type": "Armor Mod Seasonal"
-  },
-  "3257939737": {
-   "name": "Prismatic Transfer",
-   "hash": 3257939737,
-   "type": "Armor Mod Seasonal"
-  },
-  "3257939741": {
-   "name": "Threaded Blast",
-   "hash": 3257939741,
-   "type": "Armor Mod Seasonal"
-  },
-  "3257939742": {
-   "name": "Rain of Firebolts",
-   "hash": 3257939742,
-   "type": "Armor Mod Seasonal"
-  },
-  "3257939743": {
-   "name": "Void Weapon Channeling",
-   "hash": 3257939743,
-   "type": "Armor Mod Seasonal"
-  },
   "3260056808": {
    "name": "Towering Barricade",
    "hash": 3260056808,
@@ -7357,6 +7456,11 @@
    "name": "Strand Dexterity",
    "hash": 3323910164,
    "type": "Armor Mod General"
+  },
+  "3324494224": {
+   "name": "Collective Action",
+   "hash": 3324494224,
+   "type": "Weapon Trait"
   },
   "3325390304": {
    "name": "Insulation",
@@ -7628,7 +7732,7 @@
   "3465198467": {
    "name": "Composite Stock",
    "hash": 3465198467,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Perk"
   },
   "3466057365": {
    "name": "MIDA Multi-Tool Catalyst",
@@ -7823,31 +7927,6 @@
    "itemName": "Edge of Concurrence",
    "itemHash": 542203595,
    "type": "Weapon Frame Exotic"
-  },
-  "3555350688": {
-   "name": "Authorized Mods: Solar",
-   "hash": 3555350688,
-   "type": "Armor Mod Seasonal"
-  },
-  "3555350690": {
-   "name": "Authorized Mods: Void",
-   "hash": 3555350690,
-   "type": "Armor Mod Seasonal"
-  },
-  "3555350691": {
-   "name": "Authorized Mods: Strand",
-   "hash": 3555350691,
-   "type": "Armor Mod Seasonal"
-  },
-  "3555350692": {
-   "name": "Multi-Siphon Mods",
-   "hash": 3555350692,
-   "type": "Armor Mod Seasonal"
-  },
-  "3555350693": {
-   "name": "Authorized Mods: Grenades",
-   "hash": 3555350693,
-   "type": "Armor Mod Seasonal"
   },
   "3556461530": {
    "name": "Voltaic Mirror",
@@ -8175,6 +8254,11 @@
    "itemName": "Ace of Spades",
    "itemHash": 347366834,
    "type": "Weapon Catalyst Exotic"
+  },
+  "3712696020": {
+   "name": "Elemental Charge",
+   "hash": 3712696020,
+   "type": "Armor Mod General"
   },
   "3717985200": {
    "name": "Psychohack",
@@ -8668,6 +8752,11 @@
    "hash": 3977735242,
    "type": "Weapon Trait"
   },
+  "3978468247": {
+   "name": "Discord",
+   "hash": 3978468247,
+   "type": "Weapon Trait"
+  },
   "3978937353": {
    "name": "Ticuu's Divination Catalyst",
    "hash": 3978937353,
@@ -8965,6 +9054,11 @@
    "hash": 4094417246,
    "type": "Subclass Melee"
   },
+  "4100396181": {
+   "name": "Invisible Hand",
+   "hash": 4100396181,
+   "type": "Weapon Trait Enhanced"
+  },
   "4102900702": {
    "name": "Touch of Venom",
    "hash": 4102900702,
@@ -9036,6 +9130,31 @@
    "itemName": "Revision Zero",
    "itemHash": 1473821207,
    "type": "Weapon Trait Origin Exotic"
+  },
+  "4152585336": {
+   "name": "Authorized Mods: Void",
+   "hash": 4152585336,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152585337": {
+   "name": "Authorized Mods: Strand",
+   "hash": 4152585337,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152585339": {
+   "name": "Authorized Mods: Arc",
+   "hash": 4152585339,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152585342": {
+   "name": "Authorized Mods: Melee",
+   "hash": 4152585342,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152585343": {
+   "name": "Technicolor Siphon",
+   "hash": 4152585343,
+   "type": "Armor Mod Seasonal"
   },
   "4152709778": {
    "name": "Iron Gaze",
@@ -9221,6 +9340,31 @@
    "hash": 4231246084,
    "type": "Weapon Frame Enhanced"
   },
+  "4232817857": {
+   "name": "Strand Soldier",
+   "hash": 4232817857,
+   "type": "Armor Mod Seasonal"
+  },
+  "4232817858": {
+   "name": "Overcharged Armory",
+   "hash": 4232817858,
+   "type": "Armor Mod Seasonal"
+  },
+  "4232817859": {
+   "name": "Protective Breach",
+   "hash": 4232817859,
+   "type": "Armor Mod Seasonal"
+  },
+  "4232817860": {
+   "name": "Counter Charge",
+   "hash": 4232817860,
+   "type": "Armor Mod Seasonal"
+  },
+  "4232817861": {
+   "name": "Amped Up",
+   "hash": 4232817861,
+   "type": "Armor Mod Seasonal"
+  },
   "4235122381": {
    "name": "Glorious Charge",
    "hash": 4235122381,
@@ -9268,7 +9412,7 @@
   "4259401308": {
    "name": "Fitted Stock",
    "hash": 4259401308,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Perk"
   },
   "4259872956": {
    "name": "Dead Messenger Catalyst",
@@ -9373,7 +9517,6 @@
      "has": [
       3164944314,
       970163821,
-      990298390,
       1218765758
      ]
     },
@@ -9381,23 +9524,20 @@
      "name": "Anarchy",
      "has": [
       389268985,
-      1178660677,
-      3465198467
+      1178660677
      ]
     },
     {
      "name": "Arbalest",
      "has": [
       2564164194,
-      1880379474,
-      3465198467
+      1880379474
      ]
     },
     {
      "name": "Bad Juju",
      "has": [
       4004944400,
-      1067908860,
       1324340508
      ]
     },
@@ -9405,7 +9545,6 @@
      "name": "Bastion",
      "has": [
       1186480754,
-      3465198467,
       4190643473,
       4273298922
      ]
@@ -9422,8 +9561,15 @@
      "has": [
       3081173348,
       501717180,
-      990298390,
       2085058763
+     ]
+    },
+    {
+     "name": "Centrifuse",
+     "has": [
+      1385166695,
+      1547782973,
+      2804762401
      ]
     },
     {
@@ -9438,7 +9584,6 @@
      "name": "Cloudstrike",
      "has": [
       2909403175,
-      990298390,
       1409312565,
       3117514172
      ]
@@ -9447,7 +9592,6 @@
      "name": "Coldheart",
      "has": [
       1036269296,
-      990298390,
       1249968539,
       2482418662
      ]
@@ -9456,7 +9600,6 @@
      "name": "Collective Obligation",
      "has": [
       3441203855,
-      990298390,
       2234507197,
       2395713912
      ]
@@ -9491,7 +9634,6 @@
      "has": [
       938999636,
       939227542,
-      1067908860,
       2085058762
      ]
     },
@@ -9499,18 +9641,13 @@
      "name": "Dead Man's Tale",
      "has": [
       1319823571,
-      990298390,
-      1067908860,
-      1301843770,
-      3465198467,
-      4259401308
+      1301843770
      ]
     },
     {
      "name": "Dead Messenger",
      "has": [
       2733244971,
-      1067908860,
       2620589274,
       4259872956
      ]
@@ -9520,15 +9657,13 @@
      "has": [
       411799453,
       1298151900,
-      3333994164,
-      3465198467
+      3333994164
      ]
     },
     {
      "name": "Delicate Tomb",
      "has": [
       2585427437,
-      1067908860,
       1208312843,
       1719307618
      ]
@@ -9538,7 +9673,6 @@
      "has": [
       1468523096,
       1964414318,
-      3465198467,
       3638234982
      ]
     },
@@ -9554,15 +9688,13 @@
      "name": "Divinity",
      "has": [
       1797707170,
-      1185480639,
-      3465198467
+      1185480639
      ]
     },
     {
      "name": "Duality",
      "has": [
       536517534,
-      1067908860,
       3591914291,
       3937312904
      ]
@@ -9571,12 +9703,8 @@
      "name": "Edge of Action",
      "has": [
       1900919151,
-      990298390,
-      1067908860,
       1134515006,
-      2379536009,
-      3465198467,
-      4259401308
+      2379536009
      ]
     },
     {
@@ -9584,23 +9712,15 @@
      "has": [
       3551884421,
       844190854,
-      990298390,
-      1067908860,
-      1731191722,
-      3465198467,
-      4259401308
+      1731191722
      ]
     },
     {
      "name": "Edge of Intent",
      "has": [
       3024740338,
-      990298390,
-      1067908860,
       2038196759,
-      3465198467,
-      3492337375,
-      4259401308
+      3492337375
      ]
     },
     {
@@ -9616,8 +9736,7 @@
      "has": [
       2200569208,
       1281243303,
-      2835258088,
-      4259401308
+      2835258088
      ]
     },
     {
@@ -9625,7 +9744,6 @@
      "has": [
       425960662,
       924149234,
-      1067908860,
       2003108620
      ]
     },
@@ -9649,7 +9767,6 @@
      "name": "Gjallarhorn",
      "has": [
       2962361451,
-      1067908860,
       2526801077,
       3874977694
      ]
@@ -9658,7 +9775,6 @@
      "name": "Grand Overture",
      "has": [
       2940035732,
-      990298390,
       1408800487,
       2094761202
      ]
@@ -9668,8 +9784,7 @@
      "has": [
       3905543891,
       320534106,
-      615063266,
-      4259401308
+      615063266
      ]
     },
     {
@@ -9677,8 +9792,7 @@
      "has": [
       3610814281,
       1864989992,
-      2620589274,
-      3465198467
+      2620589274
      ]
     },
     {
@@ -9708,6 +9822,7 @@
      "name": "Hierarchy of Needs",
      "has": [
       2226793914,
+      122307549,
       229534486
      ]
     },
@@ -9715,8 +9830,7 @@
      "name": "Izanagi's Burden",
      "has": [
       1070100196,
-      529188544,
-      3465198467
+      529188544
      ]
     },
     {
@@ -9739,8 +9853,7 @@
      "has": [
       372430833,
       456628588,
-      1650852150,
-      4259401308
+      1650852150
      ]
     },
     {
@@ -9757,16 +9870,14 @@
      "has": [
       481338655,
       299272945,
-      431220296,
-      3465198467
+      431220296
      ]
     },
     {
      "name": "Lorentz Driver",
      "has": [
       2881100038,
-      1690446783,
-      3465198467
+      1690446783
      ]
     },
     {
@@ -9790,15 +9901,13 @@
      "has": [
       656200654,
       1149703256,
-      2333607307,
-      4259401308
+      2333607307
      ]
     },
     {
      "name": "MIDA Multi-Tool",
      "has": [
       377257911,
-      990298390,
       3100590152,
       3466057365
      ]
@@ -9807,8 +9916,7 @@
      "name": "Monte Carlo",
      "has": [
       1484442054,
-      2814973067,
-      3465198467
+      2814973067
      ]
     },
     {
@@ -9824,8 +9932,7 @@
      "has": [
       1657056865,
       82994288,
-      3504197951,
-      4259401308
+      3504197951
      ]
     },
     {
@@ -9833,11 +9940,7 @@
      "has": [
       2965975126,
       229096166,
-      990298390,
-      1067908860,
-      3465198467,
-      4015745376,
-      4259401308
+      4015745376
      ]
     },
     {
@@ -9853,7 +9956,6 @@
      "has": [
       1174163613,
       1679262379,
-      3465198467,
       4259872957
      ]
     },
@@ -9861,8 +9963,7 @@
      "name": "Polaris Lance",
      "has": [
       1000724343,
-      4067652714,
-      4259401308
+      4067652714
      ]
     },
     {
@@ -9870,7 +9971,6 @@
      "has": [
       571267712,
       1684153732,
-      3465198467,
       3470828242
      ]
     },
@@ -9879,7 +9979,6 @@
      "has": [
       3602718766,
       25023897,
-      990298390,
       3131590896
      ]
     },
@@ -9897,17 +9996,13 @@
       891750160,
       891750166,
       891750167,
-      990298390,
-      1067908860,
       1266037484,
       1266037485,
       1266037486,
       1266037487,
       2206869417,
-      3465198467,
       3834106778,
-      4152458172,
-      4259401308
+      4152458172
      ]
     },
     {
@@ -9915,7 +10010,6 @@
      "has": [
       2516532331,
       484491717,
-      1067908860,
       1530804125
      ]
     },
@@ -9924,8 +10018,7 @@
      "has": [
       1657401727,
       798520364,
-      1206010521,
-      3465198467
+      1206010521
      ]
     },
     {
@@ -9941,16 +10034,14 @@
      "has": [
       2741975068,
       176919422,
-      658317088,
-      1067908860
+      658317088
      ]
     },
     {
      "name": "Sleeper Simulant",
      "has": [
       3884127242,
-      136852797,
-      3465198467
+      136852797
      ]
     },
     {
@@ -9973,7 +10064,6 @@
      "name": "SUROS Regime",
      "has": [
       944506345,
-      990298390,
       1378047685,
       1733620422,
       4012962526
@@ -9984,8 +10074,7 @@
      "has": [
       3755070117,
       1249968538,
-      1853177948,
-      3465198467
+      1853177948
      ]
     },
     {
@@ -9993,7 +10082,6 @@
      "has": [
       4185339856,
       127335543,
-      3465198467,
       4218954970
      ]
     },
@@ -10001,7 +10089,6 @@
      "name": "Tarrabah",
      "has": [
       2540536653,
-      990298390,
       3351002503
      ]
     },
@@ -10018,7 +10105,6 @@
      "has": [
       1394384862,
       431220297,
-      990298390,
       1658733671
      ]
     },
@@ -10027,8 +10113,7 @@
      "has": [
       3913463509,
       769440797,
-      2019952880,
-      3465198467
+      2019952880
      ]
     },
     {
@@ -10036,15 +10121,13 @@
      "has": [
       2223914385,
       407549716,
-      2826187530,
-      4259401308
+      2826187530
      ]
     },
     {
      "name": "The Huckleberry",
      "has": [
       630329983,
-      1067908860,
       3459475454,
       3551326236
      ]
@@ -10076,16 +10159,14 @@
      "has": [
       228577175,
       2656694271,
-      2797384170,
-      4259401308
+      2797384170
      ]
     },
     {
      "name": "The Prospector",
      "has": [
       2977709078,
-      924149235,
-      990298390
+      924149235
      ]
     },
     {
@@ -10094,8 +10175,7 @@
       1531126198,
       1061006937,
       1408087974,
-      1408087975,
-      4259401308
+      1408087975
      ]
     },
     {
@@ -10103,8 +10183,7 @@
      "has": [
       2473404935,
       1178686995,
-      2409031770,
-      3465198467
+      2409031770
      ]
     },
     {
@@ -10135,7 +10214,6 @@
      "name": "Tommy's Matchbook",
      "has": [
       961505134,
-      990298390,
       3772485195,
       4001063065
      ]
@@ -10144,7 +10222,6 @@
      "name": "Touch of Malice",
      "has": [
       2724693746,
-      990298390,
       1557274655,
       2094939076
      ]
@@ -10154,8 +10231,7 @@
      "has": [
       1210807262,
       25692695,
-      456628589,
-      3465198467
+      456628589
      ]
     },
     {
@@ -10163,7 +10239,6 @@
      "has": [
       975429949,
       24925370,
-      1067908860,
       3967134106
      ]
     },
@@ -10187,16 +10262,14 @@
      "name": "Truth",
      "has": [
       2491817779,
-      2911329003,
-      3465198467
+      2911329003
      ]
     },
     {
      "name": "Two-Tailed Fox",
      "has": [
       3649430342,
-      777637181,
-      3465198467
+      777637181
      ]
     },
     {
@@ -10213,25 +10286,20 @@
       3610750208,
       185041502,
       806917387,
-      838219733,
-      990298390
+      838219733
      ]
     },
     {
      "name": "Vexcalibur",
      "has": [
       2751656639,
-      990298390,
-      1067908860,
       2171805903,
       2898674457,
       2898674462,
       2898674463,
       3146691100,
       3146691101,
-      3146691103,
-      3465198467,
-      4259401308
+      3146691103
      ]
     },
     {
@@ -10239,7 +10307,6 @@
      "has": [
       2307143135,
       615063267,
-      3465198467,
       4146729347
      ]
     },
@@ -10248,8 +10315,7 @@
      "has": [
       459441288,
       2306441428,
-      3156882011,
-      4259401308
+      3156882011
      ]
     },
     {
@@ -10257,8 +10323,7 @@
      "has": [
       281315705,
       2732814938,
-      3337692349,
-      4259401308
+      3337692349
      ]
     },
     {
@@ -10283,8 +10348,7 @@
      "has": [
       3063320916,
       745965939,
-      2888418988,
-      3465198467
+      2888418988
      ]
     },
     {
@@ -10297,8 +10361,7 @@
     {
      "name": "Xenophage",
      "has": [
-      2261491232,
-      3465198467
+      2261491232
      ]
     }
    ],
@@ -11017,6 +11080,10 @@
     "name": "Compulsive Reloader",
     "linkedWith": 595108252
    },
+   "684456054": {
+    "name": "Eddy Current",
+    "linkedWith": 2785334058
+   },
    "691659142": {
     "name": "Pugilist",
     "linkedWith": 536173722
@@ -11088,6 +11155,10 @@
    "859780267": {
     "name": "One for All",
     "linkedWith": 4049631843
+   },
+   "906981559": {
+    "name": "Discord",
+    "linkedWith": 3978468247
    },
    "908147344": {
     "name": "Sneak Bow",
@@ -11205,6 +11276,10 @@
     "name": "Perpetual Motion",
     "linkedWith": 2014892510
    },
+   "1439600632": {
+    "name": "Bipod",
+    "linkedWith": 2282937672
+   },
    "1523649716": {
     "name": "Tap the Trigger",
     "linkedWith": 1890422124
@@ -11224,6 +11299,10 @@
    "1546637391": {
     "name": "Vorpal Weapon",
     "linkedWith": 3418165135
+   },
+   "1549370717": {
+    "name": "Kinetic Tremors",
+    "linkedWith": 3891536761
    },
    "1551736345": {
     "name": "Explosive Head",
@@ -11385,6 +11464,10 @@
     "name": "Energy Transfer",
     "linkedWith": 2856365672
    },
+   "2037312142": {
+    "name": "Controlled Burst",
+    "linkedWith": 2594592626
+   },
    "2039302152": {
     "name": "Slideways",
     "linkedWith": 2396422520
@@ -11444,6 +11527,10 @@
    "2275087323": {
     "name": "Explosive Light",
     "linkedWith": 3194351027
+   },
+   "2282937672": {
+    "name": "Bipod",
+    "linkedWith": 1439600632
    },
    "2284787283": {
     "name": "Clown Cartridge",
@@ -11513,6 +11600,10 @@
     "name": "Box Breathing",
     "linkedWith": 23371658
    },
+   "2562668800": {
+    "name": "Collective Action",
+    "linkedWith": 3324494224
+   },
    "2570477205": {
     "name": "Multikill Clip",
     "linkedWith": 2458213969
@@ -11524,6 +11615,10 @@
    "2590710093": {
     "name": "Tireless Blade",
     "linkedWith": 4183521337
+   },
+   "2594592626": {
+    "name": "Controlled Burst",
+    "linkedWith": 2037312142
    },
    "2610012052": {
     "name": "Golden Tricorn",
@@ -11576,6 +11671,10 @@
    "2779035018": {
     "name": "Feeding Frenzy",
     "linkedWith": 1171147302
+   },
+   "2785334058": {
+    "name": "Eddy Current",
+    "linkedWith": 684456054
    },
    "2840833776": {
     "name": "Shoot to Loot",
@@ -11653,6 +11752,10 @@
     "name": "Counterattack",
     "linkedWith": 1145640183
    },
+   "3018146897": {
+    "name": "Invisible Hand",
+    "linkedWith": 4100396181
+   },
    "3038247973": {
     "name": "Explosive Payload",
     "linkedWith": 64866129
@@ -11720,6 +11823,10 @@
    "3300816228": {
     "name": "Auto-Loading Holster",
     "linkedWith": 3528046508
+   },
+   "3324494224": {
+    "name": "Collective Action",
+    "linkedWith": 2562668800
    },
    "3335686050": {
     "name": "Recombination",
@@ -11865,6 +11972,10 @@
     "name": "Impulse Amplifier",
     "linkedWith": 951095735
    },
+   "3891536761": {
+    "name": "Kinetic Tremors",
+    "linkedWith": 1549370717
+   },
    "3913600130": {
     "name": "Whirlwind Blade",
     "linkedWith": 147913470
@@ -11885,6 +11996,10 @@
     "name": "Tracking Module",
     "linkedWith": 406461158
    },
+   "3978468247": {
+    "name": "Discord",
+    "linkedWith": 906981559
+   },
    "4045335048": {
     "name": "Headseeker",
     "linkedWith": 460017080
@@ -11904,6 +12019,10 @@
    "4085959009": {
     "name": "Relentless Strikes",
     "linkedWith": 1749209109
+   },
+   "4100396181": {
+    "name": "Invisible Hand",
+    "linkedWith": 3018146897
    },
    "4104185692": {
     "name": "Frenzy",
