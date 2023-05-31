@@ -20,6 +20,13 @@
    "hash": 1399219,
    "type": "Subclass Grenade"
   },
+  "4620383": {
+   "name": "Weft Cutter",
+   "hash": 4620383,
+   "itemName": "The Navigator",
+   "itemHash": 1441805468,
+   "type": "Weapon Trait Exotic"
+  },
   "5699512": {
    "name": "Tempered Truss Rod",
    "hash": 5699512,
@@ -903,6 +910,11 @@
    "name": "Firing Line",
    "hash": 395388285,
    "type": "Weapon Trait Enhanced"
+  },
+  "398661035": {
+   "name": "Restoration Ritual",
+   "hash": 398661035,
+   "type": "Weapon Trait Origin"
   },
   "399528760": {
    "name": "Taken Invigoration",
@@ -4661,6 +4673,11 @@
    "hash": 1954620775,
    "type": "Weapon Trait"
   },
+  "1956005708": {
+   "name": "Rapid-Fire Glaive",
+   "hash": 1956005708,
+   "type": "Weapon Frame"
+  },
   "1956421814": {
    "name": "Umbral Recharge",
    "hash": 1956421814,
@@ -7093,6 +7110,13 @@
    "hash": 3114731754,
    "type": "Weapon Frame Enhanced"
   },
+  "3116569677": {
+   "name": "The Navigator Catalyst",
+   "hash": 3116569677,
+   "itemName": "The Navigator",
+   "itemHash": 1441805468,
+   "type": "Weapon Catalyst Exotic"
+  },
   "3117514172": {
    "name": "Stormbringer",
    "hash": 3117514172,
@@ -7190,6 +7214,13 @@
    "hash": 3164944314,
    "itemName": "Ager's Scepter",
    "itemHash": 1833195496,
+   "type": "Weapon Frame Exotic"
+  },
+  "3172115769": {
+   "name": "Protective Weave",
+   "hash": 3172115769,
+   "itemName": "The Navigator",
+   "itemHash": 1441805468,
    "type": "Weapon Frame Exotic"
   },
   "3174300811": {
@@ -10163,6 +10194,14 @@
      ]
     },
     {
+     "name": "The Navigator",
+     "has": [
+      3172115769,
+      4620383,
+      3116569677
+     ]
+    },
+    {
      "name": "The Prospector",
      "has": [
       2977709078,
@@ -10397,6 +10436,7 @@
      "name": "Glaive",
      "has": [
       1316753551,
+      1956005708,
       1986105578
      ]
     },
