@@ -2766,6 +2766,7 @@
    "Fusion Rifle",
    "Scout Rifle",
    "Glaive",
+   "Rocket Launcher",
    "Sword"
   ],
   "name": "Pugilist",
@@ -3282,6 +3283,7 @@
    "Machine Gun",
    "Pulse Rifle",
    "Linear Fusion Rifle",
+   "Rocket Launcher",
    "Sniper Rifle",
    "Sword"
   ],
@@ -3976,9 +3978,9 @@
    "Rocket Launcher",
    "Machine Gun",
    "Pulse Rifle",
+   "Shotgun",
    "Hand Cannon",
    "Fusion Rifle",
-   "Shotgun",
    "Sidearm",
    "Sniper Rifle",
    "Combat Bow",
@@ -4008,6 +4010,14 @@
   "name": "Ignition Trigger",
   "hash": 961505134,
   "type": "Weapon Frame Exotic"
+ },
+ "961827406": {
+  "appearsOn": [
+   940371471
+  ],
+  "name": "Wicked Implement Catalyst",
+  "hash": 961827406,
+  "type": "Weapon Catalyst Exotic"
  },
  "965619220": {
   "appearsOn": [
@@ -5309,6 +5319,14 @@
   "hash": 1266037487,
   "type": "Weapon Catalyst Exotic"
  },
+ "1266604956": {
+  "appearsOn": [
+   940371471
+  ],
+  "name": "Creeping Attrition",
+  "hash": 1266604956,
+  "type": "Weapon Frame Exotic"
+ },
  "1271851280": {
   "appearsOn": [
    1234150730
@@ -5780,8 +5798,9 @@
  },
  "1380061575": {
   "appearsOn": [
+   "Shotgun",
    "Hand Cannon",
-   "Shotgun"
+   "Rocket Launcher"
   ],
   "name": "Dream Work",
   "hash": 1380061575,
@@ -6866,8 +6885,8 @@
  "1636108362": {
   "appearsOn": [
    "Scout Rifle",
-   "Fusion Rifle",
    "Shotgun",
+   "Fusion Rifle",
    "Auto Rifle",
    "Submachine Gun",
    "Sidearm"
@@ -10589,8 +10608,8 @@
   "appearsOn": [
    "Fusion Rifle",
    "Combat Bow",
-   "Grenade Launcher",
    "Shotgun",
+   "Grenade Launcher",
    "Auto Rifle",
    "Machine Gun",
    "Hand Cannon",
@@ -12671,6 +12690,7 @@
  "3096702027": {
   "appearsOn": [
    "Auto Rifle",
+   "Shotgun",
    "Glaive",
    "Scout Rifle",
    "Grenade Launcher",
@@ -12678,7 +12698,6 @@
    "Machine Gun",
    "Sniper Rifle",
    "Rocket Launcher",
-   "Shotgun",
    "Hand Cannon",
    "Linear Fusion Rifle",
    "Pulse Rifle",
@@ -14750,6 +14769,7 @@
  },
  "3673922083": {
   "appearsOn": [
+   "Shotgun",
    "Auto Rifle",
    "Grenade Launcher",
    "Scout Rifle",
@@ -14757,7 +14777,6 @@
    "Fusion Rifle",
    "Sidearm",
    "Linear Fusion Rifle",
-   "Shotgun",
    "Submachine Gun",
    "Combat Bow",
    "Sniper Rifle"
@@ -15051,10 +15070,10 @@
  "3751912585": {
   "appearsOn": [
    "Scout Rifle",
+   "Shotgun",
    "Grenade Launcher",
    "Auto Rifle",
    "Machine Gun",
-   "Shotgun",
    "Sniper Rifle",
    "Submachine Gun"
   ],
@@ -15158,6 +15177,14 @@
   "name": "Solar Holster",
   "hash": 3775916472,
   "type": "Armor Mod General"
+ },
+ "3782773412": {
+  "appearsOn": [
+   940371471
+  ],
+  "name": "Tithing Harvest",
+  "hash": 3782773412,
+  "type": "Weapon Trait Exotic"
  },
  "3785661089": {
   "appearsOn": [
@@ -17194,8 +17221,8 @@
  "4293542123": {
   "appearsOn": [
    "Pulse Rifle",
-   "Hand Cannon",
    "Shotgun",
+   "Hand Cannon",
    "Auto Rifle",
    "Machine Gun",
    "Sidearm",

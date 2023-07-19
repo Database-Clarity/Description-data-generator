@@ -2260,6 +2260,13 @@
    "itemHash": 776191470,
    "type": "Weapon Frame Exotic"
   },
+  "961827406": {
+   "name": "Wicked Implement Catalyst",
+   "hash": 961827406,
+   "itemName": "Wicked Implement",
+   "itemHash": 940371471,
+   "type": "Weapon Catalyst Exotic"
+  },
   "965619220": {
    "name": "SLO-21 Post",
    "hash": 965619220,
@@ -3006,6 +3013,13 @@
    "itemName": "Revision Zero",
    "itemHash": 1473821207,
    "type": "Weapon Catalyst Exotic"
+  },
+  "1266604956": {
+   "name": "Creeping Attrition",
+   "hash": 1266604956,
+   "itemName": "Wicked Implement",
+   "itemHash": 940371471,
+   "type": "Weapon Frame Exotic"
   },
   "1271851280": {
    "name": "Be the Danger",
@@ -8427,6 +8441,13 @@
    "hash": 3775916472,
    "type": "Armor Mod General"
   },
+  "3782773412": {
+   "name": "Tithing Harvest",
+   "hash": 3782773412,
+   "itemName": "Wicked Implement",
+   "itemHash": 940371471,
+   "type": "Weapon Trait Exotic"
+  },
   "3785661089": {
    "name": "Radar Booster",
    "hash": 3785661089,
@@ -10363,6 +10384,14 @@
       281315705,
       2732814938,
       3337692349
+     ]
+    },
+    {
+     "name": "Wicked Implement",
+     "has": [
+      1266604956,
+      961827406,
+      3782773412
      ]
     },
     {
