@@ -146,6 +146,14 @@
   "hash": 16392701,
   "type": "Weapon Perk"
  },
+ "16445399": {
+  "appearsOn": [
+   "Glaive"
+  ],
+  "name": "Aggressive Glaive",
+  "hash": 16445399,
+  "type": "Weapon Frame Enhanced"
+ },
  "16700458": {
   "appearsOn": [
    "Ghost Shell"
@@ -578,9 +586,12 @@
  "141515518": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -839,6 +850,14 @@
   "name": "Underdog",
   "hash": 205890336,
   "type": "Weapon Trait"
+ },
+ "210578077": {
+  "appearsOn": [
+   "Grenade Launcher"
+  ],
+  "name": "Compressed Wave Frame",
+  "hash": 210578077,
+  "type": "Weapon Frame Enhanced"
  },
  "213689231": {
   "appearsOn": [
@@ -1148,10 +1167,11 @@
  },
  "302702765": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 302702765,
@@ -1161,7 +1181,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 308595185,
@@ -1809,6 +1830,14 @@
   "hash": 450381139,
   "type": "Armor Mod General"
  },
+ "451371216": {
+  "appearsOn": [
+   "Linear Fusion Rifle"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 451371216,
+  "type": "Weapon Frame Enhanced"
+ },
  "453527127": {
   "appearsOn": [
    "Auto Rifle",
@@ -1986,9 +2015,12 @@
  "489506521": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -2269,7 +2301,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 539564471,
@@ -2647,6 +2680,14 @@
   "hash": 663495155,
   "type": "Weapon Perk"
  },
+ "667908513": {
+  "appearsOn": [
+   "Grenade Launcher"
+  ],
+  "name": "Compressed Wave Frame",
+  "hash": 667908513,
+  "type": "Weapon Frame Enhanced"
+ },
  "671806388": {
   "appearsOn": [
    "Scout Rifle",
@@ -2928,6 +2969,14 @@
   "name": "Freehand Grip",
   "hash": 736000386,
   "type": "Weapon Mod"
+ },
+ "738339367": {
+  "appearsOn": [
+   "Glaive"
+  ],
+  "name": "Aggressive Glaive",
+  "hash": 738339367,
+  "type": "Weapon Frame Enhanced"
  },
  "743139589": {
   "appearsOn": [
@@ -3565,9 +3614,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 872207875,
@@ -3967,7 +4016,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 956390015,
@@ -4173,6 +4223,7 @@
   "appearsOn": [
    "Sniper Rifle",
    "Glaive",
+   "Pulse Rifle",
    "Submachine Gun"
   ],
   "name": "Hand-Laid Stock",
@@ -4521,10 +4572,19 @@
   "hash": 1061006937,
   "type": "Weapon Catalyst Exotic"
  },
+ "1063261332": {
+  "appearsOn": [
+   "Linear Fusion Rifle"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 1063261332,
+  "type": "Weapon Frame Enhanced"
+ },
  "1067908860": {
   "appearsOn": [
    "Sniper Rifle",
    "Glaive",
+   "Pulse Rifle",
    "Submachine Gun"
   ],
   "name": "Short-Action Stock",
@@ -4542,7 +4602,8 @@
  "1069611115": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 1069611115,
@@ -5732,7 +5793,8 @@
  "1361856293": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 1361856293,
@@ -6127,10 +6189,11 @@
  },
  "1451602450": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 1451602450,
@@ -6218,10 +6281,11 @@
  },
  "1472963920": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 1472963920,
@@ -6259,9 +6323,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 1483339932,
@@ -6935,6 +6999,14 @@
   "hash": 1650852150,
   "type": "Weapon Trait Exotic"
  },
+ "1655963600": {
+  "appearsOn": [
+   "Linear Fusion Rifle"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 1655963600,
+  "type": "Weapon Frame Enhanced"
+ },
  "1656118680": {
   "appearsOn": [
    "Warlock Subclass"
@@ -7082,7 +7154,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 1671927875,
@@ -7565,6 +7638,14 @@
   "hash": 1748774930,
   "type": "Weapon Trait Enhanced"
  },
+ "1749118639": {
+  "appearsOn": [
+   "Hand Cannon"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 1749118639,
+  "type": "Weapon Frame Enhanced"
+ },
  "1749209109": {
   "appearsOn": [
    "Sword"
@@ -7630,6 +7711,14 @@
   "name": "Melee Kickstart",
   "hash": 1763780622,
   "type": "Armor Mod General"
+ },
+ "1765356367": {
+  "appearsOn": [
+   "Shotgun"
+  ],
+  "name": "Rapid-Fire Frame",
+  "hash": 1765356367,
+  "type": "Weapon Frame Enhanced"
  },
  "1771339417": {
   "appearsOn": [
@@ -7706,6 +7795,14 @@
   "name": "Natural String",
   "hash": 1784898267,
   "type": "Weapon Perk"
+ },
+ "1787083609": {
+  "appearsOn": [
+   "Shotgun"
+  ],
+  "name": "Rapid-Fire Frame",
+  "hash": 1787083609,
+  "type": "Weapon Frame Enhanced"
  },
  "1791592647": {
   "appearsOn": [
@@ -7858,7 +7955,8 @@
    "Machine Gun",
    "Fusion Rifle",
    "Scout Rifle",
-   "Combat Bow"
+   "Combat Bow",
+   "Pulse Rifle"
   ],
   "name": "Slickdraw",
   "hash": 1821614984,
@@ -7911,7 +8009,8 @@
  "1831499663": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 1831499663,
@@ -8050,10 +8149,11 @@
  },
  "1875323682": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 1875323682,
@@ -8155,9 +8255,12 @@
  "1900989425": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -8339,10 +8442,11 @@
  },
  "1946568256": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 1946568256,
@@ -8543,6 +8647,14 @@
   "hash": 2002547233,
   "type": "Weapon Trait Enhanced"
  },
+ "2003022817": {
+  "appearsOn": [
+   "Shotgun"
+  ],
+  "name": "Rapid-Fire Frame",
+  "hash": 2003022817,
+  "type": "Weapon Frame Enhanced"
+ },
  "2003108620": {
   "appearsOn": [
    3549153978
@@ -8701,6 +8813,14 @@
   "hash": 2039302152,
   "type": "Weapon Trait"
  },
+ "2040155611": {
+  "appearsOn": [
+   "Glaive"
+  ],
+  "name": "Aggressive Glaive",
+  "hash": 2040155611,
+  "type": "Weapon Frame Enhanced"
+ },
  "2045123179": {
   "appearsOn": [
    "Chest Armor",
@@ -8762,7 +8882,8 @@
  "2059481925": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 2059481925,
@@ -8849,7 +8970,8 @@
  "2097693203": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 2097693203,
@@ -9026,13 +9148,21 @@
   "hash": 2158846614,
   "type": "Armor Mod Activity"
  },
+ "2159352803": {
+  "appearsOn": [
+   "Hand Cannon"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 2159352803,
+  "type": "Weapon Frame Enhanced"
+ },
  "2164888232": {
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 2164888232,
@@ -9107,9 +9237,12 @@
  "2178772051": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -9478,6 +9611,14 @@
   "name": "Pyrotoxin Rounds",
   "hash": 2261491232,
   "type": "Weapon Frame Exotic"
+ },
+ "2264456959": {
+  "appearsOn": [
+   "Grenade Launcher"
+  ],
+  "name": "Compressed Wave Frame",
+  "hash": 2264456959,
+  "type": "Weapon Frame Enhanced"
  },
  "2267311547": {
   "appearsOn": [
@@ -10338,9 +10479,12 @@
  "2490530085": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -10400,10 +10544,11 @@
  },
  "2516075140": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 2516075140,
@@ -10511,6 +10656,14 @@
   "name": "Box Breathing",
   "hash": 2551157718,
   "type": "Weapon Trait"
+ },
+ "2552875793": {
+  "appearsOn": [
+   "Hand Cannon"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 2552875793,
+  "type": "Weapon Frame Enhanced"
  },
  "2562645296": {
   "appearsOn": [
@@ -10695,10 +10848,11 @@
  },
  "2617324347": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 2617324347,
@@ -11591,9 +11745,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 2806361224,
@@ -12053,7 +12207,8 @@
  "2912509910": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 2912509910,
@@ -12316,6 +12471,14 @@
   "hash": 2985827016,
   "type": "Weapon Perk"
  },
+ "2986029425": {
+  "appearsOn": [
+   "Shotgun"
+  ],
+  "name": "Rapid-Fire Frame",
+  "hash": 2986029425,
+  "type": "Weapon Frame Enhanced"
+ },
  "2986718682": {
   "appearsOn": [
    "Rocket Launcher"
@@ -12529,6 +12692,14 @@
   "hash": 3048420653,
   "type": "Weapon Frame Enhanced"
  },
+ "3049431773": {
+  "appearsOn": [
+   "Linear Fusion Rifle"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 3049431773,
+  "type": "Weapon Frame Enhanced"
+ },
  "3050799639": {
   "appearsOn": [
    "Hand Cannon",
@@ -12679,9 +12850,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 3095041770,
@@ -12805,14 +12976,25 @@
  "3133077199": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
   "name": "Adaptive Frame",
   "hash": 3133077199,
+  "type": "Weapon Frame Enhanced"
+ },
+ "3142073525": {
+  "appearsOn": [
+   "Grenade Launcher"
+  ],
+  "name": "Compressed Wave Frame",
+  "hash": 3142073525,
   "type": "Weapon Frame Enhanced"
  },
  "3142289711": {
@@ -13143,6 +13325,14 @@
   "hash": 3228611386,
   "type": "Weapon Mod"
  },
+ "3228668394": {
+  "appearsOn": [
+   "Glaive"
+  ],
+  "name": "Aggressive Glaive",
+  "hash": 3228668394,
+  "type": "Weapon Frame Enhanced"
+ },
  "3230963543": {
   "appearsOn": [
    "Sidearm",
@@ -13211,9 +13401,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 3249407402,
@@ -13276,7 +13466,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 3272152575,
@@ -13442,6 +13633,14 @@
   "name": "Helical Fletching",
   "hash": 3311977193,
   "type": "Weapon Perk"
+ },
+ "3320257055": {
+  "appearsOn": [
+   "Hand Cannon"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 3320257055,
+  "type": "Weapon Frame Enhanced"
  },
  "3323910164": {
   "appearsOn": [
@@ -13623,9 +13822,12 @@
  "3355499393": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -13690,7 +13892,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 3377988521,
@@ -13847,9 +14050,12 @@
  "3435239180": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -13984,6 +14190,7 @@
   "appearsOn": [
    "Sniper Rifle",
    "Glaive",
+   "Pulse Rifle",
    "Submachine Gun"
   ],
   "name": "Composite Stock",
@@ -14037,9 +14244,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 3478030936,
@@ -15016,7 +15223,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 3725333007,
@@ -15129,10 +15337,11 @@
  },
  "3769337248": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 3769337248,
@@ -15411,9 +15620,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 3841661468,
@@ -16033,7 +16242,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 4008973208,
@@ -16112,7 +16322,8 @@
  "4036525828": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 4036525828,
@@ -16280,7 +16491,8 @@
   "appearsOn": [
    "Scout Rifle",
    "Shotgun",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Pulse Rifle"
   ],
   "name": "Lightweight Frame",
   "hash": 4080055066,
@@ -16751,9 +16963,9 @@
   "appearsOn": [
    "Sniper Rifle",
    "Machine Gun",
+   "Pulse Rifle",
    "Auto Rifle",
-   "Fusion Rifle",
-   "Pulse Rifle"
+   "Fusion Rifle"
   ],
   "name": "Rapid-Fire Frame",
   "hash": 4188742693,
@@ -16826,7 +17038,8 @@
  "4198833635": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 4198833635,
@@ -16848,7 +17061,8 @@
  "4203236451": {
   "appearsOn": [
    "Sniper Rifle",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Submachine Gun"
   ],
   "name": "Aggressive Frame",
   "hash": 4203236451,
@@ -16927,10 +17141,11 @@
  },
  "4231246084": {
   "appearsOn": [
+   "Scout Rifle",
    "Fusion Rifle",
    "Machine Gun",
    "Auto Rifle",
-   "Scout Rifle"
+   "Pulse Rifle"
   ],
   "name": "High-Impact Frame",
   "hash": 4231246084,
@@ -17024,9 +17239,12 @@
  "4249817697": {
   "appearsOn": [
    "Machine Gun",
+   "Hand Cannon",
    "Trace Rifle",
    "Rocket Launcher",
-   "Hand Cannon",
+   "Fusion Rifle",
+   "Grenade Launcher",
+   "Auto Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -17068,6 +17286,7 @@
   "appearsOn": [
    "Sniper Rifle",
    "Glaive",
+   "Pulse Rifle",
    "Submachine Gun"
   ],
   "name": "Fitted Stock",
@@ -17137,6 +17356,14 @@
   "name": "Full Auto Trigger System",
   "hash": 4267945040,
   "type": "Weapon Trait"
+ },
+ "4269485650": {
+  "appearsOn": [
+   "Linear Fusion Rifle"
+  ],
+  "name": "Aggressive Frame",
+  "hash": 4269485650,
+  "type": "Weapon Frame Enhanced"
  },
  "4273298922": {
   "appearsOn": [
