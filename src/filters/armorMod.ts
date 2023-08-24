@@ -25,7 +25,7 @@ export const armorMods = (
       appearsOn: new Set([armorType]),
       name: perk.displayProperties.name,
       hash: Number(perk.hash),
-      type
+      type,
     }
   }
 
