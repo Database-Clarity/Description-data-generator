@@ -7,6 +7,7 @@ import { createDescriptionData } from './descriptionData.js'
 import { createRawData } from './rawData.js'
 import { InventoryItemEnums } from './utils/enums.js'
 import { createWeaponFormulaData } from './weaponFormulaData.js'
+import { forIn } from 'lodash'
 
 export type PerkData = {
   appearsOn: Set<string | number>
@@ -24,10 +25,9 @@ export type PerkDataList = {
     throw new Error('Failed to fetch manifest')
   }
 
-  const inventoryItemKeys = Object.keys(inventoryItem)
+  for (const key in inventoryItem) {
+    const item = inventoryItem[key]
 
-  for (let i = 0; i < inventoryItemKeys.length; i++) {
-    const item = inventoryItem[i]
     if (
       item.itemTypeDisplayName === 'Shader' ||
       item.itemTypeDisplayName === 'Deprecated Armor Mod' ||
@@ -47,7 +47,7 @@ export type PerkDataList = {
       item.hash === InventoryItemEnums.aeonSwift || //           dummy item
       item.hash === InventoryItemEnums.weaponAttackMod //        removed mod
     ) {
-      delete inventoryItem[i]
+      delete inventoryItem[key]
     }
   }
 
