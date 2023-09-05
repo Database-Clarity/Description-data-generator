@@ -135,6 +135,11 @@
    "hash": 31057037,
    "type": "Weapon Frame"
   },
+  "31345821": {
+   "name": "Sword Logic",
+   "hash": 31345821,
+   "type": "Weapon Trait"
+  },
   "36879820": {
    "name": "Prosperity (Vanguard)",
    "hash": 36879820,
@@ -1288,6 +1293,13 @@
    "hash": 518521234,
    "type": "Armor Mod Activity"
   },
+  "525593296": {
+   "name": "Desperation",
+   "hash": 525593296,
+   "itemName": "Necrochasm",
+   "itemHash": 1034055198,
+   "type": "Weapon Trait Exotic"
+  },
   "529188544": {
    "name": "Izanagi's Burden Catalyst",
    "hash": 529188544,
@@ -1540,6 +1552,11 @@
    "name": "Stasis Resistance",
    "hash": 638704972,
    "type": "Armor Mod General"
+  },
+  "639190697": {
+   "name": "Sword Logic",
+   "hash": 639190697,
+   "type": "Weapon Trait Enhanced"
   },
   "647617635": {
    "name": "Memento Mori",
@@ -2884,6 +2901,11 @@
    "itemName": "Doom Fang Pauldron",
    "itemHash": 241462141,
    "type": "Armor Trait Exotic"
+  },
+  "1156201379": {
+   "name": "Cursed Thrall",
+   "hash": 1156201379,
+   "type": "Weapon Trait Origin"
   },
   "1161469972": {
    "name": "Swashbuckler",
@@ -4505,6 +4527,11 @@
    "hash": 1771339417,
    "type": "Weapon Trait"
   },
+  "1771736209": {
+   "name": "Enlightened Action",
+   "hash": 1771736209,
+   "type": "Weapon Trait Enhanced"
+  },
   "1771897777": {
    "name": "Augmented Drum",
    "hash": 1771897777,
@@ -4881,6 +4908,13 @@
    "itemName": "Telesto",
    "itemHash": 2208405142,
    "type": "Weapon Frame Exotic"
+  },
+  "1931066670": {
+   "name": "Necrochasm Catalyst",
+   "hash": 1931066670,
+   "itemName": "Necrochasm",
+   "itemHash": 1034055198,
+   "type": "Weapon Catalyst Exotic"
   },
   "1934171651": {
    "name": "Supercooled Accelerator",
@@ -9679,6 +9713,11 @@
    "itemHash": 1096253259,
    "type": "Armor Trait Exotic"
   },
+  "4175584682": {
+   "name": "Barrel Constrictor",
+   "hash": 4175584682,
+   "type": "Weapon Trait Enhanced"
+  },
   "4180586736": {
    "name": "Ember of Resolve",
    "hash": 4180586736,
@@ -9698,6 +9737,13 @@
    "name": "Tireless Blade",
    "hash": 4183521337,
    "type": "Weapon Trait Enhanced"
+  },
+  "4184462049": {
+   "name": "Cursebringer",
+   "hash": 4184462049,
+   "itemName": "Necrochasm",
+   "itemHash": 1034055198,
+   "type": "Weapon Frame Exotic"
   },
   "4185339856": {
    "name": "Revolution",
@@ -10429,6 +10475,14 @@
       1484442054,
       2814973067,
       2816578262
+     ]
+    },
+    {
+     "name": "Necrochasm",
+     "has": [
+      4184462049,
+      525593296,
+      1931066670
      ]
     },
     {
@@ -11547,6 +11601,10 @@
     "name": "Dual Loader",
     "linkedWith": 3143051906
    },
+   "31345821": {
+    "name": "Sword Logic",
+    "linkedWith": 639190697
+   },
    "47981717": {
     "name": "Opening Shot",
     "linkedWith": 1370847713
@@ -11710,6 +11768,10 @@
    "624891305": {
     "name": "Desperado",
     "linkedWith": 3047969693
+   },
+   "639190697": {
+    "name": "Sword Logic",
+    "linkedWith": 31345821
    },
    "671806388": {
     "name": "Compulsive Reloader",
@@ -11919,6 +11981,10 @@
     "name": "Bipod",
     "linkedWith": 2282937672
    },
+   "1451849462": {
+    "name": "Barrel Constrictor",
+    "linkedWith": 4175584682
+   },
    "1523649716": {
     "name": "Tap the Trigger",
     "linkedWith": 1890422124
@@ -12030,6 +12096,10 @@
    "1771339417": {
     "name": "Firing Line",
     "linkedWith": 395388285
+   },
+   "1771736209": {
+    "name": "Enlightened Action",
+    "linkedWith": 3828510309
    },
    "1774574192": {
     "name": "Osmosis",
@@ -12619,6 +12689,10 @@
     "name": "Firefly",
     "linkedWith": 1183436451
    },
+   "3828510309": {
+    "name": "Enlightened Action",
+    "linkedWith": 1771736209
+   },
    "3878366039": {
     "name": "Impulse Amplifier",
     "linkedWith": 951095735
@@ -12682,6 +12756,10 @@
    "4116820839": {
     "name": "Snapshot Sights",
     "linkedWith": 957782887
+   },
+   "4175584682": {
+    "name": "Barrel Constrictor",
+    "linkedWith": 1451849462
    },
    "4183521337": {
     "name": "Tireless Blade",
