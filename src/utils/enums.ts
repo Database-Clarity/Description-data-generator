@@ -9,9 +9,14 @@ export enum SocketCategoryEnums {
   weaponFrame = 3956125808,
 
   abilities = 309722977,
+  abilitiesIkora = 3218807805,
   super = 457473665,
-  aspects = 2140934067,
-  fragments = 1313488945,
+  aspectsIkora = 2140934067,
+  aspectsNeomuna = 764703411,
+  aspectsStranger = 3400923910,
+  fragmentsIkora = 1313488945,
+  fragmentsNeomuna = 193371309,
+  fragmentsStranger = 2819965312,
 
   ghostMods = 3886482628,
 }
