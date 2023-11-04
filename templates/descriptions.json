@@ -84,6 +84,21 @@
    "hash": 16700458,
    "type": "Ghost Mod"
   },
+  "20616656": {
+   "name": "Triple Jump",
+   "hash": 20616656,
+   "type": "Subclass Movement"
+  },
+  "20616658": {
+   "name": "High Jump",
+   "hash": 20616658,
+   "type": "Subclass Movement"
+  },
+  "20616659": {
+   "name": "Strafe Jump",
+   "hash": 20616659,
+   "type": "Subclass Movement"
+  },
   "23371658": {
    "name": "Box Breathing",
    "hash": 23371658,
@@ -587,6 +602,26 @@
    "name": "Deeper Origins",
    "hash": 255237663,
    "type": "Armor Mod Seasonal"
+  },
+  "262821312": {
+   "name": "Weavewalk",
+   "hash": 262821312,
+   "type": "Subclass Aspect"
+  },
+  "262821317": {
+   "name": "Weaver's Call",
+   "hash": 262821317,
+   "type": "Subclass Aspect"
+  },
+  "262821318": {
+   "name": "Mindspun Invocation",
+   "hash": 262821318,
+   "type": "Subclass Aspect"
+  },
+  "262821319": {
+   "name": "The Wanderer",
+   "hash": 262821319,
+   "type": "Subclass Aspect"
   },
   "263649945": {
    "name": "Vortex Frame",
@@ -1344,6 +1379,26 @@
    "hash": 537685237,
    "type": "Ghost Mod"
   },
+  "537774540": {
+   "name": "Whisper of Chains",
+   "hash": 537774540,
+   "type": "Subclass Fragment"
+  },
+  "537774541": {
+   "name": "Whisper of Torment",
+   "hash": 537774541,
+   "type": "Subclass Fragment"
+  },
+  "537774542": {
+   "name": "Whisper of Fractures",
+   "hash": 537774542,
+   "type": "Subclass Fragment"
+  },
+  "537774543": {
+   "name": "Whisper of Impetus",
+   "hash": 537774543,
+   "type": "Subclass Fragment"
+  },
   "539051925": {
    "name": "Chill Out",
    "hash": 539051925,
@@ -1598,6 +1653,16 @@
    "name": "Compressed Wave Frame",
    "hash": 667908513,
    "type": "Weapon Frame Enhanced"
+  },
+  "668903196": {
+   "name": "Iceflare Bolts",
+   "hash": 668903196,
+   "type": "Subclass Aspect"
+  },
+  "668903197": {
+   "name": "Frostpulse",
+   "hash": 668903197,
+   "type": "Subclass Aspect"
   },
   "671806388": {
    "name": "Compulsive Reloader",
@@ -2477,6 +2542,26 @@
    "hash": 987673306,
    "type": "Weapon Trait Enhanced"
   },
+  "988980152": {
+   "name": "Drengr's Lash",
+   "hash": 988980152,
+   "type": "Subclass Aspect"
+  },
+  "988980153": {
+   "name": "Into the Fray",
+   "hash": 988980153,
+   "type": "Subclass Aspect"
+  },
+  "988980154": {
+   "name": "Banner of War",
+   "hash": 988980154,
+   "type": "Subclass Aspect"
+  },
+  "988980155": {
+   "name": "Flechette Storm",
+   "hash": 988980155,
+   "type": "Subclass Aspect"
+  },
   "990298390": {
    "name": "Hand-Laid Stock",
    "hash": 990298390,
@@ -2518,6 +2603,11 @@
    "name": "Kill Clip",
    "hash": 1015611457,
    "type": "Weapon Trait"
+  },
+  "1016030582": {
+   "name": "Vortex Grenade",
+   "hash": 1016030582,
+   "type": "Subclass Grenade"
   },
   "1017385934": {
    "name": "Void Dexterity",
@@ -2845,6 +2935,11 @@
    "hash": 1139671158,
    "type": "Armor Mod General"
   },
+  "1139822081": {
+   "name": "Snare Bomb",
+   "hash": 1139822081,
+   "type": "Subclass Melee"
+  },
   "1140096971": {
    "name": "Seraph Rounds",
    "hash": 1140096971,
@@ -3107,6 +3202,26 @@
    "hash": 1236001742,
    "type": "Weapon Frame"
   },
+  "1237488984": {
+   "name": "Blink",
+   "hash": 1237488984,
+   "type": "Subclass Movement"
+  },
+  "1237488985": {
+   "name": "Balanced Glide",
+   "hash": 1237488985,
+   "type": "Subclass Movement"
+  },
+  "1237488986": {
+   "name": "Burst Glide",
+   "hash": 1237488986,
+   "type": "Subclass Movement"
+  },
+  "1237488987": {
+   "name": "Strafe Glide",
+   "hash": 1237488987,
+   "type": "Subclass Movement"
+  },
   "1241894699": {
    "name": "Together Forever",
    "hash": 1241894699,
@@ -3135,6 +3250,11 @@
    "name": "Modularity (Gambit)",
    "hash": 1251927947,
    "type": "Ghost Mod"
+  },
+  "1255073825": {
+   "name": "Void Spike",
+   "hash": 1255073825,
+   "type": "Subclass Grenade"
   },
   "1255614814": {
    "name": "Font of Focus",
@@ -3472,6 +3592,21 @@
    "hash": 1380253176,
    "type": "Weapon Perk"
   },
+  "1380268164": {
+   "name": "Catapult Lift",
+   "hash": 1380268164,
+   "type": "Subclass Movement"
+  },
+  "1380268166": {
+   "name": "High Lift",
+   "hash": 1380268166,
+   "type": "Subclass Movement"
+  },
+  "1380268167": {
+   "name": "Strafe Lift",
+   "hash": 1380268167,
+   "type": "Subclass Movement"
+  },
   "1380383475": {
    "name": "Cerberus+1 Catalyst",
    "hash": 1380383475,
@@ -3795,6 +3930,11 @@
    "hash": 1513326571,
    "type": "Weapon Mod"
   },
+  "1514173218": {
+   "name": "Scatter Grenade",
+   "hash": 1514173218,
+   "type": "Subclass Grenade"
+  },
   "1515139595": {
    "name": "Bountiful Harvest",
    "hash": 1515139595,
@@ -3853,6 +3993,11 @@
    "name": "Vorpal Weapon",
    "hash": 1546637391,
    "type": "Weapon Trait"
+  },
+  "1547656727": {
+   "name": "Magnetic Grenade",
+   "hash": 1547656727,
+   "type": "Subclass Grenade"
   },
   "1547782973": {
    "name": "Centrifuse Catalyst",
@@ -3928,6 +4073,11 @@
    "name": "Rewind Rounds",
    "hash": 1563455254,
    "type": "Weapon Trait Enhanced"
+  },
+  "1563930741": {
+   "name": "Howl of the Storm",
+   "hash": 1563930741,
+   "type": "Subclass Aspect"
   },
   "1564126489": {
    "name": "Rapid-Fire Frame",
@@ -4862,6 +5012,11 @@
    "itemHash": 1341951177,
    "type": "Armor Trait Exotic"
   },
+  "1920417385": {
+   "name": "Grim Harvest",
+   "hash": 1920417385,
+   "type": "Subclass Aspect"
+  },
   "1924584408": {
    "name": "Grenade Kickstart",
    "hash": 1924584408,
@@ -5117,6 +5272,16 @@
    "name": "Momentum Transfer",
    "hash": 2031584061,
    "type": "Armor Mod General"
+  },
+  "2031919264": {
+   "name": "Tectonic Harvest",
+   "hash": 2031919264,
+   "type": "Subclass Aspect"
+  },
+  "2031919265": {
+   "name": "Cryoclasm",
+   "hash": 2031919265,
+   "type": "Subclass Aspect"
   },
   "2037312142": {
    "name": "Controlled Burst",
@@ -5458,6 +5623,16 @@
    "itemHash": 1473821207,
    "type": "Weapon Trait Origin Exotic"
   },
+  "2209081648": {
+   "name": "Empowering Rift",
+   "hash": 2209081648,
+   "type": "Subclass Class"
+  },
+  "2209081649": {
+   "name": "Healing Rift",
+   "hash": 2209081649,
+   "type": "Subclass Class"
+  },
   "2209107628": {
    "name": "Greater Core Harvest (Vanguard)",
    "hash": 2209107628,
@@ -5613,6 +5788,11 @@
    "hash": 2264456959,
    "type": "Weapon Frame Enhanced"
   },
+  "2265076177": {
+   "name": "Suppressor Grenade",
+   "hash": 2265076177,
+   "type": "Subclass Grenade"
+  },
   "2267311547": {
    "name": "Stasis Dexterity",
    "hash": 2267311547,
@@ -5721,6 +5901,11 @@
    "name": "Adept Projectile Speed",
    "hash": 2299766748,
    "type": "Weapon Mod"
+  },
+  "2299867342": {
+   "name": "Pocket Singularity",
+   "hash": 2299867342,
+   "type": "Subclass Melee"
   },
   "2303417969": {
    "name": "Strand Reserves",
@@ -6099,6 +6284,26 @@
    "itemHash": 1345867571,
    "type": "Weapon Trait Exotic"
   },
+  "2483898428": {
+   "name": "Whisper of Rending",
+   "hash": 2483898428,
+   "type": "Subclass Fragment"
+  },
+  "2483898429": {
+   "name": "Whisper of Conduction",
+   "hash": 2483898429,
+   "type": "Subclass Fragment"
+  },
+  "2483898430": {
+   "name": "Whisper of Rime",
+   "hash": 2483898430,
+   "type": "Subclass Fragment"
+  },
+  "2483898431": {
+   "name": "Whisper of Hunger",
+   "hash": 2483898431,
+   "type": "Subclass Fragment"
+  },
   "2485657760": {
    "name": "Firepower",
    "hash": 2485657760,
@@ -6390,10 +6595,20 @@
    "itemHash": 1234150730,
    "type": "Weapon Frame Exotic"
   },
+  "2642597904": {
+   "name": "Bleak Watcher",
+   "hash": 2642597904,
+   "type": "Subclass Aspect"
+  },
   "2649291407": {
    "name": "Fastball",
    "hash": 2649291407,
    "type": "Armor Mod General"
+  },
+  "2651551055": {
+   "name": "Glacial Harvest",
+   "hash": 2651551055,
+   "type": "Subclass Aspect"
   },
   "2652708987": {
    "name": "Successful Warm-Up",
@@ -6566,6 +6781,16 @@
    "name": "Shadowshot: Deadfall",
    "hash": 2722573683,
    "type": "Subclass Super"
+  },
+  "2722641740": {
+   "name": "Towering Barricade",
+   "hash": 2722641740,
+   "type": "Subclass Class"
+  },
+  "2722641741": {
+   "name": "Rally Barricade",
+   "hash": 2722641741,
+   "type": "Subclass Class"
   },
   "2724068510": {
    "name": "Arc Siphon",
@@ -6834,6 +7059,11 @@
    "hash": 2806361224,
    "type": "Weapon Frame Enhanced"
   },
+  "2809141585": {
+   "name": "Void Wall",
+   "hash": 2809141585,
+   "type": "Subclass Grenade"
+  },
   "2809342386": {
    "name": "Shackle Grenade",
    "hash": 2809342386,
@@ -6862,6 +7092,16 @@
    "itemName": "Monte Carlo",
    "itemHash": 4068264807,
    "type": "Weapon Catalyst Exotic"
+  },
+  "2816982784": {
+   "name": "Marksman's Dodge",
+   "hash": 2816982784,
+   "type": "Subclass Class"
+  },
+  "2816982785": {
+   "name": "Gambler's Dodge",
+   "hash": 2816982785,
+   "type": "Subclass Class"
   },
   "2818140350": {
    "name": "Dynamic Duo",
@@ -7103,6 +7343,16 @@
    "name": "Kill Clip",
    "hash": 2923251173,
    "type": "Weapon Trait Enhanced"
+  },
+  "2934767476": {
+   "name": "Shatterdive",
+   "hash": 2934767476,
+   "type": "Subclass Aspect"
+  },
+  "2934767477": {
+   "name": "Winter's Shroud",
+   "hash": 2934767477,
+   "type": "Subclass Aspect"
   },
   "2938480696": {
    "name": "Rapid Hit",
@@ -7679,6 +7929,26 @@
    "itemHash": 46125926,
    "type": "Weapon Catalyst Exotic"
   },
+  "3192552688": {
+   "name": "Thread of Binding",
+   "hash": 3192552688,
+   "type": "Subclass Fragment"
+  },
+  "3192552689": {
+   "name": "Thread of Isolation",
+   "hash": 3192552689,
+   "type": "Subclass Fragment"
+  },
+  "3192552690": {
+   "name": "Thread of Continuity",
+   "hash": 3192552690,
+   "type": "Subclass Fragment"
+  },
+  "3192552691": {
+   "name": "Thread of Generation",
+   "hash": 3192552691,
+   "type": "Subclass Fragment"
+  },
   "3194351027": {
    "name": "Explosive Light",
    "hash": 3194351027,
@@ -7745,6 +8015,11 @@
    "name": "Flared Magwell",
    "hash": 3230963543,
    "type": "Weapon Perk"
+  },
+  "3232422679": {
+   "name": "Axion Bolt",
+   "hash": 3232422679,
+   "type": "Subclass Grenade"
   },
   "3239299468": {
    "name": "Sacred Flame",
@@ -8210,6 +8485,36 @@
    "name": "Aggressive Frame",
    "hash": 3468089894,
    "type": "Weapon Frame"
+  },
+  "3469412968": {
+   "name": "Whisper of Refraction",
+   "hash": 3469412968,
+   "type": "Subclass Fragment"
+  },
+  "3469412969": {
+   "name": "Whisper of Durance",
+   "hash": 3469412969,
+   "type": "Subclass Fragment"
+  },
+  "3469412970": {
+   "name": "Whisper of Hedrons",
+   "hash": 3469412970,
+   "type": "Subclass Fragment"
+  },
+  "3469412971": {
+   "name": "Whisper of Fissures",
+   "hash": 3469412971,
+   "type": "Subclass Fragment"
+  },
+  "3469412974": {
+   "name": "Whisper of Bonds",
+   "hash": 3469412974,
+   "type": "Subclass Fragment"
+  },
+  "3469412975": {
+   "name": "Whisper of Shards",
+   "hash": 3469412975,
+   "type": "Subclass Fragment"
   },
   "3470828242": {
    "name": "Flame Refraction",
@@ -9010,6 +9315,11 @@
    "hash": 3854948621,
    "type": "Subclass Fragment"
   },
+  "3866705246": {
+   "name": "Diamond Lance",
+   "hash": 3866705246,
+   "type": "Subclass Aspect"
+  },
   "3868766766": {
    "name": "Particle Repeater",
    "hash": 3868766766,
@@ -9745,6 +10055,11 @@
    "itemHash": 1034055198,
    "type": "Weapon Frame Exotic"
   },
+  "4184589900": {
+   "name": "Touch of Winter",
+   "hash": 4184589900,
+   "type": "Subclass Aspect"
+  },
   "4185339856": {
    "name": "Revolution",
    "hash": 4185339856,
@@ -9828,12 +10143,72 @@
    "itemHash": 400096939,
    "type": "Weapon Frame Exotic"
   },
+  "4208512210": {
+   "name": "Thread of Propagation",
+   "hash": 4208512210,
+   "type": "Subclass Fragment"
+  },
+  "4208512211": {
+   "name": "Thread of Evolution",
+   "hash": 4208512211,
+   "type": "Subclass Fragment"
+  },
+  "4208512216": {
+   "name": "Thread of Ascent",
+   "hash": 4208512216,
+   "type": "Subclass Fragment"
+  },
+  "4208512217": {
+   "name": "Thread of Finality",
+   "hash": 4208512217,
+   "type": "Subclass Fragment"
+  },
+  "4208512218": {
+   "name": "Thread of Mind",
+   "hash": 4208512218,
+   "type": "Subclass Fragment"
+  },
+  "4208512219": {
+   "name": "Thread of Fury",
+   "hash": 4208512219,
+   "type": "Subclass Fragment"
+  },
+  "4208512220": {
+   "name": "Thread of Rebirth",
+   "hash": 4208512220,
+   "type": "Subclass Fragment"
+  },
+  "4208512221": {
+   "name": "Thread of Transmutation",
+   "hash": 4208512221,
+   "type": "Subclass Fragment"
+  },
+  "4208512222": {
+   "name": "Thread of Warding",
+   "hash": 4208512222,
+   "type": "Subclass Fragment"
+  },
+  "4208512223": {
+   "name": "Thread of Wisdom",
+   "hash": 4208512223,
+   "type": "Subclass Fragment"
+  },
   "4218954970": {
    "name": "Symmetry Catalyst",
    "hash": 4218954970,
    "itemName": "Symmetry",
    "itemHash": 4017959782,
    "type": "Weapon Catalyst Exotic"
+  },
+  "4220332374": {
+   "name": "Shield Throw",
+   "hash": 4220332374,
+   "type": "Subclass Melee"
+  },
+  "4220332375": {
+   "name": "Shield Bash",
+   "hash": 4220332375,
+   "type": "Subclass Melee"
   },
   "4222205045": {
    "name": "Soaring Fusilier",
@@ -9908,6 +10283,26 @@
    "name": "Subsistence",
    "hash": 4245865861,
    "type": "Weapon Trait Enhanced"
+  },
+  "4249729124": {
+   "name": "Whirling Maelstrom",
+   "hash": 4249729124,
+   "type": "Subclass Aspect"
+  },
+  "4249729125": {
+   "name": "Threaded Specter",
+   "hash": 4249729125,
+   "type": "Subclass Aspect"
+  },
+  "4249729126": {
+   "name": "Ensnaring Slam",
+   "hash": 4249729126,
+   "type": "Subclass Aspect"
+  },
+  "4249729127": {
+   "name": "Widow's Silk",
+   "hash": 4249729127,
+   "type": "Subclass Aspect"
   },
   "4249817697": {
    "name": "Adaptive Frame",

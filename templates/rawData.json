@@ -162,6 +162,30 @@
   "hash": 16700458,
   "type": "Ghost Mod"
  },
+ "20616656": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Triple Jump",
+  "hash": 20616656,
+  "type": "Subclass Movement"
+ },
+ "20616658": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "High Jump",
+  "hash": 20616658,
+  "type": "Subclass Movement"
+ },
+ "20616659": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Strafe Jump",
+  "hash": 20616659,
+  "type": "Subclass Movement"
+ },
  "23371658": {
   "appearsOn": [
    "Linear Fusion Rifle",
@@ -1022,6 +1046,38 @@
   "name": "Deeper Origins",
   "hash": 255237663,
   "type": "Armor Mod Seasonal"
+ },
+ "262821312": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Weavewalk",
+  "hash": 262821312,
+  "type": "Subclass Aspect"
+ },
+ "262821317": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Weaver's Call",
+  "hash": 262821317,
+  "type": "Subclass Aspect"
+ },
+ "262821318": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Mindspun Invocation",
+  "hash": 262821318,
+  "type": "Subclass Aspect"
+ },
+ "262821319": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "The Wanderer",
+  "hash": 262821319,
+  "type": "Subclass Aspect"
  },
  "263649945": {
   "appearsOn": [
@@ -2368,6 +2424,46 @@
   "hash": 537685237,
   "type": "Ghost Mod"
  },
+ "537774540": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Chains",
+  "hash": 537774540,
+  "type": "Subclass Fragment"
+ },
+ "537774541": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Torment",
+  "hash": 537774541,
+  "type": "Subclass Fragment"
+ },
+ "537774542": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Fractures",
+  "hash": 537774542,
+  "type": "Subclass Fragment"
+ },
+ "537774543": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Impetus",
+  "hash": 537774543,
+  "type": "Subclass Fragment"
+ },
  "539051925": {
   "appearsOn": [
    "Hunter Cloak",
@@ -2806,6 +2902,22 @@
   "name": "Compressed Wave Frame",
   "hash": 667908513,
   "type": "Weapon Frame Enhanced"
+ },
+ "668903196": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Iceflare Bolts",
+  "hash": 668903196,
+  "type": "Subclass Aspect"
+ },
+ "668903197": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Frostpulse",
+  "hash": 668903197,
+  "type": "Subclass Aspect"
  },
  "671806388": {
   "appearsOn": [
@@ -4425,6 +4537,38 @@
   "hash": 987673306,
   "type": "Weapon Trait Enhanced"
  },
+ "988980152": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Drengr's Lash",
+  "hash": 988980152,
+  "type": "Subclass Aspect"
+ },
+ "988980153": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Into the Fray",
+  "hash": 988980153,
+  "type": "Subclass Aspect"
+ },
+ "988980154": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Banner of War",
+  "hash": 988980154,
+  "type": "Subclass Aspect"
+ },
+ "988980155": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Flechette Storm",
+  "hash": 988980155,
+  "type": "Subclass Aspect"
+ },
  "990298390": {
   "appearsOn": [
    "Sniper Rifle",
@@ -4513,6 +4657,16 @@
   "name": "Kill Clip",
   "hash": 1015611457,
   "type": "Weapon Trait"
+ },
+ "1016030582": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Vortex Grenade",
+  "hash": 1016030582,
+  "type": "Subclass Grenade"
  },
  "1017385934": {
   "appearsOn": [
@@ -5078,6 +5232,14 @@
   "hash": 1139671158,
   "type": "Armor Mod General"
  },
+ "1139822081": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Snare Bomb",
+  "hash": 1139822081,
+  "type": "Subclass Melee"
+ },
  "1140096971": {
   "appearsOn": [
    "Hand Cannon",
@@ -5517,6 +5679,38 @@
   "hash": 1236001742,
   "type": "Weapon Frame"
  },
+ "1237488984": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Blink",
+  "hash": 1237488984,
+  "type": "Subclass Movement"
+ },
+ "1237488985": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Balanced Glide",
+  "hash": 1237488985,
+  "type": "Subclass Movement"
+ },
+ "1237488986": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Burst Glide",
+  "hash": 1237488986,
+  "type": "Subclass Movement"
+ },
+ "1237488987": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Strafe Glide",
+  "hash": 1237488987,
+  "type": "Subclass Movement"
+ },
  "1241894699": {
   "appearsOn": [
    "Sidearm"
@@ -5561,6 +5755,16 @@
   "name": "Modularity (Gambit)",
   "hash": 1251927947,
   "type": "Ghost Mod"
+ },
+ "1255073825": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Void Spike",
+  "hash": 1255073825,
+  "type": "Subclass Grenade"
  },
  "1255614814": {
   "appearsOn": [
@@ -6152,6 +6356,30 @@
   "name": "High-Explosive Ordnance",
   "hash": 1380253176,
   "type": "Weapon Perk"
+ },
+ "1380268164": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Catapult Lift",
+  "hash": 1380268164,
+  "type": "Subclass Movement"
+ },
+ "1380268166": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "High Lift",
+  "hash": 1380268166,
+  "type": "Subclass Movement"
+ },
+ "1380268167": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Strafe Lift",
+  "hash": 1380268167,
+  "type": "Subclass Movement"
  },
  "1380383475": {
   "appearsOn": [
@@ -6747,6 +6975,16 @@
   "hash": 1513326571,
   "type": "Weapon Mod"
  },
+ "1514173218": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Scatter Grenade",
+  "hash": 1514173218,
+  "type": "Subclass Grenade"
+ },
  "1515139595": {
   "appearsOn": [
    "Ghost Shell"
@@ -6889,6 +7127,16 @@
   "hash": 1546637391,
   "type": "Weapon Trait"
  },
+ "1547656727": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Magnetic Grenade",
+  "hash": 1547656727,
+  "type": "Subclass Grenade"
+ },
  "1547782973": {
   "appearsOn": [
    1912669214
@@ -7020,6 +7268,14 @@
   "name": "Rewind Rounds",
   "hash": 1563455254,
   "type": "Weapon Trait Enhanced"
+ },
+ "1563930741": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Howl of the Storm",
+  "hash": 1563930741,
+  "type": "Subclass Aspect"
  },
  "1564126489": {
   "appearsOn": [
@@ -8703,6 +8959,14 @@
   "hash": 1919923227,
   "type": "Armor Trait Exotic"
  },
+ "1920417385": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Grim Harvest",
+  "hash": 1920417385,
+  "type": "Subclass Aspect"
+ },
  "1924584408": {
   "appearsOn": [
    "Gauntlets"
@@ -9164,6 +9428,22 @@
   "name": "Momentum Transfer",
   "hash": 2031584061,
   "type": "Armor Mod General"
+ },
+ "2031919264": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Tectonic Harvest",
+  "hash": 2031919264,
+  "type": "Subclass Aspect"
+ },
+ "2031919265": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Cryoclasm",
+  "hash": 2031919265,
+  "type": "Subclass Aspect"
  },
  "2037312142": {
   "appearsOn": [
@@ -9769,6 +10049,22 @@
   "hash": 2206869417,
   "type": "Weapon Trait Origin Exotic"
  },
+ "2209081648": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Empowering Rift",
+  "hash": 2209081648,
+  "type": "Subclass Class"
+ },
+ "2209081649": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Healing Rift",
+  "hash": 2209081649,
+  "type": "Subclass Class"
+ },
  "2209107628": {
   "appearsOn": [
    "Ghost Shell"
@@ -10043,6 +10339,16 @@
   "hash": 2264456959,
   "type": "Weapon Frame Enhanced"
  },
+ "2265076177": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Suppressor Grenade",
+  "hash": 2265076177,
+  "type": "Subclass Grenade"
+ },
  "2267311547": {
   "appearsOn": [
    "Gauntlets"
@@ -10246,6 +10552,14 @@
   "name": "Adept Projectile Speed",
   "hash": 2299766748,
   "type": "Weapon Mod"
+ },
+ "2299867342": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Pocket Singularity",
+  "hash": 2299867342,
+  "type": "Subclass Melee"
  },
  "2303417969": {
   "appearsOn": [
@@ -10907,6 +11221,46 @@
   "hash": 2482418662,
   "type": "Weapon Trait Exotic"
  },
+ "2483898428": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Rending",
+  "hash": 2483898428,
+  "type": "Subclass Fragment"
+ },
+ "2483898429": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Conduction",
+  "hash": 2483898429,
+  "type": "Subclass Fragment"
+ },
+ "2483898430": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Rime",
+  "hash": 2483898430,
+  "type": "Subclass Fragment"
+ },
+ "2483898431": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Hunger",
+  "hash": 2483898431,
+  "type": "Subclass Fragment"
+ },
  "2485657760": {
   "appearsOn": [
    "Gauntlets"
@@ -11447,6 +11801,14 @@
   "hash": 2641107734,
   "type": "Weapon Frame Exotic"
  },
+ "2642597904": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Bleak Watcher",
+  "hash": 2642597904,
+  "type": "Subclass Aspect"
+ },
  "2649291407": {
   "appearsOn": [
    "Gauntlets"
@@ -11454,6 +11816,14 @@
   "name": "Fastball",
   "hash": 2649291407,
   "type": "Armor Mod General"
+ },
+ "2651551055": {
+  "appearsOn": [
+   "Warlock Subclass"
+  ],
+  "name": "Glacial Harvest",
+  "hash": 2651551055,
+  "type": "Subclass Aspect"
  },
  "2652708987": {
   "appearsOn": [
@@ -11777,6 +12147,22 @@
   "name": "Shadowshot: Deadfall",
   "hash": 2722573683,
   "type": "Subclass Super"
+ },
+ "2722641740": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Towering Barricade",
+  "hash": 2722641740,
+  "type": "Subclass Class"
+ },
+ "2722641741": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Rally Barricade",
+  "hash": 2722641741,
+  "type": "Subclass Class"
  },
  "2724068510": {
   "appearsOn": [
@@ -12248,6 +12634,16 @@
   "hash": 2806361224,
   "type": "Weapon Frame Enhanced"
  },
+ "2809141585": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Void Wall",
+  "hash": 2809141585,
+  "type": "Subclass Grenade"
+ },
  "2809342386": {
   "appearsOn": [
    "Titan Subclass",
@@ -12289,6 +12685,22 @@
   "name": "Monte Carlo Catalyst",
   "hash": 2816578262,
   "type": "Weapon Catalyst Exotic"
+ },
+ "2816982784": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Marksman's Dodge",
+  "hash": 2816982784,
+  "type": "Subclass Class"
+ },
+ "2816982785": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Gambler's Dodge",
+  "hash": 2816982785,
+  "type": "Subclass Class"
  },
  "2818140350": {
   "appearsOn": [
@@ -12748,6 +13160,22 @@
   "name": "Kill Clip",
   "hash": 2923251173,
   "type": "Weapon Trait Enhanced"
+ },
+ "2934767476": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Shatterdive",
+  "hash": 2934767476,
+  "type": "Subclass Aspect"
+ },
+ "2934767477": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Winter's Shroud",
+  "hash": 2934767477,
+  "type": "Subclass Aspect"
  },
  "2938480696": {
   "appearsOn": [
@@ -13779,6 +14207,46 @@
   "hash": 3189860891,
   "type": "Weapon Catalyst Exotic"
  },
+ "3192552688": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Binding",
+  "hash": 3192552688,
+  "type": "Subclass Fragment"
+ },
+ "3192552689": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Isolation",
+  "hash": 3192552689,
+  "type": "Subclass Fragment"
+ },
+ "3192552690": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Continuity",
+  "hash": 3192552690,
+  "type": "Subclass Fragment"
+ },
+ "3192552691": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Generation",
+  "hash": 3192552691,
+  "type": "Subclass Fragment"
+ },
  "3194351027": {
   "appearsOn": [
    "Grenade Launcher",
@@ -13927,6 +14395,16 @@
   "name": "Flared Magwell",
   "hash": 3230963543,
   "type": "Weapon Perk"
+ },
+ "3232422679": {
+  "appearsOn": [
+   "Hunter Subclass",
+   "Titan Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Axion Bolt",
+  "hash": 3232422679,
+  "type": "Subclass Grenade"
  },
  "3239299468": {
   "appearsOn": [
@@ -14805,6 +15283,66 @@
   "name": "Aggressive Frame",
   "hash": 3468089894,
   "type": "Weapon Frame"
+ },
+ "3469412968": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Refraction",
+  "hash": 3469412968,
+  "type": "Subclass Fragment"
+ },
+ "3469412969": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Durance",
+  "hash": 3469412969,
+  "type": "Subclass Fragment"
+ },
+ "3469412970": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Hedrons",
+  "hash": 3469412970,
+  "type": "Subclass Fragment"
+ },
+ "3469412971": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Fissures",
+  "hash": 3469412971,
+  "type": "Subclass Fragment"
+ },
+ "3469412974": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Bonds",
+  "hash": 3469412974,
+  "type": "Subclass Fragment"
+ },
+ "3469412975": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Whisper of Shards",
+  "hash": 3469412975,
+  "type": "Subclass Fragment"
  },
  "3470828242": {
   "appearsOn": [
@@ -16268,6 +16806,14 @@
   "hash": 3854948621,
   "type": "Subclass Fragment"
  },
+ "3866705246": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Diamond Lance",
+  "hash": 3866705246,
+  "type": "Subclass Aspect"
+ },
  "3868766766": {
   "appearsOn": [
    "Fusion Rifle",
@@ -17604,6 +18150,14 @@
   "hash": 4184462049,
   "type": "Weapon Frame Exotic"
  },
+ "4184589900": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Touch of Winter",
+  "hash": 4184589900,
+  "type": "Subclass Aspect"
+ },
  "4185339856": {
   "appearsOn": [
    4017959782
@@ -17762,6 +18316,106 @@
   "hash": 4208418110,
   "type": "Weapon Frame Exotic"
  },
+ "4208512210": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Propagation",
+  "hash": 4208512210,
+  "type": "Subclass Fragment"
+ },
+ "4208512211": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Evolution",
+  "hash": 4208512211,
+  "type": "Subclass Fragment"
+ },
+ "4208512216": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Ascent",
+  "hash": 4208512216,
+  "type": "Subclass Fragment"
+ },
+ "4208512217": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Finality",
+  "hash": 4208512217,
+  "type": "Subclass Fragment"
+ },
+ "4208512218": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Mind",
+  "hash": 4208512218,
+  "type": "Subclass Fragment"
+ },
+ "4208512219": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Fury",
+  "hash": 4208512219,
+  "type": "Subclass Fragment"
+ },
+ "4208512220": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Rebirth",
+  "hash": 4208512220,
+  "type": "Subclass Fragment"
+ },
+ "4208512221": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Transmutation",
+  "hash": 4208512221,
+  "type": "Subclass Fragment"
+ },
+ "4208512222": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Warding",
+  "hash": 4208512222,
+  "type": "Subclass Fragment"
+ },
+ "4208512223": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Hunter Subclass",
+   "Warlock Subclass"
+  ],
+  "name": "Thread of Wisdom",
+  "hash": 4208512223,
+  "type": "Subclass Fragment"
+ },
  "4218954970": {
   "appearsOn": [
    4017959782
@@ -17769,6 +18423,22 @@
   "name": "Symmetry Catalyst",
   "hash": 4218954970,
   "type": "Weapon Catalyst Exotic"
+ },
+ "4220332374": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Shield Throw",
+  "hash": 4220332374,
+  "type": "Subclass Melee"
+ },
+ "4220332375": {
+  "appearsOn": [
+   "Titan Subclass"
+  ],
+  "name": "Shield Bash",
+  "hash": 4220332375,
+  "type": "Subclass Melee"
  },
  "4222205045": {
   "appearsOn": [
@@ -17909,6 +18579,38 @@
   "name": "Subsistence",
   "hash": 4245865861,
   "type": "Weapon Trait Enhanced"
+ },
+ "4249729124": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Whirling Maelstrom",
+  "hash": 4249729124,
+  "type": "Subclass Aspect"
+ },
+ "4249729125": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Threaded Specter",
+  "hash": 4249729125,
+  "type": "Subclass Aspect"
+ },
+ "4249729126": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Ensnaring Slam",
+  "hash": 4249729126,
+  "type": "Subclass Aspect"
+ },
+ "4249729127": {
+  "appearsOn": [
+   "Hunter Subclass"
+  ],
+  "name": "Widow's Silk",
+  "hash": 4249729127,
+  "type": "Subclass Aspect"
  },
  "4249817697": {
   "appearsOn": [
