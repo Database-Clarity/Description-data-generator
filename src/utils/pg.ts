@@ -23,7 +23,7 @@ export const updateData = async (data: FinalData) => {
   })
   await client.connect()
 
-  console.log(Object.keys(data).length)
+  console.log('Perks found', Object.keys(data).length)
 
   const descriptionObject = JSON.stringify({
     '2000-01-01 12:00:00.000': {
