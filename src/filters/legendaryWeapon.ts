@@ -1,23 +1,22 @@
-import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
-
-import { PerkData } from '../main.js'
-import { SocketCategoryEnums } from '../utils/enums.js'
+import { PerkDataList } from '../main.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+import { InventoryItem } from '../utils/bungieTypes/inventoryItem.js'
+import { InventoryItems, PerkTypes, PlugSets } from '../utils/bungieTypes/manifest.js'
 
-export const legendaryWeapons = (
-  inventoryItems: InventoryItems,
-  plugSets: PlugSets,
-  inventoryItemWeapons: InventoryItem[]
-) => {
-  const data: { [key: string]: PerkData } = {}
+export const legendaryWeapons = (inventoryItems: InventoryItems, plugSets: PlugSets, data: PerkDataList) => {
+  const weaponArr = Object.values(inventoryItems).filter(
+    (item) => item.itemType === 3 && item.itemTypeAndTierDisplayName?.includes('Legendary')
+  )
 
-  const addData = (weapon: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+  const addData = (weapon: InventoryItem, perk: InventoryItem, type: PerkTypes, frameArr?: InventoryItem[]) => {
     const weaponType = weapon.itemTypeDisplayName
     if (weaponType === undefined) return
 
     if (data[perk.hash] !== undefined) {
       data[perk.hash].appearsOn.add(weaponType)
+      data[perk.hash].linkedWith = [
+        ...new Set([...(data[perk.hash].linkedWith ?? []), ...(frameArr?.map((frame) => frame.hash) ?? [])]),
+      ]
       return
     }
 
@@ -26,74 +25,46 @@ export const legendaryWeapons = (
       name: perk.displayProperties.name,
       hash: Number(perk.hash),
       type,
+      linkedWith: frameArr?.map((frame) => frame.hash) ?? [],
     }
   }
 
-  inventoryItemWeapons.forEach((weapon) => {
-    const weaponSockets = weapon.sockets
-    if (weaponSockets === undefined) return
+  weaponArr.forEach((weapon) => {
+    const frameArr = getAllFromSocket(inventoryItems, plugSets, weapon, ['weapon frame'])
+    const perkArr = getAllFromSocket(inventoryItems, plugSets, weapon, ['weapon perks'])
+    const modArr = getAllFromSocket(inventoryItems, plugSets, weapon, ['weapon mods'])
 
-    const frameSocketCategory = weaponSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponFrame
-    )
-    const perkSocketCategory = weaponSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponPerks
-    )
-    const modSocketCategory = weaponSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponMods
-    )
-
-    frameSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const frameArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
-
-      frameArr.forEach((frameHash) => {
-        const frame = inventoryItems[frameHash]
-
-        if (frame?.itemTypeDisplayName === 'Intrinsic') {
-          addData(weapon, frame, 'Weapon Frame')
-          return
-        }
-        if (frame?.itemTypeDisplayName === 'Enhanced Intrinsic') {
-          addData(weapon, frame, 'Weapon Frame Enhanced')
-        }
-      })
+    frameArr.forEach((frame) => {
+      if (frame.itemTypeDisplayName === 'Intrinsic') {
+        addData(weapon, frame, 'Weapon Frame', frameArr)
+        return
+      }
+      if (frame.itemTypeDisplayName === 'Enhanced Intrinsic') {
+        addData(weapon, frame, 'Weapon Frame Enhanced', frameArr)
+      }
     })
 
-    perkSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const perkArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
-
-      perkArr.forEach((frameHash) => {
-        const perk = inventoryItems[frameHash]
-
-        switch (perk?.itemTypeDisplayName) {
-          case 'Trait':
-            addData(weapon, perk, 'Weapon Trait')
-            break
-          case 'Origin Trait':
-            addData(weapon, perk, 'Weapon Trait Origin')
-            break
-          case 'Enhanced Trait':
-            addData(weapon, perk, 'Weapon Trait Enhanced')
-            break
-          default:
-            addData(weapon, perk, 'Weapon Perk')
-            break
-        }
-      })
+    perkArr.forEach((perk) => {
+      switch (perk.itemTypeDisplayName) {
+        case 'Trait':
+          addData(weapon, perk, 'Weapon Trait')
+          break
+        case 'Origin Trait':
+          addData(weapon, perk, 'Weapon Trait Origin')
+          break
+        case 'Enhanced Trait':
+          addData(weapon, perk, 'Weapon Trait Enhanced')
+          break
+        default:
+          addData(weapon, perk, 'Weapon Perk')
+          break
+      }
     })
 
-    modSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const modArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
-
-      modArr.forEach((modHash) => {
-        const mod = inventoryItems[modHash]
-
-        if (mod?.itemTypeDisplayName === 'Weapon Mod') {
-          addData(weapon, mod, 'Weapon Mod')
-        }
-      })
+    modArr.forEach((mod) => {
+      if (mod.itemTypeDisplayName === 'Weapon Mod') {
+        addData(weapon, mod, 'Weapon Mod')
+      }
     })
   })
-
-  return data
 }

@@ -1,18 +1,10 @@
-import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
-
-import { PerkData, PerkDataList } from '../main.js'
-import { SocketCategoryEnums } from '../utils/enums.js'
+import { PerkDataList } from '../main.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+import { InventoryItem } from '../utils/bungieTypes/inventoryItem.js'
+import { InventoryItems, PerkTypes, PlugSets } from '../utils/bungieTypes/manifest.js'
 
-export const weaponCraftingRecipes = (
-  inventoryItems: InventoryItems,
-  plugSets: PlugSets,
-  craftingRecipeArr: InventoryItem[],
-  legendaryWeaponsList: PerkDataList,
-  exoticWeaponsList: PerkDataList
-) => {
-  const data: { [key: string]: PerkData } = { ...legendaryWeaponsList, ...exoticWeaponsList }
+export const weaponCraftingRecipes = (inventoryItems: InventoryItems, plugSets: PlugSets, data: PerkDataList) => {
+  const craftingRecipeArr = Object.values(inventoryItems).filter((item) => item.itemType === 30)
 
   const addData = (weapon: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
     const weaponTypeOrHash = weapon.inventory.tierTypeName === 'Exotic' ? weapon.hash : weapon.itemTypeDisplayName
@@ -33,49 +25,39 @@ export const weaponCraftingRecipes = (
   }
 
   craftingRecipeArr.forEach((recipe) => {
-    const weaponSockets = recipe.sockets
-    if (weaponSockets === undefined) return
+    const craftedPerkArr = getAllFromSocket(inventoryItems, plugSets, recipe, ['weapon crafting perks'])
 
-    const craftingSocketCategory = weaponSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.weaponCraftingPerks
-    )
+    craftedPerkArr.forEach((perk) => {
+      const craftedWeapon = inventoryItems[recipe?.crafting?.outputItemHash || '']
+      const isExotic = craftedWeapon.inventory.tierTypeName === 'Exotic'
 
-    craftingSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const craftedPerkArr = getAllFromSocket(inventoryItems, plugSets, weaponSockets.socketEntries[socketIndex])
+      if (perk?.plug?.uiPlugLabel === 'masterwork' || perk?.displayProperties.name.endsWith(' Catalyst')) {
+        addData(craftedWeapon, perk, 'Weapon Catalyst Exotic')
+        return
+      }
 
-      craftedPerkArr.forEach((perkHash) => {
-        const perk = inventoryItems[perkHash]
-        const craftedWeapon = inventoryItems[recipe?.crafting?.outputItemHash || '']
-        const isExotic = craftedWeapon.inventory.tierTypeName === 'Exotic'
+      const exoticText = isExotic ? ' Exotic' : ''
 
-        if (perk?.plug?.uiPlugLabel === 'masterwork' || perk?.displayProperties.name.endsWith(' Catalyst')) {
-          addData(craftedWeapon, perk, 'Weapon Catalyst Exotic')
-          return
-        }
-
-        const exoticText = isExotic ? ' Exotic' : ''
-
-        switch (perk?.itemTypeDisplayName) {
-          case 'Intrinsic':
-            addData(craftedWeapon, perk, `Weapon Frame${exoticText}`)
-            break
-          case 'Enhanced Intrinsic':
-            addData(craftedWeapon, perk, `Weapon Frame Enhanced${exoticText}`)
-            break
-          case 'Trait':
-            addData(craftedWeapon, perk, `Weapon Trait${exoticText}`)
-            break
-          case 'Origin Trait':
-            addData(craftedWeapon, perk, `Weapon Trait Origin${exoticText}`)
-            break
-          case 'Enhanced Trait':
-            addData(craftedWeapon, perk, `Weapon Trait Enhanced${exoticText}`)
-            break
-          default:
-            addData(craftedWeapon, perk, `Weapon Perk${exoticText}`)
-            break
-        }
-      })
+      switch (perk?.itemTypeDisplayName) {
+        case 'Intrinsic':
+          addData(craftedWeapon, perk, `Weapon Frame${exoticText}`)
+          break
+        case 'Enhanced Intrinsic':
+          addData(craftedWeapon, perk, `Weapon Frame Enhanced${exoticText}`)
+          break
+        case 'Trait':
+          addData(craftedWeapon, perk, `Weapon Trait${exoticText}`)
+          break
+        case 'Origin Trait':
+          addData(craftedWeapon, perk, `Weapon Trait Origin${exoticText}`)
+          break
+        case 'Enhanced Trait':
+          addData(craftedWeapon, perk, `Weapon Trait Enhanced${exoticText}`)
+          break
+        default:
+          addData(craftedWeapon, perk, `Weapon Perk${exoticText}`)
+          break
+      }
     })
   })
 

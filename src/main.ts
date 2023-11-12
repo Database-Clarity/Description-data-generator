@@ -1,26 +1,43 @@
-import fs from 'fs'
-
-import { PerkTypes } from '@icemourne/description-converter'
-import { fetchBungieManifest } from '@icemourne/tool-box'
-
-import { createDescriptionData } from './descriptionData.js'
-import { createRawData } from './rawData.js'
-import { InventoryItemEnums } from './utils/enums.js'
-import { createWeaponFormulaData } from './weaponFormulaData.js'
-import { forIn } from 'lodash'
+import { armorMods } from './filters/armorMod.js'
+import { artifactMods } from './filters/artifactMod.js'
+import { exoticArmors } from './filters/exoticArmor.js'
+import { exoticsWeapons } from './filters/exoticWeapon.js'
+import { ghostMods } from './filters/ghostMods.js'
+import { legendaryWeapons } from './filters/legendaryWeapon.js'
+import { subclass } from './filters/subclass.js'
+import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes.js'
+import { perkLinking } from './utils/perkLinking.js'
+import { updateData } from './utils/pg.js'
+import { fetchBungie } from './utils/fetchBungieManifest.js'
+import { Language, PerkTypes } from './utils/bungieTypes/manifest.js'
 
 export type PerkData = {
   appearsOn: Set<string | number>
   name: string
   hash: number
   type: PerkTypes
+  linkedWith?: number[]
 }
 
 export type PerkDataList = {
   [key: string]: PerkData
 }
+
+export type FinalData = {
+  [key: string]: {
+    appearsOn: (string | number)[]
+    name: { [key in Language]: string }
+    hash: number
+    type: PerkTypes
+    img: string
+    linkedWith: number[] | null
+  }
+}
 ;(async () => {
-  const { inventoryItem, plugSet, socketType } = await fetchBungieManifest(['inventoryItem', 'plugSet', 'socketType'])
+  const {
+    en: { inventoryItem, plugSet, socketType },
+  } = await fetchBungie(['inventoryItem', 'plugSet', 'socketType'], ['en'])
+
   if (inventoryItem === undefined || plugSet === undefined || socketType === undefined) {
     throw new Error('Failed to fetch manifest')
   }
@@ -28,41 +45,204 @@ export type PerkDataList = {
   for (const key in inventoryItem) {
     const item = inventoryItem[key]
 
+    // remove weapons and armor with power cap
     if (
-      item.itemTypeDisplayName === 'Shader' ||
-      item.itemTypeDisplayName === 'Deprecated Armor Mod' ||
-      item.displayProperties.name === 'Crucible Tracker' ||
-      item.displayProperties.name === 'Kill Tracker' ||
-      item.displayProperties.name === 'Tracker Disabled' ||
-      item.displayProperties.name === 'Classified' ||
-      item.displayProperties.name === 'Default Shader' ||
-      item.displayProperties.name.match(/Empty [A-z]+ Socket/) ||
-      item.displayProperties.name.match(/ Mod Socket$/) ||
-      item.displayProperties.name.match(/ Damage Mod$/) ||
-      item.displayProperties.name.match(/[A-z]+ Memento Tracker/) ||
-      item.hash === InventoryItemEnums.osteoStrigaCatalyst || // not equippable
-      item.hash === InventoryItemEnums.transformative || //      no reason to have placeholder perk
-      item.hash === InventoryItemEnums.aeonSafe || //            dummy item
-      item.hash === InventoryItemEnums.aeonSoul || //            dummy item
-      item.hash === InventoryItemEnums.aeonSwift || //           dummy item
-      item.hash === InventoryItemEnums.weaponAttackMod //        removed mod
+      (item.itemType === 2 || item.itemType === 3) &&
+      !Boolean(item.quality?.versions.some((powerCap) => powerCap.powerCapHash === 2759499571)) // 2759499571 = 999990 power cap
     ) {
       delete inventoryItem[key]
+      continue
+    }
+
+    // remove deprecated items
+    if (item.displayProperties.description.match(/deprecated/i) || item.displayProperties.name.match(/deprecated/i)) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove shaders
+    if (item.itemTypeDisplayName === 'Shader' || item.itemCategoryHashes?.includes(41) || item.itemSubType === 20) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove trackers
+    if (item.plug?.plugCategoryHash === 2947756142) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove ornaments
+    if (
+      item.itemCategoryHashes?.includes(56) ||
+      item.itemSubType === 21 ||
+      item.itemTypeDisplayName?.endsWith('Ornament')
+    ) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove dummy items
+    if (item.itemType === 20 || item.itemCategoryHashes?.includes(3109687656)) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove items with out name
+    if (item.displayProperties.name === '') {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove masterworks
+    if (item.plug?.plugCategoryIdentifier.match(/masterwork/i)) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove memento
+    if (item.itemTypeAndTierDisplayName?.match(/memento/i)) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove empty sockets
+    if (item.displayProperties.name?.match(/empty [\s\S]+ socket/i)) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove classified, redacted items
+    if (item.redacted || item.displayProperties.name?.match(/classified/i)) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove stat mods
+    if (
+      item.displayProperties.name.match(/(Resilience|Recovery|Discipline|Mobility|Strength|Intellect)( Mod|-Forged)/i)
+    ) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // black listing random stuff
+    if (
+      item.itemTypeDisplayName === 'Solstice Embers' ||
+      item.itemTypeDisplayName === 'Kindling' ||
+      item.displayProperties.name === 'Reset Artifact'
+    ) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove bungie fuckups
+    if (
+      item.hash === 2132353550 || // osteo striga catalyst // can't be equipped
+      item.hash === 712324018 || //  transformative perk   // basicaly place holder
+      item.hash === 1906855381 || // aeon safe             // dummy item
+      item.hash === 2076339106 || // aeon soul             // dummy item
+      item.hash === 1656912113 //    aeon swift            // dummy item
+    ) {
+      delete inventoryItem[key]
+      continue
+    }
+
+    // remove random crap
+    // this is just to reduce number of items to process
+    const randomCrap_itemType = new Set([9, 12, 14, 15, 17, 21, 22, 25, 26])
+    const randomCrap_itemCategoryHashes = new Set([
+      34, 43, 44, 53, 56, 58, 1404791674, 1112488720, 208981632, 874645359, 1873949940,
+    ])
+    if (
+      randomCrap_itemType.has(item.itemType) ||
+      item.itemCategoryHashes?.some((hash) => randomCrap_itemCategoryHashes.has(hash)) ||
+      item.displayProperties.name === 'Legendary Engram' ||
+      item.displayProperties.name === 'Deepsight Resonance' ||
+      item.displayProperties.name === 'Extract Pattern' ||
+      item.displayProperties.name === 'Locked Armor Mod' ||
+      item.itemTypeDisplayName === 'Material' ||
+      item.itemTypeDisplayName === 'Armor Set' ||
+      item.itemTypeDisplayName?.replaceAll('"', '') === 'Holiday Gift' ||
+      item.itemTypeDisplayName?.endsWith('Engram') ||
+      item.itemTypeDisplayName?.endsWith('Currency') ||
+      (item.itemType === 0 && item.quality?.versions.some((x) => x.powerCapHash === 2759499571))
+    ) {
+      delete inventoryItem[key]
+      continue
     }
   }
 
-  if (!fs.existsSync('./templates')) {
-    fs.mkdirSync('./templates')
+  const data: PerkDataList = {}
+
+  armorMods(inventoryItem, plugSet, data)
+  artifactMods(inventoryItem, data)
+  exoticArmors(inventoryItem, plugSet, data)
+  exoticsWeapons(inventoryItem, plugSet, socketType, data)
+  ghostMods(inventoryItem, plugSet, data)
+  legendaryWeapons(inventoryItem, plugSet, data)
+  subclass(inventoryItem, plugSet, data)
+  weaponCraftingRecipes(inventoryItem, plugSet, data)
+
+  perkLinking(data)
+
+  const fixAppearsOn = (data: (string | number)[]) => {
+    const dataArr = data.map((x) => {
+      if (typeof x === 'string') return x
+      return inventoryItem[x].itemTypeDisplayName!
+    })
+    return [...new Set(dataArr)]
   }
 
-  const rawData = createRawData(inventoryItem, plugSet, socketType)
-  fs.writeFileSync('./templates/rawData.json', JSON.stringify(rawData, undefined, 1))
+  const {
+    de: { inventoryItemLite: invLightDe },
+    es: { inventoryItemLite: invLightEs },
+    'es-mx': { inventoryItemLite: invLightEsMx },
+    fr: { inventoryItemLite: invLightFr },
+    it: { inventoryItemLite: invLightIt },
+    ja: { inventoryItemLite: invLightJa },
+    ko: { inventoryItemLite: invLightKo },
+    pl: { inventoryItemLite: invLightPl },
+    'pt-br': { inventoryItemLite: invLightPtBr },
+    ru: { inventoryItemLite: invLightRu },
+    'zh-chs': { inventoryItemLite: invLightZhChs },
+    'zh-cht': { inventoryItemLite: invLightZhCht },
+  } = await fetchBungie(['inventoryItemLite'], 'all')
 
-  const descriptionData = createDescriptionData(inventoryItem, rawData)
-  fs.writeFileSync('./templates/descriptions.json', JSON.stringify(descriptionData, undefined, 1))
+  const finalData = Object.entries(data).reduce((acc, [key, item]) => {
+    const appearsOnArr = Array.from(item.appearsOn)
+    const isLegendary = appearsOnArr.some((x) => typeof x === 'string')
 
-  const weaponFormula = createWeaponFormulaData(inventoryItem, rawData)
-  fs.writeFileSync('./templates/weaponFormula.json', JSON.stringify(weaponFormula, undefined, 1))
+    // change exotic hash to name on legendary perks
+    const appearsOn = isLegendary ? fixAppearsOn(appearsOnArr) : appearsOnArr
+
+    acc[key] = {
+      appearsOn,
+      name: {
+        en: item.name,
+        de: invLightDe[key].displayProperties.name,
+        es: invLightEs[key].displayProperties.name,
+        'es-mx': invLightEsMx[key].displayProperties.name,
+        fr: invLightFr[key].displayProperties.name,
+        it: invLightIt[key].displayProperties.name,
+        ja: invLightJa[key].displayProperties.name,
+        ko: invLightKo[key].displayProperties.name,
+        pl: invLightPl[key].displayProperties.name,
+        'pt-br': invLightPtBr[key].displayProperties.name,
+        ru: invLightRu[key].displayProperties.name,
+        'zh-chs': invLightZhChs[key].displayProperties.name,
+        'zh-cht': invLightZhCht[key].displayProperties.name,
+      },
+      img: inventoryItem[key].displayProperties.icon || '',
+      hash: item.hash,
+      type: item.type,
+      linkedWith: item.linkedWith?.length !== 0 ? item.linkedWith || null : null,
+    }
+
+    return acc
+  }, {} as FinalData)
+
+  await updateData(finalData)
 
   console.log('Completed')
 })()

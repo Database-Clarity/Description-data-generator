@@ -1,15 +1,13 @@
-import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
-
-import { PerkData } from '../main.js'
-import { SocketCategoryEnums } from '../utils/enums.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
+import { PerkDataList } from '../main.js'
+import { InventoryItem } from '../utils/bungieTypes/inventoryItem.js'
+import { InventoryItems, PerkTypes, PlugSets } from '../utils/bungieTypes/manifest.js'
 
-export const ghostMods = (inventoryItems: InventoryItems, plugSets: PlugSets, inventoryItemGhost: InventoryItem[]) => {
-  const data: { [key: string]: PerkData } = {}
+export const ghostMods = (inventoryItems: InventoryItems, plugSets: PlugSets, data: PerkDataList) => {
+  const ghostArr = Object.values(inventoryItems).filter((item) => item.itemType === 24)
 
-  const addData = (armor: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
-    const ghostType = armor.itemTypeDisplayName
+  const addData = (ghost: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+    const ghostType = ghost.itemTypeDisplayName
     if (ghostType === undefined) return
 
     if (data[perk.hash] !== undefined) {
@@ -25,28 +23,13 @@ export const ghostMods = (inventoryItems: InventoryItems, plugSets: PlugSets, in
     }
   }
 
-  inventoryItemGhost.forEach((ghost) => {
-    const ghostSockets = ghost.sockets
-    if (ghostSockets === undefined) return
+  ghostArr.forEach((ghost) => {
+    const modsArr = getAllFromSocket(inventoryItems, plugSets, ghost, ['ghost mods'])
 
-    const modSocketCategory = ghostSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.ghostMods
-    )
-
-    modSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const modsArr = getAllFromSocket(inventoryItems, plugSets, ghostSockets.socketEntries[socketIndex])
-
-      modsArr.forEach((modHash) => {
-        const mod = inventoryItems[modHash]
-        if (mod === undefined) return
-
-        if (mod?.itemTypeDisplayName?.match(/ Ghost Mod/)) {
-          addData(ghost, mod, 'Ghost Mod')
-          return
-        }
-      })
+    modsArr.forEach((mod) => {
+      if (mod.itemTypeDisplayName?.match(/ ghost mod/i)) {
+        addData(ghost, mod, 'Ghost Mod')
+      }
     })
   })
-
-  return data
 }
