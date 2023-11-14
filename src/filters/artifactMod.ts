@@ -1,10 +1,9 @@
-import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems } from '@icemourne/tool-box'
+import { PerkDataList } from '../main.js'
+import { InventoryItem } from '../utils/bungieTypes/inventoryItem.js'
+import { InventoryItems, PerkTypes } from '../utils/bungieTypes/manifest.js'
 
-import { PerkData } from '../main.js'
-
-export const artifactMods = (inventoryItems: InventoryItems, inventoryItemArtifact: InventoryItem[]) => {
-  const data: { [key: string]: PerkData } = {}
+export const artifactMods = (inventoryItems: InventoryItems, data: PerkDataList) => {
+  const artifactArr = Object.values(inventoryItems).filter((item) => item.itemTypeDisplayName === 'Artifact')
 
   const addData = (artifact: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
     const itemType = artifact.itemTypeDisplayName
@@ -23,15 +22,16 @@ export const artifactMods = (inventoryItems: InventoryItems, inventoryItemArtifa
     }
   }
 
-  inventoryItemArtifact.forEach((artifact) => {
-    artifact.preview?.derivedItemCategories
-      ?.flatMap((category) => category.items.flatMap((item) => item.itemHash))
-      .flat()
-      .forEach((modHash) => {
-        if (inventoryItems[modHash]?.inventory.tierType !== 5) return
-        addData(artifact, inventoryItems[modHash], 'Armor Mod Seasonal')
-      })
-  })
+  artifactArr.forEach((artifact) => {
+    const artifactMods = artifact.preview?.derivedItemCategories?.flatMap((category) => {
+      return category.items.map((item) => item.itemHash)
+    })
 
-  return data
+    if (artifactMods === undefined) return
+
+    artifactMods.forEach((modHash) => {
+      if (inventoryItems[modHash] === undefined) return
+      addData(artifact, inventoryItems[modHash], 'Armor Mod Seasonal')
+    })
+  })
 }

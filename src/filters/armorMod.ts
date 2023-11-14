@@ -1,19 +1,17 @@
-import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
-
-import { PerkData } from '../main.js'
-import { SocketCategoryEnums } from '../utils/enums.js'
+import { PerkDataList } from '../main.js'
+import { InventoryItem } from '../utils/bungieTypes/inventoryItem.js'
+import { InventoryItems, PlugSets, PerkTypes } from '../utils/bungieTypes/manifest.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
 
-export const armorMods = (
-  inventoryItems: InventoryItems,
-  plugSets: PlugSets,
-  inventoryItemLegendaryArmor: InventoryItem[]
-) => {
-  const data: { [key: string]: PerkData } = {}
+export const armorMods = (inventoryItems: InventoryItems, plugSets: PlugSets, data: PerkDataList) => {
+  const armorArr = Object.values(inventoryItems).filter(
+    (item) => item.itemType === 2 && item.itemTypeAndTierDisplayName?.includes('Legendary')
+  )
 
   const addData = (armor: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
-    const armorType = armor.itemTypeDisplayName
+    const armorType = armor.itemTypeDisplayName?.match(/hunter cloak|titan mark|warlock bond/i)
+      ? 'Class Item'
+      : armor.itemTypeDisplayName
     if (armorType === undefined) return
 
     if (data[perk.hash] !== undefined) {
@@ -29,46 +27,18 @@ export const armorMods = (
     }
   }
 
-  inventoryItemLegendaryArmor.forEach((armor) => {
-    const armorSockets = armor.sockets
-    if (armorSockets === undefined) return
+  armorArr.forEach((armor) => {
+    const modsArr = getAllFromSocket(inventoryItems, plugSets, armor, ['armor mods'])
 
-    const modSocketCategory = armorSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.armorMods
-    )
+    modsArr.forEach((mod) => {
+      if (mod.itemTypeDisplayName?.match(/(general|helmet|arms|chest|leg|class item) armor mod/i)) {
+        addData(armor, mod, 'Armor Mod General')
+        return
+      }
 
-    modSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const modsArr = getAllFromSocket(inventoryItems, plugSets, armorSockets.socketEntries[socketIndex])
-
-      modsArr.forEach((modHash) => {
-        const mod = inventoryItems[modHash]
-
-        // black list stat mods
-        if (
-          mod?.itemTypeDisplayName?.match(/(Artifice|General) Armor Mod/) &&
-          mod?.displayProperties.name.match(/Resilience|Recovery|Discipline|Mobility|Strength|Intellect/)
-        )
-          return
-
-        if (mod?.itemTypeDisplayName?.match(/(General|Helmet|Arms|Chest|Leg|Class Item) Armor Mod/)) {
-          addData(armor, mod, 'Armor Mod General')
-          return
-        }
-        if (mod?.itemTypeDisplayName?.match(/(Elemental Well|Charged with Light|Warmind Cell) Mod/)) {
-          addData(armor, mod, 'Armor Mod Combat')
-          return
-        }
-        if (
-          mod?.itemTypeDisplayName?.match(
-            /( Raid|Nightmare|King's Fall|Vault of Glass|Root of Nightmares)( Armor)? Mod$/
-          )
-        ) {
-          addData(armor, mod, 'Armor Mod Activity')
-          return
-        }
-      })
+      if (mod.displayProperties.description.match(/raid/i) || mod?.itemTypeDisplayName?.match(/nightmare mod/i)) {
+        addData(armor, mod, 'Armor Mod Activity')
+      }
     })
   })
-
-  return data
 }

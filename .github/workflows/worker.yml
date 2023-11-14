@@ -5,9 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 8 * * *" # Runs at 08:00 UTC every day.
+    - cron: '0 8 * * *' # Runs at 08:00 UTC every day.
   workflow_dispatch: # For manually running the action
-
 
 jobs:
   build-and-deploy:
@@ -16,32 +15,16 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: Use Node.js 18.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 20.x
 
       - name: Install 🔧
-        run: |
-          npm ci
-          npm i @icemourne/tool-box
+        run: pnpm i
 
       - name: Build 🔨
-        run: npm run build
+        run: pnpm run build
 
-      - name: Generate 🏗️
-        run: npm run generate
-
-      - name: Check if there are any changes 📦
-        id: verify_diff
-        run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Deploy 🚀
-        if: steps.verify_diff.outputs.changed == 'true'
-        run: |
-          git config --global user.email "cboweris@gmail.com"
-          git config --global user.name "Ice-mourne"
-          git add .
-          git commit -m "deploy"
-          git push
+      - name: Generate 🏗️ and Deploy 🚀
+        run: pnpm run generate

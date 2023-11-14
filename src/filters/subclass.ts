@@ -1,113 +1,71 @@
-import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
+import { InventoryItem } from '../utils/bungieTypes/inventoryItem.js'
+import { InventoryItems, PerkTypes, PlugSets } from '../utils/bungieTypes/manifest.js'
 
-import { PerkData } from '../main.js'
-import { SocketCategoryEnums } from '../utils/enums.js'
+import { PerkDataList } from '../main.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
 
-export const subclass = (
-  inventoryItems: InventoryItems,
-  plugSets: PlugSets,
-  inventoryItemSubclass: InventoryItem[]
-) => {
-  const data: { [key: string]: PerkData } = {}
+export const subclass = (inventoryItems: InventoryItems, plugSets: PlugSets, data: PerkDataList) => {
+  const subclassArr = Object.values(inventoryItems).filter((item) => item.itemType === 16 && item.sockets !== undefined)
 
-  const addData = (armor: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
-    const armorType = armor.itemTypeDisplayName
-    if (armorType === undefined) return
+  const addData = (subclass: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
+    const subclassType = subclass.itemTypeDisplayName
+    if (subclassType === undefined) return
 
     if (data[perk.hash] !== undefined) {
-      data[perk.hash].appearsOn.add(armorType)
+      data[perk.hash].appearsOn.add(subclassType)
       return
     }
 
     data[perk.hash] = {
-      appearsOn: new Set([armorType]),
+      appearsOn: new Set([subclassType]),
       name: perk.displayProperties.name,
       hash: Number(perk.hash),
       type,
     }
   }
 
-  inventoryItemSubclass.forEach((subclass) => {
-    const subclassSockets = subclass.sockets
-    if (subclassSockets === undefined) return
+  subclassArr.forEach((subclass) => {
+    // if (subclass.hash === 2842471112) debugger
 
-    const abilitiesCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.abilities
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.abilitiesIkora
-    )
-    const superCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.super
-    )
-    const aspectsCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsIkora
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsStranger
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsNeomuna
-    )
-    const fragmentsCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsIkora
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsStranger
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsNeomuna
-    )
+    const abilityArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['abilities'])
+    const superArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['super'])
+    const aspectArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['aspects'])
+    const fragmentsArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['fragments'])
 
-    abilitiesCategory?.socketIndexes.forEach((socketIndex) => {
-      const perkArr = getAllFromSocket(inventoryItems, plugSets, subclassSockets.socketEntries[socketIndex])
-
-      perkArr.forEach((hash) => {
-        const perk = inventoryItems[hash]
-
-        if (perk.itemTypeDisplayName?.includes('Melee')) {
-          addData(subclass, perk, 'Subclass Melee')
-          return
-        }
-        if (perk.itemTypeDisplayName?.includes('Grenade')) {
-          addData(subclass, perk, 'Subclass Grenade')
-          return
-        }
-        if (perk.itemTypeDisplayName === 'Movement Ability') {
-          addData(subclass, perk, 'Subclass Movement')
-          return
-        }
-        if (perk.itemTypeDisplayName === 'Class Ability') {
-          addData(subclass, perk, 'Subclass Class')
-        }
-      })
+    abilityArr.forEach((perk) => {
+      if (perk.itemTypeDisplayName?.includes('Melee')) {
+        addData(subclass, perk, 'Subclass Melee')
+        return
+      }
+      if (perk.itemTypeDisplayName?.includes('Grenade')) {
+        addData(subclass, perk, 'Subclass Grenade')
+        return
+      }
+      if (perk.itemTypeDisplayName === 'Movement Ability') {
+        addData(subclass, perk, 'Subclass Movement')
+        return
+      }
+      if (perk.itemTypeDisplayName === 'Class Ability') {
+        addData(subclass, perk, 'Subclass Class')
+      }
     })
-    superCategory?.socketIndexes.forEach((socketIndex) => {
-      const perkArr = getAllFromSocket(inventoryItems, plugSets, subclassSockets.socketEntries[socketIndex])
 
-      perkArr.forEach((hash) => {
-        const perk = inventoryItems[hash]
-
-        if (perk.itemTypeDisplayName === 'Super Ability') {
-          addData(subclass, perk, 'Subclass Super')
-        }
-      })
+    superArr.forEach((perk) => {
+      if (perk.itemTypeDisplayName === 'Super Ability') {
+        addData(subclass, perk, 'Subclass Super')
+      }
     })
-    aspectsCategory?.socketIndexes.forEach((socketIndex) => {
-      const perkArr = getAllFromSocket(inventoryItems, plugSets, subclassSockets.socketEntries[socketIndex])
 
-      perkArr.forEach((hash) => {
-        const perk = inventoryItems[hash]
-
-        if (perk.itemTypeDisplayName?.includes('Aspect')) {
-          addData(subclass, perk, 'Subclass Aspect')
-        }
-      })
+    aspectArr.forEach((perk) => {
+      if (perk.itemTypeDisplayName?.includes('Aspect')) {
+        addData(subclass, perk, 'Subclass Aspect')
+      }
     })
-    fragmentsCategory?.socketIndexes.forEach((socketIndex) => {
-      const perkArr = getAllFromSocket(inventoryItems, plugSets, subclassSockets.socketEntries[socketIndex])
 
-      perkArr.forEach((hash) => {
-        const perk = inventoryItems[hash]
-
-        if (perk.itemTypeDisplayName?.includes('Fragment')) {
-          addData(subclass, perk, 'Subclass Fragment')
-        }
-      })
+    fragmentsArr.forEach((perk) => {
+      if (perk.itemTypeDisplayName?.includes('Fragment')) {
+        addData(subclass, perk, 'Subclass Fragment')
+      }
     })
   })
-
-  return data
 }
