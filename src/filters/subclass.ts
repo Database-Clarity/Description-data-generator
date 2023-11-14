@@ -8,16 +8,16 @@ export const subclass = (inventoryItems: InventoryItems, plugSets: PlugSets, dat
   const subclassArr = Object.values(inventoryItems).filter((item) => item.itemType === 16 && item.sockets !== undefined)
 
   const addData = (subclass: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
-    const armorType = subclass.itemTypeDisplayName
-    if (armorType === undefined) return
+    const subclassType = subclass.itemTypeDisplayName
+    if (subclassType === undefined) return
 
     if (data[perk.hash] !== undefined) {
-      data[perk.hash].appearsOn.add(armorType)
+      data[perk.hash].appearsOn.add(subclassType)
       return
     }
 
     data[perk.hash] = {
-      appearsOn: new Set([armorType]),
+      appearsOn: new Set([subclassType]),
       name: perk.displayProperties.name,
       hash: Number(perk.hash),
       type,
@@ -25,10 +25,12 @@ export const subclass = (inventoryItems: InventoryItems, plugSets: PlugSets, dat
   }
 
   subclassArr.forEach((subclass) => {
+    // if (subclass.hash === 2842471112) debugger
+
     const abilityArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['abilities'])
     const superArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['super'])
-    const aspectArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['aspects_light', 'aspects_dark'])
-    const fragmentsArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['fragments_light', 'fragments_dark'])
+    const aspectArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['aspects'])
+    const fragmentsArr = getAllFromSocket(inventoryItems, plugSets, subclass, ['fragments'])
 
     abilityArr.forEach((perk) => {
       if (perk.itemTypeDisplayName?.includes('Melee')) {

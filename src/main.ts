@@ -7,9 +7,10 @@ import { legendaryWeapons } from './filters/legendaryWeapon.js'
 import { subclass } from './filters/subclass.js'
 import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes.js'
 import { perkLinking } from './utils/perkLinking.js'
-import { updateData } from './utils/pg.js'
+import { updateData } from './utils/postgres.js'
 import { fetchBungie } from './utils/fetchBungieManifest.js'
 import { Language, PerkTypes } from './utils/bungieTypes/manifest.js'
+import { timeTracker } from './utils/timeTracker.js'
 
 export type PerkData = {
   appearsOn: Set<string | number>
@@ -34,6 +35,8 @@ export type FinalData = {
   }
 }
 ;(async () => {
+  timeTracker.start()
+
   const {
     en: { inventoryItem, plugSet, socketType },
   } = await fetchBungie(['inventoryItem', 'plugSet', 'socketType'], ['en'])
@@ -45,11 +48,11 @@ export type FinalData = {
   for (const key in inventoryItem) {
     const item = inventoryItem[key]
 
-    // remove weapons and armor with power cap
     if (
       (item.itemType === 2 || item.itemType === 3) &&
       !Boolean(item.quality?.versions.some((powerCap) => powerCap.powerCapHash === 2759499571)) // 2759499571 = 999990 power cap
     ) {
+      // remove weapons and armor with power cap
       delete inventoryItem[key]
       continue
     }
@@ -95,10 +98,14 @@ export type FinalData = {
     }
 
     // remove masterworks
-    if (item.plug?.plugCategoryIdentifier.match(/masterwork/i)) {
-      delete inventoryItem[key]
-      continue
-    }
+    if (item.plug?.plugCategoryIdentifier.match(/masterwork/i))
+      if (
+        item.plug?.plugCategoryIdentifier.match(/stat|kills|armor|ghosts/i) ||
+        item.plug?.uiPlugLabel.match(/interactable/i)
+      ) {
+        delete inventoryItem[key]
+        continue
+      }
 
     // remove memento
     if (item.itemTypeAndTierDisplayName?.match(/memento/i)) {
@@ -139,7 +146,7 @@ export type FinalData = {
     // remove bungie fuckups
     if (
       item.hash === 2132353550 || // osteo striga catalyst // can't be equipped
-      item.hash === 712324018 || //  transformative perk   // basicaly place holder
+      item.hash === 712324018 || //  transformative perk   // basically place holder
       item.hash === 1906855381 || // aeon safe             // dummy item
       item.hash === 2076339106 || // aeon soul             // dummy item
       item.hash === 1656912113 //    aeon swift            // dummy item
@@ -233,7 +240,7 @@ export type FinalData = {
         'zh-chs': invLightZhChs[key].displayProperties.name,
         'zh-cht': invLightZhCht[key].displayProperties.name,
       },
-      img: inventoryItem[key].displayProperties.icon || '',
+      img: inventoryItem[key].displayProperties.icon?.replace('/common/destiny2_content/icons', '') || '',
       hash: item.hash,
       type: item.type,
       linkedWith: item.linkedWith?.length !== 0 ? item.linkedWith || null : null,
@@ -244,5 +251,6 @@ export type FinalData = {
 
   await updateData(finalData)
 
-  console.log('Completed')
+  timeTracker.stop()
+  console.log('Completed in', timeTracker.getElapsedTime())
 })()

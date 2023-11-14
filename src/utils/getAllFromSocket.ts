@@ -3,27 +3,23 @@ import { InventoryItems, PlugSets, SocketTypes } from './bungieTypes/manifest.js
 import { TypedObject } from './typedObject.js'
 
 const socketCategoryHashes = {
-  'armor mods': 590099826,
-  'armor perks': 3154740035,
-  'weapon mods': 2685412949,
-  'weapon perks': 4241085061,
-  'weapon crafting perks': 3410521964,
-  'weapon frame': 3956125808,
-  abilities: 309722977,
-  super: 457473665,
-  aspects_light: 2140934067,
-  aspects_dark: 3400923910,
-  fragments_light: 1313488945,
-  fragments_dark: 2819965312,
-  'ghost mods': 3886482628,
+  'armor mods': [590099826],
+  'armor perks': [3154740035],
+
+  'weapon mods': [2685412949],
+  'weapon perks': [4241085061],
+  'weapon crafting perks': [3410521964],
+  'weapon frame': [3956125808],
+
+  abilities: [309722977, 3218807805],
+  super: [457473665],
+  aspects: [2140934067, 3400923910, 764703411],
+  fragments: [1313488945, 193371309, 2819965312],
+
+  'ghost mods': [3886482628],
 }
 
 type SocketCategoryNames = keyof typeof socketCategoryHashes
-
-const socketHashToName = TypedObject.entries(socketCategoryHashes).reduce((acc, [key, value]) => {
-  acc[value] = key
-  return acc
-}, {} as { [key: number]: SocketCategoryNames })
 
 export const getAllFromSocket = (
   inventoryItems: InventoryItems,
@@ -34,7 +30,8 @@ export const getAllFromSocket = (
 ) => {
   const socketIndexes = item.sockets?.socketCategories
     ?.filter((socketCategory) => {
-      return socketCategoryNames.includes(socketHashToName[socketCategory.socketCategoryHash])
+      // check if any of the passed category names match items socket category hash
+      return socketCategoryNames.some((name) => socketCategoryHashes[name].includes(socketCategory.socketCategoryHash))
     })
     ?.flatMap((socketCategory) => {
       return socketCategory.socketIndexes || []
