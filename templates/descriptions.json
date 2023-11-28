@@ -84,6 +84,11 @@
    "hash": 16700458,
    "type": "Ghost Mod"
   },
+  "19542588": {
+   "name": "Nano-Munitions",
+   "hash": 19542588,
+   "type": "Weapon Trait Origin"
+  },
   "20616656": {
    "name": "Triple Jump",
    "hash": 20616656,
@@ -155,11 +160,6 @@
    "hash": 31345821,
    "type": "Weapon Trait"
   },
-  "36879820": {
-   "name": "Prosperity (Vanguard)",
-   "hash": 36879820,
-   "type": "Ghost Mod"
-  },
   "40492375": {
    "name": "Vortex Frame",
    "hash": 40492375,
@@ -169,6 +169,11 @@
    "name": "Reaper",
    "hash": 40751621,
    "type": "Armor Mod General"
+  },
+  "43555494": {
+   "name": "Field-Tested",
+   "hash": 43555494,
+   "type": "Weapon Trait Origin"
   },
   "47981717": {
    "name": "Opening Shot",
@@ -180,6 +185,31 @@
    "hash": 48578555,
    "type": "Armor Mod General"
   },
+  "51032914": {
+   "name": "Overload Rocket Launchers",
+   "hash": 51032914,
+   "type": "Armor Mod Seasonal"
+  },
+  "51032915": {
+   "name": "Dragon's Bite",
+   "hash": 51032915,
+   "type": "Armor Mod Seasonal"
+  },
+  "51032916": {
+   "name": "Pillar of Ice",
+   "hash": 51032916,
+   "type": "Armor Mod Seasonal"
+  },
+  "51032917": {
+   "name": "Revitalizing Blast",
+   "hash": 51032917,
+   "type": "Armor Mod Seasonal"
+  },
+  "51032919": {
+   "name": "Unravelling Orbs",
+   "hash": 51032919,
+   "type": "Armor Mod Seasonal"
+  },
   "52780822": {
    "name": "Balanced Guard",
    "hash": 52780822,
@@ -189,6 +219,11 @@
    "name": "Solar Scavenger",
    "hash": 56663992,
    "type": "Armor Mod General"
+  },
+  "64332393": {
+   "name": "Permeability",
+   "hash": 64332393,
+   "type": "Weapon Trait Enhanced"
   },
   "64866129": {
    "name": "Explosive Payload",
@@ -245,6 +280,11 @@
    "name": "Empowered Finish",
    "hash": 84503918,
    "type": "Armor Mod General"
+  },
+  "95528736": {
+   "name": "Onslaught",
+   "hash": 95528736,
+   "type": "Weapon Trait"
   },
   "95544328": {
    "name": "Triple Jump",
@@ -511,6 +551,13 @@
    "itemHash": 3856705927,
    "type": "Weapon Frame Exotic"
   },
+  "214670074": {
+   "name": "Snareweaver",
+   "hash": 214670074,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Frame Exotic"
+  },
   "216781713": {
    "name": "Häkke Precision Frame",
    "hash": 216781713,
@@ -567,6 +614,11 @@
    "itemName": "Antaeus Wards",
    "itemHash": 2423243921,
    "type": "Armor Trait Exotic"
+  },
+  "243981275": {
+   "name": "Attrition Orbs",
+   "hash": 243981275,
+   "type": "Weapon Trait"
   },
   "247725512": {
    "name": "Rapid Hit",
@@ -874,6 +926,34 @@
    "itemHash": 3580904580,
    "type": "Weapon Frame Exotic"
   },
+  "372672208": {
+   "name": "Enduring Snare Refit",
+   "hash": 372672208,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "372672209": {
+   "name": "Multi-Threaded Snare Refit",
+   "hash": 372672209,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "372672210": {
+   "name": "Vorpal Weapon Refit",
+   "hash": 372672210,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "372672211": {
+   "name": "Hatchling Refit",
+   "hash": 372672211,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Catalyst Exotic"
+  },
   "375052468": {
    "name": "Golden Gun - Marksman",
    "hash": 375052468,
@@ -1147,31 +1227,6 @@
    "hash": 461595545,
    "type": "Weapon Trait Enhanced"
   },
-  "465808232": {
-   "name": "Semi-Auto Striker",
-   "hash": 465808232,
-   "type": "Armor Mod Seasonal"
-  },
-  "465808233": {
-   "name": "Refreshing Pickups",
-   "hash": 465808233,
-   "type": "Armor Mod Seasonal"
-  },
-  "465808236": {
-   "name": "Overload Machine Guns",
-   "hash": 465808236,
-   "type": "Armor Mod Seasonal"
-  },
-  "465808238": {
-   "name": "Communal Pickups",
-   "hash": 465808238,
-   "type": "Armor Mod Seasonal"
-  },
-  "465808239": {
-   "name": "Elemental Fury",
-   "hash": 465808239,
-   "type": "Armor Mod Seasonal"
-  },
   "466087222": {
    "name": "Smoothbore",
    "hash": 466087222,
@@ -1328,6 +1383,11 @@
    "hash": 518521234,
    "type": "Armor Mod Activity"
   },
+  "521530777": {
+   "name": "Thermodynamic Siphon",
+   "hash": 521530777,
+   "type": "Armor Mod General"
+  },
   "525593296": {
    "name": "Desperation",
    "hash": 525593296,
@@ -1368,16 +1428,6 @@
    "itemName": "Duality",
    "itemHash": 3460576091,
    "type": "Weapon Frame Exotic"
-  },
-  "537685236": {
-   "name": "Greater Core Harvest (Gambit)",
-   "hash": 537685236,
-   "type": "Ghost Mod"
-  },
-  "537685237": {
-   "name": "Lesser Core Harvest (Gambit)",
-   "hash": 537685237,
-   "type": "Ghost Mod"
   },
   "537774540": {
    "name": "Whisper of Chains",
@@ -1782,60 +1832,10 @@
    "itemHash": 2177524718,
    "type": "Armor Trait Exotic"
   },
-  "724043345": {
-   "name": "Thanatotic Tangles",
-   "hash": 724043345,
-   "type": "Armor Mod Seasonal"
-  },
-  "724043346": {
-   "name": "Origin Perk Specialization II",
-   "hash": 724043346,
-   "type": "Armor Mod Seasonal"
-  },
-  "724043347": {
-   "name": "Elemental Orbs: Void",
-   "hash": 724043347,
-   "type": "Armor Mod Seasonal"
-  },
-  "724043348": {
-   "name": "Elemental Orbs: Arc",
-   "hash": 724043348,
-   "type": "Armor Mod Seasonal"
-  },
-  "724043349": {
-   "name": "Elemental Orbs: Solar",
-   "hash": 724043349,
-   "type": "Armor Mod Seasonal"
-  },
   "732557052": {
    "name": "Tactical Battery",
    "hash": 732557052,
    "type": "Weapon Perk"
-  },
-  "733647368": {
-   "name": "Rapid-Fire Ranger",
-   "hash": 733647368,
-   "type": "Armor Mod Seasonal"
-  },
-  "733647369": {
-   "name": "Elemental Embrace",
-   "hash": 733647369,
-   "type": "Armor Mod Seasonal"
-  },
-  "733647371": {
-   "name": "Monochromatic Maestro",
-   "hash": 733647371,
-   "type": "Armor Mod Seasonal"
-  },
-  "733647374": {
-   "name": "Elemental Munitions",
-   "hash": 733647374,
-   "type": "Armor Mod Seasonal"
-  },
-  "733647375": {
-   "name": "Frenzied Stacks",
-   "hash": 733647375,
-   "type": "Armor Mod Seasonal"
   },
   "736000386": {
    "name": "Freehand Grip",
@@ -1934,31 +1934,6 @@
    "name": "Surrounded",
    "hash": 781192741,
    "type": "Weapon Trait Enhanced"
-  },
-  "782611298": {
-   "name": "Perfected Resource Detector",
-   "hash": 782611298,
-   "type": "Ghost Mod"
-  },
-  "782611300": {
-   "name": "Stable Resource Detector",
-   "hash": 782611300,
-   "type": "Ghost Mod"
-  },
-  "782611301": {
-   "name": "Enhanced Resource Detector",
-   "hash": 782611301,
-   "type": "Ghost Mod"
-  },
-  "782611302": {
-   "name": "Destabilized Resource Detector",
-   "hash": 782611302,
-   "type": "Ghost Mod"
-  },
-  "782611303": {
-   "name": "Makeshift Resource Detector",
-   "hash": 782611303,
-   "type": "Ghost Mod"
   },
   "788178929": {
    "name": "One-Two Punch",
@@ -2356,6 +2331,11 @@
    "itemHash": 3259193988,
    "type": "Armor Trait Exotic"
   },
+  "923806249": {
+   "name": "Slice",
+   "hash": 923806249,
+   "type": "Weapon Trait"
+  },
   "924149234": {
    "name": "Fighting Lion Catalyst",
    "hash": 924149234,
@@ -2395,6 +2375,11 @@
    "name": "Voltaic Ammo Collector",
    "hash": 928186993,
    "type": "Armor Mod Activity"
+  },
+  "930692523": {
+   "name": "Advanced Reflexes",
+   "hash": 930692523,
+   "type": "Weapon Trait Origin"
   },
   "930759851": {
    "name": "Concussive Dampener",
@@ -2529,6 +2514,11 @@
    "name": "Major Spec",
    "hash": 984527513,
    "type": "Weapon Mod"
+  },
+  "984655331": {
+   "name": "Attrition Orbs",
+   "hash": 984655331,
+   "type": "Weapon Trait Enhanced"
   },
   "986191425": {
    "name": "LN2 Burst",
@@ -2920,16 +2910,6 @@
    "itemHash": 2535142413,
    "type": "Weapon Catalyst Exotic"
   },
-  "1137204316": {
-   "name": "Greater Core Harvest (Crucible)",
-   "hash": 1137204316,
-   "type": "Ghost Mod"
-  },
-  "1137204317": {
-   "name": "Lesser Core Harvest (Crucible)",
-   "hash": 1137204317,
-   "type": "Ghost Mod"
-  },
   "1139671158": {
    "name": "Melee Kickstart",
    "hash": 1139671158,
@@ -3013,6 +2993,11 @@
    "itemName": "Loreley Splendor Helm",
    "itemHash": 3316517958,
    "type": "Armor Trait Exotic"
+  },
+  "1164602481": {
+   "name": "Deconstruct",
+   "hash": 1164602481,
+   "type": "Weapon Trait"
   },
   "1167468626": {
    "name": "Lasting Impression",
@@ -3245,11 +3230,6 @@
    "name": "Extrovert",
    "hash": 1250481499,
    "type": "Weapon Trait Origin"
-  },
-  "1251927947": {
-   "name": "Modularity (Gambit)",
-   "hash": 1251927947,
-   "type": "Ghost Mod"
   },
   "1255073825": {
    "name": "Void Spike",
@@ -3498,6 +3478,31 @@
    "itemName": "Heir Apparent",
    "itemHash": 2084878005,
    "type": "Weapon Catalyst Exotic"
+  },
+  "1328115224": {
+   "name": "Horde Shuttle",
+   "hash": 1328115224,
+   "type": "Armor Mod Seasonal"
+  },
+  "1328115226": {
+   "name": "Rays of Precision",
+   "hash": 1328115226,
+   "type": "Armor Mod Seasonal"
+  },
+  "1328115227": {
+   "name": "Hail The Storm",
+   "hash": 1328115227,
+   "type": "Armor Mod Seasonal"
+  },
+  "1328115228": {
+   "name": "Argent Ordnance",
+   "hash": 1328115228,
+   "type": "Armor Mod Seasonal"
+  },
+  "1328115229": {
+   "name": "Solo Operative",
+   "hash": 1328115229,
+   "type": "Armor Mod Seasonal"
   },
   "1331592343": {
    "name": "Starless Night",
@@ -3792,31 +3797,6 @@
    "name": "Barrel Constrictor",
    "hash": 1451849462,
    "type": "Weapon Trait"
-  },
-  "1456244346": {
-   "name": "Overload Hand Cannon",
-   "hash": 1456244346,
-   "type": "Armor Mod Seasonal"
-  },
-  "1456244347": {
-   "name": "Unstoppable Fusion",
-   "hash": 1456244347,
-   "type": "Armor Mod Seasonal"
-  },
-  "1456244348": {
-   "name": "Piercing Bowstring",
-   "hash": 1456244348,
-   "type": "Armor Mod Seasonal"
-  },
-  "1456244349": {
-   "name": "Unstoppable Scout Rifle",
-   "hash": 1456244349,
-   "type": "Armor Mod Seasonal"
-  },
-  "1456244351": {
-   "name": "Anti-Barrier Auto Rifle",
-   "hash": 1456244351,
-   "type": "Armor Mod Seasonal"
   },
   "1457189155": {
    "name": "Depths of Duskfield",
@@ -4491,31 +4471,6 @@
    "name": "Concussion Grenades",
    "hash": 1716000303,
    "type": "Weapon Perk"
-  },
-  "1718784632": {
-   "name": "Expert Tracker",
-   "hash": 1718784632,
-   "type": "Ghost Mod"
-  },
-  "1718784636": {
-   "name": "Loot Seeker",
-   "hash": 1718784636,
-   "type": "Ghost Mod"
-  },
-  "1718784637": {
-   "name": "Prize Pursuant",
-   "hash": 1718784637,
-   "type": "Ghost Mod"
-  },
-  "1718784638": {
-   "name": "Cache Finder",
-   "hash": 1718784638,
-   "type": "Ghost Mod"
-  },
-  "1718784639": {
-   "name": "Treasure Hunter",
-   "hash": 1718784639,
-   "type": "Ghost Mod"
   },
   "1719307618": {
    "name": "Delicate Tomb Catalyst",
@@ -5633,16 +5588,6 @@
    "hash": 2209081649,
    "type": "Subclass Class"
   },
-  "2209107628": {
-   "name": "Greater Core Harvest (Vanguard)",
-   "hash": 2209107628,
-   "type": "Ghost Mod"
-  },
-  "2209107629": {
-   "name": "Lesser Core Harvest (Vanguard)",
-   "hash": 2209107629,
-   "type": "Ghost Mod"
-  },
   "2209280306": {
    "name": "IS 5 Circle",
    "hash": 2209280306,
@@ -5978,6 +5923,31 @@
    "itemHash": 2374129871,
    "type": "Armor Trait Exotic"
   },
+  "2317325392": {
+   "name": "Origin Perk Specialization I",
+   "hash": 2317325392,
+   "type": "Armor Mod Seasonal"
+  },
+  "2317325393": {
+   "name": "From Whence You Came",
+   "hash": 2317325393,
+   "type": "Armor Mod Seasonal"
+  },
+  "2317325397": {
+   "name": "Flame, Fiber, and Freeze",
+   "hash": 2317325397,
+   "type": "Armor Mod Seasonal"
+  },
+  "2317325398": {
+   "name": "Kindling Trigger",
+   "hash": 2317325398,
+   "type": "Armor Mod Seasonal"
+  },
+  "2317325399": {
+   "name": "Blast Radius",
+   "hash": 2317325399,
+   "type": "Armor Mod Seasonal"
+  },
   "2318667184": {
    "name": "Kinetic Weapon Surge",
    "hash": 2318667184,
@@ -6181,6 +6151,11 @@
    "hash": 2426674025,
    "type": "Weapon Frame Enhanced"
   },
+  "2428997981": {
+   "name": "Permeability",
+   "hash": 2428997981,
+   "type": "Weapon Trait"
+  },
   "2436471653": {
    "name": "Arc Scavenger",
    "hash": 2436471653,
@@ -6190,6 +6165,13 @@
    "name": "Tex Balanced Stock",
    "hash": 2437618208,
    "type": "Weapon Trait Origin"
+  },
+  "2440389870": {
+   "name": "Composite Propellant",
+   "hash": 2440389870,
+   "itemName": "Dragon's Breath",
+   "itemHash": 17096506,
+   "type": "Weapon Frame Exotic"
   },
   "2445247031": {
    "name": "Barri-nade",
@@ -6564,11 +6546,6 @@
    "hash": 2628485818,
    "type": "Subclass Movement"
   },
-  "2630955836": {
-   "name": "Prosperity (Crucible)",
-   "hash": 2630955836,
-   "type": "Ghost Mod"
-  },
   "2634786903": {
    "name": "Void Holster",
    "hash": 2634786903,
@@ -6614,6 +6591,27 @@
    "name": "Successful Warm-Up",
    "hash": 2652708987,
    "type": "Weapon Trait"
+  },
+  "2655147888": {
+   "name": "Snareweaver IV",
+   "hash": 2655147888,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Frame Exotic"
+  },
+  "2655147894": {
+   "name": "Snareweaver II",
+   "hash": 2655147894,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Frame Exotic"
+  },
+  "2655147895": {
+   "name": "Snareweaver III",
+   "hash": 2655147895,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Frame Exotic"
   },
   "2656694271": {
    "name": "Swooping Talons",
@@ -6824,6 +6822,13 @@
    "hash": 2726471870,
    "type": "Weapon Trait"
   },
+  "2727957645": {
+   "name": "High Octane",
+   "hash": 2727957645,
+   "itemName": "Dragon's Breath",
+   "itemHash": 17096506,
+   "type": "Weapon Trait Exotic"
+  },
   "2731901709": {
    "name": "Warlord's Sigil",
    "hash": 2731901709,
@@ -7013,6 +7018,13 @@
    "itemHash": 2316914168,
    "type": "Armor Trait Exotic"
   },
+  "2799667909": {
+   "name": "Silkbound Slayer",
+   "hash": 2799667909,
+   "itemName": "Wish-Keeper",
+   "itemHash": 2910326942,
+   "type": "Weapon Trait Exotic"
+  },
   "2800865663": {
    "name": "Swarmers",
    "hash": 2800865663,
@@ -7173,6 +7185,11 @@
    "name": "Energy Transfer",
    "hash": 2856365672,
    "type": "Weapon Trait Enhanced"
+  },
+  "2859149211": {
+   "name": "Beacon Rounds",
+   "hash": 2859149211,
+   "type": "Weapon Trait"
   },
   "2859541905": {
    "name": "Taken Armaments",
@@ -7343,6 +7360,13 @@
    "name": "Kill Clip",
    "hash": 2923251173,
    "type": "Weapon Trait Enhanced"
+  },
+  "2924294393": {
+   "name": "Dragon's Breath Catalyst",
+   "hash": 2924294393,
+   "itemName": "Dragon's Breath",
+   "itemHash": 17096506,
+   "type": "Weapon Catalyst Exotic"
   },
   "2934767476": {
    "name": "Shatterdive",
@@ -7776,6 +7800,16 @@
    "hash": 3142289711,
    "type": "Weapon Perk"
   },
+  "3142708266": {
+   "name": "Prism Harvest",
+   "hash": 3142708266,
+   "type": "Ghost Mod"
+  },
+  "3142708267": {
+   "name": "Core Harvest",
+   "hash": 3142708267,
+   "type": "Ghost Mod"
+  },
   "3143051906": {
    "name": "Dual Loader",
    "hash": 3143051906,
@@ -7846,6 +7880,11 @@
    "itemHash": 1833195496,
    "type": "Weapon Frame Exotic"
   },
+  "3168818593": {
+   "name": "Modularity",
+   "hash": 3168818593,
+   "type": "Ghost Mod"
+  },
   "3172115769": {
    "name": "Protective Weave",
    "hash": 3172115769,
@@ -7891,31 +7930,6 @@
    "name": "Harmonic Resonance",
    "hash": 3186078099,
    "type": "Weapon Trait Origin"
-  },
-  "3187758160": {
-   "name": "Void/Strand Siphon Combo",
-   "hash": 3187758160,
-   "type": "Armor Mod Seasonal"
-  },
-  "3187758161": {
-   "name": "Solar/Strand Siphon Combo",
-   "hash": 3187758161,
-   "type": "Armor Mod Seasonal"
-  },
-  "3187758162": {
-   "name": "Arc/Strand Siphon Combo",
-   "hash": 3187758162,
-   "type": "Armor Mod Seasonal"
-  },
-  "3187758166": {
-   "name": "Diviner's Discount",
-   "hash": 3187758166,
-   "type": "Armor Mod Seasonal"
-  },
-  "3187758167": {
-   "name": "Origin Perk Specialization I",
-   "hash": 3187758167,
-   "type": "Armor Mod Seasonal"
   },
   "3188328909": {
    "name": "Stasis Siphon",
@@ -8369,6 +8383,11 @@
    "hash": 3419274965,
    "type": "Weapon Frame"
   },
+  "3422796781": {
+   "name": "Slice",
+   "hash": 3422796781,
+   "type": "Weapon Trait Enhanced"
+  },
   "3425386926": {
    "name": "Rampage",
    "hash": 3425386926,
@@ -8678,6 +8697,31 @@
    "name": "Will of Light (Solar)",
    "hash": 3540739611,
    "type": "Armor Mod Activity"
+  },
+  "3547711346": {
+   "name": "Wished into Being",
+   "hash": 3547711346,
+   "type": "Armor Mod Seasonal"
+  },
+  "3547711347": {
+   "name": "Origin Perk Specialization II",
+   "hash": 3547711347,
+   "type": "Armor Mod Seasonal"
+  },
+  "3547711348": {
+   "name": "Heart of the Flame",
+   "hash": 3547711348,
+   "type": "Armor Mod Seasonal"
+  },
+  "3547711349": {
+   "name": "Torch",
+   "hash": 3547711349,
+   "type": "Armor Mod Seasonal"
+  },
+  "3547711350": {
+   "name": "Flint Striker",
+   "hash": 3547711350,
+   "type": "Armor Mod Seasonal"
   },
   "3551326236": {
    "name": "Rampage",
@@ -9529,15 +9573,15 @@
    "hash": 3974407819,
    "type": "Weapon Trait Enhanced"
   },
-  "3976349716": {
-   "name": "Prosperity (Gambit)",
-   "hash": 3976349716,
-   "type": "Ghost Mod"
-  },
   "3977735242": {
    "name": "Tracking Module",
    "hash": 3977735242,
    "type": "Weapon Trait"
+  },
+  "3978094547": {
+   "name": "Dragon's Vengeance",
+   "hash": 3978094547,
+   "type": "Weapon Trait Origin"
   },
   "3978468247": {
    "name": "Discord",
@@ -9581,10 +9625,10 @@
    "hash": 3989629871,
    "type": "Weapon Trait Origin"
   },
-  "3989883859": {
-   "name": "Modularity (Vanguard)",
-   "hash": 3989883859,
-   "type": "Ghost Mod"
+  "3993379141": {
+   "name": "Deconstruct",
+   "hash": 3993379141,
+   "type": "Weapon Trait"
   },
   "3994043492": {
    "name": "Stacks on Stacks",
@@ -9804,6 +9848,11 @@
    "hash": 4082225868,
    "type": "Weapon Trait"
   },
+  "4085483014": {
+   "name": "Prosperity",
+   "hash": 4085483014,
+   "type": "Ghost Mod"
+  },
   "4085959009": {
    "name": "Relentless Strikes",
    "hash": 4085959009,
@@ -9976,6 +10025,31 @@
    "hash": 4152709778,
    "type": "Weapon Trait"
   },
+  "4152932096": {
+   "name": "Overload Pulse Rifle",
+   "hash": 4152932096,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152932097": {
+   "name": "Overload Auto Rifle",
+   "hash": 4152932097,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152932100": {
+   "name": "Piercing Sidearms",
+   "hash": 4152932100,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152932102": {
+   "name": "Unstoppable Bow",
+   "hash": 4152932102,
+   "type": "Armor Mod Seasonal"
+  },
+  "4152932103": {
+   "name": "Unstoppable Hand Cannon",
+   "hash": 4152932103,
+   "type": "Armor Mod Seasonal"
+  },
   "4154539168": {
    "name": "Burst Glide",
    "hash": 4154539168,
@@ -10000,11 +10074,6 @@
    "name": "Outreach",
    "hash": 4160037471,
    "type": "Armor Mod General"
-  },
-  "4162373251": {
-   "name": "Modularity (Crucible)",
-   "hash": 4162373251,
-   "type": "Ghost Mod"
   },
   "4172222323": {
    "name": "Legacy PR-55 Frame",
@@ -10632,6 +10701,14 @@
      "has": [
       1797707170,
       1185480639
+     ]
+    },
+    {
+     "name": "Dragon's Breath",
+     "has": [
+      2440389870,
+      2727957645,
+      2924294393
      ]
     },
     {
@@ -11329,6 +11406,20 @@
      ]
     },
     {
+     "name": "Wish-Keeper",
+     "has": [
+      214670074,
+      372672208,
+      372672209,
+      372672210,
+      372672211,
+      2655147888,
+      2655147894,
+      2655147895,
+      2799667909
+     ]
+    },
+    {
      "name": "Witherhoard",
      "has": [
       3063320916,
@@ -12004,6 +12095,10 @@
     "name": "Opening Shot",
     "linkedWith": 1370847713
    },
+   "64332393": {
+    "name": "Permeability",
+    "linkedWith": 2428997981
+   },
    "64866129": {
     "name": "Explosive Payload",
     "linkedWith": 3038247973
@@ -12039,6 +12134,10 @@
    "201365942": {
     "name": "Archer's Tempo",
     "linkedWith": 3523746922
+   },
+   "243981275": {
+    "name": "Attrition Orbs",
+    "linkedWith": 984655331
    },
    "247725512": {
     "name": "Rapid Hit",
@@ -12256,6 +12355,10 @@
     "name": "Sneak Bow",
     "linkedWith": 1663363584
    },
+   "923806249": {
+    "name": "Slice",
+    "linkedWith": 3422796781
+   },
    "951095735": {
     "name": "Impulse Amplifier",
     "linkedWith": 3878366039
@@ -12275,6 +12378,10 @@
    "972757866": {
     "name": "Pulse Monitor",
     "linkedWith": 1685378950
+   },
+   "984655331": {
+    "name": "Attrition Orbs",
+    "linkedWith": 243981275
    },
    "987673306": {
     "name": "Tunnel Vision",
@@ -12680,6 +12787,10 @@
     "name": "Adrenaline Junkie",
     "linkedWith": 11612903
    },
+   "2428997981": {
+    "name": "Permeability",
+    "linkedWith": 64332393
+   },
    "2450788523": {
     "name": "Killing Wind",
     "linkedWith": 4207509907
@@ -12971,6 +13082,10 @@
    "3418782618": {
     "name": "Rewind Rounds",
     "linkedWith": 1563455254
+   },
+   "3422796781": {
+    "name": "Slice",
+    "linkedWith": 923806249
    },
    "3425386926": {
     "name": "Rampage",
