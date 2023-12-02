@@ -18,6 +18,7 @@ export const updateData = async (data: FinalData) => {
     connection: {
       options: `project=${ENDPOINT_ID}`,
     },
+    // debug: true,
   })
 
   const perksQuery = Object.values(data).map((item) => {
@@ -25,67 +26,40 @@ export const updateData = async (data: FinalData) => {
 
     return {
       hash,
-      item_hash: appearsOn.length === 1 && typeof appearsOn[0] === 'number' ? appearsOn[0] : null,
-      name: JSON.stringify(name),
+      itemHash: appearsOn.length === 1 && typeof appearsOn[0] === 'number' ? appearsOn[0] : null,
+      name: name,
       type,
-      img,
-      appears_on: JSON.stringify(appearsOn),
-      linked_with: linkedWith === null ? null : JSON.stringify(linkedWith),
+      icon: img,
+      appearsOn,
+      linkedWith,
     }
   })
 
-  const descriptionsQuery = Object.values(data).map((item) => {
-    const { hash } = item
-    return { hash }
-  })
-
   await sql`
-    INSERT INTO perks
+    INSERT INTO "perks"
       ${sql(perksQuery)}
     ON CONFLICT (hash) DO UPDATE SET
-      item_hash = EXCLUDED.item_hash,
-      name = EXCLUDED.name,
-      type = EXCLUDED.type,
-      img = EXCLUDED.img,
-      appears_on = EXCLUDED.appears_on,
-      linked_with = EXCLUDED.linked_with;
-
-    INSERT INTO descriptions
-      ${sql(descriptionsQuery)}
-    ON CONFLICT (hash) DO NOTHING;
-    `
+      "itemHash" = EXCLUDED."itemHash",
+      "name" = EXCLUDED."name",
+      "type" = EXCLUDED."type",
+      "icon" = EXCLUDED."icon",
+      "appearsOn" = EXCLUDED."appearsOn",
+      "linkedWith" = EXCLUDED."linkedWith";
+  `
 
   await sql.end()
 }
 
 /*
 
-CREATE TABLE descriptions (
-  hash     BIGINT PRIMARY KEY,
-  comments JSONB,
-  en       JSONB,
-  de       JSONB,
-  es       JSONB,
-  "es-mx"  JSONB,
-  fr       JSONB,
-  it       JSONB,
-  ja       JSONB,
-  ko       JSONB,
-  pl       JSONB,
-  "pt-br"  JSONB,
-  ru       JSONB,
-  "zh-chs" JSONB,
-  "zh-cht" JSONB
-);
-
 CREATE TABLE perks (
   hash        BIGINT PRIMARY KEY,
-  item_hash   BIGINT,
+  itemHash    BIGINT,
   name        JSONB,
   type        TEXT  NOT NULL,
-  img         TEXT  NOT NULL,
-	appears_on  JSONB NOT NULL,
-	linked_with JSONB
+  icon        TEXT  NOT NULL,
+	appearsOn   JSONB NOT NULL,
+	linkedWith  JSONB
 );
 
 */
