@@ -487,6 +487,14 @@
   "hash": 84503918,
   "type": "Armor Mod General"
  },
+ "90392189": {
+  "appearsOn": [
+   3886719505
+  ],
+  "name": "Hungering Quarrel",
+  "hash": 90392189,
+  "type": "Weapon Frame Exotic"
+ },
  "95528736": {
   "appearsOn": [
    "Auto Rifle",
@@ -1000,6 +1008,17 @@
   "hash": 216781713,
   "type": "Weapon Frame"
  },
+ "220689851": {
+  "appearsOn": [
+   "Combat Bow",
+   "Sniper Rifle",
+   "Sidearm",
+   "Sword"
+  ],
+  "name": "Sundering",
+  "hash": 220689851,
+  "type": "Weapon Trait Origin"
+ },
  "224485255": {
   "appearsOn": [
    "Scout Rifle",
@@ -1083,6 +1102,7 @@
    "Fusion Rifle",
    "Glaive",
    "Hand Cannon",
+   "Sidearm",
    "Combat Bow",
    "Machine Gun"
   ],
@@ -2672,6 +2692,14 @@
   "hash": 571267712,
   "type": "Weapon Frame Exotic"
  },
+ "571791574": {
+  "appearsOn": [
+   3886719505
+  ],
+  "name": "Violent Reanimation",
+  "hash": 571791574,
+  "type": "Weapon Trait Exotic"
+ },
  "573122728": {
   "appearsOn": [
    "Auto Rifle",
@@ -3630,14 +3658,15 @@
    "Auto Rifle",
    "Grenade Launcher",
    "Submachine Gun",
+   "Combat Bow",
    "Fusion Rifle",
    "Pulse Rifle",
    "Hand Cannon",
    "Machine Gun",
    "Trace Rifle",
+   "Sniper Rifle",
    "Rocket Launcher",
    "Linear Fusion Rifle",
-   "Sniper Rifle",
    "Sword"
   ],
   "name": "Hatchling",
@@ -4188,10 +4217,13 @@
   "appearsOn": [
    "Shotgun",
    "Grenade Launcher",
+   "Combat Bow",
    "Auto Rifle",
    "Pulse Rifle",
    "Trace Rifle",
    "Fusion Rifle",
+   "Sniper Rifle",
+   "Sword",
    "Machine Gun"
   ],
   "name": "Slice",
@@ -4334,6 +4366,7 @@
    "Glaive",
    "Grenade Launcher",
    "Rocket Launcher",
+   "Sidearm",
    "Combat Bow"
   ],
   "name": "Impulse Amplifier",
@@ -4506,7 +4539,8 @@
  "981914802": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Hard Launch",
   "hash": 981914802,
@@ -5187,6 +5221,8 @@
    "Fusion Rifle",
    "Pulse Rifle",
    "Scout Rifle",
+   "Sniper Rifle",
+   "Sidearm",
    "Trace Rifle"
   ],
   "name": "Loose Change",
@@ -6429,7 +6465,8 @@
  },
  "1380253176": {
   "appearsOn": [
-   "Grenade Launcher"
+   "Grenade Launcher",
+   "Sidearm"
   ],
   "name": "High-Explosive Ordnance",
   "hash": 1380253176,
@@ -6741,7 +6778,8 @@
  "1441682018": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Linear Compensator",
   "hash": 1441682018,
@@ -6888,7 +6926,8 @@
  "1478423395": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Volatile Launch",
   "hash": 1478423395,
@@ -7233,7 +7272,8 @@
    "Glaive",
    "Fusion Rifle",
    "Sniper Rifle",
-   "Trace Rifle"
+   "Trace Rifle",
+   "Sidearm"
   ],
   "name": "Lead from Gold",
   "hash": 1556840489,
@@ -8689,7 +8729,8 @@
  "1844523823": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Confined Launch",
   "hash": 1844523823,
@@ -10021,6 +10062,14 @@
   "hash": 2199590568,
   "type": "Armor Mod General"
  },
+ "2199828458": {
+  "appearsOn": [
+   3886719505
+  ],
+  "name": "Buried Bloodline Catalyst",
+  "hash": 2199828458,
+  "type": "Weapon Catalyst Exotic"
+ },
  "2200569208": {
   "appearsOn": [
    2399110176
@@ -10731,11 +10780,11 @@
    "Pulse Rifle",
    "Sniper Rifle",
    "Auto Rifle",
+   "Combat Bow",
    "Linear Fusion Rifle",
    "Shotgun",
    "Rocket Launcher",
    "Fusion Rifle",
-   "Combat Bow",
    "Trace Rifle"
   ],
   "name": "High Ground",
@@ -11020,6 +11069,7 @@
    "Sidearm",
    "Auto Rifle",
    "Scout Rifle",
+   "Combat Bow",
    "Submachine Gun",
    "Shotgun",
    "Trace Rifle"
@@ -11088,6 +11138,7 @@
    "Rocket Launcher",
    "Pulse Rifle",
    "Hand Cannon",
+   "Sidearm",
    "Auto Rifle",
    "Combat Bow"
   ],
@@ -12823,7 +12874,8 @@
  "2822142346": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "High-Velocity Rounds",
   "hash": 2822142346,
@@ -12964,7 +13016,8 @@
  },
  "2859149211": {
   "appearsOn": [
-   "Glaive"
+   "Glaive",
+   "Sidearm"
   ],
   "name": "Beacon Rounds",
   "hash": 2859149211,
@@ -13289,6 +13342,14 @@
   "name": "Dragon's Breath Catalyst",
   "hash": 2924294393,
   "type": "Weapon Catalyst Exotic"
+ },
+ "2928496916": {
+  "appearsOn": [
+   "Sidearm"
+  ],
+  "name": "Rocket-Assisted Frame",
+  "hash": 2928496916,
+  "type": "Weapon Frame"
  },
  "2934767476": {
   "appearsOn": [
@@ -15556,7 +15617,8 @@
  "3492396210": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Implosion Rounds",
   "hash": 3492396210,
@@ -15693,7 +15755,8 @@
  "3525010810": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Quick Launch",
   "hash": 3525010810,
@@ -16027,6 +16090,7 @@
    "Machine Gun",
    "Sniper Rifle",
    "Submachine Gun",
+   "Combat Bow",
    "Rocket Launcher",
    "Trace Rifle",
    "Linear Fusion Rifle",
@@ -16798,7 +16862,8 @@
  "3798852852": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Smart Drift Control",
   "hash": 3798852852,
@@ -16837,7 +16902,8 @@
  "3809316345": {
   "appearsOn": [
    "Grenade Launcher",
-   "Rocket Launcher"
+   "Rocket Launcher",
+   "Sidearm"
   ],
   "name": "Countermass",
   "hash": 3809316345,
@@ -17450,6 +17516,7 @@
    "Glaive",
    "Hand Cannon",
    "Submachine Gun",
+   "Sidearm",
    "Combat Bow",
    "Trace Rifle"
   ],
