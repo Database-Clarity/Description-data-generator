@@ -21,19 +21,7 @@ export const updateData = async (data: FinalData) => {
     // debug: true,
   })
 
-  const perksQuery = Object.values(data).map((item) => {
-    const { hash, name, type, img, appearsOn, linkedWith } = item
-
-    return {
-      hash,
-      itemHash: appearsOn.length === 1 && typeof appearsOn[0] === 'number' ? appearsOn[0] : null,
-      name: name,
-      type,
-      icon: img,
-      appearsOn,
-      linkedWith,
-    }
-  })
+  const perksQuery = Object.values(data)
 
   await sql`
     INSERT INTO "perks"
@@ -41,8 +29,10 @@ export const updateData = async (data: FinalData) => {
     ON CONFLICT (hash) DO UPDATE SET
       "itemHash" = EXCLUDED."itemHash",
       "name" = EXCLUDED."name",
+      "itemName" = EXCLUDED."itemName",
       "type" = EXCLUDED."type",
       "icon" = EXCLUDED."icon",
+      "itemIcon" = EXCLUDED."itemIcon",
       "appearsOn" = EXCLUDED."appearsOn",
       "linkedWith" = EXCLUDED."linkedWith";
   `

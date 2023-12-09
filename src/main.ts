@@ -28,9 +28,12 @@ export type FinalData = {
   [key: string]: {
     appearsOn: (string | number)[]
     name: { [key in Language]: string }
+    itemName: { [key in Language]: string } | null
     hash: number
+    itemHash: number | null
     type: PerkTypes
-    img: string
+    icon: string
+    itemIcon: string | null
     linkedWith: number[] | null
   }
 }
@@ -223,6 +226,8 @@ export type FinalData = {
     // change exotic hash to name on legendary perks
     const appearsOn = isLegendary ? fixAppearsOn(appearsOnArr) : appearsOnArr
 
+    const itemHash = appearsOn.length === 1 && typeof appearsOn[0] === 'number' ? appearsOn[0] : null
+
     acc[key] = {
       appearsOn,
       name: {
@@ -240,8 +245,29 @@ export type FinalData = {
         'zh-chs': invLightZhChs[key].displayProperties.name,
         'zh-cht': invLightZhCht[key].displayProperties.name,
       },
-      img: inventoryItem[key].displayProperties.icon?.replace('/common/destiny2_content/icons', '') || '',
+      itemName: itemHash
+        ? {
+            en: inventoryItem[itemHash].displayProperties.name,
+            de: invLightDe[itemHash].displayProperties.name,
+            es: invLightEs[itemHash].displayProperties.name,
+            'es-mx': invLightEsMx[itemHash].displayProperties.name,
+            fr: invLightFr[itemHash].displayProperties.name,
+            it: invLightIt[itemHash].displayProperties.name,
+            ja: invLightJa[itemHash].displayProperties.name,
+            ko: invLightKo[itemHash].displayProperties.name,
+            pl: invLightPl[itemHash].displayProperties.name,
+            'pt-br': invLightPtBr[itemHash].displayProperties.name,
+            ru: invLightRu[itemHash].displayProperties.name,
+            'zh-chs': invLightZhChs[itemHash].displayProperties.name,
+            'zh-cht': invLightZhCht[itemHash].displayProperties.name,
+          }
+        : null,
+      icon: inventoryItem[key].displayProperties.icon?.replace('/common/destiny2_content/icons', '') || '',
+      itemIcon: itemHash
+        ? inventoryItem[itemHash].displayProperties.icon?.replace('/common/destiny2_content/icons', '') || ''
+        : null,
       hash: item.hash,
+      itemHash,
       type: item.type,
       linkedWith: item.linkedWith?.length !== 0 ? item.linkedWith || null : null,
     }
