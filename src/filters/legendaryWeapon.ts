@@ -17,6 +17,7 @@ export const legendaryWeapons = (inventoryItems: InventoryItems, plugSets: PlugS
       data[perk.hash].linkedWith = [
         ...new Set([...(data[perk.hash].linkedWith ?? []), ...(frameArr?.map((frame) => frame.hash) ?? [])]),
       ]
+      data[perk.hash].type = type
       return
     }
 

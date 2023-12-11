@@ -6,11 +6,18 @@ import { ghostMods } from './filters/ghostMods.js'
 import { legendaryWeapons } from './filters/legendaryWeapon.js'
 import { subclass } from './filters/subclass.js'
 import { weaponCraftingRecipes } from './filters/weaponCraftingRecipes.js'
-import { perkLinking } from './utils/perkLinking.js'
+import {
+  armorModsLinking as armorModLinking,
+  enhancedPerkLinking,
+  exoticWeaponLinking,
+  originTraitsLinking as originTraitLinking,
+  weaponFramesLinking as weaponFrameLinking,
+} from './utils/perkLinking.js'
 import { updateData } from './utils/postgres.js'
 import { fetchBungie } from './utils/fetchBungieManifest.js'
 import { Language, PerkTypes } from './utils/bungieTypes/manifest.js'
 import { timeTracker } from './utils/timeTracker.js'
+import fs from 'fs'
 
 export type PerkData = {
   appearsOn: Set<string | number>
@@ -140,7 +147,8 @@ export type FinalData = {
     if (
       item.itemTypeDisplayName === 'Solstice Embers' ||
       item.itemTypeDisplayName === 'Kindling' ||
-      item.displayProperties.name === 'Reset Artifact'
+      item.displayProperties.name === 'Reset Artifact' ||
+      item.displayProperties.icon === '/common/destiny2_content/icons/564c4604b7e78e78bf126359b91990e5.jpg' // pink icon
     ) {
       delete inventoryItem[key]
       continue
@@ -171,6 +179,7 @@ export type FinalData = {
       item.displayProperties.name === 'Deepsight Resonance' ||
       item.displayProperties.name === 'Extract Pattern' ||
       item.displayProperties.name === 'Locked Armor Mod' ||
+      item.displayProperties.name === 'Trait Locked' ||
       item.itemTypeDisplayName === 'Material' ||
       item.itemTypeDisplayName === 'Armor Set' ||
       item.itemTypeDisplayName?.replaceAll('"', '') === 'Holiday Gift' ||
@@ -185,6 +194,7 @@ export type FinalData = {
 
   const data: PerkDataList = {}
 
+  // these \/ functions modify data object
   armorMods(inventoryItem, plugSet, data)
   artifactMods(inventoryItem, data)
   exoticArmors(inventoryItem, plugSet, data)
@@ -194,7 +204,12 @@ export type FinalData = {
   subclass(inventoryItem, plugSet, data)
   weaponCraftingRecipes(inventoryItem, plugSet, data)
 
-  perkLinking(data)
+  exoticWeaponLinking(data, inventoryItem)
+  weaponFrameLinking(data)
+  originTraitLinking(data)
+  armorModLinking(data)
+  enhancedPerkLinking(data)
+  // these /\ functions modify data object
 
   const fixAppearsOn = (data: (string | number)[]) => {
     const dataArr = data.map((x) => {
@@ -226,7 +241,7 @@ export type FinalData = {
     // change exotic hash to name on legendary perks
     const appearsOn = isLegendary ? fixAppearsOn(appearsOnArr) : appearsOnArr
 
-    const itemHash = appearsOn.length === 1 && typeof appearsOn[0] === 'number' ? appearsOn[0] : null
+    const itemHash = appearsOn.every((value) => typeof value === 'number') ? (appearsOn[0] as number) : null
 
     acc[key] = {
       appearsOn,
