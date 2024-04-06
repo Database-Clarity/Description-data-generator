@@ -1,17 +1,15 @@
 {
   "cSpell.words": [
-    "Deepsight",
+    "deepsight",
     "equippable",
-    "gearset",
+    "godotenv",
     "interactable",
+    "jackc",
+    "joho",
     "osteo",
-    "PGDATABASE",
-    "PGHOST",
-    "PGPASSWORD",
-    "PGUSER",
-    "questline",
-    "reinitialization",
+    "Reinitialization",
     "striga",
-    "transformative"
+    "transformative",
+    "unmarshalling"
   ]
 }
