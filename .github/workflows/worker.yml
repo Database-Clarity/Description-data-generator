@@ -1,4 +1,4 @@
-name: Build, Generate, and Deploy Data
+name: Generate, and Update Data
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch: # For manually running the action
 
 jobs:
-  build-and-deploy:
+  generate-and-update:
     runs-on: ubuntu-latest
 
     steps:
