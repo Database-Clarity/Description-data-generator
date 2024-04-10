@@ -275,6 +275,7 @@
   "appearsOn": [
    "Hand Cannon",
    "Scout Rifle",
+   "Sword",
    "Machine Gun",
    "Pulse Rifle",
    "Auto Rifle",
@@ -497,9 +498,9 @@
  },
  "95528736": {
   "appearsOn": [
+   "Machine Gun",
    "Submachine Gun",
-   "Auto Rifle",
-   "Machine Gun"
+   "Auto Rifle"
   ],
   "name": "Onslaught",
   "hash": 95528736,
@@ -1100,9 +1101,9 @@
    "Auto Rifle",
    "Rocket Launcher",
    "Trace Rifle",
+   "Hand Cannon",
    "Fusion Rifle",
    "Glaive",
-   "Hand Cannon",
    "Sidearm",
    "Combat Bow",
    "Machine Gun"
@@ -1288,8 +1289,8 @@
    "Fusion Rifle",
    "Scout Rifle",
    "Hand Cannon",
-   "Submachine Gun",
    "Sniper Rifle",
+   "Submachine Gun",
    "Linear Fusion Rifle",
    "Grenade Launcher",
    "Auto Rifle"
@@ -1300,7 +1301,8 @@
  },
  "281315705": {
   "appearsOn": [
-   1891561814
+   1891561814,
+   1983149589
   ],
   "name": "White Nail",
   "hash": 281315705,
@@ -2202,6 +2204,7 @@
  },
  "469285294": {
   "appearsOn": [
+   "Grenade Launcher",
    "Sniper Rifle",
    "Shotgun"
   ],
@@ -3496,6 +3499,30 @@
   "hash": 776531651,
   "type": "Weapon Trait"
  },
+ "777589556": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "No Distractions",
+  "hash": 777589556,
+  "type": "Weapon Trait Exotic"
+ },
+ "777589557": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "Enlightened Action",
+  "hash": 777589557,
+  "type": "Weapon Trait Exotic"
+ },
+ "777589559": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "Field Prep",
+  "hash": 777589559,
+  "type": "Weapon Trait Exotic"
+ },
  "777637181": {
   "appearsOn": [
    2694576561
@@ -4487,6 +4514,7 @@
    "Sidearm",
    "Shotgun",
    "Auto Rifle",
+   "Machine Gun",
    "Grenade Launcher",
    "Submachine Gun",
    "Rocket Launcher",
@@ -4495,7 +4523,6 @@
    "Linear Fusion Rifle",
    "Fusion Rifle",
    "Hand Cannon",
-   "Machine Gun",
    "Pulse Rifle"
   ],
   "name": "Envious Assassin",
@@ -5216,12 +5243,12 @@
  "1119449540": {
   "appearsOn": [
    "Shotgun",
+   "Scout Rifle",
    "Grenade Launcher",
    "Linear Fusion Rifle",
    "Hand Cannon",
-   "Fusion Rifle",
    "Pulse Rifle",
-   "Scout Rifle",
+   "Fusion Rifle",
    "Sniper Rifle",
    "Sidearm",
    "Trace Rifle"
@@ -6364,13 +6391,13 @@
   "appearsOn": [
    "Shotgun",
    "Sidearm",
+   "Machine Gun",
    "Hand Cannon",
    "Scout Rifle",
    "Auto Rifle",
    "Submachine Gun",
    "Linear Fusion Rifle",
-   "Sniper Rifle",
-   "Machine Gun"
+   "Sniper Rifle"
   ],
   "name": "Fourth Time's the Charm",
   "hash": 1354429876,
@@ -7093,12 +7120,12 @@
    "Auto Rifle",
    "Machine Gun",
    "Grenade Launcher",
+   "Sniper Rifle",
    "Fusion Rifle",
    "Trace Rifle",
    "Linear Fusion Rifle",
    "Hand Cannon",
-   "Rocket Launcher",
-   "Sniper Rifle"
+   "Rocket Launcher"
   ],
   "name": "Reconstruction",
   "hash": 1523832109,
@@ -7272,8 +7299,8 @@
    "Grenade Launcher",
    "Shotgun",
    "Glaive",
-   "Fusion Rifle",
    "Sniper Rifle",
+   "Fusion Rifle",
    "Trace Rifle",
    "Sidearm"
   ],
@@ -8803,6 +8830,7 @@
   "appearsOn": [
    "Shotgun",
    "Auto Rifle",
+   "Machine Gun",
    "Pulse Rifle",
    "Hand Cannon",
    "Sniper Rifle",
@@ -8811,8 +8839,7 @@
    "Grenade Launcher",
    "Submachine Gun",
    "Fusion Rifle",
-   "Combat Bow",
-   "Machine Gun"
+   "Combat Bow"
   ],
   "name": "Under-Over",
   "hash": 1870851715,
@@ -9576,6 +9603,7 @@
    "Sword",
    "Hand Cannon",
    "Shotgun",
+   "Machine Gun",
    "Grenade Launcher",
    "Scout Rifle",
    "Auto Rifle",
@@ -9583,7 +9611,7 @@
    "Sniper Rifle",
    "Rocket Launcher",
    "Linear Fusion Rifle",
-   "Machine Gun",
+   "Pulse Rifle",
    "Glaive"
   ],
   "name": "Destabilizing Rounds",
@@ -9757,6 +9785,20 @@
   "name": "Lightweight Frame",
   "hash": 2108556049,
   "type": "Weapon Frame"
+ },
+ "2109543898": {
+  "appearsOn": [
+   "Scout Rifle",
+   "Machine Gun",
+   "Sword",
+   "Grenade Launcher",
+   "Submachine Gun",
+   "Pulse Rifle",
+   "Hand Cannon"
+  ],
+  "name": "Desperate Measures",
+  "hash": 2109543898,
+  "type": "Weapon Trait"
  },
  "2117683199": {
   "appearsOn": [
@@ -11398,6 +11440,21 @@
   "hash": 2485657760,
   "type": "Armor Mod General"
  },
+ "2489430594": {
+  "appearsOn": [
+   "Scout Rifle",
+   "Machine Gun",
+   "Sword",
+   "Grenade Launcher",
+   "Sniper Rifle",
+   "Submachine Gun",
+   "Pulse Rifle",
+   "Hand Cannon"
+  ],
+  "name": "Indomitability",
+  "hash": 2489430594,
+  "type": "Weapon Trait Origin"
+ },
  "2490530085": {
   "appearsOn": [
    "Hand Cannon",
@@ -11598,8 +11655,8 @@
  "2551157718": {
   "appearsOn": [
    "Scout Rifle",
-   "Linear Fusion Rifle",
-   "Sniper Rifle"
+   "Sniper Rifle",
+   "Linear Fusion Rifle"
   ],
   "name": "Box Breathing",
   "hash": 2551157718,
@@ -11692,6 +11749,30 @@
   "name": "Charged Up",
   "hash": 2577472338,
   "type": "Armor Mod General"
+ },
+ "2578928832": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "Rewind Rounds",
+  "hash": 2578928832,
+  "type": "Weapon Trait Exotic"
+ },
+ "2578928833": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "Headseeker",
+  "hash": 2578928833,
+  "type": "Weapon Trait Exotic"
+ },
+ "2578928835": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "Rapid Hit",
+  "hash": 2578928835,
+  "type": "Weapon Trait Exotic"
  },
  "2581086849": {
   "appearsOn": [
@@ -12272,6 +12353,14 @@
   "name": "Solar Targeting",
   "hash": 2719698929,
   "type": "Armor Mod General"
+ },
+ "2720533289": {
+  "appearsOn": [
+   "Hand Cannon"
+  ],
+  "name": "Magnificent Howl",
+  "hash": 2720533289,
+  "type": "Weapon Trait"
  },
  "2722573681": {
   "appearsOn": [
@@ -13953,13 +14042,13 @@
  },
  "3078487919": {
   "appearsOn": [
+   "Sword",
    "Machine Gun",
    "Grenade Launcher",
    "Fusion Rifle",
    "Pulse Rifle",
    "Rocket Launcher",
    "Linear Fusion Rifle",
-   "Sword",
    "Glaive",
    "Submachine Gun",
    "Sniper Rifle"
@@ -13975,6 +14064,14 @@
   "name": "The Fundamentals",
   "hash": 3081173348,
   "type": "Weapon Frame Exotic"
+ },
+ "3081867624": {
+  "appearsOn": [
+   "Submachine Gun"
+  ],
+  "name": "Master of Arms",
+  "hash": 3081867624,
+  "type": "Weapon Trait"
  },
  "3094620656": {
   "appearsOn": [
@@ -14468,6 +14565,7 @@
  "3201496230": {
   "appearsOn": [
    "Scout Rifle",
+   "Sniper Rifle",
    "Grenade Launcher",
    "Hand Cannon",
    "Glaive",
@@ -14615,7 +14713,8 @@
  },
  "3242533954": {
   "appearsOn": [
-   400096939
+   400096939,
+   3824673936
   ],
   "name": "Parasitism",
   "hash": 3242533954,
@@ -14976,7 +15075,8 @@
  },
  "3337692349": {
   "appearsOn": [
-   1891561814
+   1891561814,
+   1983149589
   ],
   "name": "Mulligan",
   "hash": 3337692349,
@@ -15214,14 +15314,15 @@
  "3418782618": {
   "appearsOn": [
    "Scout Rifle",
+   "Machine Gun",
    "Sidearm",
    "Auto Rifle",
-   "Machine Gun",
    "Shotgun",
    "Hand Cannon",
    "Trace Rifle",
    "Linear Fusion Rifle",
    "Sniper Rifle",
+   "Pulse Rifle",
    "Submachine Gun",
    "Fusion Rifle"
   ],
@@ -15731,9 +15832,9 @@
    "Scout Rifle",
    "Machine Gun",
    "Trace Rifle",
+   "Sniper Rifle",
    "Fusion Rifle",
    "Sidearm",
-   "Sniper Rifle",
    "Submachine Gun",
    "Linear Fusion Rifle"
   ],
@@ -16152,6 +16253,30 @@
   "hash": 3638234982,
   "type": "Weapon Catalyst Exotic"
  },
+ "3639389650": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "The Corruption Spreads II",
+  "hash": 3639389650,
+  "type": "Weapon Frame Exotic"
+ },
+ "3639389651": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "The Corruption Spreads III",
+  "hash": 3639389651,
+  "type": "Weapon Frame Exotic"
+ },
+ "3639389652": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "The Corruption Spreads IV",
+  "hash": 3639389652,
+  "type": "Weapon Frame Exotic"
+ },
  "3641619157": {
   "appearsOn": [
    "Leg Armor",
@@ -16193,6 +16318,7 @@
    "Sidearm",
    "Scout Rifle",
    "Hand Cannon",
+   "Grenade Launcher",
    "Sniper Rifle",
    "Auto Rifle",
    "Submachine Gun",
@@ -16461,6 +16587,7 @@
   "appearsOn": [
    "Sword",
    "Shotgun",
+   "Machine Gun",
    "Hand Cannon",
    "Submachine Gun",
    "Sidearm",
@@ -16469,7 +16596,6 @@
    "Glaive",
    "Linear Fusion Rifle",
    "Rocket Launcher",
-   "Machine Gun",
    "Auto Rifle",
    "Combat Bow"
   ],
@@ -16607,6 +16733,14 @@
   "hash": 3728676938,
   "type": "Weapon Frame Enhanced"
  },
+ "3732232161": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "Whispered Breathing",
+  "hash": 3732232161,
+  "type": "Weapon Catalyst Exotic"
+ },
  "3736152098": {
   "appearsOn": [
    "Chest Armor",
@@ -16680,6 +16814,14 @@
   "name": "Under Pressure",
   "hash": 3755250867,
   "type": "Weapon Trait Enhanced"
+ },
+ "3758615625": {
+  "appearsOn": [
+   "Grenade Launcher"
+  ],
+  "name": "Micro-Missile Frame",
+  "hash": 3758615625,
+  "type": "Weapon Frame"
  },
  "3766386008": {
   "appearsOn": [
@@ -16917,9 +17059,9 @@
  },
  "3824105627": {
   "appearsOn": [
+   "Scout Rifle",
    "Hand Cannon",
    "Machine Gun",
-   "Scout Rifle",
    "Sniper Rifle",
    "Pulse Rifle"
   ],
@@ -16948,11 +17090,11 @@
    "Hand Cannon",
    "Auto Rifle",
    "Combat Bow",
+   "Scout Rifle",
    "Pulse Rifle",
    "Grenade Launcher",
-   "Scout Rifle",
-   "Sniper Rifle",
    "Submachine Gun",
+   "Sniper Rifle",
    "Fusion Rifle",
    "Sidearm",
    "Trace Rifle"
@@ -17102,13 +17244,13 @@
  },
  "3891536761": {
   "appearsOn": [
+   "Scout Rifle",
    "Sidearm",
    "Pulse Rifle",
-   "Scout Rifle",
    "Submachine Gun",
    "Auto Rifle",
-   "Sniper Rifle",
-   "Hand Cannon"
+   "Hand Cannon",
+   "Sniper Rifle"
   ],
   "name": "Kinetic Tremors",
   "hash": 3891536761,
@@ -17506,8 +17648,8 @@
   "appearsOn": [
    "Shotgun",
    "Pulse Rifle",
-   "Submachine Gun",
    "Grenade Launcher",
+   "Submachine Gun",
    "Sniper Rifle",
    "Linear Fusion Rifle",
    "Auto Rifle",
@@ -18096,6 +18238,7 @@
    "Shotgun",
    "Auto Rifle",
    "Sidearm",
+   "Sword",
    "Glaive",
    "Trace Rifle",
    "Scout Rifle",
@@ -18103,7 +18246,6 @@
    "Submachine Gun",
    "Rocket Launcher",
    "Linear Fusion Rifle",
-   "Sword",
    "Machine Gun",
    "Fusion Rifle",
    "Combat Bow"
@@ -18215,6 +18357,14 @@
   "name": "Voltaic Mote Collector",
   "hash": 4134680615,
   "type": "Armor Mod Activity"
+ },
+ "4135406211": {
+  "appearsOn": [
+   3824673936
+  ],
+  "name": "Disease Vector",
+  "hash": 4135406211,
+  "type": "Weapon Catalyst Exotic"
  },
  "4146729347": {
   "appearsOn": [
@@ -18627,7 +18777,8 @@
  },
  "4208418110": {
   "appearsOn": [
-   400096939
+   400096939,
+   3824673936
   ],
   "name": "The Corruption Spreads",
   "hash": 4208418110,
@@ -19117,6 +19268,30 @@
   "name": "Arc Reserves",
   "hash": 4283953067,
   "type": "Armor Mod General"
+ },
+ "4285971291": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "White Nail IV",
+  "hash": 4285971291,
+  "type": "Weapon Frame Exotic"
+ },
+ "4285971292": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "White Nail III",
+  "hash": 4285971292,
+  "type": "Weapon Frame Exotic"
+ },
+ "4285971293": {
+  "appearsOn": [
+   1983149589
+  ],
+  "name": "White Nail II",
+  "hash": 4285971293,
+  "type": "Weapon Frame Exotic"
  },
  "4287822553": {
   "appearsOn": [

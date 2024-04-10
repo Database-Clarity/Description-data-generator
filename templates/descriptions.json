@@ -742,8 +742,6 @@
   "281315705": {
    "name": "White Nail",
    "hash": 281315705,
-   "itemName": "Whisper of the Worm",
-   "itemHash": 1891561814,
    "type": "Weapon Frame Exotic"
   },
   "288411554": {
@@ -1936,6 +1934,27 @@
    "name": "Repulsor Brace",
    "hash": 776531651,
    "type": "Weapon Trait"
+  },
+  "777589556": {
+   "name": "No Distractions",
+   "hash": 777589556,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Trait Exotic"
+  },
+  "777589557": {
+   "name": "Enlightened Action",
+   "hash": 777589557,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Trait Exotic"
+  },
+  "777589559": {
+   "name": "Field Prep",
+   "hash": 777589559,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Trait Exotic"
   },
   "777637181": {
    "name": "Play with Your Prey",
@@ -5392,6 +5411,11 @@
    "hash": 2108556049,
    "type": "Weapon Frame"
   },
+  "2109543898": {
+   "name": "Desperate Measures",
+   "hash": 2109543898,
+   "type": "Weapon Trait"
+  },
   "2117683199": {
    "name": "Full Auto Trigger System",
    "hash": 2117683199,
@@ -6317,6 +6341,11 @@
    "hash": 2485657760,
    "type": "Armor Mod General"
   },
+  "2489430594": {
+   "name": "Indomitability",
+   "hash": 2489430594,
+   "type": "Weapon Trait Origin"
+  },
   "2490530085": {
    "name": "Adaptive Frame",
    "hash": 2490530085,
@@ -6475,6 +6504,27 @@
    "name": "Charged Up",
    "hash": 2577472338,
    "type": "Armor Mod General"
+  },
+  "2578928832": {
+   "name": "Rewind Rounds",
+   "hash": 2578928832,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Trait Exotic"
+  },
+  "2578928833": {
+   "name": "Headseeker",
+   "hash": 2578928833,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Trait Exotic"
+  },
+  "2578928835": {
+   "name": "Rapid Hit",
+   "hash": 2578928835,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Trait Exotic"
   },
   "2581086849": {
    "name": "Incendiary Grenade",
@@ -6790,6 +6840,11 @@
    "name": "Solar Targeting",
    "hash": 2719698929,
    "type": "Armor Mod General"
+  },
+  "2720533289": {
+   "name": "Magnificent Howl",
+   "hash": 2720533289,
+   "type": "Weapon Trait"
   },
   "2722573681": {
    "name": "Shadowshot: Moebius Quiver",
@@ -7743,6 +7798,11 @@
    "itemHash": 3141979347,
    "type": "Weapon Frame Exotic"
   },
+  "3081867624": {
+   "name": "Master of Arms",
+   "hash": 3081867624,
+   "type": "Weapon Trait"
+  },
   "3094620656": {
    "name": "Unflinching Harmonic Aim",
    "hash": 3094620656,
@@ -8092,8 +8152,6 @@
   "3242533954": {
    "name": "Parasitism",
    "hash": 3242533954,
-   "itemName": "Outbreak Perfected",
-   "itemHash": 400096939,
    "type": "Weapon Trait Exotic"
   },
   "3245543337": {
@@ -8277,8 +8335,6 @@
   "3337692349": {
    "name": "Mulligan",
    "hash": 3337692349,
-   "itemName": "Whisper of the Worm",
-   "itemHash": 1891561814,
    "type": "Weapon Trait Exotic"
   },
   "3347978672": {
@@ -8914,6 +8970,27 @@
    "itemHash": 449318888,
    "type": "Weapon Catalyst Exotic"
   },
+  "3639389650": {
+   "name": "The Corruption Spreads II",
+   "hash": 3639389650,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Frame Exotic"
+  },
+  "3639389651": {
+   "name": "The Corruption Spreads III",
+   "hash": 3639389651,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Frame Exotic"
+  },
+  "3639389652": {
+   "name": "The Corruption Spreads IV",
+   "hash": 3639389652,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Frame Exotic"
+  },
   "3641619157": {
    "name": "Locked Armor Mod",
    "hash": 3641619157,
@@ -9157,6 +9234,13 @@
    "hash": 3728676938,
    "type": "Weapon Frame Enhanced"
   },
+  "3732232161": {
+   "name": "Whispered Breathing",
+   "hash": 3732232161,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Catalyst Exotic"
+  },
   "3736152098": {
    "name": "Nightmare Crusher",
    "hash": 3736152098,
@@ -9188,6 +9272,11 @@
    "name": "Under Pressure",
    "hash": 3755250867,
    "type": "Weapon Trait Enhanced"
+  },
+  "3758615625": {
+   "name": "Micro-Missile Frame",
+   "hash": 3758615625,
+   "type": "Weapon Frame"
   },
   "3766386008": {
    "name": "Legacy PR-55 Frame",
@@ -10000,6 +10089,13 @@
    "hash": 4134680615,
    "type": "Armor Mod Activity"
   },
+  "4135406211": {
+   "name": "Disease Vector",
+   "hash": 4135406211,
+   "itemName": "Outbreak Perfected",
+   "itemHash": 3824673936,
+   "type": "Weapon Catalyst Exotic"
+  },
   "4146729347": {
    "name": "Last Stand",
    "hash": 4146729347,
@@ -10239,8 +10335,6 @@
   "4208418110": {
    "name": "The Corruption Spreads",
    "hash": 4208418110,
-   "itemName": "Outbreak Perfected",
-   "itemHash": 400096939,
    "type": "Weapon Frame Exotic"
   },
   "4208512210": {
@@ -10501,6 +10595,27 @@
    "name": "Arc Reserves",
    "hash": 4283953067,
    "type": "Armor Mod General"
+  },
+  "4285971291": {
+   "name": "White Nail IV",
+   "hash": 4285971291,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Frame Exotic"
+  },
+  "4285971292": {
+   "name": "White Nail III",
+   "hash": 4285971292,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Frame Exotic"
+  },
+  "4285971293": {
+   "name": "White Nail II",
+   "hash": 4285971293,
+   "itemName": "Whisper of the Worm",
+   "itemHash": 1983149589,
+   "type": "Weapon Frame Exotic"
   },
   "4287822553": {
    "name": "Strand Reserves",
@@ -11029,6 +11144,20 @@
      ]
     },
     {
+     "name": "Outbreak Perfected",
+     "has": [
+      3639389650,
+      2578928832,
+      2578928833,
+      2578928835,
+      3242533954,
+      3639389651,
+      3639389652,
+      4135406211,
+      4208418110
+     ]
+    },
+    {
      "name": "Parasite",
      "has": [
       1174163613,
@@ -11420,6 +11549,20 @@
      ]
     },
     {
+     "name": "Whisper of the Worm",
+     "has": [
+      281315705,
+      777589556,
+      777589557,
+      777589559,
+      3337692349,
+      3732232161,
+      4285971291,
+      4285971292,
+      4285971293
+     ]
+    },
+    {
      "name": "Wicked Implement",
      "has": [
       1266604956,
@@ -11524,7 +11667,8 @@
       1395789926,
       1759472859,
       2353477480,
-      2571259936
+      2571259936,
+      3758615625
      ]
     },
     {
