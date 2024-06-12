@@ -20,6 +20,11 @@
    "hash": 1399219,
    "type": "Subclass Grenade"
   },
+  "2593449": {
+   "name": "Rapid-Fire Glaive",
+   "hash": 2593449,
+   "type": "Weapon Frame Enhanced"
+  },
   "4620383": {
    "name": "Weft Cutter",
    "hash": 4620383,
@@ -596,6 +601,11 @@
    "name": "Precision Frame",
    "hash": 216781713,
    "type": "Weapon Frame"
+  },
+  "217816625": {
+   "name": "Rapid-Fire Glaive",
+   "hash": 217816625,
+   "type": "Weapon Frame Enhanced"
   },
   "220689851": {
    "name": "Sundering",
@@ -1193,6 +1203,11 @@
    "name": "Gambler's Dodge",
    "hash": 426473317,
    "type": "Subclass Class"
+  },
+  "430173891": {
+   "name": "Wave Sword Frame",
+   "hash": 430173891,
+   "type": "Weapon Frame"
   },
   "431220296": {
    "name": "Lord of Wolves Catalyst",
@@ -1901,6 +1916,11 @@
    "itemName": "Mask of Bakris",
    "itemHash": 1619425569,
    "type": "Armor Trait Exotic"
+  },
+  "694879972": {
+   "name": "Rapid-Fire Glaive",
+   "hash": 694879972,
+   "type": "Weapon Frame Enhanced"
   },
   "699525795": {
    "name": "Eye of the Storm",
@@ -3380,6 +3400,13 @@
    "hash": 1180618054,
    "type": "Weapon Perk"
   },
+  "1180907940": {
+   "name": "Spindle",
+   "hash": 1180907940,
+   "itemName": "Euphony",
+   "itemHash": 3284383335,
+   "type": "Weapon Trait Exotic"
+  },
   "1183436451": {
    "name": "Firefly",
    "hash": 1183436451,
@@ -4578,6 +4605,11 @@
    "hash": 1589556860,
    "type": "Armor Mod General"
   },
+  "1592669035": {
+   "name": "Replenishing Aegis",
+   "hash": 1592669035,
+   "type": "Weapon Trait Enhanced"
+  },
   "1598147670": {
    "name": "Psychohack",
    "hash": 1598147670,
@@ -5222,6 +5254,11 @@
    "hash": 1817649409,
    "type": "Weapon Frame Enhanced"
   },
+  "1817983009": {
+   "name": "Chaos Reshaped",
+   "hash": 1817983009,
+   "type": "Weapon Trait Enhanced"
+  },
   "1820053064": {
    "name": "Blinding Light",
    "hash": 1820053064,
@@ -5384,6 +5421,11 @@
    "name": "High-Impact Frame",
    "hash": 1875323682,
    "type": "Weapon Frame Enhanced"
+  },
+  "1878756191": {
+   "name": "Collective Purpose",
+   "hash": 1878756191,
+   "type": "Weapon Trait Origin"
   },
   "1880379474": {
    "name": "Arbalest Catalyst",
@@ -5624,6 +5666,11 @@
    "itemName": "Verity's Brow",
    "itemHash": 2428181146,
    "type": "Armor Trait Exotic"
+  },
+  "1978306813": {
+   "name": "Wave Sword Frame",
+   "hash": 1978306813,
+   "type": "Weapon Frame"
   },
   "1980796560": {
    "name": "Shield Throw",
@@ -6960,6 +7007,11 @@
    "name": "Harmonic Dexterity",
    "hash": 2479297167,
    "type": "Armor Mod General"
+  },
+  "2479787361": {
+   "name": "Rapid-Fire Glaive",
+   "hash": 2479787361,
+   "type": "Weapon Frame Enhanced"
   },
   "2481624867": {
    "name": "Storm Grenade",
@@ -9942,6 +9994,11 @@
    "itemHash": 3824673936,
    "type": "Weapon Frame Exotic"
   },
+  "3640170453": {
+   "name": "Chaos Reshaped",
+   "hash": 3640170453,
+   "type": "Weapon Trait"
+  },
   "3641619157": {
    "name": "Locked Armor Mod",
    "hash": 3641619157,
@@ -10120,6 +10177,13 @@
    "name": "Shoot to Loot",
    "hash": 3700496672,
    "type": "Weapon Trait"
+  },
+  "3703325290": {
+   "name": "Euphony Catalyst",
+   "hash": 3703325290,
+   "itemName": "Euphony",
+   "itemHash": 3284383335,
+   "type": "Weapon Catalyst Exotic"
   },
   "3705817207": {
    "name": "Duelist's Trance",
@@ -10508,6 +10572,13 @@
    "name": "Kinetic Tremors",
    "hash": 3891536761,
    "type": "Weapon Trait"
+  },
+  "3894668351": {
+   "name": "Unwound",
+   "hash": 3894668351,
+   "itemName": "Euphony",
+   "itemHash": 3284383335,
+   "type": "Weapon Frame Exotic"
   },
   "3895804619": {
    "name": "Dreambane Mod",
@@ -11954,6 +12025,14 @@
      ]
     },
     {
+     "name": "Euphony",
+     "has": [
+      3894668351,
+      1180907940,
+      3703325290
+     ]
+    },
+    {
      "name": "Ex Diris",
      "has": [
       3183537623,
@@ -12875,8 +12954,10 @@
      "has": [
       183772609,
       263649945,
+      430173891,
       836583820,
       1713206376,
+      1978306813,
       4172267910
      ]
     },
@@ -12997,12 +13078,16 @@
     {
      "name": "Glaive",
      "has": [
+      2593449,
       16445399,
+      217816625,
       378204240,
+      694879972,
       738339367,
       1338909520,
       1447716563,
       2040155611,
+      2479787361,
       2696719570,
       3228668394
      ]
@@ -13909,6 +13994,10 @@
     "name": "Stats for All",
     "linkedWith": 1409206216
    },
+   "1592669035": {
+    "name": "Replenishing Aegis",
+    "linkedWith": 1966281507
+   },
    "1600092898": {
     "name": "Backup Plan",
     "linkedWith": 828056542
@@ -13993,6 +14082,10 @@
     "name": "Cornered",
     "linkedWith": 1008128453
    },
+   "1817983009": {
+    "name": "Chaos Reshaped",
+    "linkedWith": 3640170453
+   },
    "1820235745": {
     "name": "Subsistence",
     "linkedWith": 4245865861
@@ -14036,6 +14129,10 @@
    "1961144892": {
     "name": "Quickdraw",
     "linkedWith": 706527188
+   },
+   "1966281507": {
+    "name": "Replenishing Aegis",
+    "linkedWith": 1592669035
    },
    "2000295559": {
     "name": "Turnabout",
@@ -14596,6 +14693,10 @@
    "3619207468": {
     "name": "Keep Away",
     "linkedWith": 3198323828
+   },
+   "3640170453": {
+    "name": "Chaos Reshaped",
+    "linkedWith": 1817983009
    },
    "3643424744": {
     "name": "Overflow",
