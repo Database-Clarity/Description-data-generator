@@ -5908,14 +5908,6 @@
   "hash": 1130820873,
   "type": "Armor Mod General"
  },
- "1134515006": {
-  "appearsOn": [
-   2535142413
-  ],
-  "name": "Edge of Action Catalyst",
-  "hash": 1134515006,
-  "type": "Weapon Catalyst Exotic"
- },
  "1135494563": {
   "appearsOn": [
    "Sidearm"
@@ -9234,14 +9226,6 @@
   "hash": 1727069375,
   "type": "Subclass Fragment"
  },
- "1731191722": {
-  "appearsOn": [
-   542203595
-  ],
-  "name": "Edge of Concurrence Catalyst",
-  "hash": 1731191722,
-  "type": "Weapon Catalyst Exotic"
- },
  "1731450287": {
   "appearsOn": [
    2240152949
@@ -10686,14 +10670,6 @@
   "name": "Enhanced Resistant Tether",
   "hash": 2037533514,
   "type": "Armor Mod Activity"
- },
- "2038196759": {
-  "appearsOn": [
-   14194600
-  ],
-  "name": "Edge of Intent Catalyst",
-  "hash": 2038196759,
-  "type": "Weapon Catalyst Exotic"
  },
  "2039302152": {
   "appearsOn": [

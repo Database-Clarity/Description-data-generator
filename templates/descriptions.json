@@ -3231,13 +3231,6 @@
    "hash": 1130820873,
    "type": "Armor Mod General"
   },
-  "1134515006": {
-   "name": "Edge of Action Catalyst",
-   "hash": 1134515006,
-   "itemName": "Edge of Action",
-   "itemHash": 2535142413,
-   "type": "Weapon Catalyst Exotic"
-  },
   "1135494563": {
    "name": "Beacon Rounds",
    "hash": 1135494563,
@@ -5058,13 +5051,6 @@
    "hash": 1727069375,
    "type": "Subclass Fragment"
   },
-  "1731191722": {
-   "name": "Edge of Concurrence Catalyst",
-   "hash": 1731191722,
-   "itemName": "Edge of Concurrence",
-   "itemHash": 542203595,
-   "type": "Weapon Catalyst Exotic"
-  },
   "1731450287": {
    "name": "Clenched Fist",
    "hash": 1731450287,
@@ -5845,13 +5831,6 @@
    "name": "Enhanced Resistant Tether",
    "hash": 2037533514,
    "type": "Armor Mod Activity"
-  },
-  "2038196759": {
-   "name": "Edge of Intent Catalyst",
-   "hash": 2038196759,
-   "itemName": "Edge of Intent",
-   "itemHash": 14194600,
-   "type": "Weapon Catalyst Exotic"
   },
   "2039302152": {
    "name": "Slideways",
@@ -11996,7 +11975,6 @@
      "name": "Edge of Action",
      "has": [
       1900919151,
-      1134515006,
       2379536009
      ]
     },
@@ -12004,15 +11982,13 @@
      "name": "Edge of Concurrence",
      "has": [
       3551884421,
-      844190854,
-      1731191722
+      844190854
      ]
     },
     {
      "name": "Edge of Intent",
      "has": [
       3024740338,
-      2038196759,
       3492337375
      ]
     },
