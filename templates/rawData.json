@@ -3991,6 +3991,14 @@
   "hash": 810675985,
   "type": "Armor Mod Seasonal"
  },
+ "810675986": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Anti-Barrier Sniper Rifle",
+  "hash": 810675986,
+  "type": "Armor Mod Seasonal"
+ },
  "810675989": {
   "appearsOn": [
    "Artifact"
@@ -8021,6 +8029,14 @@
   "hash": 1533272845,
   "type": "Armor Mod Seasonal"
  },
+ "1533272846": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Sniper's Meditation",
+  "hash": 1533272846,
+  "type": "Armor Mod Seasonal"
+ },
  "1535085486": {
   "appearsOn": [
    "Auto Rifle"
@@ -11668,6 +11684,14 @@
   "hash": 2263401921,
   "type": "Armor Mod Seasonal"
  },
+ "2263401923": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Authorized Mods: Scavenger",
+  "hash": 2263401923,
+  "type": "Armor Mod Seasonal"
+ },
  "2263401924": {
   "appearsOn": [
    "Artifact"
@@ -12158,6 +12182,14 @@
   ],
   "name": "Counter Energy",
   "hash": 2344320970,
+  "type": "Armor Mod Seasonal"
+ },
+ "2344320973": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Solar Fulmination",
+  "hash": 2344320973,
   "type": "Armor Mod Seasonal"
  },
  "2344320974": {
@@ -15922,6 +15954,14 @@
   ],
   "name": "Elemental Siphon",
   "hash": 3116632771,
+  "type": "Armor Mod Seasonal"
+ },
+ "3116632772": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Incendiary Rifle Rounds",
+  "hash": 3116632772,
   "type": "Armor Mod Seasonal"
  },
  "3116632774": {

@@ -2184,6 +2184,11 @@
    "hash": 810675985,
    "type": "Armor Mod Seasonal"
   },
+  "810675986": {
+   "name": "Anti-Barrier Sniper Rifle",
+   "hash": 810675986,
+   "type": "Armor Mod Seasonal"
+  },
   "810675989": {
    "name": "Anti-Barrier Pulse Rifle",
    "hash": 810675989,
@@ -4406,6 +4411,11 @@
    "hash": 1533272845,
    "type": "Armor Mod Seasonal"
   },
+  "1533272846": {
+   "name": "Sniper's Meditation",
+   "hash": 1533272846,
+   "type": "Armor Mod Seasonal"
+  },
   "1535085486": {
    "name": "Support Frame",
    "hash": 1535085486,
@@ -6379,6 +6389,11 @@
    "hash": 2263401921,
    "type": "Armor Mod Seasonal"
   },
+  "2263401923": {
+   "name": "Authorized Mods: Scavenger",
+   "hash": 2263401923,
+   "type": "Armor Mod Seasonal"
+  },
   "2263401924": {
    "name": "Logic Reductor",
    "hash": 2263401924,
@@ -6661,6 +6676,11 @@
   "2344320970": {
    "name": "Counter Energy",
    "hash": 2344320970,
+   "type": "Armor Mod Seasonal"
+  },
+  "2344320973": {
+   "name": "Solar Fulmination",
+   "hash": 2344320973,
    "type": "Armor Mod Seasonal"
   },
   "2344320974": {
@@ -8736,6 +8756,11 @@
   "3116632771": {
    "name": "Elemental Siphon",
    "hash": 3116632771,
+   "type": "Armor Mod Seasonal"
+  },
+  "3116632772": {
+   "name": "Incendiary Rifle Rounds",
+   "hash": 3116632772,
    "type": "Armor Mod Seasonal"
   },
   "3116632774": {
