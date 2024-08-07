@@ -879,6 +879,7 @@
  "183938251": {
   "appearsOn": [
    "Machine Gun",
+   "Shotgun",
    "Sniper Rifle",
    "Pulse Rifle",
    "Scout Rifle",
@@ -2038,14 +2039,15 @@
  },
  "402033656": {
   "appearsOn": [
+   "Shotgun",
    "Submachine Gun",
    "Grenade Launcher",
    "Glaive",
    "Machine Gun",
    "Scout Rifle",
-   "Shotgun",
    "Fusion Rifle",
-   "Auto Rifle"
+   "Auto Rifle",
+   "Rocket Launcher"
   ],
   "name": "Grave Robber",
   "hash": 402033656,
@@ -2876,6 +2878,7 @@
    "Scout Rifle",
    "Hand Cannon",
    "Linear Fusion Rifle",
+   "Combat Bow",
    "Pulse Rifle",
    "Fusion Rifle",
    "Auto Rifle",
@@ -3549,8 +3552,8 @@
    "Auto Rifle",
    "Machine Gun",
    "Grenade Launcher",
-   "Sniper Rifle",
    "Hand Cannon",
+   "Sniper Rifle",
    "Combat Bow",
    "Shotgun",
    "Fusion Rifle",
@@ -4376,6 +4379,7 @@
    "Combat Bow",
    "Shotgun",
    "Fusion Rifle",
+   "Rocket Launcher",
    "Sidearm"
   ],
   "name": "One for All",
@@ -6081,6 +6085,7 @@
    "Fusion Rifle",
    "Hand Cannon",
    "Combat Bow",
+   "Rocket Launcher",
    "Trace Rifle"
   ],
   "name": "Deconstruct",
@@ -6127,6 +6132,7 @@
    "Machine Gun",
    "Grenade Launcher",
    "Trace Rifle",
+   "Hand Cannon",
    "Submachine Gun",
    "Shotgun",
    "Sidearm",
@@ -8782,6 +8788,7 @@
  },
  "1658784563": {
   "appearsOn": [
+   "Shotgun",
    "Glaive",
    "Scout Rifle",
    "Trace Rifle",
@@ -10160,6 +10167,7 @@
    "Linear Fusion Rifle",
    "Pulse Rifle",
    "Trace Rifle",
+   "Combat Bow",
    "Scout Rifle",
    "Sniper Rifle",
    "Rocket Launcher"
@@ -10286,10 +10294,10 @@
  "1961144892": {
   "appearsOn": [
    "Sniper Rifle",
+   "Shotgun",
    "Sidearm",
    "Hand Cannon",
    "Grenade Launcher",
-   "Shotgun",
    "Rocket Launcher",
    "Machine Gun",
    "Fusion Rifle"
@@ -11511,9 +11519,9 @@
  "2217963031": {
   "appearsOn": [
    "Combat Bow",
+   "Shotgun",
    "Hand Cannon",
    "Grenade Launcher",
-   "Shotgun",
    "Auto Rifle",
    "Sniper Rifle",
    "Scout Rifle",
@@ -13708,6 +13716,7 @@
   "appearsOn": [
    "Sniper Rifle",
    "Combat Bow",
+   "Shotgun",
    "Hand Cannon",
    "Machine Gun",
    "Pulse Rifle",
@@ -13716,7 +13725,6 @@
    "Auto Rifle",
    "Grenade Launcher",
    "Scout Rifle",
-   "Shotgun",
    "Linear Fusion Rifle",
    "Fusion Rifle",
    "Rocket Launcher",
@@ -13735,6 +13743,7 @@
    "Pulse Rifle",
    "Grenade Launcher",
    "Sidearm",
+   "Hand Cannon",
    "Sniper Rifle",
    "Auto Rifle",
    "Machine Gun",
@@ -13744,7 +13753,6 @@
    "Fusion Rifle",
    "Trace Rifle",
    "Shotgun",
-   "Hand Cannon",
    "Rocket Launcher",
    "Linear Fusion Rifle"
   ],
@@ -14917,8 +14925,8 @@
  "2889515627": {
   "appearsOn": [
    "Hand Cannon",
-   "Machine Gun",
    "Shotgun",
+   "Machine Gun",
    "Fusion Rifle",
    "Sidearm",
    "Linear Fusion Rifle",
@@ -15091,6 +15099,7 @@
    "Auto Rifle",
    "Submachine Gun",
    "Trace Rifle",
+   "Combat Bow",
    "Grenade Launcher",
    "Glaive",
    "Fusion Rifle",
@@ -16755,7 +16764,8 @@
    "Sniper Rifle",
    "Pulse Rifle",
    "Combat Bow",
-   "Submachine Gun"
+   "Submachine Gun",
+   "Rocket Launcher"
   ],
   "name": "Air Trigger",
   "hash": 3291427296,
@@ -17199,7 +17209,8 @@
    "Combat Bow",
    "Submachine Gun",
    "Machine Gun",
-   "Auto Rifle"
+   "Auto Rifle",
+   "Shotgun"
   ],
   "name": "To the Pain",
   "hash": 3416609154,
@@ -20434,8 +20445,8 @@
  "4116820839": {
   "appearsOn": [
    "Sniper Rifle",
-   "Hand Cannon",
    "Shotgun",
+   "Hand Cannon",
    "Pulse Rifle",
    "Grenade Launcher",
    "Scout Rifle",
