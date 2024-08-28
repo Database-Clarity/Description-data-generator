@@ -3137,6 +3137,14 @@
   "hash": 617966211,
   "type": "Weapon Trait Enhanced"
  },
+ "619537267": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Fanatical Lance",
+  "hash": 619537267,
+  "type": "Weapon Trait Exotic"
+ },
  "621911507": {
   "appearsOn": [
    "Grenade Launcher"
@@ -4000,6 +4008,14 @@
   ],
   "name": "Anti-Barrier Sniper Rifle",
   "hash": 810675986,
+  "type": "Armor Mod Seasonal"
+ },
+ "810675987": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Overload Auto Rifle",
+  "hash": 810675987,
   "type": "Armor Mod Seasonal"
  },
  "810675989": {
@@ -8043,6 +8059,14 @@
   "hash": 1533272846,
   "type": "Armor Mod Seasonal"
  },
+ "1533272847": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Shock and Awe",
+  "hash": 1533272847,
+  "type": "Armor Mod Seasonal"
+ },
  "1535085486": {
   "appearsOn": [
    "Auto Rifle"
@@ -10192,6 +10216,30 @@
   "hash": 1931066670,
   "type": "Weapon Catalyst Exotic"
  },
+ "1931951168": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Subsistence Refit",
+  "hash": 1931951168,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "1931951169": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Destabilizing Rounds Refit",
+  "hash": 1931951169,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "1931951170": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Onslaught Refit",
+  "hash": 1931951170,
+  "type": "Weapon Catalyst Exotic"
+ },
  "1934171651": {
   "appearsOn": [
    "Glaive"
@@ -10321,6 +10369,30 @@
   "name": "Replenishing Aegis",
   "hash": 1966281507,
   "type": "Weapon Trait"
+ },
+ "1967250736": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Command Frame II",
+  "hash": 1967250736,
+  "type": "Weapon Frame Exotic"
+ },
+ "1967250737": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Command Frame III",
+  "hash": 1967250737,
+  "type": "Weapon Frame Exotic"
+ },
+ "1967250742": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Command Frame IV",
+  "hash": 1967250742,
+  "type": "Weapon Frame Exotic"
  },
  "1968497646": {
   "appearsOn": [
@@ -11692,6 +11764,14 @@
   "hash": 2263401921,
   "type": "Armor Mod Seasonal"
  },
+ "2263401922": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Authorized Mod: Charged Up",
+  "hash": 2263401922,
+  "type": "Armor Mod Seasonal"
+ },
  "2263401923": {
   "appearsOn": [
    "Artifact"
@@ -12190,6 +12270,14 @@
   ],
   "name": "Counter Energy",
   "hash": 2344320970,
+  "type": "Armor Mod Seasonal"
+ },
+ "2344320972": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Targeting Autoloader",
+  "hash": 2344320972,
   "type": "Armor Mod Seasonal"
  },
  "2344320973": {
@@ -15277,6 +15365,14 @@
   "hash": 2969185026,
   "type": "Weapon Perk"
  },
+ "2976676960": {
+  "appearsOn": [
+   3698448090
+  ],
+  "name": "Command Frame",
+  "hash": 2976676960,
+  "type": "Weapon Frame Exotic"
+ },
  "2977709078": {
   "appearsOn": [
    3549153979
@@ -15973,6 +16069,14 @@
   "hash": 3116632772,
   "type": "Armor Mod Seasonal"
  },
+ "3116632773": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Sustained Fire",
+  "hash": 3116632773,
+  "type": "Armor Mod Seasonal"
+ },
  "3116632774": {
   "appearsOn": [
    "Artifact"
@@ -16291,6 +16395,14 @@
   "name": "Rocket-Assisted Frame",
   "hash": 3178379945,
   "type": "Weapon Frame Enhanced"
+ },
+ "3181984586": {
+  "appearsOn": [
+   "Chest Armor"
+  ],
+  "name": "Charged Up",
+  "hash": 3181984586,
+  "type": "Armor Mod General"
  },
  "3183537623": {
   "appearsOn": [

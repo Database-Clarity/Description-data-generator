@@ -1738,6 +1738,13 @@
    "hash": 617966211,
    "type": "Weapon Trait Enhanced"
   },
+  "619537267": {
+   "name": "Fanatical Lance",
+   "hash": 619537267,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Trait Exotic"
+  },
   "621911507": {
    "name": "Wave Frame",
    "hash": 621911507,
@@ -2187,6 +2194,11 @@
   "810675986": {
    "name": "Anti-Barrier Sniper Rifle",
    "hash": 810675986,
+   "type": "Armor Mod Seasonal"
+  },
+  "810675987": {
+   "name": "Overload Auto Rifle",
+   "hash": 810675987,
    "type": "Armor Mod Seasonal"
   },
   "810675989": {
@@ -4416,6 +4428,11 @@
    "hash": 1533272846,
    "type": "Armor Mod Seasonal"
   },
+  "1533272847": {
+   "name": "Shock and Awe",
+   "hash": 1533272847,
+   "type": "Armor Mod Seasonal"
+  },
   "1535085486": {
    "name": "Support Frame",
    "hash": 1535085486,
@@ -5575,6 +5592,27 @@
    "itemHash": 1034055198,
    "type": "Weapon Catalyst Exotic"
   },
+  "1931951168": {
+   "name": "Subsistence Refit",
+   "hash": 1931951168,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "1931951169": {
+   "name": "Destabilizing Rounds Refit",
+   "hash": 1931951169,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "1931951170": {
+   "name": "Onslaught Refit",
+   "hash": 1931951170,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Catalyst Exotic"
+  },
   "1934171651": {
    "name": "Supercooled Accelerator",
    "hash": 1934171651,
@@ -5638,6 +5676,27 @@
    "name": "Replenishing Aegis",
    "hash": 1966281507,
    "type": "Weapon Trait"
+  },
+  "1967250736": {
+   "name": "Command Frame II",
+   "hash": 1967250736,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Frame Exotic"
+  },
+  "1967250737": {
+   "name": "Command Frame III",
+   "hash": 1967250737,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Frame Exotic"
+  },
+  "1967250742": {
+   "name": "Command Frame IV",
+   "hash": 1967250742,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Frame Exotic"
   },
   "1968497646": {
    "name": "Armor-Piercing Rounds",
@@ -6389,6 +6448,11 @@
    "hash": 2263401921,
    "type": "Armor Mod Seasonal"
   },
+  "2263401922": {
+   "name": "Authorized Mod: Charged Up",
+   "hash": 2263401922,
+   "type": "Armor Mod Seasonal"
+  },
   "2263401923": {
    "name": "Authorized Mods: Scavenger",
    "hash": 2263401923,
@@ -6676,6 +6740,11 @@
   "2344320970": {
    "name": "Counter Energy",
    "hash": 2344320970,
+   "type": "Armor Mod Seasonal"
+  },
+  "2344320972": {
+   "name": "Targeting Autoloader",
+   "hash": 2344320972,
    "type": "Armor Mod Seasonal"
   },
   "2344320973": {
@@ -8374,6 +8443,13 @@
    "hash": 2969185026,
    "type": "Weapon Perk"
   },
+  "2976676960": {
+   "name": "Command Frame",
+   "hash": 2976676960,
+   "itemName": "Choir of One",
+   "itemHash": 3698448090,
+   "type": "Weapon Frame Exotic"
+  },
   "2977709078": {
    "name": "Excavation",
    "hash": 2977709078,
@@ -8763,6 +8839,11 @@
    "hash": 3116632772,
    "type": "Armor Mod Seasonal"
   },
+  "3116632773": {
+   "name": "Sustained Fire",
+   "hash": 3116632773,
+   "type": "Armor Mod Seasonal"
+  },
   "3116632774": {
    "name": "Press The Advantage",
    "hash": 3116632774,
@@ -8935,6 +9016,11 @@
    "name": "Rocket-Assisted Frame",
    "hash": 3178379945,
    "type": "Weapon Frame Enhanced"
+  },
+  "3181984586": {
+   "name": "Charged Up",
+   "hash": 3181984586,
+   "type": "Armor Mod General"
   },
   "3183537623": {
    "name": "Corrupted Nucleosynthesis",
@@ -11846,6 +11932,19 @@
       3208839961,
       1289604610,
       1380383475
+     ]
+    },
+    {
+     "name": "Choir of One",
+     "has": [
+      1967250736,
+      619537267,
+      1931951168,
+      1931951169,
+      1931951170,
+      1967250737,
+      1967250742,
+      2976676960
      ]
     },
     {
