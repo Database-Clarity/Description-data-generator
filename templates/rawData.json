@@ -1154,8 +1154,7 @@
   "appearsOn": [
    "Grenade Launcher",
    "Rocket Launcher",
-   "Sidearm",
-   "Pulse Rifle"
+   "Sidearm"
   ],
   "name": "Adept Blast Radius",
   "hash": 229003538,
@@ -10019,8 +10018,7 @@
    "Combat Bow",
    "Machine Gun",
    "Trace Rifle",
-   "Linear Fusion Rifle",
-   "Pulse Rifle"
+   "Linear Fusion Rifle"
   ],
   "name": "Marksman Optics: High",
   "hash": 1847129788,
@@ -12048,8 +12046,7 @@
   "appearsOn": [
    "Sidearm",
    "Grenade Launcher",
-   "Rocket Launcher",
-   "Pulse Rifle"
+   "Rocket Launcher"
   ],
   "name": "Aerodynamics",
   "hash": 2254149382,
@@ -12313,8 +12310,7 @@
   "appearsOn": [
    "Grenade Launcher",
    "Rocket Launcher",
-   "Sidearm",
-   "Pulse Rifle"
+   "Sidearm"
   ],
   "name": "Adept Projectile Speed",
   "hash": 2299766748,
@@ -13897,8 +13893,7 @@
    "Combat Bow",
    "Machine Gun",
    "Trace Rifle",
-   "Linear Fusion Rifle",
-   "Pulse Rifle"
+   "Linear Fusion Rifle"
   ],
   "name": "Marksman Optics: Low",
   "hash": 2649250174,
