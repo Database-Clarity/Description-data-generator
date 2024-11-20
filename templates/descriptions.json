@@ -1777,6 +1777,11 @@
    "hash": 611645145,
    "type": "Armor Mod Seasonal"
   },
+  "611645146": {
+   "name": "Curative Orbs",
+   "hash": 611645146,
+   "type": "Armor Mod Seasonal"
+  },
   "611645149": {
    "name": "Armor of Eramis",
    "hash": 611645149,
@@ -6050,6 +6055,11 @@
    "hash": 2059481925,
    "type": "Weapon Frame Enhanced"
   },
+  "2071562744": {
+   "name": "Emergency Flare",
+   "hash": 2071562744,
+   "type": "Armor Mod Seasonal"
+  },
   "2071562746": {
    "name": "Fell the Revenant",
    "hash": 2071562746,
@@ -8974,6 +8984,11 @@
    "itemHash": 2603483885,
    "type": "Weapon Trait Exotic"
   },
+  "3117519993": {
+   "name": "Arc Compounding",
+   "hash": 3117519993,
+   "type": "Armor Mod Seasonal"
+  },
   "3117519994": {
    "name": "Kinetic Impacts",
    "hash": 3117519994,
@@ -10706,6 +10721,11 @@
    "hash": 3803076562,
    "type": "Armor Mod Seasonal"
   },
+  "3803076565": {
+   "name": "Authorized Mods: Melee",
+   "hash": 3803076565,
+   "type": "Armor Mod Seasonal"
+  },
   "3803076566": {
    "name": "Overload Breechloaded Grenade Launcher",
    "hash": 3803076566,
@@ -11306,6 +11326,11 @@
   "4037132133": {
    "name": "Power from Pain",
    "hash": 4037132133,
+   "type": "Armor Mod Seasonal"
+  },
+  "4037132135": {
+   "name": "The Thick of It",
+   "hash": 4037132135,
    "type": "Armor Mod Seasonal"
   },
   "4039026690": {

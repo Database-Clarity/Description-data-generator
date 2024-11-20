@@ -3241,6 +3241,14 @@
   "hash": 611645145,
   "type": "Armor Mod Seasonal"
  },
+ "611645146": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Curative Orbs",
+  "hash": 611645146,
+  "type": "Armor Mod Seasonal"
+ },
  "611645149": {
   "appearsOn": [
    "Artifact"
@@ -6458,7 +6466,6 @@
    "Machine Gun",
    "Shotgun",
    "Scout Rifle",
-   "Linear Fusion Rifle",
    "Auto Rifle"
   ],
   "name": "Closing Time",
@@ -11152,6 +11159,14 @@
   "hash": 2059481925,
   "type": "Weapon Frame Enhanced"
  },
+ "2071562744": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Emergency Flare",
+  "hash": 2071562744,
+  "type": "Armor Mod Seasonal"
+ },
  "2071562746": {
   "appearsOn": [
    "Artifact"
@@ -15003,7 +15018,8 @@
    "Sniper Rifle",
    "Rocket Launcher",
    "Grenade Launcher",
-   "Shotgun"
+   "Shotgun",
+   "Linear Fusion Rifle"
   ],
   "name": "Envious Arsenal",
   "hash": 2817499044,
@@ -16459,6 +16475,14 @@
   "name": "Stormbringer",
   "hash": 3117514172,
   "type": "Weapon Trait Exotic"
+ },
+ "3117519993": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Arc Compounding",
+  "hash": 3117519993,
+  "type": "Armor Mod Seasonal"
  },
  "3117519994": {
   "appearsOn": [
@@ -19758,6 +19782,14 @@
   "hash": 3803076562,
   "type": "Armor Mod Seasonal"
  },
+ "3803076565": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Authorized Mods: Melee",
+  "hash": 3803076565,
+  "type": "Armor Mod Seasonal"
+ },
  "3803076566": {
   "appearsOn": [
    "Artifact"
@@ -20367,7 +20399,6 @@
    "Machine Gun",
    "Shotgun",
    "Scout Rifle",
-   "Linear Fusion Rifle",
    "Auto Rifle"
   ],
   "name": "Closing Time",
@@ -20515,7 +20546,8 @@
    "Sniper Rifle",
    "Rocket Launcher",
    "Grenade Launcher",
-   "Shotgun"
+   "Shotgun",
+   "Linear Fusion Rifle"
   ],
   "name": "Envious Arsenal",
   "hash": 3987942396,
@@ -20858,6 +20890,14 @@
   ],
   "name": "Power from Pain",
   "hash": 4037132133,
+  "type": "Armor Mod Seasonal"
+ },
+ "4037132135": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "The Thick of It",
+  "hash": 4037132135,
   "type": "Armor Mod Seasonal"
  },
  "4039026690": {
