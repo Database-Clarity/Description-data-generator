@@ -11,12 +11,16 @@ export enum SocketCategoryEnums {
   abilities = 309722977,
   abilitiesIkora = 3218807805,
   super = 457473665,
+  
   aspectsIkora = 2140934067,
   aspectsNeomuna = 764703411,
   aspectsStranger = 3400923910,
+  aspectsTraveler = 2047681910,
+
   fragmentsIkora = 1313488945,
   fragmentsNeomuna = 193371309,
   fragmentsStranger = 2819965312,
+  fragmentsTraveler = 271461480,
 
   ghostMods = 3886482628,
 }

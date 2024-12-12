@@ -7,7 +7,6 @@ import { createDescriptionData } from './descriptionData.js'
 import { createRawData } from './rawData.js'
 import { InventoryItemEnums } from './utils/enums.js'
 import { createWeaponFormulaData } from './weaponFormulaData.js'
-import { forIn } from 'lodash'
 
 export type PerkData = {
   appearsOn: Set<string | number>
@@ -22,7 +21,8 @@ export type PerkDataList = {
 ;(async () => {
   const { inventoryItem, plugSet, socketType } = await fetchBungieManifest(['inventoryItem', 'plugSet', 'socketType'])
   if (inventoryItem === undefined || plugSet === undefined || socketType === undefined) {
-    throw new Error('Failed to fetch manifest')
+    console.log('Failed to fetch manifest');
+    return    
   }
 
   for (const key in inventoryItem) {

@@ -448,6 +448,16 @@
   "hash": 64866129,
   "type": "Weapon Trait Enhanced"
  },
+ "74393640": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Defiance",
+  "hash": 74393640,
+  "type": "Subclass Fragment"
+ },
  "75282108": {
   "appearsOn": [
    3118061004
@@ -742,6 +752,106 @@
   "name": "Headstone",
   "hash": 124408337,
   "type": "Weapon Trait"
+ },
+ "124726496": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Blessing",
+  "hash": 124726496,
+  "type": "Subclass Fragment"
+ },
+ "124726497": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Command",
+  "hash": 124726497,
+  "type": "Subclass Fragment"
+ },
+ "124726498": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Purpose",
+  "hash": 124726498,
+  "type": "Subclass Fragment"
+ },
+ "124726499": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Ruin",
+  "hash": 124726499,
+  "type": "Subclass Fragment"
+ },
+ "124726500": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Mending",
+  "hash": 124726500,
+  "type": "Subclass Fragment"
+ },
+ "124726501": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Honor",
+  "hash": 124726501,
+  "type": "Subclass Fragment"
+ },
+ "124726502": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Sacrifice",
+  "hash": 124726502,
+  "type": "Subclass Fragment"
+ },
+ "124726503": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Bravery",
+  "hash": 124726503,
+  "type": "Subclass Fragment"
+ },
+ "124726504": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Dominance",
+  "hash": 124726504,
+  "type": "Subclass Fragment"
+ },
+ "124726505": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Awakening",
+  "hash": 124726505,
+  "type": "Subclass Fragment"
  },
  "127335543": {
   "appearsOn": [
@@ -13827,6 +13937,106 @@
   "name": "Silence and Squall",
   "hash": 2625980631,
   "type": "Subclass Super"
+ },
+ "2626922114": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Balance",
+  "hash": 2626922114,
+  "type": "Subclass Fragment"
+ },
+ "2626922115": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Justice",
+  "hash": 2626922115,
+  "type": "Subclass Fragment"
+ },
+ "2626922120": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Protection",
+  "hash": 2626922120,
+  "type": "Subclass Fragment"
+ },
+ "2626922121": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Grace",
+  "hash": 2626922121,
+  "type": "Subclass Fragment"
+ },
+ "2626922122": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Hope",
+  "hash": 2626922122,
+  "type": "Subclass Fragment"
+ },
+ "2626922123": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Solitude",
+  "hash": 2626922123,
+  "type": "Subclass Fragment"
+ },
+ "2626922124": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Courage",
+  "hash": 2626922124,
+  "type": "Subclass Fragment"
+ },
+ "2626922125": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Devotion",
+  "hash": 2626922125,
+  "type": "Subclass Fragment"
+ },
+ "2626922126": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Dawn",
+  "hash": 2626922126,
+  "type": "Subclass Fragment"
+ },
+ "2626922127": {
+  "appearsOn": [
+   "Titan Subclass",
+   "Warlock Subclass",
+   "Hunter Subclass"
+  ],
+  "name": "Facet of Generosity",
+  "hash": 2626922127,
+  "type": "Subclass Fragment"
  },
  "2628485816": {
   "appearsOn": [

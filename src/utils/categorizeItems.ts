@@ -2,7 +2,7 @@ import { InventoryItem, InventoryItems } from '@icemourne/tool-box'
 
 import { ItemTypeEnum, PowerCapHashEnum } from './enums.js'
 
-interface Catagories {
+interface Categories {
   exoticWeaponsArr: InventoryItem[]
   exoticArmorArr: InventoryItem[]
   legendaryArmorArr: InventoryItem[]
@@ -48,7 +48,7 @@ export const categorizeItems = (inventoryItem: InventoryItems) => {
 
   const ghost = (inventoryItem: InventoryItem) => inventoryItem.itemType === ItemTypeEnum.ghost
 
-  return Object.values(inventoryItem).reduce<Catagories>(
+  return Object.values(inventoryItem).reduce<Categories>(
     (acc, item) => {
       if (exoticWeaponTest(item)) acc.exoticWeaponsArr.push(item)
       if (exoticArmorTest(item)) acc.exoticArmorArr.push(item)

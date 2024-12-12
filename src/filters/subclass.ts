@@ -34,21 +34,25 @@ export const subclass = (
     if (subclassSockets === undefined) return
 
     const abilitiesCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.abilities
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.abilitiesIkora
+      (socketCategory) => 
+        socketCategory.socketCategoryHash === SocketCategoryEnums.abilities ||
+        socketCategory.socketCategoryHash === SocketCategoryEnums.abilitiesIkora
     )
     const superCategory = subclassSockets.socketCategories.find(
       (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.super
     )
     const aspectsCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsIkora
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsStranger
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsNeomuna
+      (socketCategory) => 
+        socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsIkora ||
+        socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsStranger ||
+        socketCategory.socketCategoryHash === SocketCategoryEnums.aspectsNeomuna
     )
     const fragmentsCategory = subclassSockets.socketCategories.find(
-      (socketCategory) => socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsIkora
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsStranger
-        || socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsNeomuna
+      (socketCategory) => 
+        socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsIkora ||
+        socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsStranger ||
+        socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsNeomuna ||
+        socketCategory.socketCategoryHash === SocketCategoryEnums.fragmentsTraveler
     )
 
     abilitiesCategory?.socketIndexes.forEach((socketIndex) => {
