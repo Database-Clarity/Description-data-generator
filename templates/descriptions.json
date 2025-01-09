@@ -1837,6 +1837,11 @@
    "hash": 611645146,
    "type": "Armor Mod Seasonal"
   },
+  "611645147": {
+   "name": "Void Renewal",
+   "hash": 611645147,
+   "type": "Armor Mod Seasonal"
+  },
   "611645149": {
    "name": "Armor of Eramis",
    "hash": 611645149,
@@ -6115,6 +6120,11 @@
    "hash": 2071562744,
    "type": "Armor Mod Seasonal"
   },
+  "2071562745": {
+   "name": "Frenzied Hunger",
+   "hash": 2071562745,
+   "type": "Armor Mod Seasonal"
+  },
   "2071562746": {
    "name": "Fell the Revenant",
    "hash": 2071562746,
@@ -7415,6 +7425,13 @@
    "hash": 2565067140,
    "type": "Weapon Trait Origin"
   },
+  "2565885237": {
+   "name": "Nightsworn Sight",
+   "hash": 2565885237,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
+  },
   "2570477205": {
    "name": "Multikill Clip",
    "hash": 2570477205,
@@ -7504,6 +7521,13 @@
    "name": "Special Ammo Finder",
    "hash": 2595839237,
    "type": "Armor Mod General"
+  },
+  "2607392828": {
+   "name": "Heart Piercer",
+   "hash": 2607392828,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Trait Exotic"
   },
   "2608508147": {
    "name": "Heavy Slug Thrower",
@@ -8454,6 +8478,34 @@
    "itemHash": 3761898871,
    "type": "Weapon Frame Exotic"
   },
+  "2883096192": {
+   "name": "Stats for All Refit",
+   "hash": 2883096192,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "2883096193": {
+   "name": "Cascade Point Refit",
+   "hash": 2883096193,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "2883096194": {
+   "name": "Repulsor Brace Refit",
+   "hash": 2883096194,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "2883096195": {
+   "name": "Loose Change Refit",
+   "hash": 2883096195,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
   "2887845822": {
    "name": "Resistant Tether",
    "hash": 2887845822,
@@ -8569,6 +8621,27 @@
    "name": "Aggressive Frame",
    "hash": 2912509910,
    "type": "Weapon Frame Enhanced"
+  },
+  "2919190144": {
+   "name": "Nightsworn Sight III",
+   "hash": 2919190144,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
+  },
+  "2919190145": {
+   "name": "Nightsworn Sight II",
+   "hash": 2919190145,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
+  },
+  "2919190151": {
+   "name": "Nightsworn Sight IV",
+   "hash": 2919190151,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
   },
   "2921090754": {
    "name": "Soul Devourer",
@@ -9088,6 +9161,11 @@
    "itemName": "Cloudstrike",
    "itemHash": 2603483885,
    "type": "Weapon Trait Exotic"
+  },
+  "3117519992": {
+   "name": "Old God's Rite",
+   "hash": 3117519992,
+   "type": "Armor Mod Seasonal"
   },
   "3117519993": {
    "name": "Arc Compounding",
@@ -10826,6 +10904,11 @@
    "hash": 3803076562,
    "type": "Armor Mod Seasonal"
   },
+  "3803076564": {
+   "name": "Authorized Mods: Grenades",
+   "hash": 3803076564,
+   "type": "Armor Mod Seasonal"
+  },
   "3803076565": {
    "name": "Authorized Mods: Melee",
    "hash": 3803076565,
@@ -11431,6 +11514,11 @@
   "4037132133": {
    "name": "Power from Pain",
    "hash": 4037132133,
+   "type": "Armor Mod Seasonal"
+  },
+  "4037132134": {
+   "name": "Finders Keepers",
+   "hash": 4037132134,
    "type": "Armor Mod Seasonal"
   },
   "4037132135": {
@@ -12918,6 +13006,20 @@
       2741975068,
       176919422,
       658317088
+     ]
+    },
+    {
+     "name": "Slayer's Fang",
+     "has": [
+      2565885237,
+      2607392828,
+      2883096192,
+      2883096193,
+      2883096194,
+      2883096195,
+      2919190144,
+      2919190145,
+      2919190151
      ]
     },
     {

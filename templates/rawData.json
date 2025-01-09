@@ -3359,6 +3359,14 @@
   "hash": 611645146,
   "type": "Armor Mod Seasonal"
  },
+ "611645147": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Void Renewal",
+  "hash": 611645147,
+  "type": "Armor Mod Seasonal"
+ },
  "611645149": {
   "appearsOn": [
    "Artifact"
@@ -11277,6 +11285,14 @@
   "hash": 2071562744,
   "type": "Armor Mod Seasonal"
  },
+ "2071562745": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Frenzied Hunger",
+  "hash": 2071562745,
+  "type": "Armor Mod Seasonal"
+ },
  "2071562746": {
   "appearsOn": [
    "Artifact"
@@ -13658,6 +13674,14 @@
   "hash": 2565067140,
   "type": "Weapon Trait Origin"
  },
+ "2565885237": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Nightsworn Sight",
+  "hash": 2565885237,
+  "type": "Weapon Frame Exotic"
+ },
  "2570477205": {
   "appearsOn": [
    "Pulse Rifle",
@@ -13822,6 +13846,14 @@
   "name": "Special Ammo Finder",
   "hash": 2595839237,
   "type": "Armor Mod General"
+ },
+ "2607392828": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Heart Piercer",
+  "hash": 2607392828,
+  "type": "Weapon Trait Exotic"
  },
  "2608508147": {
   "appearsOn": [
@@ -15553,6 +15585,38 @@
   "hash": 2881100038,
   "type": "Weapon Frame Exotic"
  },
+ "2883096192": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Stats for All Refit",
+  "hash": 2883096192,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "2883096193": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Cascade Point Refit",
+  "hash": 2883096193,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "2883096194": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Repulsor Brace Refit",
+  "hash": 2883096194,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "2883096195": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Loose Change Refit",
+  "hash": 2883096195,
+  "type": "Weapon Catalyst Exotic"
+ },
  "2887845822": {
   "appearsOn": [
    "Leg Armor",
@@ -15757,6 +15821,30 @@
   "name": "Aggressive Frame",
   "hash": 2912509910,
   "type": "Weapon Frame Enhanced"
+ },
+ "2919190144": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Nightsworn Sight III",
+  "hash": 2919190144,
+  "type": "Weapon Frame Exotic"
+ },
+ "2919190145": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Nightsworn Sight II",
+  "hash": 2919190145,
+  "type": "Weapon Frame Exotic"
+ },
+ "2919190151": {
+  "appearsOn": [
+   1047932517
+  ],
+  "name": "Nightsworn Sight IV",
+  "hash": 2919190151,
+  "type": "Weapon Frame Exotic"
  },
  "2921090754": {
   "appearsOn": [
@@ -16685,6 +16773,14 @@
   "name": "Stormbringer",
   "hash": 3117514172,
   "type": "Weapon Trait Exotic"
+ },
+ "3117519992": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Old God's Rite",
+  "hash": 3117519992,
+  "type": "Armor Mod Seasonal"
  },
  "3117519993": {
   "appearsOn": [
@@ -19992,6 +20088,14 @@
   "hash": 3803076562,
   "type": "Armor Mod Seasonal"
  },
+ "3803076564": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Authorized Mods: Grenades",
+  "hash": 3803076564,
+  "type": "Armor Mod Seasonal"
+ },
  "3803076565": {
   "appearsOn": [
    "Artifact"
@@ -21100,6 +21204,14 @@
   ],
   "name": "Power from Pain",
   "hash": 4037132133,
+  "type": "Armor Mod Seasonal"
+ },
+ "4037132134": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Finders Keepers",
+  "hash": 4037132134,
   "type": "Armor Mod Seasonal"
  },
  "4037132135": {
