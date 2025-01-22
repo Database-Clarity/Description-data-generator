@@ -3291,10 +3291,10 @@
  "595108252": {
   "appearsOn": [
    "Shotgun",
+   "Pulse Rifle",
    "Glaive",
    "Scout Rifle",
    "Fusion Rifle",
-   "Pulse Rifle",
    "Machine Gun",
    "Auto Rifle",
    "Linear Fusion Rifle",
@@ -4426,8 +4426,8 @@
    "Scout Rifle",
    "Sniper Rifle",
    "Trace Rifle",
-   "Auto Rifle",
    "Hand Cannon",
+   "Auto Rifle",
    "Fusion Rifle",
    "Linear Fusion Rifle"
   ],
@@ -4472,6 +4472,7 @@
  },
  "843318450": {
   "appearsOn": [
+   "Pulse Rifle",
    "Submachine Gun",
    "Auto Rifle",
    "Grenade Launcher",
@@ -4481,7 +4482,6 @@
    "Glaive",
    "Shotgun",
    "Rocket Launcher",
-   "Pulse Rifle",
    "Combat Bow",
    "Sniper Rifle",
    "Sword",
@@ -6477,6 +6477,7 @@
    "Hand Cannon",
    "Rocket Launcher",
    "Glaive",
+   "Fusion Rifle",
    "Pulse Rifle",
    "Linear Fusion Rifle",
    "Scout Rifle"
@@ -9614,8 +9615,8 @@
   "appearsOn": [
    "Machine Gun",
    "Hand Cannon",
-   "Auto Rifle",
    "Pulse Rifle",
+   "Auto Rifle",
    "Submachine Gun",
    "Sidearm",
    "Scout Rifle",
@@ -10611,10 +10612,10 @@
    "Machine Gun",
    "Combat Bow",
    "Fusion Rifle",
+   "Hand Cannon",
    "Pulse Rifle",
    "Scout Rifle",
-   "Auto Rifle",
-   "Hand Cannon"
+   "Auto Rifle"
   ],
   "name": "Slickdraw",
   "hash": 1942880504,
@@ -10908,6 +10909,7 @@
  },
  "2000295559": {
   "appearsOn": [
+   "Pulse Rifle",
    "Combat Bow",
    "Glaive",
    "Grenade Launcher",
@@ -10915,7 +10917,6 @@
    "Scout Rifle",
    "Sword",
    "Sidearm",
-   "Pulse Rifle",
    "Auto Rifle",
    "Linear Fusion Rifle",
    "Shotgun",
@@ -11014,10 +11015,10 @@
   "appearsOn": [
    "Hand Cannon",
    "Combat Bow",
+   "Pulse Rifle",
    "Sidearm",
    "Submachine Gun",
    "Auto Rifle",
-   "Pulse Rifle",
    "Scout Rifle",
    "Trace Rifle",
    "Sniper Rifle",
@@ -12846,10 +12847,10 @@
   "appearsOn": [
    "Hand Cannon",
    "Shotgun",
+   "Pulse Rifle",
    "Submachine Gun",
    "Scout Rifle",
    "Auto Rifle",
-   "Pulse Rifle",
    "Trace Rifle",
    "Sniper Rifle",
    "Linear Fusion Rifle",
@@ -16288,12 +16289,12 @@
   "appearsOn": [
    "Hand Cannon",
    "Shotgun",
+   "Pulse Rifle",
    "Sidearm",
    "Sword",
    "Glaive",
    "Rocket Launcher",
    "Auto Rifle",
-   "Pulse Rifle",
    "Grenade Launcher",
    "Trace Rifle",
    "Sniper Rifle",
@@ -16301,8 +16302,8 @@
    "Scout Rifle",
    "Linear Fusion Rifle",
    "Machine Gun",
-   "Combat Bow",
-   "Fusion Rifle"
+   "Fusion Rifle",
+   "Combat Bow"
   ],
   "name": "Frenzy",
   "hash": 3007133316,
@@ -18154,6 +18155,7 @@
    "Sniper Rifle",
    "Shotgun",
    "Sword",
+   "Pulse Rifle",
    "Glaive",
    "Hand Cannon",
    "Submachine Gun",
@@ -18162,7 +18164,6 @@
    "Machine Gun",
    "Sidearm",
    "Grenade Launcher",
-   "Pulse Rifle",
    "Combat Bow",
    "Scout Rifle",
    "Fusion Rifle",
@@ -19830,8 +19831,8 @@
  "3755250867": {
   "appearsOn": [
    "Fusion Rifle",
-   "Sidearm",
    "Pulse Rifle",
+   "Sidearm",
    "Scout Rifle",
    "Submachine Gun",
    "Sniper Rifle",
@@ -22249,10 +22250,10 @@
    "Auto Rifle",
    "Scout Rifle",
    "Sniper Rifle",
+   "Hand Cannon",
    "Shotgun",
    "Sidearm",
    "Grenade Launcher",
-   "Hand Cannon",
    "Fusion Rifle",
    "Submachine Gun"
   ],
