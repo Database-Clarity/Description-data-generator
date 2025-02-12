@@ -642,8 +642,8 @@
    "Grenade Launcher",
    "Sword",
    "Rocket Launcher",
-   "Linear Fusion Rifle",
    "Trace Rifle",
+   "Linear Fusion Rifle",
    "Fusion Rifle",
    "Hand Cannon",
    "Machine Gun",
@@ -2755,6 +2755,7 @@
    "Grenade Launcher",
    "Machine Gun",
    "Fusion Rifle",
+   "Trace Rifle",
    "Sniper Rifle",
    "Hand Cannon"
   ],
@@ -4438,8 +4439,8 @@
    "Rocket Launcher",
    "Combat Bow",
    "Fusion Rifle",
-   "Linear Fusion Rifle",
    "Trace Rifle",
+   "Linear Fusion Rifle",
    "Hand Cannon",
    "Machine Gun",
    "Sniper Rifle"
@@ -4735,7 +4736,8 @@
  "862848869": {
   "appearsOn": [
    "Hand Cannon",
-   "Combat Bow"
+   "Combat Bow",
+   "Submachine Gun"
   ],
   "name": "Polymer Grip",
   "hash": 862848869,
@@ -5375,6 +5377,8 @@
  "960997401": {
   "appearsOn": [
    "Auto Rifle",
+   "Trace Rifle",
+   "Hand Cannon",
    "Scout Rifle"
   ],
   "name": "Tear",
@@ -5650,7 +5654,8 @@
  "1012699414": {
   "appearsOn": [
    "Hand Cannon",
-   "Combat Bow"
+   "Combat Bow",
+   "Submachine Gun"
   ],
   "name": "Heavy Grip",
   "hash": 1012699414,
@@ -6151,6 +6156,7 @@
    "Grenade Launcher",
    "Machine Gun",
    "Fusion Rifle",
+   "Trace Rifle",
    "Sniper Rifle",
    "Hand Cannon"
   ],
@@ -6595,6 +6601,7 @@
    "Auto Rifle",
    "Machine Gun",
    "Submachine Gun",
+   "Trace Rifle",
    "Combat Bow",
    "Shotgun",
    "Hand Cannon",
@@ -7333,6 +7340,17 @@
   "hash": 1294026524,
   "type": "Weapon Frame"
  },
+ "1298135794": {
+  "appearsOn": [
+   "Trace Rifle",
+   "Scout Rifle",
+   "Hand Cannon",
+   "Shotgun"
+  ],
+  "name": "Subjugation",
+  "hash": 1298135794,
+  "type": "Weapon Trait Origin"
+ },
  "1298151900": {
   "appearsOn": [
    2232171099
@@ -7926,9 +7944,9 @@
    "Auto Rifle",
    "Pulse Rifle",
    "Fusion Rifle",
+   "Trace Rifle",
    "Hand Cannon",
    "Rocket Launcher",
-   "Trace Rifle",
    "Linear Fusion Rifle",
    "Sidearm"
   ],
@@ -8228,6 +8246,7 @@
    "Hand Cannon",
    "Combat Bow",
    "Machine Gun",
+   "Shotgun",
    "Scout Rifle"
   ],
   "name": "Demoralize",
@@ -8504,6 +8523,14 @@
   "hash": 1523832109,
   "type": "Weapon Trait"
  },
+ "1524069046": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Taken Ambition",
+  "hash": 1524069046,
+  "type": "Weapon Trait Exotic"
+ },
  "1525239159": {
   "appearsOn": [
    "Submachine Gun"
@@ -8606,7 +8633,8 @@
    "Submachine Gun",
    "Scout Rifle",
    "Machine Gun",
-   "Hand Cannon"
+   "Hand Cannon",
+   "Shotgun"
   ],
   "name": "Redirection",
   "hash": 1545231802,
@@ -8699,6 +8727,14 @@
   "name": "Unflinching Solar Aim",
   "hash": 1553790504,
   "type": "Armor Mod General"
+ },
+ "1555922475": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Taken Resolution",
+  "hash": 1555922475,
+  "type": "Weapon Trait Exotic"
  },
  "1556840489": {
   "appearsOn": [
@@ -8895,9 +8931,9 @@
    "Hand Cannon",
    "Pulse Rifle",
    "Fusion Rifle",
+   "Trace Rifle",
    "Sidearm",
    "Rocket Launcher",
-   "Trace Rifle",
    "Linear Fusion Rifle"
   ],
   "name": "Stats for All",
@@ -11025,6 +11061,38 @@
   "name": "Quickdraw",
   "hash": 1961144892,
   "type": "Weapon Trait Enhanced"
+ },
+ "1963279224": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Panic Response IV",
+  "hash": 1963279224,
+  "type": "Weapon Frame Exotic"
+ },
+ "1963279225": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Panic Response V",
+  "hash": 1963279225,
+  "type": "Weapon Frame Exotic"
+ },
+ "1963279230": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Panic Response II",
+  "hash": 1963279230,
+  "type": "Weapon Frame Exotic"
+ },
+ "1963279231": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Panic Response III",
+  "hash": 1963279231,
+  "type": "Weapon Frame Exotic"
  },
  "1964414318": {
   "appearsOn": [
@@ -14536,6 +14604,7 @@
    "Grenade Launcher",
    "Machine Gun",
    "Trace Rifle",
+   "Scout Rifle",
    "Hand Cannon"
   ],
   "name": "Rolling Storm",
@@ -15154,6 +15223,7 @@
    "Sniper Rifle",
    "Shotgun",
    "Glaive",
+   "Trace Rifle",
    "Linear Fusion Rifle"
   ],
   "name": "Thresh",
@@ -15691,6 +15761,7 @@
    "Hand Cannon",
    "Combat Bow",
    "Machine Gun",
+   "Shotgun",
    "Scout Rifle"
   ],
   "name": "Demoralize",
@@ -17112,6 +17183,7 @@
    "Fusion Rifle",
    "Pulse Rifle",
    "Linear Fusion Rifle",
+   "Trace Rifle",
    "Glaive",
    "Submachine Gun",
    "Shotgun"
@@ -17744,7 +17816,8 @@
    "Grenade Launcher",
    "Hand Cannon",
    "Glaive",
-   "Machine Gun"
+   "Machine Gun",
+   "Shotgun"
   ],
   "name": "Redirection",
   "hash": 3201496230,
@@ -17774,7 +17847,8 @@
    "Auto Rifle",
    "Grenade Launcher",
    "Trace Rifle",
-   "Linear Fusion Rifle"
+   "Linear Fusion Rifle",
+   "Hand Cannon"
   ],
   "name": "Paracausal Affinity",
   "hash": 3215448563,
@@ -17787,6 +17861,7 @@
    "Grenade Launcher",
    "Machine Gun",
    "Trace Rifle",
+   "Scout Rifle",
    "Hand Cannon"
   ],
   "name": "Rolling Storm",
@@ -17914,6 +17989,8 @@
  "3244229373": {
   "appearsOn": [
    "Auto Rifle",
+   "Trace Rifle",
+   "Hand Cannon",
    "Scout Rifle"
   ],
   "name": "Tear",
@@ -18155,7 +18232,8 @@
    "Auto Rifle",
    "Grenade Launcher",
    "Trace Rifle",
-   "Linear Fusion Rifle"
+   "Linear Fusion Rifle",
+   "Hand Cannon"
   ],
   "name": "Paracausal Affinity",
   "hash": 3299896859,
@@ -18281,7 +18359,8 @@
  "3326204863": {
   "appearsOn": [
    "Hand Cannon",
-   "Combat Bow"
+   "Combat Bow",
+   "Submachine Gun"
   ],
   "name": "Smooth Grip",
   "hash": 3326204863,
@@ -18832,7 +18911,8 @@
  },
  "3438534621": {
   "appearsOn": [
-   "Hand Cannon"
+   "Hand Cannon",
+   "Submachine Gun"
   ],
   "name": "Combat Grip",
   "hash": 3438534621,
@@ -19051,6 +19131,14 @@
   ],
   "name": "Flame Refraction",
   "hash": 3470828242,
+  "type": "Weapon Trait Exotic"
+ },
+ "3471414563": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Taken Divergence",
+  "hash": 3471414563,
   "type": "Weapon Trait Exotic"
  },
  "3472640090": {
@@ -20351,6 +20439,7 @@
    "Fusion Rifle",
    "Pulse Rifle",
    "Linear Fusion Rifle",
+   "Trace Rifle",
    "Glaive",
    "Submachine Gun",
    "Shotgun"
@@ -20605,7 +20694,8 @@
    "Rocket Launcher",
    "Submachine Gun",
    "Sniper Rifle",
-   "Sidearm"
+   "Sidearm",
+   "Scout Rifle"
   ],
   "name": "Ambitious Assassin",
   "hash": 3797647183,
@@ -21040,7 +21130,8 @@
  "3917450714": {
   "appearsOn": [
    "Hand Cannon",
-   "Combat Bow"
+   "Combat Bow",
+   "Submachine Gun"
   ],
   "name": "Textured Grip",
   "hash": 3917450714,
@@ -22178,6 +22269,14 @@
   "hash": 4120041779,
   "type": "Armor Trait Exotic"
  },
+ "4127881474": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Panic Response",
+  "hash": 4127881474,
+  "type": "Weapon Frame Exotic"
+ },
  "4129855581": {
   "appearsOn": [
    "Pulse Rifle",
@@ -22644,6 +22743,38 @@
   "name": "Aggressive Frame",
   "hash": 4203236451,
   "type": "Weapon Frame Enhanced"
+ },
+ "4204405032": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Target Lock Refit",
+  "hash": 4204405032,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "4204405033": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "One for All Refit",
+  "hash": 4204405033,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "4204405034": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "Hatchling Refit",
+  "hash": 4204405034,
+  "type": "Weapon Catalyst Exotic"
+ },
+ "4204405035": {
+  "appearsOn": [
+   1481594633
+  ],
+  "name": "High-Impact Reserves Refit",
+  "hash": 4204405035,
+  "type": "Weapon Catalyst Exotic"
  },
  "4207509907": {
   "appearsOn": [

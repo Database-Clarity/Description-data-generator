@@ -3958,6 +3958,11 @@
    "hash": 1294026524,
    "type": "Weapon Frame"
   },
+  "1298135794": {
+   "name": "Subjugation",
+   "hash": 1298135794,
+   "type": "Weapon Trait Origin"
+  },
   "1298151900": {
    "name": "Deathbringer Catalyst",
    "hash": 1298151900,
@@ -4599,6 +4604,13 @@
    "hash": 1523832109,
    "type": "Weapon Trait"
   },
+  "1524069046": {
+   "name": "Taken Ambition",
+   "hash": 1524069046,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Trait Exotic"
+  },
   "1525239159": {
    "name": "Aggressive Frame",
    "hash": 1525239159,
@@ -4698,6 +4710,13 @@
    "name": "Unflinching Solar Aim",
    "hash": 1553790504,
    "type": "Armor Mod General"
+  },
+  "1555922475": {
+   "name": "Taken Resolution",
+   "hash": 1555922475,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Trait Exotic"
   },
   "1556840489": {
    "name": "Lead from Gold",
@@ -5944,6 +5963,34 @@
    "name": "Quickdraw",
    "hash": 1961144892,
    "type": "Weapon Trait Enhanced"
+  },
+  "1963279224": {
+   "name": "Panic Response IV",
+   "hash": 1963279224,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
+  "1963279225": {
+   "name": "Panic Response V",
+   "hash": 1963279225,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
+  "1963279230": {
+   "name": "Panic Response II",
+   "hash": 1963279230,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
+  "1963279231": {
+   "name": "Panic Response III",
+   "hash": 1963279231,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
   },
   "1964414318": {
    "name": "Heavy Metal",
@@ -10256,6 +10303,13 @@
    "itemHash": 19024058,
    "type": "Weapon Trait Exotic"
   },
+  "3471414563": {
+   "name": "Taken Divergence",
+   "hash": 3471414563,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Trait Exotic"
+  },
   "3472640090": {
    "name": "Lightweight Frame",
    "hash": 3472640090,
@@ -11938,6 +11992,13 @@
    "itemHash": 192896783,
    "type": "Armor Trait Exotic"
   },
+  "4127881474": {
+   "name": "Panic Response",
+   "hash": 4127881474,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
   "4129855581": {
    "name": "Crossing Over",
    "hash": 4129855581,
@@ -12211,6 +12272,34 @@
    "name": "Aggressive Frame",
    "hash": 4203236451,
    "type": "Weapon Frame Enhanced"
+  },
+  "4204405032": {
+   "name": "Target Lock Refit",
+   "hash": 4204405032,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204405033": {
+   "name": "One for All Refit",
+   "hash": 4204405033,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204405034": {
+   "name": "Hatchling Refit",
+   "hash": 4204405034,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204405035": {
+   "name": "High-Impact Reserves Refit",
+   "hash": 4204405035,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
   },
   "4207509907": {
    "name": "Killing Wind",
@@ -12601,6 +12690,23 @@
      "has": [
       4004944400,
       1324340508
+     ]
+    },
+    {
+     "name": "Barrow-Dyad",
+     "has": [
+      1963279224,
+      1524069046,
+      1555922475,
+      1963279225,
+      1963279230,
+      1963279231,
+      3471414563,
+      4127881474,
+      4204405032,
+      4204405033,
+      4204405034,
+      4204405035
      ]
     },
     {
