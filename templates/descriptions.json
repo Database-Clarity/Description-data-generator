@@ -232,6 +232,11 @@
    "hash": 56663992,
    "type": "Armor Mod General"
   },
+  "59871045": {
+   "name": "Gravity Well",
+   "hash": 59871045,
+   "type": "Weapon Trait Origin"
+  },
   "64332393": {
    "name": "Permeability",
    "hash": 64332393,
@@ -1592,6 +1597,11 @@
    "itemName": "Ergo Sum",
    "itemHash": 1681583613,
    "type": "Weapon Perk Exotic"
+  },
+  "521275121": {
+   "name": "Beam Medic",
+   "hash": 521275121,
+   "type": "Armor Mod Seasonal"
   },
   "521275122": {
    "name": "Unraveling Orbs",
@@ -4035,6 +4045,11 @@
    "name": "Adaptive Glaive",
    "hash": 1316753551,
    "type": "Weapon Frame"
+  },
+  "1319563984": {
+   "name": "Limit Break",
+   "hash": 1319563984,
+   "type": "Armor Mod Seasonal"
   },
   "1319563986": {
    "name": "Defibrillating Blast",
@@ -6962,6 +6977,11 @@
    "hash": 2297703043,
    "type": "Armor Mod Seasonal"
   },
+  "2297703044": {
+   "name": "Overload Trace Rifles",
+   "hash": 2297703044,
+   "type": "Armor Mod Seasonal"
+  },
   "2297703046": {
    "name": "Anti-Barrier Sniper Rifle",
    "hash": 2297703046,
@@ -7759,6 +7779,11 @@
   "2596646301": {
    "name": "Horde Shuttle",
    "hash": 2596646301,
+   "type": "Armor Mod Seasonal"
+  },
+  "2596646303": {
+   "name": "Harsh Refraction",
+   "hash": 2596646303,
    "type": "Armor Mod Seasonal"
   },
   "2607392828": {
@@ -10595,6 +10620,11 @@
   "3585856465": {
    "name": "Photonic Flare",
    "hash": 3585856465,
+   "type": "Armor Mod Seasonal"
+  },
+  "3585856466": {
+   "name": "Elemental Siphon",
+   "hash": 3585856466,
    "type": "Armor Mod Seasonal"
   },
   "3585856469": {
