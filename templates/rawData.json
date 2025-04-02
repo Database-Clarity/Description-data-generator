@@ -2954,6 +2954,14 @@
   "hash": 519046634,
   "type": "Weapon Perk Exotic"
  },
+ "521275120": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Vile Weave",
+  "hash": 521275120,
+  "type": "Armor Mod Seasonal"
+ },
  "521275121": {
   "appearsOn": [
    "Artifact"
@@ -7492,6 +7500,14 @@
   ],
   "name": "Limit Break",
   "hash": 1319563984,
+  "type": "Armor Mod Seasonal"
+ },
+ "1319563985": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "To Shreds",
+  "hash": 1319563985,
   "type": "Armor Mod Seasonal"
  },
  "1319563986": {
@@ -12900,6 +12916,14 @@
   "hash": 2297703044,
   "type": "Armor Mod Seasonal"
  },
+ "2297703045": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Unstoppable Rocket Launcher",
+  "hash": 2297703045,
+  "type": "Armor Mod Seasonal"
+ },
  "2297703046": {
   "appearsOn": [
    "Artifact"
@@ -14396,6 +14420,14 @@
   ],
   "name": "Horde Shuttle",
   "hash": 2596646301,
+  "type": "Armor Mod Seasonal"
+ },
+ "2596646302": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Gold from Lead",
+  "hash": 2596646302,
   "type": "Armor Mod Seasonal"
  },
  "2596646303": {
@@ -19722,6 +19754,14 @@
   ],
   "name": "Elemental Siphon",
   "hash": 3585856466,
+  "type": "Armor Mod Seasonal"
+ },
+ "3585856467": {
+  "appearsOn": [
+   "Artifact"
+  ],
+  "name": "Perpetual Destruction",
+  "hash": 3585856467,
   "type": "Armor Mod Seasonal"
  },
  "3585856469": {
