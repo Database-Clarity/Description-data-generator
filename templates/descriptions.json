@@ -677,6 +677,13 @@
    "hash": 217816625,
    "type": "Weapon Frame Enhanced"
   },
+  "218281600": {
+   "name": "The Master",
+   "hash": 218281600,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Frame Exotic"
+  },
   "220689851": {
    "name": "Sundering",
    "hash": 220689851,
@@ -2853,6 +2860,13 @@
    "hash": 934199459,
    "type": "Subclass Grenade"
   },
+  "935202422": {
+   "name": "Horizon Ironsights",
+   "hash": 935202422,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Trait Exotic"
+  },
   "938542991": {
    "name": "Tempered Edge",
    "hash": 938542991,
@@ -4823,6 +4837,13 @@
    "name": "Enhanced Scanner Augment",
    "hash": 1578165808,
    "type": "Armor Mod Activity"
+  },
+  "1579100415": {
+   "name": "Bullseye Bolster",
+   "hash": 1579100415,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Trait Exotic"
   },
   "1582574009": {
    "name": "Arcbolt Grenade",
@@ -8729,6 +8750,13 @@
    "name": "Flash Counter",
    "hash": 2860991074,
    "type": "Weapon Trait Enhanced"
+  },
+  "2861049498": {
+   "name": "New Land Beyond Catalyst",
+   "hash": 2861049498,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Catalyst Exotic"
   },
   "2866798147": {
    "name": "No Distractions",
@@ -13273,6 +13301,15 @@
       4184462049,
       525593296,
       1931066670
+     ]
+    },
+    {
+     "name": "New Land Beyond",
+     "has": [
+      218281600,
+      935202422,
+      1579100415,
+      2861049498
      ]
     },
     {
