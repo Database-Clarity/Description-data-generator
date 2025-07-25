@@ -62,6 +62,12 @@
    ]
   },
   "Combat Bow": {
+   "High-Impact Frame": [
+    1019291327
+   ],
+   "High-Impact Longbow": [
+    3572001649
+   ],
    "Lightweight Frame": [
     395096174,
     2012877834,
@@ -257,6 +263,9 @@
     1034287523,
     1322370662,
     4113841443
+   ],
+   "Spread Shot": [
+    2427219599
    ]
   },
   "Linear Fusion Rifle": {
@@ -396,6 +405,9 @@
     3478030936,
     3841661468,
     4188742693
+   ],
+   "Rocket-Assisted Frame": [
+    2928496916
    ]
   },
   "Rocket Launcher": {
@@ -553,6 +565,9 @@
     3399947696,
     3419227006,
     3913106382
+   ],
+   "Rapid Fire Slug": [
+    407573255
    ],
    "Rapid-Fire Frame": [
     996573084,
