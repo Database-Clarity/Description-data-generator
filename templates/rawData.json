@@ -7501,14 +7501,14 @@
    "Auto Rifle",
    "Glaive",
    "Submachine Gun",
+   "Grenade Launcher",
+   "Rocket Launcher",
    "Pulse Rifle",
    "Sniper Rifle",
    "Combat Bow",
-   "Trace Rifle",
    "Machine Gun",
-   "Rocket Launcher",
    "Linear Fusion Rifle",
-   "Grenade Launcher"
+   "Trace Rifle"
   ],
   "name": "Abundant Ammo",
   "hash": 1197814525,
@@ -14875,19 +14875,19 @@
  },
  "2420924065": {
   "appearsOn": [
+   "Fusion Rifle",
+   "Shotgun",
    "Sidearm",
    "Hand Cannon",
    "Scout Rifle",
    "Auto Rifle",
    "Submachine Gun",
+   "Grenade Launcher",
    "Pulse Rifle",
-   "Shotgun",
-   "Trace Rifle",
    "Sniper Rifle",
    "Machine Gun",
-   "Fusion Rifle",
    "Linear Fusion Rifle",
-   "Grenade Launcher"
+   "Trace Rifle"
   ],
   "name": "Bandolier",
   "hash": 2420924065,
