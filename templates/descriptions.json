@@ -540,7 +540,7 @@
    "type": "Weapon Trait Enhanced"
   },
   "164468655": {
-   "name": "Nanotech Tracer Rockets",
+   "name": "Nanotech Tracer Missiles",
    "hash": 164468655,
    "type": "Weapon Trait Origin"
   },
@@ -1179,7 +1179,7 @@
    "type": "Weapon Trait"
   },
   "368110299": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 368110299,
    "type": "Weapon Frame Enhanced"
   },
@@ -2191,7 +2191,7 @@
    "type": "Armor Mod General"
   },
   "687584589": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 687584589,
    "type": "Weapon Frame Enhanced"
   },
@@ -2995,6 +2995,11 @@
    "hash": 934199459,
    "type": "Subclass Grenade"
   },
+  "934928524": {
+   "name": "Contending Cascade",
+   "hash": 934928524,
+   "type": "Weapon Trait Origin"
+  },
   "935202422": {
    "name": "Horizon Ironsights",
    "hash": 935202422,
@@ -3594,6 +3599,13 @@
    "hash": 1126264488,
    "type": "Weapon Trait"
   },
+  "1127992351": {
+   "name": "Unyielding Handle",
+   "hash": 1127992351,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "1128768652": {
    "name": "Triple Jump",
    "hash": 1128768652,
@@ -3715,6 +3727,13 @@
    "name": "Deconstruct",
    "hash": 1164602481,
    "type": "Weapon Trait"
+  },
+  "1166233619": {
+   "name": "Nano-Assault",
+   "hash": 1166233619,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Trait Exotic"
   },
   "1167468626": {
    "name": "Lasting Impression",
@@ -3855,6 +3874,11 @@
    "hash": 1202133695,
    "type": "Weapon Perk"
   },
+  "1202584452": {
+   "name": "Ancillary Ordinance",
+   "hash": 1202584452,
+   "type": "Weapon Trait"
+  },
   "1206010521": {
    "name": "Ruinous Effigy Catalyst",
    "hash": 1206010521,
@@ -3933,7 +3957,7 @@
    "type": "Weapon Mod"
   },
   "1225770249": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 1225770249,
    "type": "Weapon Frame Enhanced"
   },
@@ -4261,6 +4285,13 @@
    "itemName": "Final Warning",
    "itemHash": 3121540812,
    "type": "Weapon Trait Exotic"
+  },
+  "1303792749": {
+   "name": "Resurgence Directive",
+   "hash": 1303792749,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
   },
   "1305536863": {
    "name": "Harmonic Targeting",
@@ -5045,6 +5076,11 @@
    "hash": 1570042021,
    "type": "Weapon Trait"
   },
+  "1570399071": {
+   "name": "Lead From Light",
+   "hash": 1570399071,
+   "type": "Weapon Trait"
+  },
   "1573888036": {
    "name": "Split Electron",
    "hash": 1573888036,
@@ -5163,6 +5199,11 @@
    "name": "Fragile Focus",
    "hash": 1609056795,
    "type": "Weapon Trait Enhanced"
+  },
+  "1615948893": {
+   "name": "Together Forever",
+   "hash": 1615948893,
+   "type": "Weapon Frame"
   },
   "1617987572": {
    "name": "SSO-08 Sniper",
@@ -5334,6 +5375,11 @@
   "1658784563": {
    "name": "Genesis",
    "hash": 1658784563,
+   "type": "Weapon Trait Enhanced"
+  },
+  "1661646271": {
+   "name": "Lead From Light",
+   "hash": 1661646271,
    "type": "Weapon Trait Enhanced"
   },
   "1663363584": {
@@ -5903,6 +5949,11 @@
    "hash": 1828251441,
    "type": "Armor Trait Exotic"
   },
+  "1831023215": {
+   "name": "Skulking Wolf",
+   "hash": 1831023215,
+   "type": "Weapon Perk"
+  },
   "1831499663": {
    "name": "Aggressive Frame",
    "hash": 1831499663,
@@ -6032,12 +6083,12 @@
    "type": "Armor Mod Seasonal"
   },
   "1876183150": {
-   "name": "",
+   "name": "Light-Forged Lead",
    "hash": 1876183150,
    "type": "Armor Mod Seasonal"
   },
   "1876183151": {
-   "name": "",
+   "name": "Threadling Proliferation",
    "hash": 1876183151,
    "type": "Armor Mod Seasonal"
   },
@@ -6083,6 +6134,16 @@
    "hash": 1886418605,
    "type": "Weapon Frame Enhanced"
   },
+  "1888623310": {
+   "name": "MIDA Synergy",
+   "hash": 1888623310,
+   "type": "Weapon Frame"
+  },
+  "1888882410": {
+   "name": "Collective Pugilism",
+   "hash": 1888882410,
+   "type": "Weapon Trait"
+  },
   "1890040155": {
    "name": "Low-Profile Rail",
    "hash": 1890040155,
@@ -6112,6 +6173,13 @@
    "name": "Rapid-Fire Frame",
    "hash": 1894749743,
    "type": "Weapon Frame Enhanced"
+  },
+  "1899803992": {
+   "name": "Suspending Blast",
+   "hash": 1899803992,
+   "itemName": "New Malpais",
+   "itemHash": 1736135946,
+   "type": "Weapon Trait Exotic"
   },
   "1900919151": {
    "name": "Edge of Action",
@@ -6701,6 +6769,11 @@
    "hash": 2078097559,
    "type": "Weapon Perk"
   },
+  "2078520142": {
+   "name": "Crystalline Corpsebloom",
+   "hash": 2078520142,
+   "type": "Weapon Trait Enhanced"
+  },
   "2085058762": {
    "name": "D.A.R.C.I. Catalyst",
    "hash": 2085058762,
@@ -6755,7 +6828,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "2100231191": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 2100231191,
    "type": "Weapon Frame Enhanced"
   },
@@ -6834,6 +6907,11 @@
    "name": "Ashes to Assets",
    "hash": 2136310244,
    "type": "Armor Mod General"
+  },
+  "2138673996": {
+   "name": "Ancillary Ordinance",
+   "hash": 2138673996,
+   "type": "Weapon Trait Enhanced"
   },
   "2139363611": {
    "name": "Well-Rounded",
@@ -7171,6 +7249,11 @@
    "itemHash": 3505113722,
    "type": "Weapon Catalyst Exotic"
   },
+  "2235383762": {
+   "name": "Support Frame",
+   "hash": 2235383762,
+   "type": "Weapon Frame"
+  },
   "2237975061": {
    "name": "Kinetic Loader",
    "hash": 2237975061,
@@ -7358,6 +7441,11 @@
    "itemName": "Wish-Ender",
    "itemHash": 814876684,
    "type": "Weapon Trait Exotic"
+  },
+  "2289534249": {
+   "name": "Bewildering Burst",
+   "hash": 2289534249,
+   "type": "Weapon Trait"
   },
   "2292872001": {
    "name": "Microcosm Catalyst",
@@ -7928,6 +8016,27 @@
    "itemHash": 1201830623,
    "type": "Weapon Frame Exotic"
   },
+  "2493618392": {
+   "name": "Resurgence Scandal III",
+   "hash": 2493618392,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
+  "2493618393": {
+   "name": "Resurgence Scandal II",
+   "hash": 2493618393,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
+  "2493618399": {
+   "name": "Resurgence Scandal IV",
+   "hash": 2493618399,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "2495011826": {
    "name": "Ensemble",
    "hash": 2495011826,
@@ -8447,12 +8556,12 @@
    "type": "Armor Mod Seasonal"
   },
   "2659604386": {
-   "name": "",
+   "name": "Argent Quiver",
    "hash": 2659604386,
    "type": "Armor Mod Seasonal"
   },
   "2659604387": {
-   "name": "",
+   "name": "Iron Lord's Vigor",
    "hash": 2659604387,
    "type": "Armor Mod Seasonal"
   },
@@ -8559,6 +8668,11 @@
    "itemName": "Verglas Curve",
    "itemHash": 3659414143,
    "type": "Weapon Catalyst Exotic"
+  },
+  "2691822036": {
+   "name": "Contending Cascade",
+   "hash": 2691822036,
+   "type": "Weapon Perk"
   },
   "2696719570": {
    "name": "Adaptive Glaive",
@@ -9212,6 +9326,11 @@
    "hash": 2870095399,
    "type": "Weapon Perk"
   },
+  "2873651103": {
+   "name": "Search Party",
+   "hash": 2873651103,
+   "type": "Weapon Perk"
+  },
   "2874284214": {
    "name": "Aggressive Burst",
    "hash": 2874284214,
@@ -9409,6 +9528,11 @@
    "hash": 2921714558,
    "type": "Armor Mod General"
   },
+  "2922950962": {
+   "name": "Crystalline Corpsebloom",
+   "hash": 2922950962,
+   "type": "Weapon Trait"
+  },
   "2923251173": {
    "name": "Kill Clip",
    "hash": 2923251173,
@@ -9427,7 +9551,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "2928496916": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 2928496916,
    "type": "Weapon Frame"
   },
@@ -9896,13 +10020,18 @@
    "hash": 3096702027,
    "type": "Weapon Trait"
   },
+  "3097973565": {
+   "name": "Iron Grip",
+   "hash": 3097973565,
+   "type": "Weapon Trait Enhanced"
+  },
   "3099083217": {
    "name": "Heavy Burst",
    "hash": 3099083217,
    "type": "Weapon Frame"
   },
   "3100590152": {
-   "name": "MIDA Radar",
+   "name": "MIDA Software Package",
    "hash": 3100590152,
    "itemName": "MIDA Multi-Tool",
    "itemHash": 1331482397,
@@ -10068,12 +10197,12 @@
    "type": "Armor Mod Seasonal"
   },
   "3153265452": {
-   "name": "",
+   "name": "Semi-Auto Striker",
    "hash": 3153265452,
    "type": "Armor Mod Seasonal"
   },
   "3153265453": {
-   "name": "",
+   "name": "Pack Tactics",
    "hash": 3153265453,
    "type": "Armor Mod Seasonal"
   },
@@ -10151,7 +10280,7 @@
    "type": "Weapon Perk"
   },
   "3178379945": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 3178379945,
    "type": "Weapon Frame Enhanced"
   },
@@ -10188,6 +10317,11 @@
    "itemName": "Dead Messenger",
    "itemHash": 46125926,
    "type": "Weapon Catalyst Exotic"
+  },
+  "3192447905": {
+   "name": "Aggregate Charge",
+   "hash": 3192447905,
+   "type": "Weapon Trait Enhanced"
   },
   "3192552688": {
    "name": "Thread of Binding",
@@ -10503,24 +10637,9 @@
    "hash": 3310813497,
    "type": "Weapon Mod"
   },
-  "3310813500": {
-   "name": "Cowboy Grip",
-   "hash": 3310813500,
-   "type": "Weapon Mod"
-  },
-  "3310813501": {
-   "name": "Fragmentation Rounds",
-   "hash": 3310813501,
-   "type": "Weapon Mod"
-  },
   "3310813502": {
    "name": "Unstable Shells",
    "hash": 3310813502,
-   "type": "Weapon Mod"
-  },
-  "3310813503": {
-   "name": "Chaotic Munitions",
-   "hash": 3310813503,
    "type": "Weapon Mod"
   },
   "3310993845": {
@@ -10701,6 +10820,13 @@
    "hash": 3373736292,
    "type": "Weapon Perk"
   },
+  "3377448506": {
+   "name": "Tenacious Handle",
+   "hash": 3377448506,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "3377988521": {
    "name": "Lightweight Frame",
    "hash": 3377988521,
@@ -10732,12 +10858,12 @@
    "type": "Armor Mod Seasonal"
   },
   "3387424190": {
-   "name": "",
+   "name": "Overload Sword",
    "hash": 3387424190,
    "type": "Armor Mod Seasonal"
   },
   "3387424191": {
-   "name": "",
+   "name": "Anti-Barrier Bow",
    "hash": 3387424191,
    "type": "Armor Mod Seasonal"
   },
@@ -10962,12 +11088,12 @@
    "type": "Armor Mod Seasonal"
   },
   "3459646244": {
-   "name": "",
+   "name": "That Fresh Bullets Smell",
    "hash": 3459646244,
    "type": "Armor Mod Seasonal"
   },
   "3459646245": {
-   "name": "",
+   "name": "Energy Acceleration",
    "hash": 3459646245,
    "type": "Armor Mod Seasonal"
   },
@@ -11001,6 +11127,13 @@
    "hash": 3466057365,
    "itemName": "MIDA Multi-Tool",
    "itemHash": 1331482397,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3466807461": {
+   "name": "New Malpais Catalyst",
+   "hash": 3466807461,
+   "itemName": "New Malpais",
+   "itemHash": 1736135946,
    "type": "Weapon Catalyst Exotic"
   },
   "3467460423": {
@@ -11273,6 +11406,13 @@
    "itemHash": 542203595,
    "type": "Weapon Frame Exotic"
   },
+  "3553394349": {
+   "name": "Rampager's Handle",
+   "hash": 3553394349,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "3554800389": {
    "name": "+Super / -Class",
    "hash": 3554800389,
@@ -11378,7 +11518,7 @@
    "type": "Armor Mod General"
   },
   "3602718766": {
-   "name": "Rocket Tracers",
+   "name": "Missile Tracers",
    "hash": 3602718766,
    "itemName": "Quicksilver Storm",
    "itemHash": 4293613902,
@@ -11681,6 +11821,11 @@
    "hash": 3683904166,
    "type": "Subclass Super"
   },
+  "3684445958": {
+   "name": "Collective Pugilism",
+   "hash": 3684445958,
+   "type": "Weapon Trait Enhanced"
+  },
   "3685945823": {
    "name": "Focusing Strike",
    "hash": 3685945823,
@@ -11863,6 +12008,11 @@
    "name": "Micro-Missile Frame",
    "hash": 3758615625,
    "type": "Weapon Frame"
+  },
+  "3764420437": {
+   "name": "Aggregate Charge",
+   "hash": 3764420437,
+   "type": "Weapon Trait"
   },
   "3766386008": {
    "name": "Legacy PR-55 Frame",
@@ -12116,6 +12266,34 @@
    "hash": 3865257976,
    "type": "Weapon Trait"
   },
+  "3865920552": {
+   "name": "Relentless Strikes Refit",
+   "hash": 3865920552,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3865920553": {
+   "name": "Attrition Orbs Refit",
+   "hash": 3865920553,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3865920554": {
+   "name": "SUBROUTINE: ~RECURSION",
+   "hash": 3865920554,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3865920555": {
+   "name": "Burning Ambition Refit",
+   "hash": 3865920555,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
   "3866705246": {
    "name": "Diamond Lance",
    "hash": 3866705246,
@@ -12235,6 +12413,11 @@
    "name": "Whirlwind Blade",
    "hash": 3913600130,
    "type": "Weapon Trait"
+  },
+  "3914874605": {
+   "name": "Bewildering Burst",
+   "hash": 3914874605,
+   "type": "Weapon Trait Enhanced"
   },
   "3914973263": {
    "name": "Void Weapon Surge",
@@ -14680,6 +14863,7 @@
       1294026524,
       1458010786,
       1636108362,
+      2235383762,
       2622129339,
       3488129416
      ]
@@ -14806,6 +14990,7 @@
       996573084,
       1458010786,
       1636108362,
+      1888623310,
       3054949324,
       3468089894,
       3923638944,
@@ -14820,6 +15005,7 @@
       1282254042,
       1294026524,
       1458010786,
+      1615948893,
       1636108362,
       2928496916,
       3330548924,
@@ -15394,6 +15580,10 @@
    ]
   },
   "enhancedPerks": {
+   "11551321": {
+    "name": "Iron Grip",
+    "linkedWith": 3097973565
+   },
    "11612903": {
     "name": "Adrenaline Junkie",
     "linkedWith": 2422968039
@@ -15862,6 +16052,10 @@
     "name": "Encore",
     "linkedWith": 838873202
    },
+   "1202584452": {
+    "name": "Ancillary Ordinance",
+    "linkedWith": 2138673996
+   },
    "1275731761": {
     "name": "Cluster Bomb",
     "linkedWith": 2091001077
@@ -15962,6 +16156,10 @@
     "name": "Heating Up",
     "linkedWith": 2748258257
    },
+   "1570399071": {
+    "name": "Lead From Light",
+    "linkedWith": 1661646271
+   },
    "1583705720": {
     "name": "Stats for All",
     "linkedWith": 1409206216
@@ -15997,6 +16195,10 @@
    "1658784563": {
     "name": "Genesis",
     "linkedWith": 3096702027
+   },
+   "1661646271": {
+    "name": "Lead From Light",
+    "linkedWith": 1570399071
    },
    "1663363584": {
     "name": "Sneak Bow",
@@ -16073,6 +16275,10 @@
    "1870851715": {
     "name": "Under-Over",
     "linkedWith": 183938251
+   },
+   "1888882410": {
+    "name": "Collective Pugilism",
+    "linkedWith": 3684445958
    },
    "1890422124": {
     "name": "Tap the Trigger",
@@ -16154,6 +16360,10 @@
     "name": "Eager Edge",
     "linkedWith": 1618208178
    },
+   "2078520142": {
+    "name": "Crystalline Corpsebloom",
+    "linkedWith": 2922950962
+   },
    "2091001077": {
     "name": "Cluster Bomb",
     "linkedWith": 1275731761
@@ -16161,6 +16371,10 @@
    "2109543898": {
     "name": "Desperate Measures",
     "linkedWith": 2799030358
+   },
+   "2138673996": {
+    "name": "Ancillary Ordinance",
+    "linkedWith": 1202584452
    },
    "2139363611": {
     "name": "Well-Rounded",
@@ -16225,6 +16439,10 @@
    "2284787283": {
     "name": "Clown Cartridge",
     "linkedWith": 3563868667
+   },
+   "2289534249": {
+    "name": "Bewildering Burst",
+    "linkedWith": 3914874605
    },
    "2298656195": {
     "name": "Circle of Life",
@@ -16486,6 +16704,10 @@
     "name": "Withering Gaze",
     "linkedWith": 1134488199
    },
+   "2922950962": {
+    "name": "Crystalline Corpsebloom",
+    "linkedWith": 2078520142
+   },
    "2923251173": {
     "name": "Kill Clip",
     "linkedWith": 1015611457
@@ -16562,6 +16784,10 @@
     "name": "Genesis",
     "linkedWith": 1658784563
    },
+   "3097973565": {
+    "name": "Iron Grip",
+    "linkedWith": 11551321
+   },
    "3102670337": {
     "name": "Unstoppable Force",
     "linkedWith": 2224838837
@@ -16585,6 +16811,10 @@
    "3161816588": {
     "name": "Slideshot",
     "linkedWith": 191144788
+   },
+   "3192447905": {
+    "name": "Aggregate Charge",
+    "linkedWith": 3764420437
    },
    "3194351027": {
     "name": "Explosive Light",
@@ -16762,6 +16992,10 @@
     "name": "Assassin's Blade",
     "linkedWith": 354401740
    },
+   "3684445958": {
+    "name": "Collective Pugilism",
+    "linkedWith": 1888882410
+   },
    "3696140595": {
     "name": "Blast Distributor",
     "linkedWith": 1017229899
@@ -16806,6 +17040,10 @@
     "name": "Under Pressure",
     "linkedWith": 1645158859
    },
+   "3764420437": {
+    "name": "Aggregate Charge",
+    "linkedWith": 3192447905
+   },
    "3773585912": {
     "name": "Melee Momentum",
     "linkedWith": 2817677128
@@ -16837,6 +17075,10 @@
    "3913600130": {
     "name": "Whirlwind Blade",
     "linkedWith": 147913470
+   },
+   "3914874605": {
+    "name": "Bewildering Burst",
+    "linkedWith": 2289534249
    },
    "3920370755": {
     "name": "Firmly Planted",
