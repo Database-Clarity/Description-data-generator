@@ -686,13 +686,13 @@
   "appearsOn": [
    "Shotgun",
    "Pulse Rifle",
+   "Sidearm",
    "Hand Cannon",
    "Scout Rifle",
    "Auto Rifle",
-   "Sniper Rifle",
-   "Machine Gun",
    "Submachine Gun",
-   "Sidearm"
+   "Sniper Rifle",
+   "Machine Gun"
   ],
   "name": "Tactical Mag",
   "hash": 106909392,
@@ -4126,14 +4126,14 @@
   "appearsOn": [
    "Shotgun",
    "Sidearm",
+   "Hand Cannon",
+   "Scout Rifle",
+   "Auto Rifle",
    "Glaive",
    "Submachine Gun",
-   "Pulse Rifle",
+   "Sniper Rifle",
    "Machine Gun",
-   "Auto Rifle",
-   "Scout Rifle",
-   "Hand Cannon",
-   "Sniper Rifle"
+   "Pulse Rifle"
   ],
   "name": "Light Mag",
   "hash": 679225683,
@@ -4698,6 +4698,7 @@
  },
  "777774560": {
   "appearsOn": [
+   "Sword",
    "Sidearm",
    "Auto Rifle",
    "Scout Rifle",
@@ -4741,7 +4742,15 @@
  },
  "791862061": {
   "appearsOn": [
-   "Shotgun"
+   "Shotgun",
+   "Hand Cannon",
+   "Scout Rifle",
+   "Auto Rifle",
+   "Sniper Rifle",
+   "Machine Gun",
+   "Submachine Gun",
+   "Pulse Rifle",
+   "Sidearm"
   ],
   "name": "Assault Mag",
   "hash": 791862061,
@@ -6069,8 +6078,8 @@
    "Shotgun",
    "Sidearm",
    "Submachine Gun",
-   "Fusion Rifle",
    "Grenade Launcher",
+   "Fusion Rifle",
    "Hand Cannon",
    "Auto Rifle",
    "Rocket Launcher",
@@ -6313,6 +6322,7 @@
    "Grenade Launcher",
    "Fusion Rifle",
    "Rocket Launcher",
+   "Shotgun",
    "Sniper Rifle",
    "Machine Gun",
    "Trace Rifle",
@@ -6533,8 +6543,18 @@
  },
  "1047830412": {
   "appearsOn": [
+   "Fusion Rifle",
    "Shotgun",
-   "Hand Cannon"
+   "Sidearm",
+   "Scout Rifle",
+   "Auto Rifle",
+   "Submachine Gun",
+   "Sniper Rifle",
+   "Machine Gun",
+   "Hand Cannon",
+   "Pulse Rifle",
+   "Linear Fusion Rifle",
+   "Trace Rifle"
   ],
   "name": "Full Choke",
   "hash": 1047830412,
@@ -8410,8 +8430,18 @@
  },
  "1332244541": {
   "appearsOn": [
+   "Fusion Rifle",
    "Shotgun",
-   "Hand Cannon"
+   "Sidearm",
+   "Scout Rifle",
+   "Auto Rifle",
+   "Submachine Gun",
+   "Sniper Rifle",
+   "Machine Gun",
+   "Hand Cannon",
+   "Pulse Rifle",
+   "Linear Fusion Rifle",
+   "Trace Rifle"
   ],
   "name": "Rifled Barrel",
   "hash": 1332244541,
@@ -9750,14 +9780,14 @@
  "1561002382": {
   "appearsOn": [
    "Sidearm",
-   "Submachine Gun",
-   "Pulse Rifle",
-   "Shotgun",
-   "Machine Gun",
-   "Auto Rifle",
-   "Scout Rifle",
    "Hand Cannon",
-   "Sniper Rifle"
+   "Scout Rifle",
+   "Auto Rifle",
+   "Submachine Gun",
+   "Sniper Rifle",
+   "Machine Gun",
+   "Pulse Rifle",
+   "Shotgun"
   ],
   "name": "High-Caliber Rounds",
   "hash": 1561002382,
@@ -11150,6 +11180,7 @@
  "1774574192": {
   "appearsOn": [
    "Hand Cannon",
+   "Sword",
    "Sidearm",
    "Auto Rifle",
    "Shotgun",
@@ -11858,14 +11889,14 @@
  "1885400500": {
   "appearsOn": [
    "Sidearm",
-   "Submachine Gun",
-   "Pulse Rifle",
-   "Machine Gun",
-   "Auto Rifle",
-   "Scout Rifle",
    "Hand Cannon",
-   "Shotgun",
-   "Sniper Rifle"
+   "Scout Rifle",
+   "Auto Rifle",
+   "Submachine Gun",
+   "Sniper Rifle",
+   "Machine Gun",
+   "Pulse Rifle",
+   "Shotgun"
   ],
   "name": "Ricochet Rounds",
   "hash": 1885400500,
@@ -12514,14 +12545,14 @@
  "1968497646": {
   "appearsOn": [
    "Sidearm",
-   "Submachine Gun",
-   "Pulse Rifle",
-   "Machine Gun",
-   "Auto Rifle",
-   "Scout Rifle",
    "Hand Cannon",
-   "Shotgun",
-   "Sniper Rifle"
+   "Scout Rifle",
+   "Auto Rifle",
+   "Submachine Gun",
+   "Sniper Rifle",
+   "Machine Gun",
+   "Pulse Rifle",
+   "Shotgun"
   ],
   "name": "Armor-Piercing Rounds",
   "hash": 1968497646,
@@ -12665,8 +12696,8 @@
  },
  "1996142143": {
   "appearsOn": [
-   "Rocket Launcher",
-   "Grenade Launcher"
+   "Grenade Launcher",
+   "Rocket Launcher"
   ],
   "name": "Black Powder",
   "hash": 1996142143,
@@ -14364,6 +14395,7 @@
    "Linear Fusion Rifle",
    "Machine Gun",
    "Glaive",
+   "Shotgun",
    "Trace Rifle"
   ],
   "name": "Clown Cartridge",
@@ -15204,7 +15236,8 @@
    "Sniper Rifle",
    "Grenade Launcher",
    "Linear Fusion Rifle",
-   "Glaive"
+   "Glaive",
+   "Sword"
   ],
   "name": "Killing Wind",
   "hash": 2450788523,
@@ -15478,7 +15511,7 @@
   "appearsOn": [
    1753923263
   ],
-  "name": "Resurgence Scandal III",
+  "name": "Resurgence Directive III",
   "hash": 2493618392,
   "type": "Weapon Perk Exotic"
  },
@@ -15486,7 +15519,7 @@
   "appearsOn": [
    1753923263
   ],
-  "name": "Resurgence Scandal II",
+  "name": "Resurgence Directive II",
   "hash": 2493618393,
   "type": "Weapon Perk Exotic"
  },
@@ -15494,7 +15527,7 @@
   "appearsOn": [
    1753923263
   ],
-  "name": "Resurgence Scandal IV",
+  "name": "Resurgence Directive IV",
   "hash": 2493618399,
   "type": "Weapon Perk Exotic"
  },
@@ -19462,14 +19495,14 @@
   "appearsOn": [
    "Shotgun",
    "Pulse Rifle",
+   "Sidearm",
    "Hand Cannon",
    "Scout Rifle",
    "Auto Rifle",
    "Glaive",
-   "Sniper Rifle",
-   "Machine Gun",
    "Submachine Gun",
-   "Sidearm"
+   "Sniper Rifle",
+   "Machine Gun"
   ],
   "name": "Accurized Rounds",
   "hash": 3142289711,
@@ -19726,14 +19759,14 @@
  "3177308360": {
   "appearsOn": [
    "Shotgun",
+   "Sidearm",
    "Hand Cannon",
    "Scout Rifle",
    "Auto Rifle",
+   "Submachine Gun",
    "Sniper Rifle",
    "Machine Gun",
-   "Submachine Gun",
-   "Pulse Rifle",
-   "Sidearm"
+   "Pulse Rifle"
   ],
   "name": "Steady Rounds",
   "hash": 3177308360,
@@ -20026,6 +20059,7 @@
  },
  "3230963543": {
   "appearsOn": [
+   "Shotgun",
    "Sidearm",
    "Hand Cannon",
    "Scout Rifle",
@@ -20033,8 +20067,7 @@
    "Submachine Gun",
    "Pulse Rifle",
    "Sniper Rifle",
-   "Machine Gun",
-   "Shotgun"
+   "Machine Gun"
   ],
   "name": "Flared Magwell",
   "hash": 3230963543,
@@ -22273,6 +22306,7 @@
  },
  "3619207468": {
   "appearsOn": [
+   "Fusion Rifle",
    "Scout Rifle",
    "Hand Cannon",
    "Sniper Rifle",
@@ -22285,8 +22319,7 @@
    "Rocket Launcher",
    "Trace Rifle",
    "Linear Fusion Rifle",
-   "Glaive",
-   "Fusion Rifle"
+   "Glaive"
   ],
   "name": "Keep Away",
   "hash": 3619207468,
@@ -25300,13 +25333,14 @@
  },
  "4134353779": {
   "appearsOn": [
-   "Scout Rifle",
-   "Hand Cannon",
-   "Pulse Rifle",
-   "Auto Rifle",
    "Sidearm",
+   "Hand Cannon",
+   "Scout Rifle",
+   "Auto Rifle",
    "Submachine Gun",
    "Sniper Rifle",
+   "Machine Gun",
+   "Pulse Rifle",
    "Shotgun"
   ],
   "name": "Drop Mag",
