@@ -3275,6 +3275,11 @@
    "hash": 1002206008,
    "type": "Weapon Perk"
   },
+  "1002219198": {
+   "name": "Balanced Heat Weapon",
+   "hash": 1002219198,
+   "type": "Weapon Frame"
+  },
   "1004814308": {
    "name": "Disaster Plan",
    "hash": 1004814308,
@@ -3407,6 +3412,13 @@
    "name": "Orbs of Restoration",
    "hash": 1039115606,
    "type": "Armor Mod General"
+  },
+  "1040380121": {
+   "name": "Heirloom Catalyst",
+   "hash": 1040380121,
+   "itemName": "Heirloom",
+   "itemHash": 1685137410,
+   "type": "Weapon Catalyst Exotic"
   },
   "1043703792": {
    "name": "Tex Balanced Stock",
@@ -3797,6 +3809,11 @@
    "name": "Cauterizing Flame",
    "hash": 1163213078,
    "type": "Armor Trait Exotic"
+  },
+  "1164078247": {
+   "name": "Imperial Allegiance",
+   "hash": 1164078247,
+   "type": "Weapon Trait Origin"
   },
   "1164602481": {
    "name": "Deconstruct",
@@ -4775,6 +4792,11 @@
    "name": "Linear Compensator",
    "hash": 1441682018,
    "type": "Weapon Perk"
+  },
+  "1442784346": {
+   "name": "Dynamic Heat Weapon",
+   "hash": 1442784346,
+   "type": "Weapon Frame"
   },
   "1444664836": {
    "name": "Phoenix Dive",
@@ -8220,6 +8242,13 @@
    "hash": 2495523341,
    "type": "Subclass Class"
   },
+  "2496039278": {
+   "name": "Big Game Hunter",
+   "hash": 2496039278,
+   "itemName": "Heirloom",
+   "itemHash": 1685137410,
+   "type": "Weapon Trait Exotic"
+  },
   "2500502982": {
    "name": "Firewalker",
    "hash": 2500502982,
@@ -9015,6 +9044,11 @@
    "hash": 2732913579,
    "type": "Weapon Perk"
   },
+  "2732952950": {
+   "name": "Balanced Heat Weapon",
+   "hash": 2732952950,
+   "type": "Weapon Frame"
+  },
   "2733010662": {
    "name": "Kinetic Charge Siphon",
    "hash": 2733010662,
@@ -9803,6 +9837,11 @@
   "2955427634": {
    "name": "Charged Bolts",
    "hash": 2955427634,
+   "type": "Weapon Perk"
+  },
+  "2957461671": {
+   "name": "Imperial Allegiance",
+   "hash": 2957461671,
    "type": "Weapon Perk"
   },
   "2959504464": {
@@ -12195,6 +12234,11 @@
    "name": "Storm's Edge",
    "hash": 3769507635,
    "type": "Subclass Super"
+  },
+  "3771737927": {
+   "name": "Balanced Heat Weapon",
+   "hash": 3771737927,
+   "type": "Weapon Frame"
   },
   "3772485195": {
    "name": "Heat Sink",
@@ -15056,7 +15100,8 @@
       1636108362,
       2235383762,
       2622129339,
-      3488129416
+      3488129416,
+      3771737927
      ]
     },
     {
@@ -15133,6 +15178,7 @@
       878286503,
       1019291327,
       1294026524,
+      2732952950,
       3468089894
      ]
     },
@@ -15150,6 +15196,7 @@
       2928496916,
       3099083217,
       3456918063,
+      3771737927,
       4172222323,
       4175870265
      ]
@@ -15167,6 +15214,7 @@
     {
      "name": "Scout Rifle",
      "has": [
+      1002219198,
       1019291327,
       1458010786,
       1636108362,
@@ -15212,6 +15260,7 @@
      "has": [
       878286503,
       1294026524,
+      1442784346,
       1546108491,
       3468089894
      ]
