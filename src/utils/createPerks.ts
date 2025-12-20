@@ -14,7 +14,15 @@ type PerksForDescriptions = {
 
 export const createPerks = (inventoryItems: InventoryItems, perkData: RawDataList) => {
   return Object.entries(perkData).reduce<PerksForDescriptions>((acc, [hash, item]) => {
-    if (item.type.endsWith(' Exotic') && item.appearsOn.length === 1) {
+    if (item.type === 'Armor Trait Exotic' && item.appearsOn.length >= 1) {
+      acc[hash] = {
+        name: item.name,
+        hash: Number(hash),
+        itemName: inventoryItems[item.appearsOn[0]].displayProperties.name,
+        itemHash: Number(item.appearsOn[0]),
+        type: item.type,
+      }      
+    else if (item.type.endsWith(' Exotic') && item.appearsOn.length === 1) {
       acc[hash] = {
         name: item.name,
         hash: Number(hash),
@@ -33,3 +41,4 @@ export const createPerks = (inventoryItems: InventoryItems, perkData: RawDataLis
     return acc
   }, {})
 }
+
