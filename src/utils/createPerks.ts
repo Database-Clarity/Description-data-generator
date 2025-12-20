@@ -21,8 +21,8 @@ export const createPerks = (inventoryItems: InventoryItems, perkData: RawDataLis
         itemName: inventoryItems[item.appearsOn[0]].displayProperties.name,
         itemHash: Number(item.appearsOn[0]),
         type: item.type,
-      }      
-    else if (item.type.endsWith(' Exotic') && item.appearsOn.length === 1) {
+      }
+    } else if (item.type.endsWith(' Exotic') && item.appearsOn.length === 1) {
       acc[hash] = {
         name: item.name,
         hash: Number(hash),
@@ -41,4 +41,5 @@ export const createPerks = (inventoryItems: InventoryItems, perkData: RawDataLis
     return acc
   }, {})
 }
+
 
