@@ -328,6 +328,13 @@
    "hash": 87986589,
    "type": "Weapon Perk"
   },
+  "89777927": {
+   "name": "Ranged Weapon",
+   "hash": 89777927,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Frame Exotic"
+  },
   "90392189": {
    "name": "Hungering Quarrel",
    "hash": 90392189,
@@ -1145,7 +1152,7 @@
    "hash": 360865966,
    "itemName": "Graviton Spike",
    "itemHash": 648595258,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "362132288": {
    "name": "Ember of Torches",
@@ -4231,6 +4238,13 @@
    "hash": 1255614814,
    "type": "Armor Mod General"
   },
+  "1258693557": {
+   "name": "Bolt Thrower",
+   "hash": 1258693557,
+   "itemName": "Heirloom",
+   "itemHash": 1685137410,
+   "type": "Weapon Frame Exotic"
+  },
   "1259444143": {
    "name": "Temporal Anomaly",
    "hash": 1259444143,
@@ -4495,7 +4509,7 @@
    "hash": 1303792749,
    "itemName": "Wolfsbane",
    "itemHash": 1753923263,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "1305536863": {
    "name": "Harmonic Targeting",
@@ -6175,6 +6189,13 @@
    "hash": 1817983009,
    "type": "Weapon Trait Enhanced"
   },
+  "1818108773": {
+   "name": "Dichotomous Thinking",
+   "hash": 1818108773,
+   "itemName": "Service of Luzaku",
+   "itemHash": 4284533075,
+   "type": "Weapon Frame Exotic"
+  },
   "1820053064": {
    "name": "Blinding Light",
    "hash": 1820053064,
@@ -7259,6 +7280,13 @@
    "hash": 2144092201,
    "itemName": "Lumina",
    "itemHash": 3512014804,
+   "type": "Weapon Frame Exotic"
+  },
+  "2144580852": {
+   "name": "Tri-Planar Mass Driver",
+   "hash": 2144580852,
+   "itemName": "Third Iteration",
+   "itemHash": 2973900274,
    "type": "Weapon Frame Exotic"
   },
   "2145198832": {
@@ -8367,21 +8395,21 @@
    "hash": 2493618392,
    "itemName": "Wolfsbane",
    "itemHash": 1753923263,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "2493618393": {
    "name": "Resurgence Directive II",
    "hash": 2493618393,
    "itemName": "Wolfsbane",
    "itemHash": 1753923263,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "2493618399": {
    "name": "Resurgence Directive IV",
    "hash": 2493618399,
    "itemName": "Wolfsbane",
    "itemHash": 1753923263,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "2495011826": {
    "name": "Ensemble",
@@ -8560,6 +8588,13 @@
    "name": "Compressed Wave Frame",
    "hash": 2571259936,
    "type": "Weapon Frame"
+  },
+  "2575933030": {
+   "name": "Atomizing Rounds",
+   "hash": 2575933030,
+   "itemName": "New Malpais",
+   "itemHash": 1736135946,
+   "type": "Weapon Frame Exotic"
   },
   "2576986935": {
    "name": "Null Factor",
@@ -10782,6 +10817,13 @@
    "hash": 3199702642,
    "type": "Subclass Grenade"
   },
+  "3200860608": {
+   "name": "Coronal Culmination",
+   "hash": 3200860608,
+   "itemName": "Whirling Ovation",
+   "itemHash": 1202007252,
+   "type": "Weapon Frame Exotic"
+  },
   "3201496230": {
    "name": "Redirection",
    "hash": 3201496230,
@@ -10849,21 +10891,21 @@
    "hash": 3235313314,
    "itemName": "Graviton Spike",
    "itemHash": 648595258,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "3235313315": {
    "name": "Temporal Manipulation III",
    "hash": 3235313315,
    "itemName": "Graviton Spike",
    "itemHash": 648595258,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "3235313316": {
    "name": "Temporal Manipulation IV",
    "hash": 3235313316,
    "itemName": "Graviton Spike",
    "itemHash": 648595258,
-   "type": "Weapon Perk Exotic"
+   "type": "Weapon Frame Exotic"
   },
   "3239299468": {
    "name": "Sacred Flame",
@@ -14629,6 +14671,20 @@
      ]
     },
     {
+     "name": "Graviton Spike",
+     "has": [
+      360865966,
+      282266464,
+      282266465,
+      282266466,
+      282266467,
+      1259444143,
+      3235313314,
+      3235313315,
+      3235313316
+     ]
+    },
+    {
      "name": "Hard Light",
      "has": [
       3610814281,
@@ -14657,6 +14713,14 @@
       2608508147,
       1185273366,
       1324556594
+     ]
+    },
+    {
+     "name": "Heirloom",
+     "has": [
+      1258693557,
+      1040380121,
+      2496039278
      ]
     },
     {
@@ -14811,6 +14875,14 @@
      ]
     },
     {
+     "name": "New Malpais",
+     "has": [
+      2575933030,
+      1899803992,
+      3466807461
+     ]
+    },
+    {
      "name": "No Time to Explain",
      "has": [
       3837077246,
@@ -14869,6 +14941,20 @@
      "has": [
       1000724343,
       4067652714
+     ]
+    },
+    {
+     "name": "Praxic Blade",
+     "has": [
+      89777927,
+      458552176,
+      640727985,
+      697983358,
+      1958555234,
+      3295115440,
+      3514694513,
+      3794918801,
+      4026309323
      ]
     },
     {
@@ -14940,6 +15026,14 @@
       1315870387,
       1549056416,
       2359854504
+     ]
+    },
+    {
+     "name": "Service of Luzaku",
+     "has": [
+      1818108773,
+      232908218,
+      2057080438
      ]
     },
     {
@@ -15139,6 +15233,15 @@
      ]
     },
     {
+     "name": "Third Iteration",
+     "has": [
+      2144580852,
+      364132014,
+      505341189,
+      2451540357
+     ]
+    },
+    {
      "name": "Thorn",
      "has": [
       1863355414,
@@ -15271,6 +15374,14 @@
      ]
     },
     {
+     "name": "Whirling Ovation",
+     "has": [
+      3200860608,
+      3496051160,
+      4199529752
+     ]
+    },
+    {
      "name": "Whisper of the Worm",
      "has": [
       281315705,
@@ -15337,6 +15448,23 @@
       3063320916,
       745965939,
       2888418988
+     ]
+    },
+    {
+     "name": "Wolfsbane",
+     "has": [
+      1303792749,
+      1127992351,
+      1166233619,
+      2493618392,
+      2493618393,
+      2493618399,
+      3377448506,
+      3553394349,
+      3865920552,
+      3865920553,
+      3865920554,
+      3865920555
      ]
     },
     {

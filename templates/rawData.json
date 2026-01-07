@@ -618,6 +618,14 @@
   "hash": 87986589,
   "type": "Weapon Perk"
  },
+ "89777927": {
+  "appearsOn": [
+   3049715579
+  ],
+  "name": "Ranged Weapon",
+  "hash": 89777927,
+  "type": "Weapon Frame Exotic"
+ },
  "90392189": {
   "appearsOn": [
    3886719505
@@ -2173,7 +2181,7 @@
   ],
   "name": "Temporal Manipulation",
   "hash": 360865966,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "362132288": {
   "appearsOn": [
@@ -8128,6 +8136,14 @@
   "hash": 1255614814,
   "type": "Armor Mod General"
  },
+ "1258693557": {
+  "appearsOn": [
+   1685137410
+  ],
+  "name": "Bolt Thrower",
+  "hash": 1258693557,
+  "type": "Weapon Frame Exotic"
+ },
  "1259444143": {
   "appearsOn": [
    648595258
@@ -8593,7 +8609,7 @@
   ],
   "name": "Resurgence Directive",
   "hash": 1303792749,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "1305536863": {
   "appearsOn": [
@@ -11843,6 +11859,14 @@
   "hash": 1817983009,
   "type": "Weapon Trait Enhanced"
  },
+ "1818108773": {
+  "appearsOn": [
+   4284533075
+  ],
+  "name": "Dichotomous Thinking",
+  "hash": 1818108773,
+  "type": "Weapon Frame Exotic"
+ },
  "1820053064": {
   "appearsOn": [
    "Ghost Shell"
@@ -13967,6 +13991,14 @@
   "hash": 2144092201,
   "type": "Weapon Frame Exotic"
  },
+ "2144580852": {
+  "appearsOn": [
+   2973900274
+  ],
+  "name": "Tri-Planar Mass Driver",
+  "hash": 2144580852,
+  "type": "Weapon Frame Exotic"
+ },
  "2145198832": {
   "appearsOn": [
    1594120904
@@ -16020,7 +16052,7 @@
   ],
   "name": "Resurgence Directive III",
   "hash": 2493618392,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "2493618393": {
   "appearsOn": [
@@ -16028,7 +16060,7 @@
   ],
   "name": "Resurgence Directive II",
   "hash": 2493618393,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "2493618399": {
   "appearsOn": [
@@ -16036,7 +16068,7 @@
   ],
   "name": "Resurgence Directive IV",
   "hash": 2493618399,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "2495011826": {
   "appearsOn": [
@@ -16379,6 +16411,14 @@
   "name": "Compressed Wave Frame",
   "hash": 2571259936,
   "type": "Weapon Frame"
+ },
+ "2575933030": {
+  "appearsOn": [
+   1736135946
+  ],
+  "name": "Atomizing Rounds",
+  "hash": 2575933030,
+  "type": "Weapon Frame Exotic"
  },
  "2576986935": {
   "appearsOn": [
@@ -20637,6 +20677,14 @@
   "hash": 3199702642,
   "type": "Subclass Grenade"
  },
+ "3200860608": {
+  "appearsOn": [
+   1202007252
+  ],
+  "name": "Coronal Culmination",
+  "hash": 3200860608,
+  "type": "Weapon Frame Exotic"
+ },
  "3201496230": {
   "appearsOn": [
    "Scout Rifle",
@@ -20808,7 +20856,7 @@
   ],
   "name": "Temporal Manipulation II",
   "hash": 3235313314,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "3235313315": {
   "appearsOn": [
@@ -20816,7 +20864,7 @@
   ],
   "name": "Temporal Manipulation III",
   "hash": 3235313315,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "3235313316": {
   "appearsOn": [
@@ -20824,7 +20872,7 @@
   ],
   "name": "Temporal Manipulation IV",
   "hash": 3235313316,
-  "type": "Weapon Perk Exotic"
+  "type": "Weapon Frame Exotic"
  },
  "3239299468": {
   "appearsOn": [
