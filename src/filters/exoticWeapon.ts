@@ -52,7 +52,7 @@ export const exoticsWeapons = (
       frameArr.forEach((frameHash) => {
         const frame = inventoryItems[frameHash]
 
-        if (frame?.itemTypeDisplayName === 'Intrinsic') {
+        if (frame.plug?.plugCategoryHash === 1744546145) {
           addData(weapon, frame, 'Weapon Frame Exotic')
         }
       })
