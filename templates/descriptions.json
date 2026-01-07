@@ -104,11 +104,6 @@
    "hash": 16445399,
    "type": "Weapon Frame Enhanced"
   },
-  "16700458": {
-   "name": "Recovery Armorer",
-   "hash": 16700458,
-   "type": "Ghost Mod"
-  },
   "19542588": {
    "name": "Nano-Munitions",
    "hash": 19542588,
@@ -202,11 +197,6 @@
    "hash": 40751621,
    "type": "Armor Mod General"
   },
-  "43555494": {
-   "name": "Field-Tested",
-   "hash": 43555494,
-   "type": "Weapon Trait Origin"
-  },
   "47981717": {
    "name": "Opening Shot",
    "hash": 47981717,
@@ -227,10 +217,25 @@
    "hash": 52780822,
    "type": "Weapon Perk"
   },
+  "52802868": {
+   "name": "Fiberglass Arrow Shaft",
+   "hash": 52802868,
+   "type": "Weapon Perk"
+  },
+  "54024075": {
+   "name": "Veist Stinger",
+   "hash": 54024075,
+   "type": "Weapon Perk"
+  },
   "56663992": {
    "name": "Solar Scavenger",
    "hash": 56663992,
    "type": "Armor Mod General"
+  },
+  "59871045": {
+   "name": "Gravity Well",
+   "hash": 59871045,
+   "type": "Weapon Trait Origin"
   },
   "64332393": {
    "name": "Permeability",
@@ -241,6 +246,16 @@
    "name": "Explosive Payload",
    "hash": 64866129,
    "type": "Weapon Trait Enhanced"
+  },
+  "65604327": {
+   "name": "Supercharged Magazine",
+   "hash": 65604327,
+   "type": "Weapon Trait Enhanced"
+  },
+  "65797256": {
+   "name": "Fleet Footed",
+   "hash": 65797256,
+   "type": "Weapon Trait Origin"
   },
   "74393640": {
    "name": "Facet of Defiance",
@@ -370,6 +385,16 @@
    "hash": 110793779,
    "type": "Armor Mod General"
   },
+  "111235976": {
+   "name": "Corkscrew Rifling",
+   "hash": 111235976,
+   "type": "Weapon Perk"
+  },
+  "113508675": {
+   "name": "Reaper's Tithe",
+   "hash": 113508675,
+   "type": "Weapon Trait"
+  },
   "117669763": {
    "name": "The Dance",
    "hash": 117669763,
@@ -401,6 +426,11 @@
    "name": "Runneth Over",
    "hash": 120721526,
    "type": "Weapon Trait Origin"
+  },
+  "122204356": {
+   "name": "Adhesive Ordnance",
+   "hash": 122204356,
+   "type": "Weapon Trait Enhanced"
   },
   "122307549": {
    "name": "Hierarchy of Needs Catalyst",
@@ -464,6 +494,11 @@
    "hash": 124726505,
    "type": "Subclass Fragment"
   },
+  "125241418": {
+   "name": "Swordmaster's Guard",
+   "hash": 125241418,
+   "type": "Weapon Perk"
+  },
   "127335543": {
    "name": "Dynamic Charge",
    "hash": 127335543,
@@ -488,6 +523,11 @@
    "itemHash": 4036115577,
    "type": "Weapon Catalyst Exotic"
   },
+  "137682932": {
+   "name": "Proximity Grenades",
+   "hash": 137682932,
+   "type": "Weapon Perk"
+  },
   "137876701": {
    "name": "Rapid-Fire Frame",
    "hash": 137876701,
@@ -508,6 +548,11 @@
    "hash": 147913470,
    "type": "Weapon Trait Enhanced"
   },
+  "155346308": {
+   "name": "Fitted Stock",
+   "hash": 155346308,
+   "type": "Weapon Perk"
+  },
   "156358224": {
    "name": "Support Frame",
    "hash": 156358224,
@@ -519,7 +564,7 @@
    "type": "Weapon Trait Enhanced"
   },
   "164468655": {
-   "name": "Nanotech Tracer Rockets",
+   "name": "Nanotech Tracer Missiles",
    "hash": 164468655,
    "type": "Weapon Trait Origin"
   },
@@ -539,6 +584,11 @@
    "itemName": "Skyburner's Oath",
    "itemHash": 4255268456,
    "type": "Weapon Trait Exotic"
+  },
+  "177189259": {
+   "name": "Reaper's Tithe",
+   "hash": 177189259,
+   "type": "Weapon Trait Enhanced"
   },
   "183772609": {
    "name": "Caster Frame",
@@ -579,11 +629,16 @@
    "hash": 187655374,
    "type": "Subclass Aspect"
   },
+  "187655375": {
+   "name": "On the Prowl",
+   "hash": 187655375,
+   "type": "Subclass Aspect"
+  },
   "187957397": {
    "name": "Halberdier's Reach",
    "hash": 187957397,
    "itemName": "Triton Vice",
-   "itemHash": 3093309525,
+   "itemHash": 1304266146,
    "type": "Armor Trait Exotic"
   },
   "191144788": {
@@ -615,6 +670,16 @@
    "name": "Signal MS5",
    "hash": 194952923,
    "type": "Weapon Perk"
+  },
+  "197518367": {
+   "name": "Smooth Grip",
+   "hash": 197518367,
+   "type": "Weapon Perk"
+  },
+  "198336270": {
+   "name": "Butterfly",
+   "hash": 198336270,
+   "type": "Weapon Trait"
   },
   "200829441": {
    "name": "Lightning Rod",
@@ -667,15 +732,37 @@
    "hash": 217816625,
    "type": "Weapon Frame Enhanced"
   },
+  "218281600": {
+   "name": "The Master",
+   "hash": 218281600,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Frame Exotic"
+  },
   "220689851": {
    "name": "Sundering",
    "hash": 220689851,
    "type": "Weapon Trait Origin"
   },
+  "222783511": {
+   "name": "Detonator Beam",
+   "hash": 222783511,
+   "type": "Weapon Trait Enhanced"
+  },
+  "223754954": {
+   "name": "Heavy Grip",
+   "hash": 223754954,
+   "type": "Weapon Perk"
+  },
   "224485255": {
    "name": "Precision Frame",
    "hash": 224485255,
    "type": "Weapon Frame Enhanced"
+  },
+  "226831738": {
+   "name": "Overclocked Heatsink",
+   "hash": 226831738,
+   "type": "Weapon Perk"
   },
   "228577175": {
    "name": "Soaring Fang",
@@ -708,6 +795,18 @@
    "hash": 231101171,
    "type": "Weapon Mod"
   },
+  "232908218": {
+   "name": "Service of Luzaku Catalyst",
+   "hash": 232908218,
+   "itemName": "Service of Luzaku",
+   "itemHash": 4284533075,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "234526563": {
+   "name": "Low-Profile Rail",
+   "hash": 234526563,
+   "type": "Weapon Perk"
+  },
   "235075862": {
    "name": "Peregrine Strike",
    "hash": 235075862,
@@ -726,7 +825,7 @@
    "name": "Reflective Vents",
    "hash": 242794439,
    "itemName": "Antaeus Wards",
-   "itemHash": 2423243921,
+   "itemHash": 81398002,
    "type": "Armor Trait Exotic"
   },
   "243981275": {
@@ -744,6 +843,11 @@
    "hash": 247725512,
    "type": "Weapon Trait"
   },
+  "250902314": {
+   "name": "Hakke Breach Armaments",
+   "hash": 250902314,
+   "type": "Weapon Perk"
+  },
   "253121539": {
    "name": "Radiolaria Transposer",
    "hash": 253121539,
@@ -753,31 +857,6 @@
    "name": "Reservoir Burst",
    "hash": 254337357,
    "type": "Weapon Trait Enhanced"
-  },
-  "255237656": {
-   "name": "Thunderous Retort",
-   "hash": 255237656,
-   "type": "Armor Mod Seasonal"
-  },
-  "255237657": {
-   "name": "Amped Up",
-   "hash": 255237657,
-   "type": "Armor Mod Seasonal"
-  },
-  "255237660": {
-   "name": "Improved Unraveling",
-   "hash": 255237660,
-   "type": "Armor Mod Seasonal"
-  },
-  "255237662": {
-   "name": "Unto the Breach",
-   "hash": 255237662,
-   "type": "Armor Mod Seasonal"
-  },
-  "255237663": {
-   "name": "Deeper Origins",
-   "hash": 255237663,
-   "type": "Armor Mod Seasonal"
   },
   "262821312": {
    "name": "Weavewalk",
@@ -831,6 +910,11 @@
    "hash": 269888150,
    "type": "Weapon Perk"
   },
+  "274905539": {
+   "name": "Impact Casing",
+   "hash": 274905539,
+   "type": "Weapon Perk"
+  },
   "275904576": {
    "name": "Ultimate Glimmer Booster",
    "hash": 275904576,
@@ -871,6 +955,34 @@
    "hash": 281315705,
    "type": "Weapon Frame Exotic"
   },
+  "282266464": {
+   "name": "Temporal Alignment Refit",
+   "hash": 282266464,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "282266465": {
+   "name": "Transcendent Zen Refit",
+   "hash": 282266465,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "282266466": {
+   "name": "Subsistence Refit",
+   "hash": 282266466,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "282266467": {
+   "name": "Rapid Hit Refit",
+   "hash": 282266467,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Catalyst Exotic"
+  },
   "288411554": {
    "name": "Rampage",
    "hash": 288411554,
@@ -889,6 +1001,11 @@
    "itemName": "The Lament",
    "itemHash": 3487253372,
    "type": "Weapon Trait Exotic"
+  },
+  "290984395": {
+   "name": "Composite Stock",
+   "hash": 290984395,
+   "type": "Weapon Perk"
   },
   "293178904": {
    "name": "Unflinching Harmonic Aim",
@@ -912,10 +1029,25 @@
    "hash": 302702765,
    "type": "Weapon Frame Enhanced"
   },
+  "307683764": {
+   "name": "Delicate Tuning",
+   "hash": 307683764,
+   "type": "Weapon Trait"
+  },
   "308595185": {
    "name": "Lightweight Frame",
    "hash": 308595185,
    "type": "Weapon Frame Enhanced"
+  },
+  "309000506": {
+   "name": "+Grenade / -Melee",
+   "hash": 309000506,
+   "type": "Armor Mod General"
+  },
+  "311164277": {
+   "name": "+Melee / -Super",
+   "hash": 311164277,
+   "type": "Armor Mod General"
   },
   "319908131": {
    "name": "Unflinching Arc Aim",
@@ -928,6 +1060,11 @@
    "itemName": "Graviton Lance",
    "itemHash": 3628991658,
    "type": "Weapon Trait Exotic"
+  },
+  "323635379": {
+   "name": "+Class / -Weapons",
+   "hash": 323635379,
+   "type": "Armor Mod General"
   },
   "331268185": {
    "name": "Solar Targeting",
@@ -973,6 +1110,11 @@
    "hash": 344235611,
    "type": "Weapon Trait Enhanced"
   },
+  "350061697": {
+   "name": "Minor Super Mod",
+   "hash": 350061697,
+   "type": "Armor Mod General"
+  },
   "354401740": {
    "name": "Assassin's Blade",
    "hash": 354401740,
@@ -997,6 +1139,13 @@
    "name": "SRO-37 Ocular",
    "hash": 360593483,
    "type": "Weapon Perk"
+  },
+  "360865966": {
+   "name": "Temporal Manipulation",
+   "hash": 360865966,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Perk Exotic"
   },
   "362132288": {
    "name": "Ember of Torches",
@@ -1048,6 +1197,13 @@
    "hash": 362132301,
    "type": "Subclass Fragment"
   },
+  "364132014": {
+   "name": "Third Iteration Catalyst",
+   "hash": 364132014,
+   "itemName": "Third Iteration",
+   "itemHash": 2973900274,
+   "type": "Weapon Catalyst Exotic"
+  },
   "364418505": {
    "name": "Precision Frame",
    "hash": 364418505,
@@ -1059,7 +1215,7 @@
    "type": "Weapon Trait"
   },
   "368110299": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 368110299,
    "type": "Weapon Frame Enhanced"
   },
@@ -1102,6 +1258,11 @@
    "itemName": "Wish-Keeper",
    "itemHash": 2910326942,
    "type": "Weapon Catalyst Exotic"
+  },
+  "373417387": {
+   "name": "Volatile Launch",
+   "hash": 373417387,
+   "type": "Weapon Perk"
   },
   "375052468": {
    "name": "Golden Gun: Marksman",
@@ -1161,20 +1322,25 @@
    "name": "Bring the Heat",
    "hash": 384759954,
    "itemName": "Ashen Wake",
-   "itemHash": 1734844650,
+   "itemHash": 1203306857,
    "type": "Armor Trait Exotic"
   },
   "384759955": {
    "name": "Burning Fists",
    "hash": 384759955,
    "itemName": "Wormgod Caress",
-   "itemHash": 1734844651,
+   "itemHash": 1203306856,
    "type": "Armor Trait Exotic"
   },
   "385138649": {
    "name": "Area Denial Frame",
    "hash": 385138649,
    "type": "Weapon Frame"
+  },
+  "388618952": {
+   "name": "+Health / -Melee",
+   "hash": 388618952,
+   "type": "Armor Mod General"
   },
   "389268985": {
    "name": "Arc Traps",
@@ -1232,13 +1398,23 @@
    "itemHash": 1665952087,
    "type": "Weapon Trait Exotic"
   },
+  "407573255": {
+   "name": "Rapid Fire Slug",
+   "hash": 407573255,
+   "type": "Weapon Frame"
+  },
+  "409713597": {
+   "name": "Spike Grenades",
+   "hash": 409713597,
+   "type": "Weapon Perk"
+  },
   "409831596": {
    "name": "Proximity Grenades",
    "hash": 409831596,
    "type": "Weapon Perk"
   },
   "411014648": {
-   "name": "Solar Reserves",
+   "name": "Solar Ammo Generation",
    "hash": 411014648,
    "type": "Armor Mod General"
   },
@@ -1346,7 +1522,7 @@
    "type": "Weapon Perk"
   },
   "450381139": {
-   "name": "Arc Reserves",
+   "name": "Arc Ammo Generation",
    "hash": 450381139,
    "type": "Armor Mod General"
   },
@@ -1365,6 +1541,11 @@
    "hash": 454085387,
    "type": "Weapon Trait"
   },
+  "455024236": {
+   "name": "+Grenade / -Health",
+   "hash": 455024236,
+   "type": "Armor Mod General"
+  },
   "456628588": {
    "name": "Acrius Catalyst",
    "hash": 456628588,
@@ -1378,6 +1559,13 @@
    "itemName": "Tractor Cannon",
    "itemHash": 3580904581,
    "type": "Weapon Catalyst Exotic"
+  },
+  "458552176": {
+   "name": "Cormorant Reversal",
+   "hash": 458552176,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Trait Exotic"
   },
   "459441288": {
    "name": "Harmonic Laser",
@@ -1463,7 +1651,7 @@
    "name": "Wish-Dragon Teeth",
    "hash": 481860150,
    "itemName": "Young Ahamkara's Spine",
-   "itemHash": 475652357,
+   "itemHash": 405059572,
    "type": "Armor Trait Exotic"
   },
   "481860151": {
@@ -1477,6 +1665,11 @@
    "name": "Precision Frame",
    "hash": 482158780,
    "type": "Weapon Frame Enhanced"
+  },
+  "483923727": {
+   "name": "Tenacity",
+   "hash": 483923727,
+   "type": "Weapon Perk"
   },
   "484491717": {
    "name": "Riskrunner Catalyst",
@@ -1505,9 +1698,19 @@
    "hash": 489583098,
    "type": "Subclass Class"
   },
+  "494745090": {
+   "name": "High-Caliber Rounds",
+   "hash": 494745090,
+   "type": "Weapon Perk"
+  },
   "494941759": {
    "name": "Threat Detector",
    "hash": 494941759,
+   "type": "Weapon Trait Enhanced"
+  },
+  "496047945": {
+   "name": "Elemental Honing",
+   "hash": 496047945,
    "type": "Weapon Trait Enhanced"
   },
   "499501121": {
@@ -1524,6 +1727,18 @@
    "itemHash": 3141979347,
    "type": "Weapon Trait Exotic"
   },
+  "501821599": {
+   "name": "Wild Card",
+   "hash": 501821599,
+   "type": "Weapon Perk"
+  },
+  "505341189": {
+   "name": "Modified Heatsink",
+   "hash": 505341189,
+   "itemName": "Third Iteration",
+   "itemHash": 2973900274,
+   "type": "Weapon Perk Exotic"
+  },
   "507151084": {
    "name": "Accomplice",
    "hash": 507151084,
@@ -1539,6 +1754,11 @@
   "509594246": {
    "name": "Rangefinder",
    "hash": 509594246,
+   "type": "Weapon Trait Enhanced"
+  },
+  "511499160": {
+   "name": "Trickle Charge",
+   "hash": 511499160,
    "type": "Weapon Trait Enhanced"
   },
   "511914882": {
@@ -1612,6 +1832,11 @@
    "hash": 534479613,
    "type": "Armor Mod General"
   },
+  "534630542": {
+   "name": "+Melee / -Grenade",
+   "hash": 534630542,
+   "type": "Armor Mod General"
+  },
   "536173722": {
    "name": "Pugilist",
    "hash": 536173722,
@@ -1653,6 +1878,11 @@
    "name": "Lightweight Frame",
    "hash": 539564471,
    "type": "Weapon Frame Enhanced"
+  },
+  "550838496": {
+   "name": "Alloy Magazine",
+   "hash": 550838496,
+   "type": "Weapon Perk"
   },
   "553093017": {
    "name": "Beyond The Veil",
@@ -1696,6 +1926,11 @@
    "hash": 563069569,
    "type": "Weapon Trait"
   },
+  "564443854": {
+   "name": "Hard Launch",
+   "hash": 564443854,
+   "type": "Weapon Perk"
+  },
   "566815328": {
    "name": "Rasputin's Arsenal",
    "hash": 566815328,
@@ -1710,7 +1945,7 @@
    "name": "Force Multiplier",
    "hash": 569260333,
    "itemName": "No Backup Plans",
-   "itemHash": 3267996858,
+   "itemHash": 730200061,
    "type": "Armor Trait Exotic"
   },
   "570373697": {
@@ -1742,6 +1977,13 @@
    "hash": 574010092,
    "type": "Weapon Mod"
   },
+  "578605621": {
+   "name": "Praxic Lift",
+   "hash": 578605621,
+   "itemName": "Praxic Vestment",
+   "itemHash": 4184605701,
+   "type": "Armor Trait Exotic"
+  },
   "579997810": {
    "name": "Kinetic Scavenger",
    "hash": 579997810,
@@ -1764,6 +2006,11 @@
    "hash": 581875391,
    "type": "Weapon Frame Enhanced"
   },
+  "582768348": {
+   "name": "Smart Drift Control",
+   "hash": 582768348,
+   "type": "Weapon Perk"
+  },
   "588594999": {
    "name": "Moving Target",
    "hash": 588594999,
@@ -1778,14 +2025,14 @@
    "name": "Wraithmetal Mail",
    "hash": 593361144,
    "itemName": "The Dragon's Shadow",
-   "itemHash": 2766109874,
+   "itemHash": 368733541,
    "type": "Armor Trait Exotic"
   },
   "593361146": {
    "name": "Synapse Junctions",
    "hash": 593361146,
    "itemName": "Raiden Flux",
-   "itemHash": 2766109872,
+   "itemHash": 368733543,
    "type": "Armor Trait Exotic"
   },
   "593361147": {
@@ -1809,7 +2056,7 @@
    "name": "Cross Counter",
    "hash": 595829387,
    "itemName": "Liar's Handshake",
-   "itemHash": 4165919945,
+   "itemHash": 2749457084,
    "type": "Armor Trait Exotic"
   },
   "598607952": {
@@ -1822,35 +2069,10 @@
    "hash": 599007201,
    "type": "Weapon Perk"
   },
-  "611645144": {
-   "name": "Concussive Reload",
-   "hash": 611645144,
-   "type": "Armor Mod Seasonal"
-  },
-  "611645145": {
-   "name": "Retinal Burn",
-   "hash": 611645145,
-   "type": "Armor Mod Seasonal"
-  },
-  "611645146": {
-   "name": "Curative Orbs",
-   "hash": 611645146,
-   "type": "Armor Mod Seasonal"
-  },
-  "611645149": {
-   "name": "Armor of Eramis",
-   "hash": 611645149,
-   "type": "Armor Mod Seasonal"
-  },
-  "611645150": {
-   "name": "Hail The Storm",
-   "hash": 611645150,
-   "type": "Armor Mod Seasonal"
-  },
-  "611645151": {
-   "name": "Debilitating Wave",
-   "hash": 611645151,
-   "type": "Armor Mod Seasonal"
+  "600923142": {
+   "name": "Spring-Auger Bolts",
+   "hash": 600923142,
+   "type": "Weapon Perk"
   },
   "615063266": {
    "name": "Graviton Lance Catalyst",
@@ -1887,13 +2109,25 @@
    "name": "Warlord's End",
    "hash": 622433369,
    "itemName": "Felwinter's Helm",
-   "itemHash": 2822465023,
+   "itemHash": 728668916,
    "type": "Armor Trait Exotic"
+  },
+  "624097433": {
+   "name": "Flight",
+   "hash": 624097433,
+   "type": "Weapon Mod"
   },
   "624891305": {
    "name": "Desperado",
    "hash": 624891305,
    "type": "Weapon Trait Enhanced"
+  },
+  "626115084": {
+   "name": "Ruinscribe's Forge",
+   "hash": 626115084,
+   "itemName": "Finality's Auger",
+   "itemHash": 331231237,
+   "type": "Weapon Frame Exotic"
   },
   "630329983": {
    "name": "Ride the Bull",
@@ -1903,7 +2137,7 @@
    "type": "Weapon Frame Exotic"
   },
   "633101315": {
-   "name": "Font of Vigor",
+   "name": "Melee Font",
    "hash": 633101315,
    "type": "Armor Mod General"
   },
@@ -1927,6 +2161,13 @@
    "hash": 639190697,
    "type": "Weapon Trait Enhanced"
   },
+  "640727985": {
+   "name": "Cormorant Combo",
+   "hash": 640727985,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Trait Exotic"
+  },
   "647617635": {
    "name": "Memento Mori",
    "hash": 647617635,
@@ -1934,17 +2175,17 @@
    "itemHash": 347366834,
    "type": "Weapon Frame Exotic"
   },
-  "651554065": {
-   "name": "Rocket-Assisted Frame",
-   "hash": 651554065,
-   "type": "Weapon Frame Enhanced"
-  },
   "656200654": {
    "name": "Conserve Momentum",
    "hash": 656200654,
    "itemName": "Merciless",
    "itemHash": 4190156464,
    "type": "Weapon Frame Exotic"
+  },
+  "657025441": {
+   "name": "Meganeura",
+   "hash": 657025441,
+   "type": "Weapon Trait"
   },
   "657773637": {
    "name": "Sniper Damage Resistance",
@@ -1988,6 +2229,11 @@
    "hash": 671806388,
    "type": "Weapon Trait"
   },
+  "673231129": {
+   "name": "+Super / -Melee",
+   "hash": 673231129,
+   "type": "Armor Mod General"
+  },
   "674410190": {
    "name": "Forerunner Catalyst",
    "hash": 674410190,
@@ -2020,18 +2266,23 @@
    "hash": 680193725,
    "type": "Weapon Frame Enhanced"
   },
+  "680897173": {
+   "name": "Transcendent Moment",
+   "hash": 680897173,
+   "type": "Weapon Trait Enhanced"
+  },
   "684456054": {
    "name": "Eddy Current",
    "hash": 684456054,
    "type": "Weapon Trait"
   },
   "686455429": {
-   "name": "Font of Endurance",
+   "name": "Health Font",
    "hash": 686455429,
    "type": "Armor Mod General"
   },
   "687584589": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 687584589,
    "type": "Weapon Frame Enhanced"
   },
@@ -2045,6 +2296,11 @@
    "hash": 689005463,
    "type": "Weapon Perk"
   },
+  "691392383": {
+   "name": "+Weapons / -Melee",
+   "hash": 691392383,
+   "type": "Armor Mod General"
+  },
   "691659142": {
    "name": "Pugilist",
    "hash": 691659142,
@@ -2054,13 +2310,30 @@
    "name": "Light Shift",
    "hash": 692285813,
    "itemName": "Mask of Bakris",
-   "itemHash": 1619425569,
+   "itemHash": 508515818,
    "type": "Armor Trait Exotic"
+  },
+  "692399809": {
+   "name": "Reciprocity",
+   "hash": 692399809,
+   "type": "Weapon Trait"
   },
   "694879972": {
    "name": "Rapid-Fire Glaive",
    "hash": 694879972,
    "type": "Weapon Frame Enhanced"
+  },
+  "695966445": {
+   "name": "Aggressive Burst",
+   "hash": 695966445,
+   "type": "Weapon Frame"
+  },
+  "697983358": {
+   "name": "Offensive Grip",
+   "hash": 697983358,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Perk Exotic"
   },
   "699525795": {
    "name": "Eye of the Storm",
@@ -2071,7 +2344,7 @@
    "name": "Vengeance",
    "hash": 699693452,
    "itemName": "One-Eyed Mask",
-   "itemHash": 2578771006,
+   "itemHash": 1249787553,
    "type": "Armor Trait Exotic"
   },
   "703902595": {
@@ -2099,6 +2372,11 @@
    "hash": 711628886,
    "type": "Weapon Trait Enhanced"
   },
+  "714384243": {
+   "name": "Swap Mag",
+   "hash": 714384243,
+   "type": "Weapon Perk"
+  },
   "715195141": {
    "name": "Precision Frame",
    "hash": 715195141,
@@ -2118,7 +2396,7 @@
    "name": "Dearly Departed",
    "hash": 722862450,
    "itemName": "The Stag",
-   "itemHash": 2177524718,
+   "itemHash": 994038265,
    "type": "Armor Trait Exotic"
   },
   "732557052": {
@@ -2175,6 +2453,11 @@
    "hash": 744770875,
    "type": "Weapon Mod"
   },
+  "745577913": {
+   "name": "Disorienting Grenades",
+   "hash": 745577913,
+   "type": "Weapon Perk"
+  },
   "745965939": {
    "name": "Break the Bank",
    "hash": 745965939,
@@ -2207,6 +2490,11 @@
    "hash": 766321425,
    "type": "Weapon Trait Origin"
   },
+  "766579919": {
+   "name": "Tempered Edge",
+   "hash": 766579919,
+   "type": "Weapon Perk"
+  },
   "767484756": {
    "name": "9RECT Telescopic",
    "hash": 767484756,
@@ -2223,6 +2511,11 @@
    "itemName": "The Colony",
    "itemHash": 3899270607,
    "type": "Weapon Catalyst Exotic"
+  },
+  "769709866": {
+   "name": "Tactical Heatsink",
+   "hash": 769709866,
+   "type": "Weapon Perk"
   },
   "776531651": {
    "name": "Repulsor Brace",
@@ -2316,6 +2609,11 @@
    "hash": 806997698,
    "type": "Weapon Frame"
   },
+  "807993149": {
+   "name": "Ionized Heatsink",
+   "hash": 807993149,
+   "type": "Weapon Perk"
+  },
   "809345546": {
    "name": "Devil Scope D2",
    "hash": 809345546,
@@ -2336,6 +2634,13 @@
    "hash": 817361141,
    "type": "Armor Mod Activity"
   },
+  "818149482": {
+   "name": "Finality's Auger Catalyst",
+   "hash": 818149482,
+   "itemName": "Finality's Auger",
+   "itemHash": 331231237,
+   "type": "Weapon Catalyst Exotic"
+  },
   "818211479": {
    "name": "Shattering Blade",
    "hash": 818211479,
@@ -2347,6 +2652,11 @@
    "itemName": "Red Death Reformed",
    "itemHash": 427899681,
    "type": "Weapon Catalyst Exotic"
+  },
+  "820036316": {
+   "name": "Proximity Power",
+   "hash": 820036316,
+   "type": "Weapon Trait Enhanced"
   },
   "824488952": {
    "name": "Seriously, Watch Out",
@@ -2429,31 +2739,6 @@
    "itemHash": 542203595,
    "type": "Weapon Trait Exotic"
   },
-  "846698090": {
-   "name": "Unstoppable Glaive",
-   "hash": 846698090,
-   "type": "Armor Mod Seasonal"
-  },
-  "846698091": {
-   "name": "Overload Trace Rifles",
-   "hash": 846698091,
-   "type": "Armor Mod Seasonal"
-  },
-  "846698092": {
-   "name": "Overload Scout Rifle",
-   "hash": 846698092,
-   "type": "Armor Mod Seasonal"
-  },
-  "846698093": {
-   "name": "Unstoppable Hand Cannon",
-   "hash": 846698093,
-   "type": "Armor Mod Seasonal"
-  },
-  "846698094": {
-   "name": "Anti-Barrier Auto Rifle",
-   "hash": 846698094,
-   "type": "Armor Mod Seasonal"
-  },
   "848860060": {
    "name": "Fourth Time's the Charm",
    "hash": 848860060,
@@ -2493,7 +2778,7 @@
    "name": "Tight Fit",
    "hash": 858592012,
    "itemName": "Speedloader Slacks",
-   "itemHash": 2390471904,
+   "itemHash": 1793346751,
    "type": "Armor Trait Exotic"
   },
   "859780267": {
@@ -2549,6 +2834,11 @@
    "hash": 877723168,
    "type": "Armor Mod General"
   },
+  "878237828": {
+   "name": "Willing Vessel",
+   "hash": 878237828,
+   "type": "Weapon Trait Origin"
+  },
   "878286503": {
    "name": "Rapid-Fire Frame",
    "hash": 878286503,
@@ -2573,8 +2863,13 @@
    "name": "And Another Thing",
    "hash": 883550427,
    "itemName": "Armamentarium",
-   "itemHash": 3874247549,
+   "itemHash": 2999866952,
    "type": "Armor Trait Exotic"
+  },
+  "883665727": {
+   "name": "Bolt Scavenger",
+   "hash": 883665727,
+   "type": "Weapon Trait Enhanced"
   },
   "885620491": {
    "name": "Lightweight Frame",
@@ -2627,6 +2922,11 @@
    "itemHash": 1473821207,
    "type": "Weapon Frame Exotic"
   },
+  "891771298": {
+   "name": "+Weapons / -Super",
+   "hash": 891771298,
+   "type": "Armor Mod General"
+  },
   "893526892": {
    "name": "ATA Scout",
    "hash": 893526892,
@@ -2673,8 +2973,13 @@
    "name": "Blessing of Order",
    "hash": 902934539,
    "itemName": "Boots of the Assembler",
-   "itemHash": 3045642045,
+   "itemHash": 597039524,
    "type": "Armor Trait Exotic"
+  },
+  "905499626": {
+   "name": "Smoothbore",
+   "hash": 905499626,
+   "type": "Weapon Perk"
   },
   "906981559": {
    "name": "Discord",
@@ -2739,7 +3044,7 @@
    "name": "Fervid Coldsnap",
    "hash": 921817150,
    "itemName": "Osmiomancy Gloves",
-   "itemHash": 3259193988,
+   "itemHash": 2555349547,
    "type": "Armor Trait Exotic"
   },
   "923806249": {
@@ -2772,7 +3077,7 @@
    "name": "Fusion Harness",
    "hash": 926349161,
    "itemName": "Starfire Protocol",
-   "itemHash": 2082483156,
+   "itemHash": 599049453,
    "type": "Armor Trait Exotic"
   },
   "926976844": {
@@ -2809,6 +3114,18 @@
    "hash": 934199459,
    "type": "Subclass Grenade"
   },
+  "934928524": {
+   "name": "Contending Cascade",
+   "hash": 934928524,
+   "type": "Weapon Trait Origin"
+  },
+  "935202422": {
+   "name": "Horizon Ironsights",
+   "hash": 935202422,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Trait Exotic"
+  },
   "938542991": {
    "name": "Tempered Edge",
    "hash": 938542991,
@@ -2832,6 +3149,11 @@
    "name": "Icarus Grip",
    "hash": 941997506,
    "type": "Weapon Mod"
+  },
+  "943022827": {
+   "name": "Frame of Reference",
+   "hash": 943022827,
+   "type": "Weapon Perk"
   },
   "944506345": {
    "name": "SUROS Legacy",
@@ -2865,6 +3187,11 @@
    "hash": 956390015,
    "type": "Weapon Frame Enhanced"
   },
+  "957763733": {
+   "name": "+Class / -Super",
+   "hash": 957763733,
+   "type": "Armor Mod General"
+  },
   "957782887": {
    "name": "Snapshot Sights",
    "hash": 957782887,
@@ -2873,6 +3200,11 @@
   "960810156": {
    "name": "Danger Zone",
    "hash": 960810156,
+   "type": "Weapon Trait"
+  },
+  "960997401": {
+   "name": "Tear",
+   "hash": 960997401,
    "type": "Weapon Trait"
   },
   "961505134": {
@@ -2943,6 +3275,11 @@
    "hash": 981914802,
    "type": "Weapon Perk"
   },
+  "983853954": {
+   "name": "Binary Orbit",
+   "hash": 983853954,
+   "type": "Weapon Trait Enhanced"
+  },
   "984655331": {
    "name": "Attrition Orbs",
    "hash": 984655331,
@@ -2997,6 +3334,16 @@
    "itemHash": 3413074534,
    "type": "Weapon Frame Exotic"
   },
+  "1002206008": {
+   "name": "Steady Rounds",
+   "hash": 1002206008,
+   "type": "Weapon Perk"
+  },
+  "1002219198": {
+   "name": "Balanced Heat Weapon",
+   "hash": 1002219198,
+   "type": "Weapon Frame"
+  },
   "1004814308": {
    "name": "Disaster Plan",
    "hash": 1004814308,
@@ -3005,6 +3352,11 @@
   "1008128453": {
    "name": "Cornered",
    "hash": 1008128453,
+   "type": "Weapon Trait Enhanced"
+  },
+  "1011551830": {
+   "name": "Stopping Power",
+   "hash": 1011551830,
    "type": "Weapon Trait Enhanced"
   },
   "1012699414": {
@@ -3033,6 +3385,11 @@
    "name": "Vortex Grenade",
    "hash": 1016030582,
    "type": "Subclass Grenade"
+  },
+  "1017229899": {
+   "name": "Blast Distributor",
+   "hash": 1017229899,
+   "type": "Weapon Trait"
   },
   "1017385934": {
    "name": "Void Dexterity",
@@ -3120,6 +3477,18 @@
    "hash": 1039115606,
    "type": "Armor Mod General"
   },
+  "1040380121": {
+   "name": "Heirloom Catalyst",
+   "hash": 1040380121,
+   "itemName": "Heirloom",
+   "itemHash": 1685137410,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "1043703792": {
+   "name": "Tex Balanced Stock",
+   "hash": 1043703792,
+   "type": "Weapon Perk"
+  },
   "1044888195": {
    "name": "Utility Kickstart",
    "hash": 1044888195,
@@ -3199,6 +3568,11 @@
    "hash": 1063261332,
    "type": "Weapon Frame Enhanced"
   },
+  "1064478151": {
+   "name": "Field-Tested",
+   "hash": 1064478151,
+   "type": "Weapon Perk"
+  },
   "1064669306": {
    "name": "Cranial Spike III",
    "hash": 1064669306,
@@ -3220,6 +3594,11 @@
    "itemHash": 2188764214,
    "type": "Weapon Frame Exotic"
   },
+  "1065371964": {
+   "name": "Appended Mag",
+   "hash": 1065371964,
+   "type": "Weapon Perk"
+  },
   "1067908860": {
    "name": "Short-Action Stock",
    "hash": 1067908860,
@@ -3229,6 +3608,11 @@
    "name": "Aggressive Burst",
    "hash": 1068043187,
    "type": "Weapon Frame Enhanced"
+  },
+  "1069117426": {
+   "name": "Serrated Bolts",
+   "hash": 1069117426,
+   "type": "Weapon Perk"
   },
   "1069611115": {
    "name": "Aggressive Frame",
@@ -3252,6 +3636,11 @@
    "hash": 1079896271,
    "type": "Armor Mod General"
   },
+  "1080094173": {
+   "name": "Enhanced Heatsink",
+   "hash": 1080094173,
+   "type": "Weapon Perk"
+  },
   "1081893460": {
    "name": "Stormtrance",
    "hash": 1081893460,
@@ -3270,6 +3659,16 @@
   "1087426260": {
    "name": "Appended Mag",
    "hash": 1087426260,
+   "type": "Weapon Perk"
+  },
+  "1089671869": {
+   "name": "Elemental Honing",
+   "hash": 1089671869,
+   "type": "Weapon Trait"
+  },
+  "1092016998": {
+   "name": "Overclocked Heatsink",
+   "hash": 1092016998,
    "type": "Weapon Perk"
   },
   "1095471953": {
@@ -3302,7 +3701,7 @@
    "type": "Weapon Frame Exotic"
   },
   "1103878128": {
-   "name": "Harmonic Reserves",
+   "name": "Harmonic Ammo Generation",
    "hash": 1103878128,
    "type": "Armor Mod General"
   },
@@ -3313,6 +3712,16 @@
    "itemHash": 3371017761,
    "type": "Weapon Trait Exotic"
   },
+  "1111219233": {
+   "name": "Carbon Arrow Shaft",
+   "hash": 1111219233,
+   "type": "Weapon Perk"
+  },
+  "1115162408": {
+   "name": "Trickle Charge",
+   "hash": 1115162408,
+   "type": "Weapon Trait"
+  },
   "1118428792": {
    "name": "Unflinching Stasis Aim",
    "hash": 1118428792,
@@ -3322,6 +3731,11 @@
    "name": "Loose Change",
    "hash": 1119449540,
    "type": "Weapon Trait"
+  },
+  "1124871858": {
+   "name": "Fluted Barrel",
+   "hash": 1124871858,
+   "type": "Weapon Perk"
   },
   "1125523126": {
    "name": "Arc Loader",
@@ -3337,6 +3751,13 @@
    "name": "Threat Remover",
    "hash": 1126264488,
    "type": "Weapon Trait"
+  },
+  "1127992351": {
+   "name": "Unyielding Handle",
+   "hash": 1127992351,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
   },
   "1128768652": {
    "name": "Triple Jump",
@@ -3354,8 +3775,13 @@
    "type": "Subclass Movement"
   },
   "1130820873": {
-   "name": "Font of Wisdom",
+   "name": "Super Font",
    "hash": 1130820873,
+   "type": "Armor Mod General"
+  },
+  "1133590731": {
+   "name": "Enhanced Athletics",
+   "hash": 1133590731,
    "type": "Armor Mod General"
   },
   "1134488199": {
@@ -3395,18 +3821,23 @@
    "hash": 1145640183,
    "type": "Weapon Trait Enhanced"
   },
+  "1147230557": {
+   "name": "Hammer-Forged Rifling",
+   "hash": 1147230557,
+   "type": "Weapon Perk"
+  },
   "1147638875": {
    "name": "Cobra Totemic",
    "hash": 1147638875,
    "itemName": "Ophidian Aspect",
-   "itemHash": 3627185503,
+   "itemHash": 507400048,
    "type": "Armor Trait Exotic"
   },
   "1149655156": {
    "name": "Stylostixis",
    "hash": 1149655156,
    "itemName": "Mataiodoxía",
-   "itemHash": 1955548646,
+   "itemHash": 1003391927,
    "type": "Armor Trait Exotic"
   },
   "1149703256": {
@@ -3459,10 +3890,22 @@
    "itemHash": 3316517958,
    "type": "Armor Trait Exotic"
   },
+  "1164078247": {
+   "name": "Imperial Allegiance",
+   "hash": 1164078247,
+   "type": "Weapon Trait Origin"
+  },
   "1164602481": {
    "name": "Deconstruct",
    "hash": 1164602481,
    "type": "Weapon Trait"
+  },
+  "1166233619": {
+   "name": "Nano-Assault",
+   "hash": 1166233619,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Trait Exotic"
   },
   "1167468626": {
    "name": "Lasting Impression",
@@ -3520,6 +3963,11 @@
    "itemHash": 1508896098,
    "type": "Weapon Trait Exotic"
   },
+  "1180408010": {
+   "name": "Health Mod",
+   "hash": 1180408010,
+   "type": "Armor Mod General"
+  },
   "1180618054": {
    "name": "Enduring Guard",
    "hash": 1180618054,
@@ -3551,6 +3999,11 @@
    "itemHash": 4103414242,
    "type": "Weapon Trait Exotic"
   },
+  "1186131696": {
+   "name": "Omolon Fluid Dynamics",
+   "hash": 1186131696,
+   "type": "Weapon Perk"
+  },
   "1186480754": {
    "name": "Saint's Fists",
    "hash": 1186480754,
@@ -3559,7 +4012,7 @@
    "type": "Weapon Frame Exotic"
   },
   "1193713026": {
-   "name": "Font of Restoration",
+   "name": "Class Font",
    "hash": 1193713026,
    "type": "Armor Mod General"
   },
@@ -3579,9 +4032,24 @@
    "type": "Weapon Perk"
   },
   "1197814525": {
-   "name": "Heavy Ammo Finder Enhancement",
+   "name": "Abundant Ammo",
    "hash": 1197814525,
    "type": "Weapon Mod"
+  },
+  "1198287879": {
+   "name": "Dream Work",
+   "hash": 1198287879,
+   "type": "Weapon Perk"
+  },
+  "1202133695": {
+   "name": "Heavy Bolts",
+   "hash": 1202133695,
+   "type": "Weapon Perk"
+  },
+  "1202584452": {
+   "name": "Ancillary Ordinance",
+   "hash": 1202584452,
+   "type": "Weapon Trait"
   },
   "1206010521": {
    "name": "Ruinous Effigy Catalyst",
@@ -3614,6 +4082,11 @@
    "hash": 1208953762,
    "type": "Weapon Frame"
   },
+  "1209885908": {
+   "name": "Nail, Meet Hammer",
+   "hash": 1209885908,
+   "type": "Weapon Perk"
+  },
   "1210012576": {
    "name": "Void Siphon",
    "hash": 1210012576,
@@ -3630,7 +4103,7 @@
    "name": "Ascending Amplitude",
    "hash": 1211775759,
    "itemName": "Stormdancer's Brace",
-   "itemHash": 1996008488,
+   "itemHash": 1747063685,
    "type": "Armor Trait Exotic"
   },
   "1218164788": {
@@ -3652,13 +4125,18 @@
    "hash": 1220310607,
    "type": "Weapon Frame Enhanced"
   },
+  "1220787353": {
+   "name": "Ultralight Rail",
+   "hash": 1220787353,
+   "type": "Weapon Perk"
+  },
   "1225726778": {
    "name": "Adept Mag",
    "hash": 1225726778,
    "type": "Weapon Mod"
   },
   "1225770249": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 1225770249,
    "type": "Weapon Frame Enhanced"
   },
@@ -3666,6 +4144,11 @@
    "name": "Grapple",
    "hash": 1225978592,
    "type": "Subclass Grenade"
+  },
+  "1226351311": {
+   "name": "All-Star",
+   "hash": 1226351311,
+   "type": "Weapon Trait"
   },
   "1232050830": {
    "name": "Ball Lightning",
@@ -3709,6 +4192,11 @@
    "hash": 1237488987,
    "type": "Subclass Movement"
   },
+  "1237786518": {
+   "name": "Minor Class Mod",
+   "hash": 1237786518,
+   "type": "Armor Mod General"
+  },
   "1241894699": {
    "name": "Together Forever",
    "hash": 1241894699,
@@ -3739,9 +4227,16 @@
    "type": "Subclass Grenade"
   },
   "1255614814": {
-   "name": "Font of Focus",
+   "name": "Grenade Font",
    "hash": 1255614814,
    "type": "Armor Mod General"
+  },
+  "1259444143": {
+   "name": "Temporal Anomaly",
+   "hash": 1259444143,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Trait Exotic"
   },
   "1260401931": {
    "name": "Hot Swap",
@@ -3820,6 +4315,16 @@
    "hash": 1275731761,
    "type": "Weapon Trait"
   },
+  "1278990682": {
+   "name": "Exhaustive Research",
+   "hash": 1278990682,
+   "type": "Weapon Perk"
+  },
+  "1279785143": {
+   "name": "Accelerated Coils",
+   "hash": 1279785143,
+   "type": "Weapon Perk"
+  },
   "1281216113": {
    "name": "Stunning Recovery",
    "hash": 1281216113,
@@ -3846,6 +4351,21 @@
    "name": "Together Forever",
    "hash": 1282254042,
    "type": "Weapon Frame"
+  },
+  "1285109625": {
+   "name": "Jumpshot",
+   "hash": 1285109625,
+   "type": "Weapon Mod"
+  },
+  "1285109626": {
+   "name": "Tungsten Bowstring",
+   "hash": 1285109626,
+   "type": "Weapon Mod"
+  },
+  "1285109627": {
+   "name": "Shattershafts",
+   "hash": 1285109627,
+   "type": "Weapon Mod"
   },
   "1288081796": {
    "name": "Wolf Sight W1",
@@ -3889,6 +4409,16 @@
    "hash": 1291268263,
    "type": "Armor Mod Activity"
   },
+  "1292971594": {
+   "name": "Suros Synergy",
+   "hash": 1292971594,
+   "type": "Weapon Perk"
+  },
+  "1293395728": {
+   "name": "Ionic Sentry",
+   "hash": 1293395728,
+   "type": "Subclass Aspect"
+  },
   "1293395729": {
    "name": "Electrostatic Mind",
    "hash": 1293395729,
@@ -3914,6 +4444,11 @@
    "hash": 1294026524,
    "type": "Weapon Frame"
   },
+  "1298135794": {
+   "name": "Subjugation",
+   "hash": 1298135794,
+   "type": "Weapon Trait Origin"
+  },
   "1298151900": {
    "name": "Deathbringer Catalyst",
    "hash": 1298151900,
@@ -3930,6 +4465,11 @@
    "name": "Together Forever",
    "hash": 1300107783,
    "type": "Weapon Frame Enhanced"
+  },
+  "1301083363": {
+   "name": "Natural String",
+   "hash": 1301083363,
+   "type": "Weapon Perk"
   },
   "1301391064": {
    "name": "Harmonic Scavenger",
@@ -3950,6 +4490,13 @@
    "itemHash": 3121540812,
    "type": "Weapon Trait Exotic"
   },
+  "1303792749": {
+   "name": "Resurgence Directive",
+   "hash": 1303792749,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "1305536863": {
    "name": "Harmonic Targeting",
    "hash": 1305536863,
@@ -3959,6 +4506,11 @@
    "name": "Strand Scavenger",
    "hash": 1305848463,
    "type": "Armor Mod General"
+  },
+  "1309453587": {
+   "name": "Air-Cooled Core",
+   "hash": 1309453587,
+   "type": "Weapon Trait Origin"
   },
   "1313805249": {
    "name": "LC Ranged",
@@ -4052,10 +4604,20 @@
    "itemHash": 511888814,
    "type": "Armor Trait Exotic"
   },
+  "1341464476": {
+   "name": "Delicate Tuning",
+   "hash": 1341464476,
+   "type": "Weapon Trait Enhanced"
+  },
   "1341767667": {
    "name": "Withering Blade",
    "hash": 1341767667,
    "type": "Subclass Melee"
+  },
+  "1342449029": {
+   "name": "Adept Shield Duration",
+   "hash": 1342449029,
+   "type": "Weapon Mod"
   },
   "1347741687": {
    "name": "Outlaw",
@@ -4206,6 +4768,11 @@
    "hash": 1401506407,
    "type": "Armor Mod Activity"
   },
+  "1406835319": {
+   "name": "Dynamic Heat Weapon",
+   "hash": 1406835319,
+   "type": "Weapon Frame"
+  },
   "1408087974": {
    "name": "Combat Sights",
    "hash": 1408087974,
@@ -4265,7 +4832,7 @@
    "name": "Blood Magic",
    "hash": 1420473289,
    "itemName": "Sanguine Alchemy",
-   "itemHash": 3070555693,
+   "itemHash": 2966741808,
    "type": "Armor Trait Exotic"
   },
   "1421772400": {
@@ -4293,6 +4860,11 @@
    "hash": 1433540272,
    "type": "Armor Mod General"
   },
+  "1435557120": {
+   "name": "Grenade Mod",
+   "hash": 1435557120,
+   "type": "Armor Mod General"
+  },
   "1437147326": {
    "name": "Myrmidon's Reach",
    "hash": 1437147326,
@@ -4305,10 +4877,20 @@
    "hash": 1439600632,
    "type": "Weapon Trait"
   },
+  "1439751480": {
+   "name": "Alloy Casing",
+   "hash": 1439751480,
+   "type": "Weapon Perk"
+  },
   "1441682018": {
    "name": "Linear Compensator",
    "hash": 1441682018,
    "type": "Weapon Perk"
+  },
+  "1442784346": {
+   "name": "Dynamic Heat Weapon",
+   "hash": 1442784346,
+   "type": "Weapon Frame"
   },
   "1444664836": {
    "name": "Phoenix Dive",
@@ -4369,6 +4951,11 @@
    "hash": 1452368634,
    "type": "Weapon Perk"
   },
+  "1454612425": {
+   "name": "Ionized Heatsink",
+   "hash": 1454612425,
+   "type": "Weapon Perk"
+  },
   "1457189155": {
    "name": "Depths of Duskfield",
    "hash": 1457189155,
@@ -4380,6 +4967,16 @@
    "name": "Lightweight Frame",
    "hash": 1458010786,
    "type": "Weapon Frame"
+  },
+  "1464081238": {
+   "name": "Demoralize",
+   "hash": 1464081238,
+   "type": "Weapon Trait"
+  },
+  "1465283453": {
+   "name": "Ultralight Rail",
+   "hash": 1465283453,
+   "type": "Weapon Perk"
   },
   "1467527085": {
    "name": "Extended Barrel",
@@ -4447,10 +5044,25 @@
    "itemHash": 4068264807,
    "type": "Weapon Frame Exotic"
   },
+  "1488599449": {
+   "name": "Assault Mag",
+   "hash": 1488599449,
+   "type": "Weapon Perk"
+  },
   "1489048135": {
    "name": "Explosive Pact",
    "hash": 1489048135,
    "type": "Weapon Trait Origin"
+  },
+  "1491926336": {
+   "name": "Ranged Lens RLR5",
+   "hash": 1491926336,
+   "type": "Weapon Perk"
+  },
+  "1491926337": {
+   "name": "Focus Lens FLS2",
+   "hash": 1491926337,
+   "type": "Weapon Perk"
   },
   "1496699324": {
    "name": "Jade Rabbit Catalyst",
@@ -4466,6 +5078,11 @@
    "itemHash": 1681583613,
    "type": "Weapon Catalyst Exotic"
   },
+  "1498024248": {
+   "name": "Hungry Edge",
+   "hash": 1498024248,
+   "type": "Weapon Perk"
+  },
   "1500996326": {
    "name": "Natural Fletching",
    "hash": 1500996326,
@@ -4476,11 +5093,26 @@
    "hash": 1501094193,
    "type": "Armor Mod General"
   },
+  "1507295317": {
+   "name": "Accelerated Heatsink",
+   "hash": 1507295317,
+   "type": "Weapon Perk"
+  },
+  "1510949672": {
+   "name": "+Class / -Melee",
+   "hash": 1510949672,
+   "type": "Armor Mod General"
+  },
+  "1511100135": {
+   "name": "Supercharged Magazine",
+   "hash": 1511100135,
+   "type": "Weapon Trait"
+  },
   "1513013523": {
    "name": "One with the Void",
    "hash": 1513013523,
    "itemName": "Briarbinds",
-   "itemHash": 3234692237,
+   "itemHash": 768145972,
    "type": "Armor Trait Exotic"
   },
   "1514173218": {
@@ -4492,6 +5124,11 @@
    "name": "Bountiful Harvest",
    "hash": 1515139595,
    "type": "Ghost Mod"
+  },
+  "1517798362": {
+   "name": "Stopping Power",
+   "hash": 1517798362,
+   "type": "Weapon Trait"
   },
   "1517917190": {
    "name": "Shackle Grenade",
@@ -4515,6 +5152,13 @@
    "hash": 1523832109,
    "type": "Weapon Trait"
   },
+  "1524069046": {
+   "name": "Taken Ambition",
+   "hash": 1524069046,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Trait Exotic"
+  },
   "1525239159": {
    "name": "Aggressive Frame",
    "hash": 1525239159,
@@ -4529,6 +5173,11 @@
    "name": "Outlaw",
    "hash": 1528281896,
    "type": "Weapon Trait"
+  },
+  "1529576681": {
+   "name": "Combat Grip",
+   "hash": 1529576681,
+   "type": "Weapon Perk"
   },
   "1530804125": {
    "name": "Superconductor",
@@ -4568,6 +5217,16 @@
    "name": "Redirection",
    "hash": 1545231802,
    "type": "Weapon Trait Enhanced"
+  },
+  "1546108491": {
+   "name": "Disruption Weapon",
+   "hash": 1546108491,
+   "type": "Weapon Frame"
+  },
+  "1546142478": {
+   "name": "Binary Orbit",
+   "hash": 1546142478,
+   "type": "Weapon Trait"
   },
   "1546637391": {
    "name": "Vorpal Weapon",
@@ -4614,6 +5273,13 @@
    "name": "Unflinching Solar Aim",
    "hash": 1553790504,
    "type": "Armor Mod General"
+  },
+  "1555922475": {
+   "name": "Taken Resolution",
+   "hash": 1555922475,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Trait Exotic"
   },
   "1556840489": {
    "name": "Lead from Gold",
@@ -4679,6 +5345,11 @@
    "hash": 1570042021,
    "type": "Weapon Trait"
   },
+  "1570399071": {
+   "name": "Lead From Light",
+   "hash": 1570399071,
+   "type": "Weapon Trait"
+  },
   "1573888036": {
    "name": "Split Electron",
    "hash": 1573888036,
@@ -4695,6 +5366,13 @@
    "name": "Enhanced Scanner Augment",
    "hash": 1578165808,
    "type": "Armor Mod Activity"
+  },
+  "1579100415": {
+   "name": "Bullseye Bolster",
+   "hash": 1579100415,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Trait Exotic"
   },
   "1582574009": {
    "name": "Arcbolt Grenade",
@@ -4741,6 +5419,11 @@
    "hash": 1592669035,
    "type": "Weapon Trait Enhanced"
   },
+  "1596513538": {
+   "name": "Tactical",
+   "hash": 1596513538,
+   "type": "Weapon Mod"
+  },
   "1598147670": {
    "name": "Psychohack",
    "hash": 1598147670,
@@ -4750,6 +5433,11 @@
    "name": "Backup Plan",
    "hash": 1600092898,
    "type": "Weapon Trait"
+  },
+  "1600429811": {
+   "name": "Paracausal Fluid",
+   "hash": 1600429811,
+   "type": "Weapon Trait Origin"
   },
   "1602994568": {
    "name": "Controlled Demolition",
@@ -4786,6 +5474,16 @@
    "hash": 1609056795,
    "type": "Weapon Trait Enhanced"
   },
+  "1611330137": {
+   "name": "Dynamic Heat Weapon",
+   "hash": 1611330137,
+   "type": "Weapon Frame"
+  },
+  "1615948893": {
+   "name": "Together Forever",
+   "hash": 1615948893,
+   "type": "Weapon Frame"
+  },
   "1617987572": {
    "name": "SSO-08 Sniper",
    "hash": 1617987572,
@@ -4806,6 +5504,11 @@
    "hash": 1618208178,
    "type": "Weapon Trait Enhanced"
   },
+  "1621842933": {
+   "name": "Vanguard Determination",
+   "hash": 1621842933,
+   "type": "Weapon Perk"
+  },
   "1627901452": {
    "name": "Stacks on Stacks",
    "hash": 1627901452,
@@ -4821,11 +5524,18 @@
    "hash": 1628165637,
    "type": "Weapon Perk"
   },
+  "1629848687": {
+   "name": "Phase Converter",
+   "hash": 1629848687,
+   "itemName": "Lodestar",
+   "itemHash": 3725585710,
+   "type": "Weapon Perk Exotic"
+  },
   "1630940558": {
    "name": "Percussive Flames",
    "hash": 1630940558,
    "itemName": "Pyrogale Gauntlets",
-   "itemHash": 2066430310,
+   "itemHash": 864224653,
    "type": "Armor Trait Exotic"
   },
   "1631667848": {
@@ -4843,11 +5553,16 @@
    "hash": 1636108362,
    "type": "Weapon Frame"
   },
+  "1639399262": {
+   "name": "Linear Compensator",
+   "hash": 1639399262,
+   "type": "Weapon Perk"
+  },
   "1640501529": {
    "name": "Lancer's Vigil",
    "hash": 1640501529,
    "itemName": "Cadmus Ridge Lancecap",
-   "itemHash": 3574051505,
+   "itemHash": 2851385306,
    "type": "Armor Trait Exotic"
   },
   "1645158859": {
@@ -4859,6 +5574,11 @@
    "name": "Duelist's Trance",
    "hash": 1646437399,
    "type": "Weapon Trait Enhanced"
+  },
+  "1649480699": {
+   "name": "Straight Fletching",
+   "hash": 1649480699,
+   "type": "Weapon Perk"
   },
   "1650852150": {
    "name": "Long March",
@@ -4902,6 +5622,11 @@
    "hash": 1656549674,
    "type": "Subclass Aspect"
   },
+  "1656549675": {
+   "name": "Storm's Keep",
+   "hash": 1656549675,
+   "type": "Subclass Aspect"
+  },
   "1656957541": {
    "name": "Charge Shot",
    "hash": 1656957541,
@@ -4933,6 +5658,11 @@
   "1658784563": {
    "name": "Genesis",
    "hash": 1658784563,
+   "type": "Weapon Trait Enhanced"
+  },
+  "1661646271": {
+   "name": "Lead From Light",
+   "hash": 1661646271,
    "type": "Weapon Trait Enhanced"
   },
   "1663363584": {
@@ -4967,7 +5697,7 @@
    "type": "Armor Trait Exotic"
   },
   "1669792723": {
-   "name": "Void Reserves",
+   "name": "Void Ammo Generation",
    "hash": 1669792723,
    "type": "Armor Mod General"
   },
@@ -4977,9 +5707,19 @@
    "type": "Weapon Frame Enhanced"
   },
   "1672155562": {
-   "name": "Font of Restoration",
+   "name": "Class Font",
    "hash": 1672155562,
    "type": "Armor Mod General"
+  },
+  "1672416975": {
+   "name": "+Grenade / -Super",
+   "hash": 1672416975,
+   "type": "Armor Mod General"
+  },
+  "1673863459": {
+   "name": "Roar of Battle",
+   "hash": 1673863459,
+   "type": "Weapon Trait Origin"
   },
   "1677180919": {
    "name": "Harmonic Dexterity",
@@ -5092,10 +5832,20 @@
    "hash": 1702976605,
    "type": "Weapon Trait Origin"
   },
+  "1703647492": {
+   "name": "Minor Weapons Mod",
+   "hash": 1703647492,
+   "type": "Armor Mod General"
+  },
   "1707990417": {
    "name": "Rapid-Fire Frame",
    "hash": 1707990417,
    "type": "Weapon Frame Enhanced"
+  },
+  "1709045111": {
+   "name": "Flared Magwell",
+   "hash": 1709045111,
+   "type": "Weapon Perk"
   },
   "1709236482": {
    "name": "Heavy Handed",
@@ -5200,7 +5950,7 @@
    "name": "Clenched Fist",
    "hash": 1731450287,
    "itemName": "Stronghold",
-   "itemHash": 2240152949,
+   "itemHash": 512777670,
    "type": "Armor Trait Exotic"
   },
   "1733620422": {
@@ -5309,8 +6059,18 @@
    "hash": 1774574192,
    "type": "Weapon Trait"
   },
+  "1776069409": {
+   "name": "Mag-lev Rail",
+   "hash": 1776069409,
+   "type": "Weapon Perk"
+  },
+  "1777340333": {
+   "name": "Flexible String",
+   "hash": 1777340333,
+   "type": "Weapon Perk"
+  },
   "1781551382": {
-   "name": "Font of Focus",
+   "name": "Grenade Font",
    "hash": 1781551382,
    "type": "Armor Mod General"
   },
@@ -5323,6 +6083,11 @@
    "name": "Area Denial Frame",
    "hash": 1782704870,
    "type": "Weapon Frame"
+  },
+  "1783397184": {
+   "name": "Tactical Mag",
+   "hash": 1783397184,
+   "type": "Weapon Perk"
   },
   "1783582993": {
    "name": "Crimson Catalyst",
@@ -5363,6 +6128,11 @@
    "hash": 1793150018,
    "type": "Weapon Frame Enhanced"
   },
+  "1796628141": {
+   "name": "Helical Fletching",
+   "hash": 1796628141,
+   "type": "Weapon Perk"
+  },
   "1797707170": {
    "name": "Judgment",
    "hash": 1797707170,
@@ -5379,6 +6149,21 @@
    "name": "Stasis Targeting",
    "hash": 1801153435,
    "type": "Armor Mod General"
+  },
+  "1802305063": {
+   "name": "Thermoplastic Grenades",
+   "hash": 1802305063,
+   "type": "Weapon Perk"
+  },
+  "1806718225": {
+   "name": "Accelerated Heatsink",
+   "hash": 1806718225,
+   "type": "Weapon Perk"
+  },
+  "1807273211": {
+   "name": "Light Mag",
+   "hash": 1807273211,
+   "type": "Weapon Perk"
   },
   "1817649409": {
    "name": "Heavy Burst",
@@ -5468,6 +6253,11 @@
    "itemHash": 1190497097,
    "type": "Armor Trait Exotic"
   },
+  "1831023215": {
+   "name": "Skulking Wolf",
+   "hash": 1831023215,
+   "type": "Weapon Perk"
+  },
   "1831499663": {
    "name": "Aggressive Frame",
    "hash": 1831499663,
@@ -5484,6 +6274,11 @@
    "name": "Arc Weapon Surge",
    "hash": 1834163303,
    "type": "Armor Mod General"
+  },
+  "1834828808": {
+   "name": "Tempered Truss Rod",
+   "hash": 1834828808,
+   "type": "Weapon Perk"
   },
   "1840239774": {
    "name": "Fluted Barrel",
@@ -5507,15 +6302,15 @@
    "hash": 1844523823,
    "type": "Weapon Perk"
   },
-  "1845407457": {
-   "name": "Intellect Armorer",
-   "hash": 1845407457,
-   "type": "Ghost Mod"
-  },
   "1847129788": {
    "name": "Marksman Optics: High",
    "hash": 1847129788,
    "type": "Weapon Mod"
+  },
+  "1847323754": {
+   "name": "Accelerated Assault",
+   "hash": 1847323754,
+   "type": "Weapon Trait Origin"
   },
   "1848187513": {
    "name": "Invigoration",
@@ -5560,11 +6355,16 @@
    "hash": 1870851715,
    "type": "Weapon Trait"
   },
+  "1871180748": {
+   "name": "Full Bore",
+   "hash": 1871180748,
+   "type": "Weapon Perk"
+  },
   "1871764335": {
    "name": "Bleak Domain",
    "hash": 1871764335,
    "itemName": "Rime-coat Raiment",
-   "itemHash": 4060793397,
+   "itemHash": 888791258,
    "type": "Armor Trait Exotic"
   },
   "1875323682": {
@@ -5576,6 +6376,11 @@
    "name": "Collective Purpose",
    "hash": 1878756191,
    "type": "Weapon Trait Origin"
+  },
+  "1879022254": {
+   "name": "+Class / -Grenade",
+   "hash": 1879022254,
+   "type": "Armor Mod General"
   },
   "1880379474": {
    "name": "Arbalest Catalyst",
@@ -5609,10 +6414,30 @@
    "hash": 1886418605,
    "type": "Weapon Frame Enhanced"
   },
+  "1888623310": {
+   "name": "MIDA Synergy",
+   "hash": 1888623310,
+   "type": "Weapon Frame"
+  },
+  "1888882410": {
+   "name": "Collective Pugilism",
+   "hash": 1888882410,
+   "type": "Weapon Trait"
+  },
+  "1890040155": {
+   "name": "Low-Profile Rail",
+   "hash": 1890040155,
+   "type": "Weapon Perk"
+  },
   "1890422124": {
    "name": "Tap the Trigger",
    "hash": 1890422124,
    "type": "Weapon Trait"
+  },
+  "1890997540": {
+   "name": "Extended Mag",
+   "hash": 1890997540,
+   "type": "Weapon Perk"
   },
   "1891463783": {
    "name": "Harmonic Targeting",
@@ -5629,6 +6454,13 @@
    "hash": 1894749743,
    "type": "Weapon Frame Enhanced"
   },
+  "1899803992": {
+   "name": "Suspending Blast",
+   "hash": 1899803992,
+   "itemName": "New Malpais",
+   "itemHash": 1736135946,
+   "type": "Weapon Trait Exotic"
+  },
   "1900919151": {
    "name": "Edge of Action",
    "hash": 1900919151,
@@ -5642,7 +6474,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "1901221009": {
-   "name": "Font of Agility",
+   "name": "Weapons Font",
    "hash": 1901221009,
    "type": "Armor Mod General"
   },
@@ -5663,22 +6495,47 @@
    "hash": 1905598698,
    "type": "Weapon Trait Enhanced"
   },
+  "1906137414": {
+   "name": "Exhaustive Research",
+   "hash": 1906137414,
+   "type": "Weapon Trait Origin"
+  },
   "1906147653": {
    "name": "Demolitionist",
    "hash": 1906147653,
    "type": "Weapon Trait Enhanced"
   },
+  "1909124648": {
+   "name": "Thermal Atomization",
+   "hash": 1909124648,
+   "type": "Weapon Trait"
+  },
+  "1918398421": {
+   "name": "Built to Blast",
+   "hash": 1918398421,
+   "type": "Weapon Trait"
+  },
+  "1918710127": {
+   "name": "+Weapons / -Class",
+   "hash": 1918710127,
+   "type": "Armor Mod General"
+  },
   "1919923227": {
    "name": "Overflowing Light",
    "hash": 1919923227,
    "itemName": "Heart of Inmost Light",
-   "itemHash": 1341951177,
+   "itemHash": 502173648,
    "type": "Armor Trait Exotic"
   },
   "1920417385": {
    "name": "Grim Harvest",
    "hash": 1920417385,
    "type": "Subclass Aspect"
+  },
+  "1922571986": {
+   "name": "+Grenade / -Class",
+   "hash": 1922571986,
+   "type": "Armor Mod General"
   },
   "1924584408": {
    "name": "Grenade Kickstart",
@@ -5755,6 +6612,11 @@
    "itemHash": 3698448090,
    "type": "Weapon Catalyst Exotic"
   },
+  "1932356121": {
+   "name": "Extended Barrel",
+   "hash": 1932356121,
+   "type": "Weapon Perk"
+  },
   "1934171651": {
    "name": "Supercooled Accelerator",
    "hash": 1934171651,
@@ -5767,15 +6629,20 @@
    "itemHash": 121305948,
    "type": "Armor Trait Exotic"
   },
-  "1941225610": {
-   "name": "Meganeura",
-   "hash": 1941225610,
-   "type": "Weapon Trait"
+  "1939575288": {
+   "name": "Fleet Footed",
+   "hash": 1939575288,
+   "type": "Weapon Perk"
   },
   "1942880504": {
    "name": "Slickdraw",
    "hash": 1942880504,
    "type": "Weapon Trait Enhanced"
+  },
+  "1946186791": {
+   "name": "Light Heatsink",
+   "hash": 1946186791,
+   "type": "Weapon Perk"
   },
   "1946568256": {
    "name": "High-Impact Frame",
@@ -5807,6 +6674,13 @@
    "hash": 1956421814,
    "type": "Armor Mod Activity"
   },
+  "1958555234": {
+   "name": "Balanced Grip",
+   "hash": 1958555234,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Perk Exotic"
+  },
   "1959135343": {
    "name": "Wolfpack Rounds",
    "hash": 1959135343,
@@ -5818,6 +6692,34 @@
    "name": "Quickdraw",
    "hash": 1961144892,
    "type": "Weapon Trait Enhanced"
+  },
+  "1963279224": {
+   "name": "Panic Response IV",
+   "hash": 1963279224,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
+  "1963279225": {
+   "name": "Panic Response V",
+   "hash": 1963279225,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
+  "1963279230": {
+   "name": "Panic Response II",
+   "hash": 1963279230,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
+  "1963279231": {
+   "name": "Panic Response III",
+   "hash": 1963279231,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
   },
   "1964414318": {
    "name": "Heavy Metal",
@@ -5852,6 +6754,11 @@
    "itemHash": 3698448090,
    "type": "Weapon Frame Exotic"
   },
+  "1968098204": {
+   "name": "Ricochet Rounds",
+   "hash": 1968098204,
+   "type": "Weapon Perk"
+  },
   "1968497646": {
    "name": "Armor-Piercing Rounds",
    "hash": 1968497646,
@@ -5861,11 +6768,11 @@
    "name": "Hammer of the Gods",
    "hash": 1969105489,
    "itemName": "Point-Contact Cannon Brace",
-   "itemHash": 1703598057,
+   "itemHash": 308767728,
    "type": "Armor Trait Exotic"
   },
   "1971149752": {
-   "name": "Harmonic Reserves",
+   "name": "Harmonic Ammo Generation",
    "hash": 1971149752,
    "type": "Armor Mod General"
   },
@@ -5911,6 +6818,11 @@
    "hash": 1986105578,
    "type": "Weapon Frame"
   },
+  "1987021001": {
+   "name": "Rifled Barrel",
+   "hash": 1987021001,
+   "type": "Weapon Perk"
+  },
   "1988485648": {
    "name": "Dealer's Choice",
    "hash": 1988485648,
@@ -5939,6 +6851,13 @@
    "name": "Black Powder",
    "hash": 1996142143,
    "type": "Weapon Perk"
+  },
+  "1998010051": {
+   "name": "Malevolent Grasp",
+   "hash": 1998010051,
+   "itemName": "Deimosuffusion",
+   "itemHash": 1479082657,
+   "type": "Armor Trait Exotic"
   },
   "2000295559": {
    "name": "Turnabout",
@@ -5992,9 +6911,16 @@
    "type": "Weapon Frame Enhanced"
   },
   "2014892510": {
-   "name": "Perpetual Motion Enhanced",
+   "name": "Perpetual Motion",
    "hash": 2014892510,
    "type": "Weapon Trait Enhanced"
+  },
+  "2018366981": {
+   "name": "Lodestar Catalyst",
+   "hash": 2018366981,
+   "itemName": "Lodestar",
+   "itemHash": 3725585710,
+   "type": "Weapon Catalyst Exotic"
   },
   "2019952880": {
    "name": "Serve the Colony",
@@ -6060,6 +6986,11 @@
    "hash": 2039302152,
    "type": "Weapon Trait"
   },
+  "2039482529": {
+   "name": "Cooling Baubles",
+   "hash": 2039482529,
+   "type": "Weapon Trait Enhanced"
+  },
   "2040155611": {
    "name": "Aggressive Glaive",
    "hash": 2040155611,
@@ -6080,6 +7011,11 @@
    "hash": 2048641572,
    "type": "Weapon Trait"
   },
+  "2052299741": {
+   "name": "Countermass",
+   "hash": 2052299741,
+   "type": "Weapon Perk"
+  },
   "2053642371": {
    "name": "Unsated Hunger",
    "hash": 2053642371,
@@ -6094,6 +7030,13 @@
    "name": "SD Thermal",
    "hash": 2054312701,
    "type": "Weapon Perk"
+  },
+  "2057080438": {
+   "name": "Meaning-Making",
+   "hash": 2057080438,
+   "itemName": "Service of Luzaku",
+   "itemHash": 4284533075,
+   "type": "Weapon Trait Exotic"
   },
   "2057203855": {
    "name": "Precision Frame",
@@ -6110,40 +7053,15 @@
    "hash": 2059481925,
    "type": "Weapon Frame Enhanced"
   },
-  "2071562744": {
-   "name": "Emergency Flare",
-   "hash": 2071562744,
-   "type": "Armor Mod Seasonal"
-  },
-  "2071562746": {
-   "name": "Fell the Revenant",
-   "hash": 2071562746,
-   "type": "Armor Mod Seasonal"
-  },
-  "2071562747": {
-   "name": "Rapid Impacts",
-   "hash": 2071562747,
-   "type": "Armor Mod Seasonal"
-  },
-  "2071562748": {
-   "name": "Killing Breeze",
-   "hash": 2071562748,
-   "type": "Armor Mod Seasonal"
-  },
-  "2071562749": {
-   "name": "Enhanced Ether Generator",
-   "hash": 2071562749,
-   "type": "Armor Mod Seasonal"
-  },
-  "2071562751": {
-   "name": "One with Frost",
-   "hash": 2071562751,
-   "type": "Armor Mod Seasonal"
-  },
   "2073244114": {
    "name": "Lone Wolf",
    "hash": 2073244114,
    "type": "Weapon Trait Enhanced"
+  },
+  "2073750249": {
+   "name": "Light Battery",
+   "hash": 2073750249,
+   "type": "Weapon Perk"
   },
   "2074494595": {
    "name": "Will of Light (Stasis)",
@@ -6169,6 +7087,11 @@
    "name": "Polymer Grip",
    "hash": 2078097559,
    "type": "Weapon Perk"
+  },
+  "2078520142": {
+   "name": "Crystalline Corpsebloom",
+   "hash": 2078520142,
+   "type": "Weapon Trait Enhanced"
   },
   "2085058762": {
    "name": "D.A.R.C.I. Catalyst",
@@ -6206,6 +7129,11 @@
    "itemHash": 1763584999,
    "type": "Weapon Catalyst Exotic"
   },
+  "2094823172": {
+   "name": "Bulwark Armorer",
+   "hash": 2094823172,
+   "type": "Ghost Mod"
+  },
   "2094939076": {
    "name": "Charged with Blight",
    "hash": 2094939076,
@@ -6219,7 +7147,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "2100231191": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 2100231191,
    "type": "Weapon Frame Enhanced"
   },
@@ -6238,6 +7166,11 @@
    "hash": 2108556049,
    "type": "Weapon Frame"
   },
+  "2108812838": {
+   "name": "High-Velocity Rounds",
+   "hash": 2108812838,
+   "type": "Weapon Perk"
+  },
   "2109543898": {
    "name": "Desperate Measures",
    "hash": 2109543898,
@@ -6252,7 +7185,7 @@
    "name": "Vanishing Shadow",
    "hash": 2119325971,
    "itemName": "Graviton Forfeit",
-   "itemHash": 2773056939,
+   "itemHash": 407148246,
    "type": "Armor Trait Exotic"
   },
   "2120661319": {
@@ -6266,6 +7199,16 @@
    "itemName": "Rat King",
    "itemHash": 2362471601,
    "type": "Weapon Frame Exotic"
+  },
+  "2125798995": {
+   "name": "+Health / -Weapons",
+   "hash": 2125798995,
+   "type": "Armor Mod General"
+  },
+  "2126519017": {
+   "name": "Enhanced Heatsink",
+   "hash": 2126519017,
+   "type": "Weapon Perk"
   },
   "2130042297": {
    "name": "Taken Predator",
@@ -6281,10 +7224,20 @@
    "itemHash": 4129629253,
    "type": "Weapon Trait Exotic"
   },
+  "2136073194": {
+   "name": "Spring-Auger Bolts",
+   "hash": 2136073194,
+   "type": "Weapon Perk"
+  },
   "2136310244": {
    "name": "Ashes to Assets",
    "hash": 2136310244,
    "type": "Armor Mod General"
+  },
+  "2138673996": {
+   "name": "Ancillary Ordinance",
+   "hash": 2138673996,
+   "type": "Weapon Trait Enhanced"
   },
   "2139363611": {
    "name": "Well-Rounded",
@@ -6315,9 +7268,19 @@
    "itemHash": 1594120904,
    "type": "Weapon Catalyst Exotic"
   },
+  "2152442764": {
+   "name": "Nail, Meet Hammer",
+   "hash": 2152442764,
+   "type": "Weapon Trait Origin"
+  },
   "2154191829": {
    "name": "Carbon Arrow Shaft",
    "hash": 2154191829,
+   "type": "Weapon Perk"
+  },
+  "2154730217": {
+   "name": "Ballistic Tuning",
+   "hash": 2154730217,
    "type": "Weapon Perk"
   },
   "2155015844": {
@@ -6339,6 +7302,11 @@
    "name": "Rapid-Fire Frame",
    "hash": 2164888232,
    "type": "Weapon Frame Enhanced"
+  },
+  "2167115920": {
+   "name": "Balanced Heat Weapon",
+   "hash": 2167115920,
+   "type": "Weapon Frame"
   },
   "2167611941": {
    "name": "Reverberation",
@@ -6362,6 +7330,11 @@
    "itemHash": 3118061005,
    "type": "Weapon Trait Exotic"
   },
+  "2172195298": {
+   "name": "Armor-Piercing Rounds",
+   "hash": 2172195298,
+   "type": "Weapon Perk"
+  },
   "2172504645": {
    "name": "Sleight of Hand",
    "hash": 2172504645,
@@ -6371,6 +7344,13 @@
    "name": "Voltshot",
    "hash": 2173046394,
    "type": "Weapon Trait"
+  },
+  "2174503023": {
+   "name": "Arc Alignment",
+   "hash": 2174503023,
+   "itemName": "Lodestar",
+   "itemHash": 3725585710,
+   "type": "Weapon Trait Exotic"
   },
   "2175577211": {
    "name": "Powerful Friends",
@@ -6386,7 +7366,7 @@
    "name": "Roast 'Em",
    "hash": 2179827240,
    "itemName": "Caliban's Hand",
-   "itemHash": 3453042252,
+   "itemHash": 327385975,
    "type": "Armor Trait Exotic"
   },
   "2179914730": {
@@ -6395,6 +7375,11 @@
    "itemName": "The Lament",
    "itemHash": 3487253372,
    "type": "Weapon Frame Exotic"
+  },
+  "2181638943": {
+   "name": "Heavy Bolts",
+   "hash": 2181638943,
+   "type": "Weapon Perk"
   },
   "2186532310": {
    "name": "Poison Arrows",
@@ -6412,15 +7397,40 @@
    "name": "Roving Assassin",
    "hash": 2192678014,
    "itemName": "Gwisin Vest",
-   "itemHash": 1474735276,
+   "itemHash": 1168370783,
    "type": "Armor Trait Exotic"
   },
   "2192678015": {
    "name": "Double Dodge",
    "hash": 2192678015,
    "itemName": "The Sixth Coyote",
-   "itemHash": 1474735277,
+   "itemHash": 1168370782,
    "type": "Armor Trait Exotic"
+  },
+  "2193118393": {
+   "name": "Longview SLR10",
+   "hash": 2193118393,
+   "type": "Weapon Perk"
+  },
+  "2193118396": {
+   "name": "Ambush SLH25",
+   "hash": 2193118396,
+   "type": "Weapon Perk"
+  },
+  "2193118397": {
+   "name": "EagleEye SLR20",
+   "hash": 2193118397,
+   "type": "Weapon Perk"
+  },
+  "2193118398": {
+   "name": "Shortgaze SLH10",
+   "hash": 2193118398,
+   "type": "Weapon Perk"
+  },
+  "2193118399": {
+   "name": "Longview SLR20",
+   "hash": 2193118399,
+   "type": "Weapon Perk"
   },
   "2194294579": {
    "name": "Better Already",
@@ -6455,14 +7465,14 @@
    "name": "Crystalline Transistor",
    "hash": 2204713148,
    "itemName": "Chromatic Fire",
-   "itemHash": 4057299718,
+   "itemHash": 3545094011,
    "type": "Armor Trait Exotic"
   },
   "2204713149": {
    "name": "Battle-Hearth",
    "hash": 2204713149,
    "itemName": "Phoenix Protocol",
-   "itemHash": 4057299719,
+   "itemHash": 3545094010,
    "type": "Armor Trait Exotic"
   },
   "2206869417": {
@@ -6522,6 +7532,11 @@
    "hash": 2216471363,
    "type": "Weapon Trait Enhanced"
   },
+  "2216535938": {
+   "name": "Butterfly",
+   "hash": 2216535938,
+   "type": "Weapon Trait Enhanced"
+  },
   "2216698406": {
    "name": "Solar Grenade",
    "hash": 2216698406,
@@ -6531,6 +7546,18 @@
    "name": "Shot Swap",
    "hash": 2217963031,
    "type": "Weapon Trait Enhanced"
+  },
+  "2223032959": {
+   "name": "Ruinscribe's Beacon",
+   "hash": 2223032959,
+   "itemName": "Finality's Auger",
+   "itemHash": 331231237,
+   "type": "Weapon Trait Exotic"
+  },
+  "2223800157": {
+   "name": "Problem Solver",
+   "hash": 2223800157,
+   "type": "Weapon Perk"
   },
   "2223914385": {
    "name": "Thunderer",
@@ -6566,17 +7593,17 @@
    "itemHash": 4174431791,
    "type": "Weapon Frame Exotic"
   },
-  "2231409668": {
-   "name": "Mobility Armorer",
-   "hash": 2231409668,
-   "type": "Ghost Mod"
-  },
   "2234507197": {
    "name": "Collective Obligation Catalyst",
    "hash": 2234507197,
    "itemName": "Collective Obligation",
    "itemHash": 3505113722,
    "type": "Weapon Catalyst Exotic"
+  },
+  "2235383762": {
+   "name": "Support Frame",
+   "hash": 2235383762,
+   "type": "Weapon Frame"
   },
   "2237975061": {
    "name": "Kinetic Loader",
@@ -6594,6 +7621,11 @@
    "name": "Close to Melee",
    "hash": 2241043034,
    "type": "Weapon Trait Enhanced"
+  },
+  "2244422610": {
+   "name": "+Super / -Weapons",
+   "hash": 2244422610,
+   "type": "Armor Mod General"
   },
   "2244851822": {
    "name": "Flash Counter",
@@ -6624,6 +7656,11 @@
    "name": "Strand Scavenger",
    "hash": 2257238439,
    "type": "Armor Mod General"
+  },
+  "2261115701": {
+   "name": "Gunner Armorer",
+   "hash": 2261115701,
+   "type": "Ghost Mod"
   },
   "2261491232": {
    "name": "Pyrotoxin Rounds",
@@ -6729,6 +7766,11 @@
    "hash": 2275087323,
    "type": "Weapon Trait Enhanced"
   },
+  "2276384431": {
+   "name": "Tactile String",
+   "hash": 2276384431,
+   "type": "Weapon Perk"
+  },
   "2282937672": {
    "name": "Bipod",
    "hash": 2282937672,
@@ -6750,6 +7792,11 @@
    "itemName": "Wish-Ender",
    "itemHash": 814876684,
    "type": "Weapon Trait Exotic"
+  },
+  "2289534249": {
+   "name": "Bewildering Burst",
+   "hash": 2289534249,
+   "type": "Weapon Trait"
   },
   "2292872001": {
    "name": "Microcosm Catalyst",
@@ -6774,7 +7821,7 @@
    "type": "Subclass Melee"
   },
   "2303417969": {
-   "name": "Strand Reserves",
+   "name": "Strand Ammo Generation",
    "hash": 2303417969,
    "type": "Armor Mod General"
   },
@@ -6784,7 +7831,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "2305736470": {
-   "name": "Kinetic Reserves",
+   "name": "Kinetic Ammo Generation",
    "hash": 2305736470,
    "type": "Armor Mod General"
   },
@@ -6811,31 +7858,6 @@
    "name": "Field Prep",
    "hash": 2308090567,
    "type": "Weapon Trait Enhanced"
-  },
-  "2311625536": {
-   "name": "Supernova",
-   "hash": 2311625536,
-   "type": "Armor Mod Seasonal"
-  },
-  "2311625537": {
-   "name": "Shock and Awe",
-   "hash": 2311625537,
-   "type": "Armor Mod Seasonal"
-  },
-  "2311625538": {
-   "name": "Conductive Cosmic Needle",
-   "hash": 2311625538,
-   "type": "Armor Mod Seasonal"
-  },
-  "2311625542": {
-   "name": "Lightning Strikes Twice",
-   "hash": 2311625542,
-   "type": "Armor Mod Seasonal"
-  },
-  "2311625543": {
-   "name": "Squad Goals",
-   "hash": 2311625543,
-   "type": "Armor Mod Seasonal"
   },
   "2316126473": {
    "name": "High Priority",
@@ -6879,12 +7901,29 @@
    "hash": 2325151798,
    "type": "Armor Mod General"
   },
+  "2331097520": {
+   "name": "Dynamic Heat Weapon",
+   "hash": 2331097520,
+   "type": "Weapon Frame"
+  },
   "2333607307": {
    "name": "Impetus",
    "hash": 2333607307,
    "itemName": "Merciless",
    "itemHash": 4190156464,
    "type": "Weapon Trait Exotic"
+  },
+  "2338887882": {
+   "name": "Balanced Guard",
+   "hash": 2338887882,
+   "type": "Weapon Perk"
+  },
+  "2341747657": {
+   "name": "Kismet",
+   "hash": 2341747657,
+   "itemName": "Fortune's Favor",
+   "itemHash": 4010324161,
+   "type": "Armor Trait Exotic"
   },
   "2349202967": {
    "name": "Heavy Guard",
@@ -6900,7 +7939,7 @@
    "name": "Solar Rampart",
    "hash": 2355041704,
    "itemName": "Khepri's Horn",
-   "itemHash": 2384488862,
+   "itemHash": 858758105,
    "type": "Armor Trait Exotic"
   },
   "2359854504": {
@@ -6909,6 +7948,11 @@
    "itemName": "Salvation's Grip",
    "itemHash": 370712896,
    "type": "Weapon Catalyst Exotic"
+  },
+  "2360347339": {
+   "name": "Impromptu Ammunition",
+   "hash": 2360347339,
+   "type": "Weapon Trait"
   },
   "2360754333": {
    "name": "Trench Barrel",
@@ -6927,6 +7971,11 @@
    "hash": 2363751990,
    "type": "Weapon Perk"
   },
+  "2364577709": {
+   "name": "Lightweight Emitter",
+   "hash": 2364577709,
+   "type": "Weapon Perk"
+  },
   "2368990400": {
    "name": "Whisper of Reversal",
    "hash": 2368990400,
@@ -6936,6 +7985,11 @@
    "name": "Whisper of Chill",
    "hash": 2368990401,
    "type": "Subclass Fragment"
+  },
+  "2371713880": {
+   "name": "Barrel Shroud",
+   "hash": 2371713880,
+   "type": "Weapon Perk"
   },
   "2379536009": {
    "name": "Remote Shield",
@@ -6950,6 +8004,11 @@
    "itemName": "Crimson",
    "itemHash": 3437746471,
    "type": "Weapon Trait Exotic"
+  },
+  "2385083333": {
+   "name": "Mag-lev Rail",
+   "hash": 2385083333,
+   "type": "Weapon Perk"
   },
   "2387244414": {
    "name": "Zen Moment",
@@ -6972,6 +8031,11 @@
    "name": "Chain Reaction",
    "hash": 2396489472,
    "type": "Weapon Trait"
+  },
+  "2398680997": {
+   "name": "Empowered Rail",
+   "hash": 2398680997,
+   "type": "Weapon Perk"
   },
   "2399646028": {
    "name": "Leviathan's Sigh",
@@ -7013,7 +8077,7 @@
    "type": "Weapon Perk"
   },
   "2407398462": {
-   "name": "Kinetic Reserves",
+   "name": "Kinetic Ammo Generation",
    "hash": 2407398462,
    "type": "Armor Mod General"
   },
@@ -7028,6 +8092,11 @@
    "name": "Precision Frame",
    "hash": 2409208302,
    "type": "Weapon Frame Enhanced"
+  },
+  "2410284308": {
+   "name": "TrueSight IS",
+   "hash": 2410284308,
+   "type": "Weapon Perk"
   },
   "2410284310": {
    "name": "Fastdraw IS",
@@ -7045,7 +8114,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "2413278875": {
-   "name": "Void Reserves",
+   "name": "Void Ammo Generation",
    "hash": 2413278875,
    "type": "Armor Mod General"
   },
@@ -7080,7 +8149,7 @@
    "type": "Weapon Perk"
   },
   "2420924065": {
-   "name": "Special Ammo Finder Enhancement",
+   "name": "Bandolier",
    "hash": 2420924065,
    "type": "Weapon Mod"
   },
@@ -7098,6 +8167,11 @@
    "name": "Pinpoint Slug Frame",
    "hash": 2426674025,
    "type": "Weapon Frame Enhanced"
+  },
+  "2427219599": {
+   "name": "Spread Shot",
+   "hash": 2427219599,
+   "type": "Weapon Frame"
   },
   "2428997981": {
    "name": "Permeability",
@@ -7147,6 +8221,13 @@
    "name": "Fragile Focus",
    "hash": 2451262963,
    "type": "Weapon Trait"
+  },
+  "2451540357": {
+   "name": "Amalgamation Rounds",
+   "hash": 2451540357,
+   "itemName": "Third Iteration",
+   "itemHash": 2973900274,
+   "type": "Weapon Trait Exotic"
   },
   "2452545487": {
    "name": "Void Holster",
@@ -7222,6 +8303,11 @@
    "hash": 2479787361,
    "type": "Weapon Frame Enhanced"
   },
+  "2479815754": {
+   "name": "Brawler Armorer",
+   "hash": 2479815754,
+   "type": "Ghost Mod"
+  },
   "2481624867": {
    "name": "Storm Grenade",
    "hash": 2481624867,
@@ -7276,6 +8362,27 @@
    "itemHash": 1201830623,
    "type": "Weapon Frame Exotic"
   },
+  "2493618392": {
+   "name": "Resurgence Directive III",
+   "hash": 2493618392,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
+  "2493618393": {
+   "name": "Resurgence Directive II",
+   "hash": 2493618393,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
+  "2493618399": {
+   "name": "Resurgence Directive IV",
+   "hash": 2493618399,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "2495011826": {
    "name": "Ensemble",
    "hash": 2495011826,
@@ -7290,6 +8397,13 @@
    "name": "Rally Barricade",
    "hash": 2495523341,
    "type": "Subclass Class"
+  },
+  "2496039278": {
+   "name": "Big Game Hunter",
+   "hash": 2496039278,
+   "itemName": "Heirloom",
+   "itemHash": 1685137410,
+   "type": "Weapon Trait Exotic"
   },
   "2500502982": {
    "name": "Firewalker",
@@ -7320,8 +8434,13 @@
    "hash": 2518716062,
    "type": "Weapon Frame"
   },
+  "2523856971": {
+   "name": "Explosive Bolts",
+   "hash": 2523856971,
+   "type": "Weapon Perk"
+  },
   "2526773280": {
-   "name": "Solar Reserves",
+   "name": "Solar Ammo Generation",
    "hash": 2526773280,
    "type": "Armor Mod General"
   },
@@ -7346,6 +8465,11 @@
    "name": "Blunt Execution Rounds",
    "hash": 2529412083,
    "type": "Weapon Trait Enhanced"
+  },
+  "2532323436": {
+   "name": "Minor Health Mod",
+   "hash": 2532323436,
+   "type": "Armor Mod General"
   },
   "2538516770": {
    "name": "Tessellation Catalyst",
@@ -7375,6 +8499,11 @@
    "name": "Box Breathing",
    "hash": 2551157718,
    "type": "Weapon Trait"
+  },
+  "2552577806": {
+   "name": "Serrated Bolts",
+   "hash": 2552577806,
+   "type": "Weapon Perk"
   },
   "2552875793": {
    "name": "Aggressive Frame",
@@ -7414,6 +8543,13 @@
    "name": "Head Rush",
    "hash": 2565067140,
    "type": "Weapon Trait Origin"
+  },
+  "2565885237": {
+   "name": "Nightsworn Sight",
+   "hash": 2565885237,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
   },
   "2570477205": {
    "name": "Multikill Clip",
@@ -7468,6 +8604,11 @@
    "hash": 2581086849,
    "type": "Subclass Grenade"
   },
+  "2581144697": {
+   "name": "Sharp Harvest",
+   "hash": 2581144697,
+   "type": "Weapon Trait Enhanced"
+  },
   "2585427437": {
    "name": "Traitor's Vessel",
    "hash": 2585427437,
@@ -7490,6 +8631,11 @@
    "hash": 2589105944,
    "type": "Armor Mod Activity"
   },
+  "2589407652": {
+   "name": "Timelost Magazine",
+   "hash": 2589407652,
+   "type": "Weapon Trait Origin"
+  },
   "2590710093": {
    "name": "Tireless Blade",
    "hash": 2590710093,
@@ -7504,6 +8650,18 @@
    "name": "Special Ammo Finder",
    "hash": 2595839237,
    "type": "Armor Mod General"
+  },
+  "2597494435": {
+   "name": "Frame of Reference",
+   "hash": 2597494435,
+   "type": "Weapon Trait Origin"
+  },
+  "2607392828": {
+   "name": "Heart Piercer",
+   "hash": 2607392828,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Trait Exotic"
   },
   "2608508147": {
    "name": "Heavy Slug Thrower",
@@ -7531,7 +8689,7 @@
    "name": "Absorption Cells",
    "hash": 2618534366,
    "itemName": "Mantle of Battle Harmony",
-   "itemHash": 3301944824,
+   "itemHash": 2732820041,
    "type": "Armor Trait Exotic"
   },
   "2620589274": {
@@ -7619,6 +8777,11 @@
    "hash": 2628485818,
    "type": "Subclass Movement"
   },
+  "2633604463": {
+   "name": "Rolling Storm",
+   "hash": 2633604463,
+   "type": "Weapon Trait Enhanced"
+  },
   "2634786903": {
    "name": "Void Holster",
    "hash": 2634786903,
@@ -7640,8 +8803,13 @@
    "name": "The Whispers",
    "hash": 2637025676,
    "itemName": "Claws of Ahamkara",
-   "itemHash": 3288917178,
+   "itemHash": 171695625,
    "type": "Armor Trait Exotic"
+  },
+  "2639422088": {
+   "name": "Minor Melee Mod",
+   "hash": 2639422088,
+   "type": "Armor Mod General"
   },
   "2641107734": {
    "name": "Unrepentant",
@@ -7772,7 +8940,7 @@
    "name": "Relentless Tracker",
    "hash": 2663272109,
    "itemName": "Foetracer",
-   "itemHash": 896224899,
+   "itemHash": 671504994,
    "type": "Armor Trait Exotic"
   },
   "2663272110": {
@@ -7793,6 +8961,11 @@
    "name": "MIDA Synergy",
    "hash": 2670025099,
    "type": "Weapon Frame Enhanced"
+  },
+  "2671305723": {
+   "name": "Accelerated Assault",
+   "hash": 2671305723,
+   "type": "Weapon Trait Origin"
   },
   "2674202880": {
    "name": "Worldline Catalyst",
@@ -7833,10 +9006,20 @@
    "itemHash": 3659414143,
    "type": "Weapon Catalyst Exotic"
   },
+  "2691822036": {
+   "name": "Contending Cascade",
+   "hash": 2691822036,
+   "type": "Weapon Perk"
+  },
   "2696719570": {
    "name": "Adaptive Glaive",
    "hash": 2696719570,
    "type": "Weapon Frame Enhanced"
+  },
+  "2697390518": {
+   "name": "Accelerated Assault",
+   "hash": 2697390518,
+   "type": "Weapon Trait Origin"
   },
   "2708585276": {
    "name": "Ballistic Slam",
@@ -7900,6 +9083,11 @@
    "hash": 2719698929,
    "type": "Armor Mod General"
   },
+  "2719770986": {
+   "name": "Auxiliary Reserves",
+   "hash": 2719770986,
+   "type": "Weapon Perk"
+  },
   "2720533289": {
    "name": "Magnificent Howl",
    "hash": 2720533289,
@@ -7933,6 +9121,11 @@
   "2724068510": {
    "name": "Arc Siphon",
    "hash": 2724068510,
+   "type": "Armor Mod General"
+  },
+  "2724608735": {
+   "name": "Super Mod",
+   "hash": 2724608735,
    "type": "Armor Mod General"
   },
   "2724693746": {
@@ -7973,21 +9166,21 @@
    "name": "Warlord's Sigil",
    "hash": 2731901709,
    "itemName": "Winter's Guile",
-   "itemHash": 3844826443,
+   "itemHash": 900910756,
    "type": "Armor Trait Exotic"
   },
   "2731901710": {
    "name": "Vampire's Caress",
    "hash": 2731901710,
    "itemName": "Karnstein Armlets",
-   "itemHash": 3844826440,
+   "itemHash": 900910759,
    "type": "Armor Trait Exotic"
   },
   "2731901711": {
    "name": "Helium Spirals",
    "hash": 2731901711,
    "itemName": "Sunbracers",
-   "itemHash": 3787517196,
+   "itemHash": 950745251,
    "type": "Armor Trait Exotic"
   },
   "2732252706": {
@@ -7996,6 +9189,11 @@
    "itemName": "Devil's Ruin",
    "itemHash": 3824106094,
    "type": "Weapon Catalyst Exotic"
+  },
+  "2732340361": {
+   "name": "Compact Arrow Shaft",
+   "hash": 2732340361,
+   "type": "Weapon Perk"
   },
   "2732540911": {
    "name": "Heavy Burst",
@@ -8009,6 +9207,11 @@
    "itemHash": 1891561814,
    "type": "Weapon Catalyst Exotic"
   },
+  "2732913576": {
+   "name": "Red Dot-OAS",
+   "hash": 2732913576,
+   "type": "Weapon Perk"
+  },
   "2732913578": {
    "name": "Red Dot-ORS",
    "hash": 2732913578,
@@ -8018,6 +9221,11 @@
    "name": "Red Dot-ORS1",
    "hash": 2732913579,
    "type": "Weapon Perk"
+  },
+  "2732952950": {
+   "name": "Balanced Heat Weapon",
+   "hash": 2732952950,
+   "type": "Weapon Frame"
   },
   "2733010662": {
    "name": "Kinetic Charge Siphon",
@@ -8045,6 +9253,31 @@
    "itemName": "Skyburner's Oath",
    "itemHash": 4255268456,
    "type": "Weapon Frame Exotic"
+  },
+  "2742146816": {
+   "name": "Sword Storm Combo",
+   "hash": 2742146816,
+   "type": "Armor Mod Seasonal"
+  },
+  "2742146817": {
+   "name": "Void Infestation",
+   "hash": 2742146817,
+   "type": "Armor Mod Seasonal"
+  },
+  "2742146821": {
+   "name": "Elemental Orbs: Arc",
+   "hash": 2742146821,
+   "type": "Armor Mod Seasonal"
+  },
+  "2742146822": {
+   "name": "Kinetic Rupture",
+   "hash": 2742146822,
+   "type": "Armor Mod Seasonal"
+  },
+  "2742146823": {
+   "name": "Sniper's Meditation",
+   "hash": 2742146823,
+   "type": "Armor Mod Seasonal"
   },
   "2743098132": {
    "name": "Precision Frame",
@@ -8117,7 +9350,7 @@
    "type": "Weapon Frame Exotic"
   },
   "2771425787": {
-   "name": "Font of Vigor",
+   "name": "Melee Font",
    "hash": 2771425787,
    "type": "Armor Mod General"
   },
@@ -8125,6 +9358,11 @@
    "name": "Void Siphon",
    "hash": 2773358872,
    "type": "Armor Mod General"
+  },
+  "2777563320": {
+   "name": "Liquid Coils",
+   "hash": 2777563320,
+   "type": "Weapon Perk"
   },
   "2778559527": {
    "name": "Locked Armor Mod",
@@ -8145,6 +9383,11 @@
    "name": "Killing Tally",
    "hash": 2782457288,
    "type": "Weapon Trait"
+  },
+  "2783367502": {
+   "name": "Charged Bolts",
+   "hash": 2783367502,
+   "type": "Weapon Perk"
   },
   "2785334058": {
    "name": "Eddy Current",
@@ -8204,11 +9447,16 @@
    "itemHash": 2910326942,
    "type": "Weapon Trait Exotic"
   },
+  "2800182654": {
+   "name": "Projection Fuse",
+   "hash": 2800182654,
+   "type": "Weapon Perk"
+  },
   "2800865663": {
    "name": "Swarmers",
    "hash": 2800865663,
    "itemName": "Swarmers",
-   "itemHash": 2463947681,
+   "itemHash": 2100136540,
    "type": "Armor Trait Exotic"
   },
   "2801223209": {
@@ -8265,6 +9513,11 @@
    "hash": 2812559045,
    "type": "Armor Mod General"
   },
+  "2813913866": {
+   "name": "Demoralize",
+   "hash": 2813913866,
+   "type": "Weapon Trait Enhanced"
+  },
   "2814973067": {
    "name": "Markov Chain",
    "hash": 2814973067,
@@ -8299,6 +9552,11 @@
    "hash": 2817499044,
    "type": "Weapon Trait Enhanced"
   },
+  "2817677128": {
+   "name": "Melee Momentum",
+   "hash": 2817677128,
+   "type": "Weapon Trait Enhanced"
+  },
   "2818140350": {
    "name": "Dynamic Duo",
    "hash": 2818140350,
@@ -8322,6 +9580,13 @@
    "name": "Together Forever",
    "hash": 2826720951,
    "type": "Weapon Frame Enhanced"
+  },
+  "2826938963": {
+   "name": "Consul's Pitch",
+   "hash": 2826938963,
+   "itemName": "Eunoia",
+   "itemHash": 3481695565,
+   "type": "Armor Trait Exotic"
   },
   "2827049491": {
    "name": "Honed Edge",
@@ -8397,10 +9662,22 @@
    "hash": 2859541905,
    "type": "Armor Mod Activity"
   },
+  "2860123632": {
+   "name": "Smallbore",
+   "hash": 2860123632,
+   "type": "Weapon Perk"
+  },
   "2860991074": {
    "name": "Flash Counter",
    "hash": 2860991074,
    "type": "Weapon Trait Enhanced"
+  },
+  "2861049498": {
+   "name": "New Land Beyond Catalyst",
+   "hash": 2861049498,
+   "itemName": "New Land Beyond",
+   "itemHash": 2581676735,
+   "type": "Weapon Catalyst Exotic"
   },
   "2866798147": {
    "name": "No Distractions",
@@ -8422,6 +9699,11 @@
    "hash": 2868073563,
    "type": "Subclass Class"
   },
+  "2868519241": {
+   "name": "Paragon Armorer",
+   "hash": 2868519241,
+   "type": "Ghost Mod"
+  },
   "2869569095": {
    "name": "Field Prep",
    "hash": 2869569095,
@@ -8430,6 +9712,11 @@
   "2870095399": {
    "name": "Thermoplastic Grenades",
    "hash": 2870095399,
+   "type": "Weapon Perk"
+  },
+  "2873651103": {
+   "name": "Search Party",
+   "hash": 2873651103,
    "type": "Weapon Perk"
   },
   "2874284214": {
@@ -8442,17 +9729,40 @@
    "hash": 2874957617,
    "type": "Armor Mod Activity"
   },
-  "2879513176": {
-   "name": "Strength Armorer",
-   "hash": 2879513176,
-   "type": "Ghost Mod"
-  },
   "2881100038": {
    "name": "Lagrangian Sight",
    "hash": 2881100038,
    "itemName": "Lorentz Driver",
    "itemHash": 3761898871,
    "type": "Weapon Frame Exotic"
+  },
+  "2883096192": {
+   "name": "Stats for All Refit",
+   "hash": 2883096192,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "2883096193": {
+   "name": "Cascade Point Refit",
+   "hash": 2883096193,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "2883096194": {
+   "name": "Repulsor Brace Refit",
+   "hash": 2883096194,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "2883096195": {
+   "name": "Loose Change Refit",
+   "hash": 2883096195,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Catalyst Exotic"
   },
   "2887845822": {
    "name": "Resistant Tether",
@@ -8481,11 +9791,16 @@
    "hash": 2889515627,
    "type": "Weapon Trait Enhanced"
   },
+  "2890807135": {
+   "name": "Burning Ambition",
+   "hash": 2890807135,
+   "type": "Weapon Trait"
+  },
   "2894608781": {
    "name": "Hearts of Ice",
    "hash": 2894608781,
    "itemName": "Ballidorse Wrathweavers",
-   "itemHash": 3831935023,
+   "itemHash": 2109877638,
    "type": "Armor Trait Exotic"
   },
   "2895039606": {
@@ -8541,6 +9856,31 @@
    "hash": 2899505723,
    "type": "Armor Mod General"
   },
+  "2903198434": {
+   "name": "Singularity Blade",
+   "hash": 2903198434,
+   "type": "Armor Mod Seasonal"
+  },
+  "2903198435": {
+   "name": "Combination Argent Blade",
+   "hash": 2903198435,
+   "type": "Armor Mod Seasonal"
+  },
+  "2903198436": {
+   "name": "Counter Energy",
+   "hash": 2903198436,
+   "type": "Armor Mod Seasonal"
+  },
+  "2903198437": {
+   "name": "Armorsmith",
+   "hash": 2903198437,
+   "type": "Armor Mod Seasonal"
+  },
+  "2903198438": {
+   "name": "Dielectric",
+   "hash": 2903198438,
+   "type": "Armor Mod Seasonal"
+  },
   "2904194311": {
    "name": "Withering Gaze",
    "hash": 2904194311,
@@ -8570,6 +9910,32 @@
    "hash": 2912509910,
    "type": "Weapon Frame Enhanced"
   },
+  "2913786532": {
+   "name": "Short-Action Stock",
+   "hash": 2913786532,
+   "type": "Weapon Perk"
+  },
+  "2919190144": {
+   "name": "Nightsworn Sight III",
+   "hash": 2919190144,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
+  },
+  "2919190145": {
+   "name": "Nightsworn Sight II",
+   "hash": 2919190145,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
+  },
+  "2919190151": {
+   "name": "Nightsworn Sight IV",
+   "hash": 2919190151,
+   "itemName": "Slayer's Fang",
+   "itemHash": 1047932517,
+   "type": "Weapon Frame Exotic"
+  },
   "2921090754": {
    "name": "Soul Devourer",
    "hash": 2921090754,
@@ -8581,6 +9947,11 @@
    "name": "Stasis Weapon Surge",
    "hash": 2921714558,
    "type": "Armor Mod General"
+  },
+  "2922950962": {
+   "name": "Crystalline Corpsebloom",
+   "hash": 2922950962,
+   "type": "Weapon Trait"
   },
   "2923251173": {
    "name": "Kill Clip",
@@ -8600,7 +9971,7 @@
    "type": "Weapon Frame Enhanced"
   },
   "2928496916": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 2928496916,
    "type": "Weapon Frame"
   },
@@ -8631,11 +10002,6 @@
    "itemHash": 1763584999,
    "type": "Weapon Frame Exotic"
   },
-  "2943618220": {
-   "name": "Resilience Armorer",
-   "hash": 2943618220,
-   "type": "Ghost Mod"
-  },
   "2946784966": {
    "name": "Tunnel Vision",
    "hash": 2946784966,
@@ -8652,6 +10018,21 @@
    "itemName": "Phoenix Cradle",
    "itemHash": 1537074069,
    "type": "Armor Trait Exotic"
+  },
+  "2953575380": {
+   "name": "Frictionless Rail",
+   "hash": 2953575380,
+   "type": "Weapon Perk"
+  },
+  "2955427634": {
+   "name": "Charged Bolts",
+   "hash": 2955427634,
+   "type": "Weapon Perk"
+  },
+  "2957461671": {
+   "name": "Imperial Allegiance",
+   "hash": 2957461671,
+   "type": "Weapon Perk"
   },
   "2959504464": {
    "name": "Unflinching Stasis Aim",
@@ -8732,7 +10113,7 @@
    "name": "Kintsugi",
    "hash": 2979726427,
    "itemName": "Precious Scars",
-   "itemHash": 3974038291,
+   "itemHash": 1978467312,
    "type": "Armor Trait Exotic"
   },
   "2980589453": {
@@ -8851,10 +10232,27 @@
    "hash": 3017780555,
    "type": "Weapon Trait"
   },
+  "3017854987": {
+   "name": "Grenadier Armorer",
+   "hash": 3017854987,
+   "type": "Ghost Mod"
+  },
   "3018146897": {
    "name": "Invisible Hand",
    "hash": 3018146897,
    "type": "Weapon Trait"
+  },
+  "3020052176": {
+   "name": "Webcatcher",
+   "hash": 3020052176,
+   "itemName": "Moirai",
+   "itemHash": 2647299044,
+   "type": "Armor Trait Exotic"
+  },
+  "3020906571": {
+   "name": "Supercooled Accelerator",
+   "hash": 3020906571,
+   "type": "Weapon Perk"
   },
   "3024601835": {
    "name": "Stunloader",
@@ -8925,6 +10323,11 @@
    "hash": 3047969693,
    "type": "Weapon Trait"
   },
+  "3048246338": {
+   "name": "Arrowhead Brake",
+   "hash": 3048246338,
+   "type": "Weapon Perk"
+  },
   "3048420653": {
    "name": "Lightweight Frame",
    "hash": 3048420653,
@@ -8954,6 +10357,11 @@
    "name": "Dynamic Sway Reduction",
    "hash": 3060983774,
    "type": "Weapon Trait Enhanced"
+  },
+  "3061646252": {
+   "name": "Sticky Grenades",
+   "hash": 3061646252,
+   "type": "Weapon Perk"
   },
   "3063320916": {
    "name": "Primeval's Torment",
@@ -8995,7 +10403,7 @@
    "type": "Weapon Catalyst Exotic"
   },
   "3075302157": {
-   "name": "Font of Endurance",
+   "name": "Health Font",
    "hash": 3075302157,
    "type": "Armor Mod General"
   },
@@ -9010,6 +10418,11 @@
    "itemName": "Borealis",
    "itemHash": 3141979347,
    "type": "Weapon Frame Exotic"
+  },
+  "3081681954": {
+   "name": "Particle Repeater",
+   "hash": 3081681954,
+   "type": "Weapon Perk"
   },
   "3081867624": {
    "name": "Master of Arms",
@@ -9036,13 +10449,18 @@
    "hash": 3096702027,
    "type": "Weapon Trait"
   },
+  "3097973565": {
+   "name": "Iron Grip",
+   "hash": 3097973565,
+   "type": "Weapon Trait Enhanced"
+  },
   "3099083217": {
    "name": "Heavy Burst",
    "hash": 3099083217,
    "type": "Weapon Frame"
   },
   "3100590152": {
-   "name": "MIDA Radar",
+   "name": "MIDA Software Package",
    "hash": 3100590152,
    "itemName": "MIDA Multi-Tool",
    "itemHash": 1331482397,
@@ -9089,36 +10507,6 @@
    "itemHash": 2603483885,
    "type": "Weapon Trait Exotic"
   },
-  "3117519993": {
-   "name": "Arc Compounding",
-   "hash": 3117519993,
-   "type": "Armor Mod Seasonal"
-  },
-  "3117519994": {
-   "name": "Kinetic Impacts",
-   "hash": 3117519994,
-   "type": "Armor Mod Seasonal"
-  },
-  "3117519995": {
-   "name": "Served Cold",
-   "hash": 3117519995,
-   "type": "Armor Mod Seasonal"
-  },
-  "3117519996": {
-   "name": "Conductive Cosmic Crystal",
-   "hash": 3117519996,
-   "type": "Armor Mod Seasonal"
-  },
-  "3117519997": {
-   "name": "Supernova",
-   "hash": 3117519997,
-   "type": "Armor Mod Seasonal"
-  },
-  "3117519998": {
-   "name": "Brain Freeze",
-   "hash": 3117519998,
-   "type": "Armor Mod Seasonal"
-  },
   "3118144663": {
    "name": "Hip-Fire Grip",
    "hash": 3118144663,
@@ -9129,10 +10517,25 @@
    "hash": 3120212825,
    "type": "Weapon Trait Enhanced"
   },
+  "3121760799": {
+   "name": "+Weapons / -Health",
+   "hash": 3121760799,
+   "type": "Armor Mod General"
+  },
+  "3122197216": {
+   "name": "Balanced Tuning",
+   "hash": 3122197216,
+   "type": "Armor Mod General"
+  },
   "3124871000": {
    "name": "Outlaw",
    "hash": 3124871000,
    "type": "Weapon Trait"
+  },
+  "3128149872": {
+   "name": "Quickload Rail",
+   "hash": 3128149872,
+   "type": "Weapon Perk"
   },
   "3131590896": {
    "name": "Grenade Chaser",
@@ -9155,11 +10558,6 @@
    "name": "Accurized Rounds",
    "hash": 3142289711,
    "type": "Weapon Perk"
-  },
-  "3142708266": {
-   "name": "Prism Harvest",
-   "hash": 3142708266,
-   "type": "Ghost Mod"
   },
   "3142708267": {
    "name": "Core Harvest",
@@ -9212,6 +10610,11 @@
    "hash": 3151536503,
    "type": "Weapon Perk"
   },
+  "3156458303": {
+   "name": "Mini Frags",
+   "hash": 3156458303,
+   "type": "Weapon Perk"
+  },
   "3156882011": {
    "name": "Wavesplitter Catalyst",
    "hash": 3156882011,
@@ -9246,11 +10649,6 @@
    "itemHash": 1833195496,
    "type": "Weapon Frame Exotic"
   },
-  "3168818593": {
-   "name": "Modularity",
-   "hash": 3168818593,
-   "type": "Ghost Mod"
-  },
   "3172115769": {
    "name": "Protective Weave",
    "hash": 3172115769,
@@ -9270,13 +10668,38 @@
    "hash": 3174771856,
    "type": "Armor Mod General"
   },
+  "3176795729": {
+   "name": "Overpressured Munitions",
+   "hash": 3176795729,
+   "type": "Weapon Mod"
+  },
+  "3176795732": {
+   "name": "Stay in the Fight",
+   "hash": 3176795732,
+   "type": "Weapon Mod"
+  },
+  "3176795733": {
+   "name": "Kill Shot",
+   "hash": 3176795733,
+   "type": "Weapon Mod"
+  },
+  "3176795734": {
+   "name": "Calm Amidst Chaos",
+   "hash": 3176795734,
+   "type": "Weapon Mod"
+  },
+  "3176795735": {
+   "name": "Opening Salvo",
+   "hash": 3176795735,
+   "type": "Weapon Mod"
+  },
   "3177308360": {
    "name": "Steady Rounds",
    "hash": 3177308360,
    "type": "Weapon Perk"
   },
   "3178379945": {
-   "name": "Rocket-Assisted Frame",
+   "name": "Micro-Missile Frame",
    "hash": 3178379945,
    "type": "Weapon Frame Enhanced"
   },
@@ -9313,6 +10736,11 @@
    "itemName": "Dead Messenger",
    "itemHash": 46125926,
    "type": "Weapon Catalyst Exotic"
+  },
+  "3192447905": {
+   "name": "Aggregate Charge",
+   "hash": 3192447905,
+   "type": "Weapon Trait Enhanced"
   },
   "3192552688": {
    "name": "Thread of Binding",
@@ -9371,9 +10799,19 @@
    "itemHash": 1541131350,
    "type": "Weapon Frame Exotic"
   },
+  "3210123846": {
+   "name": "Tactical Heatsink",
+   "hash": 3210123846,
+   "type": "Weapon Perk"
+  },
   "3215448563": {
    "name": "Paracausal Affinity",
    "hash": 3215448563,
+   "type": "Weapon Trait"
+  },
+  "3218042543": {
+   "name": "Rolling Storm",
+   "hash": 3218042543,
    "type": "Weapon Trait"
   },
   "3224649746": {
@@ -9406,6 +10844,27 @@
    "hash": 3232422679,
    "type": "Subclass Grenade"
   },
+  "3235313314": {
+   "name": "Temporal Manipulation II",
+   "hash": 3235313314,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Perk Exotic"
+  },
+  "3235313315": {
+   "name": "Temporal Manipulation III",
+   "hash": 3235313315,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Perk Exotic"
+  },
+  "3235313316": {
+   "name": "Temporal Manipulation IV",
+   "hash": 3235313316,
+   "itemName": "Graviton Spike",
+   "itemHash": 648595258,
+   "type": "Weapon Perk Exotic"
+  },
   "3239299468": {
    "name": "Sacred Flame",
    "hash": 3239299468,
@@ -9417,14 +10876,14 @@
    "name": "Jump Jets",
    "hash": 3241194940,
    "itemName": "Lion Rampant",
-   "itemHash": 3539357318,
+   "itemHash": 53126581,
    "type": "Armor Trait Exotic"
   },
   "3241194941": {
    "name": "Mecha Holster",
    "hash": 3241194941,
    "itemName": "Peacekeepers",
-   "itemHash": 3539357319,
+   "itemHash": 53126580,
    "type": "Armor Trait Exotic"
   },
   "3241194942": {
@@ -9438,6 +10897,11 @@
    "name": "Parasitism",
    "hash": 3242533954,
    "type": "Weapon Trait Exotic"
+  },
+  "3244229373": {
+   "name": "Tear",
+   "hash": 3244229373,
+   "type": "Weapon Trait Enhanced"
   },
   "3245543337": {
    "name": "Bolstering Detonation",
@@ -9454,10 +10918,30 @@
    "hash": 3250034553,
    "type": "Weapon Perk"
   },
+  "3250572790": {
+   "name": "Quick Launch",
+   "hash": 3250572790,
+   "type": "Weapon Perk"
+  },
+  "3251326479": {
+   "name": "All-Star",
+   "hash": 3251326479,
+   "type": "Weapon Trait Enhanced"
+  },
   "3252839262": {
    "name": "Precision Frame",
    "hash": 3252839262,
    "type": "Weapon Frame Enhanced"
+  },
+  "3252937884": {
+   "name": "Adhesive Ordnance",
+   "hash": 3252937884,
+   "type": "Weapon Trait"
+  },
+  "3256371876": {
+   "name": "Tactical Battery",
+   "hash": 3256371876,
+   "type": "Weapon Perk"
   },
   "3260056808": {
    "name": "Towering Barricade",
@@ -9469,9 +10953,16 @@
    "hash": 3260056809,
    "type": "Subclass Class"
   },
+  "3267421167": {
+   "name": "Accurized Rounds",
+   "hash": 3267421167,
+   "type": "Weapon Perk"
+  },
   "3268255645": {
    "name": "Sect of Force",
    "hash": 3268255645,
+   "itemName": "Aeon Safe",
+   "itemHash": 796577360,
    "type": "Armor Trait Exotic"
   },
   "3272152575": {
@@ -9526,6 +11017,11 @@
    "hash": 3279257734,
    "type": "Armor Mod General"
   },
+  "3284443097": {
+   "name": "+Weapons / -Grenade",
+   "hash": 3284443097,
+   "type": "Armor Mod General"
+  },
   "3291427296": {
    "name": "Air Trigger",
    "hash": 3291427296,
@@ -9537,9 +11033,16 @@
    "type": "Weapon Frame Enhanced"
   },
   "3294892432": {
-   "name": "Stasis Reserves",
+   "name": "Stasis Ammo Generation",
    "hash": 3294892432,
    "type": "Armor Mod General"
+  },
+  "3295115440": {
+   "name": "Defensive Grip",
+   "hash": 3295115440,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Perk Exotic"
   },
   "3295796664": {
    "name": "Move to Survive",
@@ -9554,6 +11057,11 @@
    "itemName": "Ticuu's Divination",
    "itemHash": 3260753130,
    "type": "Weapon Trait Exotic"
+  },
+  "3299164941": {
+   "name": "Dawning Surprise",
+   "hash": 3299164941,
+   "type": "Weapon Perk"
   },
   "3299896859": {
    "name": "Paracausal Affinity",
@@ -9570,10 +11078,20 @@
    "hash": 3301904089,
    "type": "Weapon Perk"
   },
+  "3310526732": {
+   "name": "+Health / -Class",
+   "hash": 3310526732,
+   "type": "Armor Mod General"
+  },
   "3310993845": {
    "name": "CQC Optics: Low",
    "hash": 3310993845,
    "type": "Weapon Mod"
+  },
+  "3311319252": {
+   "name": "Full Choke",
+   "hash": 3311319252,
+   "type": "Weapon Perk"
   },
   "3311977193": {
    "name": "Helical Fletching",
@@ -9649,11 +11167,16 @@
    "hash": 3337692349,
    "type": "Weapon Trait Exotic"
   },
+  "3340021875": {
+   "name": "Specialist Armorer",
+   "hash": 3340021875,
+   "type": "Ghost Mod"
+  },
   "3347978672": {
    "name": "Alchemical Etchings",
    "hash": 3347978672,
    "itemName": "Lunafaction Boots",
-   "itemHash": 4136768282,
+   "itemHash": 418363297,
    "type": "Armor Trait Exotic"
   },
   "3347978673": {
@@ -9697,6 +11220,11 @@
    "itemHash": 400096939,
    "type": "Weapon Catalyst Exotic"
   },
+  "3355117577": {
+   "name": "Low-Impedance Windings",
+   "hash": 3355117577,
+   "type": "Weapon Perk"
+  },
   "3355499393": {
    "name": "Adaptive Frame",
    "hash": 3355499393,
@@ -9706,6 +11234,11 @@
    "name": "Precision Frame",
    "hash": 3356299403,
    "type": "Weapon Frame Enhanced"
+  },
+  "3358678417": {
+   "name": "Polymer Grip",
+   "hash": 3358678417,
+   "type": "Weapon Perk"
   },
   "3363267119": {
    "name": "Souldrinker",
@@ -9732,10 +11265,22 @@
    "hash": 3373736292,
    "type": "Weapon Perk"
   },
+  "3377448506": {
+   "name": "Tenacious Handle",
+   "hash": 3377448506,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
   "3377988521": {
    "name": "Lightweight Frame",
    "hash": 3377988521,
    "type": "Weapon Frame Enhanced"
+  },
+  "3399528164": {
+   "name": "Chambered Compensator",
+   "hash": 3399528164,
+   "type": "Weapon Perk"
   },
   "3399947696": {
    "name": "Precision Frame",
@@ -9806,6 +11351,11 @@
    "name": "Giving Hand",
    "hash": 3420505819,
    "type": "Armor Mod General"
+  },
+  "3422375969": {
+   "name": "Built to Blast",
+   "hash": 3422375969,
+   "type": "Weapon Trait Enhanced"
   },
   "3422796781": {
    "name": "Slice",
@@ -9878,13 +11428,18 @@
    "name": "Spheromatik Trigger",
    "hash": 3449001998,
    "itemName": "Severance Enclosure",
-   "itemHash": 2326396534,
+   "itemHash": 1429817243,
    "type": "Armor Trait Exotic"
   },
   "3449390870": {
    "name": "Adaptive Burst",
    "hash": 3449390870,
    "type": "Weapon Frame"
+  },
+  "3454102905": {
+   "name": "Problem Solver",
+   "hash": 3454102905,
+   "type": "Weapon Trait Origin"
   },
   "3456250548": {
    "name": "Stasis Resistance",
@@ -9910,6 +11465,13 @@
    "itemHash": 814876684,
    "type": "Weapon Catalyst Exotic"
   },
+  "3458099662": {
+   "name": "Forge Master",
+   "hash": 3458099662,
+   "itemName": "Melas Panoplia",
+   "itemHash": 2867399974,
+   "type": "Armor Trait Exotic"
+  },
   "3458160468": {
    "name": "Void/Stasis Dual Siphon",
    "hash": 3458160468,
@@ -9923,12 +11485,12 @@
    "type": "Weapon Catalyst Exotic"
   },
   "3461249873": {
-   "name": "Font of Wisdom",
+   "name": "Super Font",
    "hash": 3461249873,
    "type": "Armor Mod General"
   },
   "3462414552": {
-   "name": "Stasis Reserves",
+   "name": "Stasis Ammo Generation",
    "hash": 3462414552,
    "type": "Armor Mod General"
   },
@@ -9942,6 +11504,13 @@
    "hash": 3466057365,
    "itemName": "MIDA Multi-Tool",
    "itemHash": 1331482397,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3466807461": {
+   "name": "New Malpais Catalyst",
+   "hash": 3466807461,
+   "itemName": "New Malpais",
+   "itemHash": 1736135946,
    "type": "Weapon Catalyst Exotic"
   },
   "3467460423": {
@@ -9991,6 +11560,18 @@
    "itemHash": 19024058,
    "type": "Weapon Trait Exotic"
   },
+  "3471392239": {
+   "name": "Confined Launch",
+   "hash": 3471392239,
+   "type": "Weapon Perk"
+  },
+  "3471414563": {
+   "name": "Taken Divergence",
+   "hash": 3471414563,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Trait Exotic"
+  },
   "3472640090": {
    "name": "Lightweight Frame",
    "hash": 3472640090,
@@ -10015,8 +11596,13 @@
    "name": "Double Down",
    "hash": 3481195123,
    "itemName": "Balance of Power",
-   "itemHash": 3001449507,
+   "itemHash": 2340803152,
    "type": "Armor Trait Exotic"
+  },
+  "3488129416": {
+   "name": "Support Frame",
+   "hash": 3488129416,
+   "type": "Weapon Frame"
   },
   "3489809232": {
    "name": "Precision Frame",
@@ -10059,12 +11645,26 @@
    "itemHash": 1909305643,
    "type": "Armor Trait Exotic"
   },
+  "3496051160": {
+   "name": "Anticipation",
+   "hash": 3496051160,
+   "itemName": "Whirling Ovation",
+   "itemHash": 1202007252,
+   "type": "Weapon Trait Exotic"
+  },
   "3504197951": {
    "name": "Unforeseen Repercussions",
    "hash": 3504197951,
    "itemName": "One Thousand Voices",
    "itemHash": 2069224589,
    "type": "Weapon Trait Exotic"
+  },
+  "3505000148": {
+   "name": "Starlight Beam",
+   "hash": 3505000148,
+   "itemName": "Lodestar",
+   "itemHash": 3725585710,
+   "type": "Weapon Frame Exotic"
   },
   "3511092054": {
    "name": "Elemental Capacitor",
@@ -10080,6 +11680,13 @@
    "name": "Together Forever",
    "hash": 3513901081,
    "type": "Weapon Frame Enhanced"
+  },
+  "3514694513": {
+   "name": "Balanced Tang",
+   "hash": 3514694513,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Perk Exotic"
   },
   "3514869240": {
    "name": "Locked Armor Mod",
@@ -10166,6 +11773,11 @@
    "hash": 3540739611,
    "type": "Armor Mod Activity"
   },
+  "3550545621": {
+   "name": "Stunloader",
+   "hash": 3550545621,
+   "type": "Weapon Mod"
+  },
   "3551049142": {
    "name": "Gathering Light",
    "hash": 3551049142,
@@ -10187,11 +11799,28 @@
    "itemHash": 542203595,
    "type": "Weapon Frame Exotic"
   },
+  "3553394349": {
+   "name": "Rampager's Handle",
+   "hash": 3553394349,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Perk Exotic"
+  },
+  "3554800389": {
+   "name": "+Super / -Class",
+   "hash": 3554800389,
+   "type": "Armor Mod General"
+  },
+  "3555252274": {
+   "name": "Recycled Energy",
+   "hash": 3555252274,
+   "type": "Weapon Trait Enhanced"
+  },
   "3556461530": {
    "name": "Voltaic Mirror",
    "hash": 3556461530,
    "itemName": "Blight Ranger",
-   "itemHash": 1703551922,
+   "itemHash": 863908533,
    "type": "Armor Trait Exotic"
   },
   "3556949035": {
@@ -10231,6 +11860,11 @@
    "hash": 3570105787,
    "type": "Armor Mod Activity"
   },
+  "3572001649": {
+   "name": "High-Impact Longbow",
+   "hash": 3572001649,
+   "type": "Weapon Frame"
+  },
   "3573031954": {
    "name": "Kinetic Holster",
    "hash": 3573031954,
@@ -10250,6 +11884,16 @@
    "name": "Strand Holster",
    "hash": 3581696649,
    "type": "Armor Mod General"
+  },
+  "3581929919": {
+   "name": "Burning Ambition",
+   "hash": 3581929919,
+   "type": "Weapon Trait Enhanced"
+  },
+  "3590359704": {
+   "name": "Thermal Atomization",
+   "hash": 3590359704,
+   "type": "Weapon Trait Enhanced"
   },
   "3591914291": {
    "name": "Duality Catalyst",
@@ -10274,11 +11918,21 @@
    "type": "Armor Mod General"
   },
   "3602718766": {
-   "name": "Rocket Tracers",
+   "name": "Missile Tracers",
    "hash": 3602718766,
    "itemName": "Quicksilver Storm",
    "itemHash": 4293613902,
    "type": "Weapon Frame Exotic"
+  },
+  "3603807747": {
+   "name": "Explosive Bolts",
+   "hash": 3603807747,
+   "type": "Weapon Perk"
+  },
+  "3605260959": {
+   "name": "Black Powder",
+   "hash": 3605260959,
+   "type": "Weapon Perk"
   },
   "3609952942": {
    "name": "Iron Gaze",
@@ -10311,6 +11965,31 @@
    "itemHash": 3371017761,
    "type": "Weapon Catalyst Exotic"
   },
+  "3619040072": {
+   "name": "Impact, Shock, Gravity",
+   "hash": 3619040072,
+   "type": "Armor Mod Seasonal"
+  },
+  "3619040074": {
+   "name": "Expert Handling",
+   "hash": 3619040074,
+   "type": "Armor Mod Seasonal"
+  },
+  "3619040075": {
+   "name": "Gravitic-Voltaic Charge",
+   "hash": 3619040075,
+   "type": "Armor Mod Seasonal"
+  },
+  "3619040076": {
+   "name": "Elemental Siphon",
+   "hash": 3619040076,
+   "type": "Armor Mod Seasonal"
+  },
+  "3619040077": {
+   "name": "Fastest Draw",
+   "hash": 3619040077,
+   "type": "Armor Mod Seasonal"
+  },
   "3619207468": {
    "name": "Keep Away",
    "hash": 3619207468,
@@ -10319,6 +11998,11 @@
   "3625355092": {
    "name": "Burst Guard",
    "hash": 3625355092,
+   "type": "Weapon Perk"
+  },
+  "3629421851": {
+   "name": "Ionized Battery",
+   "hash": 3629421851,
    "type": "Weapon Perk"
   },
   "3630287380": {
@@ -10428,6 +12112,11 @@
    "hash": 3644045871,
    "type": "Subclass Melee"
   },
+  "3648644469": {
+   "name": "Augmented Drum",
+   "hash": 3648644469,
+   "type": "Weapon Perk"
+  },
   "3649430342": {
    "name": "Twintails",
    "hash": 3649430342,
@@ -10443,7 +12132,14 @@
   "3651607301": {
    "name": "Sect of Insight",
    "hash": 3651607301,
+   "itemName": "Aeon Safe",
+   "itemHash": 796577360,
    "type": "Armor Trait Exotic"
+  },
+  "3653484343": {
+   "name": "Heavy Guard",
+   "hash": 3653484343,
+   "type": "Weapon Perk"
   },
   "3657186535": {
    "name": "Focusing Strike",
@@ -10466,14 +12162,14 @@
    "name": "Transfusion Matrix",
    "hash": 3662465907,
    "itemName": "An Insurmountable Skullfort",
-   "itemHash": 3216110440,
+   "itemHash": 1407595207,
    "type": "Armor Trait Exotic"
   },
   "3663096260": {
    "name": "Skittering Stinger",
    "hash": 3663096260,
    "itemName": "Athrys's Embrace",
-   "itemHash": 2415768376,
+   "itemHash": 89619507,
    "type": "Armor Trait Exotic"
   },
   "3665558569": {
@@ -10520,15 +12216,27 @@
    "hash": 3678483220,
    "type": "Weapon Trait Enhanced"
   },
+  "3681082702": {
+   "name": "+Health / -Grenade",
+   "hash": 3681082702,
+   "type": "Armor Mod General"
+  },
   "3683811620": {
    "name": "Sect of Vigor",
    "hash": 3683811620,
+   "itemName": "Aeon Safe",
+   "itemHash": 796577360,
    "type": "Armor Trait Exotic"
   },
   "3683904166": {
    "name": "Winter's Wrath",
    "hash": 3683904166,
    "type": "Subclass Super"
+  },
+  "3684445958": {
+   "name": "Collective Pugilism",
+   "hash": 3684445958,
+   "type": "Weapon Trait Enhanced"
   },
   "3685945823": {
    "name": "Focusing Strike",
@@ -10554,6 +12262,11 @@
    "name": "Rapid-Fire Frame",
    "hash": 3688301727,
    "type": "Weapon Frame Enhanced"
+  },
+  "3696140595": {
+   "name": "Blast Distributor",
+   "hash": 3696140595,
+   "type": "Weapon Trait Enhanced"
   },
   "3700496672": {
    "name": "Shoot to Loot",
@@ -10588,6 +12301,16 @@
    "name": "Elemental Charge",
    "hash": 3712696020,
    "type": "Armor Mod General"
+  },
+  "3713215006": {
+   "name": "Recycled Energy",
+   "hash": 3713215006,
+   "type": "Weapon Trait"
+  },
+  "3713579091": {
+   "name": "Accelerated Assault",
+   "hash": 3713579091,
+   "type": "Weapon Trait Origin"
   },
   "3717985200": {
    "name": "Psychohack",
@@ -10651,6 +12374,11 @@
    "hash": 3728676938,
    "type": "Weapon Frame Enhanced"
   },
+  "3731491409": {
+   "name": "Transcendent Moment",
+   "hash": 3731491409,
+   "type": "Weapon Trait"
+  },
   "3732232161": {
    "name": "Whispered Breathing",
    "hash": 3732232161,
@@ -10700,6 +12428,11 @@
    "hash": 3758615625,
    "type": "Weapon Frame"
   },
+  "3764420437": {
+   "name": "Aggregate Charge",
+   "hash": 3764420437,
+   "type": "Weapon Trait"
+  },
   "3766386008": {
    "name": "Legacy PR-55 Frame",
    "hash": 3766386008,
@@ -10730,12 +12463,22 @@
    "hash": 3769507635,
    "type": "Subclass Super"
   },
+  "3771737927": {
+   "name": "Balanced Heat Weapon",
+   "hash": 3771737927,
+   "type": "Weapon Frame"
+  },
   "3772485195": {
    "name": "Heat Sink",
    "hash": 3772485195,
    "itemName": "Tommy's Matchbook",
    "itemHash": 776191470,
    "type": "Weapon Trait Exotic"
+  },
+  "3773585912": {
+   "name": "Melee Momentum",
+   "hash": 3773585912,
+   "type": "Weapon Trait"
   },
   "3774850330": {
    "name": "Precision Frame",
@@ -10752,6 +12495,11 @@
    "hash": 3775916472,
    "type": "Armor Mod General"
   },
+  "3781548872": {
+   "name": "High-Explosive Ordnance",
+   "hash": 3781548872,
+   "type": "Weapon Perk"
+  },
   "3782773412": {
    "name": "Tithing Harvest",
    "hash": 3782773412,
@@ -10763,6 +12511,11 @@
    "name": "Radar Booster",
    "hash": 3785661089,
    "type": "Weapon Mod"
+  },
+  "3786062476": {
+   "name": "Frictionless Rail",
+   "hash": 3786062476,
+   "type": "Weapon Perk"
   },
   "3787406018": {
    "name": "Split Decision",
@@ -10785,6 +12538,13 @@
    "name": "Aggressive Frame",
    "hash": 3794558792,
    "type": "Weapon Frame Enhanced"
+  },
+  "3794918801": {
+   "name": "Fencing Tang",
+   "hash": 3794918801,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Perk Exotic"
   },
   "3796465595": {
    "name": "Impact Casing",
@@ -10811,35 +12571,10 @@
    "hash": 3800201097,
    "type": "Weapon Trait"
   },
-  "3803076560": {
-   "name": "Unstoppable Pulse Rifle",
-   "hash": 3803076560,
-   "type": "Armor Mod Seasonal"
-  },
-  "3803076561": {
-   "name": "Overload Submachine Gun",
-   "hash": 3803076561,
-   "type": "Armor Mod Seasonal"
-  },
-  "3803076562": {
-   "name": "Anti-Barrier Scout Rifle",
-   "hash": 3803076562,
-   "type": "Armor Mod Seasonal"
-  },
-  "3803076565": {
-   "name": "Authorized Mods: Melee",
-   "hash": 3803076565,
-   "type": "Armor Mod Seasonal"
-  },
-  "3803076566": {
-   "name": "Overload Breechloaded Grenade Launcher",
-   "hash": 3803076566,
-   "type": "Armor Mod Seasonal"
-  },
-  "3803076567": {
-   "name": "Anti-Barrier Shotgun",
-   "hash": 3803076567,
-   "type": "Armor Mod Seasonal"
+  "3807404750": {
+   "name": "Implosion Rounds",
+   "hash": 3807404750,
+   "type": "Weapon Perk"
   },
   "3808234135": {
    "name": "Shocked Glyphkeeper",
@@ -10865,6 +12600,11 @@
    "itemHash": 3766045777,
    "type": "Weapon Catalyst Exotic"
   },
+  "3819272442": {
+   "name": "Natural Fletching",
+   "hash": 3819272442,
+   "type": "Weapon Perk"
+  },
   "3820243349": {
    "name": "Synergy",
    "hash": 3820243349,
@@ -10879,7 +12619,7 @@
    "name": "Grasp of the Devourer",
    "hash": 3824622015,
    "itemName": "Necrotic Grip",
-   "itemHash": 2780717641,
+   "itemHash": 124786972,
    "type": "Armor Trait Exotic"
   },
   "3827198035": {
@@ -10909,6 +12649,31 @@
    "itemHash": 1473821207,
    "type": "Weapon Frame Exotic"
   },
+  "3834273538": {
+   "name": "Riposte",
+   "hash": 3834273538,
+   "type": "Armor Mod Seasonal"
+  },
+  "3834273539": {
+   "name": "Power from Pain",
+   "hash": 3834273539,
+   "type": "Armor Mod Seasonal"
+  },
+  "3834273540": {
+   "name": "Kinetic Synthesis",
+   "hash": 3834273540,
+   "type": "Armor Mod Seasonal"
+  },
+  "3834273541": {
+   "name": "Reload at Range",
+   "hash": 3834273541,
+   "type": "Armor Mod Seasonal"
+  },
+  "3834273543": {
+   "name": "Press The Advantage",
+   "hash": 3834273543,
+   "type": "Armor Mod Seasonal"
+  },
   "3837077246": {
    "name": "Rewind Again",
    "hash": 3837077246,
@@ -10916,10 +12681,30 @@
    "itemHash": 1594120904,
    "type": "Weapon Frame Exotic"
   },
+  "3837163218": {
+   "name": "Polymer String",
+   "hash": 3837163218,
+   "type": "Weapon Perk"
+  },
+  "3839493627": {
+   "name": "Enhanced Battery",
+   "hash": 3839493627,
+   "type": "Weapon Perk"
+  },
   "3841661468": {
    "name": "Rapid-Fire Frame",
    "hash": 3841661468,
    "type": "Weapon Frame Enhanced"
+  },
+  "3845057226": {
+   "name": "Hand-Laid Stock",
+   "hash": 3845057226,
+   "type": "Weapon Perk"
+  },
+  "3846229553": {
+   "name": "Vanguard Determination",
+   "hash": 3846229553,
+   "type": "Weapon Trait Origin"
   },
   "3846931924": {
    "name": "Solar Resistance",
@@ -10941,10 +12726,33 @@
    "hash": 3854948621,
    "type": "Subclass Fragment"
   },
-  "3865257976": {
-   "name": "Dragonfly",
-   "hash": 3865257976,
-   "type": "Weapon Trait"
+  "3865920552": {
+   "name": "Relentless Strikes Refit",
+   "hash": 3865920552,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3865920553": {
+   "name": "Attrition Orbs Refit",
+   "hash": 3865920553,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3865920554": {
+   "name": "SUBROUTINE: ~RECURSION",
+   "hash": 3865920554,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "3865920555": {
+   "name": "Burning Ambition Refit",
+   "hash": 3865920555,
+   "itemName": "Wolfsbane",
+   "itemHash": 1753923263,
+   "type": "Weapon Catalyst Exotic"
   },
   "3866705246": {
    "name": "Diamond Lance",
@@ -10979,6 +12787,11 @@
    "itemName": "Sleeper Simulant",
    "itemHash": 4036115577,
    "type": "Weapon Frame Exotic"
+  },
+  "3885243590": {
+   "name": "Enduring Blade",
+   "hash": 3885243590,
+   "type": "Weapon Perk"
   },
   "3887037435": {
    "name": "Unflinching Void Aim",
@@ -11041,6 +12854,11 @@
    "hash": 3907865655,
    "type": "Weapon Trait Origin"
   },
+  "3911709647": {
+   "name": "Tenacity",
+   "hash": 3911709647,
+   "type": "Weapon Trait Origin"
+  },
   "3913106382": {
    "name": "Precision Frame",
    "hash": 3913106382,
@@ -11057,6 +12875,11 @@
    "name": "Whirlwind Blade",
    "hash": 3913600130,
    "type": "Weapon Trait"
+  },
+  "3914874605": {
+   "name": "Bewildering Burst",
+   "hash": 3914874605,
+   "type": "Weapon Trait Enhanced"
   },
   "3914973263": {
    "name": "Void Weapon Surge",
@@ -11083,6 +12906,11 @@
    "hash": 3922904113,
    "type": "Armor Mod Activity"
   },
+  "3923000764": {
+   "name": "Burst Guard",
+   "hash": 3923000764,
+   "type": "Weapon Perk"
+  },
   "3923577992": {
    "name": "Suppressor Grenade",
    "hash": 3923577992,
@@ -11107,14 +12935,14 @@
    "name": "Cerebral Uplink",
    "hash": 3927963100,
    "itemName": "Eye of Another World",
-   "itemHash": 3381022970,
+   "itemHash": 925466717,
    "type": "Armor Trait Exotic"
   },
   "3927963101": {
    "name": "Abyssal Extractors",
    "hash": 3927963101,
    "itemName": "Nezarec's Sin",
-   "itemHash": 3381022971,
+   "itemHash": 925466716,
    "type": "Armor Trait Exotic"
   },
   "3927963102": {
@@ -11128,8 +12956,13 @@
    "name": "Conduction Tines",
    "hash": 3927963103,
    "itemName": "Crown of Tempests",
-   "itemHash": 3381022969,
+   "itemHash": 925466718,
    "type": "Armor Trait Exotic"
+  },
+  "3932949589": {
+   "name": "Cooling Baubles",
+   "hash": 3932949589,
+   "type": "Weapon Trait"
   },
   "3933525366": {
    "name": "Marksman's Dodge",
@@ -11140,11 +12973,6 @@
    "name": "Gambler's Dodge",
    "hash": 3933525367,
    "type": "Subclass Class"
-  },
-  "3935709357": {
-   "name": "Discipline Armorer",
-   "hash": 3935709357,
-   "type": "Ghost Mod"
   },
   "3937312904": {
    "name": "On Black Wings",
@@ -11170,6 +12998,11 @@
    "itemHash": 2350354266,
    "type": "Weapon Catalyst Exotic"
   },
+  "3946669007": {
+   "name": "+Super / -Grenade",
+   "hash": 3946669007,
+   "type": "Armor Mod General"
+  },
   "3949068808": {
    "name": "Arc Conductor",
    "hash": 3949068808,
@@ -11181,6 +13014,21 @@
    "name": "Closing Time",
    "hash": 3955464425,
    "type": "Weapon Trait Enhanced"
+  },
+  "3956406253": {
+   "name": "Elastic String",
+   "hash": 3956406253,
+   "type": "Weapon Perk"
+  },
+  "3959569796": {
+   "name": "Jagged Edge",
+   "hash": 3959569796,
+   "type": "Weapon Perk"
+  },
+  "3966296580": {
+   "name": "Polygonal Rifling",
+   "hash": 3966296580,
+   "type": "Weapon Perk"
   },
   "3966416502": {
    "name": "Jolting Feedback",
@@ -11396,6 +13244,16 @@
    "hash": 4020036031,
    "type": "Armor Mod Activity"
   },
+  "4020349587": {
+   "name": "+Melee / -Weapons",
+   "hash": 4020349587,
+   "type": "Armor Mod General"
+  },
+  "4021790309": {
+   "name": "Minor Grenade Mod",
+   "hash": 4021790309,
+   "type": "Armor Mod General"
+  },
   "4024170927": {
    "name": "Misdirection",
    "hash": 4024170927,
@@ -11403,45 +13261,42 @@
    "itemHash": 1163283805,
    "type": "Armor Trait Exotic"
   },
+  "4026309323": {
+   "name": "Deflection Tang",
+   "hash": 4026309323,
+   "itemName": "Praxic Blade",
+   "itemHash": 3049715579,
+   "type": "Weapon Perk Exotic"
+  },
+  "4026414261": {
+   "name": "+Super / -Health",
+   "hash": 4026414261,
+   "type": "Armor Mod General"
+  },
+  "4030660414": {
+   "name": "+Class / -Health",
+   "hash": 4030660414,
+   "type": "Armor Mod General"
+  },
   "4036525828": {
    "name": "Aggressive Frame",
    "hash": 4036525828,
    "type": "Weapon Frame Enhanced"
   },
-  "4037132128": {
-   "name": "Wind Chill",
-   "hash": 4037132128,
-   "type": "Armor Mod Seasonal"
-  },
-  "4037132130": {
-   "name": "Total Carnage",
-   "hash": 4037132130,
-   "type": "Armor Mod Seasonal"
-  },
-  "4037132131": {
-   "name": "Crystalline Converter",
-   "hash": 4037132131,
-   "type": "Armor Mod Seasonal"
-  },
-  "4037132132": {
-   "name": "Trace Evidence",
-   "hash": 4037132132,
-   "type": "Armor Mod Seasonal"
-  },
-  "4037132133": {
-   "name": "Power from Pain",
-   "hash": 4037132133,
-   "type": "Armor Mod Seasonal"
-  },
-  "4037132135": {
-   "name": "The Thick of It",
-   "hash": 4037132135,
-   "type": "Armor Mod Seasonal"
-  },
   "4039026690": {
    "name": "Distribution",
    "hash": 4039026690,
    "type": "Armor Mod General"
+  },
+  "4039411798": {
+   "name": "Textured Grip",
+   "hash": 4039411798,
+   "type": "Weapon Perk"
+  },
+  "4042220767": {
+   "name": "Bolt Scavenger",
+   "hash": 4042220767,
+   "type": "Weapon Trait"
   },
   "4045335048": {
    "name": "Headseeker",
@@ -11456,7 +13311,7 @@
    "type": "Weapon Frame Exotic"
   },
   "4046357305": {
-   "name": "Font of Agility",
+   "name": "Weapons Font",
    "hash": 4046357305,
    "type": "Armor Mod General"
   },
@@ -11493,6 +13348,11 @@
    "name": "Flexible String",
    "hash": 4067834857,
    "type": "Weapon Perk"
+  },
+  "4070834277": {
+   "name": "Reciprocity",
+   "hash": 4070834277,
+   "type": "Weapon Trait Enhanced"
   },
   "4071163871": {
    "name": "Threat Detector",
@@ -11541,11 +13401,6 @@
    "hash": 4082225868,
    "type": "Weapon Trait"
   },
-  "4085483014": {
-   "name": "Prosperity",
-   "hash": 4085483014,
-   "type": "Ghost Mod"
-  },
   "4085959009": {
    "name": "Relentless Strikes",
    "hash": 4085959009,
@@ -11554,6 +13409,16 @@
   "4087056174": {
    "name": "Recuperation",
    "hash": 4087056174,
+   "type": "Armor Mod General"
+  },
+  "4088731040": {
+   "name": "Quickload Rail",
+   "hash": 4088731040,
+   "type": "Weapon Perk"
+  },
+  "4088823605": {
+   "name": "+Health / -Super",
+   "hash": 4088823605,
    "type": "Armor Mod General"
   },
   "4090651448": {
@@ -11585,6 +13450,11 @@
    "itemHash": 3534173884,
    "type": "Armor Trait Exotic"
   },
+  "4096144819": {
+   "name": "Impromptu Ammunition",
+   "hash": 4096144819,
+   "type": "Weapon Trait Enhanced"
+  },
   "4100396181": {
    "name": "Invisible Hand",
    "hash": 4100396181,
@@ -11602,6 +13472,11 @@
    "hash": 4104185692,
    "type": "Weapon Trait"
   },
+  "4108848057": {
+   "name": "Dynamic Heat Weapon",
+   "hash": 4108848057,
+   "type": "Weapon Frame"
+  },
   "4113841443": {
    "name": "Precision Frame",
    "hash": 4113841443,
@@ -11613,6 +13488,11 @@
    "itemName": "Sunshot",
    "itemHash": 2907129557,
    "type": "Weapon Trait Exotic"
+  },
+  "4116389173": {
+   "name": "+Grenade / -Weapons",
+   "hash": 4116389173,
+   "type": "Armor Mod General"
   },
   "4116820839": {
    "name": "Snapshot Sights",
@@ -11626,6 +13506,13 @@
    "itemHash": 192896783,
    "type": "Armor Trait Exotic"
   },
+  "4127881474": {
+   "name": "Panic Response",
+   "hash": 4127881474,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Frame Exotic"
+  },
   "4129855581": {
    "name": "Crossing Over",
    "hash": 4129855581,
@@ -11635,6 +13522,11 @@
    "name": "Precision Frame",
    "hash": 4130495068,
    "type": "Weapon Frame"
+  },
+  "4132187021": {
+   "name": "Sharp Harvest",
+   "hash": 4132187021,
+   "type": "Weapon Trait"
   },
   "4133742354": {
    "name": "Trinary Vision",
@@ -11705,31 +13597,6 @@
    "itemHash": 1473821207,
    "type": "Weapon Trait Origin Exotic"
   },
-  "4152585336": {
-   "name": "Authorized Mods: Void",
-   "hash": 4152585336,
-   "type": "Armor Mod Seasonal"
-  },
-  "4152585337": {
-   "name": "Authorized Mods: Strand",
-   "hash": 4152585337,
-   "type": "Armor Mod Seasonal"
-  },
-  "4152585339": {
-   "name": "Authorized Mods: Arc",
-   "hash": 4152585339,
-   "type": "Armor Mod Seasonal"
-  },
-  "4152585342": {
-   "name": "Authorized Mods: Melee",
-   "hash": 4152585342,
-   "type": "Armor Mod Seasonal"
-  },
-  "4152585343": {
-   "name": "Technicolor Siphon",
-   "hash": 4152585343,
-   "type": "Armor Mod Seasonal"
-  },
   "4152709778": {
    "name": "Iron Gaze",
    "hash": 4152709778,
@@ -11760,6 +13627,11 @@
    "hash": 4160037471,
    "type": "Armor Mod General"
   },
+  "4164883102": {
+   "name": "+Melee / -Health",
+   "hash": 4164883102,
+   "type": "Armor Mod General"
+  },
   "4172222323": {
    "name": "Legacy PR-55 Frame",
    "hash": 4172222323,
@@ -11774,7 +13646,7 @@
    "name": "Insatiable",
    "hash": 4174493725,
    "itemName": "Apotheosis Veil",
-   "itemHash": 1096253259,
+   "itemHash": 132452792,
    "type": "Armor Trait Exotic"
   },
   "4175584682": {
@@ -11802,6 +13674,11 @@
    "hash": 4182064480,
    "type": "Armor Mod General"
   },
+  "4183296050": {
+   "name": "Weapons Mod",
+   "hash": 4183296050,
+   "type": "Armor Mod General"
+  },
   "4183521337": {
    "name": "Tireless Blade",
    "hash": 4183521337,
@@ -11826,6 +13703,11 @@
    "itemHash": 4017959782,
    "type": "Weapon Frame Exotic"
   },
+  "4185607275": {
+   "name": "High Tension String",
+   "hash": 4185607275,
+   "type": "Weapon Perk"
+  },
   "4188291233": {
    "name": "Bomber",
    "hash": 4188291233,
@@ -11849,6 +13731,11 @@
    "itemName": "Bastion",
    "itemHash": 2415517654,
    "type": "Weapon Trait Exotic"
+  },
+  "4190679284": {
+   "name": "Proximity Power",
+   "hash": 4190679284,
+   "type": "Weapon Trait"
   },
   "4193902249": {
    "name": "Enhanced Nightmare Breaker",
@@ -11875,6 +13762,16 @@
    "hash": 4194622039,
    "type": "Subclass Aspect"
   },
+  "4196156997": {
+   "name": "Meganeura",
+   "hash": 4196156997,
+   "type": "Weapon Trait Enhanced"
+  },
+  "4196967425": {
+   "name": "Empowered Rail",
+   "hash": 4196967425,
+   "type": "Weapon Perk"
+  },
   "4198689901": {
    "name": "Flux Grenade",
    "hash": 4198689901,
@@ -11885,15 +13782,65 @@
    "hash": 4198833635,
    "type": "Weapon Frame Enhanced"
   },
+  "4198902903": {
+   "name": "Detonator Beam",
+   "hash": 4198902903,
+   "type": "Weapon Trait"
+  },
+  "4199529752": {
+   "name": "Whirling Ovation Catalyst",
+   "hash": 4199529752,
+   "itemName": "Whirling Ovation",
+   "itemHash": 1202007252,
+   "type": "Weapon Catalyst Exotic"
+  },
   "4200236906": {
    "name": "Gutshot Straight",
    "hash": 4200236906,
    "type": "Weapon Trait Enhanced"
   },
+  "4201007276": {
+   "name": "Agile Bowstring",
+   "hash": 4201007276,
+   "type": "Weapon Perk"
+  },
   "4203236451": {
    "name": "Aggressive Frame",
    "hash": 4203236451,
    "type": "Weapon Frame Enhanced"
+  },
+  "4204405032": {
+   "name": "Target Lock Refit",
+   "hash": 4204405032,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204405033": {
+   "name": "One for All Refit",
+   "hash": 4204405033,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204405034": {
+   "name": "Hatchling Refit",
+   "hash": 4204405034,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204405035": {
+   "name": "High-Impact Reserves Refit",
+   "hash": 4204405035,
+   "itemName": "Barrow-Dyad",
+   "itemHash": 1481594633,
+   "type": "Weapon Catalyst Exotic"
+  },
+  "4204488676": {
+   "name": "Class Mod",
+   "hash": 4204488676,
+   "type": "Armor Mod General"
   },
   "4207509907": {
    "name": "Killing Wind",
@@ -11955,6 +13902,36 @@
    "hash": 4208512223,
    "type": "Subclass Fragment"
   },
+  "4210715468": {
+   "name": "+Melee / -Class",
+   "hash": 4210715468,
+   "type": "Armor Mod General"
+  },
+  "4217417017": {
+   "name": "Anti-Barrier Hand Cannon",
+   "hash": 4217417017,
+   "type": "Armor Mod Seasonal"
+  },
+  "4217417018": {
+   "name": "Anti-Barrier Sniper Rifle",
+   "hash": 4217417018,
+   "type": "Armor Mod Seasonal"
+  },
+  "4217417019": {
+   "name": "Overload Pulse Rifle",
+   "hash": 4217417019,
+   "type": "Armor Mod Seasonal"
+  },
+  "4217417020": {
+   "name": "Overload Submachine Gun",
+   "hash": 4217417020,
+   "type": "Armor Mod Seasonal"
+  },
+  "4217417021": {
+   "name": "Unstoppable Bow",
+   "hash": 4217417021,
+   "type": "Armor Mod Seasonal"
+  },
   "4218954970": {
    "name": "Symmetry Catalyst",
    "hash": 4218954970,
@@ -11976,7 +13953,7 @@
    "name": "Soaring Fusilier",
    "hash": 4222205045,
    "itemName": "Rain of Fire",
-   "itemHash": 1624882687,
+   "itemHash": 511709874,
    "type": "Armor Trait Exotic"
   },
   "4223976499": {
@@ -11999,36 +13976,16 @@
    "hash": 4231246084,
    "type": "Weapon Frame Enhanced"
   },
-  "4232817857": {
-   "name": "Strand Soldier",
-   "hash": 4232817857,
-   "type": "Armor Mod Seasonal"
-  },
-  "4232817858": {
-   "name": "Overcharged Armory",
-   "hash": 4232817858,
-   "type": "Armor Mod Seasonal"
-  },
-  "4232817859": {
-   "name": "Protective Breach",
-   "hash": 4232817859,
-   "type": "Armor Mod Seasonal"
-  },
-  "4232817860": {
-   "name": "Counter Charge",
-   "hash": 4232817860,
-   "type": "Armor Mod Seasonal"
-  },
-  "4232817861": {
-   "name": "Electric Armor",
-   "hash": 4232817861,
-   "type": "Armor Mod Seasonal"
+  "4232410959": {
+   "name": "Bray Legacy",
+   "hash": 4232410959,
+   "type": "Weapon Perk"
   },
   "4234468055": {
    "name": "The Gift of Certainty",
    "hash": 4234468055,
    "itemName": "Gifted Conviction",
-   "itemHash": 1627691271,
+   "itemHash": 1446374842,
    "type": "Armor Trait Exotic"
   },
   "4235122381": {
@@ -12037,6 +13994,11 @@
    "itemName": "Cuirass of the Falling Star",
    "itemHash": 2321120637,
    "type": "Armor Trait Exotic"
+  },
+  "4236235115": {
+   "name": "Roar of Battle",
+   "hash": 4236235115,
+   "type": "Weapon Perk"
   },
   "4241856103": {
    "name": "Storm Grenade",
@@ -12159,6 +14121,11 @@
    "hash": 4267244538,
    "type": "Armor Mod General"
   },
+  "4267445637": {
+   "name": "Enduring Guard",
+   "hash": 4267445637,
+   "type": "Weapon Perk"
+  },
   "4267945040": {
    "name": "Full Auto Trigger System",
    "hash": 4267945040,
@@ -12169,12 +14136,22 @@
    "hash": 4269485650,
    "type": "Weapon Frame Enhanced"
   },
+  "4270598587": {
+   "name": "Honed Edge",
+   "hash": 4270598587,
+   "type": "Weapon Perk"
+  },
   "4273298922": {
    "name": "Bastion Catalyst",
    "hash": 4273298922,
    "itemName": "Bastion",
    "itemHash": 2415517654,
    "type": "Weapon Catalyst Exotic"
+  },
+  "4273542183": {
+   "name": "Light Heatsink",
+   "hash": 4273542183,
+   "type": "Weapon Perk"
   },
   "4274613598": {
    "name": "Valiant Charge",
@@ -12191,8 +14168,13 @@
    "hash": 4278960718,
    "type": "Weapon Mod"
   },
+  "4280607931": {
+   "name": "Air-Cooled Core",
+   "hash": 4280607931,
+   "type": "Weapon Perk"
+  },
   "4283953067": {
-   "name": "Arc Reserves",
+   "name": "Arc Ammo Generation",
    "hash": 4283953067,
    "type": "Armor Mod General"
   },
@@ -12217,8 +14199,13 @@
    "itemHash": 1983149589,
    "type": "Weapon Frame Exotic"
   },
+  "4287799666": {
+   "name": "Melee Mod",
+   "hash": 4287799666,
+   "type": "Armor Mod General"
+  },
   "4287822553": {
-   "name": "Strand Reserves",
+   "name": "Strand Ammo Generation",
    "hash": 4287822553,
    "type": "Armor Mod General"
   },
@@ -12284,6 +14271,23 @@
      "has": [
       4004944400,
       1324340508
+     ]
+    },
+    {
+     "name": "Barrow-Dyad",
+     "has": [
+      1963279224,
+      1524069046,
+      1555922475,
+      1963279225,
+      1963279230,
+      1963279231,
+      3471414563,
+      4127881474,
+      4204405032,
+      4204405033,
+      4204405034,
+      4204405035
      ]
     },
     {
@@ -12585,6 +14589,14 @@
      ]
     },
     {
+     "name": "Finality's Auger",
+     "has": [
+      626115084,
+      818149482,
+      2223032959
+     ]
+    },
+    {
      "name": "Forerunner",
      "has": [
       2984682260,
@@ -12710,6 +14722,15 @@
      ]
     },
     {
+     "name": "Lodestar",
+     "has": [
+      3505000148,
+      1629848687,
+      2018366981,
+      2174503023
+     ]
+    },
+    {
      "name": "Lord of Wolves",
      "has": [
       481338655,
@@ -12778,6 +14799,15 @@
       4184462049,
       525593296,
       1931066670
+     ]
+    },
+    {
+     "name": "New Land Beyond",
+     "has": [
+      218281600,
+      935202422,
+      1579100415,
+      2861049498
      ]
     },
     {
@@ -12918,6 +14948,20 @@
       2741975068,
       176919422,
       658317088
+     ]
+    },
+    {
+     "name": "Slayer's Fang",
+     "has": [
+      2565885237,
+      2607392828,
+      2883096192,
+      2883096193,
+      2883096194,
+      2883096195,
+      2919190144,
+      2919190145,
+      2919190151
      ]
     },
     {
@@ -13318,14 +15362,19 @@
       1294026524,
       1458010786,
       1636108362,
-      2622129339
+      2235383762,
+      2622129339,
+      3488129416,
+      3771737927
      ]
     },
     {
      "name": "Combat Bow",
      "has": [
       715195141,
-      2108556049
+      1019291327,
+      2108556049,
+      3572001649
      ]
     },
     {
@@ -13370,9 +15419,13 @@
      "has": [
       1294026524,
       1322370662,
+      1406835319,
       1458010786,
+      1611330137,
       2189829540,
+      2427219599,
       2757685314,
+      3468089894,
       3923638944
      ]
     },
@@ -13389,6 +15442,7 @@
       878286503,
       1019291327,
       1294026524,
+      2732952950,
       3468089894
      ]
     },
@@ -13401,9 +15455,12 @@
       1294026524,
       1458010786,
       1634975868,
+      2331097520,
       2874284214,
+      2928496916,
       3099083217,
       3456918063,
+      3771737927,
       4172222323,
       4175870265
      ]
@@ -13421,6 +15478,7 @@
     {
      "name": "Scout Rifle",
      "has": [
+      1002219198,
       1019291327,
       1458010786,
       1636108362,
@@ -13432,11 +15490,13 @@
     {
      "name": "Shotgun",
      "has": [
+      407573255,
       895140517,
       918679156,
       996573084,
       1458010786,
       1636108362,
+      1888623310,
       3054949324,
       3468089894,
       3923638944,
@@ -13451,10 +15511,12 @@
       1282254042,
       1294026524,
       1458010786,
+      1615948893,
       1636108362,
       2928496916,
       3330548924,
-      3449390870
+      3449390870,
+      4108848057
      ]
     },
     {
@@ -13462,16 +15524,20 @@
      "has": [
       878286503,
       1294026524,
+      1442784346,
+      1546108491,
       3468089894
      ]
     },
     {
      "name": "Submachine Gun",
      "has": [
+      695966445,
       1294026524,
       1458010786,
       1525239159,
       1636108362,
+      2167115920,
       2213377102,
       3468089894
      ]
@@ -13908,7 +15974,6 @@
      "name": "Sidearm",
      "has": [
       368110299,
-      651554065,
       687584589,
       749936529,
       1225770249,
@@ -14026,6 +16091,10 @@
    ]
   },
   "enhancedPerks": {
+   "11551321": {
+    "name": "Iron Grip",
+    "linkedWith": 3097973565
+   },
    "11612903": {
     "name": "Adrenaline Junkie",
     "linkedWith": 2422968039
@@ -14054,6 +16123,10 @@
     "name": "Explosive Payload",
     "linkedWith": 3038247973
    },
+   "65604327": {
+    "name": "Supercharged Magazine",
+    "linkedWith": 1511100135
+   },
    "95528736": {
     "name": "Onslaught",
     "linkedWith": 956288240
@@ -14061,6 +16134,14 @@
    "102912326": {
     "name": "Hatchling",
     "linkedWith": 831391274
+   },
+   "113508675": {
+    "name": "Reaper's Tithe",
+    "linkedWith": 177189259
+   },
+   "122204356": {
+    "name": "Adhesive Ordnance",
+    "linkedWith": 3252937884
    },
    "124408337": {
     "name": "Headstone",
@@ -14078,6 +16159,10 @@
     "name": "Dragonfly",
     "linkedWith": 2848615171
    },
+   "177189259": {
+    "name": "Reaper's Tithe",
+    "linkedWith": 113508675
+   },
    "183938251": {
     "name": "Under-Over",
     "linkedWith": 1870851715
@@ -14086,6 +16171,10 @@
     "name": "Slideshot",
     "linkedWith": 3161816588
    },
+   "198336270": {
+    "name": "Butterfly",
+    "linkedWith": 2216535938
+   },
    "201365942": {
     "name": "Archer's Tempo",
     "linkedWith": 3523746922
@@ -14093,6 +16182,10 @@
    "205890336": {
     "name": "Pulse Monitor",
     "linkedWith": 1685378950
+   },
+   "222783511": {
+    "name": "Detonator Beam",
+    "linkedWith": 4198902903
    },
    "243981275": {
     "name": "Attrition Orbs",
@@ -14113,6 +16206,10 @@
    "288411554": {
     "name": "Rampage",
     "linkedWith": 3425386926
+   },
+   "307683764": {
+    "name": "Delicate Tuning",
+    "linkedWith": 1341464476
    },
    "331667533": {
     "name": "Cascade Point",
@@ -14178,6 +16275,10 @@
     "name": "Threat Detector",
     "linkedWith": 4071163871
    },
+   "496047945": {
+    "name": "Elemental Honing",
+    "linkedWith": 1089671869
+   },
    "509074078": {
     "name": "Steady Hands",
     "linkedWith": 843318450
@@ -14185,6 +16286,10 @@
    "509594246": {
     "name": "Rangefinder",
     "linkedWith": 2846385770
+   },
+   "511499160": {
+    "name": "Trickle Charge",
+    "linkedWith": 1115162408
    },
    "536173722": {
     "name": "Pugilist",
@@ -14238,6 +16343,10 @@
     "name": "Sword Logic",
     "linkedWith": 31345821
    },
+   "657025441": {
+    "name": "Meganeura",
+    "linkedWith": 4196156997
+   },
    "671806388": {
     "name": "Compulsive Reloader",
     "linkedWith": 595108252
@@ -14246,6 +16355,10 @@
     "name": "Circle of Life",
     "linkedWith": 2298656195
    },
+   "680897173": {
+    "name": "Transcendent Moment",
+    "linkedWith": 3731491409
+   },
    "684456054": {
     "name": "Eddy Current",
     "linkedWith": 2785334058
@@ -14253,6 +16366,10 @@
    "691659142": {
     "name": "Pugilist",
     "linkedWith": 536173722
+   },
+   "692399809": {
+    "name": "Reciprocity",
+    "linkedWith": 4070834277
    },
    "699525795": {
     "name": "Eye of the Storm",
@@ -14294,6 +16411,10 @@
     "name": "One-Two Punch",
     "linkedWith": 2679249093
    },
+   "820036316": {
+    "name": "Proximity Power",
+    "linkedWith": 4190679284
+   },
    "828056542": {
     "name": "Backup Plan",
     "linkedWith": 1600092898
@@ -14330,6 +16451,10 @@
     "name": "Strategist",
     "linkedWith": 3120212825
    },
+   "883665727": {
+    "name": "Bolt Scavenger",
+    "linkedWith": 4042220767
+   },
    "906981559": {
     "name": "Discord",
     "linkedWith": 3978468247
@@ -14358,9 +16483,17 @@
     "name": "Danger Zone",
     "linkedWith": 1077019636
    },
+   "960997401": {
+    "name": "Tear",
+    "linkedWith": 3244229373
+   },
    "968510818": {
     "name": "Envious Assassin",
     "linkedWith": 424370782
+   },
+   "983853954": {
+    "name": "Binary Orbit",
+    "linkedWith": 1546142478
    },
    "984655331": {
     "name": "Attrition Orbs",
@@ -14374,9 +16507,17 @@
     "name": "Cornered",
     "linkedWith": 1799762209
    },
+   "1011551830": {
+    "name": "Stopping Power",
+    "linkedWith": 1517798362
+   },
    "1015611457": {
     "name": "Kill Clip",
     "linkedWith": 2923251173
+   },
+   "1017229899": {
+    "name": "Blast Distributor",
+    "linkedWith": 3696140595
    },
    "1048183818": {
     "name": "Adaptive Munitions",
@@ -14385,6 +16526,14 @@
    "1077019636": {
     "name": "Danger Zone",
     "linkedWith": 960810156
+   },
+   "1089671869": {
+    "name": "Elemental Honing",
+    "linkedWith": 496047945
+   },
+   "1115162408": {
+    "name": "Trickle Charge",
+    "linkedWith": 511499160
    },
    "1119449540": {
     "name": "Loose Change",
@@ -14446,9 +16595,21 @@
     "name": "Encore",
     "linkedWith": 838873202
    },
+   "1202584452": {
+    "name": "Ancillary Ordinance",
+    "linkedWith": 2138673996
+   },
+   "1226351311": {
+    "name": "All-Star",
+    "linkedWith": 3251326479
+   },
    "1275731761": {
     "name": "Cluster Bomb",
     "linkedWith": 2091001077
+   },
+   "1341464476": {
+    "name": "Delicate Tuning",
+    "linkedWith": 307683764
    },
    "1347741687": {
     "name": "Outlaw",
@@ -14494,6 +16655,18 @@
     "name": "Barrel Constrictor",
     "linkedWith": 4175584682
    },
+   "1464081238": {
+    "name": "Demoralize",
+    "linkedWith": 2813913866
+   },
+   "1511100135": {
+    "name": "Supercharged Magazine",
+    "linkedWith": 65604327
+   },
+   "1517798362": {
+    "name": "Stopping Power",
+    "linkedWith": 1011551830
+   },
    "1523649716": {
     "name": "Tap the Trigger",
     "linkedWith": 1890422124
@@ -14509,6 +16682,10 @@
    "1545231802": {
     "name": "Redirection",
     "linkedWith": 3201496230
+   },
+   "1546142478": {
+    "name": "Binary Orbit",
+    "linkedWith": 983853954
    },
    "1546637391": {
     "name": "Vorpal Weapon",
@@ -14537,6 +16714,10 @@
    "1570042021": {
     "name": "Heating Up",
     "linkedWith": 2748258257
+   },
+   "1570399071": {
+    "name": "Lead From Light",
+    "linkedWith": 1661646271
    },
    "1583705720": {
     "name": "Stats for All",
@@ -14573,6 +16754,10 @@
    "1658784563": {
     "name": "Genesis",
     "linkedWith": 3096702027
+   },
+   "1661646271": {
+    "name": "Lead From Light",
+    "linkedWith": 1570399071
    },
    "1663363584": {
     "name": "Sneak Bow",
@@ -14650,6 +16835,10 @@
     "name": "Under-Over",
     "linkedWith": 183938251
    },
+   "1888882410": {
+    "name": "Collective Pugilism",
+    "linkedWith": 3684445958
+   },
    "1890422124": {
     "name": "Tap the Trigger",
     "linkedWith": 1523649716
@@ -14661,6 +16850,14 @@
    "1906147653": {
     "name": "Demolitionist",
     "linkedWith": 3523296417
+   },
+   "1909124648": {
+    "name": "Thermal Atomization",
+    "linkedWith": 3590359704
+   },
+   "1918398421": {
+    "name": "Built to Blast",
+    "linkedWith": 3422375969
    },
    "1926441324": {
     "name": "Destabilizing Rounds",
@@ -14699,7 +16896,7 @@
     "linkedWith": 3797647183
    },
    "2014892510": {
-    "name": "Perpetual Motion Enhanced",
+    "name": "Perpetual Motion",
     "linkedWith": 1428297954
    },
    "2030760728": {
@@ -14714,6 +16911,10 @@
     "name": "Slideways",
     "linkedWith": 2396422520
    },
+   "2039482529": {
+    "name": "Cooling Baubles",
+    "linkedWith": 3932949589
+   },
    "2048641572": {
     "name": "Destabilizing Rounds",
     "linkedWith": 1926441324
@@ -14726,6 +16927,10 @@
     "name": "Eager Edge",
     "linkedWith": 1618208178
    },
+   "2078520142": {
+    "name": "Crystalline Corpsebloom",
+    "linkedWith": 2922950962
+   },
    "2091001077": {
     "name": "Cluster Bomb",
     "linkedWith": 1275731761
@@ -14733,6 +16938,10 @@
    "2109543898": {
     "name": "Desperate Measures",
     "linkedWith": 2799030358
+   },
+   "2138673996": {
+    "name": "Ancillary Ordinance",
+    "linkedWith": 1202584452
    },
    "2139363611": {
     "name": "Well-Rounded",
@@ -14766,6 +16975,10 @@
     "name": "Disruption Break",
     "linkedWith": 1683379515
    },
+   "2216535938": {
+    "name": "Butterfly",
+    "linkedWith": 198336270
+   },
    "2217963031": {
     "name": "Shot Swap",
     "linkedWith": 2586829431
@@ -14798,6 +17011,10 @@
     "name": "Clown Cartridge",
     "linkedWith": 3563868667
    },
+   "2289534249": {
+    "name": "Bewildering Burst",
+    "linkedWith": 3914874605
+   },
    "2298656195": {
     "name": "Circle of Life",
     "linkedWith": 674546187
@@ -14809,6 +17026,10 @@
    "2319119708": {
     "name": "High Ground",
     "linkedWith": 2140591236
+   },
+   "2360347339": {
+    "name": "Impromptu Ammunition",
+    "linkedWith": 4096144819
    },
    "2360754333": {
     "name": "Trench Barrel",
@@ -14890,6 +17111,10 @@
     "name": "Lone Wolf",
     "linkedWith": 2073244114
    },
+   "2581144697": {
+    "name": "Sharp Harvest",
+    "linkedWith": 4132187021
+   },
    "2586829431": {
     "name": "Shot Swap",
     "linkedWith": 2217963031
@@ -14913,6 +17138,10 @@
    "2621346526": {
     "name": "Ensemble",
     "linkedWith": 2495011826
+   },
+   "2633604463": {
+    "name": "Rolling Storm",
+    "linkedWith": 3218042543
    },
    "2652708987": {
     "name": "Successful Warm-Up",
@@ -14974,9 +17203,17 @@
     "name": "Desperate Measures",
     "linkedWith": 2109543898
    },
+   "2813913866": {
+    "name": "Demoralize",
+    "linkedWith": 1464081238
+   },
    "2817499044": {
     "name": "Envious Arsenal",
     "linkedWith": 3987942396
+   },
+   "2817677128": {
+    "name": "Melee Momentum",
+    "linkedWith": 3773585912
    },
    "2840833776": {
     "name": "Shoot to Loot",
@@ -15018,6 +17255,10 @@
     "name": "Adagio",
     "linkedWith": 3673922083
    },
+   "2890807135": {
+    "name": "Burning Ambition",
+    "linkedWith": 3581929919
+   },
    "2896038713": {
     "name": "Focused Fury",
     "linkedWith": 2402480669
@@ -15033,6 +17274,10 @@
    "2904194311": {
     "name": "Withering Gaze",
     "linkedWith": 1134488199
+   },
+   "2922950962": {
+    "name": "Crystalline Corpsebloom",
+    "linkedWith": 2078520142
    },
    "2923251173": {
     "name": "Kill Clip",
@@ -15110,6 +17355,10 @@
     "name": "Genesis",
     "linkedWith": 1658784563
    },
+   "3097973565": {
+    "name": "Iron Grip",
+    "linkedWith": 11551321
+   },
    "3102670337": {
     "name": "Unstoppable Force",
     "linkedWith": 2224838837
@@ -15134,6 +17383,10 @@
     "name": "Slideshot",
     "linkedWith": 191144788
    },
+   "3192447905": {
+    "name": "Aggregate Charge",
+    "linkedWith": 3764420437
+   },
    "3194351027": {
     "name": "Explosive Light",
     "linkedWith": 2275087323
@@ -15149,6 +17402,22 @@
    "3215448563": {
     "name": "Paracausal Affinity",
     "linkedWith": 3299896859
+   },
+   "3218042543": {
+    "name": "Rolling Storm",
+    "linkedWith": 2633604463
+   },
+   "3244229373": {
+    "name": "Tear",
+    "linkedWith": 960997401
+   },
+   "3251326479": {
+    "name": "All-Star",
+    "linkedWith": 1226351311
+   },
+   "3252937884": {
+    "name": "Adhesive Ordnance",
+    "linkedWith": 122204356
    },
    "3291427296": {
     "name": "Air Trigger",
@@ -15206,6 +17475,10 @@
     "name": "Rewind Rounds",
     "linkedWith": 1563455254
    },
+   "3422375969": {
+    "name": "Built to Blast",
+    "linkedWith": 1918398421
+   },
    "3422796781": {
     "name": "Slice",
     "linkedWith": 923806249
@@ -15250,9 +17523,21 @@
     "name": "Auto-Loading Holster",
     "linkedWith": 3300816228
    },
+   "3555252274": {
+    "name": "Recycled Energy",
+    "linkedWith": 3713215006
+   },
    "3563868667": {
     "name": "Clown Cartridge",
     "linkedWith": 2284787283
+   },
+   "3581929919": {
+    "name": "Burning Ambition",
+    "linkedWith": 2890807135
+   },
+   "3590359704": {
+    "name": "Thermal Atomization",
+    "linkedWith": 1909124648
    },
    "3592538738": {
     "name": "Wellspring",
@@ -15290,6 +17575,14 @@
     "name": "Assassin's Blade",
     "linkedWith": 354401740
    },
+   "3684445958": {
+    "name": "Collective Pugilism",
+    "linkedWith": 1888882410
+   },
+   "3696140595": {
+    "name": "Blast Distributor",
+    "linkedWith": 1017229899
+   },
    "3700496672": {
     "name": "Shoot to Loot",
     "linkedWith": 2840833776
@@ -15302,6 +17595,10 @@
     "name": "Surrounded",
     "linkedWith": 781192741
    },
+   "3713215006": {
+    "name": "Recycled Energy",
+    "linkedWith": 3555252274
+   },
    "3719974635": {
     "name": "Eye of the Storm",
     "linkedWith": 699525795
@@ -15309,6 +17606,10 @@
    "3722653512": {
     "name": "Air Assault",
     "linkedWith": 2898218424
+   },
+   "3731491409": {
+    "name": "Transcendent Moment",
+    "linkedWith": 680897173
    },
    "3744057135": {
     "name": "Bait and Switch",
@@ -15321,6 +17622,14 @@
    "3755250867": {
     "name": "Under Pressure",
     "linkedWith": 1645158859
+   },
+   "3764420437": {
+    "name": "Aggregate Charge",
+    "linkedWith": 3192447905
+   },
+   "3773585912": {
+    "name": "Melee Momentum",
+    "linkedWith": 2817677128
    },
    "3797647183": {
     "name": "Ambitious Assassin",
@@ -15350,6 +17659,10 @@
     "name": "Whirlwind Blade",
     "linkedWith": 147913470
    },
+   "3914874605": {
+    "name": "Bewildering Burst",
+    "linkedWith": 2289534249
+   },
    "3920370755": {
     "name": "Firmly Planted",
     "linkedWith": 280464955
@@ -15357,6 +17670,10 @@
    "3927722942": {
     "name": "Lasting Impression",
     "linkedWith": 1167468626
+   },
+   "3932949589": {
+    "name": "Cooling Baubles",
+    "linkedWith": 2039482529
    },
    "3938834702": {
     "name": "To the Pain",
@@ -15386,6 +17703,10 @@
     "name": "Envious Arsenal",
     "linkedWith": 2817499044
    },
+   "4042220767": {
+    "name": "Bolt Scavenger",
+    "linkedWith": 883665727
+   },
    "4045335048": {
     "name": "Headseeker",
     "linkedWith": 460017080
@@ -15397,6 +17718,10 @@
    "4063561849": {
     "name": "Physic",
     "linkedWith": 2980589453
+   },
+   "4070834277": {
+    "name": "Reciprocity",
+    "linkedWith": 692399809
    },
    "4071163871": {
     "name": "Threat Detector",
@@ -15410,6 +17735,10 @@
     "name": "Relentless Strikes",
     "linkedWith": 1749209109
    },
+   "4096144819": {
+    "name": "Impromptu Ammunition",
+    "linkedWith": 2360347339
+   },
    "4100396181": {
     "name": "Invisible Hand",
     "linkedWith": 3018146897
@@ -15422,6 +17751,10 @@
     "name": "Snapshot Sights",
     "linkedWith": 957782887
    },
+   "4132187021": {
+    "name": "Sharp Harvest",
+    "linkedWith": 2581144697
+   },
    "4152709778": {
     "name": "Iron Gaze",
     "linkedWith": 3609952942
@@ -15433,6 +17766,18 @@
    "4183521337": {
     "name": "Tireless Blade",
     "linkedWith": 2590710093
+   },
+   "4190679284": {
+    "name": "Proximity Power",
+    "linkedWith": 820036316
+   },
+   "4196156997": {
+    "name": "Meganeura",
+    "linkedWith": 657025441
+   },
+   "4198902903": {
+    "name": "Detonator Beam",
+    "linkedWith": 222783511
    },
    "4200236906": {
     "name": "Gutshot Straight",
