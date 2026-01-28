@@ -851,7 +851,7 @@
    "type": "Weapon Trait"
   },
   "250902314": {
-   "name": "Hakke Breach Armaments",
+   "name": "Häkke Breach Armaments",
    "hash": 250902314,
    "type": "Weapon Perk"
   },
@@ -5479,7 +5479,7 @@
    "type": "Armor Mod General"
   },
   "1607056502": {
-   "name": "Hakke Breach Armaments",
+   "name": "Häkke Breach Armaments",
    "hash": 1607056502,
    "type": "Weapon Trait Origin"
   },
@@ -8461,6 +8461,11 @@
    "name": "Aggressive Frame",
    "hash": 2518716062,
    "type": "Weapon Frame"
+  },
+  "2523469161": {
+   "name": "Classy Contender",
+   "hash": 2523469161,
+   "type": "Weapon Perk"
   },
   "2523856971": {
    "name": "Explosive Bolts",
