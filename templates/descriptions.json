@@ -540,6 +540,16 @@
    "hash": 137876701,
    "type": "Weapon Frame Enhanced"
   },
+  "139044974": {
+   "name": "Set Bonus: \nNew Demotic",
+   "hash": 139044974,
+   "type": "Armor Mod General"
+  },
+  "139044987": {
+   "name": "Set Bonus: \nSwordmaster",
+   "hash": 139044987,
+   "type": "Armor Mod General"
+  },
   "141515518": {
    "name": "Adaptive Frame",
    "hash": 141515518,
@@ -2399,6 +2409,11 @@
    "hash": 721001747,
    "type": "Armor Mod General"
   },
+  "721111598": {
+   "name": "Set Bonus: \nTechsec",
+   "hash": 721111598,
+   "type": "Armor Mod General"
+  },
   "722862450": {
    "name": "Dearly Departed",
    "hash": 722862450,
@@ -3366,6 +3381,16 @@
    "hash": 1011551830,
    "type": "Weapon Trait Enhanced"
   },
+  "1012508294": {
+   "name": "Set Bonus: \nWild Anthem",
+   "hash": 1012508294,
+   "type": "Armor Mod General"
+  },
+  "1012508307": {
+   "name": "Set Bonus: \nFerropotent",
+   "hash": 1012508307,
+   "type": "Armor Mod General"
+  },
   "1012699414": {
    "name": "Heavy Grip",
    "hash": 1012699414,
@@ -4132,6 +4157,16 @@
    "hash": 1220310607,
    "type": "Weapon Frame Enhanced"
   },
+  "1220635053": {
+   "name": "Set Bonus: \nTwofold Crown",
+   "hash": 1220635053,
+   "type": "Armor Mod General"
+  },
+  "1220635064": {
+   "name": "Set Bonus: \nBushido",
+   "hash": 1220635064,
+   "type": "Armor Mod General"
+  },
   "1220787353": {
    "name": "Ultralight Rail",
    "hash": 1220787353,
@@ -4782,6 +4817,11 @@
    "hash": 1401506407,
    "type": "Armor Mod Activity"
   },
+  "1404854454": {
+   "name": "Set Bonus: \nAION Renewal",
+   "hash": 1404854454,
+   "type": "Armor Mod General"
+  },
   "1406835319": {
    "name": "Dynamic Heat Weapon",
    "hash": 1406835319,
@@ -5192,6 +5232,11 @@
    "name": "Combat Grip",
    "hash": 1529576681,
    "type": "Weapon Perk"
+  },
+  "1530138662": {
+   "name": "Set Bonus: \nWayward Psyche",
+   "hash": 1530138662,
+   "type": "Armor Mod General"
   },
   "1530804125": {
    "name": "Superconductor",
@@ -6310,6 +6355,11 @@
    "name": "Healing Grenade",
    "hash": 1841016428,
    "type": "Subclass Grenade"
+  },
+  "1841728090": {
+   "name": "Set Bonus: \nSage Protector",
+   "hash": 1841728090,
+   "type": "Armor Mod General"
   },
   "1844314558": {
    "name": "Parting Gift",
@@ -9609,6 +9659,11 @@
    "hash": 2822142346,
    "type": "Weapon Perk"
   },
+  "2824493179": {
+   "name": "Set Bonus: \nAccretion",
+   "hash": 2824493179,
+   "type": "Armor Mod General"
+  },
   "2826187530": {
    "name": "The Fourth Horseman Catalyst",
    "hash": 2826187530,
@@ -9753,6 +9808,11 @@
    "name": "Thermoplastic Grenades",
    "hash": 2870095399,
    "type": "Weapon Perk"
+  },
+  "2872740129": {
+   "name": "Set Bonus: \nThriving Survivor",
+   "hash": 2872740129,
+   "type": "Armor Mod General"
   },
   "2873651103": {
    "name": "Search Party",
@@ -11917,6 +11977,16 @@
    "hash": 3573031954,
    "type": "Armor Mod General"
   },
+  "3573256294": {
+   "name": "Set Bonus: \nDisaster Corps",
+   "hash": 3573256294,
+   "type": "Armor Mod General"
+  },
+  "3573256307": {
+   "name": "Set Bonus: \nSmoke Jumper",
+   "hash": 3573256307,
+   "type": "Armor Mod General"
+  },
   "3573764622": {
    "name": "Precision Frame",
    "hash": 3573764622,
@@ -12547,6 +12617,11 @@
    "hash": 3781548872,
    "type": "Weapon Perk"
   },
+  "3782433407": {
+   "name": "Set Bonus: \nLustrous",
+   "hash": 3782433407,
+   "type": "Armor Mod General"
+  },
   "3782773412": {
    "name": "Tithing Harvest",
    "hash": 3782773412,
@@ -12696,6 +12771,11 @@
    "itemHash": 1473821207,
    "type": "Weapon Frame Exotic"
   },
+  "3834187337": {
+   "name": "Set Bonus: \nIron Panoply",
+   "hash": 3834187337,
+   "type": "Armor Mod General"
+  },
   "3834273538": {
    "name": "Riposte",
    "hash": 3834273538,
@@ -12815,6 +12895,11 @@
    "name": "Disruption Break",
    "hash": 3871884143,
    "type": "Weapon Perk"
+  },
+  "3874641219": {
+   "name": "Set Bonus: \nShrewd Survivor",
+   "hash": 3874641219,
+   "type": "Armor Mod General"
   },
   "3874977694": {
    "name": "Pack Hunter",
@@ -13545,6 +13630,11 @@
    "name": "Snapshot Sights",
    "hash": 4116820839,
    "type": "Weapon Trait Enhanced"
+  },
+  "4119627352": {
+   "name": "Set Bonus: \nAION Adapter",
+   "hash": 4119627352,
+   "type": "Armor Mod General"
   },
   "4120041779": {
    "name": "Acrobat's Focus",
