@@ -564,6 +564,13 @@
    "hash": 132189785,
    "type": "Weapon Frame Enhanced"
   },
+  "136208450": {
+   "name": "Soulburn",
+   "hash": 136208450,
+   "itemName": "Cull's Shadow",
+   "itemHash": 2200470033,
+   "type": "Weapon Frame Exotic"
+  },
   "136447464": {
    "name": "Winterized Gear",
    "hash": 136447464,
@@ -2449,6 +2456,13 @@
    "name": "Rapid-Fire Glaive",
    "hash": 694879972,
    "type": "Weapon Frame Enhanced"
+  },
+  "695800688": {
+   "name": "Soulforge",
+   "hash": 695800688,
+   "itemName": "Cull's Shadow",
+   "itemHash": 2200470033,
+   "type": "Weapon Trait Exotic"
   },
   "695966445": {
    "name": "Aggressive Burst",
@@ -7138,6 +7152,13 @@
    "name": "Wave Sword Frame",
    "hash": 1978306813,
    "type": "Weapon Frame"
+  },
+  "1980732122": {
+   "name": "Blades of Unmaking",
+   "hash": 1980732122,
+   "itemName": "Cull's Shadow",
+   "itemHash": 2200470033,
+   "type": "Weapon Perk Exotic"
   },
   "1980796560": {
    "name": "Shield Throw",
@@ -15223,6 +15244,14 @@
       986191425,
       1023764762,
       1385518514
+     ]
+    },
+    {
+     "name": "Cull's Shadow",
+     "has": [
+      136208450,
+      695800688,
+      1980732122
      ]
     },
     {

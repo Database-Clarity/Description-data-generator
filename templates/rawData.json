@@ -1085,6 +1085,14 @@
   "hash": 132189785,
   "type": "Weapon Frame Enhanced"
  },
+ "136208450": {
+  "appearsOn": [
+   2200470033
+  ],
+  "name": "Soulburn",
+  "hash": 136208450,
+  "type": "Weapon Frame Exotic"
+ },
  "136447464": {
   "appearsOn": [
    "Machine Gun",
@@ -4715,6 +4723,14 @@
   "name": "Rapid-Fire Glaive",
   "hash": 694879972,
   "type": "Weapon Frame Enhanced"
+ },
+ "695800688": {
+  "appearsOn": [
+   2200470033
+  ],
+  "name": "Soulforge",
+  "hash": 695800688,
+  "type": "Weapon Trait Exotic"
  },
  "695966445": {
   "appearsOn": [
@@ -14038,6 +14054,14 @@
   "name": "Wave Sword Frame",
   "hash": 1978306813,
   "type": "Weapon Frame"
+ },
+ "1980732122": {
+  "appearsOn": [
+   2200470033
+  ],
+  "name": "Blades of Unmaking",
+  "hash": 1980732122,
+  "type": "Weapon Perk Exotic"
  },
  "1980796560": {
   "appearsOn": [
@@ -27233,8 +27257,12 @@
  },
  "3991242828": {
   "appearsOn": [
+   "Auto Rifle",
+   "Glaive",
+   "Grenade Launcher",
    "Sword",
-   "Machine Gun"
+   "Machine Gun",
+   "Linear Fusion Rifle"
   ],
   "name": "Willing Vessel",
   "hash": 3991242828,
