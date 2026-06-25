@@ -10926,7 +10926,6 @@
    "Shotgun",
    "Glaive",
    "Sidearm",
-   "Rocket Launcher",
    "Trace Rifle"
   ],
   "name": "Lead from Gold",
@@ -12437,8 +12436,7 @@
    "Shotgun",
    "Combat Bow",
    "Grenade Launcher",
-   "Scout Rifle",
-   "Trace Rifle"
+   "Scout Rifle"
   ],
   "name": "Dimensional Shift",
   "hash": 1767911158,
@@ -22134,8 +22132,7 @@
    "Shotgun",
    "Combat Bow",
    "Grenade Launcher",
-   "Scout Rifle",
-   "Trace Rifle"
+   "Scout Rifle"
   ],
   "name": "Dimensional Shift",
   "hash": 3182497402,
@@ -23779,7 +23776,6 @@
    "Grenade Launcher",
    "Glaive",
    "Sidearm",
-   "Rocket Launcher",
    "Trace Rifle"
   ],
   "name": "Lead from Gold",
