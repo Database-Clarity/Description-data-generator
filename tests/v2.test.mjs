@@ -247,6 +247,35 @@ test('frames group exact normalized names across categories with deterministic n
   assert.deepEqual(result.aliases, {
     1: { to: 10, kind: 'frame' }, 20: { to: 10, kind: 'frame' }, 50: { to: 10, kind: 'frame' },
   })
+
+  test('generation flattens sandbox owners through same-name frame groups without altering legacy aliases', () => {
+    const inventory = byHash(plug(1, 'Frame', 'Intrinsic'), plug(2, ' Frame ', 'Intrinsic'),
+      plug(3, 'Frame', 'Enhanced Intrinsic', 3))
+    inventory[2].perks = [{ perkHash: 100 }]
+    const legacy = Object.fromEntries([1, 2].map(hash => [hash, {
+      hash, name: inventory[hash].displayProperties.name, type: 'Weapon Frame', appearsOn: [],
+    }]))
+    const cwd = process.cwd()
+    const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'clarity-frame-aliases-'))
+    try {
+      process.chdir(directory)
+      generateV2({
+        inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {},
+        sandboxPerk: { 100: { hash: 100 } },
+      }, { 1: 3 }, 'fixture')
+      const read = name => JSON.parse(fs.readFileSync(path.join('templates', 'v2', `${name}.json`)))
+      assert.deepEqual(read('aliases'), {
+        2: { to: 1, kind: 'frame' }, 3: { to: 1, kind: 'frame' },
+        100: { to: 1, kind: 'sandbox' },
+      })
+      assert.deepEqual(read('sandboxAliases'), { 100: 2 })
+      assert.equal(read('items')[3].categoryId, 'weapon-frame-enhanced')
+      assert.equal(read('items')[1].categoryId, 'weapon-frame')
+    } finally {
+      process.chdir(cwd)
+      fs.rmSync(directory, { recursive: true })
+    }
+  })
   assert.equal(result.report.groups[0].mixedExotic, true)
   assert.equal(result.report.groups[0].differingDescriptions, true)
   assert.deepEqual(result.report.nearMisses, [['adaptive frame', 'adaptive-frame']])
