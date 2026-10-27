@@ -23,6 +23,9 @@ Network failures or invalid supplemental data fail the run explicitly.
   `name`, `icon` when available, `categoryId`, and `inGameDescription` for Bungie drift.
   Exotic entries retain their owning `itemHash` where known.
 - `templates/v2/sandboxAliases.json`: sandbox hash -> selected inventory tooltip hash.
+- `templates/v2/aliases.json`: generic `{ "<hash>": { to, kind: "sandbox" | "frame" } }`
+  aliases. Sandbox targets are resolved through frame groups. This supersedes
+  `sandboxAliases.json`, which remains unchanged for older consumers.
 - `templates/v2/coverage.json`: per-category legacy/v2 counts, manifest version,
   pairing coverage/disagreements, unresolved candidates, and shared sandbox aliases.
 
@@ -53,6 +56,14 @@ otherwise lowest hash). Consumers must keep all variants, not assume a one-to-on
 intrinsic mapping.
 
 ## Sandbox and verbs
+
+Weapon frames across all four frame categories share one tooltip when their names
+match after trimming and case folding; icons do not matter. The canonical member
+is the lowest non-enhanced hash and retains its category. Items keep their original
+manifest facts and pairing. Coverage reports every group, mixed exotic/legendary
+membership, differing in-game descriptions and punctuation-only near misses
+(reported, never grouped). Consumers redirect aliases, list each group once, and
+export its shared text under every member hash with that member's manifest facts.
 
 Selected inventory tooltips retain all nonzero `perks[].perkHash` values in
 `sandboxPerkHashes`. Valid sandbox definitions become aliases, **not categories,

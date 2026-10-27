@@ -4744,5 +4744,619 @@
    }
   ],
   "missingDefinitions": []
+ },
+ "frames": {
+  "groups": [
+   {
+    "name": "rapid-fire glaive",
+    "canonicalHash": 1956005708,
+    "hashes": [
+     2593449,
+     217816625,
+     694879972,
+     1956005708,
+     2479787361
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "aggressive frame",
+    "canonicalHash": 836583820,
+    "hashes": [
+     16021165,
+     167794220,
+     176072987,
+     189818679,
+     389945760,
+     757651572,
+     836583820,
+     1069611115,
+     1361856293,
+     1487938731,
+     1525239159,
+     1632897927,
+     1737914521,
+     1739861752,
+     1748364716,
+     1749118639,
+     1827557644,
+     1831499663,
+     2059481925,
+     2097693203,
+     2101490074,
+     2159352803,
+     2518716062,
+     2552875793,
+     2662827496,
+     2757685314,
+     2912509910,
+     3026990487,
+     3320257055,
+     3468089894,
+     3615521782,
+     3794558792,
+     3884051579,
+     3983457027,
+     4036525828,
+     4074888076,
+     4198833635,
+     4203236451
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "aggressive glaive",
+    "canonicalHash": 1986105578,
+    "hashes": [
+     16445399,
+     738339367,
+     1986105578,
+     2040155611,
+     3228668394
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "precision frame",
+    "canonicalHash": 216781713,
+    "hashes": [
+     26177576,
+     216781713,
+     224485255,
+     364418505,
+     384272571,
+     433469519,
+     445823153,
+     453527127,
+     482158780,
+     668357349,
+     715195141,
+     738967614,
+     743857847,
+     762204274,
+     797798924,
+     811588234,
+     886865893,
+     895140517,
+     1034287523,
+     1045795938,
+     1052350088,
+     1206996986,
+     1236001742,
+     1322370662,
+     1636108362,
+     1827389998,
+     2057203855,
+     2094305299,
+     2305599261,
+     2409208302,
+     2458294492,
+     2563509458,
+     2725422375,
+     2743098132,
+     2927971896,
+     2986718682,
+     3000852559,
+     3046673757,
+     3094629643,
+     3114731754,
+     3192296481,
+     3226552705,
+     3252839262,
+     3274444880,
+     3356299403,
+     3399947696,
+     3419227006,
+     3419274965,
+     3489809232,
+     3573764622,
+     3646909656,
+     3665558569,
+     3774850330,
+     3913106382,
+     4000302358,
+     4083543255,
+     4113841443,
+     4130495068
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "adaptive burst",
+    "canonicalHash": 31057037,
+    "hashes": [
+     31057037,
+     451371216,
+     1063261332,
+     1655963600,
+     1795925907,
+     1938288214,
+     2503963990,
+     3049431773,
+     3387402995,
+     3414419157,
+     3449390870,
+     3530948111,
+     3576895600,
+     4193948962,
+     4200880287,
+     4269485650
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "vortex frame",
+    "canonicalHash": 263649945,
+    "hashes": [
+     40492375,
+     263649945
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "lightweight frame",
+    "canonicalHash": 474269988,
+    "hashes": [
+     118439741,
+     132189785,
+     308595185,
+     395096174,
+     474269988,
+     539564471,
+     885620491,
+     956390015,
+     1458010786,
+     1665848857,
+     1671927875,
+     1713206376,
+     2012877834,
+     2105054824,
+     2108556049,
+     3048420653,
+     3272152575,
+     3377988521,
+     3472640090,
+     3725333007,
+     3728676938,
+     4008973208,
+     4080055066
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "rapid-fire frame",
+    "canonicalHash": 806997698,
+    "hashes": [
+     137876701,
+     680193725,
+     762801111,
+     802623077,
+     806997698,
+     872207875,
+     878286503,
+     996573084,
+     1027896051,
+     1483339932,
+     1497440861,
+     1564126489,
+     1576423267,
+     1707990417,
+     1765356367,
+     1787083609,
+     1886418605,
+     1894749743,
+     2003022817,
+     2164888232,
+     2260949877,
+     2263539715,
+     2353477480,
+     2806361224,
+     2984571381,
+     2986029425,
+     3095041770,
+     3249407402,
+     3364911712,
+     3478030936,
+     3688301727,
+     3841661468,
+     3920852688,
+     4116588173,
+     4188742693
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "adaptive frame",
+    "canonicalHash": 1294026524,
+    "hashes": [
+     141515518,
+     489506521,
+     1294026524,
+     1793150018,
+     1900989425,
+     2178772051,
+     2189829540,
+     2490530085,
+     3133077199,
+     3355499393,
+     3435239180,
+     4172267910,
+     4249817697
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "support frame",
+    "canonicalHash": 2078075300,
+    "hashes": [
+     156358224,
+     785441979,
+     840061228,
+     1535085486,
+     1926141333,
+     2078075300,
+     2235383762,
+     2491949917,
+     2622129339,
+     2707250581,
+     2799967529,
+     3161047604,
+     3488129416
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "caster frame",
+    "canonicalHash": 183772609,
+    "hashes": [
+     183772609,
+     3035281791
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "compressed wave frame",
+    "canonicalHash": 2571259936,
+    "hashes": [
+     210578077,
+     667908513,
+     2264456959,
+     2571259936,
+     3142073525
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "area denial frame",
+    "canonicalHash": 244760020,
+    "hashes": [
+     244760020,
+     385138649,
+     1208953762,
+     1782704870,
+     2012023082
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "high-impact frame",
+    "canonicalHash": 1019291327,
+    "hashes": [
+     302702765,
+     1019291327,
+     1451602450,
+     1472963920,
+     1875323682,
+     1946568256,
+     2516075140,
+     2617324347,
+     3769337248,
+     4231246084
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "micro-missile frame",
+    "canonicalHash": 2928496916,
+    "hashes": [
+     368110299,
+     540070330,
+     651554065,
+     687584589,
+     745725302,
+     1225770249,
+     1278053348,
+     2100231191,
+     2928496916,
+     3178379945,
+     3758615625,
+     4024789138
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "adaptive glaive",
+    "canonicalHash": 1316753551,
+    "hashes": [
+     378204240,
+     1316753551,
+     1338909520,
+     1447716563,
+     2696719570
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "wave sword frame",
+    "canonicalHash": 430173891,
+    "hashes": [
+     430173891,
+     1978306813
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "heavy burst",
+    "canonicalHash": 570373697,
+    "hashes": [
+     570373697,
+     749936529,
+     1370384437,
+     1634975868,
+     1817649409,
+     2170254329,
+     2213429699,
+     2444870733,
+     2732540911,
+     3099083217,
+     3291480605,
+     3330548924,
+     3456918063,
+     3923638944,
+     4175870265
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "aggressive burst",
+    "canonicalHash": 695966445,
+    "hashes": [
+     581875391,
+     695966445,
+     1020196213,
+     1068043187,
+     2419864979,
+     2874284214
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "double fire",
+    "canonicalHash": 1759472859,
+    "hashes": [
+     583593420,
+     650063316,
+     983290038,
+     1759472859,
+     3755958904
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "wave frame",
+    "canonicalHash": 1395789926,
+    "hashes": [
+     621911507,
+     1220310607,
+     1395789926,
+     1713394949,
+     3030812579
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "pinpoint slug frame",
+    "canonicalHash": 918679156,
+    "hashes": [
+     878620401,
+     918679156,
+     2410819063,
+     2426674025,
+     2897981193
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "legacy pr-55 frame",
+    "canonicalHash": 4172222323,
+    "hashes": [
+     916649862,
+     2155015844,
+     3332480988,
+     3766386008,
+     4172222323
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "gathering light",
+    "canonicalHash": 975429949,
+    "hashes": [
+     975429949,
+     3551049142
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "the perfect fifth",
+    "canonicalHash": 1000724343,
+    "hashes": [
+     1000724343,
+     1522566605
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "balanced heat weapon",
+    "canonicalHash": 1002219198,
+    "hashes": [
+     1002219198,
+     2167115920,
+     2732952950,
+     3771737927
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "mida synergy",
+    "canonicalHash": 1888623310,
+    "hashes": [
+     1057935015,
+     1888623310,
+     1891876363,
+     2213377102,
+     2470575005,
+     2670025099
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "together forever",
+    "canonicalHash": 1282254042,
+    "hashes": [
+     1241894699,
+     1282254042,
+     1300107783,
+     1615948893,
+     2826720951,
+     3513901081
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "unplanned reprieve",
+    "canonicalHash": 1327961177,
+    "hashes": [
+     1327961177,
+     1927916065
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "dynamic heat weapon",
+    "canonicalHash": 1406835319,
+    "hashes": [
+     1406835319,
+     1442784346,
+     1611330137,
+     2331097520,
+     4108848057
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "wolfpack rounds",
+    "canonicalHash": 1959135343,
+    "hashes": [
+     1959135343,
+     2962361451
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "arc conductor",
+    "canonicalHash": 2516532331,
+    "hashes": [
+     2516532331,
+     3949068808
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "trinary vision",
+    "canonicalHash": 2733244971,
+    "hashes": [
+     2733244971,
+     4133742354,
+     4133742355,
+     4133742357
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": false
+   },
+   {
+    "name": "sacred flame",
+    "canonicalHash": 3034060702,
+    "hashes": [
+     3034060702,
+     3239299468
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   },
+   {
+    "name": "insectoid robot grenades",
+    "canonicalHash": 3325420353,
+    "hashes": [
+     3325420353,
+     3913463509
+    ],
+    "mixedExotic": false,
+    "differingDescriptions": true
+   }
+  ],
+  "nearMisses": []
  }
 }

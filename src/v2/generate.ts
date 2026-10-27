@@ -4,6 +4,7 @@ import { Manifest, Item } from './types.js'
 import { derivePairings, isEnhanced, weaponCategory } from './pairing.js'
 import { associateSandbox } from './sandbox.js'
 import { pairingUrl } from './fetch.js'
+import { groupFrames, Alias } from './frames.js'
 
 export function generateV2(manifest: Manifest, dim: Record<string, number>, version: string) {
   const pairing = derivePairings(manifest.inventoryItem, manifest.plugSet, dim)
@@ -50,6 +51,13 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     base.enhancedHash = base.enhancedHashes.includes(dim[baseHash]) ? dim[baseHash] : base.enhancedHashes[0]
   }
   const sandbox = associateSandbox(items, manifest.inventoryItem, manifest.sandboxPerk)
+  const frames = groupFrames(items)
+  const aliases: Record<string, Alias> = { ...frames.aliases }
+  for (const [hash, owner] of Object.entries(sandbox.aliases)) {
+    if (Number(hash) === owner) continue
+    if (aliases[hash]) throw new Error(`Duplicate alias hash ${hash}`)
+    aliases[hash] = { to: frames.aliases[owner]?.to ?? owner, kind: 'sandbox' }
+  }
   fs.mkdirSync('./templates/v2', { recursive: true })
   const write = (name: string, value: unknown) =>
     fs.writeFileSync(`./templates/v2/${name}.json`, JSON.stringify(value, undefined, 1) + '\n')
@@ -58,12 +66,14 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   })))
   write('items', items)
   write('sandboxAliases', sandbox.aliases)
+  write('aliases', aliases)
   write('coverage', {
     manifestVersion: version,
     pairingSource: pairingUrl,
     categories: coverage,
     pairing: pairing.report,
     sandbox: sandbox.report,
+    frames: frames.report,
   })
   console.log('v2 category coverage (legacy -> v2):', coverage)
   console.log(`v2: ${Object.keys(items).length} items, ${pairing.report.paired} enhanced pairs, ${sandbox.report.aliases} sandbox aliases`)

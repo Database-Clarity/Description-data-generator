@@ -9,6 +9,7 @@ import { generateV2 } from '../generator/v2/generate.js'
 import { legacyCategory } from '../generator/v2/legacyCategory.js'
 import { derivePairings } from '../generator/v2/pairing.js'
 import { associateSandbox } from '../generator/v2/sandbox.js'
+import { groupFrames } from '../generator/v2/frames.js'
 
 function plug(hash, name, type = 'Trait', tierType = 2) {
   return {
@@ -41,7 +42,7 @@ function assertNoStatData(value) {
 test('all generated v2 outputs exclude stat data and weapon formula files', () => {
   const directory = new URL('../templates/v2/', import.meta.url)
   assert.deepEqual(fs.readdirSync(directory).sort(), [
-    'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+    'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
   ])
   for (const name of fs.readdirSync(directory)) {
     assertNoStatData(JSON.parse(fs.readFileSync(new URL(name, directory))))
@@ -216,7 +217,7 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'sandboxAliases.json'))), { 100: 1 })
     assert.deepEqual(legacy[1].appearsOn, [10])
     assert.deepEqual(fs.readdirSync(path.join('templates', 'v2')).sort(), [
-      'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+      'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
     ])
     for (const name of fs.readdirSync(path.join('templates', 'v2'))) {
       assertNoStatData(JSON.parse(fs.readFileSync(path.join('templates', 'v2', name))))
@@ -229,4 +230,27 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     process.chdir(cwd)
     fs.rmSync(directory, { recursive: true })
   }
+})
+
+test('frames group exact normalized names across categories with deterministic non-enhanced ownership', () => {
+  const member = (hash, name, categoryId, inGameDescription = 'one') =>
+    ({ hash, name, categoryId, inGameDescription })
+  const items = byHash(
+    member(1, ' Adaptive Frame ', 'weapon-frame-enhanced'),
+    member(20, 'adaptive frame', 'weapon-frame-exotic', 'two'),
+    member(10, 'Adaptive Frame', 'weapon-frame'),
+    member(30, 'Adaptive-Frame', 'weapon-frame'),
+    member(40, 'Adaptive Frame', 'weapon-trait'),
+    member(50, 'Adaptive Frame', 'weapon-frame-enhanced-exotic'),
+  )
+  const result = groupFrames(items)
+  assert.deepEqual(result.aliases, {
+    1: { to: 10, kind: 'frame' }, 20: { to: 10, kind: 'frame' }, 50: { to: 10, kind: 'frame' },
+  })
+  assert.equal(result.report.groups[0].mixedExotic, true)
+  assert.equal(result.report.groups[0].differingDescriptions, true)
+  assert.deepEqual(result.report.nearMisses, [['adaptive frame', 'adaptive-frame']])
+  assert.deepEqual(groupFrames(Object.fromEntries(Object.entries(items).reverse())), result)
+  assert.throws(() => groupFrames(byHash(member(1, 'Only', 'weapon-frame-enhanced'),
+    member(2, 'Only', 'weapon-frame-enhanced-exotic'))), /no non-enhanced/)
 })
