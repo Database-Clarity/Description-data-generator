@@ -4,13 +4,14 @@ on:
   push:
     branches:
       - main
+      - v2
   schedule:
-    - cron: "0 8 * * *" # Runs at 08:00 UTC every day.
+    - cron: '0 8 * * *' # Runs at 08:00 UTC every day.
   workflow_dispatch: # For manually running the action
-
 
 jobs:
   build-and-deploy:
+    if: github.ref != 'refs/heads/v2'
     runs-on: ubuntu-latest
 
     steps:
@@ -45,3 +46,34 @@ jobs:
           git add .
           git commit -m "deploy"
           git push
+
+  refresh-v2:
+    if: github.ref == 'refs/heads/v2'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: generator-v2
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install
+        run: npm ci
+      - name: Build and verify v2
+        run: npm run check:v2
+      - name: Regenerate
+        run: npm run generate
+      - name: Commit only v2 outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- templates/v2
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh v2 manifest data"
+            git push origin HEAD:refs/heads/v2
+          fi
