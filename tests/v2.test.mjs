@@ -120,6 +120,16 @@ test('sandbox references are deduplicated aliases; shared ownership and missing 
   assert.equal(Object.keys(items).length, 2)
 })
 
+test('sandbox and inventory hashes can legitimately be identical, but cannot alias another tooltip', () => {
+  const inventory = byHash(plug(1, 'One'), plug(2, 'Two'))
+  inventory[1].perks = [{ perkHash: 1 }]
+  const items = { 1: { hash: 1, definitionType: 'DestinyInventoryItemDefinition' } }
+  assert.deepEqual(associateSandbox(items, inventory, { 1: { hash: 1 } }).aliases, { 1: 1 })
+  inventory[1].perks = [{ perkHash: 2 }]
+  items[2] = { hash: 2, definitionType: 'DestinyInventoryItemDefinition' }
+  assert.throws(() => associateSandbox(items, inventory, { 2: { hash: 2 } }), /collides/)
+})
+
 test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal multi-variant pairing', () => {
   const inventory = byHash(plug(1, "Hunter's Trace", 'Intrinsic', 6),
     plug(2, "Hunter's Trace II", 'Intrinsic', 6), plug(3, "Hunter's Trace III", 'Intrinsic', 6))
