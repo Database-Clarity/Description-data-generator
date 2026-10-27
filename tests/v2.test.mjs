@@ -30,6 +30,24 @@ function byHash(...items) {
   return Object.fromEntries(items.map(item => [item.hash, item]))
 }
 
+function assertNoStatData(value) {
+  if (value === null || typeof value !== 'object') return
+  for (const [key, entry] of Object.entries(value)) {
+    assert.doesNotMatch(key, /stat|formula/i, `Unexpected v2 stat/formula field: ${key}`)
+    assertNoStatData(entry)
+  }
+}
+
+test('all generated v2 outputs exclude stat data and weapon formula files', () => {
+  const directory = new URL('../templates/v2/', import.meta.url)
+  assert.deepEqual(fs.readdirSync(directory).sort(), [
+    'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+  ])
+  for (const name of fs.readdirSync(directory)) {
+    assertNoStatData(JSON.parse(fs.readFileSync(new URL(name, directory))))
+  }
+})
+
 test('registry has all 27 converter types, plus verbs; stable unique IDs/orders', () => {
   assert.equal(categories.length, 28)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
@@ -162,7 +180,12 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     plug(2, "Hunter's Trace II", 'Intrinsic', 6), plug(3, "Hunter's Trace III", 'Intrinsic', 6))
   inventory[10] = weapon(10, [1, 2, 3])
   inventory[1].perks = [{ perkHash: 100 }]
+  inventory[1].stats = { stats: { 10: { value: 42 } } }
+  inventory[1].investmentStats = [{ statTypeHash: 10, value: 42 }]
   const legacy = { 1: { hash: 1, name: "Hunter's Trace", type: 'Weapon Frame Exotic', appearsOn: [10] } }
+  legacy[1].stats = { Damage: 42 }
+  legacy[1].importStatsFrom = 10
+  legacy[1].weaponFormula = { damage: '42' }
   const manifest = {
     inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {},
     sandboxPerk: { 100: { hash: 100 } },
@@ -192,6 +215,16 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.equal(items[100], undefined)
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'sandboxAliases.json'))), { 100: 1 })
     assert.deepEqual(legacy[1].appearsOn, [10])
+    assert.deepEqual(fs.readdirSync(path.join('templates', 'v2')).sort(), [
+      'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+    ])
+    for (const name of fs.readdirSync(path.join('templates', 'v2'))) {
+      assertNoStatData(JSON.parse(fs.readFileSync(path.join('templates', 'v2', name))))
+    }
+    assert.deepEqual(inventory[1].investmentStats, [{ statTypeHash: 10, value: 42 }])
+    assert.deepEqual(legacy[1].stats, { Damage: 42 })
+    assert.equal(legacy[1].importStatsFrom, 10)
+    assert.deepEqual(legacy[1].weaponFormula, { damage: '42' })
   } finally {
     process.chdir(cwd)
     fs.rmSync(directory, { recursive: true })

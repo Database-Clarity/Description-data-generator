@@ -26,6 +26,12 @@ Network failures or invalid supplemental data fail the run explicitly.
 - `templates/v2/coverage.json`: per-category legacy/v2 counts, manifest version,
   pairing coverage/disagreements, unresolved candidates, and shared sandbox aliases.
 
+V2 intentionally excludes all stat data (`stats`, `importStatsFrom`, investment
+stats) and weapon formulas. Manifest inputs are projected onto the explicit item
+fields rather than copied wholesale. Legacy stat/formula generation, including
+`templates/weaponFormula.json`, is unchanged. Regression checks scan every v2 JSON
+output and exercise stat-bearing inputs to prevent these fields from leaking.
+
 See [category instructions](src/categories/README.md) to add a category. Existing
 classification reuses the legacy filters; new pairing reads the **unfiltered**
 manifest, including exotic and catalyst-upgraded intrinsics. No legacy filter or
