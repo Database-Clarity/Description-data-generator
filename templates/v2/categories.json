@@ -1,0 +1,170 @@
+[
+ {
+  "id": "armor-trait-exotic",
+  "label": "Armor Trait Exotic",
+  "group": "Armor",
+  "order": 10
+ },
+ {
+  "id": "armor-mod-general",
+  "label": "Armor Mod General",
+  "group": "Armor",
+  "order": 20
+ },
+ {
+  "id": "armor-mod-combat",
+  "label": "Armor Mod Combat",
+  "group": "Armor",
+  "order": 30
+ },
+ {
+  "id": "armor-mod-activity",
+  "label": "Armor Mod Activity",
+  "group": "Armor",
+  "order": 40
+ },
+ {
+  "id": "armor-mod-seasonal",
+  "label": "Armor Mod Seasonal",
+  "group": "Armor",
+  "order": 50
+ },
+ {
+  "id": "weapon-perk",
+  "label": "Weapon Perk",
+  "group": "Weapons",
+  "order": 100
+ },
+ {
+  "id": "weapon-perk-exotic",
+  "label": "Weapon Perk Exotic",
+  "group": "Weapons",
+  "order": 110
+ },
+ {
+  "id": "weapon-trait",
+  "label": "Weapon Trait",
+  "group": "Weapons",
+  "order": 120
+ },
+ {
+  "id": "weapon-trait-exotic",
+  "label": "Weapon Trait Exotic",
+  "group": "Weapons",
+  "order": 130
+ },
+ {
+  "id": "weapon-trait-origin",
+  "label": "Weapon Trait Origin",
+  "group": "Weapons",
+  "order": 140
+ },
+ {
+  "id": "weapon-trait-origin-exotic",
+  "label": "Weapon Trait Origin Exotic",
+  "group": "Weapons",
+  "order": 150
+ },
+ {
+  "id": "weapon-trait-enhanced",
+  "label": "Weapon Trait Enhanced",
+  "group": "Weapons",
+  "order": 160
+ },
+ {
+  "id": "weapon-trait-enhanced-exotic",
+  "label": "Weapon Trait Enhanced Exotic",
+  "group": "Weapons",
+  "order": 170
+ },
+ {
+  "id": "weapon-frame",
+  "label": "Weapon Frame",
+  "group": "Weapons",
+  "order": 180
+ },
+ {
+  "id": "weapon-frame-exotic",
+  "label": "Weapon Frame Exotic",
+  "group": "Weapons",
+  "order": 190
+ },
+ {
+  "id": "weapon-frame-enhanced",
+  "label": "Weapon Frame Enhanced",
+  "group": "Weapons",
+  "order": 200
+ },
+ {
+  "id": "weapon-frame-enhanced-exotic",
+  "label": "Weapon Frame Enhanced Exotic",
+  "group": "Weapons",
+  "order": 210
+ },
+ {
+  "id": "weapon-catalyst-exotic",
+  "label": "Weapon Catalyst Exotic",
+  "group": "Weapons",
+  "order": 220
+ },
+ {
+  "id": "weapon-mod",
+  "label": "Weapon Mod",
+  "group": "Weapons",
+  "order": 230
+ },
+ {
+  "id": "subclass-fragment",
+  "label": "Subclass Fragment",
+  "group": "Subclasses",
+  "order": 300
+ },
+ {
+  "id": "subclass-aspect",
+  "label": "Subclass Aspect",
+  "group": "Subclasses",
+  "order": 310
+ },
+ {
+  "id": "subclass-super",
+  "label": "Subclass Super",
+  "group": "Subclasses",
+  "order": 320
+ },
+ {
+  "id": "subclass-grenade",
+  "label": "Subclass Grenade",
+  "group": "Subclasses",
+  "order": 330
+ },
+ {
+  "id": "subclass-melee",
+  "label": "Subclass Melee",
+  "group": "Subclasses",
+  "order": 340
+ },
+ {
+  "id": "subclass-class",
+  "label": "Subclass Class",
+  "group": "Subclasses",
+  "order": 350
+ },
+ {
+  "id": "subclass-movement",
+  "label": "Subclass Movement",
+  "group": "Subclasses",
+  "order": 360
+ },
+ {
+  "id": "verbs",
+  "label": "Subclass Verbs and Keywords",
+  "group": "Subclasses",
+  "order": 370
+ },
+ {
+  "id": "ghost-mod",
+  "label": "Ghost Mod",
+  "group": "Ghost",
+  "order": 400
+ }
+]

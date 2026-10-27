@@ -7,6 +7,8 @@ import { createDescriptionData } from './descriptionData.js'
 import { createRawData } from './rawData.js'
 import { InventoryItemEnums } from './utils/enums.js'
 import { createWeaponFormulaData } from './weaponFormulaData.js'
+import { fetchSupplemental } from './v2/fetch.js'
+import { generateV2 } from './v2/generate.js'
 
 export type PerkData = {
   appearsOn: Set<string | number>
@@ -21,10 +23,10 @@ export type PerkDataList = {
 ;(async () => {
   const { inventoryItem, plugSet, socketType } = await fetchBungieManifest(['inventoryItem', 'plugSet', 'socketType'])
   if (inventoryItem === undefined || plugSet === undefined || socketType === undefined) {
-    console.log('Failed to fetch manifest');
-    return    
+    throw new Error('Failed to fetch manifest')
   }
 
+  const fullInventory = { ...inventoryItem }
   for (const key in inventoryItem) {
     const item = inventoryItem[key]
 
@@ -64,5 +66,18 @@ export type PerkDataList = {
   const weaponFormula = createWeaponFormulaData(inventoryItem, rawData)
   fs.writeFileSync('./templates/weaponFormula.json', JSON.stringify(weaponFormula, undefined, 1))
 
+  const supplemental = await fetchSupplemental()
+  generateV2({
+    inventoryItem: fullInventory,
+    plugSet,
+    legacy: rawData,
+    sandboxPerk: supplemental.sandboxPerk,
+    trait: supplemental.trait,
+    extraTypes: {},
+  }, supplemental.dim, supplemental.version)
+
   console.log('Completed')
-})()
+})().catch(error => {
+  console.error('Generator failed:', error)
+  process.exitCode = 1
+})

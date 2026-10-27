@@ -3,6 +3,7 @@
   "scripts": {
     "build": "tsc",
     "generate": "node generator/main.js",
+    "check:v2": "tsc && node --test tests/v2.test.mjs",
     "test": "tsc && node generator/main.js"
   },
   "dependencies": {
