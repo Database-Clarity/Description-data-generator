@@ -17,6 +17,8 @@ Network failures or invalid supplemental data fail the run explicitly.
 
 - `templates/*.json`: unchanged legacy generation and formats.
 - `templates/v2/categories.json`: category metadata, including empty legacy types.
+  `legacyType` is the exact converter perk type used by core export; genuinely new
+  categories such as verbs omit it. Labels are presentation text, not export mappings.
 - `templates/v2/items.json`: object keyed by real inventory/trait hash; includes
   `name`, `icon` when available, `categoryId`, and `inGameDescription` for Bungie drift.
   Exotic entries retain their owning `itemHash` where known.

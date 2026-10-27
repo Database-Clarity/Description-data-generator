@@ -6,6 +6,7 @@ import test from 'node:test'
 import { categories } from '../generator/categories/index.js'
 import { fetchJson, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
 import { generateV2 } from '../generator/v2/generate.js'
+import { legacyCategory } from '../generator/v2/legacyCategory.js'
 import { derivePairings } from '../generator/v2/pairing.js'
 import { associateSandbox } from '../generator/v2/sandbox.js'
 
@@ -35,6 +36,32 @@ test('registry has all 27 converter types, plus verbs; stable unique IDs/orders'
   assert.equal(new Set(categories.map(category => category.order)).size, categories.length)
   assert.equal(categories.some(category => category.id === 'sandbox-perk'), false)
   assert.deepEqual(categories.map(category => category.order), categories.map(category => category.order).sort((a, b) => a - b))
+})
+
+test('registry maps all converter legacy types exactly and omits new categories', () => {
+  const converterTypes = fs.readFileSync(
+    new URL('../node_modules/@icemourne/description-converter/src/livePerkTypes.d.ts', import.meta.url), 'utf8',
+  ).match(/export type LivePerkTypes = ([^;]+);/)[1]
+  const expected = [...converterTypes.matchAll(/'([^']+)'/g)].map(match => match[1]).sort()
+  const legacyCategories = categories.filter(category => category.legacyType !== undefined)
+  assert.equal(legacyCategories.length, 27)
+  assert.deepEqual(legacyCategories.map(category => category.legacyType).sort(), expected)
+  for (const category of legacyCategories) {
+    assert.equal(category.legacyType, category.label)
+  }
+  assert.equal(Object.hasOwn(categories.find(category => category.id === 'verbs'), 'legacyType'), false)
+})
+
+test('legacy selection uses legacyType independently of a presentation label', () => {
+  const category = legacyCategory('trait', 'Weapon Trait', 'Weapons', 1)
+  category.label = 'Translated weapon traits'
+  const inventory = byHash(plug(1, 'One'))
+  const manifest = {
+    inventoryItem: inventory, extraTypes: {},
+    legacy: { 1: { hash: 1, type: 'Weapon Trait', appearsOn: [] } },
+  }
+  assert.equal(category.legacyType, 'Weapon Trait')
+  assert.deepEqual(category.select(manifest).map(item => item.hash), [1])
 })
 
 test('pairing is exact, distinguishes prefix names, and never chooses the first ambiguous base', () => {
@@ -150,6 +177,9 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     process.chdir(directory)
     generateV2(manifest, { 1: 999 }, 'fixture')
     const items = JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'items.json')))
+    const emittedCategories = JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'categories.json')))
+    assert.equal(emittedCategories.find(category => category.id === 'weapon-frame-exotic').legacyType, 'Weapon Frame Exotic')
+    assert.equal(Object.hasOwn(emittedCategories.find(category => category.id === 'verbs'), 'legacyType'), false)
     assert.deepEqual(items[1].enhancedHashes, [2, 3])
     assert.equal(items[1].enhancedHash, 2)
     assert.equal(items[2].baseHash, 1)

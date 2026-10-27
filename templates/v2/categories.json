@@ -3,157 +3,183 @@
   "id": "armor-trait-exotic",
   "label": "Armor Trait Exotic",
   "group": "Armor",
-  "order": 10
+  "order": 10,
+  "legacyType": "Armor Trait Exotic"
  },
  {
   "id": "armor-mod-general",
   "label": "Armor Mod General",
   "group": "Armor",
-  "order": 20
+  "order": 20,
+  "legacyType": "Armor Mod General"
  },
  {
   "id": "armor-mod-combat",
   "label": "Armor Mod Combat",
   "group": "Armor",
-  "order": 30
+  "order": 30,
+  "legacyType": "Armor Mod Combat"
  },
  {
   "id": "armor-mod-activity",
   "label": "Armor Mod Activity",
   "group": "Armor",
-  "order": 40
+  "order": 40,
+  "legacyType": "Armor Mod Activity"
  },
  {
   "id": "armor-mod-seasonal",
   "label": "Armor Mod Seasonal",
   "group": "Armor",
-  "order": 50
+  "order": 50,
+  "legacyType": "Armor Mod Seasonal"
  },
  {
   "id": "weapon-perk",
   "label": "Weapon Perk",
   "group": "Weapons",
-  "order": 100
+  "order": 100,
+  "legacyType": "Weapon Perk"
  },
  {
   "id": "weapon-perk-exotic",
   "label": "Weapon Perk Exotic",
   "group": "Weapons",
-  "order": 110
+  "order": 110,
+  "legacyType": "Weapon Perk Exotic"
  },
  {
   "id": "weapon-trait",
   "label": "Weapon Trait",
   "group": "Weapons",
-  "order": 120
+  "order": 120,
+  "legacyType": "Weapon Trait"
  },
  {
   "id": "weapon-trait-exotic",
   "label": "Weapon Trait Exotic",
   "group": "Weapons",
-  "order": 130
+  "order": 130,
+  "legacyType": "Weapon Trait Exotic"
  },
  {
   "id": "weapon-trait-origin",
   "label": "Weapon Trait Origin",
   "group": "Weapons",
-  "order": 140
+  "order": 140,
+  "legacyType": "Weapon Trait Origin"
  },
  {
   "id": "weapon-trait-origin-exotic",
   "label": "Weapon Trait Origin Exotic",
   "group": "Weapons",
-  "order": 150
+  "order": 150,
+  "legacyType": "Weapon Trait Origin Exotic"
  },
  {
   "id": "weapon-trait-enhanced",
   "label": "Weapon Trait Enhanced",
   "group": "Weapons",
-  "order": 160
+  "order": 160,
+  "legacyType": "Weapon Trait Enhanced"
  },
  {
   "id": "weapon-trait-enhanced-exotic",
   "label": "Weapon Trait Enhanced Exotic",
   "group": "Weapons",
-  "order": 170
+  "order": 170,
+  "legacyType": "Weapon Trait Enhanced Exotic"
  },
  {
   "id": "weapon-frame",
   "label": "Weapon Frame",
   "group": "Weapons",
-  "order": 180
+  "order": 180,
+  "legacyType": "Weapon Frame"
  },
  {
   "id": "weapon-frame-exotic",
   "label": "Weapon Frame Exotic",
   "group": "Weapons",
-  "order": 190
+  "order": 190,
+  "legacyType": "Weapon Frame Exotic"
  },
  {
   "id": "weapon-frame-enhanced",
   "label": "Weapon Frame Enhanced",
   "group": "Weapons",
-  "order": 200
+  "order": 200,
+  "legacyType": "Weapon Frame Enhanced"
  },
  {
   "id": "weapon-frame-enhanced-exotic",
   "label": "Weapon Frame Enhanced Exotic",
   "group": "Weapons",
-  "order": 210
+  "order": 210,
+  "legacyType": "Weapon Frame Enhanced Exotic"
  },
  {
   "id": "weapon-catalyst-exotic",
   "label": "Weapon Catalyst Exotic",
   "group": "Weapons",
-  "order": 220
+  "order": 220,
+  "legacyType": "Weapon Catalyst Exotic"
  },
  {
   "id": "weapon-mod",
   "label": "Weapon Mod",
   "group": "Weapons",
-  "order": 230
+  "order": 230,
+  "legacyType": "Weapon Mod"
  },
  {
   "id": "subclass-fragment",
   "label": "Subclass Fragment",
   "group": "Subclasses",
-  "order": 300
+  "order": 300,
+  "legacyType": "Subclass Fragment"
  },
  {
   "id": "subclass-aspect",
   "label": "Subclass Aspect",
   "group": "Subclasses",
-  "order": 310
+  "order": 310,
+  "legacyType": "Subclass Aspect"
  },
  {
   "id": "subclass-super",
   "label": "Subclass Super",
   "group": "Subclasses",
-  "order": 320
+  "order": 320,
+  "legacyType": "Subclass Super"
  },
  {
   "id": "subclass-grenade",
   "label": "Subclass Grenade",
   "group": "Subclasses",
-  "order": 330
+  "order": 330,
+  "legacyType": "Subclass Grenade"
  },
  {
   "id": "subclass-melee",
   "label": "Subclass Melee",
   "group": "Subclasses",
-  "order": 340
+  "order": 340,
+  "legacyType": "Subclass Melee"
  },
  {
   "id": "subclass-class",
   "label": "Subclass Class",
   "group": "Subclasses",
-  "order": 350
+  "order": 350,
+  "legacyType": "Subclass Class"
  },
  {
   "id": "subclass-movement",
   "label": "Subclass Movement",
   "group": "Subclasses",
-  "order": 360
+  "order": 360,
+  "legacyType": "Subclass Movement"
  },
  {
   "id": "verbs",
@@ -165,6 +191,7 @@
   "id": "ghost-mod",
   "label": "Ghost Mod",
   "group": "Ghost",
-  "order": 400
+  "order": 400,
+  "legacyType": "Ghost Mod"
  }
 ]

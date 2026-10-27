@@ -1,4 +1,5 @@
 import { InventoryItems, PlugSets } from '@icemourne/tool-box'
+import { PerkTypes } from '@icemourne/description-converter'
 import { RawDataList } from '../rawData.js'
 
 export interface DisplayDefinition {
@@ -36,5 +37,6 @@ export interface Category {
   label: string
   group: string
   order: number
+  legacyType?: Exclude<PerkTypes, 'none'>
   select(manifest: Manifest): Item[]
 }

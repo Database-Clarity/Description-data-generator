@@ -1,12 +1,13 @@
 import { Category, Item } from './types.js'
 
-export function legacyCategory(id: string, label: string, group: string, order: number): Category {
+export function legacyCategory(id: string, legacyType: NonNullable<Category['legacyType']>, group: string, order: number): Category {
+  const label = legacyType
   return {
-    id, label, group, order,
+    id, label, group, order, legacyType,
     select(manifest) {
       const hashes = new Set([
-        ...Object.values(manifest.legacy).filter(item => item.type === label).map(item => item.hash),
-        ...Object.entries(manifest.extraTypes).filter(([, type]) => type === label).map(([hash]) => Number(hash)),
+        ...Object.values(manifest.legacy).filter(item => item.type === legacyType).map(item => item.hash),
+        ...Object.entries(manifest.extraTypes).filter(([, type]) => type === legacyType).map(([hash]) => Number(hash)),
       ])
       return [...hashes].sort((a, b) => a - b).map(hash => {
         const definition = manifest.inventoryItem[hash]
@@ -21,7 +22,7 @@ export function legacyCategory(id: string, label: string, group: string, order: 
           inGameDescription: definition.displayProperties.description,
           definitionType: 'DestinyInventoryItemDefinition',
         }
-        if (label.endsWith(' Exotic') && typeof owner === 'number') item.itemHash = owner
+        if (legacyType.endsWith(' Exotic') && typeof owner === 'number') item.itemHash = owner
         return item
       })
     },

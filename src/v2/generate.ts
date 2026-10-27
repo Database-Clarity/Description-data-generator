@@ -32,7 +32,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
       if (item.categoryId !== category.id) throw new Error(`Wrong category on ${item.hash}`)
       items[item.hash] = item
     }
-    const legacy = Object.values(manifest.legacy).filter(item => item.type === category.label)
+    const legacy = Object.values(manifest.legacy).filter(item => item.type === category.legacyType)
     for (const item of legacy) {
       if (items[item.hash]?.categoryId !== category.id) throw new Error(`Lost legacy entry ${item.hash}`)
     }
@@ -53,7 +53,9 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   fs.mkdirSync('./templates/v2', { recursive: true })
   const write = (name: string, value: unknown) =>
     fs.writeFileSync(`./templates/v2/${name}.json`, JSON.stringify(value, undefined, 1) + '\n')
-  write('categories', categories.map(({ id, label, group, order }) => ({ id, label, group, order })))
+  write('categories', categories.map(({ id, label, group, order, legacyType }) => ({
+    id, label, group, order, legacyType,
+  })))
   write('items', items)
   write('sandboxAliases', sandbox.aliases)
   write('coverage', {
