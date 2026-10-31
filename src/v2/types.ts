@@ -16,6 +16,7 @@ export interface Manifest {
   sandboxPerk: Record<string, DisplayDefinition>
   trait: Record<string, DisplayDefinition>
   extraTypes: Record<string, string>
+
 }
 
 export interface Item {
@@ -24,6 +25,8 @@ export interface Item {
   icon?: string
   categoryId: string
   itemHash?: number
+  itemName?: string
+  owners?: number[]
   enhancedHash?: number
   enhancedHashes?: number[]
   baseHash?: number

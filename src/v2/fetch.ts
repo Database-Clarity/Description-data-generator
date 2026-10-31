@@ -61,12 +61,13 @@ export async function fetchSupplemental() {
     !isRecord(metadata.Response.jsonWorldComponentContentPaths) ||
     !isRecord(metadata.Response.jsonWorldComponentContentPaths.en) ||
     typeof metadata.Response.version !== 'string') throw new Error('Invalid Bungie manifest metadata')
-  const paths = metadata.Response.jsonWorldComponentContentPaths.en
-  const table = async (name: string) => {
-    const path = paths[name]
+  const englishPaths = metadata.Response.jsonWorldComponentContentPaths.en
+  const tableUrl = (languagePaths: Record<string, unknown>, name: string) => {
+    const path = languagePaths[name]
     if (typeof path !== 'string' || !path.startsWith('/common/')) throw new Error(`Missing manifest table ${name}`)
-    return parseDefinitions(await fetchJson(`https://www.bungie.net${path}`))
+    return `https://www.bungie.net${path}`
   }
+  const table = async (name: string) => parseDefinitions(await fetchJson(tableUrl(englishPaths, name)))
   const [sandboxPerk, trait, dim] = await Promise.all([
     table('DestinySandboxPerkDefinition'),
     table('DestinyTraitDefinition'),
