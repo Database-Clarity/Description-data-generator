@@ -16,6 +16,8 @@ export interface Manifest {
   sandboxPerk: Record<string, DisplayDefinition>
   trait: Record<string, DisplayDefinition>
   extraTypes: Record<string, string>
+  /** language -> item category hash -> singular name (DestinyItemCategoryDefinition) */
+  itemCategoryNames?: Record<string, Record<string, string>>
 }
 
 export interface Item {
@@ -26,6 +28,7 @@ export interface Item {
   itemHash?: number
   itemName?: string
   owners?: number[]
+  weaponTypes?: string[]
   enhancedHash?: number
   enhancedHashes?: number[]
   baseHash?: number

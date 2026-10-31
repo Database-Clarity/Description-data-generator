@@ -1,4 +1,5 @@
 import { Category, Item } from './types.js'
+import { weaponTypesOf } from './weaponTypes.js'
 
 /** Mirrors utils/createPerks.ts: exotic armor traits record their first owner; other exotic perks only when exactly one owner. */
 export function legacyOwner(type: string, appearsOn: readonly (string | number)[]): number | undefined {
@@ -35,6 +36,8 @@ export function legacyCategory(id: string, legacyType: NonNullable<Category['leg
           item.itemHash = owner
           item.itemName = holder.displayProperties.name
         }
+        const types = legacy ? weaponTypesOf(legacy.appearsOn) : []
+        if (types.length) item.weaponTypes = types
         if (legacy && legacy.type.endsWith(' Exotic')) {
           const owners = [...new Set(legacy.appearsOn.filter((value): value is number => typeof value === 'number'))]
           if (owners.length >= 2) item.owners = owners

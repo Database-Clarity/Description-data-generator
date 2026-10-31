@@ -5,6 +5,7 @@ import { derivePairings, isEnhanced, weaponCategory } from './pairing.js'
 import { associateSandbox } from './sandbox.js'
 import { pairingUrl } from './fetch.js'
 import { groupFrames, Alias } from './frames.js'
+import { buildWeaponTypeLabels } from './weaponTypes.js'
 
 export function generateV2(manifest: Manifest, dim: Record<string, number>, version: string) {
   const pairing = derivePairings(manifest.inventoryItem, manifest.plugSet, dim)
@@ -47,6 +48,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     if (!items[enhancedHash] || !items[baseHash]) throw new Error(`Missing pairing endpoint ${baseHash}/${enhancedHash}`)
     items[enhancedHash].baseHash = baseHash
     const base = items[baseHash]
+    if (!items[enhancedHash].weaponTypes && base.weaponTypes) items[enhancedHash].weaponTypes = [...base.weaponTypes]
     base.enhancedHashes = [...(base.enhancedHashes ?? []), enhancedHash].sort((a, b) => a - b)
     base.enhancedHash = base.enhancedHashes.includes(dim[baseHash]) ? dim[baseHash] : base.enhancedHashes[0]
   }
@@ -58,6 +60,10 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     if (aliases[hash]) throw new Error(`Duplicate alias hash ${hash}`)
     aliases[hash] = { to: frames.aliases[owner]?.to ?? owner, kind: 'sandbox' }
   }
+  const weaponTypeLabels = buildWeaponTypeLabels(manifest.itemCategoryNames ?? {})
+  if (weaponTypeLabels.unmatched.length) {
+    console.warn(`v2: no item category found for weapon types: ${weaponTypeLabels.unmatched.join(', ')}`)
+  }
   fs.mkdirSync('./templates/v2', { recursive: true })
   const write = (name: string, value: unknown) =>
     fs.writeFileSync(`./templates/v2/${name}.json`, JSON.stringify(value, undefined, 1) + '\n')
@@ -66,6 +72,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   })))
   write('items', items)
   write('sandboxAliases', sandbox.aliases)
+  write('weaponTypes', weaponTypeLabels.labels)
   write('aliases', aliases)
   write('coverage', {
     manifestVersion: version,
@@ -74,6 +81,10 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     pairing: pairing.report,
     sandbox: sandbox.report,
     frames: frames.report,
+    weaponTypeLabels: {
+      languages: Object.keys(manifest.itemCategoryNames ?? {}).sort(),
+      unmatched: weaponTypeLabels.unmatched,
+    },
   })
   console.log('v2 category coverage (legacy -> v2):', coverage)
   console.log(`v2: ${Object.keys(items).length} items, ${pairing.report.paired} enhanced pairs, ${sandbox.report.aliases} sandbox aliases`)

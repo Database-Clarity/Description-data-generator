@@ -1,5 +1,10 @@
 import { DisplayDefinition } from './types.js'
 
+/** Same language list as the editor (packages/core/src/languages.ts); also Bungie's manifest language keys. */
+export const languages = [
+  'en', 'de', 'es', 'es-mx', 'fr', 'it', 'ja', 'ko', 'pl', 'pt-br', 'ru', 'zh-chs', 'zh-cht',
+] as const
+
 export const pairingUrl = 'https://raw.githubusercontent.com/DestinyItemManager/d2-additional-info/master/output/trait-to-enhanced-trait.json'
 
 export async function fetchJson(url: string): Promise<unknown> {
@@ -41,6 +46,17 @@ export function parseDefinitions(value: unknown): Record<string, DisplayDefiniti
   return definitions
 }
 
+/** DestinyItemCategoryDefinition table -> { hash: name }; lenient because the table holds many unrelated categories. */
+export function parseCategoryNames(value: unknown): Record<string, string> {
+  if (!isRecord(value)) throw new Error('Expected item category definition table')
+  const names: Record<string, string> = {}
+  for (const [hash, entry] of Object.entries(value)) {
+    if (isRecord(entry) && isRecord(entry.displayProperties) && typeof entry.displayProperties.name === 'string' &&
+      entry.displayProperties.name.trim()) names[hash] = entry.displayProperties.name.trim()
+  }
+  return names
+}
+
 export function parsePairings(value: unknown): Record<string, number> {
   if (!isRecord(value)) throw new Error('Expected DIM base-to-enhanced hash map')
   const pairs: Record<string, number> = {}
@@ -61,16 +77,26 @@ export async function fetchSupplemental() {
     !isRecord(metadata.Response.jsonWorldComponentContentPaths) ||
     !isRecord(metadata.Response.jsonWorldComponentContentPaths.en) ||
     typeof metadata.Response.version !== 'string') throw new Error('Invalid Bungie manifest metadata')
-  const paths = metadata.Response.jsonWorldComponentContentPaths.en
-  const table = async (name: string) => {
-    const path = paths[name]
+  const allPaths = metadata.Response.jsonWorldComponentContentPaths
+  const englishPaths = metadata.Response.jsonWorldComponentContentPaths.en
+  const tableUrl = (languagePaths: Record<string, unknown>, name: string) => {
+    const path = languagePaths[name]
     if (typeof path !== 'string' || !path.startsWith('/common/')) throw new Error(`Missing manifest table ${name}`)
-    return parseDefinitions(await fetchJson(`https://www.bungie.net${path}`))
+    return `https://www.bungie.net${path}`
   }
-  const [sandboxPerk, trait, dim] = await Promise.all([
+  const table = async (name: string) => parseDefinitions(await fetchJson(tableUrl(englishPaths, name)))
+  // Small per-language table (singular weapon type names); a language Bungie does not serve is skipped (English fallback).
+  const categoryNames = async () => Object.fromEntries(await Promise.all(
+    languages.filter(language => isRecord(allPaths[language])).map(async language => [
+      language,
+      parseCategoryNames(await fetchJson(tableUrl(allPaths[language] as Record<string, unknown>, 'DestinyItemCategoryDefinition'))),
+    ] as const),
+  ))
+  const [sandboxPerk, trait, dim, itemCategoryNames] = await Promise.all([
     table('DestinySandboxPerkDefinition'),
     table('DestinyTraitDefinition'),
     fetchJson(pairingUrl).then(parsePairings),
+    categoryNames(),
   ])
-  return { sandboxPerk, trait, dim, version: metadata.Response.version }
+  return { sandboxPerk, trait, dim, itemCategoryNames, version: metadata.Response.version }
 }

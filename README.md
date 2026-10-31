@@ -25,6 +25,17 @@ Network failures or invalid supplemental data fail the run explicitly.
   records one (exotic armor traits: first owner; other exotic perks: exactly one owner).
   `owners` lists every owning item hash of an exotic perk shared by two or more items;
   it is editor-only metadata and is not exported to legacy outputs.
+  `weaponTypes` lists the canonical weapon types (the 17 manifest type names used in
+  `rawData.json` `appearsOn`, e.g. `Hand Cannon`, `Combat Bow`) an item appears on: taken from
+  the legacy entry, deduplicated in authored order, inherited by an enhanced variant from its
+  base, and omitted when unknown (items without a legacy entry that are not enhanced).
+- `templates/v2/weaponTypes.json`: `{ "<canonical weapon type>": { "<lang>": "<label>" } }`,
+  singular localized names from the Bungie `DestinyItemCategoryDefinition` table in each
+  editor language (`en`, `de`, `es`, `es-mx`, `fr`, `it`, `ja`, `ko`, `pl`, `pt-br`, `ru`,
+  `zh-chs`, `zh-cht`). The category is matched by its English name (`Combat Bow` also matches
+  `Bow`); `en` is always present (canonical name if no category matches) and missing languages
+  are left out for consumers to fall back to English. Unmatched types are logged and listed in
+  `coverage.json` `weaponTypeLabels.unmatched`.
 - `templates/v2/sandboxAliases.json`: sandbox hash -> selected inventory tooltip hash.
 - `templates/v2/aliases.json`: generic `{ "<hash>": { to, kind: "sandbox" | "frame" } }`
   aliases. Sandbox targets are resolved through frame groups. This supersedes
