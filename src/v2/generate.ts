@@ -84,6 +84,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     weaponTypeLabels: {
       languages: Object.keys(manifest.itemCategoryNames ?? {}).sort(),
       unmatched: weaponTypeLabels.unmatched,
+      failed: manifest.itemCategoryFailures ?? {},
     },
   })
   console.log('v2 category coverage (legacy -> v2):', coverage)

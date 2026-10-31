@@ -4,7 +4,7 @@ import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
 import { categories } from '../generator/categories/index.js'
-import { fetchJson, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
+import { fetchJson, fetchSupplemental, languages, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
 import { generateV2 } from '../generator/v2/generate.js'
 import { legacyCategory, legacyOwner } from '../generator/v2/legacyCategory.js'
 import { derivePairings } from '../generator/v2/pairing.js'
@@ -152,6 +152,62 @@ test('transient HTTP errors retry; permanent failures reject explicitly', async 
     assert.equal(calls, 1)
   } finally {
     globalThis.fetch = original
+  }
+})
+
+test('a failing weapon-type label language is skipped and reported; required tables still load', async () => {
+  const original = globalThis.fetch
+  const warn = console.warn
+  const paths = language => ({
+    DestinySandboxPerkDefinition: `/common/${language}/sandbox`,
+    DestinyTraitDefinition: `/common/${language}/trait`,
+    DestinyItemCategoryDefinition: `/common/${language}/category`,
+  })
+  const run = async (respond, languagePaths) => {
+    globalThis.fetch = async url => {
+      url = String(url)
+      if (url.endsWith('/Manifest/')) {
+        return Response.json({ Response: { version: 'fixture', jsonWorldComponentContentPaths: languagePaths } })
+      }
+      return respond(url) ?? Response.json({})
+    }
+    return fetchSupplemental()
+  }
+  console.warn = () => undefined
+  try {
+    const allPaths = Object.fromEntries(languages.map(language => [language, paths(language)]))
+    delete allPaths.it.DestinyItemCategoryDefinition
+    delete allPaths.ko
+    const result = await run(url => {
+      if (url.endsWith('/en/category')) return Response.json({ 1: { displayProperties: { name: 'Sword' } } })
+      if (url.endsWith('/fr/category')) return Response.json({ 1: { displayProperties: { name: 'Épée' } } })
+      if (url.endsWith('/de/category')) return new Response('', { status: 404 })
+      if (url.endsWith('/ja/category')) return Response.json([])
+      if (url.endsWith('/pl/category')) throw new TypeError('network down')
+    }, allPaths)
+    assert.deepEqual(result.itemCategoryNames.en, { 1: 'Sword' })
+    assert.deepEqual(result.itemCategoryNames.fr, { 1: 'Épée' })
+    assert.deepEqual(Object.keys(result.itemCategoryFailures).sort(), ['de', 'it', 'ja', 'ko', 'pl'])
+    assert.match(result.itemCategoryFailures.de, /Fetch failed \(404\)/)
+    assert.match(result.itemCategoryFailures.it, /Missing manifest table/)
+    assert.match(result.itemCategoryFailures.ja, /Expected item category/)
+    assert.match(result.itemCategoryFailures.pl, /network down/)
+    for (const language of Object.keys(result.itemCategoryFailures)) {
+      assert.equal(Object.hasOwn(result.itemCategoryNames, language), false)
+    }
+    assert.equal(buildWeaponTypeLabels(result.itemCategoryNames).labels.Sword.fr, 'Épée')
+    // English labels failing too still completes: canonical English names, every type unmatched.
+    const noEnglish = await run(url => url.endsWith('/en/category') ? new Response('', { status: 404 }) : undefined,
+      { en: paths('en') })
+    assert.deepEqual(noEnglish.itemCategoryNames, {})
+    assert.match(noEnglish.itemCategoryFailures.en, /Fetch failed \(404\)/)
+    assert.deepEqual(buildWeaponTypeLabels(noEnglish.itemCategoryNames).unmatched, [...weaponTypes])
+    // Required inputs keep failing the run.
+    await assert.rejects(run(url => url.endsWith('/en/trait') ? new Response('', { status: 404 }) : undefined,
+      { en: paths('en') }), /Fetch failed \(404\)/)
+  } finally {
+    globalThis.fetch = original
+    console.warn = warn
   }
 })
 
@@ -383,6 +439,7 @@ test('generation inherits weaponTypes onto enhanced variants and writes the loca
         de: { 100: 'Schwert', 101: 'Bogen' },
         fr: { 100: 'Épée' },
       },
+      itemCategoryFailures: { ja: 'Fetch failed (404): fixture' },
     }, { 1: 2 }, 'fixture')
     const read = name => JSON.parse(fs.readFileSync(path.join('templates', 'v2', `${name}.json`)))
     assert.deepEqual(read('items')[1].weaponTypes, ['Sword', 'Combat Bow'])
@@ -394,6 +451,7 @@ test('generation inherits weaponTypes onto enhanced variants and writes the loca
     assert.deepEqual(labels.Glaive, { en: 'Glaive' })
     assert.equal(read('coverage').weaponTypeLabels.unmatched.includes('Glaive'), true)
     assert.equal(read('coverage').weaponTypeLabels.unmatched.includes('Sword'), false)
+    assert.deepEqual(read('coverage').weaponTypeLabels.failed, { ja: 'Fetch failed (404): fixture' })
   } finally {
     process.chdir(cwd)
     fs.rmSync(directory, { recursive: true })

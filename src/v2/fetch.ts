@@ -85,18 +85,33 @@ export async function fetchSupplemental() {
     return `https://www.bungie.net${path}`
   }
   const table = async (name: string) => parseDefinitions(await fetchJson(tableUrl(englishPaths, name)))
-  // Small per-language table (singular weapon type names); a language Bungie does not serve is skipped (English fallback).
-  const categoryNames = async () => Object.fromEntries(await Promise.all(
-    languages.filter(language => isRecord(allPaths[language])).map(async language => [
-      language,
-      parseCategoryNames(await fetchJson(tableUrl(allPaths[language] as Record<string, unknown>, 'DestinyItemCategoryDefinition'))),
-    ] as const),
-  ))
-  const [sandboxPerk, trait, dim, itemCategoryNames] = await Promise.all([
+  // Small per-language table (singular weapon type names). Labels are optional: a language that is not served, fails to
+  // download or does not parse is omitted (consumers fall back to English) and reported; it never fails the run.
+  const categoryNames = async () => {
+    const results = await Promise.all(languages.map(async language => {
+      try {
+        const paths = allPaths[language]
+        if (!isRecord(paths)) throw new Error('No manifest paths for this language')
+        return { language, names: parseCategoryNames(await fetchJson(tableUrl(paths, 'DestinyItemCategoryDefinition'))) }
+      } catch (error) {
+        const reason = error instanceof Error ? error.message : String(error)
+        console.warn(`v2: weapon type labels unavailable for ${language}: ${reason}`)
+        return { language, reason }
+      }
+    }))
+    const names: Record<string, Record<string, string>> = {}
+    const failures: Record<string, string> = {}
+    for (const result of results) {
+      if (result.names) names[result.language] = result.names
+      else failures[result.language] = result.reason ?? 'unknown'
+    }
+    return { names, failures }
+  }
+  const [sandboxPerk, trait, dim, { names: itemCategoryNames, failures: itemCategoryFailures }] = await Promise.all([
     table('DestinySandboxPerkDefinition'),
     table('DestinyTraitDefinition'),
     fetchJson(pairingUrl).then(parsePairings),
     categoryNames(),
   ])
-  return { sandboxPerk, trait, dim, itemCategoryNames, version: metadata.Response.version }
+  return { sandboxPerk, trait, dim, itemCategoryNames, itemCategoryFailures, version: metadata.Response.version }
 }

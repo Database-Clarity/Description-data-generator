@@ -74,6 +74,7 @@ export type PerkDataList = {
     sandboxPerk: supplemental.sandboxPerk,
     trait: supplemental.trait,
     itemCategoryNames: supplemental.itemCategoryNames,
+    itemCategoryFailures: supplemental.itemCategoryFailures,
     extraTypes: {},
   }, supplemental.dim, supplemental.version)
 
