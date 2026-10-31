@@ -24,6 +24,8 @@ export interface Item {
   icon?: string
   categoryId: string
   itemHash?: number
+  itemName?: string
+  owners?: number[]
   enhancedHash?: number
   enhancedHashes?: number[]
   baseHash?: number

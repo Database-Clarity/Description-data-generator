@@ -21,7 +21,10 @@ Network failures or invalid supplemental data fail the run explicitly.
   categories such as verbs omit it. Labels are presentation text, not export mappings.
 - `templates/v2/items.json`: object keyed by real inventory/trait hash; includes
   `name`, `icon` when available, `categoryId`, and `inGameDescription` for Bungie drift.
-  Exotic entries retain their owning `itemHash` where known.
+  Exotic entries retain their owning `itemHash` and `itemName` where the legacy rule
+  records one (exotic armor traits: first owner; other exotic perks: exactly one owner).
+  `owners` lists every owning item hash of an exotic perk shared by two or more items;
+  it is editor-only metadata and is not exported to legacy outputs.
 - `templates/v2/sandboxAliases.json`: sandbox hash -> selected inventory tooltip hash.
 - `templates/v2/aliases.json`: generic `{ "<hash>": { to, kind: "sandbox" | "frame" } }`
   aliases. Sandbox targets are resolved through frame groups. This supersedes

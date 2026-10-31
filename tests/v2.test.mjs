@@ -6,7 +6,7 @@ import test from 'node:test'
 import { categories } from '../generator/categories/index.js'
 import { fetchJson, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
 import { generateV2 } from '../generator/v2/generate.js'
-import { legacyCategory } from '../generator/v2/legacyCategory.js'
+import { legacyCategory, legacyOwner } from '../generator/v2/legacyCategory.js'
 import { derivePairings } from '../generator/v2/pairing.js'
 import { associateSandbox } from '../generator/v2/sandbox.js'
 import { groupFrames } from '../generator/v2/frames.js'
@@ -180,6 +180,7 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
   const inventory = byHash(plug(1, "Hunter's Trace", 'Intrinsic', 6),
     plug(2, "Hunter's Trace II", 'Intrinsic', 6), plug(3, "Hunter's Trace III", 'Intrinsic', 6))
   inventory[10] = weapon(10, [1, 2, 3])
+  inventory[10].displayProperties = { name: 'Fixture Weapon', description: '' }
   inventory[1].perks = [{ perkHash: 100 }]
   inventory[1].stats = { stats: { 10: { value: 42 } } }
   inventory[1].investmentStats = [{ statTypeHash: 10, value: 42 }]
@@ -209,6 +210,12 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.equal(items[2].baseHash, 1)
     assert.equal(items[3].baseHash, 1)
     assert.equal(items[1].itemHash, 10)
+    assert.equal(items[1].itemName, 'Fixture Weapon')
+    assert.equal(items[1].owners, undefined)
+    for (const hash of [2, 3]) {
+      assert.equal(Object.hasOwn(items[hash], 'itemHash'), false)
+      assert.equal(Object.hasOwn(items[hash], 'itemName'), false)
+    }
     assert.equal(items[2].categoryId, 'weapon-frame-enhanced-exotic')
     assert.equal(items[200].definitionType, 'DestinyTraitDefinition')
     assert.equal(items[200].inGameDescription, 'Burn')
@@ -283,4 +290,63 @@ test('generation flattens sandbox owners through same-name frame groups without 
     process.chdir(cwd)
     fs.rmSync(directory, { recursive: true })
   }
+})
+
+test('legacyOwner mirrors the legacy generator owner rule', () => {
+  assert.equal(legacyOwner('Armor Trait Exotic', [5, 6]), 5)
+  assert.equal(legacyOwner('Armor Trait Exotic', []), undefined)
+  assert.equal(legacyOwner('Weapon Frame Exotic', [5]), 5)
+  assert.equal(legacyOwner('Weapon Frame Exotic', [5, 6]), undefined)
+  assert.equal(legacyOwner('Weapon Trait Exotic', [5, 'Sword']), undefined)
+  assert.equal(legacyOwner('Weapon Trait', [5]), undefined)
+  assert.equal(legacyOwner('Weapon Perk Exotic', ['Sword']), undefined)
+})
+
+test('legacy selection records owner name, shared owners, and fails on a missing owner definition', () => {
+  const holder = hash => ({ hash, displayProperties: { name: `Holder ${hash}`, description: '' } })
+  const inventory = byHash(plug(1, 'One', 'Intrinsic', 6), plug(2, 'Two', 'Intrinsic', 6),
+    plug(3, 'Three', 'Intrinsic', 6), plug(4, 'Four', 'Intrinsic', 6), holder(50), holder(51))
+  const entry = (hash, type, appearsOn) => ({ hash, type, appearsOn })
+  const legacy = {
+    1: entry(1, 'Weapon Frame Exotic', [50]),
+    2: entry(2, 'Weapon Frame Exotic', [50, 51, 50]),
+    3: entry(3, 'Weapon Frame Exotic', ['Sword']),
+    4: entry(4, 'Weapon Frame Exotic', [51, 'Sword']),
+  }
+  const select = (manifest) => legacyCategory('weapon-frame-exotic', 'Weapon Frame Exotic', 'Weapons', 1).select(manifest)
+  const items = Object.fromEntries(select({ inventoryItem: inventory, extraTypes: {}, legacy }).map(item => [item.hash, item]))
+  assert.deepEqual([items[1].itemHash, items[1].itemName, items[1].owners], [50, 'Holder 50', undefined])
+  assert.deepEqual([items[2].itemHash, items[2].itemName, items[2].owners], [undefined, undefined, [50, 51]])
+  assert.deepEqual([items[3].itemHash, items[3].itemName, items[3].owners], [undefined, undefined, undefined])
+  assert.deepEqual([items[4].itemHash, items[4].itemName, items[4].owners], [undefined, undefined, undefined])
+  legacy[1].appearsOn = [999]
+  assert.throws(() => select({ inventoryItem: inventory, extraTypes: {}, legacy }), /Missing inventory definition/)
+})
+
+test('legacyOwner reproduces the checked-in descriptions.json owners and names', () => {
+  const read = name => JSON.parse(fs.readFileSync(new URL(`../templates/${name}.json`, import.meta.url)))
+  const rawData = read('rawData')
+  const { perks } = read('descriptions')
+  const names = new Map()
+  let hashes = 0
+  let shared = 0
+  for (const [hash, raw] of Object.entries(rawData)) {
+    hashes++
+    assert.equal(legacyOwner(raw.type, raw.appearsOn), perks[hash]?.itemHash, `owner of ${hash}`)
+    if (raw.type.endsWith(' Exotic') && new Set(raw.appearsOn.filter(value => typeof value === 'number')).size >= 2) shared++
+  }
+  for (const perk of Object.values(perks)) {
+    if (perk.itemHash === undefined) continue
+    assert.equal(typeof perk.itemName, 'string')
+    assert.ok(names.get(perk.itemHash) === undefined || names.get(perk.itemHash) === perk.itemName,
+      `owner ${perk.itemHash} has two names`)
+    names.set(perk.itemHash, perk.itemName)
+  }
+  for (const [hash, raw] of Object.entries(rawData)) {
+    const owner = legacyOwner(raw.type, raw.appearsOn)
+    if (owner !== undefined) assert.ok(names.has(owner), `owner ${owner} of ${hash} has a name`)
+  }
+  assert.ok(hashes > 0)
+  assert.ok(shared > 0)
+  console.log(`legacyOwner parity: ${hashes} hashes, ${shared} with 2+ exotic owners`)
 })
