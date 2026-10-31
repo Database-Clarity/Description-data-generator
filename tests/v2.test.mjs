@@ -4,14 +4,12 @@ import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
 import { categories } from '../generator/categories/index.js'
-import { fetchJson, fetchSupplemental, languages, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
+import { fetchJson, fetchSupplemental, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
 import { generateV2 } from '../generator/v2/generate.js'
 import { legacyCategory, legacyOwner } from '../generator/v2/legacyCategory.js'
 import { derivePairings } from '../generator/v2/pairing.js'
 import { associateSandbox } from '../generator/v2/sandbox.js'
 import { groupFrames } from '../generator/v2/frames.js'
-import { buildWeaponTypeLabels, weaponTypes, weaponTypesOf } from '../generator/v2/weaponTypes.js'
-import { parseCategoryNames } from '../generator/v2/fetch.js'
 
 function plug(hash, name, type = 'Trait', tierType = 2) {
   return {
@@ -43,8 +41,7 @@ function assertNoStatData(value) {
 
 test('all generated v2 outputs exclude stat data and weapon formula files', () => {
   const directory = new URL('../templates/v2/', import.meta.url)
-  // weaponTypes.json is written by generation; it appears in the checked-in templates after the next v2-refresh.
-  assert.deepEqual(fs.readdirSync(directory).filter(name => name !== 'weaponTypes.json').sort(), [
+  assert.deepEqual(fs.readdirSync(directory).sort(), [
     'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
   ])
   for (const name of fs.readdirSync(directory)) {
@@ -155,62 +152,6 @@ test('transient HTTP errors retry; permanent failures reject explicitly', async 
   }
 })
 
-test('a failing weapon-type label language is skipped and reported; required tables still load', async () => {
-  const original = globalThis.fetch
-  const warn = console.warn
-  const paths = language => ({
-    DestinySandboxPerkDefinition: `/common/${language}/sandbox`,
-    DestinyTraitDefinition: `/common/${language}/trait`,
-    DestinyItemCategoryDefinition: `/common/${language}/category`,
-  })
-  const run = async (respond, languagePaths) => {
-    globalThis.fetch = async url => {
-      url = String(url)
-      if (url.endsWith('/Manifest/')) {
-        return Response.json({ Response: { version: 'fixture', jsonWorldComponentContentPaths: languagePaths } })
-      }
-      return respond(url) ?? Response.json({})
-    }
-    return fetchSupplemental()
-  }
-  console.warn = () => undefined
-  try {
-    const allPaths = Object.fromEntries(languages.map(language => [language, paths(language)]))
-    delete allPaths.it.DestinyItemCategoryDefinition
-    delete allPaths.ko
-    const result = await run(url => {
-      if (url.endsWith('/en/category')) return Response.json({ 1: { displayProperties: { name: 'Sword' } } })
-      if (url.endsWith('/fr/category')) return Response.json({ 1: { displayProperties: { name: 'Épée' } } })
-      if (url.endsWith('/de/category')) return new Response('', { status: 404 })
-      if (url.endsWith('/ja/category')) return Response.json([])
-      if (url.endsWith('/pl/category')) throw new TypeError('network down')
-    }, allPaths)
-    assert.deepEqual(result.itemCategoryNames.en, { 1: 'Sword' })
-    assert.deepEqual(result.itemCategoryNames.fr, { 1: 'Épée' })
-    assert.deepEqual(Object.keys(result.itemCategoryFailures).sort(), ['de', 'it', 'ja', 'ko', 'pl'])
-    assert.match(result.itemCategoryFailures.de, /Fetch failed \(404\)/)
-    assert.match(result.itemCategoryFailures.it, /Missing manifest table/)
-    assert.match(result.itemCategoryFailures.ja, /Expected item category/)
-    assert.match(result.itemCategoryFailures.pl, /network down/)
-    for (const language of Object.keys(result.itemCategoryFailures)) {
-      assert.equal(Object.hasOwn(result.itemCategoryNames, language), false)
-    }
-    assert.equal(buildWeaponTypeLabels(result.itemCategoryNames).labels.Sword.fr, 'Épée')
-    // English labels failing too still completes: canonical English names, every type unmatched.
-    const noEnglish = await run(url => url.endsWith('/en/category') ? new Response('', { status: 404 }) : undefined,
-      { en: paths('en') })
-    assert.deepEqual(noEnglish.itemCategoryNames, {})
-    assert.match(noEnglish.itemCategoryFailures.en, /Fetch failed \(404\)/)
-    assert.deepEqual(buildWeaponTypeLabels(noEnglish.itemCategoryNames).unmatched, [...weaponTypes])
-    // Required inputs keep failing the run.
-    await assert.rejects(run(url => url.endsWith('/en/trait') ? new Response('', { status: 404 }) : undefined,
-      { en: paths('en') }), /Fetch failed \(404\)/)
-  } finally {
-    globalThis.fetch = original
-    console.warn = warn
-  }
-})
-
 test('sandbox references are deduplicated aliases; shared ownership and missing definitions are reported', () => {
   const inventory = byHash(plug(1, 'One'), plug(2, 'Two'))
   inventory[1].perks = [{ perkHash: 100 }, { perkHash: 100 }, { perkHash: 0 }, { perkHash: 999 }]
@@ -283,9 +224,8 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'sandboxAliases.json'))), { 100: 1 })
     assert.deepEqual(legacy[1].appearsOn, [10])
     assert.deepEqual(fs.readdirSync(path.join('templates', 'v2')).sort(), [
-      'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json', 'weaponTypes.json',
+      'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
     ])
-    assert.deepEqual(Object.keys(JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'weaponTypes.json')))), [...weaponTypes])
     for (const name of fs.readdirSync(path.join('templates', 'v2'))) {
       assertNoStatData(JSON.parse(fs.readFileSync(path.join('templates', 'v2', name))))
     }
@@ -411,76 +351,24 @@ test('legacyOwner reproduces the checked-in descriptions.json owners and names',
   console.log(`legacyOwner parity: ${hashes} hashes, ${shared} with 2+ exotic owners`)
 })
 
-test('weaponTypes come from legacy appearsOn weapon-type strings, deduplicated in authored order', () => {
-  assert.deepEqual(weaponTypesOf(['Sword', 5, 'Hand Cannon', 'Sword', 'Helmet', 'Titan Subclass']), ['Sword', 'Hand Cannon'])
-  assert.deepEqual(weaponTypesOf([]), [])
-  assert.deepEqual(weaponTypesOf([5, 6]), [])
-  const inventory = byHash(plug(1, 'One'), plug(2, 'Two'), plug(3, 'Three'))
-  const entry = (hash, appearsOn) => ({ hash, type: 'Weapon Trait', appearsOn })
-  const legacy = { 1: entry(1, ['Sword', 'Hand Cannon', 'Sword']), 2: entry(2, [7]), 3: entry(3, []) }
-  const items = Object.fromEntries(legacyCategory('weapon-trait', 'Weapon Trait', 'Weapons', 1)
-    .select({ inventoryItem: inventory, extraTypes: {}, legacy }).map(item => [item.hash, item]))
-  assert.deepEqual(items[1].weaponTypes, ['Sword', 'Hand Cannon'])
-  assert.equal(Object.hasOwn(items[2], 'weaponTypes'), false)
-  assert.equal(Object.hasOwn(items[3], 'weaponTypes'), false)
-})
 
-test('generation inherits weaponTypes onto enhanced variants and writes the localized label table', () => {
+test('weapon appearances do not constrain generated base or enhanced items', () => {
   const inventory = byHash(plug(1, 'One'), plug(2, 'One', 'Enhanced Trait', 3))
-  const legacy = { 1: { hash: 1, type: 'Weapon Trait', appearsOn: ['Sword', 'Combat Bow', 'Helmet'] } }
+  const legacy = { 1: { hash: 1, type: 'Weapon Trait', appearsOn: ['Sword', 'Combat Bow'] } }
   const cwd = process.cwd()
-  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'clarity-weapon-types-'))
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'clarity-full-perks-'))
   try {
     process.chdir(directory)
-    generateV2({
-      inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {}, sandboxPerk: {},
-      itemCategoryNames: {
-        en: { 100: 'Sword', 101: 'Bow', 102: 'Armor' },
-        de: { 100: 'Schwert', 101: 'Bogen' },
-        fr: { 100: 'Épée' },
-      },
-      itemCategoryFailures: { ja: 'Fetch failed (404): fixture' },
-    }, { 1: 2 }, 'fixture')
-    const read = name => JSON.parse(fs.readFileSync(path.join('templates', 'v2', `${name}.json`)))
-    assert.deepEqual(read('items')[1].weaponTypes, ['Sword', 'Combat Bow'])
-    assert.deepEqual(read('items')[2].weaponTypes, ['Sword', 'Combat Bow'])
-    const labels = read('weaponTypes')
-    assert.deepEqual(Object.keys(labels), [...weaponTypes])
-    assert.deepEqual(labels.Sword, { en: 'Sword', de: 'Schwert', fr: 'Épée' })
-    assert.deepEqual(labels['Combat Bow'], { en: 'Bow', de: 'Bogen' })
-    assert.deepEqual(labels.Glaive, { en: 'Glaive' })
-    assert.equal(read('coverage').weaponTypeLabels.unmatched.includes('Glaive'), true)
-    assert.equal(read('coverage').weaponTypeLabels.unmatched.includes('Sword'), false)
-    assert.deepEqual(read('coverage').weaponTypeLabels.failed, { ja: 'Fetch failed (404): fixture' })
+    generateV2({ inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {}, sandboxPerk: {} }, { 1: 2 }, 'fixture')
+    const output = path.join('templates', 'v2')
+    const items = JSON.parse(fs.readFileSync(path.join(output, 'items.json')))
+    assert.equal(items[2].baseHash, 1)
+    assert.equal(Object.hasOwn(items[1], 'weaponTypes'), false)
+    assert.equal(Object.hasOwn(items[2], 'weaponTypes'), false)
+    assert.equal(fs.existsSync(path.join(output, 'weaponTypes.json')), false)
+    assert.equal(Object.hasOwn(JSON.parse(fs.readFileSync(path.join(output, 'coverage.json'))), 'weaponTypeLabels'), false)
   } finally {
     process.chdir(cwd)
     fs.rmSync(directory, { recursive: true })
   }
-})
-
-test('label table shape: English present for all 17 types even without a manifest, other languages optional', () => {
-  assert.equal(weaponTypes.length, 17)
-  const { labels, unmatched } = buildWeaponTypeLabels({})
-  assert.deepEqual(unmatched, [...weaponTypes])
-  for (const type of weaponTypes) assert.deepEqual(labels[type], { en: type })
-  assert.deepEqual(parseCategoryNames({
-    1: { displayProperties: { name: ' Sword ' } }, 2: { displayProperties: { name: '' } }, 3: {}, 4: null,
-  }), { 1: 'Sword' })
-  assert.throws(() => parseCategoryNames([]), /Expected item category/)
-})
-
-test('canonical weapon types equal the weapon-type strings in templates/rawData.json', () => {
-  const rawData = JSON.parse(fs.readFileSync(new URL('../templates/rawData.json', import.meta.url)))
-  const found = new Set()
-  let withTypes = 0
-  for (const raw of Object.values(rawData)) {
-    if (!raw.type.startsWith('Weapon')) continue
-    const strings = raw.appearsOn.filter(value => typeof value === 'string')
-    for (const value of strings) found.add(value)
-    if (strings.length) withTypes++
-    assert.deepEqual(weaponTypesOf(raw.appearsOn), [...new Set(strings)])
-  }
-  assert.deepEqual([...found].sort(), [...weaponTypes].sort())
-  assert.ok(withTypes > 0)
-  console.log(`weaponTypes parity: ${found.size} types, ${withTypes} weapon perks with weaponTypes`)
 })

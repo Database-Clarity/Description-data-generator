@@ -73,8 +73,6 @@ export type PerkDataList = {
     legacy: rawData,
     sandboxPerk: supplemental.sandboxPerk,
     trait: supplemental.trait,
-    itemCategoryNames: supplemental.itemCategoryNames,
-    itemCategoryFailures: supplemental.itemCategoryFailures,
     extraTypes: {},
   }, supplemental.dim, supplemental.version)
 
