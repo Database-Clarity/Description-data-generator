@@ -49,6 +49,33 @@ test('all generated v2 outputs exclude stat data and weapon formula files', () =
   }
 })
 
+test('checked-in shared owner metadata covers the pinned references without inventing owners', () => {
+  const items = JSON.parse(fs.readFileSync(new URL('../templates/v2/items.json', import.meta.url)))
+  const coverage = JSON.parse(fs.readFileSync(new URL('../templates/v2/coverage.json', import.meta.url)))
+  const pinned = JSON.parse(fs.readFileSync(new URL('./pinned-shared-owners.json', import.meta.url)))
+  const shared = Object.values(items).filter(item => item.owners?.length >= 2)
+  assert.equal(Object.keys(pinned.shared).length, 139)
+  assert.equal(Object.values(pinned.shared).flat().length, 291)
+  if (coverage.manifestVersion === pinned.manifestVersion) {
+    for (const [hash, owners] of Object.entries(pinned.shared)) {
+      for (const owner of owners) {
+        if (items[hash]?.owners?.includes(owner)) {
+          assert.ok(items[hash].ownerNames?.[owner]?.trim(), `${hash} missing pinned owner ${owner}`)
+        }
+      }
+    }
+    if (items[8507332]?.owners?.includes(1906093346)) {
+      assert.equal(items[8507332].ownerNames?.[1906093346], 'Contraverse Hold')
+    }
+  }
+  for (const item of shared) {
+    for (const [owner, name] of Object.entries(item.ownerNames ?? {})) {
+      assert.ok(item.owners.includes(Number(owner)))
+      assert.ok(name.trim())
+    }
+  }
+})
+
 test('registry has all 27 converter types, plus verbs; stable unique IDs/orders', () => {
   assert.equal(categories.length, 28)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
