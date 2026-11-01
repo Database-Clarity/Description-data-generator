@@ -141,7 +141,11 @@
    520804468,
    2769250260,
    3655775672
-  ]
+  ],
+  "ownerNames": {
+   "1906093346": "Contraverse Hold",
+   "3261527845": "Contraverse Hold"
+  }
  },
  "11126525": {
   "hash": 11126525,
@@ -1050,7 +1054,11 @@
    1446499335,
    1859448039,
    2054717271
-  ]
+  ],
+  "ownerNames": {
+   "1702288800": "Radiant Dance Machines",
+   "1709794165": "Radiant Dance Machines"
+  }
  },
  "117884138": {
   "hash": 117884138,
@@ -1655,7 +1663,11 @@
   "sandboxPerkHashes": [
    3196518154,
    3202596333
-  ]
+  ],
+  "ownerNames": {
+   "1467044898": "Icefall Mantle",
+   "1734674241": "Icefall Mantle"
+  }
  },
  "187655372": {
   "hash": 187655372,
@@ -1719,7 +1731,11 @@
   "sandboxPerkHashes": [
    226499337,
    3464796889
-  ]
+  ],
+  "ownerNames": {
+   "1304266146": "Triton Vice",
+   "3093309525": "Triton Vice"
+  }
  },
  "189818679": {
   "hash": 189818679,
@@ -2138,7 +2154,11 @@
    1082953034,
    1266509953,
    1855125649
-  ]
+  ],
+  "ownerNames": {
+   "2255796155": "Peregrine Greaves",
+   "3450721096": "Peregrine Greaves"
+  }
  },
  "236605015": {
   "hash": 236605015,
@@ -2155,7 +2175,11 @@
   ],
   "sandboxPerkHashes": [
    3223461414
-  ]
+  ],
+  "ownerNames": {
+   "2203146422": "Assassin's Cowl",
+   "3400283633": "Assassin's Cowl"
+  }
  },
  "242794439": {
   "hash": 242794439,
@@ -2174,7 +2198,11 @@
    579914201,
    1598353267,
    3745886491
-  ]
+  ],
+  "ownerNames": {
+   "81398002": "Antaeus Wards",
+   "2423243921": "Antaeus Wards"
+  }
  },
  "243981275": {
   "hash": 243981275,
@@ -2522,7 +2550,11 @@
    4602482,
    2896783797,
    3469621377
-  ]
+  ],
+  "ownerNames": {
+   "1891561814": "Whisper of the Worm",
+   "1983149589": "Whisper of the Worm"
+  }
  },
  "282266464": {
   "hash": 282266464,
@@ -3394,7 +3426,11 @@
    507990744,
    3644917866,
    4113855450
-  ]
+  ],
+  "ownerNames": {
+   "1203306857": "Ashen Wake",
+   "1734844650": "Ashen Wake"
+  }
  },
  "384759955": {
   "hash": 384759955,
@@ -3411,7 +3447,11 @@
   ],
   "sandboxPerkHashes": [
    4113855451
-  ]
+  ],
+  "ownerNames": {
+   "1203306856": "Wormgod Caress",
+   "1734844651": "Wormgod Caress"
+  }
  },
  "385138649": {
   "hash": 385138649,
@@ -3493,7 +3533,11 @@
   "sandboxPerkHashes": [
    2188382604,
    2326472624
-  ]
+  ],
+  "ownerNames": {
+   "300502917": "Nothing Manacles",
+   "3982932616": "Nothing Manacles"
+  }
  },
  "395388285": {
   "hash": 395388285,
@@ -4209,7 +4253,11 @@
   "sandboxPerkHashes": [
    963319556,
    1307898536
-  ]
+  ],
+  "ownerNames": {
+   "405059572": "Young Ahamkara's Spine",
+   "475652357": "Young Ahamkara's Spine"
+  }
  },
  "481860151": {
   "hash": 481860151,
@@ -4229,7 +4277,11 @@
    4184769629,
    4184769630,
    4184769631
-  ]
+  ],
+  "ownerNames": {
+   "1734144409": "Mechaneer's Tricksleeves",
+   "2574019120": "Mechaneer's Tricksleeves"
+  }
  },
  "482158780": {
   "hash": 482158780,
@@ -4790,7 +4842,11 @@
    167880884,
    1462360815,
    2885264981
-  ]
+  ],
+  "ownerNames": {
+   "1935198785": "Omnioculus",
+   "4255001288": "Omnioculus"
+  }
  },
  "554078784": {
   "hash": 554078784,
@@ -4932,7 +4988,11 @@
    24454255,
    1324352273,
    1393548801
-  ]
+  ],
+  "ownerNames": {
+   "730200061": "No Backup Plans",
+   "3267996858": "No Backup Plans"
+  }
  },
  "570373697": {
   "hash": 570373697,
@@ -5132,7 +5192,11 @@
   ],
   "sandboxPerkHashes": [
    707113250
-  ]
+  ],
+  "ownerNames": {
+   "368733541": "The Dragon's Shadow",
+   "2766109874": "The Dragon's Shadow"
+  }
  },
  "593361146": {
   "hash": 593361146,
@@ -5150,7 +5214,11 @@
   "sandboxPerkHashes": [
    707113248,
    1092530764
-  ]
+  ],
+  "ownerNames": {
+   "368733543": "Raiden Flux",
+   "2766109872": "Raiden Flux"
+  }
  },
  "593361147": {
   "hash": 593361147,
@@ -5169,7 +5237,11 @@
    707113249,
    1092677797,
    1092677798
-  ]
+  ],
+  "ownerNames": {
+   "903984858": "Lucky Raspberry",
+   "1803778317": "Lucky Raspberry"
+  }
  },
  "594346985": {
   "hash": 594346985,
@@ -5210,7 +5282,11 @@
   ],
   "sandboxPerkHashes": [
    3635298819
-  ]
+  ],
+  "ownerNames": {
+   "2749457084": "Liar's Handshake",
+   "4165919945": "Liar's Handshake"
+  }
  },
  "598607952": {
   "hash": 598607952,
@@ -5336,7 +5412,11 @@
   ],
   "sandboxPerkHashes": [
    432942453
-  ]
+  ],
+  "ownerNames": {
+   "728668916": "Felwinter's Helm",
+   "2822465023": "Felwinter's Helm"
+  }
  },
  "624097433": {
   "hash": 624097433,
@@ -5912,7 +5992,11 @@
    1321464490,
    1423692705,
    3282079002
-  ]
+  ],
+  "ownerNames": {
+   "508515818": "Mask of Bakris",
+   "1619425569": "Mask of Bakris"
+  }
  },
  "692399809": {
   "hash": 692399809,
@@ -6008,7 +6092,11 @@
   "sandboxPerkHashes": [
    2990141176,
    3577096500
-  ]
+  ],
+  "ownerNames": {
+   "1249787553": "One-Eyed Mask",
+   "2578771006": "One-Eyed Mask"
+  }
  },
  "703902595": {
   "hash": 703902595,
@@ -6187,7 +6275,11 @@
    24429794,
    2891076146,
    3027624734
-  ]
+  ],
+  "ownerNames": {
+   "994038265": "The Stag",
+   "2177524718": "The Stag"
+  }
  },
  "726894353": {
   "hash": 726894353,
@@ -6880,7 +6972,11 @@
   "sandboxPerkHashes": [
    237433488,
    2455681852
-  ]
+  ],
+  "ownerNames": {
+   "136355432": "Mk. 44 Stand Asides",
+   "3182840395": "Mk. 44 Stand Asides"
+  }
  },
  "828056542": {
   "hash": 828056542,
@@ -7162,7 +7258,11 @@
   "sandboxPerkHashes": [
    2190578284,
    3859153040
-  ]
+  ],
+  "ownerNames": {
+   "1793346751": "Speedloader Slacks",
+   "2390471904": "Speedloader Slacks"
+  }
  },
  "859780267": {
   "hash": 859780267,
@@ -7394,7 +7494,11 @@
    858652730,
    2628316339,
    3096437828
-  ]
+  ],
+  "ownerNames": {
+   "2999866952": "Armamentarium",
+   "3874247549": "Armamentarium"
+  }
  },
  "883665727": {
   "hash": 883665727,
@@ -7611,7 +7715,11 @@
    1713379188,
    1713379189,
    1713379190
-  ]
+  ],
+  "ownerNames": {
+   "609852545": "Fr0st-EE5",
+   "1737050140": "Fr0st-EE5"
+  }
  },
  "897335593": {
   "hash": 897335593,
@@ -7651,7 +7759,11 @@
   "sandboxPerkHashes": [
    3511207275,
    3559933091
-  ]
+  ],
+  "ownerNames": {
+   "597039524": "Boots of the Assembler",
+   "3045642045": "Boots of the Assembler"
+  }
  },
  "905499626": {
   "hash": 905499626,
@@ -7751,7 +7863,11 @@
   "sandboxPerkHashes": [
    909444550,
    2718875662
-  ]
+  ],
+  "ownerNames": {
+   "3637722482": "Abeyant Leap",
+   "3849355625": "Abeyant Leap"
+  }
  },
  "916649862": {
   "hash": 916649862,
@@ -7816,7 +7932,11 @@
   "sandboxPerkHashes": [
    24885090,
    1808048542
-  ]
+  ],
+  "ownerNames": {
+   "2555349547": "Osmiomancy Gloves",
+   "3259193988": "Osmiomancy Gloves"
+  }
  },
  "923806249": {
   "hash": 923806249,
@@ -7878,7 +7998,11 @@
    2441420358,
    4220724213,
    4220724214
-  ]
+  ],
+  "ownerNames": {
+   "370930766": "Wings of Sacred Dawn",
+   "1179169099": "Wings of Sacred Dawn"
+  }
  },
  "926349161": {
   "hash": 926349161,
@@ -7897,7 +8021,11 @@
    2441420359,
    3147103500,
    3147103503
-  ]
+  ],
+  "ownerNames": {
+   "599049453": "Starfire Protocol",
+   "2082483156": "Starfire Protocol"
+  }
  },
  "926976844": {
   "hash": 926976844,
@@ -7916,7 +8044,11 @@
    2711909102,
    3427096445,
    4197395956
-  ]
+  ],
+  "ownerNames": {
+   "2808156426": "Eternal Warrior",
+   "3692827145": "Eternal Warrior"
+  }
  },
  "928186993": {
   "hash": 928186993,
@@ -9461,7 +9593,11 @@
    1325927714,
    1726331049,
    3637562482
-  ]
+  ],
+  "ownerNames": {
+   "235591051": "Promethium Spur",
+   "3864952146": "Promethium Spur"
+  }
  },
  "1096356879": {
   "hash": 1096356879,
@@ -9803,7 +9939,11 @@
    101636472,
    566701208,
    2253303044
-  ]
+  ],
+  "ownerNames": {
+   "1725917554": "Vesper of Radius",
+   "3139221735": "Vesper of Radius"
+  }
  },
  "1145640183": {
   "hash": 1145640183,
@@ -9841,7 +9981,11 @@
   ],
   "sandboxPerkHashes": [
    2297597519
-  ]
+  ],
+  "ownerNames": {
+   "507400048": "Ophidian Aspect",
+   "3627185503": "Ophidian Aspect"
+  }
  },
  "1149655156": {
   "hash": 1149655156,
@@ -9860,7 +10004,11 @@
    871949412,
    1532899272,
    3794996132
-  ]
+  ],
+  "ownerNames": {
+   "1003391927": "Mataiodoxía",
+   "1955548646": "Mataiodoxía"
+  }
  },
  "1149703256": {
   "hash": 1149703256,
@@ -9903,7 +10051,11 @@
   "sandboxPerkHashes": [
    43825998,
    2569513966
-  ]
+  ],
+  "ownerNames": {
+   "241462142": "Synthoceps",
+   "2002759681": "Synthoceps"
+  }
  },
  "1155472386": {
   "hash": 1155472386,
@@ -9922,7 +10074,11 @@
    43825996,
    3642987328,
    3642987331
-  ]
+  ],
+  "ownerNames": {
+   "2563444729": "ACD/0 Feedback Fence",
+   "3649264718": "ACD/0 Feedback Fence"
+  }
  },
  "1155472387": {
   "hash": 1155472387,
@@ -9942,7 +10098,11 @@
    3643134425,
    3643134426,
    3643134427
-  ]
+  ],
+  "ownerNames": {
+   "241462141": "Doom Fang Pauldron",
+   "2002759682": "Doom Fang Pauldron"
+  }
  },
  "1156201379": {
   "hash": 1156201379,
@@ -9987,7 +10147,11 @@
   "sandboxPerkHashes": [
    337188903,
    4174120030
-  ]
+  ],
+  "ownerNames": {
+   "3316517958": "Loreley Splendor Helm",
+   "4258262391": "Loreley Splendor Helm"
+  }
  },
  "1164078247": {
   "hash": 1164078247,
@@ -10499,7 +10663,11 @@
    151492431,
    1249436513,
    3535992166
-  ]
+  ],
+  "ownerNames": {
+   "1747063685": "Stormdancer's Brace",
+   "1996008488": "Stormdancer's Brace"
+  }
  },
  "1214302147": {
   "hash": 1214302147,
@@ -11600,7 +11768,11 @@
   "sandboxPerkHashes": [
    2789354755,
    3469621377
-  ]
+  ],
+  "ownerNames": {
+   "2188764214": "Dead Man's Tale",
+   "3654674561": "Dead Man's Tale"
+  }
  },
  "1322370662": {
   "hash": 1322370662,
@@ -11694,7 +11866,11 @@
    1172238902,
    2191032772,
    2876952819
-  ]
+  ],
+  "ownerNames": {
+   "106575079": "Helm of Saint-14",
+   "943320520": "Helm of Saint-14"
+  }
  },
  "1332244541": {
   "hash": 1332244541,
@@ -11752,7 +11928,11 @@
   "sandboxPerkHashes": [
    1799134388,
    2227431032
-  ]
+  ],
+  "ownerNames": {
+   "511888814": "Secant Filaments",
+   "4029987901": "Secant Filaments"
+  }
  },
  "1341464476": {
   "hash": 1341464476,
@@ -11852,7 +12032,11 @@
   "sandboxPerkHashes": [
    1669873521,
    2024615265
-  ]
+  ],
+  "ownerNames": {
+   "3717431477": "Wishful Ignorance",
+   "4157369212": "Wishful Ignorance"
+  }
  },
  "1359896290": {
   "hash": 1359896290,
@@ -11951,7 +12135,11 @@
   "sandboxPerkHashes": [
    690581165,
    3288402325
-  ]
+  ],
+  "ownerNames": {
+   "1849149215": "Fallen Sunstar",
+   "3781549120": "Fallen Sunstar"
+  }
  },
  "1377143502": {
   "hash": 1377143502,
@@ -12311,7 +12499,11 @@
    362033873,
    3377200993,
    3377200994
-  ]
+  ],
+  "ownerNames": {
+   "2966741808": "Sanguine Alchemy",
+   "3070555693": "Sanguine Alchemy"
+  }
  },
  "1421772400": {
   "hash": 1421772400,
@@ -12413,7 +12605,11 @@
   "sandboxPerkHashes": [
    1242637506,
    4149148681
-  ]
+  ],
+  "ownerNames": {
+   "1443166262": "Second Chance",
+   "4268030601": "Second Chance"
+  }
  },
  "1439600632": {
   "hash": 1439600632,
@@ -12521,7 +12717,11 @@
   "sandboxPerkHashes": [
    625380752,
    2049097276
-  ]
+  ],
+  "ownerNames": {
+   "691578978": "Oathkeeper",
+   "3883286571": "Oathkeeper"
+  }
  },
  "1449897497": {
   "hash": 1449897497,
@@ -12541,7 +12741,11 @@
    1759740353,
    2049097277,
    3030689226
-  ]
+  ],
+  "ownerNames": {
+   "691578979": "Shards of Galanor",
+   "3883286570": "Shards of Galanor"
+  }
  },
  "1451602450": {
   "hash": 1451602450,
@@ -12630,7 +12834,11 @@
   ],
   "sandboxPerkHashes": [
    4149008363
-  ]
+  ],
+  "ownerNames": {
+   "2169905051": "Renewal Grasps",
+   "3793245444": "Renewal Grasps"
+  }
  },
  "1458010786": {
   "hash": 1458010786,
@@ -13035,7 +13243,11 @@
   ],
   "sandboxPerkHashes": [
    4136734555
-  ]
+  ],
+  "ownerNames": {
+   "768145972": "Briarbinds",
+   "3234692237": "Briarbinds"
+  }
  },
  "1513240263": {
   "hash": 1513240263,
@@ -14116,7 +14328,11 @@
   "sandboxPerkHashes": [
    132609418,
    2616301830
-  ]
+  ],
+  "ownerNames": {
+   "864224653": "Pyrogale Gauntlets",
+   "2066430310": "Pyrogale Gauntlets"
+  }
  },
  "1631667848": {
   "hash": 1631667848,
@@ -14208,7 +14424,11 @@
   "sandboxPerkHashes": [
    1026760645,
    3431799869
-  ]
+  ],
+  "ownerNames": {
+   "2851385306": "Cadmus Ridge Lancecap",
+   "3574051505": "Cadmus Ridge Lancecap"
+  }
  },
  "1645158859": {
   "hash": 1645158859,
@@ -14494,7 +14714,11 @@
    618667542,
    3379520037,
    3379520038
-  ]
+  ],
+  "ownerNames": {
+   "1192890598": "Hallowfire Heart",
+   "2094927311": "Hallowfire Heart"
+  }
  },
  "1667892710": {
   "hash": 1667892710,
@@ -14513,7 +14737,11 @@
    618667540,
    3379122808,
    3379122811
-  ]
+  ],
+  "ownerNames": {
+   "1591207519": "Crest of Alpha Lupi",
+   "3768376418": "Crest of Alpha Lupi"
+  }
  },
  "1667892711": {
   "hash": 1667892711,
@@ -14532,7 +14760,11 @@
    618667541,
    2305605265,
    2305605266
-  ]
+  ],
+  "ownerNames": {
+   "1591207518": "Actium War Rig",
+   "3768376419": "Actium War Rig"
+  }
  },
  "1669792723": {
   "hash": 1669792723,
@@ -14745,7 +14977,11 @@
   "sandboxPerkHashes": [
    1797441818,
    1943306754
-  ]
+  ],
+  "ownerNames": {
+   "193869522": "Lucky Pants",
+   "2405271939": "Lucky Pants"
+  }
  },
  "1694242449": {
   "hash": 1694242449,
@@ -14763,7 +14999,11 @@
   "sandboxPerkHashes": [
    1797589107,
    1943306755
-  ]
+  ],
+  "ownerNames": {
+   "193869523": "Orpheus Rig",
+   "2405271938": "Orpheus Rig"
+  }
  },
  "1694242450": {
   "hash": 1694242450,
@@ -14781,7 +15021,11 @@
   "sandboxPerkHashes": [
    1943306752,
    3019050133
-  ]
+  ],
+  "ownerNames": {
+   "193869520": "St0mp-EE5",
+   "2405271937": "St0mp-EE5"
+  }
  },
  "1698387812": {
   "hash": 1698387812,
@@ -15159,7 +15403,11 @@
    553524109,
    1325360087,
    3590631239
-  ]
+  ],
+  "ownerNames": {
+   "512777670": "Stronghold",
+   "2240152949": "Stronghold"
+  }
  },
  "1733620422": {
   "hash": 1733620422,
@@ -15999,7 +16247,11 @@
   ],
   "sandboxPerkHashes": [
    1088159205
-  ]
+  ],
+  "ownerNames": {
+   "1190497097": "Citan's Ramparts",
+   "2551549824": "Citan's Ramparts"
+  }
  },
  "1831023215": {
   "hash": 1831023215,
@@ -16104,7 +16356,11 @@
   ],
   "sandboxPerkHashes": [
    641688726
-  ]
+  ],
+  "ownerNames": {
+   "1219761634": "The Bombardiers",
+   "2177224557": "The Bombardiers"
+  }
  },
  "1844523823": {
   "hash": 1844523823,
@@ -16182,7 +16438,11 @@
   "sandboxPerkHashes": [
    3155560226,
    3301593162
-  ]
+  ],
+  "ownerNames": {
+   "1188437342": "Blastwave Striders",
+   "1849901681": "Blastwave Striders"
+  }
  },
  "1862453963": {
   "hash": 1862453963,
@@ -16279,7 +16539,11 @@
   ],
   "sandboxPerkHashes": [
    43992595
-  ]
+  ],
+  "ownerNames": {
+   "888791258": "Rime-coat Raiment",
+   "4060793397": "Rime-coat Raiment"
+  }
  },
  "1875323682": {
   "hash": 1875323682,
@@ -16720,7 +16984,11 @@
   "sandboxPerkHashes": [
    1759358543,
    2758243423
-  ]
+  ],
+  "ownerNames": {
+   "502173648": "Heart of Inmost Light",
+   "1341951177": "Heart of Inmost Light"
+  }
  },
  "1920417385": {
   "hash": 1920417385,
@@ -16961,7 +17229,11 @@
    1061593646,
    1691043314,
    2450592094
-  ]
+  ],
+  "ownerNames": {
+   "121305948": "Geomag Stabilizers",
+   "3608857511": "Geomag Stabilizers"
+  }
  },
  "1939575288": {
   "hash": 1939575288,
@@ -17307,7 +17579,11 @@
    1266279421,
    2784828165,
    3387380059
-  ]
+  ],
+  "ownerNames": {
+   "308767728": "Point-Contact Cannon Brace",
+   "1703598057": "Point-Contact Cannon Brace"
+  }
  },
  "1971149752": {
   "hash": 1971149752,
@@ -17340,7 +17616,11 @@
   "sandboxPerkHashes": [
    537180118,
    1034266085
-  ]
+  ],
+  "ownerNames": {
+   "2428181146": "Verity's Brow",
+   "2553961985": "Verity's Brow"
+  }
  },
  "1978306813": {
   "hash": 1978306813,
@@ -18414,7 +18694,11 @@
   "sandboxPerkHashes": [
    1971859103,
    2037969167
-  ]
+  ],
+  "ownerNames": {
+   "407148246": "Graviton Forfeit",
+   "2773056939": "Graviton Forfeit"
+  }
  },
  "2120661319": {
   "hash": 2120661319,
@@ -18906,7 +19190,11 @@
    1836013187,
    3476140423,
    4096043868
-  ]
+  ],
+  "ownerNames": {
+   "327385975": "Caliban's Hand",
+   "3453042252": "Caliban's Hand"
+  }
  },
  "2179914730": {
   "hash": 2179914730,
@@ -18981,7 +19269,11 @@
    1831946178,
    3944437150,
    4258325742
-  ]
+  ],
+  "ownerNames": {
+   "1168370783": "Gwisin Vest",
+   "1474735276": "Gwisin Vest"
+  }
  },
  "2192678015": {
   "hash": 2192678015,
@@ -18999,7 +19291,11 @@
   "sandboxPerkHashes": [
    1831946179,
    4135459061
-  ]
+  ],
+  "ownerNames": {
+   "1168370782": "The Sixth Coyote",
+   "1474735277": "The Sixth Coyote"
+  }
  },
  "2193118393": {
   "hash": 2193118393,
@@ -19115,7 +19411,11 @@
   ],
   "sandboxPerkHashes": [
    649172688
-  ]
+  ],
+  "ownerNames": {
+   "3545094011": "Chromatic Fire",
+   "4057299718": "Chromatic Fire"
+  }
  },
  "2204713149": {
   "hash": 2204713149,
@@ -19132,7 +19432,11 @@
   ],
   "sandboxPerkHashes": [
    649172689
-  ]
+  ],
+  "ownerNames": {
+   "3545094010": "Phoenix Protocol",
+   "4057299719": "Phoenix Protocol"
+  }
  },
  "2206869417": {
   "hash": 2206869417,
@@ -20151,7 +20455,11 @@
   "sandboxPerkHashes": [
    1322690461,
    4085593937
-  ]
+  ],
+  "ownerNames": {
+   "2374129871": "Cenotaph Mask",
+   "3589022772": "Cenotaph Mask"
+  }
  },
  "2318667184": {
   "hash": 2318667184,
@@ -20368,7 +20676,11 @@
   "sandboxPerkHashes": [
    3948976104,
    4118062772
-  ]
+  ],
+  "ownerNames": {
+   "858758105": "Khepri's Horn",
+   "2384488862": "Khepri's Horn"
+  }
  },
  "2359854504": {
   "hash": 2359854504,
@@ -21011,7 +21323,11 @@
    692394115,
    1890198747,
    2702696585
-  ]
+  ],
+  "ownerNames": {
+   "90009855": "Arbor Warden",
+   "523456396": "Arbor Warden"
+  }
  },
  "2447449706": {
   "hash": 2447449706,
@@ -21219,7 +21535,11 @@
   ],
   "sandboxPerkHashes": [
    3490826985
-  ]
+  ],
+  "ownerNames": {
+   "1322544481": "Hoarfrost-Z",
+   "4165710258": "Hoarfrost-Z"
+  }
  },
  "2473404935": {
   "hash": 2473404935,
@@ -21585,7 +21905,11 @@
    2212203174,
    3197220495,
    3741665953
-  ]
+  ],
+  "ownerNames": {
+   "1453120846": "The Path of Burning Steps",
+   "4119704973": "The Path of Burning Steps"
+  }
  },
  "2503963990": {
   "hash": 2503963990,
@@ -22052,7 +22376,11 @@
   "sandboxPerkHashes": [
    1374629467,
    4293090307
-  ]
+  ],
+  "ownerNames": {
+   "322173891": "Mask of Fealty",
+   "2915174768": "Mask of Fealty"
+  }
  },
  "2577472338": {
   "hash": 2577472338,
@@ -22383,7 +22711,11 @@
    1944959050,
    3012274134,
    3407110202
-  ]
+  ],
+  "ownerNames": {
+   "2732820041": "Mantle of Battle Harmony",
+   "3301944824": "Mantle of Battle Harmony"
+  }
  },
  "2620589274": {
   "hash": 2620589274,
@@ -22401,7 +22733,12 @@
    1170876188,
    2479015601,
    2640961053
-  ]
+  ],
+  "ownerNames": {
+   "46125926": "Dead Messenger",
+   "2812324401": "Dead Messenger",
+   "4124984448": "Hard Light"
+  }
  },
  "2621346526": {
   "hash": 2621346526,
@@ -22656,7 +22993,11 @@
   "sandboxPerkHashes": [
    1418341804,
    1687010500
-  ]
+  ],
+  "ownerNames": {
+   "171695625": "Claws of Ahamkara",
+   "3288917178": "Claws of Ahamkara"
+  }
  },
  "2639422088": {
   "hash": 2639422088,
@@ -23006,7 +23347,11 @@
   "sandboxPerkHashes": [
    3254529186,
    3355584826
-  ]
+  ],
+  "ownerNames": {
+   "671504994": "Foetracer",
+   "896224899": "Foetracer"
+  }
  },
  "2663272110": {
   "hash": 2663272110,
@@ -23025,7 +23370,11 @@
    1843890659,
    2061538972,
    2649770192
-  ]
+  ],
+  "ownerNames": {
+   "1321354573": "Celestial Nighthawk",
+   "3960926756": "Celestial Nighthawk"
+  }
  },
  "2663272111": {
   "hash": 2663272111,
@@ -23046,7 +23395,11 @@
    2062083491,
    2649770193,
    2649770195
-  ]
+  ],
+  "ownerNames": {
+   "1321354572": "Knucklehead Radar",
+   "3960926757": "Knucklehead Radar"
+  }
  },
  "2670025099": {
   "hash": 2670025099,
@@ -23283,7 +23636,11 @@
   ],
   "sandboxPerkHashes": [
    721076873
-  ]
+  ],
+  "ownerNames": {
+   "50291571": "Speaker's Sight",
+   "3617849232": "Speaker's Sight"
+  }
  },
  "2710582428": {
   "hash": 2710582428,
@@ -23599,7 +23956,11 @@
   "sandboxPerkHashes": [
    1300344163,
    3438525331
-  ]
+  ],
+  "ownerNames": {
+   "900910756": "Winter's Guile",
+   "3844826443": "Winter's Guile"
+  }
  },
  "2731901710": {
   "hash": 2731901710,
@@ -23616,7 +23977,11 @@
   ],
   "sandboxPerkHashes": [
    3438525328
-  ]
+  ],
+  "ownerNames": {
+   "900910759": "Karnstein Armlets",
+   "3844826440": "Karnstein Armlets"
+  }
  },
  "2731901711": {
   "hash": 2731901711,
@@ -23634,7 +23999,11 @@
   "sandboxPerkHashes": [
    226282357,
    3438525329
-  ]
+  ],
+  "ownerNames": {
+   "950745251": "Sunbracers",
+   "3787517196": "Sunbracers"
+  }
  },
  "2732252706": {
   "hash": 2732252706,
@@ -23749,7 +24118,11 @@
   "sandboxPerkHashes": [
    2917776374,
    3551061979
-  ]
+  ],
+  "ownerNames": {
+   "46125926": "Dead Messenger",
+   "2812324401": "Dead Messenger"
+  }
  },
  "2734674728": {
   "hash": 2734674728,
@@ -24240,7 +24613,11 @@
    1362392838,
    2420328111,
    3747238465
-  ]
+  ],
+  "ownerNames": {
+   "2316914168": "Dawn Chorus",
+   "3767088557": "Dawn Chorus"
+  }
  },
  "2799667909": {
   "hash": 2799667909,
@@ -24294,7 +24671,11 @@
   "sandboxPerkHashes": [
    2186429759,
    3324408131
-  ]
+  ],
+  "ownerNames": {
+   "2100136540": "Swarmers",
+   "2463947681": "Swarmers"
+  }
  },
  "2801223209": {
   "hash": 2801223209,
@@ -24359,7 +24740,11 @@
   ],
   "sandboxPerkHashes": [
    2364971387
-  ]
+  ],
+  "ownerNames": {
+   "1688602431": "Sealed Ahamkara Grasps",
+   "3987871714": "Sealed Ahamkara Grasps"
+  }
  },
  "2805854721": {
   "hash": 2805854721,
@@ -24528,7 +24913,11 @@
   "sandboxPerkHashes": [
    1321977942,
    2617558202
-  ]
+  ],
+  "ownerNames": {
+   "3084282676": "Getaway Artist",
+   "4177778015": "Getaway Artist"
+  }
  },
  "2822142346": {
   "hash": 2822142346,
@@ -25116,7 +25505,11 @@
    1690165183,
    3093682209,
    3231454641
-  ]
+  ],
+  "ownerNames": {
+   "2109877638": "Ballidorse Wrathweavers",
+   "3831935023": "Ballidorse Wrathweavers"
+  }
  },
  "2895039606": {
   "hash": 2895039606,
@@ -25703,7 +26096,11 @@
    1487218980,
    2316351073,
    3458383069
-  ]
+  ],
+  "ownerNames": {
+   "1537074069": "Phoenix Cradle",
+   "2439379860": "Phoenix Cradle"
+  }
  },
  "2953575380": {
   "hash": 2953575380,
@@ -25950,7 +26347,11 @@
   "sandboxPerkHashes": [
    1695763035,
    3651856876
-  ]
+  ],
+  "ownerNames": {
+   "1978467312": "Precious Scars",
+   "3974038291": "Precious Scars"
+  }
  },
  "2980589453": {
   "hash": 2980589453,
@@ -27987,7 +28388,11 @@
    364893125,
    364893126,
    689661430
-  ]
+  ],
+  "ownerNames": {
+   "53126581": "Lion Rampant",
+   "3539357318": "Lion Rampant"
+  }
  },
  "3241194941": {
   "hash": 3241194941,
@@ -28007,7 +28412,11 @@
    365040221,
    365040223,
    689661431
-  ]
+  ],
+  "ownerNames": {
+   "53126580": "Peacekeepers",
+   "3539357319": "Peacekeepers"
+  }
  },
  "3241194942": {
   "hash": 3241194942,
@@ -28026,7 +28435,11 @@
    364598808,
    364598811,
    689661428
-  ]
+  ],
+  "ownerNames": {
+   "1160559849": "Dunemarchers",
+   "1437375562": "Dunemarchers"
+  }
  },
  "3242533954": {
   "hash": 3242533954,
@@ -28041,7 +28454,11 @@
   ],
   "sandboxPerkHashes": [
    481188932
-  ]
+  ],
+  "ownerNames": {
+   "400096939": "Outbreak Perfected",
+   "3824673936": "Outbreak Perfected"
+  }
  },
  "3244229373": {
   "hash": 3244229373,
@@ -28227,7 +28644,15 @@
    1813495944,
    1813495945,
    2549656359
-  ]
+  ],
+  "ownerNames": {
+   "796577360": "Aeon Safe",
+   "859709617": "Aeon Soul",
+   "1654461647": "Aeon Safe",
+   "2615220262": "Aeon Swift",
+   "2950045886": "Aeon Soul",
+   "3942036043": "Aeon Swift"
+  }
  },
  "3268862716": {
   "hash": 3268862716,
@@ -28440,7 +28865,11 @@
   "sandboxPerkHashes": [
    1612558791,
    1890715543
-  ]
+  ],
+  "ownerNames": {
+   "3948284065": "Astrocyte Verse",
+   "4035625646": "Astrocyte Verse"
+  }
  },
  "3298446480": {
   "hash": 3298446480,
@@ -28745,7 +29174,11 @@
   ],
   "sandboxPerkHashes": [
    3562231887
-  ]
+  ],
+  "ownerNames": {
+   "1891561814": "Whisper of the Worm",
+   "1983149589": "Whisper of the Worm"
+  }
  },
  "3340021875": {
   "hash": 3340021875,
@@ -28785,7 +29218,11 @@
   ],
   "sandboxPerkHashes": [
    2845217634
-  ]
+  ],
+  "ownerNames": {
+   "418363297": "Lunafaction Boots",
+   "4136768282": "Lunafaction Boots"
+  }
  },
  "3347978673": {
   "hash": 3347978673,
@@ -28803,7 +29240,11 @@
   "sandboxPerkHashes": [
    2845217635,
    3603242643
-  ]
+  ],
+  "ownerNames": {
+   "138282166": "Transversive Steps",
+   "3337759189": "Transversive Steps"
+  }
  },
  "3350417888": {
   "hash": 3350417888,
@@ -29488,7 +29929,11 @@
    2461310886,
    3732285973,
    3732285974
-  ]
+  ],
+  "ownerNames": {
+   "1429817243": "Severance Enclosure",
+   "2326396534": "Severance Enclosure"
+  }
  },
  "3449390870": {
   "hash": 3449390870,
@@ -29895,7 +30340,11 @@
   ],
   "sandboxPerkHashes": [
    2465949303
-  ]
+  ],
+  "ownerNames": {
+   "2340803152": "Balance of Power",
+   "3001449507": "Balance of Power"
+  }
  },
  "3481749002": {
   "hash": 3481749002,
@@ -30023,7 +30472,11 @@
   "sandboxPerkHashes": [
    2681082551,
    4188638119
-  ]
+  ],
+  "ownerNames": {
+   "1909305643": "Hazardous Propulsion",
+   "3050442980": "Hazardous Propulsion"
+  }
  },
  "3496051160": {
   "hash": 3496051160,
@@ -30422,7 +30875,11 @@
   "sandboxPerkHashes": [
    268196645,
    514499714
-  ]
+  ],
+  "ownerNames": {
+   "863908533": "Blight Ranger",
+   "1703551922": "Blight Ranger"
+  }
  },
  "3556949035": {
   "hash": 3556949035,
@@ -31306,7 +31763,15 @@
    716730688,
    716730689,
    3579049655
-  ]
+  ],
+  "ownerNames": {
+   "796577360": "Aeon Safe",
+   "859709617": "Aeon Soul",
+   "1654461647": "Aeon Safe",
+   "2615220262": "Aeon Swift",
+   "2950045886": "Aeon Soul",
+   "3942036043": "Aeon Swift"
+  }
  },
  "3653484343": {
   "hash": 3653484343,
@@ -31371,7 +31836,11 @@
   "sandboxPerkHashes": [
    1156939740,
    2790774320
-  ]
+  ],
+  "ownerNames": {
+   "3883866764": "Mask of the Quiet One",
+   "4060352315": "Mask of the Quiet One"
+  }
  },
  "3662465907": {
   "hash": 3662465907,
@@ -31388,7 +31857,11 @@
   ],
   "sandboxPerkHashes": [
    1156939741
-  ]
+  ],
+  "ownerNames": {
+   "1407595207": "An Insurmountable Skullfort",
+   "3216110440": "An Insurmountable Skullfort"
+  }
  },
  "3663096260": {
   "hash": 3663096260,
@@ -31406,7 +31879,11 @@
   "sandboxPerkHashes": [
    1564684859,
    2220035512
-  ]
+  ],
+  "ownerNames": {
+   "89619507": "Athrys's Embrace",
+   "2415768376": "Athrys's Embrace"
+  }
  },
  "3665558569": {
   "hash": 3665558569,
@@ -31438,7 +31915,11 @@
    2504630208,
    3269884705,
    3269884706
-  ]
+  ],
+  "ownerNames": {
+   "978537162": "Ophidia Spathe",
+   "3642110725": "Ophidia Spathe"
+  }
  },
  "3666208348": {
   "hash": 3666208348,
@@ -31562,7 +32043,15 @@
    537822600,
    537822601,
    990066560
-  ]
+  ],
+  "ownerNames": {
+   "796577360": "Aeon Safe",
+   "859709617": "Aeon Soul",
+   "1654461647": "Aeon Safe",
+   "2615220262": "Aeon Swift",
+   "2950045886": "Aeon Soul",
+   "3942036043": "Aeon Swift"
+  }
  },
  "3683904166": {
   "hash": 3683904166,
@@ -31898,7 +32387,11 @@
   "sandboxPerkHashes": [
    1148470421,
    4171590257
-  ]
+  ],
+  "ownerNames": {
+   "3562696927": "Wormhusk Crown",
+   "3721047650": "Wormhusk Crown"
+  }
  },
  "3725333007": {
   "hash": 3725333007,
@@ -32553,7 +33046,11 @@
   "sandboxPerkHashes": [
    467562959,
    3630929311
-  ]
+  ],
+  "ownerNames": {
+   "461841403": "Gyrfalcon's Hauberk",
+   "2447096246": "Gyrfalcon's Hauberk"
+  }
  },
  "3809316345": {
   "hash": 3809316345,
@@ -32645,7 +33142,11 @@
    376352727,
    1901678688,
    3778543872
-  ]
+  ],
+  "ownerNames": {
+   "124786972": "Necrotic Grip",
+   "2780717641": "Necrotic Grip"
+  }
  },
  "3827198035": {
   "hash": 3827198035,
@@ -33261,7 +33762,11 @@
    2911827365,
    2911827366,
    4193101206
-  ]
+  ],
+  "ownerNames": {
+   "1053737370": "Shinobu's Vow",
+   "1611241895": "Shinobu's Vow"
+  }
  },
  "3907865655": {
   "hash": 3907865655,
@@ -33499,7 +34004,11 @@
   "sandboxPerkHashes": [
    1292199386,
    1577484738
-  ]
+  ],
+  "ownerNames": {
+   "925466717": "Eye of Another World",
+   "3381022970": "Eye of Another World"
+  }
  },
  "3927963101": {
   "hash": 3927963101,
@@ -33517,7 +34026,11 @@
   "sandboxPerkHashes": [
    1292346419,
    1577484739
-  ]
+  ],
+  "ownerNames": {
+   "925466716": "Nezarec's Sin",
+   "3381022971": "Nezarec's Sin"
+  }
  },
  "3927963102": {
   "hash": 3927963102,
@@ -33535,7 +34048,11 @@
   "sandboxPerkHashes": [
    218137516,
    1577484736
-  ]
+  ],
+  "ownerNames": {
+   "1030017949": "Skull of Dire Ahamkara",
+   "3050017626": "Skull of Dire Ahamkara"
+  }
  },
  "3927963103": {
   "hash": 3927963103,
@@ -33552,7 +34069,11 @@
   ],
   "sandboxPerkHashes": [
    1577484737
-  ]
+  ],
+  "ownerNames": {
+   "925466718": "Crown of Tempests",
+   "3381022969": "Crown of Tempests"
+  }
  },
  "3932949589": {
   "hash": 3932949589,
@@ -34292,7 +34813,11 @@
   ],
   "sandboxPerkHashes": [
    3250718083
-  ]
+  ],
+  "ownerNames": {
+   "1163283805": "Gemini Jester",
+   "2132672800": "Gemini Jester"
+  }
  },
  "4024789138": {
   "hash": 4024789138,
@@ -34459,7 +34984,11 @@
   "sandboxPerkHashes": [
    1430090312,
    3956055316
-  ]
+  ],
+  "ownerNames": {
+   "1001356380": "Star-Eater Scales",
+   "1006498763": "Star-Eater Scales"
+  }
  },
  "4049631843": {
   "hash": 4049631843,
@@ -34824,7 +35353,11 @@
   ],
   "sandboxPerkHashes": [
    995682592
-  ]
+  ],
+  "ownerNames": {
+   "3534173884": "Mothkeeper's Wraps",
+   "3688534631": "Mothkeeper's Wraps"
+  }
  },
  "4096144819": {
   "hash": 4096144819,
@@ -34878,7 +35411,11 @@
   ],
   "sandboxPerkHashes": [
    1955723517
-  ]
+  ],
+  "ownerNames": {
+   "2757274117": "Khepri's Sting",
+   "4002939008": "Khepri's Sting"
+  }
  },
  "4104185692": {
   "hash": 4104185692,
@@ -35006,7 +35543,11 @@
    1176810283,
    1853052031,
    2938981485
-  ]
+  ],
+  "ownerNames": {
+   "192896783": "Cyrtarachne's Facade",
+   "1008364980": "Cyrtarachne's Facade"
+  }
  },
  "4127881474": {
   "hash": 4127881474,
@@ -35393,7 +35934,11 @@
   ],
   "sandboxPerkHashes": [
    3011167349
-  ]
+  ],
+  "ownerNames": {
+   "132452792": "Apotheosis Veil",
+   "1096253259": "Apotheosis Veil"
+  }
  },
  "4175584682": {
   "hash": 4175584682,
@@ -35572,7 +36117,11 @@
    319503687,
    975219865,
    3453944649
-  ]
+  ],
+  "ownerNames": {
+   "1848640623": "Ursa Furiosa",
+   "2046130360": "Ursa Furiosa"
+  }
  },
  "4190643473": {
   "hash": 4190643473,
@@ -35896,7 +36445,11 @@
    472686235,
    1732884674,
    2412573914
-  ]
+  ],
+  "ownerNames": {
+   "400096939": "Outbreak Perfected",
+   "3824673936": "Outbreak Perfected"
+  }
  },
  "4208512210": {
   "hash": 4208512210,
@@ -36157,7 +36710,11 @@
    266155917,
    3281461707,
    4187775722
-  ]
+  ],
+  "ownerNames": {
+   "511709874": "Rain of Fire",
+   "1624882687": "Rain of Fire"
+  }
  },
  "4223976499": {
   "hash": 4223976499,
@@ -36243,7 +36800,11 @@
   "sandboxPerkHashes": [
    2120108299,
    2453356355
-  ]
+  ],
+  "ownerNames": {
+   "1446374842": "Gifted Conviction",
+   "1627691271": "Gifted Conviction"
+  }
  },
  "4235122381": {
   "hash": 4235122381,
@@ -36261,7 +36822,11 @@
   "sandboxPerkHashes": [
    2674511307,
    3525375944
-  ]
+  ],
+  "ownerNames": {
+   "2321120637": "Cuirass of the Falling Star",
+   "4057875770": "Cuirass of the Falling Star"
+  }
  },
  "4236235115": {
   "hash": 4236235115,
@@ -36405,7 +36970,11 @@
   ],
   "sandboxPerkHashes": [
    43648511
-  ]
+  ],
+  "ownerNames": {
+   "2268523867": "Raiju's Harness",
+   "2767482390": "Raiju's Harness"
+  }
  },
  "4252909580": {
   "hash": 4252909580,

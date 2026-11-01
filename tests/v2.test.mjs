@@ -49,6 +49,33 @@ test('all generated v2 outputs exclude stat data and weapon formula files', () =
   }
 })
 
+test('checked-in shared owner metadata covers the pinned references without inventing owners', () => {
+  const items = JSON.parse(fs.readFileSync(new URL('../templates/v2/items.json', import.meta.url)))
+  const coverage = JSON.parse(fs.readFileSync(new URL('../templates/v2/coverage.json', import.meta.url)))
+  const pinned = JSON.parse(fs.readFileSync(new URL('./pinned-shared-owners.json', import.meta.url)))
+  const shared = Object.values(items).filter(item => item.owners?.length >= 2)
+  assert.equal(Object.keys(pinned.shared).length, 139)
+  assert.equal(Object.values(pinned.shared).flat().length, 291)
+  if (coverage.manifestVersion === pinned.manifestVersion) {
+    for (const [hash, owners] of Object.entries(pinned.shared)) {
+      for (const owner of owners) {
+        if (items[hash]?.owners?.includes(owner)) {
+          assert.ok(items[hash].ownerNames?.[owner]?.trim(), `${hash} missing pinned owner ${owner}`)
+        }
+      }
+    }
+    if (items[8507332]?.owners?.includes(1906093346)) {
+      assert.equal(items[8507332].ownerNames?.[1906093346], 'Contraverse Hold')
+    }
+  }
+  for (const item of shared) {
+    for (const [owner, name] of Object.entries(item.ownerNames ?? {})) {
+      assert.ok(item.owners.includes(Number(owner)))
+      assert.ok(name.trim())
+    }
+  }
+})
+
 test('registry has all 27 converter types, plus verbs; stable unique IDs/orders', () => {
   assert.equal(categories.length, 28)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
@@ -178,13 +205,21 @@ test('sandbox and inventory hashes can legitimately be identical, but cannot ali
 
 test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal multi-variant pairing', () => {
   const inventory = byHash(plug(1, "Hunter's Trace", 'Intrinsic', 6),
-    plug(2, "Hunter's Trace II", 'Intrinsic', 6), plug(3, "Hunter's Trace III", 'Intrinsic', 6))
+    plug(2, "Hunter's Trace II", 'Intrinsic', 6), plug(3, "Hunter's Trace III", 'Intrinsic', 6),
+    plug(4, 'Shared Exotic Perk', 'Trait', 6))
   inventory[10] = weapon(10, [1, 2, 3])
   inventory[10].displayProperties = { name: 'Fixture Weapon', description: '' }
+  inventory[20] = weapon(20, [4])
+  inventory[20].displayProperties = { name: 'First Exotic', description: '' }
+  inventory[30] = weapon(30, [4])
+  inventory[30].displayProperties = { name: 'Second Exotic', description: '' }
   inventory[1].perks = [{ perkHash: 100 }]
   inventory[1].stats = { stats: { 10: { value: 42 } } }
   inventory[1].investmentStats = [{ statTypeHash: 10, value: 42 }]
-  const legacy = { 1: { hash: 1, name: "Hunter's Trace", type: 'Weapon Frame Exotic', appearsOn: [10] } }
+  const legacy = {
+    1: { hash: 1, name: "Hunter's Trace", type: 'Weapon Frame Exotic', appearsOn: [10] },
+    4: { hash: 4, name: 'Shared Exotic Perk', type: 'Weapon Perk Exotic', appearsOn: [20, 30, 40] },
+  }
   legacy[1].stats = { Damage: 42 }
   legacy[1].importStatsFrom = 10
   legacy[1].weaponFormula = { damage: '42' }
@@ -212,6 +247,8 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.equal(items[1].itemHash, 10)
     assert.equal(items[1].itemName, 'Fixture Weapon')
     assert.equal(items[1].owners, undefined)
+    assert.deepEqual(items[4].owners, [20, 30, 40])
+    assert.deepEqual(items[4].ownerNames, { 20: 'First Exotic', 30: 'Second Exotic' })
     for (const hash of [2, 3]) {
       assert.equal(Object.hasOwn(items[hash], 'itemHash'), false)
       assert.equal(Object.hasOwn(items[hash], 'itemName'), false)
@@ -305,20 +342,36 @@ test('legacyOwner mirrors the legacy generator owner rule', () => {
 test('legacy selection records owner name, shared owners, and fails on a missing owner definition', () => {
   const holder = hash => ({ hash, displayProperties: { name: `Holder ${hash}`, description: '' } })
   const inventory = byHash(plug(1, 'One', 'Intrinsic', 6), plug(2, 'Two', 'Intrinsic', 6),
-    plug(3, 'Three', 'Intrinsic', 6), plug(4, 'Four', 'Intrinsic', 6), holder(50), holder(51))
+    plug(3, 'Three', 'Intrinsic', 6), plug(4, 'Four', 'Intrinsic', 6),
+    plug(5, 'Five', 'Intrinsic', 6), holder(50), holder(51), holder(52))
+  inventory[52].displayProperties.name = ' '
   const entry = (hash, type, appearsOn) => ({ hash, type, appearsOn })
   const legacy = {
     1: entry(1, 'Weapon Frame Exotic', [50]),
     2: entry(2, 'Weapon Frame Exotic', [50, 51, 50]),
     3: entry(3, 'Weapon Frame Exotic', ['Sword']),
     4: entry(4, 'Weapon Frame Exotic', [51, 'Sword']),
+    5: entry(5, 'Weapon Frame Exotic', [50, 999, 52]),
   }
   const select = (manifest) => legacyCategory('weapon-frame-exotic', 'Weapon Frame Exotic', 'Weapons', 1).select(manifest)
   const items = Object.fromEntries(select({ inventoryItem: inventory, extraTypes: {}, legacy }).map(item => [item.hash, item]))
   assert.deepEqual([items[1].itemHash, items[1].itemName, items[1].owners], [50, 'Holder 50', undefined])
   assert.deepEqual([items[2].itemHash, items[2].itemName, items[2].owners], [undefined, undefined, [50, 51]])
+  assert.deepEqual(items[2].ownerNames, { 50: 'Holder 50', 51: 'Holder 51' })
+  assert.deepEqual(items[5].owners, [50, 999, 52])
+  assert.deepEqual(items[5].ownerNames, { 50: 'Holder 50' })
   assert.deepEqual([items[3].itemHash, items[3].itemName, items[3].owners], [undefined, undefined, undefined])
   assert.deepEqual([items[4].itemHash, items[4].itemName, items[4].owners], [undefined, undefined, undefined])
+  assert.equal(items[1].ownerNames, undefined)
+  const armor = legacyCategory('armor-trait-exotic', 'Armor Trait Exotic', 'Armor', 1).select({
+    inventoryItem: inventory, extraTypes: {},
+    legacy: { 2: entry(2, 'Armor Trait Exotic', [50, 51]) },
+  })[0]
+  assert.equal(armor.itemHash, 50)
+  assert.equal(armor.itemName, 'Holder 50')
+  assert.deepEqual(armor.ownerNames, { 50: 'Holder 50', 51: 'Holder 51' })
+  legacy[5].appearsOn = [999, 52]
+  assert.equal(select({ inventoryItem: inventory, extraTypes: {}, legacy })[4].ownerNames, undefined)
   legacy[1].appearsOn = [999]
   assert.throws(() => select({ inventoryItem: inventory, extraTypes: {}, legacy }), /Missing inventory definition/)
 })
