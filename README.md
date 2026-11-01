@@ -23,8 +23,10 @@ Network failures or invalid supplemental data fail the run explicitly.
   `name`, `icon` when available, `categoryId`, and `inGameDescription` for Bungie drift.
   Exotic entries retain their owning `itemHash` and `itemName` where the legacy rule
   records one (exotic armor traits: first owner; other exotic perks: exactly one owner).
-  `owners` lists every owning item hash of an exotic perk shared by two or more items;
-  it is editor-only metadata and is not exported to legacy outputs.
+  `owners` lists every owning item hash of an exotic perk shared by two or more items.
+  `ownerNames` maps those hashes to nonempty English inventory names where available;
+  missing definitions or blank names have no entry. Both are editor-only metadata
+  and are not exported to legacy outputs. Older catalogs may omit `ownerNames`.
 - `templates/v2/sandboxAliases.json`: sandbox hash -> selected inventory tooltip hash.
 - `templates/v2/aliases.json`: generic `{ "<hash>": { to, kind: "sandbox" | "frame" } }`
   aliases. Sandbox targets are resolved through frame groups. This supersedes

@@ -37,7 +37,15 @@ export function legacyCategory(id: string, legacyType: NonNullable<Category['leg
         }
         if (legacy && legacy.type.endsWith(' Exotic')) {
           const owners = [...new Set(legacy.appearsOn.filter((value): value is number => typeof value === 'number'))]
-          if (owners.length >= 2) item.owners = owners
+          if (owners.length >= 2) {
+            item.owners = owners
+            const names: Record<string, string> = {}
+            for (const ownerHash of owners) {
+              const name = manifest.inventoryItem[ownerHash]?.displayProperties.name
+              if (name?.trim()) names[ownerHash] = name
+            }
+            if (Object.keys(names).length) item.ownerNames = names
+          }
         }
         return item
       })

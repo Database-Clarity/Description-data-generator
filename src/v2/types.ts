@@ -27,6 +27,7 @@ export interface Item {
   itemHash?: number
   itemName?: string
   owners?: number[]
+  ownerNames?: Record<string, string>
   enhancedHash?: number
   enhancedHashes?: number[]
   baseHash?: number
