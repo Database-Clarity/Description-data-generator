@@ -567,3 +567,40 @@ test('generation separates real enhanced pointers from identical and uncertain D
     fs.rmSync(dir, { recursive: true })
   }
 })
+
+test('notification fallback requires an exact base and keeps exotics and unrelated styles out', async () => {
+  const { enhancedFallbacks } = await import('../generator/v2/pairing.js')
+  const mark = item => ({ ...item, tooltipNotifications: [{ displayStyle: 'ui_display_style_enhanced_perk' }] })
+  const inventory = byHash(plug(1, 'Assault', 'Origin Trait'), mark(plug(2, 'Assault', 'Origin Trait')),
+    mark(plug(3, 'Orphan')), plug(4, 'Exotic', 'Trait', 6), mark(plug(5, 'Exotic', 'Trait', 6)),
+    plug(6, 'Wrong category'), mark(plug(7, 'Wrong category')), plug(8, 'Other style'), plug(9, 'Other style'),
+    plug(10, 'Label only', 'Enhanced Trait'))
+  inventory[7].plug.plugCategoryHash = 99
+  inventory[9].tooltipNotifications = [{ displayStyle: 'ui_display_style_other' }]
+  const fallback = enhancedFallbacks(inventory)
+  assert.deepEqual([...fallback], [2])
+  assert.equal(isEnhanced(inventory[10], fallback), true)
+  assert.equal(weaponCategory(inventory[2], false, fallback), 'Weapon Trait Origin Enhanced')
+  assert.equal(weaponCategory(inventory[5], true, fallback), 'Weapon Trait Exotic')
+  assert.equal(derivePairings(inventory, {}, {}).byEnhanced[2], 1)
+  const legacy = Object.fromEntries(Object.values(inventory).map(item => [item.hash, {
+    hash: item.hash, type: item.inventory.tierType === 6 ? 'Weapon Trait Exotic' : 'Weapon Perk', appearsOn: [],
+  }]))
+  inventory[2].displayProperties.description = 'Further increases reload speed.'
+  const cwd = process.cwd(), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'enhanced-fallback-'))
+  try {
+    process.chdir(dir)
+    generateV2({ inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {}, sandboxPerk: {} }, {1:2}, 'fixture')
+    const items = JSON.parse(fs.readFileSync('templates/v2/items.json'))
+    const proposals = JSON.parse(fs.readFileSync('templates/v2/aliasProposals.json'))
+    assert.equal(items[2].categoryId, 'weapon-trait-origin-enhanced')
+    assert.equal(items[2].baseHash, 1)
+    assert.equal(items[2].dimBaseHash, undefined)
+    assert.deepEqual(items[1].enhancedHashes, [2])
+    assert.deepEqual(proposals.possibleEnhanced, [])
+    assert.equal(proposals.proposals.some(p => p.members.includes(2)), false)
+  } finally {
+    process.chdir(cwd)
+    fs.rmSync(dir, {recursive:true})
+  }
+})
