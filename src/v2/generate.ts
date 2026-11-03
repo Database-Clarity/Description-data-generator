@@ -77,6 +77,12 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     if (proposal.kind !== 'S' || proposal.basis.isEnhanced || proposal.basis.exotic) continue
     for (const hash of proposal.members) baseGroups.set(hash, proposal.canonical)
   }
+  // Legendary frames already share a generated canonical across weapon types.
+  for (const item of Object.values(items)) {
+    if (item.categoryId !== 'weapon-frame') continue
+    const alias = proposalAliases[item.hash]
+    if (!alias || alias.kind === 'frame') baseGroups.set(item.hash, alias?.to ?? item.hash)
+  }
   pairing = derivePairings(manifest.inventoryItem, manifest.plugSet, dim, baseGroups)
   for (const [enhancedKey, baseHash] of Object.entries(pairing.byEnhanced)) {
     const enhancedHash = Number(enhancedKey)

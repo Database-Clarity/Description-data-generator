@@ -64,7 +64,7 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
     const targets = new Set(scoped.map(base => baseGroups!.get(base.hash)!))
     if (eligible.length === 1) manifestPairs[enhanced.hash] = eligible[0].hash
     // Several candidates are safe only when the selected, in-scope bases share
-    // one actual Kind S proposal canonical. Frame names alone are insufficient.
+    // one accepted Kind S or generated legendary frame canonical.
     else if (scoped.length && targets.size === 1) manifestPairs[enhanced.hash] = [...targets][0]
     else unresolved.push({ enhancedHash: enhanced.hash, candidates: eligible.map(item => item.hash) })
   }

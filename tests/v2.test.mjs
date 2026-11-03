@@ -661,12 +661,13 @@ test('duplicate bases preserve multiple enhanced variants despite a DIM preferre
 })
 
 
-test('same-name intrinsic frames cannot pair through a lowest-hash guess', () => {
+test('legendary intrinsic frames pair through their shared group, never across groups', () => {
   const inventory = byHash(plug(1, 'Aggressive Frame', 'Intrinsic'),
     plug(2, 'Aggressive Frame', 'Intrinsic'), plug(3, 'Aggressive Frame', 'Enhanced Intrinsic'))
   inventory[1].displayProperties.description = 'Heavy glaive slam'
   inventory[2].displayProperties.description = 'Reduced fusion bolts'
   inventory[3].displayProperties.description = 'Reduced fusion bolts with enhanced stats'
+  assert.equal(derivePairings(inventory, {}, {}, new Map([[1,1],[2,1]])).byEnhanced[3], 1)
   assert.equal(derivePairings(inventory, {}, {}, new Map()).byEnhanced[3], undefined)
   assert.equal(derivePairings(inventory, {}, {}, new Map([[1,1],[2,2]])).byEnhanced[3], undefined)
 })
@@ -681,5 +682,25 @@ test('exotic firing modes and enhanced-looking plugs use existing exotic categor
   for (const hash of [2206869417, 4152458172]) {
     assert.equal(items[hash].categoryId, 'weapon-perk-exotic')
     assert.equal(items[hash].itemName, 'Revision Zero')
+  }
+})
+
+test('generation pairs cross-weapon legendary frames to the existing frame canonical', () => {
+  const inventory = byHash(plug(9, 'Aggressive Frame', 'Intrinsic'), plug(1, 'Aggressive Frame', 'Intrinsic'),
+    plug(3, 'Aggressive Frame', 'Enhanced Intrinsic'), plug(4, 'Aggressive Frame', 'Enhanced Intrinsic', 6))
+  const legacy = Object.fromEntries(Object.values(inventory).map(i => [i.hash, {
+    hash: i.hash, type: i.hash === 4 ? 'Weapon Frame Exotic' : 'Weapon Frame', appearsOn: [],
+  }]))
+  const cwd = process.cwd(), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'frame-enh-'))
+  try {
+    process.chdir(dir)
+    generateV2({ inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {}, sandboxPerk: {} }, {}, 'fixture')
+    const items = JSON.parse(fs.readFileSync('templates/v2/items.json'))
+    assert.equal(items[3].baseHash, 1)
+    assert.deepEqual(items[1].enhancedHashes, [3])
+    assert.equal(items[4].baseHash, undefined)
+  } finally {
+    process.chdir(cwd)
+    fs.rmSync(dir, {recursive:true})
   }
 })
