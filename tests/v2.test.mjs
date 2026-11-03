@@ -111,10 +111,10 @@ test('legacy selection uses legacyType independently of a presentation label', (
   assert.deepEqual(category.select(manifest).map(item => item.hash), [1])
 })
 
-test('pairing is exact, distinguishes prefix names, and uses the lowest-hash canonical for duplicate bases', () => {
+test('pairing is exact, distinguishes prefix names, and requires a verified alias group for duplicate bases', () => {
   const inventory = byHash(plug(1, 'Rampage'), plug(2, 'Rampage Plus'),
     plug(3, 'Rampage Plus', 'Enhanced Trait', 3), plug(4, 'Rampage Plus'))
-  assert.equal(derivePairings(inventory, {}, {}).byEnhanced[3], 2)
+  assert.equal(derivePairings(inventory, {}, {}).byEnhanced[3], undefined)
   inventory[10] = weapon(10, [2, 3])
   assert.equal(derivePairings(inventory, {}, {}).byEnhanced[3], 2)
 })
@@ -609,7 +609,7 @@ test('notification fallback requires an exact base and keeps exotics and unrelat
 test('duplicate bases preserve multiple enhanced variants despite a DIM preferred variant', () => {
   const inventory = byHash(plug(9, 'Osmosis'), plug(1, 'Osmosis'),
     plug(3, 'Osmosis', 'Enhanced Trait'), plug(4, 'Osmosis', 'Enhanced Trait'))
-  const pairing = derivePairings(inventory, {}, { 1: 3 })
+  const pairing = derivePairings(inventory, {}, { 1: 3 }, new Map([[1,1],[9,1]]))
   assert.deepEqual(pairing.byEnhanced, { 3: 1, 4: 1 })
   assert.deepEqual(pairing.report.unresolved, [])
   const items = Object.fromEntries(Object.values(inventory).map(i => [i.hash, {
@@ -619,4 +619,15 @@ test('duplicate bases preserve multiple enhanced variants despite a DIM preferre
   const proposals = aliasProposals(items, inventory, {}).proposals
   assert.deepEqual(proposals.find(p=>p.canonical===1).members, [1,9])
   assert.equal(proposals.find(p=>p.canonical===1).enhancedLink, 3)
+})
+
+
+test('same-name intrinsic frames cannot pair through a lowest-hash guess', () => {
+  const inventory = byHash(plug(1, 'Aggressive Frame', 'Intrinsic'),
+    plug(2, 'Aggressive Frame', 'Intrinsic'), plug(3, 'Aggressive Frame', 'Enhanced Intrinsic'))
+  inventory[1].displayProperties.description = 'Heavy glaive slam'
+  inventory[2].displayProperties.description = 'Reduced fusion bolts'
+  inventory[3].displayProperties.description = 'Reduced fusion bolts with enhanced stats'
+  assert.equal(derivePairings(inventory, {}, {}, new Map()).byEnhanced[3], undefined)
+  assert.equal(derivePairings(inventory, {}, {}, new Map([[1,1],[2,2]])).byEnhanced[3], undefined)
 })

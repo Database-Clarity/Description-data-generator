@@ -51,9 +51,9 @@ const read = (side, name) => JSON.parse(fs.readFileSync(path.join(out, side, 'te
 const oldItems = read('before','items'), newItems = read('after','items')
 const changes = Object.keys(newItems).filter(h => JSON.stringify(oldItems[h]) !== JSON.stringify(newItems[h])).map(h=>({hash:Number(h),before:oldItems[h],after:newItems[h]}))
 const unresolved = read('before','coverage').pairing.unresolved
-const cases = unresolved.filter(row=>row.candidates.length>1).map(row=>({...row,name:input.manifest.inventoryItem[row.enhancedHash].displayProperties.name,actual:newItems[row.enhancedHash]?.baseHash,expected:Math.min(...row.candidates)}))
+const cases = unresolved.filter(row=>row.candidates.length>1).map(row=>({...row,name:input.manifest.inventoryItem[row.enhancedHash].displayProperties.name,actual:newItems[row.enhancedHash]?.baseHash,expected:({2060213237:1774574192,2649013855:2117683199,3906784980:164468655})[row.enhancedHash]}))
 for (const row of cases) assert.equal(row.actual,row.expected)
-const expectedHashes = [...new Set(cases.flatMap(row=>[row.enhancedHash,row.expected]))].sort((a,b)=>a-b)
+const expectedHashes = [...new Set(cases.filter(row=>row.expected!==undefined).flatMap(row=>[row.enhancedHash,row.expected]))].sort((a,b)=>a-b)
 assert.deepEqual(changes.map(row=>row.hash).sort((a,b)=>a-b),expectedHashes)
 for (const row of changes) {
   const clean = item => Object.fromEntries(Object.entries(item).filter(([key])=>!['baseHash','enhancedHash','enhancedHashes'].includes(key)))

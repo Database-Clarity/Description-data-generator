@@ -21,7 +21,7 @@ export function enhancedFallbacks(inventory: InventoryItems): Set<number> {
   return new Set(items.filter(item => !isEnhanced(item) && marker(item) && bases.has(key(item))).map(item => item.hash))
 }
 
-export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, dim: Record<string, number>) {
+export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, dim: Record<string, number>, baseGroups?: ReadonlyMap<number, number>) {
   const fallback = enhancedFallbacks(inventory)
   const enhanced = (item: InventoryItem) => isEnhanced(item, fallback)
   const contexts = new Map<number, Set<string>>()
@@ -60,10 +60,12 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
     const matches = normals.get(key(enhanced)) ?? []
     const contextual = matches.filter(base => sharedContext(base.hash, enhanced.hash))
     const eligible = contextual.length ? contextual : matches
-    // Same-name, same-family and same-plug bases already form a Kind S proposal.
-    // Use its deterministic canonical rather than leaving the enhanced item orphaned.
-    if (eligible.length) manifestPairs[enhanced.hash] = [...eligible]
-      .sort((a, b) => a.hash - b.hash)[0].hash
+    const scoped = baseGroups ? eligible.filter(base => baseGroups.has(base.hash)) : []
+    const targets = new Set(scoped.map(base => baseGroups!.get(base.hash)!))
+    if (eligible.length === 1) manifestPairs[enhanced.hash] = eligible[0].hash
+    // Several candidates are safe only when the selected, in-scope bases share
+    // one actual Kind S proposal canonical. Frame names alone are insufficient.
+    else if (scoped.length && targets.size === 1) manifestPairs[enhanced.hash] = [...targets][0]
     else unresolved.push({ enhancedHash: enhanced.hash, candidates: eligible.map(item => item.hash) })
   }
   const byEnhanced = { ...manifestPairs }
