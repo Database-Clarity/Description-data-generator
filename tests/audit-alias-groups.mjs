@@ -4,7 +4,9 @@ import os from 'node:os'
 import { execFileSync } from 'node:child_process'
 import ts from 'typescript'
 import { pathToFileURL } from 'node:url'
+import assert from 'node:assert/strict'
 import { fetchJson, fetchSupplemental } from '../generator/v2/fetch.js'
+import { isEnhanced, weaponCategory } from '../generator/v2/pairing.js'
 const root = process.cwd()
 const out = process.env.ALIAS_AUDIT_DIR ?? fs.mkdtempSync(path.join(os.tmpdir(), 'clarity-alias-a-'))
 fs.mkdirSync(out, {recursive:true})
@@ -43,8 +45,44 @@ process.chdir(root)
 const read = (side, name) => JSON.parse(fs.readFileSync(path.join(out, side, 'templates/v2', name + '.json')))
 const old = read('before', 'items'), current = read('after', 'items')
 const changes = [...new Set([...Object.keys(old), ...Object.keys(current)])].filter(h => JSON.stringify(old[h]) !== JSON.stringify(current[h]))
+assert.deepEqual(Object.keys(current).sort(), Object.keys(old).sort(), 'Selected inventory hashes changed')
+const categories = read('after', 'categories')
+const expectedCategories = Object.fromEntries(Object.entries(old).map(([hash, item]) => {
+  const definition = input.manifest.inventoryItem[hash]
+  if (!definition || item.categoryId.endsWith('-exotic') || !isEnhanced(definition)) return [hash, item.categoryId]
+  const category = categories.find(c => c.label === weaponCategory(definition, false))
+  assert.ok(category, `Missing enhanced category for ${hash}`)
+  return [hash, category.id]
+}))
+const expectedCategoryHashes = Object.keys(old).filter(h => old[h].categoryId !== expectedCategories[h]).map(Number).sort((a,b) => a-b)
+const actualCategoryHashes = Object.keys(old).filter(h => old[h].categoryId !== current[h].categoryId).map(Number).sort((a,b) => a-b)
+assert.deepEqual(actualCategoryHashes, expectedCategoryHashes, 'Unexpected category changes')
+const allowedChangedFields = ['plugCategoryHash', 'categoryId', 'baseHash', 'enhancedHash', 'enhancedHashes', 'dimBaseHash']
+const unchangedFacts = item => Object.fromEntries(Object.entries(item).filter(([key]) => !allowedChangedFields.includes(key)))
+for (const [hash, item] of Object.entries(current)) {
+  assert.equal(item.categoryId, expectedCategories[hash], `Wrong enhanced classification for ${hash}`)
+  assert.deepEqual(unchangedFacts(item), unchangedFacts(old[hash]), `Unexpected item-fact change for ${hash}`)
+  const definition = item.definitionType === 'DestinyInventoryItemDefinition' ? input.manifest.inventoryItem[hash] : undefined
+  if (definition?.plug) assert.equal(item.plugCategoryHash, definition.plug.plugCategoryHash, `Missing plug facts for ${hash}`)
+  if (item.categoryId.endsWith('-exotic')) {
+    assert.ok(!item.categoryId.includes('-enhanced'), `Exotic enhanced category ${hash}`)
+    for (const field of ['baseHash', 'enhancedHash', 'enhancedHashes', 'dimBaseHash'])
+      assert.equal(item[field], undefined, `Exotic pairing ${hash}.${field}`)
+  }
+  if (item.baseHash !== undefined) {
+    assert.ok(isEnhanced(definition), `Non-enhanced base mapping ${hash}`)
+    assert.ok(current[item.baseHash]?.enhancedHashes?.includes(item.hash), `Missing reciprocal pair ${hash}`)
+  }
+  if (item.dimBaseHash !== undefined) {
+    assert.ok(!isEnhanced(definition), `Real enhancement stored as DIM twin ${hash}`)
+    assert.equal(item.baseHash, undefined, `Twin also has enhanced base ${hash}`)
+  }
+}
+assert.deepEqual(read('before', 'aliases'), read('after', 'aliases'), 'Generated aliases changed before approval')
 const report = { baseline:ref, manifestVersion:input.version, changedHashes: changes.map(hash => ({
   hash:Number(hash), before:old[hash], after:current[hash], manifestType: input.manifest.inventoryItem[hash]?.itemTypeDisplayName,
-})), proposals:read('after','aliasProposals') }
+})), itemFactParity: { matches: true, allowedChangedFields },
+  categoryParity: { matches: true, expectedChangedHashes: expectedCategoryHashes, actualChangedHashes: actualCategoryHashes },
+  proposals:read('after','aliasProposals') }
 fs.writeFileSync(path.join(out, 'parity.json'), JSON.stringify(report, null, 2))
-console.log('AUDIT',out,'changed hashes',changes.length,'proposals',report.proposals.proposals.length)
+console.log('AUDIT',out,'changed hashes',changes.length,'expected/actual categories',expectedCategoryHashes.length,actualCategoryHashes.length,'proposals',report.proposals.proposals.length)

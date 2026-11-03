@@ -205,7 +205,7 @@ test('sandbox and inventory hashes can legitimately be identical, but cannot ali
   assert.throws(() => associateSandbox(items, inventory, { 2: { hash: 2 } }), /collides/)
 })
 
-test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal multi-variant pairing', () => {
+test('end-to-end v2 writes preserve legacy hashes/categories and propose owner-scoped exotic frames', () => {
   const inventory = byHash(plug(1, "Hunter's Trace", 'Intrinsic', 6),
     plug(2, "Hunter's Trace II", 'Intrinsic', 6), plug(3, "Hunter's Trace III", 'Intrinsic', 6),
     plug(4, 'Shared Exotic Perk', 'Trait', 6))
@@ -527,3 +527,43 @@ test('only identical DIM twins become Kind X; wording differences go to a separa
   assert.equal(result.proposals.some(p=>p.members.includes(3)),false);
   assert.deepEqual(result.possibleEnhanced,[{baseHash:1,variantHash:3,reason:'possible enhanced — maintainer call'}]);
 });
+
+test('generation separates real enhanced pointers from identical and uncertain DIM twins', () => {
+  const inventory = byHash(plug(1, 'Drop Mag', 'Magazine'), plug(2, 'Drop Mag', 'Magazine'),
+    plug(3, 'Assault'), plug(4, 'Assault'), plug(5, 'Origin', 'Origin Trait'),
+    plug(6, 'Origin', 'Enhanced Origin Trait'))
+  inventory[4].displayProperties.description = 'Further increases handling.'
+  const legacy = Object.fromEntries(Object.values(inventory).map(item => [item.hash, {
+    hash: item.hash, name: item.displayProperties.name, type: 'Weapon Perk', appearsOn: [],
+  }]))
+  const cwd = process.cwd(), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'alias-pairing-'))
+  try {
+    process.chdir(dir)
+    generateV2({ inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {}, sandboxPerk: {} },
+      { 1: 2, 3: 4, 5: 6 }, 'fixture')
+    const items = JSON.parse(fs.readFileSync('templates/v2/items.json'))
+    for (const [base, twin] of [[1, 2], [3, 4]]) {
+      assert.equal(items[twin].dimBaseHash, base)
+      assert.equal(items[twin].baseHash, undefined)
+      assert.equal(items[base].enhancedHash, undefined)
+      assert.equal(items[base].enhancedHashes, undefined)
+    }
+    assert.equal(items[6].baseHash, 5)
+    assert.equal(items[6].dimBaseHash, undefined)
+    assert.equal(items[6].categoryId, 'weapon-trait-origin-enhanced')
+    assert.deepEqual(items[5].enhancedHashes, [6])
+    assert.equal(items[5].enhancedHash, 6)
+    const proposals = JSON.parse(fs.readFileSync('templates/v2/aliasProposals.json'))
+    assert.deepEqual(proposals.proposals.filter(p => p.kind === 'X').map(p => p.members), [[1, 2]])
+    assert.equal(proposals.proposals.some(p => p.members.includes(4) || p.members.includes(6)), false)
+    assert.deepEqual(proposals.possibleEnhanced, [
+      { baseHash: 3, variantHash: 4, reason: 'possible enhanced — maintainer call' },
+    ])
+    const { pairing } = JSON.parse(fs.readFileSync('templates/v2/coverage.json'))
+    assert.equal(pairing.paired, 1)
+    assert.equal(pairing.nonEnhancedDimPairs, 2)
+  } finally {
+    process.chdir(cwd)
+    fs.rmSync(dir, { recursive: true })
+  }
+})
