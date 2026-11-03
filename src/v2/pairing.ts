@@ -121,6 +121,7 @@ export function weaponCategory(item: InventoryItem, exotic: boolean, fallback: R
   const enhanced = !exotic && isEnhanced(item, fallback) ? ' Enhanced' : ''
   if (family(item) === 'Intrinsic') return `Weapon Frame${enhanced}${suffix}`
   if (family(item) === 'Trait') return `Weapon Trait${enhanced}${suffix}`
+  if (exotic && family(item) === 'Origin Trait') return 'Weapon Perk Exotic'
   if (family(item) === 'Origin Trait') return `Weapon Trait Origin${enhanced}${suffix}`
   if (family(item) === 'Weapon Mod' && isEnhanced(item, fallback)) return `Weapon Mod${enhanced}${suffix}`
   return `Weapon Perk${enhanced}${suffix}`

@@ -77,21 +77,21 @@ test('checked-in shared owner metadata covers the pinned references without inve
   }
 })
 
-test('registry has all 27 converter types, plus verbs; stable unique IDs/orders', () => {
-  assert.equal(categories.length, 35)
+test('registry contains supported categories with stable unique IDs/orders', () => {
+  assert.equal(categories.length, 29)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
   assert.equal(new Set(categories.map(category => category.order)).size, categories.length)
   assert.equal(categories.some(category => category.id === 'sandbox-perk'), false)
   assert.deepEqual(categories.map(category => category.order), categories.map(category => category.order).sort((a, b) => a - b))
 })
 
-test('registry maps all converter legacy types exactly and omits new categories', () => {
+test('registry maps supported converter types and omits removed exotic placeholders', () => {
   const converterTypes = fs.readFileSync(
     new URL('../node_modules/@icemourne/description-converter/src/livePerkTypes.d.ts', import.meta.url), 'utf8',
   ).match(/export type LivePerkTypes = ([^;]+);/)[1]
-  const expected = [...converterTypes.matchAll(/'([^']+)'/g)].map(match => match[1]).sort()
+  const expected = [...converterTypes.matchAll(/'([^']+)'/g)].map(match => match[1]).filter(type => type !== 'Weapon Trait Origin Exotic' && !type.includes('Enhanced Exotic')).sort()
   const legacyCategories = categories.filter(category => category.legacyType !== undefined)
-  assert.equal(legacyCategories.length, 33)
+  assert.equal(legacyCategories.length, 27)
   assert.deepEqual([...new Set(legacyCategories.map(category => category.legacyType))].sort(), expected)
   for (const category of legacyCategories) {
     if (!category.id.includes('perk-enhanced') && !category.id.includes('origin-enhanced') && !category.id.includes('mod-enhanced')) assert.equal(category.legacyType, category.label)
@@ -293,7 +293,7 @@ test('frames group exact normalized names across legendary categories only, with
     member(10, 'Adaptive Frame', 'weapon-frame'),
     member(30, 'Adaptive-Frame', 'weapon-frame'),
     member(40, 'Adaptive Frame', 'weapon-trait'),
-    member(50, 'Adaptive Frame', 'weapon-frame-enhanced-exotic'),
+    member(50, 'Adaptive Frame', 'weapon-frame-exotic'),
   )
   const result = groupFrames(items)
   assert.deepEqual(result.aliases, {
@@ -308,7 +308,7 @@ test('frames group exact normalized names across legendary categories only, with
     member(2, 'Only', 'weapon-frame-enhanced'))), /no non-enhanced/)
   // Exotic frames never join a group, not even with another exotic of the same name.
   assert.deepEqual(groupFrames(byHash(member(1, 'Trait', 'weapon-frame-exotic'),
-    member(2, 'Trait', 'weapon-frame-exotic'), member(3, 'Trait', 'weapon-frame-enhanced-exotic'))), {
+    member(2, 'Trait', 'weapon-frame-exotic'), member(3, 'Trait', 'weapon-frame-exotic'))), {
     aliases: {}, report: { groups: [], nearMisses: [] },
   })
 })
@@ -669,4 +669,17 @@ test('same-name intrinsic frames cannot pair through a lowest-hash guess', () =>
   inventory[3].displayProperties.description = 'Reduced fusion bolts with enhanced stats'
   assert.equal(derivePairings(inventory, {}, {}, new Map()).byEnhanced[3], undefined)
   assert.equal(derivePairings(inventory, {}, {}, new Map([[1,1],[2,2]])).byEnhanced[3], undefined)
+})
+
+// Origin-slot exotic firing modes are weapon perks, never enhanced subgroups.
+test('exotic firing modes and enhanced-looking plugs use existing exotic categories', () => {
+  assert.equal(weaponCategory(plug(1, 'Häkke Heavy Burst Fire', 'Origin Trait'), true), 'Weapon Perk Exotic')
+  assert.equal(weaponCategory(plug(2, 'Trait', 'Enhanced Trait'), true), 'Weapon Trait Exotic')
+  assert.equal(weaponCategory(plug(3, 'Frame', 'Enhanced Intrinsic'), true), 'Weapon Frame Exotic')
+  assert.ok(categories.every(category => !category.id.includes('enhanced-exotic') && category.id !== 'weapon-trait-origin-exotic'))
+  const items = JSON.parse(fs.readFileSync(new URL('../templates/v2/items.json', import.meta.url)))
+  for (const hash of [2206869417, 4152458172]) {
+    assert.equal(items[hash].categoryId, 'weapon-perk-exotic')
+    assert.equal(items[hash].itemName, 'Revision Zero')
+  }
 })

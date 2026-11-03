@@ -76,25 +76,11 @@
   "legacyType": "Weapon Trait Origin"
  },
  {
-  "id": "weapon-trait-origin-exotic",
-  "label": "Weapon Trait Origin Exotic",
-  "group": "Weapons",
-  "order": 150,
-  "legacyType": "Weapon Trait Origin Exotic"
- },
- {
   "id": "weapon-trait-enhanced",
   "label": "Weapon Trait Enhanced",
   "group": "Weapons",
   "order": 160,
   "legacyType": "Weapon Trait Enhanced"
- },
- {
-  "id": "weapon-trait-enhanced-exotic",
-  "label": "Weapon Trait Enhanced Exotic",
-  "group": "Weapons",
-  "order": 170,
-  "legacyType": "Weapon Trait Enhanced Exotic"
  },
  {
   "id": "weapon-frame",
@@ -118,13 +104,6 @@
   "legacyType": "Weapon Frame Enhanced"
  },
  {
-  "id": "weapon-frame-enhanced-exotic",
-  "label": "Weapon Frame Enhanced Exotic",
-  "group": "Weapons",
-  "order": 210,
-  "legacyType": "Weapon Frame Enhanced Exotic"
- },
- {
   "id": "weapon-catalyst-exotic",
   "label": "Weapon Catalyst Exotic",
   "group": "Weapons",
@@ -146,13 +125,6 @@
   "legacyType": "Weapon Trait Enhanced"
  },
  {
-  "id": "weapon-perk-enhanced-exotic",
-  "label": "Weapon Perk Enhanced Exotic",
-  "group": "Weapons",
-  "order": 232,
-  "legacyType": "Weapon Trait Enhanced Exotic"
- },
- {
   "id": "weapon-trait-origin-enhanced",
   "label": "Weapon Trait Origin Enhanced",
   "group": "Weapons",
@@ -160,25 +132,11 @@
   "legacyType": "Weapon Trait Enhanced"
  },
  {
-  "id": "weapon-trait-origin-enhanced-exotic",
-  "label": "Weapon Trait Origin Enhanced Exotic",
-  "group": "Weapons",
-  "order": 234,
-  "legacyType": "Weapon Trait Enhanced Exotic"
- },
- {
   "id": "weapon-mod-enhanced",
   "label": "Weapon Mod Enhanced",
   "group": "Weapons",
   "order": 235,
   "legacyType": "Weapon Trait Enhanced"
- },
- {
-  "id": "weapon-mod-enhanced-exotic",
-  "label": "Weapon Mod Enhanced Exotic",
-  "group": "Weapons",
-  "order": 236,
-  "legacyType": "Weapon Trait Enhanced Exotic"
  },
  {
   "id": "subclass-fragment",

@@ -74,10 +74,10 @@ export const exoticsWeapons = (
             addData(weapon, perk, 'Weapon Trait Exotic')
             break
           case 'Origin Trait':
-            addData(weapon, perk, 'Weapon Trait Origin Exotic')
+            addData(weapon, perk, 'Weapon Perk Exotic')
             break
           case 'Enhanced Trait':
-            addData(weapon, perk, 'Weapon Trait Enhanced Exotic')
+            addData(weapon, perk, 'Weapon Trait Exotic')
             break
           default:
             addData(weapon, perk, 'Weapon Perk Exotic')
