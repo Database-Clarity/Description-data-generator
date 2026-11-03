@@ -1932,6 +1932,7 @@
   "inGameDescription": "High-recoil weapon with slow charge time. Fires reduced number of fusion bolts that deal more impact damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 836583820,
   "sandboxPerkHashes": [
    281733738,
    988051950,
@@ -3832,6 +3833,7 @@
   "inGameDescription": "High-recoil weapon with slow charge time. Fires reduced number of fusion bolts that deal more impact damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 836583820,
   "sandboxPerkHashes": [
    281733738,
    988051950,
@@ -5266,6 +5268,7 @@
   "inGameDescription": "This weapon fires a high-speed micro-missile in a straight line and deals reduced self-damage. Move faster with this weapon equipped.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2928496916,
   "sandboxPerkHashes": [
    2917776374,
    2939634489
@@ -6162,6 +6165,7 @@
   "inGameDescription": "Fires self-propelled micro-missiles that explode on impact for high damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2928496916,
   "sandboxPerkHashes": [
    572751808,
    2917776374
@@ -7129,6 +7133,7 @@
   "inGameDescription": "This weapon fires a high-speed micro-missile in a straight line and deals reduced self-damage. Move faster with this weapon equipped.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2928496916,
   "sandboxPerkHashes": [
    2917776374,
    2939634489
@@ -7406,6 +7411,7 @@
   "inGameDescription": "Capable of healing allies and hurting targets. Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and spawns Unraveling projectiles.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2078075300,
   "sandboxPerkHashes": [
    472686235,
    512221131,
@@ -7802,7 +7808,12 @@
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
   "enhancedHashes": [
-   167794220
+   167794220,
+   189818679,
+   389945760,
+   1487938731,
+   1632897927,
+   1737914521
   ],
   "enhancedHash": 167794220,
   "sandboxPerkHashes": [
@@ -12422,6 +12433,7 @@
   "inGameDescription": "This weapon fires a high-speed micro-missile in a straight line and deals reduced self-damage. Move faster with this weapon equipped.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2928496916,
   "sandboxPerkHashes": [
    2917776374,
    2939634489
@@ -14409,6 +14421,7 @@
   "inGameDescription": "High-recoil weapon with slow charge time. Fires reduced number of fusion bolts that deal more impact damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 836583820,
   "sandboxPerkHashes": [
    281733738,
    988051950,
@@ -15844,6 +15857,7 @@
   "inGameDescription": "High-recoil weapon with slow charge time. Fires reduced number of fusion bolts that deal more impact damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 836583820,
   "sandboxPerkHashes": [
    281733738,
    988051950,
@@ -16993,6 +17007,7 @@
   "inGameDescription": "High-recoil weapon with slow charge time. Fires reduced number of fusion bolts that deal more impact damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 836583820,
   "sandboxPerkHashes": [
    281733738,
    988051950,
@@ -18860,6 +18875,7 @@
   "inGameDescription": "Capable of healing allies and hurting targets. Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and spawns Unraveling projectiles.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2078075300,
   "sandboxPerkHashes": [
    472686235,
    512221131,
@@ -20320,6 +20336,13 @@
   "inGameDescription": "Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and grants Amplified to your allies.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "enhancedHashes": [
+   785441979,
+   1926141333,
+   2491949917,
+   2707250581
+  ],
+  "enhancedHash": 785441979,
   "sandboxPerkHashes": [
    472686235,
    512221131,
@@ -24104,6 +24127,7 @@
   "inGameDescription": "Capable of healing allies and hurting targets. Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and spawns Unraveling projectiles.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2078075300,
   "sandboxPerkHashes": [
    472686235,
    512221131,
@@ -26082,6 +26106,7 @@
   "inGameDescription": "Capable of healing allies and hurting targets. Harming targets builds a restorative charge. Hip firing at allies while this weapon is charged heals them. Rapid healing increases weapon damage and spawns Unraveling projectiles.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2078075300,
   "sandboxPerkHashes": [
    472686235,
    512221131,
@@ -28679,10 +28704,15 @@
   "plugCategoryHash": 1744546145,
   "enhancedHashes": [
    368110299,
+   540070330,
+   651554065,
    687584589,
+   745725302,
    1225770249,
+   1278053348,
    2100231191,
-   3178379945
+   3178379945,
+   4024789138
   ],
   "enhancedHash": 368110299,
   "sandboxPerkHashes": [
@@ -38539,6 +38569,7 @@
   "inGameDescription": "This weapon fires a high-speed micro-missile in a straight line and deals reduced self-damage. Move faster with this weapon equipped.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 1744546145,
+  "baseHash": 2928496916,
   "sandboxPerkHashes": [
    2917776374,
    2939634489

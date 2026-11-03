@@ -121,9 +121,9 @@
  },
  "pairing": {
   "enhancedCandidates": 707,
-  "manifestPairs": 677,
+  "manifestPairs": 691,
   "dimPairs": 425,
-  "paired": 678,
+  "paired": 692,
   "disagreements": [
    {
     "manifestBaseHash": 205890336,
@@ -139,132 +139,24 @@
     "candidates": []
    },
    {
-    "enhancedHash": 189818679,
-    "candidates": [
-     836583820,
-     1326668122,
-     1525239159,
-     2518716062,
-     2757685314,
-     3468089894,
-     3983457027
-    ]
-   },
-   {
     "enhancedHash": 260490301,
     "candidates": []
-   },
-   {
-    "enhancedHash": 389945760,
-    "candidates": [
-     836583820,
-     1326668122,
-     1525239159,
-     2518716062,
-     2757685314,
-     3468089894,
-     3983457027
-    ]
-   },
-   {
-    "enhancedHash": 540070330,
-    "candidates": [
-     2928496916,
-     3758615625
-    ]
-   },
-   {
-    "enhancedHash": 651554065,
-    "candidates": [
-     2928496916,
-     3758615625
-    ]
    },
    {
     "enhancedHash": 711469637,
     "candidates": []
    },
    {
-    "enhancedHash": 745725302,
-    "candidates": [
-     2928496916,
-     3758615625
-    ]
-   },
-   {
-    "enhancedHash": 785441979,
-    "candidates": [
-     2078075300,
-     2235383762,
-     2622129339,
-     2799967529,
-     3488129416
-    ]
-   },
-   {
     "enhancedHash": 1252257233,
     "candidates": []
-   },
-   {
-    "enhancedHash": 1278053348,
-    "candidates": [
-     2928496916,
-     3758615625
-    ]
    },
    {
     "enhancedHash": 1455043575,
     "candidates": []
    },
    {
-    "enhancedHash": 1487938731,
-    "candidates": [
-     836583820,
-     1326668122,
-     1525239159,
-     2518716062,
-     2757685314,
-     3468089894,
-     3983457027
-    ]
-   },
-   {
-    "enhancedHash": 1632897927,
-    "candidates": [
-     836583820,
-     1326668122,
-     1525239159,
-     2518716062,
-     2757685314,
-     3468089894,
-     3983457027
-    ]
-   },
-   {
     "enhancedHash": 1653281839,
     "candidates": []
-   },
-   {
-    "enhancedHash": 1737914521,
-    "candidates": [
-     836583820,
-     1326668122,
-     1525239159,
-     2518716062,
-     2757685314,
-     3468089894,
-     3983457027
-    ]
-   },
-   {
-    "enhancedHash": 1926141333,
-    "candidates": [
-     2078075300,
-     2235383762,
-     2622129339,
-     2799967529,
-     3488129416
-    ]
    },
    {
     "enhancedHash": 2057879635,
@@ -277,26 +169,6 @@
    {
     "enhancedHash": 2274738792,
     "candidates": []
-   },
-   {
-    "enhancedHash": 2491949917,
-    "candidates": [
-     2078075300,
-     2235383762,
-     2622129339,
-     2799967529,
-     3488129416
-    ]
-   },
-   {
-    "enhancedHash": 2707250581,
-    "candidates": [
-     2078075300,
-     2235383762,
-     2622129339,
-     2799967529,
-     3488129416
-    ]
    },
    {
     "enhancedHash": 2924082573,
@@ -315,13 +187,6 @@
     "candidates": []
    },
    {
-    "enhancedHash": 4024789138,
-    "candidates": [
-     2928496916,
-     3758615625
-    ]
-   },
-   {
     "enhancedHash": 4068571787,
     "candidates": []
    },
@@ -330,7 +195,7 @@
     "candidates": []
    }
   ],
-  "inputPairs": 680,
+  "inputPairs": 694,
   "nonEnhancedDimPairs": 2
  },
  "sandbox": {
