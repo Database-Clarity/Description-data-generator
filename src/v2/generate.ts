@@ -8,7 +8,7 @@ import { pairingUrl } from './fetch.js'
 import { groupFrames, Alias } from './frames.js'
 
 export function generateV2(manifest: Manifest, dim: Record<string, number>, version: string) {
-  const pairing = derivePairings(manifest.inventoryItem, manifest.plugSet, dim)
+  let pairing = derivePairings(manifest.inventoryItem, manifest.plugSet, dim)
   const selected = new Set<number>([
     ...Object.keys(manifest.legacy).map(Number),
     ...Object.entries(pairing.byEnhanced).flatMap(([enhanced, base]) => [Number(enhanced), base]),
@@ -55,6 +55,29 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   for (const legacy of Object.values(manifest.legacy)) {
     if (!items[legacy.hash]) throw new Error(`Unregistered legacy type ${legacy.type}: ${legacy.hash}`)
   }
+  const proposalAliases = (() => {
+    const previewItems = structuredClone(items)
+    const sandbox = associateSandbox(previewItems, manifest.inventoryItem, manifest.sandboxPerk)
+    const frames = groupFrames(previewItems)
+    const aliases: Record<string, Alias> = { ...frames.aliases }
+    for (const [hash, owner] of Object.entries(sandbox.aliases)) {
+      if (Number(hash) === owner) continue
+      if (aliases[hash]) throw new Error(`Duplicate alias hash ${hash}`)
+      aliases[hash] = { to: frames.aliases[owner]?.to ?? owner, kind: 'sandbox' }
+    }
+    return aliases
+  })()
+  const baseGroups = new Map<number, number>()
+  for (const item of Object.values(items)) {
+    if (/^weapon-(perk|trait|mod)/.test(item.categoryId) &&
+        !item.categoryId.endsWith('-exotic') && !proposalAliases[item.hash] &&
+        !isEnhanced(manifest.inventoryItem[item.hash], pairing.fallback)) baseGroups.set(item.hash, item.hash)
+  }
+  for (const proposal of aliasProposals(items, manifest.inventoryItem, proposalAliases, manifest.plugSet).proposals) {
+    if (proposal.kind !== 'S' || proposal.basis.isEnhanced || proposal.basis.exotic) continue
+    for (const hash of proposal.members) baseGroups.set(hash, proposal.canonical)
+  }
+  pairing = derivePairings(manifest.inventoryItem, manifest.plugSet, dim, baseGroups)
   for (const [enhancedKey, baseHash] of Object.entries(pairing.byEnhanced)) {
     const enhancedHash = Number(enhancedKey)
     if (!items[enhancedHash] || !items[baseHash]) throw new Error(`Missing pairing endpoint ${baseHash}/${enhancedHash}`)
