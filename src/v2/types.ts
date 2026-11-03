@@ -30,6 +30,8 @@ export interface Item {
   ownerNames?: Record<string, string>
   enhancedHash?: number
   enhancedHashes?: number[]
+  plugCategoryHash?: number
+  dimBaseHash?: number
   baseHash?: number
   sandboxPerkHashes?: number[]
   inGameDescription: string
@@ -41,6 +43,6 @@ export interface Category {
   label: string
   group: string
   order: number
-  legacyType?: Exclude<PerkTypes, 'none'>
+  legacyType?: Exclude<PerkTypes, 'none'> | 'Weapon Trait Origin Enhanced' | 'Weapon Trait Origin Enhanced Exotic' | 'Weapon Perk Enhanced' | 'Weapon Perk Enhanced Exotic' | 'Weapon Mod Enhanced' | 'Weapon Mod Enhanced Exotic'
   select(manifest: Manifest): Item[]
 }

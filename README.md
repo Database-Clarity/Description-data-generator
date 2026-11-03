@@ -21,6 +21,7 @@ Network failures or invalid supplemental data fail the run explicitly.
   categories such as verbs omit it. Labels are presentation text, not export mappings.
 - `templates/v2/items.json`: object keyed by real inventory/trait hash; includes
   `name`, `icon` when available, `categoryId`, and `inGameDescription` for Bungie drift.
+  Inventory plugs include `plugCategoryHash` for alias-decision revalidation.
   Exotic entries retain their owning `itemHash` and `itemName` where the legacy rule
   records one (exotic armor traits: first owner; other exotic perks: exactly one owner).
   `owners` lists every owning item hash of an exotic perk shared by two or more items.
@@ -40,9 +41,18 @@ Network failures or invalid supplemental data fail the run explicitly.
   `sandboxAliases.json`, which remains unchanged for older consumers.
 - `templates/v2/coverage.json`: per-category legacy/v2 counts, manifest version,
   pairing coverage/disagreements, unresolved candidates, and shared sandbox aliases.
+- `templates/v2/aliasProposals.json`: manifest-only review proposals, never approvals.
+  Kind S groups share name, category, enhanced status and plug category (subclass
+  groups ignore plug category). Numbered exotic frames instead require the same
+  unnumbered stem, plug category and owning exotic; the unnumbered frame is canonical.
+  Kind X contains only non-exotic, non-enhanced DIM twins with identical in-game
+  wording. Wording-different DIM pairs appear only in the separate `possibleEnhanced`
+  maintainer-call list. Description and investment-stat differences are flags;
+  investment stats themselves are not emitted.
 
 V2 intentionally excludes all stat data (`stats`, `importStatsFrom`, investment
-stats) and weapon formulas. Manifest inputs are projected onto the explicit item
+stats) and weapon formulas. Proposal difference flags are the only stat-related
+metadata. Manifest inputs are projected onto the explicit item
 fields rather than copied wholesale. Legacy stat/formula generation, including
 `templates/weaponFormula.json`, is unchanged. Regression checks scan every v2 JSON
 output and exercise stat-bearing inputs to prevent these fields from leaking.
@@ -57,19 +67,28 @@ legacy pairing behavior is changed.
 Manifest candidates must share the exact name, plug category and item-type family.
 Shared plug sets or weapon sockets disambiguate duplicate definitions; otherwise
 only a unique exact match is accepted. Explicit `Enhanced ...` item types identify
-enhanced plugs. Exotic intrinsics with numbered II/III/IV names require shared
-socket/plug-set evidence and an exact stem (not a general name-prefix match).
+legendary enhanced plugs, including origin traits, mods, barrels and magazines,
+and place them in enhanced categories. Exotic categories never get enhanced
+pairings: numbered II/III/IV exotic intrinsics are alias proposals, not enhancements.
 DIM is authoritative when its mapping disagrees; disagreements are logged and saved.
 Missing DIM definitions and unresolved manifest candidates are reported, never guessed.
 
 `baseHash` on an enhanced item points to its base. Bases expose `enhancedHashes`
 for all variants and `enhancedHash` for a deterministic default (DIM preferred,
 otherwise lowest hash). Consumers must keep all variants, not assume a one-to-one
-intrinsic mapping.
+intrinsic mapping. Non-enhanced DIM twins retain provenance as `dimBaseHash`, not
+`baseHash`; their bases do not receive enhanced pointers. Coverage separates
+`paired` real enhancements from `nonEnhancedDimPairs`.
+
+For a reproducible Phase A audit, set `ALIAS_AUDIT_DIR` to a directory containing
+the pinned `manifest.json`, run `npm run check:v2`, then
+`node tests\audit-alias-groups.mjs`. It generates before/after outputs only in that
+directory, using `a2692d5` as the baseline (`ALIAS_BASE_REF` overrides it), and
+records every changed item in `parity.json`. It does not refresh checked-in outputs.
 
 ## Sandbox and verbs
 
-Weapon frames across all four frame categories share one tooltip when their names
+Legendary weapon frames across the base/enhanced frame categories share one tooltip when their names
 match after trimming and case folding; icons do not matter. The canonical member
 is the lowest non-enhanced hash and retains its category. Items keep their original
 manifest facts and pairing. Coverage reports every group, mixed exotic/legendary
