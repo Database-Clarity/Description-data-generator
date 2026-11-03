@@ -145,10 +145,17 @@
  },
  "pairing": {
   "enhancedCandidates": 707,
-  "manifestPairs": 672,
+  "manifestPairs": 677,
   "dimPairs": 425,
-  "paired": 675,
-  "disagreements": [],
+  "paired": 678,
+  "disagreements": [
+   {
+    "manifestBaseHash": 205890336,
+    "manifestEnhancedHash": 1685378950,
+    "dimBaseHash": 972757866,
+    "dimEnhancedHash": 1685378950
+   }
+  ],
   "missingDim": [],
   "unresolved": [
    {
@@ -288,13 +295,6 @@
     "candidates": []
    },
    {
-    "enhancedHash": 2060213237,
-    "candidates": [
-     1774574192,
-     2997472817
-    ]
-   },
-   {
     "enhancedHash": 2243475693,
     "candidates": []
    },
@@ -310,13 +310,6 @@
      2622129339,
      2799967529,
      3488129416
-    ]
-   },
-   {
-    "enhancedHash": 2649013855,
-    "candidates": [
-     2117683199,
-     4267945040
     ]
    },
    {
@@ -346,13 +339,6 @@
     "candidates": []
    },
    {
-    "enhancedHash": 3906784980,
-    "candidates": [
-     164468655,
-     967107980
-    ]
-   },
-   {
     "enhancedHash": 4024789138,
     "candidates": [
      2928496916,
@@ -368,7 +354,7 @@
     "candidates": []
    }
   ],
-  "inputPairs": 677,
+  "inputPairs": 680,
   "nonEnhancedDimPairs": 2
  },
  "sandbox": {

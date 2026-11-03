@@ -1696,7 +1696,8 @@
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
   "enhancedHashes": [
-   1807646319
+   1807646319,
+   3906784980
   ],
   "enhancedHash": 1807646319,
   "sandboxPerkHashes": [
@@ -17297,7 +17298,8 @@
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 7906839,
   "enhancedHashes": [
-   777774560
+   777774560,
+   2060213237
   ],
   "enhancedHash": 777774560,
   "sandboxPerkHashes": [
@@ -20228,6 +20230,7 @@
   "inGameDescription": "Using your grenade ability partially refills the magazine and changes this weapon's damage type to match your grenade until you stow it. Handling is improved.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 7906839,
+  "baseHash": 1774574192,
   "sandboxPerkHashes": [
    1130093452
   ]
@@ -20602,6 +20605,10 @@
   "inGameDescription": "Holding down the trigger will fire this weapon at full auto.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 7906839,
+  "enhancedHashes": [
+   2649013855
+  ],
+  "enhancedHash": 2649013855,
   "sandboxPerkHashes": [
    3813884182
   ]
@@ -25477,6 +25484,7 @@
   "inGameDescription": "Holding down the trigger will fire this weapon at full auto. Improves reload.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 7906839,
+  "baseHash": 2117683199,
   "sandboxPerkHashes": [
    2864161832
   ]
@@ -37342,6 +37350,7 @@
   "inGameDescription": "Landing multiple hits turns your next shot into a homing micro-missile. Cooldown between activations is reduced.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
+  "baseHash": 164468655,
   "sandboxPerkHashes": [
    3757552007
   ]
