@@ -1649,6 +1649,10 @@
   "inGameDescription": "Landing multiple hits turns your next shot into a homing micro-missile.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
+  "enhancedHashes": [
+   1807646319
+  ],
+  "enhancedHash": 1807646319,
   "sandboxPerkHashes": [
    215980695
   ]
@@ -2610,11 +2614,11 @@
   "hash": 270582335,
   "name": "Noble Deeds",
   "icon": "/common/destiny2_content/icons/297925a6134ca1724f0fd16e706e0a2f.png",
-  "categoryId": "weapon-trait-origin",
+  "categoryId": "weapon-trait-origin-enhanced",
   "inGameDescription": "Gain charges by assisting your allies with revives, healing, overshields, and subclass buffs. Consume charges by defeating combatants. While charged, this weapon is granted improved bonus handling, reload speed, and Sword charge rate.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
-  "dimBaseHash": 1823011807,
+  "baseHash": 1823011807,
   "sandboxPerkHashes": [
    1292710743
   ]
@@ -7680,11 +7684,11 @@
   "hash": 843406310,
   "name": "Carrion Munitions",
   "icon": "/common/destiny2_content/icons/b765ed124fd95da67668a162bd4d32cf.png",
-  "categoryId": "weapon-trait-origin",
+  "categoryId": "weapon-trait-origin-enhanced",
   "inGameDescription": "Final blows on tougher combatants create insectoid robots that chase combatants and create greater explosions.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
-  "dimBaseHash": 3018257738,
+  "baseHash": 3018257738,
   "sandboxPerkHashes": [
    662105047
   ]
@@ -10930,11 +10934,11 @@
   "hash": 1164602481,
   "name": "Deconstruct",
   "icon": "/common/destiny2_content/icons/91de2fd6a7756ba07d301a93e1e1cf29.png",
-  "categoryId": "weapon-trait",
+  "categoryId": "weapon-trait-enhanced",
   "inGameDescription": "Dealing sustained damage grants bonus damage against vehicles and constructs for an improved duration and refills ammo from reserves. Damage with Primary ammo or against constructs provides additional progress.\n\nConstructs include barricades, turrets, Stasis crystals, and other objects created in the field.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 7906839,
-  "dimBaseHash": 3993379141,
+  "baseHash": 3993379141,
   "sandboxPerkHashes": [
    2569201277
   ]
@@ -17202,11 +17206,11 @@
   "hash": 1807646319,
   "name": "Nanotech Tracer Missiles",
   "icon": "/common/destiny2_content/icons/58bf23eacf7404b757bed7a42849ef90.png",
-  "categoryId": "weapon-trait-origin",
+  "categoryId": "weapon-trait-origin-enhanced",
   "inGameDescription": "Landing multiple hits turns your next shot into a homing micro-missile. Cooldown between activations is reduced.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
-  "dimBaseHash": 164468655,
+  "baseHash": 164468655,
   "sandboxPerkHashes": [
    3757552007
   ]
@@ -17369,6 +17373,10 @@
   "inGameDescription": "Gain charges by assisting your allies with revives, healing, overshields, and subclass buffs. Consume charges by defeating combatants. While charged, this weapon is granted bonus handling, reload speed, and sword charge rate.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
+  "enhancedHashes": [
+   270582335
+  ],
+  "enhancedHash": 270582335,
   "sandboxPerkHashes": [
    2485667143
   ]
@@ -17613,11 +17621,11 @@
   "hash": 1847323754,
   "name": "Accelerated Assault",
   "icon": "/common/destiny2_content/icons/0fe2a63b375af0d8b17ccee5ad65415b.png",
-  "categoryId": "weapon-trait-origin",
+  "categoryId": "weapon-trait-origin-enhanced",
   "inGameDescription": "Dealing sustained damage with this weapon further increases reload speed and Sword charge rate and increases damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
-  "dimBaseHash": 2697390518,
+  "baseHash": 2697390518,
   "sandboxPerkHashes": [
    3717568516
   ]
@@ -19694,6 +19702,18 @@
   "sandboxPerkHashes": [
    281733738,
    2917776374
+  ]
+ },
+ "2060213237": {
+  "hash": 2060213237,
+  "name": "Osmosis",
+  "icon": "/common/destiny2_content/icons/22ca6e872824561b12e91517e1bde608.png",
+  "categoryId": "weapon-trait-enhanced",
+  "inGameDescription": "Using your grenade ability partially refills the magazine and changes this weapon's damage type to match your grenade until you stow it. Handling is improved.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 7906839,
+  "sandboxPerkHashes": [
+   1130093452
   ]
  },
  "2073244114": {
@@ -25162,11 +25182,11 @@
   "hash": 2671305723,
   "name": "Accelerated Assault",
   "icon": "/common/destiny2_content/icons/0fe2a63b375af0d8b17ccee5ad65415b.png",
-  "categoryId": "weapon-trait-origin",
+  "categoryId": "weapon-trait-origin-enhanced",
   "inGameDescription": "Dealing sustained damage with this weapon loads slightly more ammo from reserves, or removes more heat, and increases damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
-  "dimBaseHash": 3713579091,
+  "baseHash": 3713579091,
   "sandboxPerkHashes": [
    2724637007
   ]
@@ -25311,6 +25331,10 @@
   "inGameDescription": "Dealing sustained damage with this weapon increases reload speed and Sword charge rate and slightly increases damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
+  "enhancedHashes": [
+   1847323754
+  ],
+  "enhancedHash": 1847323754,
   "sandboxPerkHashes": [
    2477562882
   ]
@@ -28660,6 +28684,10 @@
   "inGameDescription": "Final blows on tougher combatants create insectoid robots that chase combatants and explode.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
+  "enhancedHashes": [
+   843406310
+  ],
+  "enhancedHash": 843406310,
   "sandboxPerkHashes": [
    3831800519
   ]
@@ -34648,6 +34676,10 @@
   "inGameDescription": "Dealing sustained damage with this weapon loads a small amount of ammo from reserves, or removes heat, and slightly increases damage.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 164955586,
+  "enhancedHashes": [
+   2671305723
+  ],
+  "enhancedHash": 2671305723,
   "sandboxPerkHashes": [
    3439863983
   ]
@@ -37043,6 +37075,10 @@
   "inGameDescription": "Dealing sustained damage grants bonus damage against vehicles and constructs and refills ammo from reserves. Damage with Primary ammo or against constructs provides additional progress.\n\nConstructs include barricades, turrets, Stasis crystals, and other objects created in the field.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 7906839,
+  "enhancedHashes": [
+   1164602481
+  ],
+  "enhancedHash": 1164602481,
   "sandboxPerkHashes": [
    3700351281
   ]

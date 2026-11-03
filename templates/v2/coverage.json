@@ -31,24 +31,24 @@
    "v2": 29
   },
   "weapon-trait": {
-   "legacy": 235,
-   "v2": 235
+   "legacy": 234,
+   "v2": 234
   },
   "weapon-trait-exotic": {
    "legacy": 134,
    "v2": 134
   },
   "weapon-trait-origin": {
-   "legacy": 97,
-   "v2": 97
+   "legacy": 92,
+   "v2": 92
   },
   "weapon-trait-origin-exotic": {
    "legacy": 2,
    "v2": 2
   },
   "weapon-trait-enhanced": {
-   "legacy": 223,
-   "v2": 226
+   "legacy": 224,
+   "v2": 228
   },
   "weapon-trait-enhanced-exotic": {
    "legacy": 0,
@@ -87,8 +87,8 @@
    "v2": 0
   },
   "weapon-trait-origin-enhanced": {
-   "legacy": 83,
-   "v2": 86
+   "legacy": 88,
+   "v2": 91
   },
   "weapon-trait-origin-enhanced-exotic": {
    "legacy": 0,
@@ -140,10 +140,10 @@
   }
  },
  "pairing": {
-  "enhancedCandidates": 700,
-  "manifestPairs": 666,
+  "enhancedCandidates": 707,
+  "manifestPairs": 672,
   "dimPairs": 425,
-  "paired": 669,
+  "paired": 675,
   "disagreements": [],
   "missingDim": [],
   "unresolved": [
@@ -284,6 +284,13 @@
     "candidates": []
    },
    {
+    "enhancedHash": 2060213237,
+    "candidates": [
+     1774574192,
+     2997472817
+    ]
+   },
+   {
     "enhancedHash": 2243475693,
     "candidates": []
    },
@@ -338,8 +345,7 @@
     "enhancedHash": 3906784980,
     "candidates": [
      164468655,
-     967107980,
-     1807646319
+     967107980
     ]
    },
    {
@@ -359,12 +365,12 @@
    }
   ],
   "inputPairs": 677,
-  "nonEnhancedDimPairs": 8
+  "nonEnhancedDimPairs": 2
  },
  "sandbox": {
   "aliases": 2376,
   "inventoryItemsWithPerks": 6895,
-  "selectedItemsWithPerks": 2443,
+  "selectedItemsWithPerks": 2444,
   "ambiguous": [
    {
     "sandboxPerkHash": 653045601,
@@ -3772,6 +3778,7 @@
     "sandboxPerkHash": 1130093452,
     "itemHashes": [
      1774574192,
+     2060213237,
      2997472817,
      3967134106
     ],

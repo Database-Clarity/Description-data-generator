@@ -1,37 +1,6 @@
 {
  "version": 1,
- "possibleEnhanced": [
-  {
-   "baseHash": 1823011807,
-   "variantHash": 270582335,
-   "reason": "possible enhanced — maintainer call"
-  },
-  {
-   "baseHash": 3018257738,
-   "variantHash": 843406310,
-   "reason": "possible enhanced — maintainer call"
-  },
-  {
-   "baseHash": 3993379141,
-   "variantHash": 1164602481,
-   "reason": "possible enhanced — maintainer call"
-  },
-  {
-   "baseHash": 164468655,
-   "variantHash": 1807646319,
-   "reason": "possible enhanced — maintainer call"
-  },
-  {
-   "baseHash": 2697390518,
-   "variantHash": 1847323754,
-   "reason": "possible enhanced — maintainer call"
-  },
-  {
-   "baseHash": 3713579091,
-   "variantHash": 2671305723,
-   "reason": "possible enhanced — maintainer call"
-  }
- ],
+ "possibleEnhanced": [],
  "proposals": [
   {
    "kind": "S",
@@ -2940,6 +2909,108 @@
    "weapons": {
     "721001747": [],
     "1801153435": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 777774560,
+   "members": [
+    777774560,
+    2060213237
+   ],
+   "basis": {
+    "name": "Osmosis",
+    "categoryId": "weapon-trait-enhanced",
+    "isEnhanced": true,
+    "exotic": false,
+    "plugCategoryHash": 7906839
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "777774560": [
+     {
+      "hash": 396910433,
+      "name": "Zephyr"
+     },
+     {
+      "hash": 423343404,
+      "name": "Controlling Vision"
+     },
+     {
+      "hash": 963732595,
+      "name": "Fortissimo-11"
+     },
+     {
+      "hash": 1716620044,
+      "name": "Chain of Command"
+     },
+     {
+      "hash": 2026755633,
+      "name": "Breakneck"
+     },
+     {
+      "hash": 2045811635,
+      "name": "Imperative"
+     },
+     {
+      "hash": 2065366343,
+      "name": "Breakneck"
+     },
+     {
+      "hash": 2199554524,
+      "name": "Bygones"
+     },
+     {
+      "hash": 2249996761,
+      "name": "Patron of Lost Causes"
+     },
+     {
+      "hash": 2362652544,
+      "name": "Praedyth's Revenge (Timelost)"
+     },
+     {
+      "hash": 2778013407,
+      "name": "Firefright"
+     },
+     {
+      "hash": 2869466318,
+      "name": "BrayTech Werewolf"
+     },
+     {
+      "hash": 2990047042,
+      "name": "Succession"
+     },
+     {
+      "hash": 3156551030,
+      "name": "Patron of Lost Causes"
+     },
+     {
+      "hash": 3228096719,
+      "name": "Defiance of Yasmin"
+     },
+     {
+      "hash": 3503019618,
+      "name": "Defiance of Yasmin (Harrowed)"
+     },
+     {
+      "hash": 3844610113,
+      "name": "Praedyth's Revenge"
+     },
+     {
+      "hash": 4045298482,
+      "name": "Spoiler Alert"
+     },
+     {
+      "hash": 4184168210,
+      "name": "Fatebringer"
+     },
+     {
+      "hash": 4219826183,
+      "name": "Fatebringer (Timelost)"
+     }
+    ],
+    "2060213237": []
    }
   },
   {
@@ -15047,6 +15118,64 @@
   },
   {
    "kind": "S",
+   "canonical": 1807646319,
+   "members": [
+    1807646319,
+    3906784980
+   ],
+   "basis": {
+    "name": "Nanotech Tracer Missiles",
+    "categoryId": "weapon-trait-origin-enhanced",
+    "isEnhanced": true,
+    "exotic": false,
+    "plugCategoryHash": 164955586
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "1807646319": [
+     {
+      "hash": 1289796511,
+      "name": "Iterative Loop"
+     },
+     {
+      "hash": 1311684613,
+      "name": "Dimensional Hypotrochoid"
+     },
+     {
+      "hash": 2034215657,
+      "name": "Round Robin"
+     },
+     {
+      "hash": 2353274446,
+      "name": "Basso Ostinato"
+     },
+     {
+      "hash": 2528793321,
+      "name": "Circular Logic"
+     },
+     {
+      "hash": 3635821806,
+      "name": "Phyllotactic Spiral"
+     },
+     {
+      "hash": 3752860091,
+      "name": "Synchronic Roulette"
+     },
+     {
+      "hash": 3851394887,
+      "name": "Epochal Integration"
+     },
+     {
+      "hash": 3920310144,
+      "name": "Volta Bracket"
+     }
+    ],
+    "3906784980": []
+   }
+  },
+  {
+   "kind": "S",
    "canonical": 1834163303,
    "members": [
     1834163303,
@@ -15084,6 +15213,229 @@
    "weapons": {
     "1841016428": [],
     "3040080535": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 1847323754,
+   "members": [
+    1847323754,
+    2671305723
+   ],
+   "basis": {
+    "name": "Accelerated Assault",
+    "categoryId": "weapon-trait-origin-enhanced",
+    "isEnhanced": true,
+    "exotic": false,
+    "plugCategoryHash": 164955586
+   },
+   "descriptionDiff": "wording",
+   "statsDiff": false,
+   "weapons": {
+    "1847323754": [
+     {
+      "hash": 189854537,
+      "name": "The Slammer"
+     },
+     {
+      "hash": 593808239,
+      "name": "Refurbished A499"
+     },
+     {
+      "hash": 649691506,
+      "name": "A Good Shout"
+     },
+     {
+      "hash": 1479562935,
+      "name": "Aurora Dawn"
+     },
+     {
+      "hash": 2271714488,
+      "name": "Convened Recurve"
+     },
+     {
+      "hash": 2461640837,
+      "name": "Salvager's Salvo"
+     },
+     {
+      "hash": 2511482352,
+      "name": "Cynosure"
+     },
+     {
+      "hash": 3215649176,
+      "name": "The Helmsman"
+     },
+     {
+      "hash": 3718184802,
+      "name": "Ouster Engine"
+     },
+     {
+      "hash": 3960301269,
+      "name": "The Hothead"
+     }
+    ],
+    "2671305723": [
+     {
+      "hash": 59060498,
+      "name": "Service Revolver"
+     },
+     {
+      "hash": 74733286,
+      "name": "Nox Sidereal IV"
+     },
+     {
+      "hash": 89693562,
+      "name": "Duty Bound"
+     },
+     {
+      "hash": 135971347,
+      "name": "Psi Aeterna IV"
+     },
+     {
+      "hash": 149110926,
+      "name": "Whatchamacallit"
+     },
+     {
+      "hash": 232119851,
+      "name": "Frozen Orbit"
+     },
+     {
+      "hash": 444627789,
+      "name": "Oxygen SR3"
+     },
+     {
+      "hash": 673621062,
+      "name": "Unending Tempest"
+     },
+     {
+      "hash": 690412397,
+      "name": "Something Something"
+     },
+     {
+      "hash": 837298567,
+      "name": "Lotus-Eater"
+     },
+     {
+      "hash": 891765152,
+      "name": "Adored"
+     },
+     {
+      "hash": 1018012078,
+      "name": "Horror's Least"
+     },
+     {
+      "hash": 1066772626,
+      "name": "Prolonged Engagement"
+     },
+     {
+      "hash": 1288422452,
+      "name": "Mos Athanor IV"
+     },
+     {
+      "hash": 1323862250,
+      "name": "Riptide"
+     },
+     {
+      "hash": 1409524486,
+      "name": "Punching Out"
+     },
+     {
+      "hash": 1559068369,
+      "name": "Nightshade"
+     },
+     {
+      "hash": 1715391576,
+      "name": "Mint Retrograde"
+     },
+     {
+      "hash": 1832481283,
+      "name": "Positive Outlook"
+     },
+     {
+      "hash": 1872906663,
+      "name": "Modified B-7 Pistol"
+     },
+     {
+      "hash": 2023002233,
+      "name": "All or Nothing"
+     },
+     {
+      "hash": 2106353446,
+      "name": "Better Devils"
+     },
+     {
+      "hash": 2152350211,
+      "name": "Survivor's Epitaph"
+     },
+     {
+      "hash": 2459087496,
+      "name": "Autumn Wind"
+     },
+     {
+      "hash": 2462965802,
+      "name": "Uncivil Discourse"
+     },
+     {
+      "hash": 2557966895,
+      "name": "Sorrow's Verse"
+     },
+     {
+      "hash": 2659286158,
+      "name": "Compact Defender"
+     },
+     {
+      "hash": 2770035786,
+      "name": "M-17 \"Fast Talker\""
+     },
+     {
+      "hash": 2839128618,
+      "name": "The Keening"
+     },
+     {
+      "hash": 2901221332,
+      "name": "Main Ingredient"
+     },
+     {
+      "hash": 2920548486,
+      "name": "D.F.A."
+     },
+     {
+      "hash": 3021407779,
+      "name": "Out of Bounds"
+     },
+     {
+      "hash": 3303271523,
+      "name": "The Palindrome"
+     },
+     {
+      "hash": 3318545829,
+      "name": "Sarpedon-D"
+     },
+     {
+      "hash": 3470514298,
+      "name": "Nameless Midnight"
+     },
+     {
+      "hash": 3538003989,
+      "name": "Joxer's Longsword"
+     },
+     {
+      "hash": 3613444087,
+      "name": "Null Composure"
+     },
+     {
+      "hash": 3618823368,
+      "name": "Evening SI4"
+     },
+     {
+      "hash": 3975115486,
+      "name": "Randy's Throwing Knife"
+     },
+     {
+      "hash": 4176551594,
+      "name": "Qua Vinctus IV"
+     }
+    ]
    }
   },
   {
@@ -27824,7 +28176,8 @@
       "name": "Qua Vinctus IV"
      }
     ]
-   }
+   },
+   "enhancedLink": 1847323754
   },
   {
    "kind": "S",
