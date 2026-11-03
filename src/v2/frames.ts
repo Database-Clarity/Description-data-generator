@@ -1,9 +1,8 @@
 import { Item } from './types.js'
 
 export type Alias = { to: number; kind: 'sandbox' | 'frame' }
-const frameCategories = new Set([
-  'weapon-frame', 'weapon-frame-exotic', 'weapon-frame-enhanced', 'weapon-frame-enhanced-exotic',
-])
+// Exotic frames and intrinsics are authored per perk: only legendary frames share a tooltip by name.
+const frameCategories = new Set(['weapon-frame', 'weapon-frame-enhanced'])
 
 export function groupFrames(items: Record<string, Item>) {
   const byName = new Map<string, Item[]>()
