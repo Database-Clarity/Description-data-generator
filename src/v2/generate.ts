@@ -1,4 +1,5 @@
 import fs from 'fs'
+import { aliasProposals } from './proposals.js'
 import { categories } from '../categories/index.js'
 import { Manifest, Item } from './types.js'
 import { derivePairings, isEnhanced, weaponCategory } from './pairing.js'
@@ -13,6 +14,12 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     ...Object.entries(pairing.byEnhanced).flatMap(([enhanced, base]) => [Number(enhanced), base]),
     ...Object.values(manifest.inventoryItem).filter(item => !item.redacted && isEnhanced(item)).map(item => item.hash),
   ])
+  const legacy = Object.fromEntries(Object.entries(manifest.legacy).map(([hash, entry]) => {
+    const definition = manifest.inventoryItem[hash]
+    return [hash, definition && isEnhanced(definition)
+      ? { ...entry, type: weaponCategory(definition, entry.type.endsWith(' Exotic')) as typeof entry.type }
+      : entry]
+  }))
   const extraTypes: Record<string, string> = {}
   for (const hash of selected) {
     if (manifest.legacy[hash]) continue
@@ -20,7 +27,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     if (!item) throw new Error(`Missing selected inventory item ${hash}`)
     extraTypes[hash] = weaponCategory(item, pairing.exotic.has(hash) || item.inventory.tierType === 6)
   }
-  const facts: Manifest = { ...manifest, extraTypes }
+  const facts: Manifest = { ...manifest, legacy, extraTypes }
   const items: Record<string, Item> = {}
   const coverage: Record<string, { legacy: number; v2: number }> = {}
   const ids = new Set<string>()
@@ -33,11 +40,11 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
       if (item.categoryId !== category.id) throw new Error(`Wrong category on ${item.hash}`)
       items[item.hash] = item
     }
-    const legacy = Object.values(manifest.legacy).filter(item => item.type === category.legacyType)
-    for (const item of legacy) {
+    const legacyEntries = Object.values(legacy).filter(item => entries.some(entry => entry.hash === item.hash))
+    for (const item of legacyEntries) {
       if (items[item.hash]?.categoryId !== category.id) throw new Error(`Lost legacy entry ${item.hash}`)
     }
-    coverage[category.id] = { legacy: legacy.length, v2: entries.length }
+    coverage[category.id] = { legacy: legacyEntries.length, v2: entries.length }
   }
   for (const legacy of Object.values(manifest.legacy)) {
     if (!items[legacy.hash]) throw new Error(`Unregistered legacy type ${legacy.type}: ${legacy.hash}`)
@@ -61,6 +68,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   fs.mkdirSync('./templates/v2', { recursive: true })
   const write = (name: string, value: unknown) =>
     fs.writeFileSync(`./templates/v2/${name}.json`, JSON.stringify(value, undefined, 1) + '\n')
+  write('aliasProposals', aliasProposals(items, manifest.inventoryItem, aliases, manifest.plugSet))
   write('categories', categories.map(({ id, label, group, order, legacyType }) => ({
     id, label, group, order, legacyType,
   })))

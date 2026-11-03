@@ -109,8 +109,10 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
 
 export function weaponCategory(item: InventoryItem, exotic: boolean): string {
   const suffix = exotic ? ' Exotic' : ''
-  if (family(item) === 'Intrinsic') return `Weapon Frame${isEnhanced(item) ? ' Enhanced' : ''}${suffix}`
-  if (family(item) === 'Trait') return `Weapon Trait${isEnhanced(item) ? ' Enhanced' : ''}${suffix}`
-  if (family(item) === 'Origin Trait') return `Weapon Trait Origin${suffix}`
-  return `Weapon Perk${suffix}`
+  const enhanced = isEnhanced(item) ? ' Enhanced' : ''
+  if (family(item) === 'Intrinsic') return `Weapon Frame${enhanced}${suffix}`
+  if (family(item) === 'Trait') return `Weapon Trait${enhanced}${suffix}`
+  if (family(item) === 'Origin Trait') return `Weapon Trait Origin${enhanced}${suffix}`
+  if (family(item) === 'Weapon Mod' && isEnhanced(item)) return `Weapon Mod${enhanced}${suffix}`
+  return `Weapon Perk${enhanced}${suffix}`
 }

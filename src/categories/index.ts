@@ -26,6 +26,7 @@ import subclassClass from './subclass-class.js'
 import subclassMovement from './subclass-movement.js'
 import ghostMod from './ghost-mod.js'
 import verbs from './verbs.js'
+import { legacyCategory } from '../v2/legacyCategory.js'
 import { Category } from '../v2/types.js'
 
 export const categories: Category[] = [
@@ -35,4 +36,15 @@ export const categories: Category[] = [
   weaponFrame, weaponFrameExotic, weaponFrameEnhanced, weaponFrameEnhancedExotic,
   weaponCatalystExotic, weaponMod, subclassFragment, subclassAspect, subclassSuper,
   subclassGrenade, subclassMelee, subclassClass, subclassMovement, ghostMod, verbs,
+  ...([
+    ['weapon-perk-enhanced', 'Weapon Perk Enhanced'],
+    ['weapon-perk-enhanced-exotic', 'Weapon Perk Enhanced Exotic'],
+    ['weapon-trait-origin-enhanced', 'Weapon Trait Origin Enhanced'],
+    ['weapon-trait-origin-enhanced-exotic', 'Weapon Trait Origin Enhanced Exotic'],
+    ['weapon-mod-enhanced', 'Weapon Mod Enhanced'],
+    ['weapon-mod-enhanced-exotic', 'Weapon Mod Enhanced Exotic'],
+  ] as const).map(([id, type], index) => ({
+    ...legacyCategory(id, type, 'Weapons', 231 + index),
+    legacyType: type.endsWith(' Exotic') ? 'Weapon Trait Enhanced Exotic' as const : 'Weapon Trait Enhanced' as const,
+  })),
 ].sort((a, b) => a.order - b.order)

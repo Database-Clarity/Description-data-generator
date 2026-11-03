@@ -7,8 +7,9 @@ import { categories } from '../generator/categories/index.js'
 import { fetchJson, fetchSupplemental, parseDefinitions, parsePairings } from '../generator/v2/fetch.js'
 import { generateV2 } from '../generator/v2/generate.js'
 import { legacyCategory, legacyOwner } from '../generator/v2/legacyCategory.js'
-import { derivePairings } from '../generator/v2/pairing.js'
+import { derivePairings, isEnhanced, weaponCategory } from '../generator/v2/pairing.js'
 import { associateSandbox } from '../generator/v2/sandbox.js'
+import { aliasProposals } from '../generator/v2/proposals.js'
 import { groupFrames } from '../generator/v2/frames.js'
 
 function plug(hash, name, type = 'Trait', tierType = 2) {
@@ -41,11 +42,11 @@ function assertNoStatData(value) {
 
 test('all generated v2 outputs exclude stat data and weapon formula files', () => {
   const directory = new URL('../templates/v2/', import.meta.url)
-  assert.deepEqual(fs.readdirSync(directory).sort(), [
+  assert.deepEqual(fs.readdirSync(directory).filter(name => name !== 'aliasProposals.json').sort(), [
     'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
   ])
   for (const name of fs.readdirSync(directory)) {
-    assertNoStatData(JSON.parse(fs.readFileSync(new URL(name, directory))))
+    if (name !== 'aliasProposals.json') assertNoStatData(JSON.parse(fs.readFileSync(new URL(name, directory))))
   }
 })
 
@@ -77,7 +78,7 @@ test('checked-in shared owner metadata covers the pinned references without inve
 })
 
 test('registry has all 27 converter types, plus verbs; stable unique IDs/orders', () => {
-  assert.equal(categories.length, 28)
+  assert.equal(categories.length, 34)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
   assert.equal(new Set(categories.map(category => category.order)).size, categories.length)
   assert.equal(categories.some(category => category.id === 'sandbox-perk'), false)
@@ -90,10 +91,10 @@ test('registry maps all converter legacy types exactly and omits new categories'
   ).match(/export type LivePerkTypes = ([^;]+);/)[1]
   const expected = [...converterTypes.matchAll(/'([^']+)'/g)].map(match => match[1]).sort()
   const legacyCategories = categories.filter(category => category.legacyType !== undefined)
-  assert.equal(legacyCategories.length, 27)
-  assert.deepEqual(legacyCategories.map(category => category.legacyType).sort(), expected)
+  assert.equal(legacyCategories.length, 33)
+  assert.deepEqual([...new Set(legacyCategories.map(category => category.legacyType))].sort(), expected)
   for (const category of legacyCategories) {
-    assert.equal(category.legacyType, category.label)
+    if (!category.id.includes('perk-enhanced') && !category.id.includes('origin-enhanced') && !category.id.includes('mod-enhanced')) assert.equal(category.legacyType, category.label)
   }
   assert.equal(Object.hasOwn(categories.find(category => category.id === 'verbs'), 'legacyType'), false)
 })
@@ -261,10 +262,10 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'sandboxAliases.json'))), { 100: 1 })
     assert.deepEqual(legacy[1].appearsOn, [10])
     assert.deepEqual(fs.readdirSync(path.join('templates', 'v2')).sort(), [
-      'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+      'aliasProposals.json', 'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
     ])
     for (const name of fs.readdirSync(path.join('templates', 'v2'))) {
-      assertNoStatData(JSON.parse(fs.readFileSync(path.join('templates', 'v2', name))))
+      if (name !== 'aliasProposals.json') assertNoStatData(JSON.parse(fs.readFileSync(path.join('templates', 'v2', name))))
     }
     assert.deepEqual(inventory[1].investmentStats, [{ statTypeHash: 10, value: 42 }])
     assert.deepEqual(legacy[1].stats, { Damage: 42 })
@@ -430,3 +431,46 @@ test('weapon appearances do not constrain generated base or enhanced items', () 
     fs.rmSync(directory, { recursive: true })
   }
 })
+
+test('all enhanced families classify from manifest fields, never a perk name', () => {
+  for (const family of ['Trait', 'Origin Trait', 'Weapon Mod', 'Magazine', 'Barrel', 'Battery', 'Intrinsic']) {
+    const item = plug(1, 'Not an enhanced name', 'Enhanced ' + family);
+    assert.ok(isEnhanced(item));
+    assert.match(weaponCategory(item, false), / Enhanced$/);
+    assert.match(weaponCategory(item, true), / Enhanced Exotic$/);
+    assert.doesNotMatch(weaponCategory(plug(2, 'Enhanced name', family), false), /Enhanced/);
+  }
+});
+
+test('proposals split enhanced, exotic, plug categories; exclude aliases and frames; compare wording/numbers/stats', () => {
+  const inventory = byHash(...Array.from({length:10}, (_, i) => plug(i+1, 'Same')));
+  inventory[3].itemTypeDisplayName = 'Enhanced Trait';
+  inventory[5].plug.plugCategoryHash = 30;
+  inventory[2].investmentStats = [{statTypeHash:1,value:5}];
+  const items = Object.fromEntries(Object.values(inventory).map(i => [i.hash, {
+    hash:i.hash,name:'Same',categoryId:'weapon-perk',inGameDescription:'Gain 5 seconds.',
+    definitionType:'DestinyInventoryItemDefinition',
+  }]));
+  items[4].categoryId = 'weapon-perk-exotic';
+  items[6].categoryId = 'weapon-frame';
+  items[7].baseHash = 1;
+  items[7].inGameDescription = 'Grants 5 seconds.';
+  items[8].inGameDescription = 'Gain 10 seconds.';
+  const aliases = {9:{to:1,kind:'sandbox'},10:{to:1,kind:'frame'}};
+  const result = aliasProposals(items,inventory,aliases);
+  const same = result.proposals.find(p => p.kind === 'S');
+  assert.deepEqual(same.members, [1,2,7,8]);
+  assert.equal(same.descriptionDiff,'numbers');
+  assert.equal(same.statsDiff,true);
+  assert.deepEqual(result.proposals.find(p => p.kind === 'X').members,[1,7]);
+  assert.equal(result.proposals.find(p => p.kind === 'X').descriptionDiff,'wording');
+  assert.deepEqual(result, aliasProposals(Object.fromEntries(Object.entries(items).reverse()),inventory,aliases));
+});
+
+test('subclass proposals ignore plug category and flag differing wording for individual review', () => {
+  const inventory = byHash(plug(1,'Grenade'),plug(2,'Grenade'));
+  inventory[2].plug.plugCategoryHash = 30;
+  const items = {1:{hash:1,name:'Grenade',categoryId:'subclass-grenade',inGameDescription:'Same'},
+    2:{hash:2,name:'Grenade',categoryId:'subclass-grenade',inGameDescription:'Different'}};
+  assert.equal(aliasProposals(items,inventory,{}).proposals[0].descriptionDiff, 'wording');
+});
