@@ -1,4 +1,4 @@
-import { DisplayDefinition } from './types.js'
+import { DisplayDefinition, Manifest } from './types.js'
 
 export const pairingUrl = 'https://raw.githubusercontent.com/DestinyItemManager/d2-additional-info/master/output/trait-to-enhanced-trait.json'
 
@@ -41,6 +41,21 @@ export function parseDefinitions(value: unknown): Record<string, DisplayDefiniti
   return definitions
 }
 
+export function parseItemSets(value: unknown): NonNullable<Manifest['equipableItemSet']> {
+  const display = parseDefinitions(value)
+  const sets: NonNullable<Manifest['equipableItemSet']> = {}
+  for (const [hash, definition] of Object.entries(display)) {
+    const entry = (value as Record<string, { setPerks: unknown }>)[hash]
+    if (!Array.isArray(entry.setPerks) || entry.setPerks.some(perk =>
+      !isRecord(perk) || ![2, 4].includes(perk.requiredSetCount as number) ||
+      !Number.isInteger(perk.sandboxPerkHash) || Number(perk.sandboxPerkHash) <= 0 || Number(perk.sandboxPerkHash) > 0xffffffff)) {
+      throw new Error(`Invalid set perks ${hash}`)
+    }
+    sets[hash] = { ...definition, setPerks: entry.setPerks }
+  }
+  return sets
+}
+
 export function parsePairings(value: unknown): Record<string, number> {
   if (!isRecord(value)) throw new Error('Expected DIM base-to-enhanced hash map')
   const pairs: Record<string, number> = {}
@@ -68,10 +83,11 @@ export async function fetchSupplemental() {
     return `https://www.bungie.net${path}`
   }
   const table = async (name: string) => parseDefinitions(await fetchJson(tableUrl(englishPaths, name)))
-  const [sandboxPerk, trait, dim] = await Promise.all([
+  const [sandboxPerk, trait, dim, equipableItemSet] = await Promise.all([
     table('DestinySandboxPerkDefinition'),
     table('DestinyTraitDefinition'),
     fetchJson(pairingUrl).then(parsePairings),
+    fetchJson(tableUrl(englishPaths, 'DestinyEquipableItemSetDefinition')).then(parseItemSets),
   ])
-  return { sandboxPerk, trait, dim, version: metadata.Response.version }
+  return { sandboxPerk, trait, dim, equipableItemSet, version: metadata.Response.version }
 }

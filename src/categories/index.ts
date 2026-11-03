@@ -1,3 +1,4 @@
+import armorSetBonus from './armor-set-bonus.js'
 import armorTraitExotic from './armor-trait-exotic.js'
 import armorModGeneral from './armor-mod-general.js'
 import armorModCombat from './armor-mod-combat.js'
@@ -30,7 +31,7 @@ import { legacyCategory } from '../v2/legacyCategory.js'
 import { Category } from '../v2/types.js'
 
 export const categories: Category[] = [
-  armorTraitExotic, armorModGeneral, armorModCombat, armorModActivity, armorModSeasonal,
+  armorSetBonus, armorTraitExotic, armorModGeneral, armorModCombat, armorModActivity, armorModSeasonal,
   weaponPerk, weaponPerkExotic, weaponTrait, weaponTraitExotic, weaponTraitOrigin,
   weaponTraitOriginExotic, weaponTraitEnhanced, weaponTraitEnhancedExotic,
   weaponFrame, weaponFrameExotic, weaponFrameEnhanced, weaponFrameEnhancedExotic,

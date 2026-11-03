@@ -73,6 +73,7 @@ export type PerkDataList = {
     legacy: rawData,
     sandboxPerk: supplemental.sandboxPerk,
     trait: supplemental.trait,
+    equipableItemSet: supplemental.equipableItemSet,
     extraTypes: {},
   }, supplemental.dim, supplemental.version)
 

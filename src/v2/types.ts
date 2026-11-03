@@ -15,6 +15,7 @@ export interface Manifest {
   legacy: RawDataList
   sandboxPerk: Record<string, DisplayDefinition>
   trait: Record<string, DisplayDefinition>
+  equipableItemSet?: Record<string, DisplayDefinition & { setPerks: { requiredSetCount: number; sandboxPerkHash: number }[] }>
   extraTypes: Record<string, string>
 
 }
@@ -35,7 +36,11 @@ export interface Item {
   baseHash?: number
   sandboxPerkHashes?: number[]
   inGameDescription: string
-  definitionType: 'DestinyInventoryItemDefinition' | 'DestinyTraitDefinition'
+  setHash?: number
+  setName?: string
+  pieceCount?: 2 | 4
+  hiddenFromEditor?: boolean
+  definitionType: 'DestinyInventoryItemDefinition' | 'DestinyTraitDefinition' | 'DestinySandboxPerkDefinition'
 }
 
 export interface Category {

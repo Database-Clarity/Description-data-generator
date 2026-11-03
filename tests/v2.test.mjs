@@ -78,7 +78,7 @@ test('checked-in shared owner metadata covers the pinned references without inve
 })
 
 test('registry has all 27 converter types, plus verbs; stable unique IDs/orders', () => {
-  assert.equal(categories.length, 34)
+  assert.equal(categories.length, 35)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
   assert.equal(new Set(categories.map(category => category.order)).size, categories.length)
   assert.equal(categories.some(category => category.id === 'sandbox-perk'), false)
@@ -566,4 +566,45 @@ test('generation separates real enhanced pointers from identical and uncertain D
     process.chdir(cwd)
     fs.rmSync(dir, { recursive: true })
   }
+})
+
+
+test('set bonuses are sandbox identities grouped by set and ordered by piece count', () => {
+  const category = categories.find(category => category.id === 'armor-set-bonus')
+  const manifest = {
+    sandboxPerk: byHash(plug(701, 'Second Bonus'), plug(702, 'First Bonus')),
+    equipableItemSet: { 901: { ...plug(901, 'Example Set'), setPerks: [
+      { requiredSetCount: 4, sandboxPerkHash: 701 }, { requiredSetCount: 2, sandboxPerkHash: 702 },
+    ] } },
+  }
+  const entries = category.select(manifest)
+  assert.deepEqual(entries.map(item => item.hash), [702, 701])
+  assert.deepEqual(entries.map(item => item.pieceCount), [2, 4])
+  for (const item of entries) {
+    assert.equal(item.definitionType, 'DestinySandboxPerkDefinition')
+    assert.equal(item.setHash, 901)
+    assert.equal(item.setName, 'Example Set')
+    assert.equal(item.itemHash, undefined)
+    assert.equal(item.inGameDescription, manifest.sandboxPerk[item.hash].displayProperties.description)
+  }
+  delete manifest.sandboxPerk[701]
+  assert.throws(() => category.select(manifest), /Missing set-bonus/)
+})
+
+test('checked-in set bonuses cover 56 sets with no selector deletions or aliases', () => {
+  const items = JSON.parse(fs.readFileSync(new URL('../templates/v2/items.json', import.meta.url)))
+  const aliases = JSON.parse(fs.readFileSync(new URL('../templates/v2/aliases.json', import.meta.url)))
+  const entries = Object.values(items).filter(item => item.categoryId === 'armor-set-bonus')
+  assert.equal(entries.length, 112)
+  const sets = new Map()
+  for (const item of entries) {
+    assert.equal(item.definitionType, 'DestinySandboxPerkDefinition')
+    assert.equal(aliases[item.hash], undefined)
+    sets.set(item.setHash, [...(sets.get(item.setHash) ?? []), item.pieceCount])
+  }
+  assert.equal(sets.size, 56)
+  for (const counts of sets.values()) assert.deepEqual(counts.sort(), [2, 4])
+  const selectors = Object.values(items).filter(item => item.hiddenFromEditor)
+  assert.equal(selectors.length, 18)
+  for (const item of selectors) assert.match(item.name, /^Set Bonus:/)
 })
