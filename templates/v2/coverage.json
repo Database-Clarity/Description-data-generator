@@ -23,8 +23,8 @@
    "v2": 35
   },
   "weapon-perk": {
-   "legacy": 407,
-   "v2": 462
+   "legacy": 213,
+   "v2": 223
   },
   "weapon-perk-exotic": {
    "legacy": 29,
@@ -40,7 +40,7 @@
   },
   "weapon-trait-origin": {
    "legacy": 97,
-   "v2": 100
+   "v2": 97
   },
   "weapon-trait-origin-exotic": {
    "legacy": 2,
@@ -77,6 +77,30 @@
   "weapon-mod": {
    "legacy": 50,
    "v2": 50
+  },
+  "weapon-perk-enhanced": {
+   "legacy": 111,
+   "v2": 111
+  },
+  "weapon-perk-enhanced-exotic": {
+   "legacy": 0,
+   "v2": 0
+  },
+  "weapon-trait-origin-enhanced": {
+   "legacy": 83,
+   "v2": 86
+  },
+  "weapon-trait-origin-enhanced-exotic": {
+   "legacy": 0,
+   "v2": 0
+  },
+  "weapon-mod-enhanced": {
+   "legacy": 0,
+   "v2": 45
+  },
+  "weapon-mod-enhanced-exotic": {
+   "legacy": 0,
+   "v2": 0
   },
   "subclass-fragment": {
    "legacy": 99,
@@ -116,10 +140,10 @@
   }
  },
  "pairing": {
-  "enhancedCandidates": 727,
-  "manifestPairs": 693,
+  "enhancedCandidates": 700,
+  "manifestPairs": 666,
   "dimPairs": 425,
-  "paired": 704,
+  "paired": 669,
   "disagreements": [],
   "missingDim": [],
   "unresolved": [
@@ -333,7 +357,9 @@
     "enhancedHash": 4285947411,
     "candidates": []
    }
-  ]
+  ],
+  "inputPairs": 677,
+  "nonEnhancedDimPairs": 8
  },
  "sandbox": {
   "aliases": 2376,

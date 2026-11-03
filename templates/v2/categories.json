@@ -133,6 +133,48 @@
   "legacyType": "Weapon Mod"
  },
  {
+  "id": "weapon-perk-enhanced",
+  "label": "Weapon Perk Enhanced",
+  "group": "Weapons",
+  "order": 231,
+  "legacyType": "Weapon Trait Enhanced"
+ },
+ {
+  "id": "weapon-perk-enhanced-exotic",
+  "label": "Weapon Perk Enhanced Exotic",
+  "group": "Weapons",
+  "order": 232,
+  "legacyType": "Weapon Trait Enhanced Exotic"
+ },
+ {
+  "id": "weapon-trait-origin-enhanced",
+  "label": "Weapon Trait Origin Enhanced",
+  "group": "Weapons",
+  "order": 233,
+  "legacyType": "Weapon Trait Enhanced"
+ },
+ {
+  "id": "weapon-trait-origin-enhanced-exotic",
+  "label": "Weapon Trait Origin Enhanced Exotic",
+  "group": "Weapons",
+  "order": 234,
+  "legacyType": "Weapon Trait Enhanced Exotic"
+ },
+ {
+  "id": "weapon-mod-enhanced",
+  "label": "Weapon Mod Enhanced",
+  "group": "Weapons",
+  "order": 235,
+  "legacyType": "Weapon Trait Enhanced"
+ },
+ {
+  "id": "weapon-mod-enhanced-exotic",
+  "label": "Weapon Mod Enhanced Exotic",
+  "group": "Weapons",
+  "order": 236,
+  "legacyType": "Weapon Trait Enhanced Exotic"
+ },
+ {
   "id": "subclass-fragment",
   "label": "Subclass Fragment",
   "group": "Subclasses",
