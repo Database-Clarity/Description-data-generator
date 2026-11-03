@@ -111,10 +111,10 @@ test('legacy selection uses legacyType independently of a presentation label', (
   assert.deepEqual(category.select(manifest).map(item => item.hash), [1])
 })
 
-test('pairing is exact, distinguishes prefix names, and never chooses the first ambiguous base', () => {
+test('pairing is exact, distinguishes prefix names, and uses the lowest-hash canonical for duplicate bases', () => {
   const inventory = byHash(plug(1, 'Rampage'), plug(2, 'Rampage Plus'),
     plug(3, 'Rampage Plus', 'Enhanced Trait', 3), plug(4, 'Rampage Plus'))
-  assert.equal(derivePairings(inventory, {}, {}).byEnhanced[3], undefined)
+  assert.equal(derivePairings(inventory, {}, {}).byEnhanced[3], 2)
   inventory[10] = weapon(10, [2, 3])
   assert.equal(derivePairings(inventory, {}, {}).byEnhanced[3], 2)
 })
@@ -603,4 +603,20 @@ test('notification fallback requires an exact base and keeps exotics and unrelat
     process.chdir(cwd)
     fs.rmSync(dir, {recursive:true})
   }
+})
+
+
+test('duplicate bases preserve multiple enhanced variants despite a DIM preferred variant', () => {
+  const inventory = byHash(plug(9, 'Osmosis'), plug(1, 'Osmosis'),
+    plug(3, 'Osmosis', 'Enhanced Trait'), plug(4, 'Osmosis', 'Enhanced Trait'))
+  const pairing = derivePairings(inventory, {}, { 1: 3 })
+  assert.deepEqual(pairing.byEnhanced, { 3: 1, 4: 1 })
+  assert.deepEqual(pairing.report.unresolved, [])
+  const items = Object.fromEntries(Object.values(inventory).map(i => [i.hash, {
+    hash: i.hash, name: 'Osmosis', categoryId: i.hash === 1 || i.hash === 9 ? 'weapon-trait' : 'weapon-trait-enhanced',
+    inGameDescription: 'Same', ...(i.hash === 1 ? { enhancedHashes: [3,4] } : {}),
+  }]))
+  const proposals = aliasProposals(items, inventory, {}).proposals
+  assert.deepEqual(proposals.find(p=>p.canonical===1).members, [1,9])
+  assert.equal(proposals.find(p=>p.canonical===1).enhancedLink, 3)
 })

@@ -60,7 +60,10 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
     const matches = normals.get(key(enhanced)) ?? []
     const contextual = matches.filter(base => sharedContext(base.hash, enhanced.hash))
     const eligible = contextual.length ? contextual : matches
-    if (eligible.length === 1) manifestPairs[enhanced.hash] = eligible[0].hash
+    // Same-name, same-family and same-plug bases already form a Kind S proposal.
+    // Use its deterministic canonical rather than leaving the enhanced item orphaned.
+    if (eligible.length) manifestPairs[enhanced.hash] = [...eligible]
+      .sort((a, b) => a.hash - b.hash)[0].hash
     else unresolved.push({ enhancedHash: enhanced.hash, candidates: eligible.map(item => item.hash) })
   }
   const byEnhanced = { ...manifestPairs }
@@ -82,7 +85,9 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
     }
     dimOwners.set(enhancedHash, baseHash)
     for (const [manifestEnhanced, manifestBase] of Object.entries(manifestPairs)) {
-      if ((manifestBase === baseHash && Number(manifestEnhanced) !== enhancedHash) ||
+      const sameEnhancedGroup = enhanced(inventory[manifestEnhanced]) && enhanced(inventory[enhancedHash]) &&
+        key(inventory[manifestEnhanced]) === key(inventory[enhancedHash])
+      if ((manifestBase === baseHash && Number(manifestEnhanced) !== enhancedHash && !sameEnhancedGroup) ||
         (Number(manifestEnhanced) === enhancedHash && manifestBase !== baseHash)) {
         disagreements.push({
           manifestBaseHash: manifestBase, manifestEnhancedHash: Number(manifestEnhanced),
