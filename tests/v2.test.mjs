@@ -243,6 +243,7 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     assert.equal(Object.hasOwn(emittedCategories.find(category => category.id === 'verbs'), 'legacyType'), false)
     assert.deepEqual(items[1].enhancedHashes, [2, 3])
     assert.equal(items[1].enhancedHash, 2)
+    assert.equal(items[2].plugCategoryHash, inventory[2].plug.plugCategoryHash)
     assert.equal(items[2].baseHash, 1)
     assert.equal(items[3].baseHash, 1)
     assert.equal(items[1].itemHash, 10)
@@ -421,6 +422,7 @@ test('weapon appearances do not constrain generated base or enhanced items', () 
     generateV2({ inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {}, trait: {}, sandboxPerk: {} }, { 1: 2 }, 'fixture')
     const output = path.join('templates', 'v2')
     const items = JSON.parse(fs.readFileSync(path.join(output, 'items.json')))
+    assert.equal(items[2].plugCategoryHash, inventory[2].plug.plugCategoryHash)
     assert.equal(items[2].baseHash, 1)
     assert.equal(Object.hasOwn(items[1], 'weaponTypes'), false)
     assert.equal(Object.hasOwn(items[2], 'weaponTypes'), false)
@@ -473,4 +475,23 @@ test('subclass proposals ignore plug category and flag differing wording for ind
   const items = {1:{hash:1,name:'Grenade',categoryId:'subclass-grenade',inGameDescription:'Same'},
     2:{hash:2,name:'Grenade',categoryId:'subclass-grenade',inGameDescription:'Different'}};
   assert.equal(aliasProposals(items,inventory,{}).proposals[0].descriptionDiff, 'wording');
+});
+
+test('emitted proposal members carry the manifest plug category without enrichment', () => {
+  const inventory = byHash(plug(1, 'Shared'), plug(2, 'Shared'));
+  const legacy = Object.fromEntries([1,2].map(hash => [hash, {
+    hash, type:'Weapon Trait', appearsOn:[],
+  }]));
+  const cwd = process.cwd(), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'alias-facts-'));
+  try {
+    process.chdir(dir);
+    generateV2({inventoryItem:inventory,plugSet:{},legacy,extraTypes:{},trait:{},sandboxPerk:{}}, {}, 'fixture');
+    const items=JSON.parse(fs.readFileSync('templates/v2/items.json'));
+    const proposals=JSON.parse(fs.readFileSync('templates/v2/aliasProposals.json')).proposals;
+    assert.equal(proposals.length,1);
+    for(const hash of proposals[0].members) {
+      assert.equal(items[hash].plugCategoryHash,inventory[hash].plug.plugCategoryHash);
+      assert.equal(items[hash].plugCategoryHash,proposals[0].basis.plugCategoryHash);
+    }
+  } finally {process.chdir(cwd);fs.rmSync(dir,{recursive:true});}
 });

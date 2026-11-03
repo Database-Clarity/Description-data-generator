@@ -30,6 +30,7 @@ export interface Item {
   ownerNames?: Record<string, string>
   enhancedHash?: number
   enhancedHashes?: number[]
+  plugCategoryHash?: number
   baseHash?: number
   sandboxPerkHashes?: number[]
   inGameDescription: string

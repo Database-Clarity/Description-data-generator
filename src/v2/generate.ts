@@ -38,6 +38,9 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     for (const item of entries) {
       if (items[item.hash]) throw new Error(`Duplicate tooltip hash ${item.hash}`)
       if (item.categoryId !== category.id) throw new Error(`Wrong category on ${item.hash}`)
+      const definition = item.definitionType === 'DestinyInventoryItemDefinition'
+        ? manifest.inventoryItem[item.hash] : undefined
+      if (definition?.plug) item.plugCategoryHash = definition.plug.plugCategoryHash
       items[item.hash] = item
     }
     const legacyEntries = Object.values(legacy).filter(item => entries.some(entry => entry.hash === item.hash))
