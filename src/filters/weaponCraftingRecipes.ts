@@ -60,16 +60,16 @@ export const weaponCraftingRecipes = (
             addData(craftedWeapon, perk, `Weapon Frame${exoticText}`)
             break
           case 'Enhanced Intrinsic':
-            addData(craftedWeapon, perk, `Weapon Frame Enhanced${exoticText}`)
+            addData(craftedWeapon, perk, isExotic ? 'Weapon Frame Exotic' : 'Weapon Frame Enhanced')
             break
           case 'Trait':
             addData(craftedWeapon, perk, `Weapon Trait${exoticText}`)
             break
           case 'Origin Trait':
-            addData(craftedWeapon, perk, `Weapon Trait Origin${exoticText}`)
+            addData(craftedWeapon, perk, isExotic ? 'Weapon Perk Exotic' : 'Weapon Trait Origin')
             break
           case 'Enhanced Trait':
-            addData(craftedWeapon, perk, `Weapon Trait Enhanced${exoticText}`)
+            addData(craftedWeapon, perk, isExotic ? 'Weapon Trait Exotic' : 'Weapon Trait Enhanced')
             break
           default:
             addData(craftedWeapon, perk, `Weapon Perk${exoticText}`)

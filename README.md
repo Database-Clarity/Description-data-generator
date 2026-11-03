@@ -16,7 +16,7 @@ Network failures or invalid supplemental data fail the run explicitly.
 ## Outputs
 
 - `templates/*.json`: unchanged legacy generation and formats.
-- `templates/v2/categories.json`: category metadata, including empty legacy types.
+- `templates/v2/categories.json`: category metadata for supported in-game groupings; exotic enhanced placeholders are excluded.
   `legacyType` is the exact converter perk type used by core export; genuinely new
   categories such as verbs omit it. Labels are presentation text, not export mappings.
 - `templates/v2/items.json`: object keyed by real inventory/trait hash; includes
@@ -59,8 +59,7 @@ output and exercise stat-bearing inputs to prevent these fields from leaking.
 
 See [category instructions](src/categories/README.md) to add a category. Existing
 classification reuses the legacy filters; new pairing reads the **unfiltered**
-manifest, including exotic and catalyst-upgraded intrinsics. No legacy filter or
-legacy pairing behavior is changed.
+manifest, including exotic and catalyst-upgraded intrinsics. Exotic origin-slot firing modes are classified as exotic weapon perks; exotics have no enhanced subgroups.
 
 ## Enhanced pairing
 

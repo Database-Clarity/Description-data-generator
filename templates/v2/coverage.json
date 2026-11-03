@@ -31,8 +31,8 @@
    "v2": 223
   },
   "weapon-perk-exotic": {
-   "legacy": 29,
-   "v2": 29
+   "legacy": 31,
+   "v2": 31
   },
   "weapon-trait": {
    "legacy": 234,
@@ -46,17 +46,9 @@
    "legacy": 92,
    "v2": 92
   },
-  "weapon-trait-origin-exotic": {
-   "legacy": 2,
-   "v2": 2
-  },
   "weapon-trait-enhanced": {
    "legacy": 224,
    "v2": 228
-  },
-  "weapon-trait-enhanced-exotic": {
-   "legacy": 0,
-   "v2": 0
   },
   "weapon-frame": {
    "legacy": 83,
@@ -70,10 +62,6 @@
    "legacy": 189,
    "v2": 232
   },
-  "weapon-frame-enhanced-exotic": {
-   "legacy": 0,
-   "v2": 0
-  },
   "weapon-catalyst-exotic": {
    "legacy": 162,
    "v2": 162
@@ -86,25 +74,13 @@
    "legacy": 111,
    "v2": 111
   },
-  "weapon-perk-enhanced-exotic": {
-   "legacy": 0,
-   "v2": 0
-  },
   "weapon-trait-origin-enhanced": {
    "legacy": 88,
    "v2": 91
   },
-  "weapon-trait-origin-enhanced-exotic": {
-   "legacy": 0,
-   "v2": 0
-  },
   "weapon-mod-enhanced": {
    "legacy": 0,
    "v2": 45
-  },
-  "weapon-mod-enhanced-exotic": {
-   "legacy": 0,
-   "v2": 0
   },
   "subclass-fragment": {
    "legacy": 99,

@@ -9,13 +9,10 @@ import weaponPerkExotic from './weapon-perk-exotic.js'
 import weaponTrait from './weapon-trait.js'
 import weaponTraitExotic from './weapon-trait-exotic.js'
 import weaponTraitOrigin from './weapon-trait-origin.js'
-import weaponTraitOriginExotic from './weapon-trait-origin-exotic.js'
 import weaponTraitEnhanced from './weapon-trait-enhanced.js'
-import weaponTraitEnhancedExotic from './weapon-trait-enhanced-exotic.js'
 import weaponFrame from './weapon-frame.js'
 import weaponFrameExotic from './weapon-frame-exotic.js'
 import weaponFrameEnhanced from './weapon-frame-enhanced.js'
-import weaponFrameEnhancedExotic from './weapon-frame-enhanced-exotic.js'
 import weaponCatalystExotic from './weapon-catalyst-exotic.js'
 import weaponMod from './weapon-mod.js'
 import subclassFragment from './subclass-fragment.js'
@@ -33,19 +30,16 @@ import { Category } from '../v2/types.js'
 export const categories: Category[] = [
   armorSetBonus, armorTraitExotic, armorModGeneral, armorModCombat, armorModActivity, armorModSeasonal,
   weaponPerk, weaponPerkExotic, weaponTrait, weaponTraitExotic, weaponTraitOrigin,
-  weaponTraitOriginExotic, weaponTraitEnhanced, weaponTraitEnhancedExotic,
-  weaponFrame, weaponFrameExotic, weaponFrameEnhanced, weaponFrameEnhancedExotic,
+  weaponTraitEnhanced,
+  weaponFrame, weaponFrameExotic, weaponFrameEnhanced,
   weaponCatalystExotic, weaponMod, subclassFragment, subclassAspect, subclassSuper,
   subclassGrenade, subclassMelee, subclassClass, subclassMovement, ghostMod, verbs,
   ...([
-    ['weapon-perk-enhanced', 'Weapon Perk Enhanced'],
-    ['weapon-perk-enhanced-exotic', 'Weapon Perk Enhanced Exotic'],
-    ['weapon-trait-origin-enhanced', 'Weapon Trait Origin Enhanced'],
-    ['weapon-trait-origin-enhanced-exotic', 'Weapon Trait Origin Enhanced Exotic'],
-    ['weapon-mod-enhanced', 'Weapon Mod Enhanced'],
-    ['weapon-mod-enhanced-exotic', 'Weapon Mod Enhanced Exotic'],
-  ] as const).map(([id, type], index) => ({
-    ...legacyCategory(id, type, 'Weapons', 231 + index),
-    legacyType: type.endsWith(' Exotic') ? 'Weapon Trait Enhanced Exotic' as const : 'Weapon Trait Enhanced' as const,
+    ['weapon-perk-enhanced', 'Weapon Perk Enhanced', 231],
+    ['weapon-trait-origin-enhanced', 'Weapon Trait Origin Enhanced', 233],
+    ['weapon-mod-enhanced', 'Weapon Mod Enhanced', 235],
+  ] as const).map(([id, type, order]) => ({
+    ...legacyCategory(id, type, 'Weapons', order),
+    legacyType: 'Weapon Trait Enhanced' as const,
   })),
 ].sort((a, b) => a.order - b.order)
