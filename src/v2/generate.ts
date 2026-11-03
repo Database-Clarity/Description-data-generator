@@ -41,6 +41,9 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
       const definition = item.definitionType === 'DestinyInventoryItemDefinition'
         ? manifest.inventoryItem[item.hash] : undefined
       if (definition?.plug) item.plugCategoryHash = definition.plug.plugCategoryHash
+      if (definition?.plug?.plugCategoryIdentifier === 'core.gear_systems.event_gear.item_sets.selectors') {
+        item.hiddenFromEditor = true
+      }
       items[item.hash] = item
     }
     const legacyEntries = Object.values(legacy).filter(item => entries.some(entry => entry.hash === item.hash))

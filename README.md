@@ -118,3 +118,17 @@ byte-for-byte (for example with SHA-256). `coverage.json` also checks every lega
 hash and its category, not just totals; missing or duplicate entries fail generation.
 Live manifest updates can change legacy files relative to Git even without code
 changes, so the before/after run is the compatibility baseline.
+
+
+### Armor set bonuses
+
+`armor-set-bonus` entries come from `DestinyEquipableItemSetDefinition.setPerks`, keyed by
+`sandboxPerkHash` with `definitionType: DestinySandboxPerkDefinition`. They carry `setHash`,
+`setName` and `pieceCount` (2 or 4); there is no inventory-item owner or alias. The display name
+includes the set, count and perk name. Existing set-conversion selector entries remain in the
+catalog with `hiddenFromEditor: true`; that flag is editor-only and must not enter exports.
+
+After generation, `node tests/setbonus-parity.mjs <pre-change-commit> <evidence-json-path>`
+checks every set bonus against the current manifest and lists every added/changed hash.
+Consumers must look up Clarity text using `setPerks[].sandboxPerkHash`, rather than an armour
+item or selector hash. No new text exists until editors create the corresponding tooltips.

@@ -14,6 +14,12 @@
   "legacyType": "Armor Mod General"
  },
  {
+  "id": "armor-set-bonus",
+  "label": "Armor Set Bonuses",
+  "group": "Armor",
+  "order": 25
+ },
+ {
   "id": "armor-mod-combat",
   "label": "Armor Mod Combat",
   "group": "Armor",
