@@ -16,7 +16,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   ])
   const legacy = Object.fromEntries(Object.entries(manifest.legacy).map(([hash, entry]) => {
     const definition = manifest.inventoryItem[hash]
-    return [hash, definition && isEnhanced(definition)
+    return [hash, definition && isEnhanced(definition) && !entry.type.endsWith(' Exotic')
       ? { ...entry, type: weaponCategory(definition, entry.type.endsWith(' Exotic')) as typeof entry.type }
       : entry]
   }))
@@ -55,11 +55,18 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   for (const [enhancedKey, baseHash] of Object.entries(pairing.byEnhanced)) {
     const enhancedHash = Number(enhancedKey)
     if (!items[enhancedHash] || !items[baseHash]) throw new Error(`Missing pairing endpoint ${baseHash}/${enhancedHash}`)
+    if (items[enhancedHash].categoryId.endsWith('-exotic') || items[baseHash].categoryId.endsWith('-exotic')) continue
+    if (!isEnhanced(manifest.inventoryItem[enhancedHash])) {
+      items[enhancedHash].dimBaseHash = baseHash
+      continue
+    }
     items[enhancedHash].baseHash = baseHash
     const base = items[baseHash]
     base.enhancedHashes = [...(base.enhancedHashes ?? []), enhancedHash].sort((a, b) => a - b)
     base.enhancedHash = base.enhancedHashes.includes(dim[baseHash]) ? dim[baseHash] : base.enhancedHashes[0]
   }
+  const realEnhancedPairs = Object.values(items).filter(item => item.baseHash !== undefined).length
+  const nonEnhancedDimPairs = Object.values(items).filter(item => item.dimBaseHash !== undefined).length
   const sandbox = associateSandbox(items, manifest.inventoryItem, manifest.sandboxPerk)
   const frames = groupFrames(items)
   const aliases: Record<string, Alias> = { ...frames.aliases }
@@ -82,10 +89,10 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     manifestVersion: version,
     pairingSource: pairingUrl,
     categories: coverage,
-    pairing: pairing.report,
+    pairing: { ...pairing.report, inputPairs: pairing.report.paired, paired: realEnhancedPairs, nonEnhancedDimPairs },
     sandbox: sandbox.report,
     frames: frames.report,
   })
   console.log('v2 category coverage (legacy -> v2):', coverage)
-  console.log(`v2: ${Object.keys(items).length} items, ${pairing.report.paired} enhanced pairs, ${sandbox.report.aliases} sandbox aliases`)
+  console.log(`v2: ${Object.keys(items).length} items, ${realEnhancedPairs} enhanced pairs, ${sandbox.report.aliases} sandbox aliases`)
 }

@@ -51,11 +51,40 @@ export function aliasProposals(items: Record<string, Item>, inventory: Inventory
       weapons: Object.fromEntries(members.map(i => [i.hash, owners(i)])),
     }
   }
-  const proposals = [...groups.values()].filter(g => g.length > 1).map(g => make('S', g))
+  const numbered = (item: Item) => / (II|III|IV)$/.test(item.name)
+  const ownerHashes = (item: Item) => new Set([...(item.owners ?? []), ...(item.itemHash === undefined ? [] : [item.itemHash])])
+  const exoticFrames = Object.values(items).filter(i => i.categoryId === 'weapon-frame-exotic' && !aliases[i.hash])
+  const frameProposals = []
+  for (const base of exoticFrames.filter(i => !numbered(i)).sort((a,b) => a.hash-b.hash)) {
+    const candidates = exoticFrames.filter(i => numbered(i) && i.name.replace(/ (II|III|IV)$/, '').trim().toLowerCase() === name(base) &&
+      inventory[i.hash]?.plug?.plugCategoryHash === inventory[base.hash]?.plug?.plugCategoryHash)
+    // One manifest weapon must own every member; a shared name alone never joins exotic identities.
+    for (const owner of [...ownerHashes(base)].sort((a,b)=>a-b)) {
+      if (exoticFrames.filter(i => !numbered(i) && name(i) === name(base) && ownerHashes(i).has(owner)).length !== 1) continue
+      const variants = candidates.filter(i => ownerHashes(i).has(owner))
+      if (!variants.length) continue
+      const proposal = make('S', [base,...variants.sort((a,b)=>a.hash-b.hash)],base.hash)
+      frameProposals.push({...proposal,basis:{...proposal.basis,exoticFrameOwner:owner}})
+      break
+    }
+  }
+  const possibleEnhanced: {baseHash:number; variantHash:number; reason:string}[] = []
+  const excludedTwins = new Set<number>()
+  for (const item of Object.values(items)) {
+    const base = item.dimBaseHash === undefined ? undefined : items[item.dimBaseHash]
+    if (base && eligible(item) && eligible(base) && name(item) === name(base) &&
+        !enhanced(item) && !enhanced(base) && !exotic(item) && !exotic(base) &&
+        item.inGameDescription !== base.inGameDescription) {
+      possibleEnhanced.push({baseHash:base.hash,variantHash:item.hash,reason:'possible enhanced — maintainer call'})
+      excludedTwins.add(item.hash)
+    }
+  }
+  const proposals = [...groups.values()].map(g=>g.filter(i=>!excludedTwins.has(i.hash))).filter(g => g.length > 1).map(g => make('S', g))
+  proposals.push(...frameProposals)
   for (const item of Object.values(items).filter(eligible)) {
-    const base = item.baseHash === undefined ? undefined : items[item.baseHash]
+    const base = item.dimBaseHash === undefined ? undefined : items[item.dimBaseHash]
     if (base && eligible(base) && !enhanced(item) && !enhanced(base) &&
-        exotic(item) === exotic(base) && name(item) === name(base)) {
+        !exotic(item) && !exotic(base) && name(item) === name(base) && item.inGameDescription === base.inGameDescription) {
       proposals.push(make('X', [base, item], base.hash))
     }
   }
@@ -66,5 +95,5 @@ export function aliasProposals(items: Record<string, Item>, inventory: Inventory
       .map(h => membership.get(h) ?? h))
     return { ...p, ...(targets.size === 1 ? { enhancedLink: [...targets][0] } : {}) }
   })
-  return { version: 1, proposals: linked.sort((a, b) => a.canonical - b.canonical || a.kind.localeCompare(b.kind)) }
+  return { version: 1, possibleEnhanced: possibleEnhanced.sort((a,b)=>a.variantHash-b.variantHash), proposals: linked.sort((a, b) => a.canonical - b.canonical || a.kind.localeCompare(b.kind)) }
 }

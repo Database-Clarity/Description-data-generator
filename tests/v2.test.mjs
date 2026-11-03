@@ -141,14 +141,15 @@ test('all DIM mappings survive cross-swapped manifest disagreements', () => {
   assert.throws(() => derivePairings(inventory, {}, { 1: 2, 4: 2 }), /Conflicting DIM owners/)
 })
 
-test('exotic enhanced traits and numbered intrinsics are retained; intrinsics require socket evidence', () => {
+test('exotic traits and numbered intrinsics never become enhanced pairs, including DIM overrides', () => {
   const inventory = byHash(plug(1, 'Exotic Trait', 'Trait', 6), plug(2, 'Exotic Trait', 'Enhanced Trait', 6),
     plug(3, "Hunter's Trace", 'Intrinsic', 6), plug(4, "Hunter's Trace II", 'Intrinsic', 6),
     plug(5, "Hunter's Trace III", 'Intrinsic', 6))
   assert.equal(derivePairings(inventory, {}, {}).byEnhanced[4], undefined)
   inventory[10] = weapon(10, [1, 2, 3, 4, 5])
   const pairs = derivePairings(inventory, {}, {})
-  assert.deepEqual(pairs.byEnhanced, { 2: 1, 4: 3, 5: 3 })
+  assert.deepEqual(pairs.byEnhanced, {})
+  assert.deepEqual(derivePairings(inventory, {}, {1:2,3:4}).byEnhanced, {})
   assert.equal(pairs.exotic.has(2), true)
 })
 
@@ -219,6 +220,8 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
   inventory[1].investmentStats = [{ statTypeHash: 10, value: 42 }]
   const legacy = {
     1: { hash: 1, name: "Hunter's Trace", type: 'Weapon Frame Exotic', appearsOn: [10] },
+    2: {hash:2,name:"Hunter's Trace II",type:'Weapon Frame Exotic',appearsOn:[10]},
+    3: {hash:3,name:"Hunter's Trace III",type:'Weapon Frame Exotic',appearsOn:[10]},
     4: { hash: 4, name: 'Shared Exotic Perk', type: 'Weapon Perk Exotic', appearsOn: [20, 30, 40] },
   }
   legacy[1].stats = { Damage: 42 }
@@ -241,21 +244,24 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
     const emittedCategories = JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'categories.json')))
     assert.equal(emittedCategories.find(category => category.id === 'weapon-frame-exotic').legacyType, 'Weapon Frame Exotic')
     assert.equal(Object.hasOwn(emittedCategories.find(category => category.id === 'verbs'), 'legacyType'), false)
-    assert.deepEqual(items[1].enhancedHashes, [2, 3])
-    assert.equal(items[1].enhancedHash, 2)
+    assert.equal(items[1].enhancedHashes, undefined)
+    assert.equal(items[1].enhancedHash, undefined)
     assert.equal(items[2].plugCategoryHash, inventory[2].plug.plugCategoryHash)
-    assert.equal(items[2].baseHash, 1)
-    assert.equal(items[3].baseHash, 1)
+    assert.equal(items[2].baseHash, undefined)
+    assert.equal(items[3].baseHash, undefined)
     assert.equal(items[1].itemHash, 10)
     assert.equal(items[1].itemName, 'Fixture Weapon')
     assert.equal(items[1].owners, undefined)
     assert.deepEqual(items[4].owners, [20, 30, 40])
     assert.deepEqual(items[4].ownerNames, { 20: 'First Exotic', 30: 'Second Exotic' })
     for (const hash of [2, 3]) {
-      assert.equal(Object.hasOwn(items[hash], 'itemHash'), false)
-      assert.equal(Object.hasOwn(items[hash], 'itemName'), false)
+      assert.equal(items[hash].itemHash, 10)
+      assert.equal(items[hash].itemName, 'Fixture Weapon')
     }
-    assert.equal(items[2].categoryId, 'weapon-frame-enhanced-exotic')
+    assert.equal(items[2].categoryId, 'weapon-frame-exotic')
+    const proposal = JSON.parse(fs.readFileSync('templates/v2/aliasProposals.json')).proposals.find(p=>p.basis.exoticFrameOwner === 10)
+    assert.deepEqual(proposal.members,[1,2,3])
+    assert.equal(proposal.canonical,1)
     assert.equal(items[200].definitionType, 'DestinyTraitDefinition')
     assert.equal(items[200].inGameDescription, 'Burn')
     assert.equal(items[201], undefined)
@@ -439,7 +445,7 @@ test('all enhanced families classify from manifest fields, never a perk name', (
     const item = plug(1, 'Not an enhanced name', 'Enhanced ' + family);
     assert.ok(isEnhanced(item));
     assert.match(weaponCategory(item, false), / Enhanced$/);
-    assert.match(weaponCategory(item, true), / Enhanced Exotic$/);
+    assert.doesNotMatch(weaponCategory(item, true), /Enhanced/);
     assert.doesNotMatch(weaponCategory(plug(2, 'Enhanced name', family), false), /Enhanced/);
   }
 });
@@ -455,17 +461,17 @@ test('proposals split enhanced, exotic, plug categories; exclude aliases and fra
   }]));
   items[4].categoryId = 'weapon-perk-exotic';
   items[6].categoryId = 'weapon-frame';
-  items[7].baseHash = 1;
+  items[7].dimBaseHash = 1;
   items[7].inGameDescription = 'Grants 5 seconds.';
   items[8].inGameDescription = 'Gain 10 seconds.';
   const aliases = {9:{to:1,kind:'sandbox'},10:{to:1,kind:'frame'}};
   const result = aliasProposals(items,inventory,aliases);
   const same = result.proposals.find(p => p.kind === 'S');
-  assert.deepEqual(same.members, [1,2,7,8]);
+  assert.deepEqual(same.members, [1,2,8]);
   assert.equal(same.descriptionDiff,'numbers');
   assert.equal(same.statsDiff,true);
-  assert.deepEqual(result.proposals.find(p => p.kind === 'X').members,[1,7]);
-  assert.equal(result.proposals.find(p => p.kind === 'X').descriptionDiff,'wording');
+  assert.equal(result.proposals.some(p => p.kind === 'X'),false);
+  assert.deepEqual(result.possibleEnhanced,[{baseHash:1,variantHash:7,reason:'possible enhanced — maintainer call'}]);
   assert.deepEqual(result, aliasProposals(Object.fromEntries(Object.entries(items).reverse()),inventory,aliases));
 });
 
@@ -494,4 +500,30 @@ test('emitted proposal members carry the manifest plug category without enrichme
       assert.equal(items[hash].plugCategoryHash,proposals[0].basis.plugCategoryHash);
     }
   } finally {process.chdir(cwd);fs.rmSync(dir,{recursive:true});}
+});
+
+test('exotic numbered frame proposals require common owner and never group different exotics or legendary frames', () => {
+  const inventory=byHash(plug(1,'Frame','Intrinsic',6),plug(2,'Frame II','Intrinsic',6),
+    plug(3,'Frame III','Intrinsic',6),plug(4,'Frame IV','Intrinsic',6),plug(5,'Frame II','Intrinsic'));
+  inventory[2].investmentStats=[{statTypeHash:1,value:10}];
+  const items=Object.fromEntries(Object.values(inventory).map(i=>[i.hash,{hash:i.hash,name:i.displayProperties.name,
+    categoryId:i.hash===5?'weapon-frame':'weapon-frame-exotic',inGameDescription:'Same',itemHash:i.hash===3?200:100}]));
+  const proposals=aliasProposals(items,inventory,{}).proposals;
+  assert.equal(proposals.length,1);
+  assert.deepEqual(proposals[0].members,[1,2,4]);
+  assert.equal(proposals[0].canonical,1);
+  assert.equal(proposals[0].statsDiff,true);
+  assert.equal(proposals[0].basis.exoticFrameOwner,100);
+  assert.equal(proposals[0].basis.isEnhanced,false);
+});
+
+test('only identical DIM twins become Kind X; wording differences go to a separate list', () => {
+  const inventory=byHash(plug(1,'Twin'),plug(2,'Twin'),plug(3,'Twin'));
+  const items={1:{hash:1,name:'Twin',categoryId:'weapon-perk',inGameDescription:'Same'},
+    2:{hash:2,name:'Twin',categoryId:'weapon-perk',inGameDescription:'Same',dimBaseHash:1},
+    3:{hash:3,name:'Twin',categoryId:'weapon-perk',inGameDescription:'Longer duration',dimBaseHash:1}};
+  const result=aliasProposals(items,inventory,{});
+  assert.deepEqual(result.proposals.filter(p=>p.kind==='X').map(p=>p.members),[[1,2]]);
+  assert.equal(result.proposals.some(p=>p.members.includes(3)),false);
+  assert.deepEqual(result.possibleEnhanced,[{baseHash:1,variantHash:3,reason:'possible enhanced — maintainer call'}]);
 });

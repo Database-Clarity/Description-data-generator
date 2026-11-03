@@ -31,6 +31,7 @@ export interface Item {
   enhancedHash?: number
   enhancedHashes?: number[]
   plugCategoryHash?: number
+  dimBaseHash?: number
   baseHash?: number
   sandboxPerkHashes?: number[]
   inGameDescription: string

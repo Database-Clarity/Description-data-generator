@@ -5,20 +5,8 @@ function family(item: InventoryItem): string {
   return (item.itemTypeDisplayName ?? '').replace(/^Enhanced /, '')
 }
 
-function intrinsicUpgrade(item: InventoryItem): boolean {
-  return item.itemTypeDisplayName === 'Intrinsic' && item.inventory.tierType === 6 &&
-    / (II|III|IV)$/.test(item.displayProperties.name)
-}
-
 export function isEnhanced(item: InventoryItem): boolean {
-  return Boolean(item.plug && (/^Enhanced /.test(item.itemTypeDisplayName ?? '') || intrinsicUpgrade(item)))
-}
-
-function baseName(item: InventoryItem): string {
-  const name = item.displayProperties.name
-  return item.itemTypeDisplayName === 'Intrinsic' && item.inventory.tierType === 6
-    ? name.replace(/ (I|II|III|IV)$/, '')
-    : name
+  return Boolean(item.plug && item.inventory.tierType !== 6 && /^Enhanced /.test(item.itemTypeDisplayName ?? ''))
 }
 
 export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, dim: Record<string, number>) {
@@ -46,8 +34,8 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
   const items = Object.values(inventory).filter(item => item.plug && item.displayProperties.name && !item.redacted)
   const candidates = items.filter(isEnhanced)
   const normals = new Map<string, InventoryItem[]>()
-  const key = (item: InventoryItem) => `${family(item)}:${item.plug?.plugCategoryHash}:${baseName(item)}`
-  for (const item of items.filter(item => !isEnhanced(item))) {
+  const key = (item: InventoryItem) => `${family(item)}:${item.plug?.plugCategoryHash}:${item.displayProperties.name}`
+  for (const item of items.filter(item => !isEnhanced(item) && item.inventory.tierType !== 6)) {
     const list = normals.get(key(item)) ?? []
     list.push(item)
     normals.set(key(item), list)
@@ -57,8 +45,7 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
   for (const enhanced of candidates) {
     const matches = normals.get(key(enhanced)) ?? []
     const contextual = matches.filter(base => sharedContext(base.hash, enhanced.hash))
-    // Numbered exotic intrinsics require socket evidence, not just a similar name.
-    const eligible = contextual.length ? contextual : intrinsicUpgrade(enhanced) ? [] : matches
+    const eligible = contextual.length ? contextual : matches
     if (eligible.length === 1) manifestPairs[enhanced.hash] = eligible[0].hash
     else unresolved.push({ enhancedHash: enhanced.hash, candidates: eligible.map(item => item.hash) })
   }
@@ -74,6 +61,7 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
       missingDim.push({ baseHash, enhancedHash })
       continue
     }
+    if (inventory[baseHash].inventory.tierType === 6 || inventory[enhancedHash].inventory.tierType === 6) continue
     const previousOwner = dimOwners.get(enhancedHash)
     if (previousOwner !== undefined && previousOwner !== baseHash) {
       throw new Error(`Conflicting DIM owners ${previousOwner}, ${baseHash} for ${enhancedHash}`)
@@ -109,7 +97,7 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
 
 export function weaponCategory(item: InventoryItem, exotic: boolean): string {
   const suffix = exotic ? ' Exotic' : ''
-  const enhanced = isEnhanced(item) ? ' Enhanced' : ''
+  const enhanced = !exotic && isEnhanced(item) ? ' Enhanced' : ''
   if (family(item) === 'Intrinsic') return `Weapon Frame${enhanced}${suffix}`
   if (family(item) === 'Trait') return `Weapon Trait${enhanced}${suffix}`
   if (family(item) === 'Origin Trait') return `Weapon Trait Origin${enhanced}${suffix}`
