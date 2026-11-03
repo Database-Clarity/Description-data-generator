@@ -5222,26 +5222,6 @@
     "differingDescriptions": false
    },
    {
-    "name": "gathering light",
-    "canonicalHash": 975429949,
-    "hashes": [
-     975429949,
-     3551049142
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
-    "name": "the perfect fifth",
-    "canonicalHash": 1000724343,
-    "hashes": [
-     1000724343,
-     1522566605
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
     "name": "balanced heat weapon",
     "canonicalHash": 1002219198,
     "hashes": [
@@ -5282,16 +5262,6 @@
     "differingDescriptions": true
    },
    {
-    "name": "unplanned reprieve",
-    "canonicalHash": 1327961177,
-    "hashes": [
-     1327961177,
-     1927916065
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
     "name": "dynamic heat weapon",
     "canonicalHash": 1406835319,
     "hashes": [
@@ -5300,58 +5270,6 @@
      1611330137,
      2331097520,
      4108848057
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
-    "name": "wolfpack rounds",
-    "canonicalHash": 1959135343,
-    "hashes": [
-     1959135343,
-     2962361451
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
-    "name": "arc conductor",
-    "canonicalHash": 2516532331,
-    "hashes": [
-     2516532331,
-     3949068808
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
-    "name": "trinary vision",
-    "canonicalHash": 2733244971,
-    "hashes": [
-     2733244971,
-     4133742354,
-     4133742355,
-     4133742357
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": false
-   },
-   {
-    "name": "sacred flame",
-    "canonicalHash": 3034060702,
-    "hashes": [
-     3034060702,
-     3239299468
-    ],
-    "mixedExotic": false,
-    "differingDescriptions": true
-   },
-   {
-    "name": "insectoid robot grenades",
-    "canonicalHash": 3325420353,
-    "hashes": [
-     3325420353,
-     3913463509
     ],
     "mixedExotic": false,
     "differingDescriptions": true

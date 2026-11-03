@@ -276,7 +276,7 @@ test('end-to-end v2 writes preserve legacy hashes/categories and reciprocal mult
   }
 })
 
-test('frames group exact normalized names across categories with deterministic non-enhanced ownership', () => {
+test('frames group exact normalized names across legendary categories only, with deterministic non-enhanced ownership', () => {
   const member = (hash, name, categoryId, inGameDescription = 'one') =>
     ({ hash, name, categoryId, inGameDescription })
   const items = byHash(
@@ -289,15 +289,20 @@ test('frames group exact normalized names across categories with deterministic n
   )
   const result = groupFrames(items)
   assert.deepEqual(result.aliases, {
-    1: { to: 10, kind: 'frame' }, 20: { to: 10, kind: 'frame' }, 50: { to: 10, kind: 'frame' },
+    1: { to: 10, kind: 'frame' },
   })
 
-  assert.equal(result.report.groups[0].mixedExotic, true)
-  assert.equal(result.report.groups[0].differingDescriptions, true)
+  assert.equal(result.report.groups[0].mixedExotic, false)
+  assert.equal(result.report.groups[0].differingDescriptions, false)
   assert.deepEqual(result.report.nearMisses, [['adaptive frame', 'adaptive-frame']])
   assert.deepEqual(groupFrames(Object.fromEntries(Object.entries(items).reverse())), result)
   assert.throws(() => groupFrames(byHash(member(1, 'Only', 'weapon-frame-enhanced'),
-    member(2, 'Only', 'weapon-frame-enhanced-exotic'))), /no non-enhanced/)
+    member(2, 'Only', 'weapon-frame-enhanced'))), /no non-enhanced/)
+  // Exotic frames never join a group, not even with another exotic of the same name.
+  assert.deepEqual(groupFrames(byHash(member(1, 'Trait', 'weapon-frame-exotic'),
+    member(2, 'Trait', 'weapon-frame-exotic'), member(3, 'Trait', 'weapon-frame-enhanced-exotic'))), {
+    aliases: {}, report: { groups: [], nearMisses: [] },
+  })
 })
 
 test('generation flattens sandbox owners through same-name frame groups without altering legacy aliases', () => {
