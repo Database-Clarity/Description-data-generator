@@ -2,13 +2,14 @@ import { InventoryItems, PlugSets } from '@icemourne/tool-box'
 import { Item } from './types.js'
 import { Alias } from './frames.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
-import { isEnhanced } from './pairing.js'
+import { enhancedFallbacks, isEnhanced } from './pairing.js'
 
 /** Manifest-only proposals. Clarity text and approval decisions never enter this function. */
 export function aliasProposals(items: Record<string, Item>, inventory: InventoryItems, aliases: Record<string, Alias>, plugSets: PlugSets = {}) {
+  const fallback = enhancedFallbacks(inventory)
   const eligible = (item: Item) => /^(weapon-(perk|trait|mod)|armor-mod|subclass)-?/.test(item.categoryId) &&
     !aliases[item.hash] && Boolean(inventory[item.hash]?.plug)
-  const enhanced = (item: Item) => isEnhanced(inventory[item.hash])
+  const enhanced = (item: Item) => isEnhanced(inventory[item.hash], fallback)
   const exotic = (item: Item) => item.categoryId.endsWith('-exotic')
   const name = (item: Item) => item.name.trim().toLowerCase()
   const key = (item: Item) => JSON.stringify([name(item), item.categoryId, enhanced(item), exotic(item),

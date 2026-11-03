@@ -12,12 +12,12 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   const selected = new Set<number>([
     ...Object.keys(manifest.legacy).map(Number),
     ...Object.entries(pairing.byEnhanced).flatMap(([enhanced, base]) => [Number(enhanced), base]),
-    ...Object.values(manifest.inventoryItem).filter(item => !item.redacted && isEnhanced(item)).map(item => item.hash),
+    ...Object.values(manifest.inventoryItem).filter(item => !item.redacted && isEnhanced(item, pairing.fallback)).map(item => item.hash),
   ])
   const legacy = Object.fromEntries(Object.entries(manifest.legacy).map(([hash, entry]) => {
     const definition = manifest.inventoryItem[hash]
-    return [hash, definition && isEnhanced(definition) && !entry.type.endsWith(' Exotic')
-      ? { ...entry, type: weaponCategory(definition, entry.type.endsWith(' Exotic')) as typeof entry.type }
+    return [hash, definition && isEnhanced(definition, pairing.fallback) && !entry.type.endsWith(' Exotic')
+      ? { ...entry, type: weaponCategory(definition, entry.type.endsWith(' Exotic'), pairing.fallback) as typeof entry.type }
       : entry]
   }))
   const extraTypes: Record<string, string> = {}
@@ -25,7 +25,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     if (manifest.legacy[hash]) continue
     const item = manifest.inventoryItem[hash]
     if (!item) throw new Error(`Missing selected inventory item ${hash}`)
-    extraTypes[hash] = weaponCategory(item, pairing.exotic.has(hash) || item.inventory.tierType === 6)
+    extraTypes[hash] = weaponCategory(item, pairing.exotic.has(hash) || item.inventory.tierType === 6, pairing.fallback)
   }
   const facts: Manifest = { ...manifest, legacy, extraTypes }
   const items: Record<string, Item> = {}
@@ -56,7 +56,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
     const enhancedHash = Number(enhancedKey)
     if (!items[enhancedHash] || !items[baseHash]) throw new Error(`Missing pairing endpoint ${baseHash}/${enhancedHash}`)
     if (items[enhancedHash].categoryId.endsWith('-exotic') || items[baseHash].categoryId.endsWith('-exotic')) continue
-    if (!isEnhanced(manifest.inventoryItem[enhancedHash])) {
+    if (!isEnhanced(manifest.inventoryItem[enhancedHash], pairing.fallback)) {
       items[enhancedHash].dimBaseHash = baseHash
       continue
     }

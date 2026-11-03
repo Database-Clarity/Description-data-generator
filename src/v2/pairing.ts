@@ -5,11 +5,25 @@ function family(item: InventoryItem): string {
   return (item.itemTypeDisplayName ?? '').replace(/^Enhanced /, '')
 }
 
-export function isEnhanced(item: InventoryItem): boolean {
-  return Boolean(item.plug && item.inventory.tierType !== 6 && /^Enhanced /.test(item.itemTypeDisplayName ?? ''))
+export function isEnhanced(item: InventoryItem, fallback: ReadonlySet<number> = new Set()): boolean {
+  return Boolean(item.plug && item.inventory.tierType !== 6 &&
+    (/^Enhanced /.test(item.itemTypeDisplayName ?? '') || fallback.has(item.hash)))
+}
+
+/** Bungie's notification style is a fallback only when a matching non-enhanced base exists. */
+export function enhancedFallbacks(inventory: InventoryItems): Set<number> {
+  const marker = (item: InventoryItem) => item.tooltipNotifications?.some(
+    notification => notification.displayStyle === 'ui_display_style_enhanced_perk')
+  const key = (item: InventoryItem) => `${item.plug?.plugCategoryHash}:${item.displayProperties.name}`
+  const items = Object.values(inventory).filter(item => item.plug && !item.redacted &&
+    item.inventory.tierType !== 6 && item.displayProperties.name)
+  const bases = new Set(items.filter(item => !isEnhanced(item) && !marker(item)).map(key))
+  return new Set(items.filter(item => !isEnhanced(item) && marker(item) && bases.has(key(item))).map(item => item.hash))
 }
 
 export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, dim: Record<string, number>) {
+  const fallback = enhancedFallbacks(inventory)
+  const enhanced = (item: InventoryItem) => isEnhanced(item, fallback)
   const contexts = new Map<number, Set<string>>()
   const exotic = new Set<number>()
   const addContext = (hash: number, context: string) => {
@@ -32,10 +46,10 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
   const sharedContext = (a: number, b: number) =>
     [...(contexts.get(a) ?? [])].some(context => contexts.get(b)?.has(context))
   const items = Object.values(inventory).filter(item => item.plug && item.displayProperties.name && !item.redacted)
-  const candidates = items.filter(isEnhanced)
+  const candidates = items.filter(enhanced)
   const normals = new Map<string, InventoryItem[]>()
   const key = (item: InventoryItem) => `${family(item)}:${item.plug?.plugCategoryHash}:${item.displayProperties.name}`
-  for (const item of items.filter(item => !isEnhanced(item) && item.inventory.tierType !== 6)) {
+  for (const item of items.filter(item => !enhanced(item) && item.inventory.tierType !== 6)) {
     const list = normals.get(key(item)) ?? []
     list.push(item)
     normals.set(key(item), list)
@@ -84,7 +98,7 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
   const unresolvedAfterDim = unresolved.filter(item => byEnhanced[item.enhancedHash] === undefined)
   if (unresolvedAfterDim.length) console.warn(`v2: ${unresolvedAfterDim.length} enhanced items have no unambiguous base; see coverage.json`)
   return {
-    byEnhanced, exotic,
+    byEnhanced, exotic, fallback,
     report: {
       enhancedCandidates: candidates.length,
       manifestPairs: Object.keys(manifestPairs).length,
@@ -95,12 +109,12 @@ export function derivePairings(inventory: InventoryItems, plugSets: PlugSets, di
   }
 }
 
-export function weaponCategory(item: InventoryItem, exotic: boolean): string {
+export function weaponCategory(item: InventoryItem, exotic: boolean, fallback: ReadonlySet<number> = new Set()): string {
   const suffix = exotic ? ' Exotic' : ''
-  const enhanced = !exotic && isEnhanced(item) ? ' Enhanced' : ''
+  const enhanced = !exotic && isEnhanced(item, fallback) ? ' Enhanced' : ''
   if (family(item) === 'Intrinsic') return `Weapon Frame${enhanced}${suffix}`
   if (family(item) === 'Trait') return `Weapon Trait${enhanced}${suffix}`
   if (family(item) === 'Origin Trait') return `Weapon Trait Origin${enhanced}${suffix}`
-  if (family(item) === 'Weapon Mod' && isEnhanced(item)) return `Weapon Mod${enhanced}${suffix}`
+  if (family(item) === 'Weapon Mod' && isEnhanced(item, fallback)) return `Weapon Mod${enhanced}${suffix}`
   return `Weapon Perk${enhanced}${suffix}`
 }
