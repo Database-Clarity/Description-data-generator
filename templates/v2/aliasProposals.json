@@ -1434,6 +1434,27 @@
   },
   {
    "kind": "S",
+   "canonical": 255237659,
+   "members": [
+    255237659,
+    3116632773
+   ],
+   "basis": {
+    "name": "Sustained Fire",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "255237659": [],
+    "3116632773": []
+   }
+  },
+  {
+   "kind": "S",
    "canonical": 266130437,
    "members": [
     266130437,
@@ -2763,6 +2784,48 @@
     ]
    },
    "enhancedLink": 4267445637
+  },
+  {
+   "kind": "S",
+   "canonical": 611645149,
+   "members": [
+    611645149,
+    3153265448
+   ],
+   "basis": {
+    "name": "Frost Renewal",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "611645149": [],
+    "3153265448": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 611645150,
+   "members": [
+    611645150,
+    1328115227
+   ],
+   "basis": {
+    "name": "Hail The Storm",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "611645150": [],
+    "1328115227": []
+   }
   },
   {
    "kind": "S",
@@ -7810,6 +7873,69 @@
    "weapons": {
     "1517917190": [],
     "2809342386": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 1533272844,
+   "members": [
+    1533272844,
+    2659604391
+   ],
+   "basis": {
+    "name": "Shieldcrush",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "1533272844": [],
+    "2659604391": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 1533272846,
+   "members": [
+    1533272846,
+    2742146823
+   ],
+   "basis": {
+    "name": "Sniper's Meditation",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "1533272846": [],
+    "2742146823": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 1533272847,
+   "members": [
+    1533272847,
+    2311625537
+   ],
+   "basis": {
+    "name": "Shock and Awe",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "1533272847": [],
+    "2311625537": []
    }
   },
   {
@@ -18841,6 +18967,69 @@
   },
   {
    "kind": "S",
+   "canonical": 2311625536,
+   "members": [
+    2311625536,
+    3117519997
+   ],
+   "basis": {
+    "name": "Supernova",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "2311625536": [],
+    "3117519997": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 2344320970,
+   "members": [
+    2344320970,
+    2903198436
+   ],
+   "basis": {
+    "name": "Counter Energy",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "2344320970": [],
+    "2903198436": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 2344320972,
+   "members": [
+    2344320972,
+    4232817863
+   ],
+   "basis": {
+    "name": "Targeting Autoloader",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "2344320972": [],
+    "4232817863": []
+   }
+  },
+  {
+   "kind": "S",
    "canonical": 2400634603,
    "members": [
     2400634603,
@@ -28393,6 +28582,27 @@
   },
   {
    "kind": "S",
+   "canonical": 2903198438,
+   "members": [
+    2903198438,
+    3585856470
+   ],
+   "basis": {
+    "name": "Dielectric",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "2903198438": [],
+    "3585856470": []
+   }
+  },
+  {
+   "kind": "S",
    "canonical": 2976676960,
    "members": [
     2976676960,
@@ -34491,6 +34701,71 @@
     ]
    },
    "enhancedLink": 1893041875
+  },
+  {
+   "kind": "S",
+   "canonical": 3116632771,
+   "members": [
+    3116632771,
+    3585856466,
+    3619040076
+   ],
+   "basis": {
+    "name": "Elemental Siphon",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "3116632771": [],
+    "3585856466": [],
+    "3619040076": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 3116632774,
+   "members": [
+    3116632774,
+    3834273543
+   ],
+   "basis": {
+    "name": "Press The Advantage",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "3116632774": [],
+    "3834273543": []
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 3116632775,
+   "members": [
+    3116632775,
+    3459646243
+   ],
+   "basis": {
+    "name": "Threaded Blast",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "3116632775": [],
+    "3459646243": []
+   }
   },
   {
    "kind": "S",
@@ -41734,6 +42009,27 @@
       "name": "Revision Zero"
      }
     ]
+   }
+  },
+  {
+   "kind": "S",
+   "canonical": 3834273539,
+   "members": [
+    3834273539,
+    4037132133
+   ],
+   "basis": {
+    "name": "Power from Pain",
+    "categoryId": "armor-mod-seasonal",
+    "isEnhanced": false,
+    "exotic": false,
+    "plugCategoryHash": 3878350949
+   },
+   "descriptionDiff": "identical",
+   "statsDiff": false,
+   "weapons": {
+    "3834273539": [],
+    "4037132133": []
    }
   },
   {

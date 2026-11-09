@@ -59,6 +59,18 @@
    2317200681
   ]
  },
+ "1886465": {
+  "hash": 1886465,
+  "name": "Electrified Conductor",
+  "icon": "/common/destiny2_content/icons/a74b6f7e04f58246b06e29ae3e1f5e4d.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 125494331,
+  "sandboxPerkHashes": [
+   3341240528
+  ]
+ },
  "2593449": {
   "hash": 2593449,
   "name": "Rapid-Fire Glaive",
@@ -590,6 +602,54 @@
    2504971051
   ]
  },
+ "51032914": {
+  "hash": 51032914,
+  "name": "Anti-Champion Nosecone",
+  "icon": "/common/destiny2_content/icons/472be0e9c6152c0a702bd3d148c6b0a7.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1121188911
+  ]
+ },
+ "51032915": {
+  "hash": 51032915,
+  "name": "Dragon's Bite",
+  "icon": "/common/destiny2_content/icons/77302763049dc780df6693dbb7c01a6b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1121188910
+  ]
+ },
+ "51032916": {
+  "hash": 51032916,
+  "name": "Pillar of Ice",
+  "icon": "/common/destiny2_content/icons/ab6a016b75337cf8f8914ed5a23b62ea.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1121188905
+  ]
+ },
+ "51032917": {
+  "hash": 51032917,
+  "name": "Revitalizing Blast",
+  "icon": "/common/destiny2_content/icons/71e60180bd32adc0a869a9d7384920d1.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2903076277
+  ]
+ },
  "52638289": {
   "hash": 52638289,
   "name": "CQC Optics: High",
@@ -718,6 +778,18 @@
   "enhancedHash": 1939575288,
   "sandboxPerkHashes": [
    3533478308
+  ]
+ },
+ "71258198": {
+  "hash": 71258198,
+  "name": "Stoic When Panicked",
+  "icon": "/common/destiny2_content/icons/0b2819f1fe807f93801d483d0aabcac5.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2140235634,
+  "sandboxPerkHashes": [
+   4040902743
   ]
  },
  "73373563": {
@@ -2528,6 +2600,90 @@
   "sandboxPerkHashes": [
    177848724,
    2470282411
+  ]
+ },
+ "255237656": {
+  "hash": 255237656,
+  "name": "Thunderous Retort",
+  "icon": "/common/destiny2_content/icons/67f99870af07f9244a7ee0bb8ca0dda9.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2482799785
+  ]
+ },
+ "255237657": {
+  "hash": 255237657,
+  "name": "Amped Up",
+  "icon": "/common/destiny2_content/icons/1aaf471a9b1e75ddf7a50416b6104035.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2482799784
+  ]
+ },
+ "255237658": {
+  "hash": 255237658,
+  "name": "Shatter Orbs",
+  "icon": "/common/destiny2_content/icons/5ed571e47400d0a33896eb2db3428dc6.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3743286084
+  ]
+ },
+ "255237659": {
+  "hash": 255237659,
+  "name": "Sustained Fire",
+  "icon": "/common/destiny2_content/icons/3485c4751f37951002170d05c4468a87.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4192675790
+  ]
+ },
+ "255237660": {
+  "hash": 255237660,
+  "name": "Improved Unraveling",
+  "icon": "/common/destiny2_content/icons/d0a3d776e9edc7c2cb24870707937b15.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2482799789
+  ]
+ },
+ "255237662": {
+  "hash": 255237662,
+  "name": "Unto the Breach",
+  "icon": "/common/destiny2_content/icons/7e8236bfa362af6e9d6bad1c44c22085.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2482799791
+  ]
+ },
+ "255237663": {
+  "hash": 255237663,
+  "name": "Volatile Flow",
+  "icon": "/common/destiny2_content/icons/e695f6722f6b804915497124a4ca1878.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3743286080
   ]
  },
  "260490301": {
@@ -4875,6 +5031,18 @@
    1788053827
   ]
  },
+ "502240622": {
+  "hash": 502240622,
+  "name": "Chomping at the Stem",
+  "icon": "/common/destiny2_content/icons/274376e59175f29b950f36a91545113e.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2140235634,
+  "sandboxPerkHashes": [
+   2931879325
+  ]
+ },
  "505341189": {
   "hash": 505341189,
   "name": "Modified Heatsink",
@@ -5822,6 +5990,95 @@
   "baseHash": 2136073194,
   "sandboxPerkHashes": [
    1993847534
+  ]
+ },
+ "611645144": {
+  "hash": 611645144,
+  "name": "Weakened Clear",
+  "icon": "/common/destiny2_content/icons/0be012b38f318cde7d3f704e1c5f27c9.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1724012239,
+   4269647889
+  ]
+ },
+ "611645145": {
+  "hash": 611645145,
+  "name": "Retinal Burn",
+  "icon": "/common/destiny2_content/icons/4c4871eebe2c22029dccd0939c718c35.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2996687320,
+   4269647888
+  ]
+ },
+ "611645146": {
+  "hash": 611645146,
+  "name": "Curative Orbs",
+  "icon": "/common/destiny2_content/icons/5ed571e47400d0a33896eb2db3428dc6.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3109140473,
+   4269647891
+  ]
+ },
+ "611645147": {
+  "hash": 611645147,
+  "name": "Void Renewal",
+  "icon": "/common/destiny2_content/icons/f50ee87fe85424ea395e9342031b7839.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2361025921,
+   4269647890
+  ]
+ },
+ "611645149": {
+  "hash": 611645149,
+  "name": "Frost Renewal",
+  "icon": "/common/destiny2_content/icons/f0a3adfaf8d6c88df24a35f38b3968d2.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4269647892
+  ]
+ },
+ "611645150": {
+  "hash": 611645150,
+  "name": "Hail The Storm",
+  "icon": "/common/destiny2_content/icons/71e4fa0e5b358e6b731e0415de6ce0e9.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1288653325,
+   4139073898
+  ]
+ },
+ "611645151": {
+  "hash": 611645151,
+  "name": "Debilitating Wave",
+  "icon": "/common/destiny2_content/icons/2095c328d02e1f522564c25a977d6fbf.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4269647894
   ]
  },
  "615063266": {
@@ -13029,6 +13286,93 @@
    3469621377
   ]
  },
+ "1319563984": {
+  "hash": 1319563984,
+  "name": "Limit Break",
+  "icon": "/common/destiny2_content/icons/bac87bfc4b21caf68c5e1994e95d6ded.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834411
+  ]
+ },
+ "1319563985": {
+  "hash": 1319563985,
+  "name": "To Shreds",
+  "icon": "/common/destiny2_content/icons/db9994e38f3019475db3dd46162400fb.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834410
+  ]
+ },
+ "1319563986": {
+  "hash": 1319563986,
+  "name": "Defibrillating Blast",
+  "icon": "/common/destiny2_content/icons/432d57ccbac460b2effe218c7b43de75.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834409,
+   3482706722
+  ]
+ },
+ "1319563987": {
+  "hash": 1319563987,
+  "name": "Void Flux",
+  "icon": "/common/destiny2_content/icons/1470eea452581c26e38a0fe8b132cdb0.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834408
+  ]
+ },
+ "1319563988": {
+  "hash": 1319563988,
+  "name": "Elemental Supercharger",
+  "icon": "/common/destiny2_content/icons/72bed48bdb3786392576557133af73c8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834415
+  ]
+ },
+ "1319563989": {
+  "hash": 1319563989,
+  "name": "Heavy Ordnance Regeneration",
+  "icon": "/common/destiny2_content/icons/d1e477b155ded312541855d8dc482084.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834414,
+   3589448578
+  ]
+ },
+ "1319563991": {
+  "hash": 1319563991,
+  "name": "Particle Reconstruction",
+  "icon": "/common/destiny2_content/icons/e93be604e075d37fb6553827bca8b145.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1637834412,
+   3460028039
+  ]
+ },
  "1319823571": {
   "hash": 1319823571,
   "name": "Cranial Spike",
@@ -13127,6 +13471,55 @@
   "sandboxPerkHashes": [
    472686235,
    2495412308
+  ]
+ },
+ "1328115226": {
+  "hash": 1328115226,
+  "name": "Rays of Precision",
+  "icon": "/common/destiny2_content/icons/e4f1cd438eb61d85c896294ad7fd0e0b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4139073899
+  ]
+ },
+ "1328115227": {
+  "hash": 1328115227,
+  "name": "Hail The Storm",
+  "icon": "/common/destiny2_content/icons/71e4fa0e5b358e6b731e0415de6ce0e9.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1288653325,
+   4139073898
+  ]
+ },
+ "1328115228": {
+  "hash": 1328115228,
+  "name": "Argent Ordnance",
+  "icon": "/common/destiny2_content/icons/7148f81e1d12751937f731bc97f37d53.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4139073901
+  ]
+ },
+ "1328115229": {
+  "hash": 1328115229,
+  "name": "Solo Operative",
+  "icon": "/common/destiny2_content/icons/0dfd63e45cf5b622a610301afebac679.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4139073900
   ]
  },
  "1331592343": {
@@ -14888,6 +15281,91 @@
    302029822,
    2084279142,
    3939762028
+  ]
+ },
+ "1533272841": {
+  "hash": 1533272841,
+  "name": "Prismatic Transfer",
+  "icon": "/common/destiny2_content/icons/e2d5f4807e70f1f3ff310415cc44b67c.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365946
+  ]
+ },
+ "1533272842": {
+  "hash": 1533272842,
+  "name": "Argent Blade",
+  "icon": "/common/destiny2_content/icons/8c8ec47b96429cb02c2c7640defc79b8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365945
+  ]
+ },
+ "1533272843": {
+  "hash": 1533272843,
+  "name": "Expanding Abyss",
+  "icon": "/common/destiny2_content/icons/f2a75f5858c1e49244972e97362d5c80.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365944
+  ]
+ },
+ "1533272844": {
+  "hash": 1533272844,
+  "name": "Shieldcrush",
+  "icon": "/common/destiny2_content/icons/d22083ccc81ece6444fa2c022df89705.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365951,
+   1284425576
+  ]
+ },
+ "1533272845": {
+  "hash": 1533272845,
+  "name": "Transference",
+  "icon": "/common/destiny2_content/icons/ae11028a5a83ed41cb86d88a97161de2.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365950
+  ]
+ },
+ "1533272846": {
+  "hash": 1533272846,
+  "name": "Sniper's Meditation",
+  "icon": "/common/destiny2_content/icons/e7a8b3b1eb71f1d70e31d5642c92c5fb.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365949
+  ]
+ },
+ "1533272847": {
+  "hash": 1533272847,
+  "name": "Shock and Awe",
+  "icon": "/common/destiny2_content/icons/0a18b425797c5f38a69665d5c3a6333f.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   233365948
   ]
  },
  "1535085486": {
@@ -17236,6 +17714,18 @@
    3079769572
   ]
  },
+ "1768489065": {
+  "hash": 1768489065,
+  "name": "Violent Pour",
+  "icon": "/common/destiny2_content/icons/de760efcd1568161d3263e45ba8fcc3f.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2140235634,
+  "sandboxPerkHashes": [
+   3543261302
+  ]
+ },
  "1771339417": {
   "hash": 1771339417,
   "name": "Firing Line",
@@ -17450,6 +17940,18 @@
   "sandboxPerkHashes": [
    472686235,
    3505951177
+  ]
+ },
+ "1789236257": {
+  "hash": 1789236257,
+  "name": "Stacked",
+  "icon": "/common/destiny2_content/icons/4ef310b6b71fd0183b20db697679e018.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 125494331,
+  "sandboxPerkHashes": [
+   3706476854
   ]
  },
  "1791592647": {
@@ -18333,6 +18835,18 @@
    863260328,
    3469836202,
    4202535579
+  ]
+ },
+ "1882005053": {
+  "hash": 1882005053,
+  "name": "Persistent Resonance",
+  "icon": "/common/destiny2_content/icons/1f6244e55b04cbe584158dbfcb033b25.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 125494331,
+  "sandboxPerkHashes": [
+   1209603680
   ]
  },
  "1882549863": {
@@ -22601,6 +23115,90 @@
    3753409268
   ]
  },
+ "2311625536": {
+  "hash": 2311625536,
+  "name": "Supernova",
+  "icon": "/common/destiny2_content/icons/815e319a7dd9b8675619aa2f515f03b8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4187005645
+  ]
+ },
+ "2311625537": {
+  "hash": 2311625537,
+  "name": "Shock and Awe",
+  "icon": "/common/destiny2_content/icons/d0619bebb5fe2dbaede5282a51c6d3fb.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4187005644
+  ]
+ },
+ "2311625538": {
+  "hash": 2311625538,
+  "name": "Conductive Cosmic Needle",
+  "icon": "/common/destiny2_content/icons/802a490f2b11e346091926e4b0a1ebb7.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4187005647
+  ]
+ },
+ "2311625540": {
+  "hash": 2311625540,
+  "name": "Void Weapon Channeling",
+  "icon": "/common/destiny2_content/icons/22ca2ec59b144ae96610b2b6f25e8190.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3824205128
+  ]
+ },
+ "2311625541": {
+  "hash": 2311625541,
+  "name": "Passive Aggressive Guard",
+  "icon": "/common/destiny2_content/icons/c2b8daf574576911a89ae85dccaf67d3.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3431943687
+  ]
+ },
+ "2311625542": {
+  "hash": 2311625542,
+  "name": "Lightning Strikes Twice",
+  "icon": "/common/destiny2_content/icons/11401dfda102df2b4da5c9ff09950144.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4187005643
+  ]
+ },
+ "2311625543": {
+  "hash": 2311625543,
+  "name": "Squad Goals",
+  "icon": "/common/destiny2_content/icons/46656d890be5ef3870606c84360429b0.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4187005642
+  ]
+ },
  "2316126473": {
   "hash": 2316126473,
   "name": "High Priority",
@@ -22622,6 +23220,30 @@
   "sandboxPerkHashes": [
    1322690461,
    4085593937
+  ]
+ },
+ "2317325398": {
+  "hash": 2317325398,
+  "name": "Kindling Trigger",
+  "icon": "/common/destiny2_content/icons/abaf5494df7860b116e12f02ee0accc9.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   627527847
+  ]
+ },
+ "2317325399": {
+  "hash": 2317325399,
+  "name": "Blast Radius",
+  "icon": "/common/destiny2_content/icons/08966e730bae193ec6f30ed90b54662e.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   627527846
   ]
  },
  "2318667184": {
@@ -22822,6 +23444,90 @@
    2158075471,
    2448549985,
    2484881265
+  ]
+ },
+ "2344320968": {
+  "hash": 2344320968,
+  "name": "Void Hegemony",
+  "icon": "/common/destiny2_content/icons/17d84346ffe49f92a4db97b2fa59ba21.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576983
+  ]
+ },
+ "2344320969": {
+  "hash": 2344320969,
+  "name": "Blade Stamina",
+  "icon": "/common/destiny2_content/icons/943e21f0e02535c4ea107639fa45882e.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576982
+  ]
+ },
+ "2344320970": {
+  "hash": 2344320970,
+  "name": "Counter Energy",
+  "icon": "/common/destiny2_content/icons/f9cff3113b9be57572ed6697be195a1a.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576981
+  ]
+ },
+ "2344320972": {
+  "hash": 2344320972,
+  "name": "Targeting Autoloader",
+  "icon": "/common/destiny2_content/icons/af01d655f6082ad2c9eb3ee81b77effa.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576979
+  ]
+ },
+ "2344320973": {
+  "hash": 2344320973,
+  "name": "Solar Fulmination",
+  "icon": "/common/destiny2_content/icons/c652963de3a4e9860280e0a5a5e84817.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576978
+  ]
+ },
+ "2344320974": {
+  "hash": 2344320974,
+  "name": "Bad Amplitude",
+  "icon": "/common/destiny2_content/icons/49206187423fa8c71de6c5058d237f21.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3767913291
+  ]
+ },
+ "2344320975": {
+  "hash": 2344320975,
+  "name": "Radiant Orbs",
+  "icon": "/common/destiny2_content/icons/504b0ee422c64b4baa8ba5c1bbbb8ada.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576976
   ]
  },
  "2349202967": {
@@ -25014,6 +25720,93 @@
    3204936245
   ]
  },
+ "2596646296": {
+  "hash": 2596646296,
+  "name": "Vile Weave",
+  "icon": "/common/destiny2_content/icons/30d7b4a86b37c00b7888c039ce928dae.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3316230039
+  ]
+ },
+ "2596646298": {
+  "hash": 2596646298,
+  "name": "Flashover",
+  "icon": "/common/destiny2_content/icons/39fa68afce49ce18debf66cca98d568c.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1554078997
+  ]
+ },
+ "2596646299": {
+  "hash": 2596646299,
+  "name": "Maligned Harvest",
+  "icon": "/common/destiny2_content/icons/4a2d1e613721d89b19e1cd272fa0e4df.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   517348873,
+   1554078996
+  ]
+ },
+ "2596646300": {
+  "hash": 2596646300,
+  "name": "No Bell",
+  "icon": "/common/destiny2_content/icons/a25bf672c20acc4f3702806d79ad5be8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1554078995,
+   3303738916
+  ]
+ },
+ "2596646301": {
+  "hash": 2596646301,
+  "name": "Horde Shuttle",
+  "icon": "/common/destiny2_content/icons/e59d66773e3f17fca0ce9a1db1ad26d4.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   517348874,
+   1554078994
+  ]
+ },
+ "2596646302": {
+  "hash": 2596646302,
+  "name": "Gold from Lead",
+  "icon": "/common/destiny2_content/icons/60b79563cd0c5e0585602692f2675720.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1554078993
+  ]
+ },
+ "2596646303": {
+  "hash": 2596646303,
+  "name": "Harsh Refraction",
+  "icon": "/common/destiny2_content/icons/83d3cd1ea4cfc888ad17c98857092d65.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1554078992
+  ]
+ },
  "2597494435": {
   "hash": 2597494435,
   "name": "Frame of Reference",
@@ -25383,6 +26176,18 @@
   "inGameDescription": "Jump while airborne to activate Glide and start an airborne drift with both moderate speed and directional control.",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 3728449707
+ },
+ "2631069573": {
+  "hash": 2631069573,
+  "name": "Refreshing Thirst",
+  "icon": "/common/destiny2_content/icons/75b154226e5fb3f7f7883b630d79b16d.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2140235634,
+  "sandboxPerkHashes": [
+   3855099150
+  ]
  },
  "2633604463": {
   "hash": 2633604463,
@@ -25756,6 +26561,91 @@
   "baseHash": 3436462433,
   "sandboxPerkHashes": [
    3103139225
+  ]
+ },
+ "2659604384": {
+  "hash": 2659604384,
+  "name": "Frigid Glare",
+  "icon": "/common/destiny2_content/icons/a8e0ad8585c13eead66d224a18608556.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896829
+  ]
+ },
+ "2659604385": {
+  "hash": 2659604385,
+  "name": "Tangled Web",
+  "icon": "/common/destiny2_content/icons/82befe9a89b07a901cd352d7a4663239.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896828
+  ]
+ },
+ "2659604386": {
+  "hash": 2659604386,
+  "name": "Argent Quiver",
+  "icon": "/common/destiny2_content/icons/be505c181030939d775fdd38fef428e5.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896831
+  ]
+ },
+ "2659604387": {
+  "hash": 2659604387,
+  "name": "Iron Lord's Vigor",
+  "icon": "/common/destiny2_content/icons/08493ea0baf9f657c82c5a7e32e0ff66.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896830
+  ]
+ },
+ "2659604388": {
+  "hash": 2659604388,
+  "name": "Radiant Shrapnel",
+  "icon": "/common/destiny2_content/icons/8abd6d007f5a6a53e85202fddbb0fbb7.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896825
+  ]
+ },
+ "2659604390": {
+  "hash": 2659604390,
+  "name": "Elemental Overdrive",
+  "icon": "/common/destiny2_content/icons/08d63e99efb583e4d0d13058a7ed63f4.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896827
+  ]
+ },
+ "2659604391": {
+  "hash": 2659604391,
+  "name": "Shieldcrush",
+  "icon": "/common/destiny2_content/icons/fdd095c3fee6fff410f09a57fe5c9f0e.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1988896826,
+   3371855261
   ]
  },
  "2661180600": {
@@ -30288,6 +31178,91 @@
    3833900256
   ]
  },
+ "3116632768": {
+  "hash": 3116632768,
+  "name": "Energy Diffusion Substrate",
+  "icon": "/common/destiny2_content/icons/2be15755a79c3795e2cca85341c8db62.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2339816967
+  ]
+ },
+ "3116632769": {
+  "hash": 3116632769,
+  "name": "Creeping Chill",
+  "icon": "/common/destiny2_content/icons/a0719ca991cc7c5b3029c36f5b7db153.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4192675786
+  ]
+ },
+ "3116632771": {
+  "hash": 3116632771,
+  "name": "Elemental Siphon",
+  "icon": "/common/destiny2_content/icons/729357078b7e324467add99816bfda4b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4192675784
+  ]
+ },
+ "3116632772": {
+  "hash": 3116632772,
+  "name": "Incendiary Rifle Rounds",
+  "icon": "/common/destiny2_content/icons/7228bff6dcfbd5dbcc9e8da4675ef5c8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4192675791
+  ]
+ },
+ "3116632773": {
+  "hash": 3116632773,
+  "name": "Sustained Fire",
+  "icon": "/common/destiny2_content/icons/3485c4751f37951002170d05c4468a87.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4192675790
+  ]
+ },
+ "3116632774": {
+  "hash": 3116632774,
+  "name": "Press The Advantage",
+  "icon": "/common/destiny2_content/icons/e79751de6d62c4820278fd3f0b833b0b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   4192675789
+  ]
+ },
+ "3116632775": {
+  "hash": 3116632775,
+  "name": "Threaded Blast",
+  "icon": "/common/destiny2_content/icons/cf8900efe93c42bf29234f431d9a6628.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1093081831,
+   4192675788
+  ]
+ },
  "3117514172": {
   "hash": 3117514172,
   "name": "Stormbringer",
@@ -30300,6 +31275,93 @@
   "plugCategoryHash": 7906839,
   "sandboxPerkHashes": [
    2401685184
+  ]
+ },
+ "3117519992": {
+  "hash": 3117519992,
+  "name": "Old God's Rite",
+  "icon": "/common/destiny2_content/icons/6a2f2cd24049470e18ff5aaf2bc44bd0.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2361025922,
+   2612719897
+  ]
+ },
+ "3117519993": {
+  "hash": 3117519993,
+  "name": "Arc Compounding",
+  "icon": "/common/destiny2_content/icons/841ae372a0f1df1351b111938b01aa7a.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2612719896
+  ]
+ },
+ "3117519994": {
+  "hash": 3117519994,
+  "name": "Kinetic Impacts",
+  "icon": "/common/destiny2_content/icons/653848407ebd720e0b01bcb5b3a02375.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   35992458,
+   2612719899
+  ]
+ },
+ "3117519995": {
+  "hash": 3117519995,
+  "name": "Served Cold",
+  "icon": "/common/destiny2_content/icons/52398f36d77016797d4a5aab9f51491e.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2264444349,
+   2612719898
+  ]
+ },
+ "3117519996": {
+  "hash": 3117519996,
+  "name": "Conductive Cosmic Crystal",
+  "icon": "/common/destiny2_content/icons/e8476be17d4b1c2b6cc9569076b39436.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2612719901
+  ]
+ },
+ "3117519997": {
+  "hash": 3117519997,
+  "name": "Supernova",
+  "icon": "/common/destiny2_content/icons/815e319a7dd9b8675619aa2f515f03b8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2612719900
+  ]
+ },
+ "3117519998": {
+  "hash": 3117519998,
+  "name": "Brain Freeze",
+  "icon": "/common/destiny2_content/icons/a4530082e61b74247bffbb0a0b36f81d.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2612719903
   ]
  },
  "3118144663": {
@@ -30581,6 +31643,78 @@
   "inGameDescription": "SUROS lightweight red-dot sight. Short zoom. \n  •  Increases handling speed\n  •  Increases range",
   "definitionType": "DestinyInventoryItemDefinition",
   "plugCategoryHash": 2619833294
+ },
+ "3153265448": {
+  "hash": 3153265448,
+  "name": "Frost Renewal",
+  "icon": "/common/destiny2_content/icons/f0a3adfaf8d6c88df24a35f38b3968d2.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1916452733
+  ]
+ },
+ "3153265449": {
+  "hash": 3153265449,
+  "name": "Elemental Benevolence",
+  "icon": "/common/destiny2_content/icons/17c1fe9ffd2c624a32b2a82c28eaa124.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1916452732
+  ]
+ },
+ "3153265450": {
+  "hash": 3153265450,
+  "name": "Fever and Chill",
+  "icon": "/common/destiny2_content/icons/8b19ceba1b2b7a5453de5198a2ca8a97.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1916452735
+  ]
+ },
+ "3153265452": {
+  "hash": 3153265452,
+  "name": "Semi-Auto Striker",
+  "icon": "/common/destiny2_content/icons/b65af53611708b2ed9d6a6d9b079fb5b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1916452729
+  ]
+ },
+ "3153265453": {
+  "hash": 3153265453,
+  "name": "Pack Tactics",
+  "icon": "/common/destiny2_content/icons/b912d5f9bba66cc24c2c282d768c6061.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1916452728
+  ]
+ },
+ "3153265454": {
+  "hash": 3153265454,
+  "name": "Refresh Threads",
+  "icon": "/common/destiny2_content/icons/d17dfad7a1475ae53527c9a208f19928.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1916452731
+  ]
  },
  "3156458303": {
   "hash": 3156458303,
@@ -32811,6 +33945,18 @@
    3085460626
   ]
  },
+ "3416218761": {
+  "hash": 3416218761,
+  "name": "Arm's Reach",
+  "icon": "/common/destiny2_content/icons/b577dfc78b4c816d425f69a6f214e18c.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 125494331,
+  "sandboxPerkHashes": [
+   335526224
+  ]
+ },
  "3416609154": {
   "hash": 3416609154,
   "name": "To the Pain",
@@ -33207,6 +34353,18 @@
    4033988045
   ]
  },
+ "3455459001": {
+  "hash": 3455459001,
+  "name": "Brimming with Exhaustion",
+  "icon": "/common/destiny2_content/icons/40899282d9795c1ee095a454329dc522.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2140235634,
+  "sandboxPerkHashes": [
+   602921650
+  ]
+ },
  "3456250548": {
   "hash": 3456250548,
   "name": "Stasis Resistance",
@@ -33334,6 +34492,90 @@
   "sandboxPerkHashes": [
    1727533409,
    3469836202
+  ]
+ },
+ "3459646240": {
+  "hash": 3459646240,
+  "name": "Cauterized Darkness",
+  "icon": "/common/destiny2_content/icons/e1eb1a3e3bf6057643a9b52dd36d7cf0.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115885
+  ]
+ },
+ "3459646241": {
+  "hash": 3459646241,
+  "name": "Elemental Daze",
+  "icon": "/common/destiny2_content/icons/c9c223a63575ed646de09b28bf8e9297.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115884
+  ]
+ },
+ "3459646243": {
+  "hash": 3459646243,
+  "name": "Threaded Blast",
+  "icon": "/common/destiny2_content/icons/1857757ec95e15d5e42311e647f86163.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115886
+  ]
+ },
+ "3459646244": {
+  "hash": 3459646244,
+  "name": "That Fresh Bullets Smell",
+  "icon": "/common/destiny2_content/icons/6c3ed1334ca597eb7c4a3efeca50d172.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115881
+  ]
+ },
+ "3459646245": {
+  "hash": 3459646245,
+  "name": "Energy Acceleration",
+  "icon": "/common/destiny2_content/icons/7b7148c2dbb084f5ce94262022ff9c21.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115880
+  ]
+ },
+ "3459646246": {
+  "hash": 3459646246,
+  "name": "Shoulder to Shoulder",
+  "icon": "/common/destiny2_content/icons/50d5aacb8e5ea334f20e6effb16c669d.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115883
+  ]
+ },
+ "3459646247": {
+  "hash": 3459646247,
+  "name": "Elemental Coalescence",
+  "icon": "/common/destiny2_content/icons/b84ec3e24f1cb8931885b69f18d31ce8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3593115882
   ]
  },
  "3461249873": {
@@ -34088,6 +35330,42 @@
    2795928003
   ]
  },
+ "3547711346": {
+  "hash": 3547711346,
+  "name": "Wished into Being",
+  "icon": "/common/destiny2_content/icons/f1fac794534049a58e51b0511bfc2ca5.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1427569703
+  ]
+ },
+ "3547711348": {
+  "hash": 3547711348,
+  "name": "Heart of the Flame",
+  "icon": "/common/destiny2_content/icons/384727d91fc52e44109ef4544e80e191.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1427569697
+  ]
+ },
+ "3547711349": {
+  "hash": 3547711349,
+  "name": "Torch",
+  "icon": "/common/destiny2_content/icons/e438774c2bfe24507bb789adc8855ee1.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1427569696
+  ]
+ },
  "3550545621": {
   "hash": 3550545621,
   "name": "Stunloader",
@@ -34422,6 +35700,94 @@
   "sandboxPerkHashes": [
    492132395,
    2511784315
+  ]
+ },
+ "3585856464": {
+  "hash": 3585856464,
+  "name": "Unraveling Orbs",
+  "icon": "/common/destiny2_content/icons/14a1ddccf719d767162b94f3ff81db23.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3316230037
+  ]
+ },
+ "3585856465": {
+  "hash": 3585856465,
+  "name": "Photonic Flare",
+  "icon": "/common/destiny2_content/icons/888d22f5f20d5e4c5b7e9d3bdb15384b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1704472354
+  ]
+ },
+ "3585856466": {
+  "hash": 3585856466,
+  "name": "Elemental Siphon",
+  "icon": "/common/destiny2_content/icons/cdbd8fb13483ef3c287727d88f53a5e0.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   789426699,
+   1704472353
+  ]
+ },
+ "3585856467": {
+  "hash": 3585856467,
+  "name": "Perpetual Destruction",
+  "icon": "/common/destiny2_content/icons/7f676b258c7d0f54be3c2fc9a20678e8.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1704472352
+  ]
+ },
+ "3585856469": {
+  "hash": 3585856469,
+  "name": "Hold the Line",
+  "icon": "/common/destiny2_content/icons/27a2a50104033d0b152175a117b74645.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1704472358,
+   1854952225
+  ]
+ },
+ "3585856470": {
+  "hash": 3585856470,
+  "name": "Dielectric",
+  "icon": "/common/destiny2_content/icons/2ba8a6fb47d9a36d8e5651bad5a86752.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1704472357
+  ]
+ },
+ "3585856471": {
+  "hash": 3585856471,
+  "name": "Volatile Marksman",
+  "icon": "/common/destiny2_content/icons/cc6ea0a9b8288f4483e6eeed678369fe.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1797647524,
+   3316230035,
+   3721446359
   ]
  },
  "3590359704": {
@@ -35504,6 +36870,18 @@
   "plugCategoryHash": 3481777685,
   "sandboxPerkHashes": [
    899518185
+  ]
+ },
+ "3682741808": {
+  "hash": 3682741808,
+  "name": "Benevolent Overflow",
+  "icon": "/common/destiny2_content/icons/c3495dd2d370de4a84f46377bfc27c93.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "This mod's perks are only active in the \"Crota's End\" raid.\n\nMultiple copies of this mod stack and improve its effects.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2140235634,
+  "sandboxPerkHashes": [
+   1537859289
   ]
  },
  "3683811620": {
@@ -38624,6 +40002,95 @@
    2917776374
   ]
  },
+ "4037132128": {
+  "hash": 4037132128,
+  "name": "Wind Chill",
+  "icon": "/common/destiny2_content/icons/608b9c7dab2343690ad2a3090ef048d3.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3097906009,
+   3277949295
+  ]
+ },
+ "4037132130": {
+  "hash": 4037132130,
+  "name": "Total Carnage",
+  "icon": "/common/destiny2_content/icons/3645b62e3dbf97f12a6dac5b7ed52549.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3097906011
+  ]
+ },
+ "4037132131": {
+  "hash": 4037132131,
+  "name": "Crystalline Converter",
+  "icon": "/common/destiny2_content/icons/b62c35fd04b0295070bb26b99e2c31f1.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2669880862,
+   3097906010
+  ]
+ },
+ "4037132132": {
+  "hash": 4037132132,
+  "name": "Trace Evidence",
+  "icon": "/common/destiny2_content/icons/9b81cc337afb3946688155fdc9a626b2.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   2996687323,
+   3097906013
+  ]
+ },
+ "4037132133": {
+  "hash": 4037132133,
+  "name": "Power from Pain",
+  "icon": "/common/destiny2_content/icons/b59af0e3a3880873b9055c3e0697b216.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1724012236,
+   3097906012
+  ]
+ },
+ "4037132134": {
+  "hash": 4037132134,
+  "name": "Killing Breeze",
+  "icon": "/common/destiny2_content/icons/af8f4f997357ffa1efd9dbc90935bf0b.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   35992461
+  ]
+ },
+ "4037132135": {
+  "hash": 4037132135,
+  "name": "The Thick of It",
+  "icon": "/common/destiny2_content/icons/c36d351fbde141013fcf806a23ac04a6.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3097906014,
+   3109140474
+  ]
+ },
  "4039026690": {
   "hash": 4039026690,
   "name": "Distribution",
@@ -38782,6 +40249,18 @@
   "enhancedHash": 859780267,
   "sandboxPerkHashes": [
    1314569399
+  ]
+ },
+ "4050859269": {
+  "hash": 4050859269,
+  "name": "High-Tier Elimination",
+  "icon": "/common/destiny2_content/icons/e6d6c05a7a9ea8a021546cffb6f5d7e7.png",
+  "categoryId": "armor-mod-activity",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 125494331,
+  "sandboxPerkHashes": [
+   3214090496
   ]
  },
  "4051767608": {
@@ -40747,6 +42226,91 @@
   "baseHash": 4139916815,
   "sandboxPerkHashes": [
    3972015991
+  ]
+ },
+ "4232817857": {
+  "hash": 4232817857,
+  "name": "Strand Soldier",
+  "icon": "/common/destiny2_content/icons/6c0a55f052695864d195376f21a0fc0c.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1602976880
+  ]
+ },
+ "4232817858": {
+  "hash": 4232817858,
+  "name": "Suppressing Glaive",
+  "icon": "/common/destiny2_content/icons/5f2ab7afbfd950990b263ab0020b5c14.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1040975043
+  ]
+ },
+ "4232817859": {
+  "hash": 4232817859,
+  "name": "Protective Breach",
+  "icon": "/common/destiny2_content/icons/0fd65c61c83cbaafaebeb0a03a0f9456.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1602976882
+  ]
+ },
+ "4232817860": {
+  "hash": 4232817860,
+  "name": "Counter Charge",
+  "icon": "/common/destiny2_content/icons/e0c34da78b75368ee1c50926f895ab1a.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1602976885
+  ]
+ },
+ "4232817861": {
+  "hash": 4232817861,
+  "name": "Bricks from Beyond",
+  "icon": "/common/destiny2_content/icons/d5eb9b63bbb4672a9adfec452c1c3d5d.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   3013157001
+  ]
+ },
+ "4232817862": {
+  "hash": 4232817862,
+  "name": "Overload Grenades",
+  "icon": "/common/destiny2_content/icons/f9d64a247c90884cce173b29d28cff19.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1523819442,
+   2648846626
+  ]
+ },
+ "4232817863": {
+  "hash": 4232817863,
+  "name": "Targeting Autoloader",
+  "icon": "/common/destiny2_content/icons/af01d655f6082ad2c9eb3ee81b77effa.png",
+  "categoryId": "armor-mod-seasonal",
+  "inGameDescription": "",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 3878350949,
+  "sandboxPerkHashes": [
+   1244576979
   ]
  },
  "4234468055": {
