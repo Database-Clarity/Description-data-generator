@@ -5,6 +5,11 @@ import { PerkData } from '../main.js'
 import { SocketCategoryEnums } from '../utils/enums.js'
 import { getAllFromSocket } from '../utils/getAllFromSocket.js'
 
+/** Raid and seasonal-activity mods share plug categories, so a future raid needs no name rule. */
+export const isActivityMod = (mod: InventoryItem | undefined) =>
+  Boolean(mod?.plug?.plugCategoryIdentifier?.match(/^enhancements\.(raid_|season_outlaw|season_maverick)/)) &&
+  mod?.displayProperties.name !== 'Empty Mod Socket'
+
 export const armorMods = (
   inventoryItems: InventoryItems,
   plugSets: PlugSets,
@@ -58,11 +63,7 @@ export const armorMods = (
           addData(armor, mod, 'Armor Mod Combat')
           return
         }
-        if (
-          mod?.itemTypeDisplayName?.match(
-            /( Raid|Nightmare|King's Fall|Vault of Glass|Root of Nightmares)( Armor)? Mod$/
-          )
-        ) {
+        if (isActivityMod(mod)) {
           addData(armor, mod, 'Armor Mod Activity')
           return
         }

@@ -11,6 +11,8 @@ import { derivePairings, isEnhanced, weaponCategory } from '../generator/v2/pair
 import { associateSandbox } from '../generator/v2/sandbox.js'
 import { aliasProposals } from '../generator/v2/proposals.js'
 import { groupFrames } from '../generator/v2/frames.js'
+import { armorMods } from '../generator/filters/armorMod.js'
+import { artifactMods, isCurrentArtifact } from '../generator/filters/artifactMod.js'
 
 function plug(hash, name, type = 'Trait', tierType = 2) {
   return {
@@ -703,4 +705,56 @@ test('generation pairs cross-weapon legendary frames to the existing frame canon
     process.chdir(cwd)
     fs.rmSync(dir, {recursive:true})
   }
+})
+
+function mod(hash, name, type, plugCategoryIdentifier, tierType = 5) {
+  return { ...plug(hash, name, type, tierType), plug: { plugCategoryHash: 30, plugCategoryIdentifier } }
+}
+
+test('activity armor mods classify by plug category, so a new raid needs no name rule', () => {
+  const inventory = byHash(
+    mod(1, 'Old Raid Mod', 'Deep Stone Crypt Raid Mod', 'enhancements.raid_descent'),
+    mod(2, 'Future Raid Mod', 'Unheard-Of Armor Mod', 'enhancements.raid_v999'),
+    mod(3, 'Empty Mod Socket', 'Unheard-Of Armor Mod', 'enhancements.raid_v999'),
+    mod(4, 'Hands-On', 'General Armor Mod', 'enhancements.v2_general'),
+    mod(5, 'Seasonal Activity Mod', 'Activity Mod', 'enhancements.season_outlaw'),
+  )
+  const armor = { hash: 100, itemTypeDisplayName: 'Helmet', sockets: {
+    socketCategories: [{ socketCategoryHash: 590099826, socketIndexes: [0] }],
+    socketEntries: [socket(1, 2, 3, 4, 5)],
+  } }
+  const types = Object.fromEntries(Object.values(armorMods(inventory, {}, [armor])).map(perk => [perk.hash, perk.type]))
+  assert.deepEqual(types, {
+    1: 'Armor Mod Activity', 2: 'Armor Mod Activity', 4: 'Armor Mod General', 5: 'Armor Mod Activity',
+  })
+})
+
+test('current artifacts are the socketed Artifact items; their perks are listed once beside preview-only perks', () => {
+  const owners = [23349941, 1014202826, 1504442987, 3518286241, 2180638678, 1770364095, 3821685388]
+  const perk = (hash, name) => mod(hash, name, 'Artifact Perk', 'artifact_perks')
+  const artifacts = owners.map((hash, index) => ({
+    hash, itemTypeDisplayName: 'Artifact', inventory: { tierType: 6 },
+    sockets: { socketEntries: [
+      { singleInitialItemHash: 0, reusablePlugItems: [], reusablePlugSetHash: 900 + index },
+      { singleInitialItemHash: 500, reusablePlugItems: [{ plugItemHash: 500 }], randomizedPlugSetHash: 999 },
+    ] },
+  }))
+  const old = { hash: 7, itemTypeDisplayName: 'Artifact', inventory: { tierType: 6 },
+    preview: { derivedItemCategories: [{ items: [{ itemHash: 600 }, { itemHash: 601 }] }] } }
+  const unsocketed = { hash: 8, itemTypeDisplayName: 'Artifact', inventory: { tierType: 6 }, sockets: { socketEntries: [] } }
+  const inventory = byHash(...artifacts, old, unsocketed,
+    ...owners.map((_, index) => perk(1000 + index, `Perk ${index}`)), perk(500, 'Shared Perk'),
+    perk(600, 'Old Perk'), plug(601, 'Old Common Plug', 'Artifact Perk', 2), plug(700, 'Not A Perk', 'Artifact Mod', 5),
+    { hash: 0, displayProperties: { name: '' } })
+  const plugSets = {
+    ...Object.fromEntries(owners.map((_, index) => [900 + index, { reusablePlugItems: [{ plugItemHash: 1000 + index }, { plugItemHash: 700 }] }])),
+    999: { reusablePlugItems: [{ plugItemHash: 500 }] },
+  }
+  const items = Object.values(inventory).filter(item => item.itemTypeDisplayName === 'Artifact')
+  assert.deepEqual(items.filter(isCurrentArtifact).map(item => item.hash).sort(), [...owners].sort())
+  const data = artifactMods(inventory, plugSets, items)
+  assert.deepEqual(Object.keys(data).map(Number).sort((a, b) => a - b),
+    [500, 600, ...owners.map((_, index) => 1000 + index)])
+  assert.ok(Object.values(data).every(perk => perk.type === 'Armor Mod Seasonal'))
+  assert.deepEqual([...data[500].appearsOn], ['Artifact'])
 })

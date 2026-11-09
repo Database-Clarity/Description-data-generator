@@ -52,7 +52,7 @@ export function createRawData(inventoryItems: InventoryItems, plugSets: PlugSets
   const armorModList = armorMods(inventoryItems, plugSets, legendaryArmorArr)
 
   const exoticArmorList = exoticArmors(inventoryItems, plugSets, exoticArmorArr)
-  const artifactModList = artifactMods(inventoryItems, artifactArr)
+  const artifactModList = artifactMods(inventoryItems, plugSets, artifactArr)
   const subclassList = subclass(inventoryItems, plugSets, subclassArr)
 
   const ghostList = ghostMods(inventoryItems, plugSets, ghostArr)

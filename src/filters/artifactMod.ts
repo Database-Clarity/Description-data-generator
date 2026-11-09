@@ -1,9 +1,21 @@
 import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems } from '@icemourne/tool-box'
+import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
 
 import { PerkData } from '../main.js'
+import { getAllFromSocket } from '../utils/getAllFromSocket.js'
 
-export const artifactMods = (inventoryItems: InventoryItems, inventoryItemArtifact: InventoryItem[]) => {
+/** Current, equippable artifacts are the "Artifact" items with sockets; earlier ones survive only as unsocketed definitions. */
+export const isCurrentArtifact = (item: InventoryItem) =>
+  item.itemTypeDisplayName === 'Artifact' && Boolean(item.sockets?.socketEntries?.length)
+
+export const isArtifactPerk = (item: InventoryItem | undefined) =>
+  item?.plug?.plugCategoryIdentifier === 'artifact_perks' && item.itemTypeDisplayName === 'Artifact Perk'
+
+export const artifactMods = (
+  inventoryItems: InventoryItems,
+  plugSets: PlugSets,
+  inventoryItemArtifact: InventoryItem[]
+) => {
   const data: { [key: string]: PerkData } = {}
 
   const addData = (artifact: InventoryItem, perk: InventoryItem, type: PerkTypes) => {
@@ -31,6 +43,14 @@ export const artifactMods = (inventoryItems: InventoryItems, inventoryItemArtifa
         if (inventoryItems[modHash]?.inventory.tierType !== 5) return
         addData(artifact, inventoryItems[modHash], 'Armor Mod Seasonal')
       })
+
+    if (!isCurrentArtifact(artifact)) return
+    artifact.sockets?.socketEntries.forEach((socketEntry) => {
+      getAllFromSocket(inventoryItems, plugSets, socketEntry).forEach((perkHash) => {
+        const perk = inventoryItems[perkHash]
+        if (isArtifactPerk(perk)) addData(artifact, perk, 'Armor Mod Seasonal')
+      })
+    })
   })
 
   return data
