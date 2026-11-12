@@ -44,7 +44,8 @@ function assertNoStatData(value) {
 
 test('all generated v2 outputs exclude stat data and weapon formula files', () => {
   const directory = new URL('../templates/v2/', import.meta.url)
-  assert.deepEqual(fs.readdirSync(directory).filter(name => name !== 'aliasProposals.json').sort(), [
+  // The refresh workflow adds the new worklist after the source-only merge.
+  assert.deepEqual(fs.readdirSync(directory).filter(name => !['aliasProposals.json', 'sandboxConflicts.json'].includes(name)).sort(), [
     'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
   ])
   for (const name of fs.readdirSync(directory)) {
@@ -189,12 +190,30 @@ test('sandbox references are deduplicated aliases; shared ownership and missing 
   inventory[2].perks = [{ perkHash: 100 }]
   const items = Object.fromEntries([2, 1].map(hash => [hash, { hash, definitionType: 'DestinyInventoryItemDefinition' }]))
   const result = associateSandbox(items, inventory, { 100: { hash: 100 } })
-  assert.deepEqual(result.aliases, { 100: 1 })
+  assert.deepEqual(result.aliases, {})
+  assert.deepEqual(result.conflicts, { 100: [1, 2] })
+  assert.deepEqual(result.report.ambiguous, [{ sandboxPerkHash: 100, itemHashes: [1, 2] }])
+  assert.equal(result.report.aliases, 0)
   assert.deepEqual(items[1].sandboxPerkHashes, [100, 999])
   assert.equal(items[1].autoAssociated, undefined)
   assert.equal(result.report.ambiguous.length, 1)
   assert.deepEqual(result.report.missingDefinitions, [999])
   assert.equal(Object.keys(items).length, 2)
+})
+
+test('sandbox candidates that share a generated frame identity keep the existing alias owner', () => {
+  const inventory = byHash(plug(1, 'Frame', 'Intrinsic'), plug(2, ' Frame ', 'Intrinsic'))
+  for (const definition of Object.values(inventory)) definition.perks = [{ perkHash: 100 }]
+  const items = Object.fromEntries([2, 1].map(hash => [hash, {
+    hash, name: inventory[hash].displayProperties.name, categoryId: 'weapon-frame',
+    definitionType: 'DestinyInventoryItemDefinition', inGameDescription: '',
+  }]))
+  const result = associateSandbox(items, inventory, { 100: { hash: 100 } }, groupFrames(items).aliases)
+  assert.deepEqual(result.aliases, { 100: 1 })
+  assert.deepEqual(result.conflicts, {})
+  assert.deepEqual(result.report.ambiguous, [{ sandboxPerkHash: 100, itemHashes: [1, 2], selected: 1 }])
+  assert.deepEqual(associateSandbox(Object.fromEntries(Object.entries(items).reverse()), inventory,
+    { 100: { hash: 100 } }, groupFrames(items).aliases), result)
 })
 
 test('sandbox and inventory hashes can legitimately be identical, but cannot alias another tooltip', () => {
@@ -217,7 +236,8 @@ test('end-to-end v2 writes preserve legacy hashes/categories and propose owner-s
   inventory[20].displayProperties = { name: 'First Exotic', description: '' }
   inventory[30] = weapon(30, [4])
   inventory[30].displayProperties = { name: 'Second Exotic', description: '' }
-  inventory[1].perks = [{ perkHash: 100 }]
+  inventory[1].perks = [{ perkHash: 100 }, { perkHash: 101 }]
+  inventory[4].perks = [{ perkHash: 101 }]
   inventory[1].stats = { stats: { 10: { value: 42 } } }
   inventory[1].investmentStats = [{ statTypeHash: 10, value: 42 }]
   const legacy = {
@@ -231,7 +251,7 @@ test('end-to-end v2 writes preserve legacy hashes/categories and propose owner-s
   legacy[1].weaponFormula = { damage: '42' }
   const manifest = {
     inventoryItem: inventory, plugSet: {}, legacy, extraTypes: {},
-    sandboxPerk: { 100: { hash: 100 } },
+    sandboxPerk: { 100: { hash: 100 }, 101: { hash: 101 } },
     trait: {
       200: { hash: 200, displayHint: 'keyword', displayProperties: { name: 'Scorch', description: 'Burn' } },
       201: { hash: 201, displayHint: 'other', displayProperties: { name: 'Other', description: 'Not a verb' } },
@@ -269,9 +289,11 @@ test('end-to-end v2 writes preserve legacy hashes/categories and propose owner-s
     assert.equal(items[201], undefined)
     assert.equal(items[100], undefined)
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join('templates', 'v2', 'sandboxAliases.json'))), { 100: 1 })
+    assert.deepEqual(JSON.parse(fs.readFileSync('templates/v2/sandboxConflicts.json')), { 101: [1, 4] })
+    assert.equal(JSON.parse(fs.readFileSync('templates/v2/aliases.json'))[101], undefined)
     assert.deepEqual(legacy[1].appearsOn, [10])
     assert.deepEqual(fs.readdirSync(path.join('templates', 'v2')).sort(), [
-      'aliasProposals.json', 'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+      'aliasProposals.json', 'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json', 'sandboxConflicts.json',
     ])
     for (const name of fs.readdirSync(path.join('templates', 'v2'))) {
       if (name !== 'aliasProposals.json') assertNoStatData(JSON.parse(fs.readFileSync(path.join('templates', 'v2', name))))

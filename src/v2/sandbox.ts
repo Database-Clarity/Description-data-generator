@@ -1,8 +1,9 @@
 import { InventoryItems } from '@icemourne/tool-box'
 import { DisplayDefinition, Item } from './types.js'
+import { Alias } from './frames.js'
 
 export function associateSandbox(items: Record<string, Item>, inventory: InventoryItems,
-  definitions: Record<string, DisplayDefinition>) {
+  definitions: Record<string, DisplayDefinition>, canonicalAliases: Record<string, Alias> = {}) {
   const owners = new Map<number, number[]>()
   const missingDefinitions = new Set<number>()
   for (const item of Object.values(items)) {
@@ -22,19 +23,28 @@ export function associateSandbox(items: Record<string, Item>, inventory: Invento
     }
   }
   const aliases: Record<string, number> = {}
-  const ambiguous: { sandboxPerkHash: number; itemHashes: number[]; selected: number }[] = []
+  const conflicts: Record<string, number[]> = {}
+  const ambiguous: { sandboxPerkHash: number; itemHashes: number[]; selected?: number }[] = []
   const rank = (hash: number) => inventory[hash].plug ? 0 : 1
   for (const [hash, candidates] of owners) {
     candidates.sort((a, b) => rank(a) - rank(b) || a - b)
+    // Frame/name grouping, rather than raw item count, defines tooltip identity.
+    const identities = new Set(candidates.map(candidate => canonicalAliases[candidate]?.to ?? candidate))
+    if (identities.size > 1) {
+      conflicts[hash] = [...candidates].sort((a, b) => a - b)
+      ambiguous.push({ sandboxPerkHash: hash, itemHashes: conflicts[hash] })
+      continue
+    }
     const owner = candidates[0]
     if (items[hash] && hash !== owner) throw new Error(`Sandbox alias ${hash} collides with an inventory/trait tooltip`)
     aliases[hash] = owner
     if (candidates.length > 1) ambiguous.push({ sandboxPerkHash: hash, itemHashes: candidates, selected: owner })
   }
   if (missingDefinitions.size) console.warn(`v2: ${missingDefinitions.size} referenced sandbox definitions missing; see coverage.json`)
-  if (ambiguous.length) console.warn(`v2: ${ambiguous.length} shared sandbox hashes; deterministic alias owners recorded in coverage.json`)
+  if (ambiguous.length) console.warn(`v2: ${ambiguous.length} shared sandbox hashes; ${Object.keys(conflicts).length} conflicts have no alias; see coverage.json`)
   return {
     aliases,
+    conflicts,
     report: {
       aliases: Object.keys(aliases).length,
       inventoryItemsWithPerks: Object.values(inventory).filter(item => item.perks?.some(perk => perk.perkHash)).length,

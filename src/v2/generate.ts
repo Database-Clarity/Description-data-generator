@@ -57,8 +57,8 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   }
   const proposalAliases = (() => {
     const previewItems = structuredClone(items)
-    const sandbox = associateSandbox(previewItems, manifest.inventoryItem, manifest.sandboxPerk)
     const frames = groupFrames(previewItems)
+    const sandbox = associateSandbox(previewItems, manifest.inventoryItem, manifest.sandboxPerk, frames.aliases)
     const aliases: Record<string, Alias> = { ...frames.aliases }
     for (const [hash, owner] of Object.entries(sandbox.aliases)) {
       if (Number(hash) === owner) continue
@@ -99,8 +99,8 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   }
   const realEnhancedPairs = Object.values(items).filter(item => item.baseHash !== undefined).length
   const nonEnhancedDimPairs = Object.values(items).filter(item => item.dimBaseHash !== undefined).length
-  const sandbox = associateSandbox(items, manifest.inventoryItem, manifest.sandboxPerk)
   const frames = groupFrames(items)
+  const sandbox = associateSandbox(items, manifest.inventoryItem, manifest.sandboxPerk, frames.aliases)
   const aliases: Record<string, Alias> = { ...frames.aliases }
   for (const [hash, owner] of Object.entries(sandbox.aliases)) {
     if (Number(hash) === owner) continue
@@ -116,6 +116,7 @@ export function generateV2(manifest: Manifest, dim: Record<string, number>, vers
   })))
   write('items', items)
   write('sandboxAliases', sandbox.aliases)
+  write('sandboxConflicts', sandbox.conflicts)
   write('aliases', aliases)
   write('coverage', {
     manifestVersion: version,
