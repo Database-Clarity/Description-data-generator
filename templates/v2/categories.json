@@ -10,7 +10,8 @@
   "id": "armor-trait-exotic-class-item",
   "label": "Exotic Class Item Perks",
   "group": "Armor",
-  "order": 11
+  "order": 11,
+  "legacyType": "Exotic Class Item Perk"
  },
  {
   "id": "armor-mod-general",
