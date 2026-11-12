@@ -50,6 +50,6 @@ export interface Category {
   label: string
   group: string
   order: number
-  legacyType?: Exclude<PerkTypes, 'none'> | 'Weapon Trait Origin Enhanced' | 'Weapon Trait Origin Enhanced Exotic' | 'Weapon Perk Enhanced' | 'Weapon Perk Enhanced Exotic' | 'Weapon Mod Enhanced' | 'Weapon Mod Enhanced Exotic'
+  legacyType?: Exclude<PerkTypes, 'none'> | 'Exotic Class Item Perk' | 'Weapon Trait Origin Enhanced' | 'Weapon Trait Origin Enhanced Exotic' | 'Weapon Perk Enhanced' | 'Weapon Perk Enhanced Exotic' | 'Weapon Mod Enhanced' | 'Weapon Mod Enhanced Exotic'
   select(manifest: Manifest): Item[]
 }

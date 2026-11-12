@@ -92,12 +92,12 @@ test('registry maps supported converter types and omits removed exotic placehold
   const converterTypes = fs.readFileSync(
     new URL('../node_modules/@icemourne/description-converter/src/livePerkTypes.d.ts', import.meta.url), 'utf8',
   ).match(/export type LivePerkTypes = ([^;]+);/)[1]
-  const expected = [...converterTypes.matchAll(/'([^']+)'/g)].map(match => match[1]).filter(type => type !== 'Weapon Trait Origin Exotic' && !type.includes('Enhanced Exotic')).sort()
+  const expected = [...converterTypes.matchAll(/'([^']+)'/g)].map(match => match[1]).filter(type => type !== 'Weapon Trait Origin Exotic' && !type.includes('Enhanced Exotic')).concat('Exotic Class Item Perk').sort()
   const legacyCategories = categories.filter(category => category.legacyType !== undefined)
-  assert.equal(legacyCategories.length, 27)
+  assert.equal(legacyCategories.length, 28)
   assert.deepEqual([...new Set(legacyCategories.map(category => category.legacyType))].sort(), expected)
   for (const category of legacyCategories) {
-    if (!category.id.includes('perk-enhanced') && !category.id.includes('origin-enhanced') && !category.id.includes('mod-enhanced')) assert.equal(category.legacyType, category.label)
+    if (!category.id.includes('perk-enhanced') && !category.id.includes('origin-enhanced') && !category.id.includes('mod-enhanced') && category.id !== 'armor-trait-exotic-class-item') assert.equal(category.legacyType, category.label)
   }
   assert.equal(Object.hasOwn(categories.find(category => category.id === 'verbs'), 'legacyType'), false)
 })
@@ -830,7 +830,7 @@ test('exotic class item perks derive signatures from initial sockets, with struc
     assert.equal(item.perkColumn, 'unknown')
   }
   for (const [hash, holder] of [[7, 101], [8, 102], [9, 103]]) assert.deepEqual(items.find(item => item.hash === hash).owners, [holder])
-  assert.equal(Object.hasOwn(category, 'legacyType'), false)
+  assert.equal(category.legacyType, 'Exotic Class Item Perk')
   const split = structuredClone(inventoryItem)
   for (const hash of [2, 4, 6]) split[hash].tooltipNotifications[0].displayStyle = 'second-column'
   const columns = category.select({ inventoryItem: split })

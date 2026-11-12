@@ -11,6 +11,7 @@ const signature = (item: InventoryItem) => item.plug && JSON.stringify([
 
 export default {
   id: 'armor-trait-exotic-class-item', label: 'Exotic Class Item Perks', group: 'Armor', order: 11,
+  legacyType: 'Exotic Class Item Perk',
   select(manifest) {
     const owners = Object.values(manifest.inventoryItem).filter(item =>
       !item.redacted && item.itemType === 2 && item.itemSubType === 30 && item.inventory.tierType === 6)
