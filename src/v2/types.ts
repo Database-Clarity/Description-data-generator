@@ -29,6 +29,8 @@ export interface Item {
   itemName?: string
   owners?: number[]
   ownerNames?: Record<string, string>
+  ownerClasses?: Record<string, number>
+  perkColumn?: number | 'unknown'
   enhancedHash?: number
   enhancedHashes?: number[]
   plugCategoryHash?: number

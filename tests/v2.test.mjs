@@ -81,7 +81,7 @@ test('checked-in shared owner metadata covers the pinned references without inve
 })
 
 test('registry contains supported categories with stable unique IDs/orders', () => {
-  assert.equal(categories.length, 29)
+  assert.equal(categories.length, 30)
   assert.equal(new Set(categories.map(category => category.id)).size, categories.length)
   assert.equal(new Set(categories.map(category => category.order)).size, categories.length)
   assert.equal(categories.some(category => category.id === 'sandbox-perk'), false)
@@ -800,4 +800,42 @@ test('current artifacts are the socketed Artifact items; their perks are listed 
     [500, 600, ...owners.map((_, index) => 1000 + index)])
   assert.ok(Object.values(data).every(perk => perk.type === 'Armor Mod Seasonal'))
   assert.deepEqual([...data[500].appearsOn], ['Artifact'])
+})
+
+test('exotic class item perks derive signatures from initial sockets, with structural owners and unknown columns', () => {
+  const category = categories.find(category => category.id === 'armor-trait-exotic-class-item')
+  const perk = (hash, classType = 3, style = 'perk-info') => ({
+    ...plug(hash, `Unrelated localized label ${hash}`, 'Intrinsic', 6), classType,
+    tooltipNotifications: [{ displayStyle: style, displayString: 'Translated text' }],
+  })
+  const owner = (hash, classType, first, second) => ({
+    hash, classType, itemType: 2, itemSubType: 30, inventory: { tierType: 6 },
+    displayProperties: { name: `Owner ${hash}` },
+    sockets: { socketEntries: [...Array.from({ length: 10 }, () => socket(0)), socket(first), socket(second)] },
+  })
+  const inventoryItem = byHash(perk(1), perk(2), perk(3), perk(4), perk(5), perk(6),
+    perk(7, 0), perk(8, 1), perk(9, 2), { ...perk(11), redacted: true },
+    perk(12, 3, 'unrelated'), { ...perk(13), plug: { plugCategoryHash: 999 } },
+    { ...perk(14), plug: undefined }, owner(101, 0, 1, 2), owner(102, 1, 3, 4), owner(103, 2, 5, 6))
+  // Names, localized notification text, and itemTypeDisplayName are not membership signals.
+  inventoryItem[9].itemTypeDisplayName = 'Translated intrinsic'
+  inventoryItem[10] = { ...perk(10), tooltipNotifications: [] }
+  inventoryItem[104] = { ...owner(104, 0, 12, 12), inventory: { tierType: 5 } }
+  inventoryItem[105] = { ...owner(105, 0, 12, 12), itemSubType: 26 }
+  const items = category.select({ inventoryItem })
+  assert.deepEqual(items.map(item => item.hash), [1, 2, 3, 4, 5, 6, 7, 8, 9])
+  for (const item of items.filter(item => item.hash <= 6)) {
+    assert.deepEqual(item.owners, [101, 102, 103])
+    assert.deepEqual(item.ownerClasses, { 101: 0, 102: 1, 103: 2 })
+    assert.equal(item.perkColumn, 'unknown')
+  }
+  for (const [hash, holder] of [[7, 101], [8, 102], [9, 103]]) assert.deepEqual(items.find(item => item.hash === hash).owners, [holder])
+  assert.equal(Object.hasOwn(category, 'legacyType'), false)
+  const split = structuredClone(inventoryItem)
+  for (const hash of [2, 4, 6]) split[hash].tooltipNotifications[0].displayStyle = 'second-column'
+  const columns = category.select({ inventoryItem: split })
+  assert.equal(columns.find(item => item.hash === 1).perkColumn, 1)
+  assert.equal(columns.find(item => item.hash === 2).perkColumn, 2)
+  delete split[1]
+  assert.throws(() => category.select({ inventoryItem: split }), /Missing class item initial perk/)
 })
