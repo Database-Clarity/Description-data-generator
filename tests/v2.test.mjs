@@ -376,6 +376,27 @@ test('legacyOwner mirrors the legacy generator owner rule', () => {
   assert.equal(legacyOwner('Weapon Perk Exotic', ['Sword']), undefined)
 })
 
+test('exotic armor traits prefer current owners and retain the first current owner on ties', () => {
+  const inventory = byHash(plug(5, 'Old'), plug(6, 'Current'), plug(7, 'Also current'), plug(8, 'Redacted'))
+  inventory[6].collectibleHash = 60
+  inventory[7].collectibleHash = 70
+  inventory[8].collectibleHash = 80
+  inventory[8].redacted = true
+  assert.equal(legacyOwner('Armor Trait Exotic', [5, 6], inventory), 6)
+  assert.equal(legacyOwner('Armor Trait Exotic', [5, 7, 6], inventory), 7)
+  assert.equal(legacyOwner('Armor Trait Exotic', [8, 5, 6], inventory), 6)
+  assert.equal(legacyOwner('Armor Trait Exotic', [5, 8], inventory), 5)
+  assert.equal(legacyOwner('Armor Trait Exotic', [5], inventory), 5)
+  assert.equal(legacyOwner('Weapon Frame Exotic', [5, 6], inventory), undefined)
+  const selected = legacyCategory('armor-trait-exotic', 'Armor Trait Exotic', 'Armor', 1).select({
+    inventoryItem: { ...inventory, 1: plug(1, 'Trait') }, extraTypes: {},
+    legacy: { 1: { hash: 1, type: 'Armor Trait Exotic', appearsOn: [5, 6] } },
+  })[0]
+  assert.equal(selected.itemHash, 6)
+  assert.equal(selected.itemName, 'Current')
+  assert.deepEqual(selected.owners, [5, 6])
+})
+
 test('legacy selection records owner name, shared owners, and fails on a missing owner definition', () => {
   const holder = hash => ({ hash, displayProperties: { name: `Holder ${hash}`, description: '' } })
   const inventory = byHash(plug(1, 'One', 'Intrinsic', 6), plug(2, 'Two', 'Intrinsic', 6),
