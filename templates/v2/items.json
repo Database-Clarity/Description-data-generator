@@ -155,7 +155,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Resist incoming damage while charging your Void grenade with Chaos Accelerant. Charged Void grenades return grenade energy on a hit and apply Weaken.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1906093346,
+  "itemHash": 3261527845,
   "itemName": "Contraverse Hold",
   "owners": [
    1906093346,
@@ -1246,7 +1246,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Moderately increases airborne effectiveness and hip fire mobility, range, and accuracy for weapons that use Primary ammo.\n\nFinal blows with Primary ammo weapons return dodge energy, which can overflow to create additional charges when full.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1702288800,
+  "itemHash": 1709794165,
   "itemName": "Radiant Dance Machines",
   "owners": [
    1702288800,
@@ -1907,7 +1907,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While you have a Stasis Super equipped, rapid Stasis final blows grant Frost Armor. You heal a small amount whenever you gain Frost Armor. Replaces your class ability with a burst of Stasis energy that freezes nearby combatants, slows nearby opponents, and grants you increased Frost Armor.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1467044898,
+  "itemHash": 1734674241,
   "itemName": "Icefall Mantle",
   "owners": [
    1467044898,
@@ -2451,7 +2451,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "All shoulder charge abilities (Seismic Strike, Hammer Strike, or Shield Bash) deal bonus damage when activated in the air. Damaging mini-bosses, Tormentors, or Champions with your shoulder charge refunds your melee. Provides a small benefit to the airborne effectiveness stat of all weapons.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2255796155,
+  "itemHash": 3450721096,
   "itemName": "Peregrine Greaves",
   "owners": [
    2255796155,
@@ -2475,7 +2475,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Powered melee final blows grant invisibility and restore a portion of health and shields. Finishers and final blows against more powerful targets increase the duration of the invisibility and the amount of health and shields restored.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2203146422,
+  "itemHash": 3400283633,
   "itemName": "Assassin's Cowl",
   "owners": [
    2203146422,
@@ -4017,7 +4017,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "You gain an additional Scatter Grenade charge. Enables tracking for Scatter Grenade projectiles. Scatter Grenade final blows create additional Scatter Grenade projectiles.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 300502917,
+  "itemHash": 3982932616,
   "itemName": "Nothing Manacles",
   "owners": [
    300502917,
@@ -4839,7 +4839,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Increases Sidearm airborne effectiveness, ready speed, and reload speed. While you're critically wounded, swapping to a Sidearm reloads it and increases its damage. While this effect is active, Sidearm final blows reload the weapon and extend the effect's duration.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1734144409,
+  "itemHash": 2574019120,
   "itemName": "Mechaneer's Tricksleeves",
   "owners": [
    1734144409,
@@ -5462,7 +5462,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "You gain a second Smoke Bomb charge and have damage resistance while invisible. When you make an ally invisible, they gain damage resistance while invisible and you gain melee energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1935198785,
+  "itemHash": 4255001288,
   "itemName": "Omnioculus",
   "owners": [
    1935198785,
@@ -5885,7 +5885,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Arcbolt Grenades have increased chaining capabilities and jolt targets hit. Damaging combatants with jolt or applying jolt to targets grants additional Arcbolt Grenade energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 903984858,
+  "itemHash": 1803778317,
   "itemName": "Lucky Raspberry",
   "owners": [
    903984858,
@@ -7977,7 +7977,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While your Juggernaut shield is active, you slowly gain Bolt Charge stacks over time and increased weapon ready speed. Sprinting while amplified creates an energizing field behind you that grants close by allies speed boost.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 136355432,
+  "itemHash": 3182840395,
   "itemName": "Mk. 44 Stand Asides",
   "owners": [
    136355432,
@@ -8799,7 +8799,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Increases grenade, melee, and dodge regeneration while sprinting.\n\nGain stacks of Frost Armor while sprinting. When you have Frost Armor, Stasis weapons deal additional damage.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 609852545,
+  "itemHash": 1737050140,
   "itemName": "Fr0st-EE5",
   "owners": [
    609852545,
@@ -8961,7 +8961,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Improves Drengr's Lash and spawns additional projectiles. These projectiles track targets more aggressively, travel farther, and suspend stronger. Gain Woven Mail when you suspend a target.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3637722482,
+  "itemHash": 3849355625,
   "itemName": "Abeyant Leap",
   "owners": [
    3637722482,
@@ -9103,7 +9103,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While you have a [Solar]Solar Super equipped, aiming weapons while you're midair suspends you there for a short time. While this effect is active, you are more resistant to incoming damage and combatants are less accurate. Weapon hits extend this effect's duration, and [Solar]Solar weapon final blows provide Restoration and reload your other weapons from reserves. Provides a large benefit to the airborne effectiveness stat of all weapons.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 370930766,
+  "itemHash": 1179169099,
   "itemName": "Wings of Sacred Dawn",
   "owners": [
    370930766,
@@ -9151,7 +9151,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "[Arc]Arc final blows grant an escalating damage bonus with Arc weapons. While using Fist of Havoc, activating your Super grants an overshield; final blows extend its duration. When it ends, gain a damage bonus to your Arc weapons.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2808156426,
+  "itemHash": 3692827145,
   "itemName": "Eternal Warrior",
   "owners": [
    2808156426,
@@ -10885,7 +10885,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While a Solar Super is equipped, weapon final blows grant class ability energy. Defeating targets with your weapon while standing in a healing rift creates a pulse that grants Radiant to you and nearby allies; an empowering rift instead grants Cure to you and nearby allies. Daybreak final blows grant both effects.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 235591051,
+  "itemHash": 3864952146,
   "itemName": "Promethium Spur",
   "owners": [
    235591051,
@@ -11281,7 +11281,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Rifts periodically release Arc shockwaves. Final blows with these shockwaves create an Arc explosion. While an Arc Super is equipped, the shockwaves and subsequent explosions blind nearby targets. Rift energy recharges faster when you are surrounded by targets.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1725917554,
+  "itemHash": 3139221735,
   "itemName": "Vesper of Radius",
   "owners": [
    1725917554,
@@ -11401,7 +11401,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "When you're surrounded, gain increased melee and Super damage, as well as improved weapon handling and reload speed.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 241462142,
+  "itemHash": 2002759681,
   "itemName": "Synthoceps",
   "owners": [
    241462142,
@@ -11424,7 +11424,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Melee hits grant Armor Charge, and you take less melee damage from combatants while you have Armor Charge. Taking melee damage causes you to emit a burst of damaging Arc energy that jolts targets, consuming your Armor Charge and dealing more damage based on the number of stacks consumed.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2563444729,
+  "itemHash": 3649264718,
   "itemName": "ACD/0 Feedback Fence",
   "owners": [
    2563444729,
@@ -11448,7 +11448,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Defeating targets with Void damage has a chance to grant an escalating bonus to damage with Void weapons. Defeating targets with Void melee grants Super energy.\n\nWhile Sentinel Shield is active, defeating targets with melee attacks recharges Shield Throw, which extends your Super on hitting a target.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 241462141,
+  "itemHash": 2002759682,
   "itemName": "Doom Fang Pauldron",
   "owners": [
    241462141,
@@ -11502,7 +11502,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While you have a Solar Super equipped, casting your Barricade or becoming critically wounded with full class ability energy creates a Sunspot at your location.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3316517958,
+  "itemHash": 4258262391,
   "itemName": "Loreley Splendor Helm",
   "owners": [
    3316517958,
@@ -13529,7 +13529,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Weapons of Light persists after exiting Ward of Dawn. While Weapons of Light is active, final blows or sustained damage grant stacks of The Saint; Void and Kinetic damage sources also trigger a suppressing burst.\n \nPicking up Ward of Dawn consumes all stacks of The Saint and extends its duration based on how many stacks were consumed.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 106575079,
+  "itemHash": 943320520,
   "itemName": "Helm of Saint-14",
   "owners": [
    106575079,
@@ -13597,7 +13597,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While using a Void Super, casting an Empowering Rift will grant you Devour. Damage dealt by you and your allies from within your Empowering Rift will [Disruption] disrupt combatants. Defeating a target while Devour is active grants you class ability energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 511888814,
+  "itemHash": 4029987901,
   "itemName": "Secant Filaments",
   "owners": [
    511888814,
@@ -13709,7 +13709,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Gain an additional Frenzied Blade charge. Frenzied Blade and Flechette Storm briefly increase their damage with each strike. Pulses from your Banner of War return melee energy based on the number of allies healed.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3717431477,
+  "itemHash": 4157369212,
   "itemName": "Wishful Ignorance",
   "owners": [
    3717431477,
@@ -13819,7 +13819,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Ionic traces you create move faster and grant you additional ability energy. Nearby allies also gain ability energy when you collect an ionic trace.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1849149215,
+  "itemHash": 3781549120,
   "itemName": "Fallen Sunstar",
   "owners": [
    1849149215,
@@ -14327,7 +14327,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Gain a second charge of your Shield Throw melee. Your Shield Throws now weaken targets, create a Void Breach on final blows, and become shield-piercing, stunning [Shield-Piercing] Barrier Champions and refunding a Shield Throw charge when you do. Picking up a Void Breach grants you Shield Throw energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1443166262,
+  "itemHash": 4268030601,
   "itemName": "Second Chance",
   "owners": [
    1443166262,
@@ -14448,7 +14448,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Bow perfect draw can be held indefinitely. Gain a bonus to the Bow's damage when released, based on how long perfect draw was held. Provides a moderate benefit to the airborne effectiveness stat of Bows.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 691578978,
+  "itemHash": 3883286571,
   "itemName": "Oathkeeper",
   "owners": [
    691578978,
@@ -14471,7 +14471,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Throwing Knife final blows decrease the cooldown of your Super. Hitting a single target with most Blade Barrage knives in a volley causes them to release a violent Solar explosion; releasing scorching Solar shrapnel. Hits and final blows with Blade Barrage will return Super energy after the Super ends.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 691578979,
+  "itemHash": 3883286570,
   "itemName": "Shards of Galanor",
   "owners": [
    691578979,
@@ -14575,7 +14575,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Your Duskfield grenades have a much larger effect radius. Allies inside the Duskfield gain Frost Armor and targets inside the area deal reduced damage.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2169905051,
+  "itemHash": 3793245444,
   "itemName": "Renewal Grasps",
   "owners": [
    2169905051,
@@ -16709,7 +16709,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While your Solar Super is charged, ability final blows cure you and give stacks of Sunfire Furnace.\n\nWhile Sunfire Furnace is active, grenade and Shieldburst final blows trigger an ignition. Each stack increases grenade regeneration, class ability regeneration, and Super damage. Upon exiting your Super, all stacks are converted into Super energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1192890598,
+  "itemHash": 2094927311,
   "itemName": "Hallowfire Heart",
   "owners": [
    1192890598,
@@ -16733,7 +16733,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Generates an additional Orb of Power from Supers. Generating a Barricade, or dealing sustained damage or defeating targets from behind one creates a healing pulse. Healing your allies grants Barricade energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1591207519,
+  "itemHash": 3768376418,
   "itemName": "Crest of Alpha Lupi",
   "owners": [
    1591207519,
@@ -16757,7 +16757,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Steadily reloads a portion of your equipped Auto Rifle or Machine Gun's magazine from reserves. Final blows with Auto Rifles or Machine Guns boost their stability, ammo generation, and damage. Provides a moderate benefit to their airborne effectiveness.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1591207518,
+  "itemHash": 3768376419,
   "itemName": "Actium War Rig",
   "owners": [
    1591207518,
@@ -16991,7 +16991,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Improves sprint, slide, and airborne effectiveness while a Hand Cannon is equipped. For a short time after being drawn, Hand Cannons ready faster, are more accurate, and each hit against a combatant increases Hand Cannon damage.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 193869522,
+  "itemHash": 2405271939,
   "itemName": "Lucky Pants",
   "owners": [
    193869522,
@@ -17014,7 +17014,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Provides ability energy for each target tethered by Deadfall anchors. Moebius Quiver has an additional shot.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 193869523,
+  "itemHash": 2405271938,
   "itemName": "Orpheus Rig",
   "owners": [
    193869523,
@@ -17037,7 +17037,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Increases slide distance and improves High Jump, Strafe Jump, and Triple Jump. Take less damage from targets when airborne.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 193869520,
+  "itemHash": 2405271937,
   "itemName": "St0mp-EE5",
   "owners": [
    193869520,
@@ -18405,7 +18405,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "You and allies can shoot through your Towering Barricade. Your Towering Barricade takes increased damage from Guardians.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1190497097,
+  "itemHash": 2551549824,
   "itemName": "Citan's Ramparts",
   "owners": [
    1190497097,
@@ -18546,7 +18546,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Dodging leaves behind an explosive that detonates after a short delay, damaging targets around it and creating a secondary effect based on your Super's element:\n• [Arc] Blinds targets.\n• [Solar] Scorches targets.\n• [Void] Suppresses targets.\n• [Stasis] Slows targets.\n• [Strand] Severs targets.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1219761634,
+  "itemHash": 2177224557,
   "itemName": "The Bombardiers",
   "owners": [
    1219761634,
@@ -18633,7 +18633,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Gain resistance to your explosives. Defeat targets to charge this armor. Once charged, land a Shiver Strike melee attack or deal explosive self-damage to rocket jump backward and release a blast wave with deadly shrapnel projectiles. The wave freezes combatants and slows Guardians. Charged rocket jumps grant Frost Armor.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1188437342,
+  "itemHash": 1849901681,
   "itemName": "Blastwave Striders",
   "owners": [
    1188437342,
@@ -19540,7 +19540,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Damaging targets with Chaos Reach extends its duration. Collecting Ionic Traces grants you energy for Chaos Reach. Sprinting while near max Bolt Charge will grant stacks over time.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 121305948,
+  "itemHash": 3608857511,
   "itemName": "Geomag Stabilizers",
   "owners": [
    121305948,
@@ -19970,7 +19970,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Weapon final blows with a damage type matching your grenade grant Death Throes, which provide a grenade damage bonus and grant you grenade energy. When you have Death Throes and throw a grenade, nearby allies gain greatly increased grenade regeneration for a short time.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2428181146,
+  "itemHash": 2553961985,
   "itemName": "Verity's Brow",
   "owners": [
    2428181146,
@@ -23206,7 +23206,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Steadily reloads a portion of your equipped Trace Rifle's magazine from reserves. Damaging a vehicle, boss, or Champion with a Trace Rifle marks them as the target. When an ally defeats the marked target, Special ammo is generated for you and Heavy ammo for your allies.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2374129871,
+  "itemHash": 3589022772,
   "itemName": "Cenotaph Mask",
   "owners": [
    2374129871,
@@ -24293,7 +24293,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Using your class ability channels defensive Light inward, providing a grenade that creates a barricade on impact. Picking up Orbs of Power enhances your next Barri-nade, spawning more barricades on impact.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 90009855,
+  "itemHash": 523456396,
   "itemName": "Arbor Warden",
   "owners": [
    90009855,
@@ -24545,7 +24545,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "While you have a Stasis Super equipped, your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Standing behind this barricade will grant you and your allies increased weapon reload speed, stability, and range.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1322544481,
+  "itemHash": 4165710258,
   "itemName": "Hoarfrost-Z",
   "owners": [
    1322544481,
@@ -24942,7 +24942,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Increase the damage of Solar weapons and Solar Ignitions based on the amount of Roaring Flames stacks you have. You are harder to suspend, slow, or freeze, and when you break out, you take no damage from doing so, creating a burst of Solar energy around yourself.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1453120846,
+  "itemHash": 4119704973,
   "itemName": "The Path of Burning Steps",
   "owners": [
    1453120846,
@@ -25486,7 +25486,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Withering Blade hits and bounces create a small Stasis crystal and refund a portion of melee energy. Using Withering Blade to shatter crystals or frozen targets releases a spread of Withering Blades.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 322173891,
+  "itemHash": 2915174768,
   "itemName": "Mask of Fealty",
   "owners": [
    322173891,
@@ -26757,7 +26757,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Precision final blows reduce the cooldown of your Super. Modifies Golden Gun to fire a single, high-damage shot. Targets defeated by that shot give you Super energy and explode.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1321354573,
+  "itemHash": 3960926756,
   "itemName": "Celestial Nighthawk",
   "owners": [
    1321354573,
@@ -26781,7 +26781,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Provides radar while you're aiming. Enhances your radar resolution while crouched. Visually marks targets. Deals more damage to low-health marked targets. Provides a small benefit to the airborne effectiveness stat of all weapons.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1321354572,
+  "itemHash": 3960926757,
   "itemName": "Knucklehead Radar",
   "owners": [
    1321354572,
@@ -27045,7 +27045,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Healing grenades spawn a Restorative Turret. Healing allies occasionally spawns an Orb of Power.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 50291571,
+  "itemHash": 3617849232,
   "itemName": "Speaker's Sight",
   "owners": [
    50291571,
@@ -28112,7 +28112,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Your Daybreak projectiles ignite targets on impact. Your Scorch deals additional damage, and builds to more powerful Ignitions. Dealing damage with Scorch or Ignitions grants melee energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2316914168,
+  "itemHash": 3767088557,
   "itemName": "Dawn Chorus",
   "owners": [
    2316914168,
@@ -28250,7 +28250,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Powered melee and finisher final blows grant Nightmare Fuel, increasing handling and airborne effectiveness. While active, freshly drawn weapons deal additional damage and grant Nightmare Fuel on final blows. Gaining Nightmare Fuel reloads all holstered weapons.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1688602431,
+  "itemHash": 3987871714,
   "itemName": "Sealed Ahamkara Grasps",
   "owners": [
    1688602431,
@@ -28436,7 +28436,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "[Grenade]  : Convert your Arc grenade into a Arc Soul and become amplified. The Arc Soul functions as an autonomous turret.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3084282676,
+  "itemHash": 4177778015,
   "itemName": "Getaway Artist",
   "owners": [
    3084282676,
@@ -29730,7 +29730,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Sol Invictus lasts twice as long. Allies who pass through your Sunspot are granted Sol Invictus and Restoration. Dealing sustained [Solar]Solar damage in a Sunspot extends the duration of the Sunspot. Applying Solar buffs to allies has a chance to create a Sunspot at your feet.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1537074069,
+  "itemHash": 2439379860,
   "itemName": "Phoenix Cradle",
   "owners": [
    1537074069,
@@ -32595,7 +32595,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Increases sprint speed. Sprinting builds up a static charge. After melee-attacking a combatant, that charge will chain damage to nearby foes. Gain Bolt Charge per target hit by the chain.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1160559849,
+  "itemHash": 1437375562,
   "itemName": "Dunemarchers",
   "owners": [
    1160559849,
@@ -33058,7 +33058,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "With Blink equipped, use [Air Dodge]  while airborne to perform a Dark Blink.\n\nUsing Blink or Dark Blink grants Volatile Rounds. Blink travels farther, causes nearby targets to become volatile, and has a shorter cooldown. While your Nova Warp Super is active, Dark Blink does not cost Super energy. Provides a moderate benefit to airborne effectiveness for all weapons.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3948284065,
+  "itemHash": 4035625646,
   "itemName": "Astrocyte Verse",
   "owners": [
    3948284065,
@@ -33459,7 +33459,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Sprint speed increased. After a short time sprinting, your currently equipped weapon is automatically reloaded.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 138282166,
+  "itemHash": 3337759189,
   "itemName": "Transversive Steps",
   "owners": [
    138282166,
@@ -35003,7 +35003,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Weapon precision hits or final blows have a chance to load a Kinetic Exodus micro-missile. Activating your class ability fires loaded Exodus micro-missiles. Damaging targets with Exodus micro-missiles temporarily increases the damage you deal with other micro-missiles and Rocket Launchers.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1909305643,
+  "itemHash": 3050442980,
   "itemName": "Hazardous Propulsion",
   "owners": [
    1909305643,
@@ -36664,7 +36664,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Grants ability energy when you are damaged. While you have a Void super equipped, rapid final blows and final blows while critically wounded grant Devour.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3883866764,
+  "itemHash": 4060352315,
   "itemName": "Mask of the Quiet One",
   "owners": [
    3883866764,
@@ -36746,7 +36746,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Gain a second knife per charge. Getting a final blow with a throwing knife grants consecutive knives a temporary stacking damage bonus. Gambler's Dodge refreshes the bonus timer.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 978537162,
+  "itemHash": 3642110725,
   "itemName": "Ophidia Spathe",
   "owners": [
    978537162,
@@ -37267,7 +37267,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Activating your class ability grants Cure. Rapid [Solar]Solar final blows grant stacks of Burning Souls that increase Solar ability damage, increase the potency of Dodge's healing, and spreads the healing to nearby allies.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3562696927,
+  "itemHash": 3721047650,
   "itemName": "Wormhusk Crown",
   "owners": [
    3562696927,
@@ -37979,7 +37979,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Your Void weapons gain Volatile Rounds after you emerge from being invisible. When you are invisible and defeat a combatant while using a finisher, all of your weapons gain bonus damage; you and your nearby allies gain a reserve overshield and improved class ability regeneration. These reserve overshields can be deployed by using a class ability.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 461841403,
+  "itemHash": 2447096246,
   "itemName": "Gyrfalcon's Hauberk",
   "owners": [
    461841403,
@@ -38770,7 +38770,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Gain an additional Skip Grenade charge. Skip Grenade damage grants Bolt Chargeand gaining Bolt Charge grants Skip Grenade energy. When Bolt Charge is ready, you heal nearby allies and enhance your next Skip Grenade.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1053737370,
+  "itemHash": 1611241895,
   "itemName": "Shinobu's Vow",
   "owners": [
    1053737370,
@@ -39098,7 +39098,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "After casting a Nova Bomb, briefly gain a free cast of a fast-moving but weaker Nova Bomb: Lance. Your Nova Bomb: Cataclysm is empowered if detonated with another Nova Bomb. \nNova Bomb final blows and weapon final blows while you have Devour grant Super energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1030017949,
+  "itemHash": 3050017626,
   "itemName": "Skull of Dire Ahamkara",
   "owners": [
    1030017949,
@@ -39924,7 +39924,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Dodging disorients nearby enemies and temporarily removes their radar.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1163283805,
+  "itemHash": 2132672800,
   "itemName": "Gemini Jester",
   "owners": [
    1163283805,
@@ -40219,7 +40219,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "You gain additional Super energy from Orbs of Power you pick up. While your Super energy is full, picking up an Orb of Power overcharges your Super, causing you to gain a burst of healing when cast and a bonus to your Super damage. At maximum overcharge, you also gain an overshield.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1001356380,
+  "itemHash": 1006498763,
   "itemName": "Star-Eater Scales",
   "owners": [
    1001356380,
@@ -40651,7 +40651,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Defeat targets to charge up cages of loyal moths that fly toward nearby targets or allies.\n \n[Grenade]  : Throw the cage of loyal moths, which are released on impact. Upon reaching targets, moths detonate in a blinding explosion; upon reaching allies, moths provide a Void overshield.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 3534173884,
+  "itemHash": 3688534631,
   "itemName": "Mothkeeper's Wraps",
   "owners": [
    3534173884,
@@ -40713,7 +40713,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Defeating a weakened target releases a burst of weakening smoke and refunds Void melee ability energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2757274117,
+  "itemHash": 4002939008,
   "itemName": "Khepri's Sting",
   "owners": [
    2757274117,
@@ -40875,7 +40875,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Activating Grapple grants Woven Mail. While active, Woven Mail provides flinch resistance and health when defeating targets.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 192896783,
+  "itemHash": 1008364980,
   "itemName": "Cyrtarachne's Facade",
   "owners": [
    192896783,
@@ -41503,7 +41503,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Move faster while guarding with Sentinel Shield or the Unbreakable shield. Damage blocked with Sentinel Shield is converted to Super energy, and damage blocked with Unbreakable is converted to grenade energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 1848640623,
+  "itemHash": 2046130360,
   "itemName": "Ursa Furiosa",
   "owners": [
    1848640623,
@@ -42343,7 +42343,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Greatly increases your Thundercrash damage and grants you damage resistance after impact. Melee final blows while amplified grant you Super energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2321120637,
+  "itemHash": 4057875770,
   "itemName": "Cuirass of the Falling Star",
   "owners": [
    2321120637,
@@ -42503,7 +42503,7 @@
   "categoryId": "armor-trait-exotic",
   "inGameDescription": "Activating Gathering Storm calls down lightning on all nearby targets, jolting them while also amplifying allies. Defeating Arc debuffed targets grants a small amount of Gathering Storm energy.",
   "definitionType": "DestinyInventoryItemDefinition",
-  "itemHash": 2268523867,
+  "itemHash": 2767482390,
   "itemName": "Raiju's Harness",
   "owners": [
    2268523867,
