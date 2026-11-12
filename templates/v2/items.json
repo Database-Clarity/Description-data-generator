@@ -1859,6 +1859,298 @@
    2225619423
   ]
  },
+ "183430246": {
+  "hash": 183430246,
+  "name": "Spirit of the Swarm",
+  "icon": "/common/destiny2_content/icons/2c51c7358ab1de58c11edc89b5573e84.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Destroying a Tangle spawns Threadlings.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686810
+  ]
+ },
+ "183430247": {
+  "hash": 183430247,
+  "name": "Spirit of the Claw",
+  "icon": "/common/destiny2_content/icons/569a1a4cbdd7a014159ebdf304c8a9b5.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Gain an additional melee charge.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686811
+  ]
+ },
+ "183430248": {
+  "hash": 183430248,
+  "name": "Spirit of the Stag",
+  "icon": "/common/destiny2_content/icons/c4f95301370c59ab4d7ce34825e83305.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Your Rift provides damage reduction to allies standing in it.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686804
+  ]
+ },
+ "183430249": {
+  "hash": 183430249,
+  "name": "Spirit of Starfire",
+  "icon": "/common/destiny2_content/icons/18c3e0503b1c9cd823dde3ded3680f8d.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Grenades recharge from empowered weapon damage, with empowered weapon final blows granting more energy.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686805
+  ]
+ },
+ "183430250": {
+  "hash": 183430250,
+  "name": "Spirit of Apotheosis",
+  "icon": "/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Temporarily gain greatly increased melee and grenade regeneration after your Super ends.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686806
+  ]
+ },
+ "183430251": {
+  "hash": 183430251,
+  "name": "Spirit of Vesper",
+  "icon": "/common/destiny2_content/icons/ff55cfecf4c70924d0894b1d8a442a18.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Rifts periodically release Arc shockwaves.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686807
+  ]
+ },
+ "183430252": {
+  "hash": 183430252,
+  "name": "Spirit of the Necrotic",
+  "icon": "/common/destiny2_content/icons/4c1a349c2723d3aa84598da98c7a8805.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Damaging a target with a melee inflicts potent corruption. Defeating targets afflicted by corruption spreads the condition.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686800,
+   3912075059
+  ]
+ },
+ "183430253": {
+  "hash": 183430253,
+  "name": "Spirit of Osmiomancy",
+  "icon": "/common/destiny2_content/icons/81b6412d2d6784891dd7ddad764891cc.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Your grenades recharge quicker on hits. The seeker spawned from Coldsnap grenades travels farther.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686801
+  ]
+ },
+ "183430254": {
+  "hash": 183430254,
+  "name": "Spirit of Harmony",
+  "icon": "/common/destiny2_content/icons/675540240cef9fc9e047d9f9d20a0722.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Final blows with weapons that have a damage type matching your Super's element grant you Super energy.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686802
+  ]
+ },
+ "183430255": {
+  "hash": 183430255,
+  "name": "Spirit of the Filaments",
+  "icon": "/common/destiny2_content/icons/1d4c0be6150c4ca71bc7add447c5d86c.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Casting an Empowering Rift will grant you Devour. Defeating a target while Devour is active grants class ability energy.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1553686803,
+   1823420964
+  ]
+ },
  "183772609": {
   "hash": 183772609,
   "name": "Caster Frame",
@@ -14735,6 +15027,180 @@
   "sandboxPerkHashes": [
    1491015923,
    2917776374
+  ]
+ },
+ "1476923952": {
+  "hash": 1476923952,
+  "name": "Spirit of the Assassin",
+  "icon": "/common/destiny2_content/icons/961559205e83e96cd590b34c28efadb7.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Finishers and powered melee final blows grant invisibility.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   3465434116
+  ]
+ },
+ "1476923953": {
+  "hash": 1476923953,
+  "name": "Spirit of Inmost Light",
+  "icon": "/common/destiny2_content/icons/51756fc7603bd72a83d1859d8c33f0b9.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Using an ability empowers the other two abilities, granting them improved energy regeneration.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   3465434117
+  ]
+ },
+ "1476923954": {
+  "hash": 1476923954,
+  "name": "Spirit of the Ophidian",
+  "icon": "/common/destiny2_content/icons/3945ff76d8e7ec70991cb0f6601c6797.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Weapons ready very quickly.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   3465434118
+  ]
+ },
+ "1476923955": {
+  "hash": 1476923955,
+  "name": "Spirit of the Star-Eater",
+  "icon": "/common/destiny2_content/icons/b29ab6e87ec85bac4563f3d3a432c451.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "While your Super energy is full, picking up an Orb of Power overcharges your Super, granting it bonus damage.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   3465434119
+  ]
+ },
+ "1476923956": {
+  "hash": 1476923956,
+  "name": "Spirit of Synthoceps",
+  "icon": "/common/destiny2_content/icons/640d76fb6ab52e290116455379194b07.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Improves melee damage when you're surrounded.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   3465434112
+  ]
+ },
+ "1476923957": {
+  "hash": 1476923957,
+  "name": "Spirit of Verity",
+  "icon": "/common/destiny2_content/icons/9732f284c71054229671287ab43444b7.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Weapon final blows with a damage type matching your grenade grant a stacking grenade damage bonus and improved grenade regeneration.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   3465434113
   ]
  },
  "1478423395": {
@@ -35613,6 +36079,297 @@
   "plugCategoryHash": 1313063513,
   "hiddenFromEditor": true
  },
+ "3573490500": {
+  "hash": 3573490500,
+  "name": "Spirit of the Armamentarium",
+  "icon": "/common/destiny2_content/icons/87ed6eb97c923d6a8d0e14639f4b7791.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Gain an additional grenade charge.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944072
+  ]
+ },
+ "3573490501": {
+  "hash": 3573490501,
+  "name": "Spirit of Alpha Lupi",
+  "icon": "/common/destiny2_content/icons/a5c5979f3630735a03bee7f2d32e9043.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Creates a healing pulse when your class ability is activated. Healing allies provides class ability energy.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   1888451481,
+   2810944073
+  ]
+ },
+ "3573490504": {
+  "hash": 3573490504,
+  "name": "Spirit of Contact",
+  "icon": "/common/destiny2_content/icons/a4ead8e3316d22dbb9fc48e6c643dde3.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Damaging a target with a powered melee causes all nearby targets to suffer lightning strikes and become jolted.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944068
+  ]
+ },
+ "3573490505": {
+  "hash": 3573490505,
+  "name": "Spirit of the Bear",
+  "icon": "/common/destiny2_content/icons/c792f09ce9d03c03064724af10be0349.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Move faster while guarding with the Unbreakable shield. Damage blocked with Unbreakable is converted to grenade energy.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944069
+  ]
+ },
+ "3573490506": {
+  "hash": 3573490506,
+  "name": "Spirit of the Horn",
+  "icon": "/common/destiny2_content/icons/784bd1d46cc9bd60e1d510e915aedb04.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Your class ability unleashes waves of Solar energy that damage and scorch nearby targets. Combatants damaged and Guardians defeated by these waves are enveloped in a Sunspot.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944070
+  ]
+ },
+ "3573490507": {
+  "hash": 3573490507,
+  "name": "Spirit of Scars",
+  "icon": "/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Final blows with weapons that have a damage type matching your Super's element create a burst of healing around you that grants allies restoration.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944071
+  ]
+ },
+ "3573490508": {
+  "hash": 3573490508,
+  "name": "Spirit of Hoarfrost",
+  "icon": "/common/destiny2_content/icons/f093d552bec2248e94fed1a960d62dde.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Activating Thruster creates Stasis crystals.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944064
+  ]
+ },
+ "3573490509": {
+  "hash": 3573490509,
+  "name": "Spirit of Severance",
+  "icon": "/common/destiny2_content/icons/baed176aaf20399a3abb8b287790747a.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Powered melee or finisher final blows unleash a damaging explosion.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944065
+  ]
+ },
+ "3573490510": {
+  "hash": 3573490510,
+  "name": "Spirit of the Abeyant",
+  "icon": "/common/destiny2_content/icons/245108de9d46cabc0ca3f16c665321dd.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Improves Drengr's Lash. Drengr's Lash projectiles track targets more aggressively and travel farther.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944066
+  ]
+ },
+ "3573490511": {
+  "hash": 3573490511,
+  "name": "Spirit of the Eternal Warrior",
+  "icon": "/common/destiny2_content/icons/abaff19620ec578f1f379a359de7134c.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Gain bonus damage for weapons matching your Super's element when your Super ends.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2810944067
+  ]
+ },
  "3573764622": {
   "hash": 3573764622,
   "name": "Precision Frame",
@@ -37419,6 +38176,297 @@
   "enhancedHash": 331667533,
   "sandboxPerkHashes": [
    3524518737
+  ]
+ },
+ "3751917990": {
+  "hash": 3751917990,
+  "name": "Spirit of the Coyote",
+  "icon": "/common/destiny2_content/icons/aa2934eb8a1990f6a1e76402ba12f26a.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Gain an additional class ability charge.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022234
+  ]
+ },
+ "3751917991": {
+  "hash": 3751917991,
+  "name": "Spirit of the Wormhusk",
+  "icon": "/common/destiny2_content/icons/16f43c6fbb972bdc24764a59aacc8161.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Activating your class ability grants Cure. Rapidly defeating combatants grants Burning Souls that increase the potency of healing when using Dodge and spread the healing to nearby allies.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022235,
+   4153970611
+  ]
+ },
+ "3751917992": {
+  "hash": 3751917992,
+  "name": "Spirit of the Liar",
+  "icon": "/common/destiny2_content/icons/71a75146e38ba257b7379af0efacd61f.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Dealing damage with a powered melee or being hit by a melee attack will allow you to follow up with an extremely powerful Arc melee counterpunch.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022228
+  ]
+ },
+ "3751917993": {
+  "hash": 3751917993,
+  "name": "Spirit of the Gyrfalcon",
+  "icon": "/common/destiny2_content/icons/bd7a131851dd9dad2da3e9f198f67f6e.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Your Void weapons gain volatile rounds after you emerge from being invisible.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022229
+  ]
+ },
+ "3751917994": {
+  "hash": 3751917994,
+  "name": "Spirit of the Cyrtarachne",
+  "icon": "/common/destiny2_content/icons/358bc75bc96bdadc33cc25d864848de4.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Gain Woven Mail when you use your grenade.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022230
+  ]
+ },
+ "3751917995": {
+  "hash": 3751917995,
+  "name": "Spirit of Renewal",
+  "icon": "/common/destiny2_content/icons/47fd782cc9b993709e25ca66035d13b8.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Allies inside the Duskfield grenade field gain Frost Armor and targets inside the field deal reduced damage.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022231
+  ]
+ },
+ "3751917996": {
+  "hash": 3751917996,
+  "name": "Spirit of Caliban",
+  "icon": "/common/destiny2_content/icons/cd66bbfb633d559d5c42c6c85e1d6873.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Powered melee final blows trigger an ignition.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022224
+  ]
+ },
+ "3751917997": {
+  "hash": 3751917997,
+  "name": "Spirit of the Foetracer",
+  "icon": "/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Damaging a powerful combatant or Guardian with an ability grants you a temporary damage bonus for weapons matching that ability's element.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022225
+  ]
+ },
+ "3751917998": {
+  "hash": 3751917998,
+  "name": "Spirit of Galanor",
+  "icon": "/common/destiny2_content/icons/467f441de1568bd8c6ad437a76671b5f.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Hits and final blows with your Super will return Super energy after it ends.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022226
+  ]
+ },
+ "3751917999": {
+  "hash": 3751917999,
+  "name": "Spirit of the Dragon",
+  "icon": "/common/destiny2_content/icons/100cd6b35af5fb3f979807d68ad57380.png",
+  "categoryId": "armor-trait-exotic-class-item",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "inGameDescription": "Your weapons ready quicker and are more stable. Using your class ability temporarily increases this benefit and reloads your equipped weapon from reserves.",
+  "owners": [
+   266021826,
+   2273643087,
+   2809120022
+  ],
+  "ownerNames": {
+   "266021826": "Stoicism",
+   "2273643087": "Solipsism",
+   "2809120022": "Relativism"
+  },
+  "ownerClasses": {
+   "266021826": 0,
+   "2273643087": 2,
+   "2809120022": 1
+  },
+  "perkColumn": "unknown",
+  "plugCategoryHash": 1744546145,
+  "sandboxPerkHashes": [
+   1003602927,
+   2644022227
   ]
  },
  "3754350707": {
