@@ -1,5 +1,5 @@
 import { PerkTypes } from '@icemourne/description-converter'
-import { InventoryItem, InventoryItems, PlugSets } from '@icemourne/tool-box'
+import { InventoryItem, InventoryItems, PlugSets, SocketTypes } from '@icemourne/tool-box'
 
 import { PerkData } from '../main.js'
 import { SocketCategoryEnums } from '../utils/enums.js'
@@ -13,7 +13,8 @@ export const isActivityMod = (mod: InventoryItem | undefined) =>
 export const armorMods = (
   inventoryItems: InventoryItems,
   plugSets: PlugSets,
-  inventoryItemLegendaryArmor: InventoryItem[]
+  inventoryItemLegendaryArmor: InventoryItem[],
+  socketTypes: SocketTypes = {}
 ) => {
   const data: { [key: string]: PerkData } = {}
 
@@ -34,6 +35,21 @@ export const armorMods = (
     }
   }
 
+  // Consumable inventory plugs are not listed in reusable plug sets. Discover
+  // stackable armor mods through inventory-enabled sockets and their whitelist.
+  // The description check also excludes old mods whose type was never renamed.
+  const inventoryMods = new Map<number, number[]>()
+  Object.values(inventoryItems).forEach((mod) => {
+    const category = mod.plug?.plugCategoryHash
+    if (category === undefined || mod.itemType !== 19 || mod.redacted || mod.blacklisted ||
+      mod.plug?.isDummyPlug || mod.inventory.maxStackSize <= 1 ||
+      !mod.itemTypeDisplayName?.endsWith('Armor Mod') ||
+      mod.itemTypeDisplayName.startsWith('Deprecated') ||
+      /deprecated/i.test(mod.displayProperties.description) ||
+      !mod.displayProperties.name || /Empty .*Socket| Mod Socket$/.test(mod.displayProperties.name)) return
+    inventoryMods.set(category, [...(inventoryMods.get(category) ?? []), mod.hash])
+  })
+
   inventoryItemLegendaryArmor.forEach((armor) => {
     const armorSockets = armor.sockets
     if (armorSockets === undefined) return
@@ -43,7 +59,14 @@ export const armorMods = (
     )
 
     modSocketCategory?.socketIndexes.forEach((socketIndex) => {
-      const modsArr = getAllFromSocket(inventoryItems, plugSets, armorSockets.socketEntries[socketIndex])
+      const socket = armorSockets.socketEntries[socketIndex]
+      const modsArr = new Set(getAllFromSocket(inventoryItems, plugSets, socket))
+      // SocketPlugSources.InventorySourced = 1; a whitelist alone does not supply plugs.
+      if (socket.plugSources & 1) {
+        socketTypes[socket.socketTypeHash]?.plugWhitelist.forEach(({ categoryHash }) => {
+          inventoryMods.get(categoryHash)?.forEach((hash) => modsArr.add(hash))
+        })
+      }
 
       modsArr.forEach((modHash) => {
         const mod = inventoryItems[modHash]

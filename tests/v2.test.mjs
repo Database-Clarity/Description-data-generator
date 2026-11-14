@@ -839,3 +839,32 @@ test('exotic class item perks derive signatures from initial sockets, with struc
   delete split[1]
   assert.throws(() => category.select({ inventoryItem: split }), /Missing class item initial perk/)
 })
+
+
+test('inventory-sourced consumable armor mods need a compatible real socket, never reusable membership', () => {
+  const consumable = (hash, overrides = {}) => ({
+    ...mod(hash, `Inventory Mod ${hash}`, 'General Armor Mod', 'enhancements.destination'),
+    itemType: 19, inventory: { maxStackSize: 1000 }, ...overrides,
+  })
+  const inventory = byHash(consumable(1), consumable(2, { redacted: true }),
+    consumable(3, { itemTypeDisplayName: 'Deprecated Armor Mod' }),
+    consumable(4, { displayProperties: { name: 'Legacy mod', description: 'This mod has been deprecated.' } }),
+    consumable(5, { blacklisted: true }), consumable(6, { inventory: { maxStackSize: 1 } }),
+    consumable(7, { plug: { plugCategoryHash: 31 } }),
+    consumable(8, { plug: { plugCategoryHash: 30, isDummyPlug: true } }),
+    consumable(9, { displayProperties: { name: 'Empty Mod Socket', description: '' } }))
+  const armor = { hash: 100, itemTypeDisplayName: 'Helmet', sockets: {
+    socketCategories: [{ socketCategoryHash: 590099826, socketIndexes: [0] }],
+    socketEntries: [{ ...socket(0), socketTypeHash: 200, plugSources: 1 }],
+  } }
+  const types = { 200: { plugWhitelist: [{ categoryHash: 30 }] } }
+  assert.deepEqual(Object.keys(armorMods(inventory, {}, [armor], types)), ['1'])
+  assert.equal(armorMods(inventory, {}, [armor], types)[1].type, 'Armor Mod General')
+  assert.deepEqual([...armorMods(inventory, {}, [armor], types)[1].appearsOn], ['Helmet'])
+  assert.deepEqual(armorMods(inventory, {}, [armor], {}), {})
+  armor.sockets.socketEntries[0].plugSources = 2
+  assert.deepEqual(armorMods(inventory, {}, [armor], types), {})
+  armor.sockets.socketEntries[0].plugSources = 1
+  armor.sockets.socketCategories[0].socketCategoryHash = 999
+  assert.deepEqual(armorMods(inventory, {}, [armor], types), {})
+})
