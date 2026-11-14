@@ -9,6 +9,7 @@ import { InventoryItemEnums } from './utils/enums.js'
 import { createWeaponFormulaData } from './weaponFormulaData.js'
 import { fetchSupplemental } from './v2/fetch.js'
 import { generateV2 } from './v2/generate.js'
+import { generateNames } from './v2/names.js'
 
 export type PerkData = {
   appearsOn: Set<string | number>
@@ -76,6 +77,9 @@ export type PerkDataList = {
     equipableItemSet: supplemental.equipableItemSet,
     extraTypes: {},
   }, supplemental.dim, supplemental.version)
+
+  // Official names per language for the editor's translate mode, from the items just written.
+  await generateNames(JSON.parse(fs.readFileSync('./templates/v2/items.json', 'utf8')))
 
   console.log('Completed')
 })().catch(error => {

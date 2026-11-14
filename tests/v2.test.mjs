@@ -11,6 +11,7 @@ import { derivePairings, isEnhanced, weaponCategory } from '../generator/v2/pair
 import { associateSandbox } from '../generator/v2/sandbox.js'
 import { aliasProposals } from '../generator/v2/proposals.js'
 import { groupFrames } from '../generator/v2/frames.js'
+import { nameLanguages, namesFor } from '../generator/v2/names.js'
 import { armorMods } from '../generator/filters/armorMod.js'
 import { artifactMods, isCurrentArtifact } from '../generator/filters/artifactMod.js'
 
@@ -838,4 +839,29 @@ test('exotic class item perks derive signatures from initial sockets, with struc
   assert.equal(columns.find(item => item.hash === 2).perkColumn, 2)
   delete split[1]
   assert.throws(() => category.select({ inventoryItem: split }), /Missing class item initial perk/)
+})
+
+test('names files carry only the names of what items.json lists, per definition table', () => {
+  const display = name => ({ displayProperties: { name, description: '' } })
+  const items = {
+    1: { hash: 1, name: 'Voltshot', categoryId: 'weapon-trait', inGameDescription: '', definitionType: 'DestinyInventoryItemDefinition', itemHash: 10 },
+    2: { hash: 2, name: 'Jolted', categoryId: 'verbs', inGameDescription: '', definitionType: 'DestinyTraitDefinition' },
+    3: { hash: 3, name: 'Perk', categoryId: 'armor-trait-exotic', inGameDescription: '', definitionType: 'DestinySandboxPerkDefinition', owners: [11, 12] },
+    4: { hash: 4, name: 'Two Piece', categoryId: 'armor-set-bonus', inGameDescription: '', definitionType: 'DestinyInventoryItemDefinition', setHash: 20 },
+    5: { hash: 5, name: 'Unknown', categoryId: 'weapon-trait', inGameDescription: '', definitionType: 'DestinyInventoryItemDefinition' },
+  }
+  const tables = {
+    // Hash 2 in the item table must not name the trait 2: each item reads its own table.
+    item: { 1: display('Voltschuss'), 2: display('Falsch'), 4: display('Zweiteilig'), 10: display('Waffe'), 11: display('Helm'), 12: display('  ') },
+    sandboxPerk: { 3: display('Vorteil') },
+    trait: { 2: display('Aufgeschreckt') },
+    itemSet: { 20: display('Set') },
+  }
+  assert.deepEqual(namesFor(items, tables, 'de', 'v1'), {
+    v: 1, lang: 'de', manifestVersion: 'v1',
+    names: { 1: 'Voltschuss', 2: 'Aufgeschreckt', 3: 'Vorteil', 4: 'Zweiteilig' },
+    itemNames: { 10: 'Waffe', 11: 'Helm' },
+    setNames: { 20: 'Set' },
+  })
+  assert.deepEqual(nameLanguages, ['de', 'es', 'es-mx', 'fr', 'it', 'ja', 'ko', 'pl', 'pt-br', 'ru', 'zh-chs', 'zh-cht'])
 })
