@@ -3961,6 +3961,18 @@
    2917776374
   ]
  },
+ "369171376": {
+  "hash": 369171376,
+  "name": "Transcendent Blessing",
+  "icon": "/common/destiny2_content/icons/eff007421cd02e0e16f8ae2301c68234.png",
+  "categoryId": "armor-mod-general",
+  "inGameDescription": "This is a consumable armor mod, which can be inserted into only one piece of armor at a time. Replacing this mod with another mod destroys it. Dismantling armor containing this mod refunds the mod.",
+  "definitionType": "DestinyInventoryItemDefinition",
+  "plugCategoryHash": 2149155760,
+  "sandboxPerkHashes": [
+   1019587644
+  ]
+ },
  "371216963": {
   "hash": 371216963,
   "name": "Radar Tuner",
