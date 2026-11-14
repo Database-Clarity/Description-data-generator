@@ -47,9 +47,14 @@ test('all generated v2 outputs exclude stat data and weapon formula files', () =
   const directory = new URL('../templates/v2/', import.meta.url)
   // The refresh workflow adds the new worklist after the source-only merge.
   assert.deepEqual(fs.readdirSync(directory).filter(name => !['aliasProposals.json', 'sandboxConflicts.json'].includes(name)).sort(), [
-    'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'sandboxAliases.json',
+    'aliases.json', 'categories.json', 'coverage.json', 'items.json', 'names', 'sandboxAliases.json',
   ])
   for (const name of fs.readdirSync(directory)) {
+    if (name === 'names') {
+      for (const language of fs.readdirSync(new URL('names/', directory)))
+        assertNoStatData(JSON.parse(fs.readFileSync(new URL(`names/${language}`, directory))))
+      continue
+    }
     if (name !== 'aliasProposals.json') assertNoStatData(JSON.parse(fs.readFileSync(new URL(name, directory))))
   }
 })
@@ -862,8 +867,27 @@ test('names files carry only the names of what items.json lists, per definition 
     names: { 1: 'Voltschuss', 2: 'Aufgeschreckt', 3: 'Vorteil', 4: 'Zweiteilig' },
     itemNames: { 10: 'Waffe', 11: 'Helm' },
     setNames: { 20: 'Set' },
+    descriptions: {},
+    sandboxPerks: {},
   })
   assert.deepEqual(nameLanguages, ['de', 'es', 'es-mx', 'fr', 'it', 'ja', 'ko', 'pl', 'pt-br', 'ru', 'zh-chs', 'zh-cht'])
+})
+
+test('localised manifest text uses each definition table and only linked sandbox perks', () => {
+  const display = (name, description) => ({ displayProperties: { name, description } })
+  const items = {
+    1: { hash: 1, definitionType: 'DestinyInventoryItemDefinition', sandboxPerkHashes: [8, 8, 9, 10] },
+    2: { hash: 2, definitionType: 'DestinyTraitDefinition' },
+    3: { hash: 3, definitionType: 'DestinySandboxPerkDefinition' },
+  }
+  const result = namesFor(items, {
+    item: { 1: display('Eins', 'Eigener Text'), 2: display('Falsch', 'Falscher Text') },
+    trait: { 2: display('Zwei', 'Merkmal') },
+    sandboxPerk: { 3: display('Drei', 'Vorteil'), 8: display('', 'Verknüpfter Text'), 9: display('Nur Name', ''), 11: display('Nicht verknüpft', 'Ignorieren') },
+    itemSet: {},
+  }, 'de', 'm1')
+  assert.deepEqual(result.descriptions, { 1: 'Eigener Text', 2: 'Merkmal', 3: 'Vorteil' })
+  assert.deepEqual(result.sandboxPerks, { 8: ['', 'Verknüpfter Text'] })
 })
 
 test('inventory-sourced consumable armor mods need a compatible real socket, never reusable membership', () => {

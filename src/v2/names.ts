@@ -1,15 +1,18 @@
 import fs from 'fs'
+import { gzipSync } from 'zlib'
 import { fetchJson, isRecord } from './fetch.js'
 import { Item } from './types.js'
 
 /**
  * Official names per language for the editor's translate mode (TR2): one small file per
- * language, templates/v2/names/<lang>.json, holding only the names of what items.json lists,
+ * language, templates/v2/names/<lang>.json, holding the names and manifest text items.json uses,
  * so a translator never downloads a raw item table (3+ MB gzipped per language).
  *
  * names:     each item's own hash, from its definition table (inventory item, sandbox perk, trait)
  * itemNames: the exotic items perks belong to (itemHash, owners)
  * setNames:  armor sets (setHash)
+ * descriptions: each item's own description, from its definition table
+ * sandboxPerks: linked sandbox perks' [name, description], for the description fallback
  *
  * Additions only: it reads items.json's data and writes nothing else.
  */
@@ -23,6 +26,8 @@ export interface NamesFile {
   names: Record<string, string>
   itemNames: Record<string, string>
   setNames: Record<string, string>
+  descriptions: Record<string, string>
+  sandboxPerks: Record<string, [string, string]>
 }
 
 const tableFor: Record<string, keyof Tables> = {
@@ -31,12 +36,14 @@ const tableFor: Record<string, keyof Tables> = {
   DestinyTraitDefinition: 'trait',
 }
 
-function nameIn(table: Record<string, unknown>, hash: number | string): string | undefined {
+function displayIn(table: Record<string, unknown>, hash: number | string, field: 'name' | 'description'): string | undefined {
   const entry = table[String(hash)]
   if (!isRecord(entry) || !isRecord(entry.displayProperties)) return undefined
-  const name = entry.displayProperties.name
+  const name = entry.displayProperties[field]
   return typeof name === 'string' && name.trim() ? name : undefined
 }
+
+const nameIn = (table: Record<string, unknown>, hash: number | string) => displayIn(table, hash, 'name')
 
 /** Keys in ascending numeric order (JSON keeps integer-like keys in that order anyway). */
 function sorted(record: Record<string, string>): Record<string, string> {
@@ -47,10 +54,18 @@ export function namesFor(items: Record<string, Item>, tables: Tables, lang: stri
   const names: Record<string, string> = {}
   const itemNames: Record<string, string> = {}
   const setNames: Record<string, string> = {}
+  const descriptions: Record<string, string> = {}
+  const sandboxPerks: Record<string, [string, string]> = {}
   for (const item of Object.values(items)) {
     const table = tableFor[item.definitionType]
     const name = table ? nameIn(tables[table], item.hash) : undefined
     if (name) names[item.hash] = name
+    const description = table ? displayIn(tables[table], item.hash, 'description') : undefined
+    if (description) descriptions[item.hash] = description
+    for (const hash of item.sandboxPerkHashes ?? []) {
+      const text = displayIn(tables.sandboxPerk, hash, 'description')
+      if (text) sandboxPerks[hash] = [nameIn(tables.sandboxPerk, hash) ?? '', text]
+    }
     for (const owner of [item.itemHash, ...(item.owners ?? [])]) {
       if (owner === undefined) continue
       const ownerName = nameIn(tables.item, owner)
@@ -61,7 +76,7 @@ export function namesFor(items: Record<string, Item>, tables: Tables, lang: stri
       if (setName) setNames[item.setHash] = setName
     }
   }
-  return { v: 1, lang, manifestVersion, names: sorted(names), itemNames: sorted(itemNames), setNames: sorted(setNames) }
+  return { v: 1, lang, manifestVersion, names: sorted(names), itemNames: sorted(itemNames), setNames: sorted(setNames), descriptions: sorted(descriptions), sandboxPerks }
 }
 
 /**
@@ -111,9 +126,10 @@ export async function generateNames(
         table('DestinyEquipableItemSetDefinition'),
       ])
       const file = namesFor(items, { item, sandboxPerk, trait, itemSet }, lang, version)
-      fs.writeFileSync(`${outDir}/${lang}.json`, JSON.stringify(file) + '\n')
+      const json = JSON.stringify(file) + '\n'
+      fs.writeFileSync(`${outDir}/${lang}.json`, json)
       written++
-      console.log(`names ${lang}: ${Object.keys(file.names).length} items, ${Object.keys(file.itemNames).length} exotics, ${Object.keys(file.setNames).length} sets`)
+      console.log(`names ${lang}: ${Object.keys(file.names).length} items, ${Object.keys(file.itemNames).length} exotics, ${Object.keys(file.setNames).length} sets, ${Object.keys(file.descriptions).length} descriptions, ${gzipSync(json).length} bytes gzip`)
     } catch (error) {
       console.warn(`names ${lang} skipped (previous file kept):`, error instanceof Error ? error.message : error)
     }
