@@ -11,8 +11,8 @@
    "v2": 36
   },
   "armor-mod-general": {
-   "legacy": 321,
-   "v2": 321
+   "legacy": 322,
+   "v2": 322
   },
   "armor-set-bonus": {
    "legacy": 0,
@@ -203,9 +203,9 @@
   "nonEnhancedDimPairs": 2
  },
  "sandbox": {
-  "aliases": 2219,
+  "aliases": 2220,
   "inventoryItemsWithPerks": 6895,
-  "selectedItemsWithPerks": 2608,
+  "selectedItemsWithPerks": 2609,
   "ambiguous": [
    {
     "sandboxPerkHash": 653045601,
