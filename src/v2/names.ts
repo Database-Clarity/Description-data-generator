@@ -64,15 +64,32 @@ export function namesFor(items: Record<string, Item>, tables: Tables, lang: stri
   return { v: 1, lang, manifestVersion, names: sorted(names), itemNames: sorted(itemNames), setNames: sorted(setNames) }
 }
 
-/** Fetches each language's tables one language at a time (one big table in memory at once). */
-export async function generateNames(items: Record<string, Item>, outDir = './templates/v2/names') {
-  const metadata = await fetchJson('https://www.bungie.net/Platform/Destiny2/Manifest/')
-  if (!isRecord(metadata) || !isRecord(metadata.Response) ||
-    !isRecord(metadata.Response.jsonWorldComponentContentPaths) ||
-    typeof metadata.Response.version !== 'string') throw new Error('Invalid Bungie manifest metadata')
-  const paths = metadata.Response.jsonWorldComponentContentPaths
-  const version = metadata.Response.version
-  fs.mkdirSync(outDir, { recursive: true })
+/**
+ * Fetches each language's tables one language at a time (one big table in memory at once).
+ * Optional output: it never rejects. Any failure (the manifest metadata, a language's tables, a
+ * write) keeps the previous files and is logged, so the run still commits the v2 outputs
+ * generateV2 already wrote. Returns how many languages it wrote.
+ */
+export async function generateNames(
+  items: Record<string, Item>,
+  outDir = './templates/v2/names',
+  fetch: (url: string) => Promise<unknown> = fetchJson,
+): Promise<number> {
+  let paths: Record<string, unknown>
+  let version: string
+  try {
+    const metadata = await fetch('https://www.bungie.net/Platform/Destiny2/Manifest/')
+    if (!isRecord(metadata) || !isRecord(metadata.Response) ||
+      !isRecord(metadata.Response.jsonWorldComponentContentPaths) ||
+      typeof metadata.Response.version !== 'string') throw new Error('Invalid Bungie manifest metadata')
+    paths = metadata.Response.jsonWorldComponentContentPaths
+    version = metadata.Response.version
+    fs.mkdirSync(outDir, { recursive: true })
+  } catch (error) {
+    console.warn('names skipped (previous files kept):', error instanceof Error ? error.message : error)
+    return 0
+  }
+  let written = 0
   for (const lang of nameLanguages) {
     // One language failing (a Bungie hiccup) keeps its previous file and never fails the run:
     // the other v2 outputs are already written and must still be committed.
@@ -82,7 +99,7 @@ export async function generateNames(items: Record<string, Item>, outDir = './tem
       const table = async (name: string) => {
         const path = languagePaths[name]
         if (typeof path !== 'string' || !path.startsWith('/common/')) throw new Error(`Missing manifest table ${lang} ${name}`)
-        const value = await fetchJson(`https://www.bungie.net${path}`)
+        const value = await fetch(`https://www.bungie.net${path}`)
         if (!isRecord(value)) throw new Error(`Invalid manifest table ${lang} ${name}`)
         return value
       }
@@ -95,9 +112,11 @@ export async function generateNames(items: Record<string, Item>, outDir = './tem
       ])
       const file = namesFor(items, { item, sandboxPerk, trait, itemSet }, lang, version)
       fs.writeFileSync(`${outDir}/${lang}.json`, JSON.stringify(file) + '\n')
+      written++
       console.log(`names ${lang}: ${Object.keys(file.names).length} items, ${Object.keys(file.itemNames).length} exotics, ${Object.keys(file.setNames).length} sets`)
     } catch (error) {
       console.warn(`names ${lang} skipped (previous file kept):`, error instanceof Error ? error.message : error)
     }
   }
+  return written
 }

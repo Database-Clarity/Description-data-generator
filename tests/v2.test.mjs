@@ -11,7 +11,7 @@ import { derivePairings, isEnhanced, weaponCategory } from '../generator/v2/pair
 import { associateSandbox } from '../generator/v2/sandbox.js'
 import { aliasProposals } from '../generator/v2/proposals.js'
 import { groupFrames } from '../generator/v2/frames.js'
-import { nameLanguages, namesFor } from '../generator/v2/names.js'
+import { generateNames, nameLanguages, namesFor } from '../generator/v2/names.js'
 import { armorMods } from '../generator/filters/armorMod.js'
 import { artifactMods, isCurrentArtifact } from '../generator/filters/artifactMod.js'
 
@@ -892,4 +892,32 @@ test('inventory-sourced consumable armor mods need a compatible real socket, nev
   armor.sockets.socketEntries[0].plugSources = 1
   armor.sockets.socketCategories[0].socketCategoryHash = 999
   assert.deepEqual(armorMods(inventory, {}, [armor], types), {})
+})
+
+test('names generation never fails the run: bad metadata or a failing language keeps the previous files', async () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'names-'))
+  fs.writeFileSync(path.join(dir, 'de.json'), 'previous\n')
+  const items = { 1: { hash: 1, definitionType: 'DestinyInventoryItemDefinition' } }
+  const warn = console.warn
+  console.warn = () => {}
+  try {
+    // The metadata request fails, then answers malformed: nothing written, nothing thrown.
+    assert.equal(await generateNames(items, dir, async () => { throw new Error('offline') }), 0)
+    assert.equal(await generateNames(items, dir, async () => ({ Response: {} })), 0)
+    // German's tables fail, French's arrive: German keeps its file, French is written.
+    const table = (lang) => Object.fromEntries(
+      ['DestinyInventoryItemLiteDefinition', 'DestinySandboxPerkDefinition', 'DestinyTraitDefinition', 'DestinyEquipableItemSetDefinition']
+        .map((name) => [name, `/common/${lang}/${name}.json`]))
+    const fetch = async (url) => {
+      if (url.endsWith('/Manifest/')) return { Response: { version: 'v9', jsonWorldComponentContentPaths: { de: table('de'), fr: table('fr') } } }
+      if (url.includes('/de/')) throw new Error('timeout')
+      return url.includes('LiteDefinition') ? { 1: { displayProperties: { name: 'Voltigeur' } } } : {}
+    }
+    assert.equal(await generateNames(items, dir, fetch), 1)
+    assert.equal(fs.readFileSync(path.join(dir, 'de.json'), 'utf8'), 'previous\n')
+    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(dir, 'fr.json'), 'utf8')).names, { 1: 'Voltigeur' })
+  } finally {
+    console.warn = warn
+    fs.rmSync(dir, { recursive: true, force: true })
+  }
 })
