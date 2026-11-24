@@ -203,7 +203,7 @@
   "nonEnhancedDimPairs": 2
  },
  "sandbox": {
-  "aliases": 2220,
+  "aliases": 2263,
   "inventoryItemsWithPerks": 6895,
   "selectedItemsWithPerks": 2609,
   "ambiguous": [
@@ -1656,7 +1656,8 @@
     "itemHashes": [
      344235611,
      2978966579
-    ]
+    ],
+    "selected": 2978966579
    },
    {
     "sandboxPerkHash": 374667610,
@@ -1958,7 +1959,8 @@
     "itemHashes": [
      496047945,
      1089671869
-    ]
+    ],
+    "selected": 1089671869
    },
    {
     "sandboxPerkHash": 1216977222,
@@ -2027,7 +2029,8 @@
     "itemHashes": [
      536173722,
      691659142
-    ]
+    ],
+    "selected": 691659142
    },
    {
     "sandboxPerkHash": 2150836474,
@@ -2080,7 +2083,8 @@
     "itemHashes": [
      563069569,
      2167611941
-    ]
+    ],
+    "selected": 563069569
    },
    {
     "sandboxPerkHash": 2020742060,
@@ -2232,7 +2236,8 @@
     "itemHashes": [
      654512643,
      4065965131
-    ]
+    ],
+    "selected": 654512643
    },
    {
     "sandboxPerkHash": 1627523014,
@@ -2282,7 +2287,8 @@
     "itemHashes": [
      674546187,
      2298656195
-    ]
+    ],
+    "selected": 2298656195
    },
    {
     "sandboxPerkHash": 2608136408,
@@ -2332,7 +2338,8 @@
     "itemHashes": [
      692399809,
      4070834277
-    ]
+    ],
+    "selected": 692399809
    },
    {
     "sandboxPerkHash": 1742827387,
@@ -2448,7 +2455,8 @@
     "itemHashes": [
      788178929,
      2679249093
-    ]
+    ],
+    "selected": 2679249093
    },
    {
     "sandboxPerkHash": 2130679901,
@@ -2482,7 +2490,8 @@
     "itemHashes": [
      820036316,
      4190679284
-    ]
+    ],
+    "selected": 4190679284
    },
    {
     "sandboxPerkHash": 416575095,
@@ -2546,14 +2555,16 @@
     "itemHashes": [
      880644845,
      3120212825
-    ]
+    ],
+    "selected": 880644845
    },
    {
     "sandboxPerkHash": 3035188416,
     "itemHashes": [
      880644845,
      3120212825
-    ]
+    ],
+    "selected": 880644845
    },
    {
     "sandboxPerkHash": 858652730,
@@ -2568,7 +2579,8 @@
     "itemHashes": [
      883665727,
      4042220767
-    ]
+    ],
+    "selected": 4042220767
    },
    {
     "sandboxPerkHash": 279556661,
@@ -2667,7 +2679,8 @@
     "itemHashes": [
      960997401,
      3244229373
-    ]
+    ],
+    "selected": 960997401
    },
    {
     "sandboxPerkHash": 324546586,
@@ -2681,7 +2694,8 @@
     "itemHashes": [
      983853954,
      1546142478
-    ]
+    ],
+    "selected": 1546142478
    },
    {
     "sandboxPerkHash": 3505951177,
@@ -2855,7 +2869,8 @@
     "itemHashes": [
      1126264488,
      2476672792
-    ]
+    ],
+    "selected": 1126264488
    },
    {
     "sandboxPerkHash": 2506971705,
@@ -2869,7 +2884,8 @@
     "itemHashes": [
      1134488199,
      2904194311
-    ]
+    ],
+    "selected": 1134488199
    },
    {
     "sandboxPerkHash": 3674470921,
@@ -2907,7 +2923,8 @@
     "itemHashes": [
      1194056669,
      3955464425
-    ]
+    ],
+    "selected": 1194056669
    },
    {
     "sandboxPerkHash": 1888199115,
@@ -2921,7 +2938,8 @@
     "itemHashes": [
      1202584452,
      2138673996
-    ]
+    ],
+    "selected": 1202584452
    },
    {
     "sandboxPerkHash": 2622373589,
@@ -3152,7 +3170,8 @@
     "itemHashes": [
      1421772400,
      3291427296
-    ]
+    ],
+    "selected": 1421772400
    },
    {
     "sandboxPerkHash": 3486450016,
@@ -3172,7 +3191,8 @@
     "itemHashes": [
      1464081238,
      2813913866
-    ]
+    ],
+    "selected": 1464081238
    },
    {
     "sandboxPerkHash": 1950905708,
@@ -3266,7 +3286,8 @@
     "itemHashes": [
      1570399071,
      1661646271
-    ]
+    ],
+    "selected": 1570399071
    },
    {
     "sandboxPerkHash": 3879919836,
@@ -3296,7 +3317,8 @@
     "itemHashes": [
      1618208178,
      2077819806
-    ]
+    ],
+    "selected": 2077819806
    },
    {
     "sandboxPerkHash": 1578839828,
@@ -3397,7 +3419,8 @@
     "itemHashes": [
      1720528630,
      2173046394
-    ]
+    ],
+    "selected": 2173046394
    },
    {
     "sandboxPerkHash": 139886105,
@@ -3440,7 +3463,8 @@
     "itemHashes": [
      1767911158,
      3182497402
-    ]
+    ],
+    "selected": 3182497402
    },
    {
     "sandboxPerkHash": 1130093452,
@@ -3504,7 +3528,8 @@
     "itemHashes": [
      1817983009,
      3640170453
-    ]
+    ],
+    "selected": 3640170453
    },
    {
     "sandboxPerkHash": 840874903,
@@ -3540,7 +3565,8 @@
     "itemHashes": [
      1888882410,
      3684445958
-    ]
+    ],
+    "selected": 1888882410
    },
    {
     "sandboxPerkHash": 3957481075,
@@ -3562,7 +3588,8 @@
     "itemHashes": [
      1918398421,
      3422375969
-    ]
+    ],
+    "selected": 1918398421
    },
    {
     "sandboxPerkHash": 266256247,
@@ -3697,7 +3724,8 @@
     "itemHashes": [
      2073244114,
      2579169598
-    ]
+    ],
+    "selected": 2579169598
    },
    {
     "sandboxPerkHash": 3406124625,
@@ -3715,7 +3743,8 @@
     "itemHashes": [
      2078520142,
      2922950962
-    ]
+    ],
+    "selected": 2922950962
    },
    {
     "sandboxPerkHash": 2930215615,
@@ -3729,7 +3758,8 @@
     "itemHashes": [
      2109543898,
      2799030358
-    ]
+    ],
+    "selected": 2109543898
    },
    {
     "sandboxPerkHash": 2763822767,
@@ -3793,14 +3823,16 @@
     "itemHashes": [
      2260261934,
      2305480722
-    ]
+    ],
+    "selected": 2305480722
    },
    {
     "sandboxPerkHash": 4185462686,
     "itemHashes": [
      2275087323,
      3194351027
-    ]
+    ],
+    "selected": 3194351027
    },
    {
     "sandboxPerkHash": 6630582,
@@ -3814,7 +3846,8 @@
     "itemHashes": [
      2289534249,
      3914874605
-    ]
+    ],
+    "selected": 2289534249
    },
    {
     "sandboxPerkHash": 2827789421,
@@ -3849,7 +3882,8 @@
     "itemHashes": [
      2360347339,
      4096144819
-    ]
+    ],
+    "selected": 2360347339
    },
    {
     "sandboxPerkHash": 983157083,
@@ -3885,7 +3919,8 @@
     "itemHashes": [
      2458213969,
      2570477205
-    ]
+    ],
+    "selected": 2458213969
    },
    {
     "sandboxPerkHash": 3534631095,
@@ -3947,7 +3982,8 @@
     "itemHashes": [
      2581144697,
      4132187021
-    ]
+    ],
+    "selected": 4132187021
    },
    {
     "sandboxPerkHash": 3204936245,
@@ -3961,7 +3997,8 @@
     "itemHashes": [
      2613226185,
      4019266109
-    ]
+    ],
+    "selected": 4019266109
    },
    {
     "sandboxPerkHash": 1170876188,
@@ -3982,7 +4019,8 @@
     "itemHashes": [
      2633604463,
      3218042543
-    ]
+    ],
+    "selected": 3218042543
    },
    {
     "sandboxPerkHash": 1784140514,
@@ -4093,7 +4131,8 @@
     "itemHashes": [
      2817677128,
      3773585912
-    ]
+    ],
+    "selected": 3773585912
    },
    {
     "sandboxPerkHash": 2252751995,
@@ -4156,14 +4195,16 @@
     "itemHashes": [
      2963273944,
      3081867624
-    ]
+    ],
+    "selected": 3081867624
    },
    {
     "sandboxPerkHash": 1883606717,
     "itemHashes": [
      2980589453,
      4063561849
-    ]
+    ],
+    "selected": 2980589453
    },
    {
     "sandboxPerkHash": 545970982,
@@ -4212,7 +4253,8 @@
     "itemHashes": [
      3192447905,
      3764420437
-    ]
+    ],
+    "selected": 3764420437
    },
    {
     "sandboxPerkHash": 3379786488,
@@ -4270,7 +4312,8 @@
     "itemHashes": [
      3555252274,
      3713215006
-    ]
+    ],
+    "selected": 3713215006
    },
    {
     "sandboxPerkHash": 1483721719,
