@@ -222,6 +222,49 @@ test('sandbox candidates that share a generated frame identity keep the existing
     { 100: { hash: 100 } }, groupFrames(items).aliases), result)
 })
 
+test('a shared sandbox effect points to the paired base when each enhanced owner has its own effect', () => {
+  const inventory = byHash(plug(1, 'Enhanced'), plug(2, 'Base'), plug(3, 'Enhanced again'), plug(4, 'Base'))
+  const items = Object.fromEntries([1, 2, 3, 4].map(hash => [hash, {
+    hash, definitionType: 'DestinyInventoryItemDefinition',
+  }]))
+  items[1].baseHash = items[3].baseHash = 2
+  inventory[1].perks = inventory[3].perks = [{ perkHash: 100 }, { perkHash: 101 }]
+  inventory[2].perks = [{ perkHash: 100 }]
+  const sandbox = () => associateSandbox(items, inventory, { 100: { hash: 100 }, 101: { hash: 101 } })
+  const result = sandbox()
+  assert.equal(result.aliases[100], 2)
+  assert.equal(result.conflicts[100], undefined)
+  assert.deepEqual(result.report.ambiguous.find(row => row.sandboxPerkHash === 100),
+    { sandboxPerkHash: 100, itemHashes: [1, 2, 3], selected: 2 })
+
+  inventory[3].perks = [{ perkHash: 100 }]
+  assert.deepEqual(sandbox().conflicts[100], [1, 2, 3])
+  inventory[3].perks = inventory[1].perks
+  items[3].baseHash = 4
+  assert.deepEqual(sandbox().conflicts[100], [1, 2, 3])
+  items[3].baseHash = 2
+  inventory[4].perks = [{ perkHash: 101 }]
+  assert.deepEqual(sandbox().conflicts[100], [1, 2, 3])
+  inventory[4].perks = [{ perkHash: 100 }]
+  assert.deepEqual(sandbox().conflicts[100], [1, 2, 3, 4])
+})
+
+test('a shared base effect canonicalises frame owners and the enhanced pairing endpoint', () => {
+  const inventory = byHash(plug(1, 'Frame'), plug(2, ' Frame '), plug(3, 'Enhanced frame'), plug(4, 'Frame'))
+  const items = Object.fromEntries([1, 2, 3, 4].map(hash => [hash, {
+    hash, name: inventory[hash].displayProperties.name,
+    categoryId: hash === 3 ? 'weapon-frame-enhanced' : 'weapon-frame',
+    definitionType: 'DestinyInventoryItemDefinition', inGameDescription: '',
+  }]))
+  items[3].baseHash = 4
+  inventory[2].perks = [{ perkHash: 100 }]
+  inventory[3].perks = [{ perkHash: 100 }, { perkHash: 101 }]
+  const definitions = { 100: { hash: 100 }, 101: { hash: 101 } }
+  assert.deepEqual(associateSandbox(items, inventory, definitions).conflicts, { 100: [2, 3] })
+  assert.deepEqual(associateSandbox(items, inventory, definitions, groupFrames(items).aliases).aliases,
+    { 100: 1, 101: 3 })
+})
+
 test('sandbox and inventory hashes can legitimately be identical, but cannot alias another tooltip', () => {
   const inventory = byHash(plug(1, 'One'), plug(2, 'Two'))
   inventory[1].perks = [{ perkHash: 1 }]

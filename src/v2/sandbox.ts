@@ -26,16 +26,29 @@ export function associateSandbox(items: Record<string, Item>, inventory: Invento
   const conflicts: Record<string, number[]> = {}
   const ambiguous: { sandboxPerkHash: number; itemHashes: number[]; selected?: number }[] = []
   const rank = (hash: number) => inventory[hash].plug ? 0 : 1
+  const canonical = (hash: number) => canonicalAliases[hash]?.to ?? hash
+  const baseHash = (hash: number) => items[hash].baseHash ?? items[canonical(hash)]?.baseHash
+  const sharedBase = (hash: number, candidates: number[]) => {
+    // Pairings are only available in the final pass, after frame and base-group selection.
+    const bases = new Set(candidates.filter(candidate => baseHash(candidate) === undefined).map(canonical))
+    if (bases.size !== 1) return
+    const [base] = bases
+    const enhanced = candidates.filter(candidate => baseHash(candidate) !== undefined)
+    if (enhanced.length && enhanced.every(candidate =>
+      canonical(baseHash(candidate)!) === base &&
+      items[candidate].sandboxPerkHashes?.some(other => other !== hash &&
+        owners.get(other)?.every(owner => baseHash(owner) !== undefined)))) return base
+  }
   for (const [hash, candidates] of owners) {
     candidates.sort((a, b) => rank(a) - rank(b) || a - b)
     // Frame/name grouping, rather than raw item count, defines tooltip identity.
-    const identities = new Set(candidates.map(candidate => canonicalAliases[candidate]?.to ?? candidate))
-    if (identities.size > 1) {
+    const identities = new Set(candidates.map(canonical))
+    const owner = identities.size === 1 ? candidates[0] : sharedBase(hash, candidates)
+    if (owner === undefined) {
       conflicts[hash] = [...candidates].sort((a, b) => a - b)
       ambiguous.push({ sandboxPerkHash: hash, itemHashes: conflicts[hash] })
       continue
     }
-    const owner = candidates[0]
     if (items[hash] && hash !== owner) throw new Error(`Sandbox alias ${hash} collides with an inventory/trait tooltip`)
     aliases[hash] = owner
     if (candidates.length > 1) ambiguous.push({ sandboxPerkHash: hash, itemHashes: candidates, selected: owner })
